@@ -3,7 +3,7 @@ import ScrechKit
 struct HomeView: View {
     var body: some View {
         List {
-            ListLink("Device and system", icon: "iphone") {
+            ListLink("Device and system", icon: "info.circle") {
                 DeviceView()
             }
             
