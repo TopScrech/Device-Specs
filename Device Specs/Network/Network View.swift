@@ -1,6 +1,6 @@
 import ScrechKit
 
-struct Goida_Network_View: View {
+struct NetworkView: View {
     private var network = NetworkVM()
     private var wifi = WifiVM()
     
@@ -21,5 +21,5 @@ struct Goida_Network_View: View {
 }
 
 #Preview {
-    Goida_Network_View()
+    NetworkView()
 }

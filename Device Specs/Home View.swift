@@ -4,7 +4,7 @@ struct HomeView: View {
     var body: some View {
         List {
             ListLink("Device and system", icon: "iphone") {
-                GoidaDeviceView()
+                DeviceView()
             }
             
             ListLink("Display", icon: "iphone") {
@@ -12,7 +12,7 @@ struct HomeView: View {
             }
             
             ListLink("Memory", icon: "memorychip") {
-                Goida_Memory_View()
+                MemoryView()
             }
             
             ListLink("Camera", icon: "camera") {
@@ -24,16 +24,16 @@ struct HomeView: View {
             }
             
             ListLink("Network", icon: "network") {
-                Goida_Network_View()
+                NetworkView()
             }
             
             ListLink("Sensors", icon: "barometer") {
-                Goida_Sensors_View()
+                SensorsView()
             }
             
             Section {
                 NavigationLink("Tests") {
-                    GoidaTestList()
+                    TestList()
                 }
             }
         }

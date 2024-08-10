@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct GoidaTestList: View {
+struct TestList: View {
     private let colorTests: [String: Color] = [
         "White": .white,
         "Black": .black,
@@ -30,5 +30,5 @@ struct GoidaTestList: View {
 }
 
 #Preview {
-    GoidaTestList()
+    TestList()
 }

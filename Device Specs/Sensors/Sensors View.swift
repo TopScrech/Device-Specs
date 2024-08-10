@@ -1,6 +1,6 @@
 import ScrechKit
 
-struct Goida_Sensors_View: View {
+struct SensorsView: View {
     private var location = LocationVM()
     private var orientation = OrientationVM()
     private var altitude = AltitudeVM()
@@ -58,5 +58,5 @@ struct Goida_Sensors_View: View {
 }
 
 #Preview {
-    Goida_Sensors_View()
+    SensorsView()
 }

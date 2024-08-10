@@ -1,6 +1,6 @@
 import ScrechKit
 
-struct GoidaDeviceView: View {
+struct DeviceView: View {
     private var vm = DeviceVM()
     //    private var bluetooth = BluetoothManager()
     //    let deviceIdentifier = UIDevice.current.identifierForVendor?.uuidString
@@ -37,5 +37,5 @@ struct GoidaDeviceView: View {
 }
 
 #Preview {
-    GoidaDeviceView()
+    DeviceView()
 }

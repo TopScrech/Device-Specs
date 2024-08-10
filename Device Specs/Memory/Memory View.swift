@@ -1,6 +1,6 @@
 import ScrechKit
 
-struct Goida_Memory_View: View {
+struct MemoryView: View {
     private var storage = StorageVM()
     private var memory = MemoryVM()
     
@@ -22,5 +22,5 @@ struct Goida_Memory_View: View {
 }
 
 #Preview {
-    Goida_Memory_View()
+    MemoryView()
 }
