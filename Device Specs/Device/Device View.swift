@@ -27,7 +27,7 @@ struct DeviceView: View {
             }
             
             Section("Capabilities") {
-                ListParameter("NFC", parameter: vm.isNfcAvailable)
+                ListParameter("Wireless Charging", parameter: Device.current.supportsWirelessCharging ? "Yes" : "No")
                 ListParameter("Ultra Wideband", parameter: vm.isUltraWidebandAvailable)
                 ListParameter("Force Touch", parameter: vm.isForceTouchAvailable)
                 ListParameter("5G", parameter: Device.current.has5gSupport ? "Yes" : "No")
