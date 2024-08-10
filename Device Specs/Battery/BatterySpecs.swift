@@ -1,6 +1,6 @@
 import ScrechKit
 
-struct GoidaBatteryView: View {
+struct BatterySpecs: View {
     private var vm = BatteryVM()
     
     var body: some View {
@@ -14,6 +14,6 @@ struct GoidaBatteryView: View {
 
 #Preview {
     NavigationView {
-        GoidaBatteryView()
+        BatterySpecs()
     }
 }

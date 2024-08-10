@@ -1,6 +1,6 @@
 import ScrechKit
 
-struct GoidaCameraView: View {
+struct CameraSpecs: View {
     private var vm = CameraVM()
     
     var body: some View {
@@ -30,5 +30,5 @@ struct GoidaCameraView: View {
 }
 
 #Preview {
-    GoidaCameraView()
+    CameraSpecs()
 }

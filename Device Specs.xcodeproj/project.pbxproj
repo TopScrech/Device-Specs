@@ -28,7 +28,7 @@
 		F3E7EC862C67B985008CD17B /* Color Test View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6D2C67B985008CD17B /* Color Test View.swift */; };
 		F3E7EC872C67B985008CD17B /* OrientationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC672C67B985008CD17B /* OrientationVM.swift */; };
 		F3E7EC882C67B985008CD17B /* Math Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC722C67B985008CD17B /* Math Utilities.swift */; };
-		F3E7EC892C67B985008CD17B /* GoidaBatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5A2C67B985008CD17B /* GoidaBatteryView.swift */; };
+		F3E7EC892C67B985008CD17B /* BatterySpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5A2C67B985008CD17B /* BatterySpecs.swift */; };
 		F3E7EC8A2C67B985008CD17B /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5B2C67B985008CD17B /* Battery VM.swift */; };
 		F3E7EC8B2C67B985008CD17B /* Bluetooth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC502C67B985008CD17B /* Bluetooth VM.swift */; };
 		F3E7EC8C2C67B985008CD17B /* Goida Display View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC542C67B985008CD17B /* Goida Display View.swift */; };
@@ -59,7 +59,7 @@
 		F3E7EC552C67B985008CD17B /* Display VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Display VM.swift"; sourceTree = "<group>"; };
 		F3E7EC572C67B985008CD17B /* Goida Camera View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goida Camera View.swift"; sourceTree = "<group>"; };
 		F3E7EC582C67B985008CD17B /* Camera VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera VM.swift"; sourceTree = "<group>"; };
-		F3E7EC5A2C67B985008CD17B /* GoidaBatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoidaBatteryView.swift; sourceTree = "<group>"; };
+		F3E7EC5A2C67B985008CD17B /* BatterySpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatterySpecs.swift; sourceTree = "<group>"; };
 		F3E7EC5B2C67B985008CD17B /* Battery VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery VM.swift"; sourceTree = "<group>"; };
 		F3E7EC5D2C67B985008CD17B /* Goida Memory View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goida Memory View.swift"; sourceTree = "<group>"; };
 		F3E7EC5E2C67B985008CD17B /* Storage VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storage VM.swift"; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 		F3E7EC5C2C67B985008CD17B /* Battery */ = {
 			isa = PBXGroup;
 			children = (
-				F3E7EC5A2C67B985008CD17B /* GoidaBatteryView.swift */,
+				F3E7EC5A2C67B985008CD17B /* BatterySpecs.swift */,
 				F3E7EC5B2C67B985008CD17B /* Battery VM.swift */,
 			);
 			path = Battery;
@@ -330,7 +330,7 @@
 				F3E7EC9B2C67B9CF008CD17B /* App Container.swift in Sources */,
 				F3E7EC872C67B985008CD17B /* OrientationVM.swift in Sources */,
 				F3E7EC882C67B985008CD17B /* Math Utilities.swift in Sources */,
-				F3E7EC892C67B985008CD17B /* GoidaBatteryView.swift in Sources */,
+				F3E7EC892C67B985008CD17B /* BatterySpecs.swift in Sources */,
 				F3E7EC8A2C67B985008CD17B /* Battery VM.swift in Sources */,
 				F3E7EC8B2C67B985008CD17B /* Bluetooth VM.swift in Sources */,
 				F3E7EC8C2C67B985008CD17B /* Goida Display View.swift in Sources */,

@@ -7,16 +7,20 @@ struct HomeView: View {
                 GoidaDeviceView()
             }
             
+            ListLink("Display", icon: "iphone") {
+                DisplaySpecs()
+            }
+            
             ListLink("Memory", icon: "memorychip") {
                 Goida_Memory_View()
             }
             
             ListLink("Camera", icon: "camera") {
-                GoidaCameraView()
+                CameraSpecs()
             }
             
             ListLink("Battery", icon: "battery.100percent.bolt") {
-                GoidaBatteryView()
+                BatterySpecs()
             }
             
             ListLink("Network", icon: "network") {

@@ -1,6 +1,6 @@
 import ScrechKit
 
-struct Goida_Display_View: View {
+struct DisplaySpecs: View {
     private var display = DisplayVM()
     
     var body: some View {
@@ -16,5 +16,5 @@ struct Goida_Display_View: View {
 }
 
 #Preview {
-    Goida_Display_View()
+    DisplaySpecs()
 }
