@@ -1,4 +1,4 @@
-#if canImport(CoreMotion) && !os(xrOS)
+#if canImport(CoreMotion) && !os(visionOS)
 import SwiftUI
 import CoreMotion
 
