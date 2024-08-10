@@ -7,17 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F3E7EC3E2C676A13008CD17B /* Device_SpecsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC3D2C676A13008CD17B /* Device_SpecsApp.swift */; };
-		F3E7EC402C676A13008CD17B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC3F2C676A13008CD17B /* ContentView.swift */; };
+		F3E7EC3E2C676A13008CD17B /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC3D2C676A13008CD17B /* Device Specs.swift */; };
 		F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
+		F3E7EC762C67B985008CD17B /* Goida Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6C2C67B985008CD17B /* Goida Test List.swift */; };
+		F3E7EC772C67B985008CD17B /* Goida Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Goida Network View.swift */; };
+		F3E7EC782C67B985008CD17B /* ListLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4F2C67B985008CD17B /* ListLink.swift */; };
+		F3E7EC792C67B985008CD17B /* Activity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6A2C67B985008CD17B /* Activity VM.swift */; };
+		F3E7EC7A2C67B985008CD17B /* Goida Device View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC512C67B985008CD17B /* Goida Device View.swift */; };
+		F3E7EC7B2C67B985008CD17B /* Device VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC522C67B985008CD17B /* Device VM.swift */; };
+		F3E7EC7C2C67B985008CD17B /* Altitude VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC692C67B985008CD17B /* Altitude VM.swift */; };
+		F3E7EC7D2C67B985008CD17B /* Goida Camera View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC572C67B985008CD17B /* Goida Camera View.swift */; };
+		F3E7EC7E2C67B985008CD17B /* Nearby VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC702C67B985008CD17B /* Nearby VM.swift */; };
+		F3E7EC7F2C67B985008CD17B /* Storage VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5E2C67B985008CD17B /* Storage VM.swift */; };
+		F3E7EC802C67B985008CD17B /* Display VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC552C67B985008CD17B /* Display VM.swift */; };
+		F3E7EC812C67B985008CD17B /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
+		F3E7EC822C67B985008CD17B /* Location VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC662C67B985008CD17B /* Location VM.swift */; };
+		F3E7EC832C67B985008CD17B /* MCPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC712C67B985008CD17B /* MCPSession.swift */; };
+		F3E7EC842C67B985008CD17B /* UWTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6F2C67B985008CD17B /* UWTestView.swift */; };
+		F3E7EC852C67B985008CD17B /* Goida Sensors View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC652C67B985008CD17B /* Goida Sensors View.swift */; };
+		F3E7EC862C67B985008CD17B /* Color Test View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6D2C67B985008CD17B /* Color Test View.swift */; };
+		F3E7EC872C67B985008CD17B /* OrientationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC672C67B985008CD17B /* OrientationVM.swift */; };
+		F3E7EC882C67B985008CD17B /* Math Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC722C67B985008CD17B /* Math Utilities.swift */; };
+		F3E7EC892C67B985008CD17B /* GoidaBatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5A2C67B985008CD17B /* GoidaBatteryView.swift */; };
+		F3E7EC8A2C67B985008CD17B /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5B2C67B985008CD17B /* Battery VM.swift */; };
+		F3E7EC8B2C67B985008CD17B /* Bluetooth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC502C67B985008CD17B /* Bluetooth VM.swift */; };
+		F3E7EC8C2C67B985008CD17B /* Goida Display View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC542C67B985008CD17B /* Goida Display View.swift */; };
+		F3E7EC8D2C67B985008CD17B /* Memory VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5F2C67B985008CD17B /* Memory VM.swift */; };
+		F3E7EC8E2C67B985008CD17B /* Camera VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC582C67B985008CD17B /* Camera VM.swift */; };
+		F3E7EC8F2C67B985008CD17B /* Goida Memory View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5D2C67B985008CD17B /* Goida Memory View.swift */; };
+		F3E7EC902C67B985008CD17B /* Device Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4D2C67B985008CD17B /* Device Info.swift */; };
+		F3E7EC912C67B985008CD17B /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4E2C67B985008CD17B /* Home View.swift */; };
+		F3E7EC922C67B985008CD17B /* Wifi VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Wifi VM.swift */; };
+		F3E7EC932C67B985008CD17B /* Pressure VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC682C67B985008CD17B /* Pressure VM.swift */; };
+		F3E7EC962C67B99E008CD17B /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E7EC952C67B99E008CD17B /* ScrechKit */; };
+		F3E7EC992C67B9A8008CD17B /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E7EC982C67B9A8008CD17B /* DeviceKit */; };
+		F3E7EC9B2C67B9CF008CD17B /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC9A2C67B9CF008CD17B /* App Container.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F3E7EC3A2C676A13008CD17B /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3E7EC3D2C676A13008CD17B /* Device_SpecsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device_SpecsApp.swift; sourceTree = "<group>"; };
-		F3E7EC3F2C676A13008CD17B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F3E7EC3D2C676A13008CD17B /* Device Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs.swift"; sourceTree = "<group>"; };
 		F3E7EC412C676A14008CD17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3E7EC432C676A14008CD17B /* Device_Specs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Device_Specs.entitlements; sourceTree = "<group>"; };
+		F3E7EC4D2C67B985008CD17B /* Device Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Info.swift"; sourceTree = "<group>"; };
+		F3E7EC4E2C67B985008CD17B /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
+		F3E7EC4F2C67B985008CD17B /* ListLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLink.swift; sourceTree = "<group>"; };
+		F3E7EC502C67B985008CD17B /* Bluetooth VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bluetooth VM.swift"; sourceTree = "<group>"; };
+		F3E7EC512C67B985008CD17B /* Goida Device View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goida Device View.swift"; sourceTree = "<group>"; };
+		F3E7EC522C67B985008CD17B /* Device VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device VM.swift"; sourceTree = "<group>"; };
+		F3E7EC542C67B985008CD17B /* Goida Display View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goida Display View.swift"; sourceTree = "<group>"; };
+		F3E7EC552C67B985008CD17B /* Display VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Display VM.swift"; sourceTree = "<group>"; };
+		F3E7EC572C67B985008CD17B /* Goida Camera View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goida Camera View.swift"; sourceTree = "<group>"; };
+		F3E7EC582C67B985008CD17B /* Camera VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera VM.swift"; sourceTree = "<group>"; };
+		F3E7EC5A2C67B985008CD17B /* GoidaBatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoidaBatteryView.swift; sourceTree = "<group>"; };
+		F3E7EC5B2C67B985008CD17B /* Battery VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery VM.swift"; sourceTree = "<group>"; };
+		F3E7EC5D2C67B985008CD17B /* Goida Memory View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goida Memory View.swift"; sourceTree = "<group>"; };
+		F3E7EC5E2C67B985008CD17B /* Storage VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storage VM.swift"; sourceTree = "<group>"; };
+		F3E7EC5F2C67B985008CD17B /* Memory VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Memory VM.swift"; sourceTree = "<group>"; };
+		F3E7EC612C67B985008CD17B /* Goida Network View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goida Network View.swift"; sourceTree = "<group>"; };
+		F3E7EC622C67B985008CD17B /* Wifi VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wifi VM.swift"; sourceTree = "<group>"; };
+		F3E7EC632C67B985008CD17B /* Network VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network VM.swift"; sourceTree = "<group>"; };
+		F3E7EC652C67B985008CD17B /* Goida Sensors View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goida Sensors View.swift"; sourceTree = "<group>"; };
+		F3E7EC662C67B985008CD17B /* Location VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location VM.swift"; sourceTree = "<group>"; };
+		F3E7EC672C67B985008CD17B /* OrientationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationVM.swift; sourceTree = "<group>"; };
+		F3E7EC682C67B985008CD17B /* Pressure VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pressure VM.swift"; sourceTree = "<group>"; };
+		F3E7EC692C67B985008CD17B /* Altitude VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Altitude VM.swift"; sourceTree = "<group>"; };
+		F3E7EC6A2C67B985008CD17B /* Activity VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity VM.swift"; sourceTree = "<group>"; };
+		F3E7EC6C2C67B985008CD17B /* Goida Test List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goida Test List.swift"; sourceTree = "<group>"; };
+		F3E7EC6D2C67B985008CD17B /* Color Test View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Test View.swift"; sourceTree = "<group>"; };
+		F3E7EC6F2C67B985008CD17B /* UWTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWTestView.swift; sourceTree = "<group>"; };
+		F3E7EC702C67B985008CD17B /* Nearby VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nearby VM.swift"; sourceTree = "<group>"; };
+		F3E7EC712C67B985008CD17B /* MCPSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPSession.swift; sourceTree = "<group>"; };
+		F3E7EC722C67B985008CD17B /* Math Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Math Utilities.swift"; sourceTree = "<group>"; };
+		F3E7EC9A2C67B9CF008CD17B /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E7EC962C67B99E008CD17B /* ScrechKit in Frameworks */,
+				F3E7EC992C67B9A8008CD17B /* DeviceKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +114,122 @@
 		F3E7EC4C2C67B8DA008CD17B /* Device Specs */ = {
 			isa = PBXGroup;
 			children = (
-				F3E7EC3D2C676A13008CD17B /* Device_SpecsApp.swift */,
-				F3E7EC3F2C676A13008CD17B /* ContentView.swift */,
+				F3E7EC3D2C676A13008CD17B /* Device Specs.swift */,
+				F3E7EC9A2C67B9CF008CD17B /* App Container.swift */,
 				F3E7EC412C676A14008CD17B /* Assets.xcassets */,
 				F3E7EC432C676A14008CD17B /* Device_Specs.entitlements */,
+				F3E7EC4D2C67B985008CD17B /* Device Info.swift */,
+				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
+				F3E7EC4F2C67B985008CD17B /* ListLink.swift */,
+				F3E7EC502C67B985008CD17B /* Bluetooth VM.swift */,
+				F3E7EC532C67B985008CD17B /* Device */,
+				F3E7EC562C67B985008CD17B /* Display */,
+				F3E7EC592C67B985008CD17B /* Camera */,
+				F3E7EC5C2C67B985008CD17B /* Battery */,
+				F3E7EC602C67B985008CD17B /* Memory */,
+				F3E7EC642C67B985008CD17B /* Network */,
+				F3E7EC6B2C67B985008CD17B /* Sensors */,
+				F3E7EC742C67B985008CD17B /* Tests */,
 			);
 			path = "Device Specs";
+			sourceTree = "<group>";
+		};
+		F3E7EC532C67B985008CD17B /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				F3E7EC512C67B985008CD17B /* Goida Device View.swift */,
+				F3E7EC522C67B985008CD17B /* Device VM.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		F3E7EC562C67B985008CD17B /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				F3E7EC542C67B985008CD17B /* Goida Display View.swift */,
+				F3E7EC552C67B985008CD17B /* Display VM.swift */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		F3E7EC592C67B985008CD17B /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				F3E7EC572C67B985008CD17B /* Goida Camera View.swift */,
+				F3E7EC582C67B985008CD17B /* Camera VM.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		F3E7EC5C2C67B985008CD17B /* Battery */ = {
+			isa = PBXGroup;
+			children = (
+				F3E7EC5A2C67B985008CD17B /* GoidaBatteryView.swift */,
+				F3E7EC5B2C67B985008CD17B /* Battery VM.swift */,
+			);
+			path = Battery;
+			sourceTree = "<group>";
+		};
+		F3E7EC602C67B985008CD17B /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				F3E7EC5D2C67B985008CD17B /* Goida Memory View.swift */,
+				F3E7EC5E2C67B985008CD17B /* Storage VM.swift */,
+				F3E7EC5F2C67B985008CD17B /* Memory VM.swift */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		F3E7EC642C67B985008CD17B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F3E7EC612C67B985008CD17B /* Goida Network View.swift */,
+				F3E7EC622C67B985008CD17B /* Wifi VM.swift */,
+				F3E7EC632C67B985008CD17B /* Network VM.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F3E7EC6B2C67B985008CD17B /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				F3E7EC652C67B985008CD17B /* Goida Sensors View.swift */,
+				F3E7EC662C67B985008CD17B /* Location VM.swift */,
+				F3E7EC672C67B985008CD17B /* OrientationVM.swift */,
+				F3E7EC682C67B985008CD17B /* Pressure VM.swift */,
+				F3E7EC692C67B985008CD17B /* Altitude VM.swift */,
+				F3E7EC6A2C67B985008CD17B /* Activity VM.swift */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		F3E7EC6E2C67B985008CD17B /* Color Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F3E7EC6D2C67B985008CD17B /* Color Test View.swift */,
+			);
+			path = "Color Tests";
+			sourceTree = "<group>";
+		};
+		F3E7EC732C67B985008CD17B /* Ultra Wideband Test */ = {
+			isa = PBXGroup;
+			children = (
+				F3E7EC6F2C67B985008CD17B /* UWTestView.swift */,
+				F3E7EC702C67B985008CD17B /* Nearby VM.swift */,
+				F3E7EC712C67B985008CD17B /* MCPSession.swift */,
+				F3E7EC722C67B985008CD17B /* Math Utilities.swift */,
+			);
+			path = "Ultra Wideband Test";
+			sourceTree = "<group>";
+		};
+		F3E7EC742C67B985008CD17B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F3E7EC6C2C67B985008CD17B /* Goida Test List.swift */,
+				F3E7EC6E2C67B985008CD17B /* Color Tests */,
+				F3E7EC732C67B985008CD17B /* Ultra Wideband Test */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -75,6 +249,8 @@
 			);
 			name = "Device Specs";
 			packageProductDependencies = (
+				F3E7EC952C67B99E008CD17B /* ScrechKit */,
+				F3E7EC982C67B9A8008CD17B /* DeviceKit */,
 			);
 			productName = "Device Specs";
 			productReference = F3E7EC3A2C676A13008CD17B /* Device Specs.app */;
@@ -105,6 +281,10 @@
 			);
 			mainGroup = F3E7EC312C676A13008CD17B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */,
+				F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */,
+			);
 			productRefGroup = F3E7EC3B2C676A13008CD17B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,8 +310,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3E7EC402C676A13008CD17B /* ContentView.swift in Sources */,
-				F3E7EC3E2C676A13008CD17B /* Device_SpecsApp.swift in Sources */,
+				F3E7EC762C67B985008CD17B /* Goida Test List.swift in Sources */,
+				F3E7EC772C67B985008CD17B /* Goida Network View.swift in Sources */,
+				F3E7EC782C67B985008CD17B /* ListLink.swift in Sources */,
+				F3E7EC792C67B985008CD17B /* Activity VM.swift in Sources */,
+				F3E7EC7A2C67B985008CD17B /* Goida Device View.swift in Sources */,
+				F3E7EC7B2C67B985008CD17B /* Device VM.swift in Sources */,
+				F3E7EC7C2C67B985008CD17B /* Altitude VM.swift in Sources */,
+				F3E7EC7D2C67B985008CD17B /* Goida Camera View.swift in Sources */,
+				F3E7EC7E2C67B985008CD17B /* Nearby VM.swift in Sources */,
+				F3E7EC7F2C67B985008CD17B /* Storage VM.swift in Sources */,
+				F3E7EC802C67B985008CD17B /* Display VM.swift in Sources */,
+				F3E7EC812C67B985008CD17B /* Network VM.swift in Sources */,
+				F3E7EC822C67B985008CD17B /* Location VM.swift in Sources */,
+				F3E7EC832C67B985008CD17B /* MCPSession.swift in Sources */,
+				F3E7EC842C67B985008CD17B /* UWTestView.swift in Sources */,
+				F3E7EC852C67B985008CD17B /* Goida Sensors View.swift in Sources */,
+				F3E7EC862C67B985008CD17B /* Color Test View.swift in Sources */,
+				F3E7EC9B2C67B9CF008CD17B /* App Container.swift in Sources */,
+				F3E7EC872C67B985008CD17B /* OrientationVM.swift in Sources */,
+				F3E7EC882C67B985008CD17B /* Math Utilities.swift in Sources */,
+				F3E7EC892C67B985008CD17B /* GoidaBatteryView.swift in Sources */,
+				F3E7EC8A2C67B985008CD17B /* Battery VM.swift in Sources */,
+				F3E7EC8B2C67B985008CD17B /* Bluetooth VM.swift in Sources */,
+				F3E7EC8C2C67B985008CD17B /* Goida Display View.swift in Sources */,
+				F3E7EC8D2C67B985008CD17B /* Memory VM.swift in Sources */,
+				F3E7EC8E2C67B985008CD17B /* Camera VM.swift in Sources */,
+				F3E7EC8F2C67B985008CD17B /* Goida Memory View.swift in Sources */,
+				F3E7EC902C67B985008CD17B /* Device Info.swift in Sources */,
+				F3E7EC912C67B985008CD17B /* Home View.swift in Sources */,
+				F3E7EC922C67B985008CD17B /* Wifi VM.swift in Sources */,
+				F3E7EC932C67B985008CD17B /* Pressure VM.swift in Sources */,
+				F3E7EC3E2C676A13008CD17B /* Device Specs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +562,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/ScrechKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+		F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devicekit/DeviceKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3E7EC952C67B99E008CD17B /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F3E7EC982C67B9A8008CD17B /* DeviceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
+			productName = DeviceKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F3E7EC322C676A13008CD17B /* Project object */;
 }
