@@ -21,9 +21,11 @@ class MPCSession: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
         serviceString = service
         identityString = identity
         mcSession = MCSession(peer: localPeerID, securityIdentity: nil, encryptionPreference: .required)
-        mcAdvertiser = MCNearbyServiceAdvertiser(peer: localPeerID,
-                                                 discoveryInfo: [MPCSessionConstants.kKeyIdentity: identityString],
-                                                 serviceType: serviceString)
+        mcAdvertiser = MCNearbyServiceAdvertiser(
+            peer: localPeerID,
+            discoveryInfo: [MPCSessionConstants.kKeyIdentity: identityString],
+            serviceType: serviceString
+        )
         mcBrowser = MCNearbyServiceBrowser(peer: localPeerID, serviceType: serviceString)
         maxNumPeers = maxPeers
         

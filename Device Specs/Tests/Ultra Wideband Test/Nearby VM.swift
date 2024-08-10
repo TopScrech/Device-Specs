@@ -205,10 +205,12 @@ class NearbyVM: NSObject, NISessionDelegate {
         if mpc == nil {
             // Prevent Simulator from finding devices
 #if targetEnvironment(simulator)
-            mpc = MPCSession(service: "nisample", identity: "com.example.apple-samplecode.simulator.peekaboo-nearbyinteraction", maxPeers: 1)
+            let identity = "dev.topscrech.Device-Specs.simulator"
 #else
-            mpc = MPCSession(service: "nisample", identity: "com.example.apple-samplecode.peekaboo-nearbyinteraction", maxPeers: 1)
+            let identity = "dev.topscrech.Device-Specs"
 #endif
+            
+            mpc = MPCSession(service: "specs", identity: identity, maxPeers: 1)
             mpc?.peerConnectedHandler = connectedToPeer
             mpc?.peerDataHandler = dataReceivedHandler
             mpc?.peerDisconnectedHandler = disconnectedFromPeer

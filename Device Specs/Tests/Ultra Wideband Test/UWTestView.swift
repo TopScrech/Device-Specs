@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct UWTestView: View {
-    private var vm = NearbyVM()
+    @State private var vm = NearbyVM()
     
     var body: some View {
         @Bindable var binding = vm
@@ -23,8 +23,10 @@ struct UWTestView: View {
                 Text(vm.azimuthText)
                     .monospaced()
                     .padding(.horizontal, 5)
-                    .foregroundStyle(vm.currentDistanceDirectionState == .unknown ||
-                                     vm.currentDistanceDirectionState == .outOfFOV ? .red : .primary)
+                    .foregroundStyle(
+                        vm.currentDistanceDirectionState == .unknown ||
+                        vm.currentDistanceDirectionState == .outOfFOV ? .red : .primary
+                    )
                 
                 Image(systemName: "arrow.turn.up.right")
                     .foregroundStyle(vm.azimuthText.contains("-") ? .secondary : .primary)

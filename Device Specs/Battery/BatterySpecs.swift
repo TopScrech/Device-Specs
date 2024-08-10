@@ -1,4 +1,5 @@
 import ScrechKit
+import DeviceKit
 
 struct BatterySpecs: View {
     private var vm = BatteryVM()

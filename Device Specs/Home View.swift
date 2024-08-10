@@ -37,7 +37,7 @@ struct HomeView: View {
                 }
             }
         }
-        .navigationTitle("GOIDA24")
+        .navigationTitle("Device Specs")
     }
 }
 
