@@ -6,17 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F3E7EC3E2C676A13008CD17B /* Device_SpecsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC3D2C676A13008CD17B /* Device_SpecsApp.swift */; };
+		F3E7EC402C676A13008CD17B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC3F2C676A13008CD17B /* ContentView.swift */; };
+		F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F3E7EC3A2C676A13008CD17B /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3E7EC3D2C676A13008CD17B /* Device_SpecsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device_SpecsApp.swift; sourceTree = "<group>"; };
+		F3E7EC3F2C676A13008CD17B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F3E7EC412C676A14008CD17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3E7EC432C676A14008CD17B /* Device_Specs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Device_Specs.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F3E7EC3C2C676A13008CD17B /* Device Specs */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Device Specs";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F3E7EC372C676A13008CD17B /* Frameworks */ = {
@@ -32,7 +34,7 @@
 		F3E7EC312C676A13008CD17B = {
 			isa = PBXGroup;
 			children = (
-				F3E7EC3C2C676A13008CD17B /* Device Specs */,
+				F3E7EC4C2C67B8DA008CD17B /* Device Specs */,
 				F3E7EC3B2C676A13008CD17B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +45,17 @@
 				F3E7EC3A2C676A13008CD17B /* Device Specs.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F3E7EC4C2C67B8DA008CD17B /* Device Specs */ = {
+			isa = PBXGroup;
+			children = (
+				F3E7EC3D2C676A13008CD17B /* Device_SpecsApp.swift */,
+				F3E7EC3F2C676A13008CD17B /* ContentView.swift */,
+				F3E7EC412C676A14008CD17B /* Assets.xcassets */,
+				F3E7EC432C676A14008CD17B /* Device_Specs.entitlements */,
+			);
+			path = "Device Specs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +72,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				F3E7EC3C2C676A13008CD17B /* Device Specs */,
 			);
 			name = "Device Specs";
 			packageProductDependencies = (
@@ -109,6 +119,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +130,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E7EC402C676A13008CD17B /* ContentView.swift in Sources */,
+				F3E7EC3E2C676A13008CD17B /* Device_SpecsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +260,6 @@
 				CODE_SIGN_ENTITLEMENTS = "Device Specs/Device_Specs.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Device Specs/Preview Content\"";
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -286,7 +298,6 @@
 				CODE_SIGN_ENTITLEMENTS = "Device Specs/Device_Specs.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Device Specs/Preview Content\"";
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;

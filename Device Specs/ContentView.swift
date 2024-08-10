@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Device Specs
-//
-//  Created by Sergei Saliukov on 10/8/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
