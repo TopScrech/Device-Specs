@@ -7,6 +7,10 @@ struct UWTestView: View {
         @Bindable var binding = vm
         
         VStack(spacing: 20) {
+            if vm.distance.isEmpty {
+                Text("Open this app section on another UWB-capable device")
+            }
+            
             Text(vm.distance)
                 .title(.bold)
                 .animation(.easeIn, value: vm.distance)
