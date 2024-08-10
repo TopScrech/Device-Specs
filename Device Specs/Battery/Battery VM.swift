@@ -4,18 +4,18 @@ import SwiftUI
 final class BatteryVM {
     var batteryLevel = ""
     var batteryState = ""
-//    init() {
-//        NotificationCenter.default.addObserver(self, selector: #selector(batteryLevelDidChange), name: .UIDeviceBatteryLevelDidChange, object: nil)
-//    }
-//    
-//    func batteryLevelDidChange(_ notification: Notification) {
-//        print(batteryLevel)
-//    }
+    //    init() {
+    //        NotificationCenter.default.addObserver(self, selector: #selector(batteryLevelDidChange), name: .UIDeviceBatteryLevelDidChange, object: nil)
+    //    }
+    //
+    //    func batteryLevelDidChange(_ notification: Notification) {
+    //        print(batteryLevel)
+    //    }
     
     init() {
         fetchBatteryInfo()
     }
-
+    
     func fetchBatteryInfo() {
         UIDevice.current.isBatteryMonitoringEnabled = true
         
