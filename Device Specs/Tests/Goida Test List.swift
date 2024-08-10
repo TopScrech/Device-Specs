@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct TestList: View {
+    @State private var torch = TorchVM()
+    
     private let colorTests: [String: Color] = [
         "White": .white,
         "Black": .black,
@@ -25,6 +27,17 @@ struct TestList: View {
                     }
                 }
             }
+            
+#if !targetEnvironment(simulator)
+            Section("Flashlight") {
+                Button {
+                    torch.toggleTorch()
+                } label: {
+                    Label("Flashlight", systemImage: torch.isTorchOn ? "flashlight.on.fill" : "flashlight.off.fill")
+                        .foregroundStyle(.foreground)
+                }
+            }
+#endif
         }
     }
 }

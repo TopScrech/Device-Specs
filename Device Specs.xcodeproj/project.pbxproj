@@ -42,6 +42,7 @@
 		F3E7EC962C67B99E008CD17B /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E7EC952C67B99E008CD17B /* ScrechKit */; };
 		F3E7EC992C67B9A8008CD17B /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E7EC982C67B9A8008CD17B /* DeviceKit */; };
 		F3E7EC9B2C67B9CF008CD17B /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC9A2C67B9CF008CD17B /* App Container.swift */; };
+		F3E7EC9E2C680561008CD17B /* Torch VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC9D2C680561008CD17B /* Torch VM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		F3E7EC722C67B985008CD17B /* Math Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Math Utilities.swift"; sourceTree = "<group>"; };
 		F3E7EC9A2C67B9CF008CD17B /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F3E7EC9C2C67BD99008CD17B /* Device-Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Device-Specs-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F3E7EC9D2C680561008CD17B /* Torch VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Torch VM.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC6C2C67B985008CD17B /* Goida Test List.swift */,
+				F3E7EC9D2C680561008CD17B /* Torch VM.swift */,
 				F3E7EC6E2C67B985008CD17B /* Color Tests */,
 				F3E7EC732C67B985008CD17B /* Ultra Wideband Test */,
 			);
@@ -319,6 +322,7 @@
 				F3E7EC7A2C67B985008CD17B /* Device View.swift in Sources */,
 				F3E7EC7B2C67B985008CD17B /* Device VM.swift in Sources */,
 				F3E7EC7C2C67B985008CD17B /* Altitude VM.swift in Sources */,
+				F3E7EC9E2C680561008CD17B /* Torch VM.swift in Sources */,
 				F3E7EC7D2C67B985008CD17B /* Camera Specs.swift in Sources */,
 				F3E7EC7E2C67B985008CD17B /* Nearby VM.swift in Sources */,
 				F3E7EC7F2C67B985008CD17B /* Storage VM.swift in Sources */,
