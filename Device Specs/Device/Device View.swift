@@ -1,4 +1,5 @@
 import ScrechKit
+import DeviceKit
 
 struct DeviceView: View {
     private var vm = DeviceVM()
@@ -8,8 +9,8 @@ struct DeviceView: View {
     var body: some View {
         List {
             Section("Device") {
-                ListParameter("Device", parameter: vm.deviceName)
-                ListParameter("Model", parameter: vm.deviceIdentifier ?? "-")
+                ListParameter("Device", parameter: "\(Device.current)")
+                ListParameter("Identifier", parameter: "\(Device.identifier)")
                 ListParameter("Architecture", parameter: vm.architecture)
             }
             
@@ -29,6 +30,9 @@ struct DeviceView: View {
                 ListParameter("NFC", parameter: vm.isNfcAvailable)
                 ListParameter("Ultra Wideband", parameter: vm.isUltraWidebandAvailable)
                 ListParameter("Force Touch", parameter: vm.isForceTouchAvailable)
+                ListParameter("5G", parameter: Device.current.has5gSupport ? "Yes" : "No")
+                ListParameter("Dynamic Island", parameter: Device.current.hasDynamicIsland ? "Yes" : "No")
+                ListParameter("Face ID", parameter: Device.current.isFaceIDCapable ? "Yes" : "No")
                 //                ListParameter("Bluetooth LE", parameter: bluetooth.isBluetoothLeEnabled)
             }
         }
