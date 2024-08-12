@@ -18,7 +18,7 @@ struct ListLink <Destination: View>: View {
     var body: some View {
         NavigationLink(destination: destination) {
             Label(title, systemImage: icon)
-                .foregroundStyle(.white)
+                .foregroundStyle(.foreground)
                 .symbolRenderingMode(.multicolor)
         }
     }
