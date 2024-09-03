@@ -9,6 +9,7 @@ class MPCSession: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
     var peerDataHandler: ((Data, MCPeerID) -> Void)?
     var peerConnectedHandler: ((MCPeerID) -> Void)?
     var peerDisconnectedHandler: ((MCPeerID) -> Void)?
+    
     private let serviceString: String
     private let mcSession: MCSession
     private let localPeerID = MCPeerID(displayName: UIDevice.current.name)

@@ -6,7 +6,7 @@
 	<false/>
 	<key>NSBonjourServices</key>
 	<array>
-		<string>_nisample._tcp</string>
+		<string>_specs._tcp</string>
 	</array>
 </dict>
 </plist>
