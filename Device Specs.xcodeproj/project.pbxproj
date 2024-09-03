@@ -22,7 +22,7 @@
 		F3E7EC802C67B985008CD17B /* Display VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC552C67B985008CD17B /* Display VM.swift */; };
 		F3E7EC812C67B985008CD17B /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
 		F3E7EC822C67B985008CD17B /* Location VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC662C67B985008CD17B /* Location VM.swift */; };
-		F3E7EC832C67B985008CD17B /* MCPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC712C67B985008CD17B /* MCPSession.swift */; };
+		F3E7EC832C67B985008CD17B /* MCP Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC712C67B985008CD17B /* MCP Session.swift */; };
 		F3E7EC842C67B985008CD17B /* UWTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6F2C67B985008CD17B /* UWTestView.swift */; };
 		F3E7EC852C67B985008CD17B /* Sensors View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC652C67B985008CD17B /* Sensors View.swift */; };
 		F3E7EC862C67B985008CD17B /* Color Test View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6D2C67B985008CD17B /* Color Test View.swift */; };
@@ -78,7 +78,7 @@
 		F3E7EC6D2C67B985008CD17B /* Color Test View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Test View.swift"; sourceTree = "<group>"; };
 		F3E7EC6F2C67B985008CD17B /* UWTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWTestView.swift; sourceTree = "<group>"; };
 		F3E7EC702C67B985008CD17B /* Nearby VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nearby VM.swift"; sourceTree = "<group>"; };
-		F3E7EC712C67B985008CD17B /* MCPSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPSession.swift; sourceTree = "<group>"; };
+		F3E7EC712C67B985008CD17B /* MCP Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MCP Session.swift"; sourceTree = "<group>"; };
 		F3E7EC722C67B985008CD17B /* Math Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Math Utilities.swift"; sourceTree = "<group>"; };
 		F3E7EC9A2C67B9CF008CD17B /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F3E7EC9C2C67BD99008CD17B /* Device-Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Device-Specs-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -220,7 +220,7 @@
 			children = (
 				F3E7EC6F2C67B985008CD17B /* UWTestView.swift */,
 				F3E7EC702C67B985008CD17B /* Nearby VM.swift */,
-				F3E7EC712C67B985008CD17B /* MCPSession.swift */,
+				F3E7EC712C67B985008CD17B /* MCP Session.swift */,
 				F3E7EC722C67B985008CD17B /* Math Utilities.swift */,
 			);
 			path = "Ultra Wideband Test";
@@ -329,7 +329,7 @@
 				F3E7EC802C67B985008CD17B /* Display VM.swift in Sources */,
 				F3E7EC812C67B985008CD17B /* Network VM.swift in Sources */,
 				F3E7EC822C67B985008CD17B /* Location VM.swift in Sources */,
-				F3E7EC832C67B985008CD17B /* MCPSession.swift in Sources */,
+				F3E7EC832C67B985008CD17B /* MCP Session.swift in Sources */,
 				F3E7EC842C67B985008CD17B /* UWTestView.swift in Sources */,
 				F3E7EC852C67B985008CD17B /* Sensors View.swift in Sources */,
 				F3E7EC862C67B985008CD17B /* Color Test View.swift in Sources */,

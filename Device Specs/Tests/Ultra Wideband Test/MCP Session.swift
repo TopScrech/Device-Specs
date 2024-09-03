@@ -21,11 +21,13 @@ class MPCSession: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
         serviceString = service
         identityString = identity
         mcSession = MCSession(peer: localPeerID, securityIdentity: nil, encryptionPreference: .required)
+        
         mcAdvertiser = MCNearbyServiceAdvertiser(
             peer: localPeerID,
             discoveryInfo: [MPCSessionConstants.kKeyIdentity: identityString],
             serviceType: serviceString
         )
+        
         mcBrowser = MCNearbyServiceBrowser(peer: localPeerID, serviceType: serviceString)
         maxNumPeers = maxPeers
         
@@ -93,10 +95,10 @@ class MPCSession: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
         switch state {
         case .connected:
             peerConnected(peerID: peerID)
-        
+            
         case .notConnected:
             peerDisconnected(peerID: peerID)
-        
+            
         case .connecting:
             break
             
@@ -124,11 +126,13 @@ class MPCSession: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
         // The sample app intentional omits this implementation
     }
     
-    internal func session(_ session: MCSession,
-                          didFinishReceivingResourceWithName resourceName: String,
-                          fromPeer peerID: MCPeerID,
-                          at localURL: URL?,
-                          withError error: Error?) {
+    internal func session(
+        _ session: MCSession,
+        didFinishReceivingResourceWithName resourceName: String,
+        fromPeer peerID: MCPeerID,
+        at localURL: URL?,
+        withError error: Error?
+    ) {
         // The sample app intentional omits this implementation
     }
     
@@ -148,10 +152,12 @@ class MPCSession: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
     }
     
     // MARK: - `MCNearbyServiceAdvertiserDelegate`
-    internal func advertiser(_ advertiser: MCNearbyServiceAdvertiser,
-                             didReceiveInvitationFromPeer peerID: MCPeerID,
-                             withContext context: Data?,
-                             invitationHandler: @escaping (Bool, MCSession?) -> Void) {
+    internal func advertiser(
+        _ advertiser: MCNearbyServiceAdvertiser,
+        didReceiveInvitationFromPeer peerID: MCPeerID,
+        withContext context: Data?,
+        invitationHandler: @escaping (Bool, MCSession?) -> Void
+    ) {
         if mcSession.connectedPeers.count < maxNumPeers {
             invitationHandler(true, mcSession)
         }
