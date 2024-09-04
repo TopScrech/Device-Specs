@@ -16,6 +16,7 @@ final class DeviceVM {
     // Capabilities
     let isNfcAvailable = NFCNDEFReaderSession.readingAvailable ? "Yes" : "No"
     var isForceTouchAvailable = ""
+    
     var isUltraWidebandAvailable: String {
         if #available(iOS 16, watchOS 9, *) {
             NISession.deviceCapabilities.supportsPreciseDistanceMeasurement ? "Yes" : "No"
@@ -81,7 +82,10 @@ final class DeviceVM {
     func fetchDeviceModelIdentifier() {
         var sysinfo = utsname()
         uname(&sysinfo)
-        deviceIdentifier = String(bytes: Data(bytes: &sysinfo.machine, count: Int(_SYS_NAMELEN)), encoding: .ascii)?
+        
+        let bytes = Data(bytes: &sysinfo.machine, count: Int(_SYS_NAMELEN))
+        
+        deviceIdentifier = String(bytes: bytes, encoding: .ascii)?
             .trimmingCharacters(in: .controlCharacters)
     }
     
