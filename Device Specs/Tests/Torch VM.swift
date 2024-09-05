@@ -15,8 +15,9 @@ final class TorchVM {
     }
     
     func toggleTorch() {
-        guard let device = AVCaptureDevice.default(for: .video),
-              device.hasTorch
+        guard
+            let device = AVCaptureDevice.default(for: .video),
+            device.hasTorch
         else {
             return
         }

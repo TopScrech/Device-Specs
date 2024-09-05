@@ -1,6 +1,8 @@
 import ScrechKit
 
 struct HomeView: View {
+    @Environment(NavState.self) private var navState
+    
     var body: some View {
         List {
             ListLink("Device and system", icon: "info.circle") {
@@ -32,9 +34,10 @@ struct HomeView: View {
             }
             
             Section {
-                NavigationLink("Tests") {
-                    TestList()
+                Button("Tests") {
+                    navState.navigate(.toTests)
                 }
+                .foregroundStyle(.foreground)
             }
         }
         .navigationTitle("Device Specs")

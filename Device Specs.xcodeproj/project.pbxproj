@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3187A502C898B37008FB911 /* Nav State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A4F2C898B37008FB911 /* Nav State.swift */; };
+		F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A522C898B62008FB911 /* Nav Destinations.swift */; };
+		F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A542C898B7E008FB911 /* Nav Extension.swift */; };
 		F3E7EC3E2C676A13008CD17B /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC3D2C676A13008CD17B /* Device Specs.swift */; };
 		F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
-		F3E7EC762C67B985008CD17B /* Goida Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6C2C67B985008CD17B /* Goida Test List.swift */; };
+		F3E7EC762C67B985008CD17B /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6C2C67B985008CD17B /* Test List.swift */; };
 		F3E7EC772C67B985008CD17B /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
 		F3E7EC782C67B985008CD17B /* ListLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4F2C67B985008CD17B /* ListLink.swift */; };
 		F3E7EC792C67B985008CD17B /* Activity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6A2C67B985008CD17B /* Activity VM.swift */; };
@@ -46,6 +49,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F3187A4F2C898B37008FB911 /* Nav State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav State.swift"; sourceTree = "<group>"; };
+		F3187A522C898B62008FB911 /* Nav Destinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Destinations.swift"; sourceTree = "<group>"; };
+		F3187A542C898B7E008FB911 /* Nav Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Extension.swift"; sourceTree = "<group>"; };
 		F3E7EC3A2C676A13008CD17B /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E7EC3D2C676A13008CD17B /* Device Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs.swift"; sourceTree = "<group>"; };
 		F3E7EC412C676A14008CD17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,7 +80,7 @@
 		F3E7EC682C67B985008CD17B /* Pressure VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pressure VM.swift"; sourceTree = "<group>"; };
 		F3E7EC692C67B985008CD17B /* Altitude VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Altitude VM.swift"; sourceTree = "<group>"; };
 		F3E7EC6A2C67B985008CD17B /* Activity VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity VM.swift"; sourceTree = "<group>"; };
-		F3E7EC6C2C67B985008CD17B /* Goida Test List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goida Test List.swift"; sourceTree = "<group>"; };
+		F3E7EC6C2C67B985008CD17B /* Test List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test List.swift"; sourceTree = "<group>"; };
 		F3E7EC6D2C67B985008CD17B /* Color Test View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Test View.swift"; sourceTree = "<group>"; };
 		F3E7EC6F2C67B985008CD17B /* UW Test View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UW Test View.swift"; sourceTree = "<group>"; };
 		F3E7EC702C67B985008CD17B /* Nearby VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nearby VM.swift"; sourceTree = "<group>"; };
@@ -98,6 +104,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3187A512C898B40008FB911 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F3E7EC9A2C67B9CF008CD17B /* App Container.swift */,
+				F3187A4F2C898B37008FB911 /* Nav State.swift */,
+				F3187A522C898B62008FB911 /* Nav Destinations.swift */,
+				F3187A542C898B7E008FB911 /* Nav Extension.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		F3E7EC312C676A13008CD17B = {
 			isa = PBXGroup;
 			children = (
@@ -118,10 +135,10 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC3D2C676A13008CD17B /* Device Specs.swift */,
-				F3E7EC9A2C67B9CF008CD17B /* App Container.swift */,
 				F3E7EC412C676A14008CD17B /* Assets.xcassets */,
 				F3E7EC432C676A14008CD17B /* Device_Specs.entitlements */,
 				F3E7EC9C2C67BD99008CD17B /* Device-Specs-Info.plist */,
+				F3187A512C898B40008FB911 /* Navigation */,
 				F3E7EC4D2C67B985008CD17B /* Device Info.swift */,
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
 				F3E7EC4F2C67B985008CD17B /* ListLink.swift */,
@@ -229,7 +246,7 @@
 		F3E7EC742C67B985008CD17B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				F3E7EC6C2C67B985008CD17B /* Goida Test List.swift */,
+				F3E7EC6C2C67B985008CD17B /* Test List.swift */,
 				F3E7EC9D2C680561008CD17B /* Torch VM.swift */,
 				F3E7EC6E2C67B985008CD17B /* Color Tests */,
 				F3E7EC732C67B985008CD17B /* Ultra Wideband Test */,
@@ -315,11 +332,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3E7EC762C67B985008CD17B /* Goida Test List.swift in Sources */,
+				F3E7EC762C67B985008CD17B /* Test List.swift in Sources */,
 				F3E7EC772C67B985008CD17B /* Network View.swift in Sources */,
 				F3E7EC782C67B985008CD17B /* ListLink.swift in Sources */,
 				F3E7EC792C67B985008CD17B /* Activity VM.swift in Sources */,
 				F3E7EC7A2C67B985008CD17B /* Device View.swift in Sources */,
+				F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */,
 				F3E7EC7B2C67B985008CD17B /* Device VM.swift in Sources */,
 				F3E7EC7C2C67B985008CD17B /* Altitude VM.swift in Sources */,
 				F3E7EC9E2C680561008CD17B /* Torch VM.swift in Sources */,
@@ -339,7 +357,9 @@
 				F3E7EC892C67B985008CD17B /* Battery Specs.swift in Sources */,
 				F3E7EC8A2C67B985008CD17B /* Battery VM.swift in Sources */,
 				F3E7EC8B2C67B985008CD17B /* Bluetooth VM.swift in Sources */,
+				F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */,
 				F3E7EC8C2C67B985008CD17B /* Display View.swift in Sources */,
+				F3187A502C898B37008FB911 /* Nav State.swift in Sources */,
 				F3E7EC8D2C67B985008CD17B /* Memory VM.swift in Sources */,
 				F3E7EC8E2C67B985008CD17B /* Camera VM.swift in Sources */,
 				F3E7EC8F2C67B985008CD17B /* Memory View.swift in Sources */,
@@ -502,7 +522,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 0.9;
+				MARKETING_VERSION = 0.9.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -549,7 +569,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 0.9;
+				MARKETING_VERSION = 0.9.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;

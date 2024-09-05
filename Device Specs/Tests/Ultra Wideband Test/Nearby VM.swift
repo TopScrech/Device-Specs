@@ -44,6 +44,7 @@ class NearbyVM: NSObject, NISessionDelegate {
     override init() {
         super.init()
         startup()
+        print("UWB Init")
     }
     
     func startup() {

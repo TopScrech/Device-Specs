@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct TestList: View {
+    @Environment(NavState.self) private var navState
     @State private var torch = TorchVM()
     
     private let colorTests: [String: Color] = [
@@ -14,9 +15,10 @@ struct TestList: View {
     var body: some View {
         List {
             Section {
-                NavigationLink("Ultra Wideband Test") {
-                    UWTestView()
+                Button("Ultra Wideband Test") {
+                    navState.navigate(.toUwbTest)
                 }
+                .foregroundStyle(.foreground)
                 .disabled(!DeviceInfo.isUltraWidebandAvailable)
             }
             
