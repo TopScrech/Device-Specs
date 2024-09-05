@@ -23,6 +23,7 @@ final class BatteryVM {
         batteryLevel = batteryLevelNumber + "%"
         
         let batteryStateEnum = UIDevice.current.batteryState
+        
         switch batteryStateEnum {
         case .unknown:
             batteryState = "Unknown"
