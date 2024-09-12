@@ -1,18 +1,22 @@
 import ScrechKit
 
 struct NetworkView: View {
-    private var network = NetworkVM()
-    private var wifi = WifiVM()
+    @State private var network = NetworkVM()
+    @State private var wifi = WifiVM()
     
     var body: some View {
         List {
-//            if let ipAddress = network.getIPAddress() {
-            ListParameter("IP-address", parameter: network.address)
+            ListParameter("Public IP address", parameter: network.publicIp)
+            
+            ListParameter("Network interface", parameter: network.networkinterface)
+            
+#warning("Router differs from settings")
             ListParameter("Router", parameter: network.router)
-//            }
+            
+            ListParameter("Subnet Mask", parameter: network.subnetMask)
             
             Section("Wi-Fi") {
-                ListParameter("Connected to...", parameter: wifi.networkStatus)
+                ListParameter("Network type", parameter: wifi.networkStatus)
                 ListParameter("Name", parameter: wifi.ssid)
                 ListParameter("Address", parameter: wifi.bssid)
             }
@@ -22,7 +26,7 @@ struct NetworkView: View {
             network.getIPAddresses()
         }
     }
-}
+} 
 
 #Preview {
     NetworkView()

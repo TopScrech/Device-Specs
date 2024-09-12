@@ -20,25 +20,31 @@ final class WifiVM {
         monitor.start(queue: queue)
         
         monitor.pathUpdateHandler = { [weak self] path in
-            switch true {
-            case path.usesInterfaceType(.wifi):
-                self?.networkStatus = "Wi-Fi"
-                self?.getWiFiInfo() // Fetch Wi-Fi info when interface is active
-                
-            case path.usesInterfaceType(.cellular):
-                self?.networkStatus = "Cellular"
-                
-            case path.usesInterfaceType(.wiredEthernet):
-                self?.networkStatus = "Wired Ethernet"
-                
-            case path.usesInterfaceType(.loopback):
-                self?.networkStatus = "Loopback Interface"
-                
-            case path.usesInterfaceType(.other):
-                self?.networkStatus = "Other Interface"
-                
-            default:
-                self?.networkStatus = "No Interface"
+            guard let self else {
+                return
+            }
+            
+            DispatchQueue.main.async {
+                switch true {
+                case path.usesInterfaceType(.wifi):
+                    self.networkStatus = "Wi-Fi"
+                    self.getWiFiInfo()
+                    
+                case path.usesInterfaceType(.cellular):
+                    self.networkStatus = "Cellular"
+                    
+                case path.usesInterfaceType(.wiredEthernet):
+                    self.networkStatus = "Wired Ethernet"
+                    
+                case path.usesInterfaceType(.loopback):
+                    self.networkStatus = "Loopback Interface"
+                    
+                case path.usesInterfaceType(.other):
+                    self.networkStatus = "Other Interface"
+                    
+                default:
+                    self.networkStatus = "No Interface"
+                }
             }
         }
     }
@@ -48,28 +54,27 @@ final class WifiVM {
             print("Failed to fetch interfaces")
             return
         }
-
+        
         guard let interface = interfaces.first else {
             print("Failed to fetch interface")
             return
         }
-
+        
         guard let info = CNCopyCurrentNetworkInfo(interface as CFString) as? [String: Any] else {
             print("Failed to fetch network info")
             return
         }
         
-        guard let ssid = info[kCNNetworkInfoKeySSID as String] as? String else {
+        if let ssid = info[kCNNetworkInfoKeySSID as String] as? String {
+            self.ssid = ssid
+        } else {
             print("Failed to fetch SSID")
-            return
         }
         
-        guard let bssid = info[kCNNetworkInfoKeyBSSID as String] as? String else {
+        if let bssid = info[kCNNetworkInfoKeyBSSID as String] as? String {
+            self.bssid = bssid
+        } else {
             print("Failed to fetch BSSID")
-            return
         }
-        
-        self.ssid = ssid
-        self.bssid = bssid
     }
 }

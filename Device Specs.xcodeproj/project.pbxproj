@@ -10,7 +10,7 @@
 		F3187A502C898B37008FB911 /* Nav State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A4F2C898B37008FB911 /* Nav State.swift */; };
 		F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A522C898B62008FB911 /* Nav Destinations.swift */; };
 		F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A542C898B7E008FB911 /* Nav Extension.swift */; };
-		F3C3BDC82C92D87C00BF91EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3C3BDC72C92D87C00BF91EE /* Assets.xcassets */; };
+		F36FBC4B2C9312BB00F5E174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
 		F3C3BDD42C92D8E000BF91EE /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs.swift */; };
 		F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD52C92D8F600BF91EE /* App Container.swift */; };
 		F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD72C92D90700BF91EE /* Home View.swift */; };
@@ -66,8 +66,8 @@
 		F3187A4F2C898B37008FB911 /* Nav State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav State.swift"; sourceTree = "<group>"; };
 		F3187A522C898B62008FB911 /* Nav Destinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Destinations.swift"; sourceTree = "<group>"; };
 		F3187A542C898B7E008FB911 /* Nav Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Extension.swift"; sourceTree = "<group>"; };
+		F36FBC4A2C93127000F5E174 /* visionOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = visionOS.entitlements; sourceTree = "<group>"; };
 		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3C3BDC72C92D87C00BF91EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3C3BDCC2C92D87C00BF91EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3C3BDD32C92D8E000BF91EE /* Device Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs.swift"; sourceTree = "<group>"; };
 		F3C3BDD52C92D8F600BF91EE /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
@@ -148,8 +148,8 @@
 		F3C3BDD12C92D89600BF91EE /* visionOS */ = {
 			isa = PBXGroup;
 			children = (
+				F36FBC4A2C93127000F5E174 /* visionOS.entitlements */,
 				F3C3BDD32C92D8E000BF91EE /* Device Specs.swift */,
-				F3C3BDC72C92D87C00BF91EE /* Assets.xcassets */,
 				F3C3BDCC2C92D87C00BF91EE /* Info.plist */,
 				F3C3BDD52C92D8F600BF91EE /* App Container.swift */,
 				F3C3BDD72C92D90700BF91EE /* Home View.swift */,
@@ -399,7 +399,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3C3BDC82C92D87C00BF91EE /* Assets.xcassets in Resources */,
+				F36FBC4B2C9312BB00F5E174 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = visionOS/visionOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
@@ -510,6 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = visionOS/visionOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8FQUA2F388;

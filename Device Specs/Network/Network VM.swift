@@ -1,54 +1,84 @@
 import Foundation
+import SystemConfiguration.CaptiveNetwork
+import Network
 
 @Observable
 final class NetworkVM {
-    var address = ""
+    var networkinterface = ""
     var router = ""
+    var subnetMask = ""
+    var publicIp = ""
+    
+    var hostname = [CChar](repeating: 0, count: Int(NI_MAXHOST))
     
     func getIPAddresses() {
-        var deviceIP: String?
-        var routerIP: String?
+        do {
+            let ip = try String(contentsOf: URL(string: "https://www.bluewindsolution.com/tools/getpublicip.php")!, encoding: .utf8)
+            publicIp = ip.trimmingCharacters(in: .whitespaces)
+        } catch {
+            print("Error: \(error)")
+        }
+        
         var ifaddr: UnsafeMutablePointer<ifaddrs>?
         
-        if getifaddrs(&ifaddr) == 0 {
-            var ptr = ifaddr
+        guard getifaddrs(&ifaddr) == 0 else {
+            return
+        }
+        
+        var ptr = ifaddr
+        
+        while ptr != nil {
+            let interface = ptr!.pointee
             
-            while ptr != nil {
-                let interface = ptr!.pointee
-                
-                if interface.ifa_addr.pointee.sa_family == UInt8(AF_INET) {
-                    let ifaName = String(cString: interface.ifa_name)
-                    
-                    if ifaName == "en0" {
-                        var addr = interface.ifa_addr.pointee
-                        var hostname = [CChar](repeating: 0, count: Int(NI_MAXHOST))
-                        
-                        getnameinfo(&addr, socklen_t(interface.ifa_addr.pointee.sa_len),
-                                    &hostname, socklen_t(hostname.count),
-                                    nil, socklen_t(0), NI_NUMERICHOST)
-                        
-                        deviceIP = String(cString: hostname)
-                    }
-                    
-                    if ifaName == "en0", interface.ifa_dstaddr != nil {
-                        var addr = interface.ifa_dstaddr.pointee
-                        var hostname = [CChar](repeating: 0, count: Int(NI_MAXHOST))
-                        
-                        getnameinfo(&addr, socklen_t(interface.ifa_dstaddr.pointee.sa_len),
-                                    &hostname, socklen_t(hostname.count),
-                                    nil, socklen_t(0), NI_NUMERICHOST)
-                        
-                        routerIP = String(cString: hostname)
-                    }
-                }
-                
+            guard interface.ifa_addr.pointee.sa_family == UInt8(AF_INET) else {
                 ptr = interface.ifa_next
+                continue
             }
+            
+            let ifaName = String(cString: interface.ifa_name)
+            
+            guard ifaName == "en0" else {
+                ptr = interface.ifa_next
+                continue
+            }
+            
+            // Network interface
+            var addr = interface.ifa_addr.pointee
+            var hostname = [CChar](repeating: 0, count: Int(NI_MAXHOST))
+            
+            getnameinfo(&addr, socklen_t(interface.ifa_addr.pointee.sa_len),
+                        &hostname, socklen_t(hostname.count),
+                        nil, socklen_t(0), NI_NUMERICHOST)
+            
+            networkinterface = String(cString: hostname)
+            
+            // Subnet mask
+            if let netmask = interface.ifa_netmask {
+                var netmaskAddr = netmask.pointee
+                var netmaskHost = [CChar](repeating: 0, count: Int(NI_MAXHOST))
+                
+                getnameinfo(&netmaskAddr, socklen_t(netmaskAddr.sa_len),
+                            &netmaskHost, socklen_t(netmaskHost.count),
+                            nil, socklen_t(0), NI_NUMERICHOST)
+                
+                subnetMask = String(cString: netmaskHost)
+            }
+            
+            // Router IP (gateway)
+            if let dstAddr = interface.ifa_dstaddr {
+                var dstAddr = dstAddr.pointee
+                var dstHostname = [CChar](repeating: 0, count: Int(NI_MAXHOST))
+                
+                getnameinfo(&dstAddr, socklen_t(dstAddr.sa_len),
+                            &dstHostname, socklen_t(dstHostname.count),
+                            nil, socklen_t(0), NI_NUMERICHOST)
+                
+                router = String(cString: dstHostname)
+            }
+            
+            ptr = interface.ifa_next
         }
         
         freeifaddrs(ifaddr)
-        
-        address = deviceIP ?? "-"
-        router = routerIP ?? "-"
     }
 }
