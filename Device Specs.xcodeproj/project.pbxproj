@@ -14,10 +14,10 @@
 		F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
 		F36FBC4D2C9319D600F5E174 /* Wifi VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Wifi VM.swift */; };
 		F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
-		F36FBC502C931B6400F5E174 /* Altitude VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC692C67B985008CD17B /* Altitude VM.swift */; };
 		F36FBC562C931C1000F5E174 /* Sensors View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC552C931C1000F5E174 /* Sensors View.swift */; };
 		F36FBC5E2C931C7500F5E174 /* Orientation VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC5D2C931C7500F5E174 /* Orientation VM.swift */; };
 		F36FBC602C931CBD00F5E174 /* Location VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC5F2C931CBD00F5E174 /* Location VM.swift */; };
+		F36FBC622C931E2600F5E174 /* AltitudeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC612C931E2600F5E174 /* AltitudeVM.swift */; };
 		F3C3BDD42C92D8E000BF91EE /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs.swift */; };
 		F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD52C92D8F600BF91EE /* App Container.swift */; };
 		F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD72C92D90700BF91EE /* Home View.swift */; };
@@ -77,6 +77,7 @@
 		F36FBC552C931C1000F5E174 /* Sensors View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensors View.swift"; sourceTree = "<group>"; };
 		F36FBC5D2C931C7500F5E174 /* Orientation VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Orientation VM.swift"; sourceTree = "<group>"; };
 		F36FBC5F2C931CBD00F5E174 /* Location VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location VM.swift"; sourceTree = "<group>"; };
+		F36FBC612C931E2600F5E174 /* AltitudeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltitudeVM.swift; sourceTree = "<group>"; };
 		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C3BDCC2C92D87C00BF91EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3C3BDD32C92D8E000BF91EE /* Device Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs.swift"; sourceTree = "<group>"; };
@@ -167,6 +168,7 @@
 				F36FBC552C931C1000F5E174 /* Sensors View.swift */,
 				F36FBC5D2C931C7500F5E174 /* Orientation VM.swift */,
 				F36FBC5F2C931CBD00F5E174 /* Location VM.swift */,
+				F36FBC612C931E2600F5E174 /* AltitudeVM.swift */,
 			);
 			path = visionOS;
 			sourceTree = "<group>";
@@ -439,6 +441,7 @@
 				F3C3BDDA2C92D99900BF91EE /* Device VM.swift in Sources */,
 				F3C3BDE82C92DCA300BF91EE /* Display Specs.swift in Sources */,
 				F3C3BDE42C92DBFB00BF91EE /* Battery VM.swift in Sources */,
+				F36FBC622C931E2600F5E174 /* AltitudeVM.swift in Sources */,
 				F3C3BDE32C92DBF700BF91EE /* Battery Specs.swift in Sources */,
 				F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */,
 				F36FBC5E2C931C7500F5E174 /* Orientation VM.swift in Sources */,
@@ -448,7 +451,6 @@
 				F3C3BDD42C92D8E000BF91EE /* Device Specs.swift in Sources */,
 				F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */,
 				F3C3BDD92C92D99300BF91EE /* Device View.swift in Sources */,
-				F36FBC502C931B6400F5E174 /* Altitude VM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,7 +715,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Debug;
@@ -760,7 +762,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Release;
