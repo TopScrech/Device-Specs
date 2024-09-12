@@ -27,19 +27,23 @@ final class OrientationVM {
     private func startFetchingMotionData() {
         if motionManager.isDeviceMotionAvailable {
             motionManager.deviceMotionUpdateInterval = 1
+            
             motionManager.startDeviceMotionUpdates(to: .main) { motion, error in
                 guard let motion else {
                     return
                 }
                 
                 withAnimation {
-                    self.roll = String(format: "%.2fg", motion.attitude.roll)
-                    self.pitch = String(format: "%.2fg", motion.attitude.pitch)
-                    self.yaw = String(format: "%.2fg", motion.attitude.yaw)
+                    let attitude = motion.attitude
+                    let acceleration = motion.userAcceleration
                     
-                    self.x = String(format: "%.2fg", motion.userAcceleration.x)
-                    self.y = String(format: "%.2fg", motion.userAcceleration.y)
-                    self.z = String(format: "%.2fg", motion.userAcceleration.z)
+                    self.roll = String(format: "%.2fg", attitude.roll)
+                    self.pitch = String(format: "%.2fg", attitude.pitch)
+                    self.yaw = String(format: "%.2fg", attitude.yaw)
+                    
+                    self.x = String(format: "%.2fg", acceleration.x)
+                    self.y = String(format: "%.2fg", acceleration.y)
+                    self.z = String(format: "%.2fg", acceleration.z)
                 }
             }
         }
