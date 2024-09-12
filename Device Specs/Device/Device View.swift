@@ -1,16 +1,40 @@
 import ScrechKit
 import DeviceKit
+import CoreTelephony
+//import AdSupport
 
 struct DeviceView: View {
     private var vm = DeviceVM()
     //    private var bluetooth = BluetoothManager()
-    //    let deviceIdentifier = UIDevice.current.identifierForVendor?.uuidString
     
     var body: some View {
         List {
+#warning("Carrier Info")
+            //            Button("test") {
+            //                //                func fetchCurrentRadioAccessTechnology() {
+            //                let networkInfo = CTTelephonyNetworkInfo()
+            //
+            //                if let currentRadioTech = networkInfo.serviceCurrentRadioAccessTechnology {
+            //                    for (carrier, radioTech) in currentRadioTech {
+            //                        print("Carrier: \(carrier), Radio Access Technology: \(radioTech)")
+            //                    }
+            //                } else {
+            //                    print("Unable to fetch cellular capabilities.")
+            //                }
+            //                //                }
+            //            }
+            
             Section("Device") {
                 ListParameter("Device", parameter: "\(Device.current)")
-                ListParameter("Identifier", parameter: "\(Device.identifier)")
+                ListParameter("Identifier", parameter: Device.identifier)
+                
+                if let vendorId = UIDevice.current.identifierForVendor?.uuidString {
+                    ListParameter("Vendor identifier", parameter: vendorId)
+                }
+                
+#warning("idfa")
+                //                let idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
+                //                ListParameter("Advertising Identifier (IDFA)", parameter: idfa)
             }
             
             Section("System") {
@@ -19,8 +43,10 @@ struct DeviceView: View {
             }
             
             Section {
-                ListParameter("System language", parameter: Locale.current.identifier)
-                ListParameter("System region", parameter: Locale.current.region?.identifier ?? "-")
+                let locale = Locale.current
+                
+                ListParameter("System language", parameter: locale.identifier)
+                ListParameter("System region", parameter: locale.region?.identifier ?? "-")
                 ListParameter("System uptime", parameter: vm.fetchSystemUptime())
                 ListParameter("Thermal state", parameter: vm.thermalState)
             }
