@@ -11,8 +11,6 @@ struct DeviceView: View {
             Section("Device") {
                 ListParameter("Device", parameter: "\(Device.current)")
                 ListParameter("Identifier", parameter: "\(Device.identifier)")
-                ListParameter("CPU", parameter: Device.current.cpu.description)
-                ListParameter("Architecture", parameter: vm.architecture)
             }
             
             Section("System") {

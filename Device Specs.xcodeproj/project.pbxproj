@@ -18,6 +18,10 @@
 		F36FBC5E2C931C7500F5E174 /* Orientation VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC5D2C931C7500F5E174 /* Orientation VM.swift */; };
 		F36FBC602C931CBD00F5E174 /* Location VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC5F2C931CBD00F5E174 /* Location VM.swift */; };
 		F36FBC622C931E2600F5E174 /* AltitudeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC612C931E2600F5E174 /* AltitudeVM.swift */; };
+		F36FBC642C9353FF00F5E174 /* Processor View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC632C9353FF00F5E174 /* Processor View.swift */; };
+		F36FBC652C9353FF00F5E174 /* Processor View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC632C9353FF00F5E174 /* Processor View.swift */; };
+		F36FBC672C93542700F5E174 /* Processor VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC662C93542700F5E174 /* Processor VM.swift */; };
+		F36FBC682C93542700F5E174 /* Processor VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC662C93542700F5E174 /* Processor VM.swift */; };
 		F3C3BDD42C92D8E000BF91EE /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs.swift */; };
 		F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD52C92D8F600BF91EE /* App Container.swift */; };
 		F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD72C92D90700BF91EE /* Home View.swift */; };
@@ -78,6 +82,8 @@
 		F36FBC5D2C931C7500F5E174 /* Orientation VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Orientation VM.swift"; sourceTree = "<group>"; };
 		F36FBC5F2C931CBD00F5E174 /* Location VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location VM.swift"; sourceTree = "<group>"; };
 		F36FBC612C931E2600F5E174 /* AltitudeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltitudeVM.swift; sourceTree = "<group>"; };
+		F36FBC632C9353FF00F5E174 /* Processor View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Processor View.swift"; sourceTree = "<group>"; };
+		F36FBC662C93542700F5E174 /* Processor VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Processor VM.swift"; sourceTree = "<group>"; };
 		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C3BDCC2C92D87C00BF91EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3C3BDD32C92D8E000BF91EE /* Device Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs.swift"; sourceTree = "<group>"; };
@@ -156,6 +162,15 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		F36FBC692C93551B00F5E174 /* Processor */ = {
+			isa = PBXGroup;
+			children = (
+				F36FBC632C9353FF00F5E174 /* Processor View.swift */,
+				F36FBC662C93542700F5E174 /* Processor VM.swift */,
+			);
+			path = Processor;
+			sourceTree = "<group>";
+		};
 		F3C3BDD12C92D89600BF91EE /* visionOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +227,7 @@
 				F3E7EC4F2C67B985008CD17B /* List Link.swift */,
 				F3E7EC502C67B985008CD17B /* Bluetooth VM.swift */,
 				F3E7EC532C67B985008CD17B /* Device */,
+				F36FBC692C93551B00F5E174 /* Processor */,
 				F3E7EC562C67B985008CD17B /* Display */,
 				F3E7EC592C67B985008CD17B /* Camera */,
 				F3E7EC5C2C67B985008CD17B /* Battery */,
@@ -440,6 +456,7 @@
 				F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */,
 				F3C3BDDA2C92D99900BF91EE /* Device VM.swift in Sources */,
 				F3C3BDE82C92DCA300BF91EE /* Display Specs.swift in Sources */,
+				F36FBC652C9353FF00F5E174 /* Processor View.swift in Sources */,
 				F3C3BDE42C92DBFB00BF91EE /* Battery VM.swift in Sources */,
 				F36FBC622C931E2600F5E174 /* AltitudeVM.swift in Sources */,
 				F3C3BDE32C92DBF700BF91EE /* Battery Specs.swift in Sources */,
@@ -448,6 +465,7 @@
 				F36FBC602C931CBD00F5E174 /* Location VM.swift in Sources */,
 				F3C3BDE12C92DB9800BF91EE /* Storage VM.swift in Sources */,
 				F3C3BDE02C92DB9300BF91EE /* Ram VM.swift in Sources */,
+				F36FBC672C93542700F5E174 /* Processor VM.swift in Sources */,
 				F3C3BDD42C92D8E000BF91EE /* Device Specs.swift in Sources */,
 				F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */,
 				F3C3BDD92C92D99300BF91EE /* Device View.swift in Sources */,
@@ -464,6 +482,7 @@
 				F3E7EC792C67B985008CD17B /* Activity VM.swift in Sources */,
 				F3E7EC7A2C67B985008CD17B /* Device View.swift in Sources */,
 				F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */,
+				F36FBC682C93542700F5E174 /* Processor VM.swift in Sources */,
 				F3E7EC7B2C67B985008CD17B /* Device VM.swift in Sources */,
 				F3E7EC7C2C67B985008CD17B /* Altitude VM.swift in Sources */,
 				F3E7EC9E2C680561008CD17B /* Torch VM.swift in Sources */,
@@ -494,6 +513,7 @@
 				F3E7EC922C67B985008CD17B /* Wifi VM.swift in Sources */,
 				F3E7EC932C67B985008CD17B /* Pressure VM.swift in Sources */,
 				F3E7EC3E2C676A13008CD17B /* Device Specs.swift in Sources */,
+				F36FBC642C9353FF00F5E174 /* Processor View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

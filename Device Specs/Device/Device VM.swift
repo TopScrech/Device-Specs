@@ -55,21 +55,6 @@ final class DeviceVM {
         fetchBuildNumber()
         fetchDeviceModelIdentifier()
         fetchForceTouch()
-        getArchitecture()
-    }
-    
-    func getArchitecture() {
-#if arch(arm64)
-        architecture = "arm64"
-#elseif arch(x86_64)
-        architecture = "x86_64"
-#elseif arch(i386)
-        architecture = "i386"
-#elseif arch(arm)
-        architecture = "arm"
-#else
-        architecture = "unknown"
-#endif
     }
     
     func fetchForceTouch() {
