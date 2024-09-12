@@ -26,7 +26,7 @@ struct NetworkView: View {
             network.getIPAddresses()
         }
     }
-} 
+}
 
 #Preview {
     NetworkView()
