@@ -1,6 +1,6 @@
 import ScrechKit
 import DeviceKit
-import CoreTelephony
+//import CoreTelephony
 //import AdSupport
 
 struct DeviceView: View {
