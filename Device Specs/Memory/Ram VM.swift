@@ -2,7 +2,7 @@ import Foundation
 import Darwin
 
 @Observable
-final class MemoryVM {
+final class RamVM {
     var total: UInt64 = 0
     var used: UInt64 = 0
     var free: UInt64 = 0

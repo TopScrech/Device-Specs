@@ -12,11 +12,11 @@ struct HomeView: View {
             //            ListLink("Display", icon: "iphone") {
             //                DisplaySpecs()
             //            }
-            //
-            //            ListLink("Memory", icon: "memorychip") {
-            //                MemoryView()
-            //            }
-            //            
+            
+                        ListLink("Memory", icon: "memorychip") {
+                            MemoryView()
+                        }
+                        
             //            ListLink("Camera", icon: "camera") {
             //                CameraSpecs()
             //            }

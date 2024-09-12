@@ -2,7 +2,7 @@ import ScrechKit
 
 struct MemoryView: View {
     private var storage = StorageVM()
-    private var ram = MemoryVM()
+    private var ram = RamVM()
     
     var body: some View {
         List {
