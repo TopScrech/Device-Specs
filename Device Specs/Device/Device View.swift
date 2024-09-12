@@ -9,6 +9,11 @@ struct DeviceView: View {
     
     var body: some View {
         List {
+            #warning("Accessability")
+//            Text("Increase Contrast Enabled: \(UIAccessibility.isDarkerSystemColorsEnabled ? "Yes" : "No")")
+//            Text("VoiceOver Enabled: \(UIAccessibility.isVoiceOverRunning ? "Yes" : "No")")
+//            Text("VoiceOver Enabled: \(UIAccessibility. ? "Yes" : "No")")
+            
 #warning("Carrier Info")
             //            Button("test") {
             //                //                func fetchCurrentRadioAccessTechnology() {
