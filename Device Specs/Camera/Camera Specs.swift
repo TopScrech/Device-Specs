@@ -15,6 +15,24 @@ struct CameraSpecs: View {
                 vm.fetchCameraData(.back)
             }
 #endif
+            Section("Back cameras") {
+                ForEach(Device.current.cameras, id: \.self) { camera in
+                    switch camera {
+                    case .wide:
+                        Text("Wide")
+                        
+                    case .telephoto:
+                        Text("Telephoto")
+                        
+                    case .ultraWide:
+                        Text("Ultra wide")
+                        
+                    default:
+                        Text("Unknown")
+                    }
+                }
+            }
+            
             Section("Front Camera") {
                 ListParameter("Max Photo Resolution", parameter: vm.frontMaxPhotoResolution)
                 
