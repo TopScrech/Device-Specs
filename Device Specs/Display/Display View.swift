@@ -7,24 +7,21 @@ struct DisplaySpecs: View {
     @State private var brightness = 0.0
     
     init() {
-        self.brightness = Double(Device.current.screenBrightness)
+        self.brightness = Double(Device.current.screenBrightness) * 100
     }
     
     var body: some View {
         List {
-            Text(Device.current.screenRatio.height)
-            Text(Device.current.screenRatio.width)
-            
-            let isRounded = Device.current.hasRoundedDisplayCorners ? "Yes" : "No"
-            ListParameter("Rounded Corners", parameter: isRounded)
-            
-            if let ppi = Device.current.ppi {
-                ListParameter("PPI", parameter: "\(ppi)")
+            if let ppi = Device.current.ppi?.description {
+                ListParameter("PPI", parameter: ppi)
             }
             
             ListParameter("Screen resolution", parameter: display.fetchScreenResolution())
-            ListParameter("Screen resolution", parameter: display.fetchScreenResolution())
             ListParameter("Refresh rate", parameter: display.refreshRate)
+            
+            let isRounded = Device.current.hasRoundedDisplayCorners ? "Yes" : "No"
+            ListParameter("Rounded corners", parameter: isRounded)
+            
             
             Section {
                 ListParameter("Brightness", parameter: "\(Int(brightness))%")
@@ -41,7 +38,7 @@ struct DisplaySpecs: View {
     }
     
     private func setDeviceBrightness(to level: CGFloat) {
-        UIScreen.main.brightness = min(max(level, 0), 1)
+        UIScreen.main.brightness = brightness
     }
 }
 
