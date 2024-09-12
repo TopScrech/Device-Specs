@@ -135,10 +135,10 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC3D2C676A13008CD17B /* Device Specs.swift */,
+				F3187A512C898B40008FB911 /* Navigation */,
 				F3E7EC412C676A14008CD17B /* Assets.xcassets */,
 				F3E7EC432C676A14008CD17B /* Device_Specs.entitlements */,
 				F3E7EC9C2C67BD99008CD17B /* Device-Specs-Info.plist */,
-				F3187A512C898B40008FB911 /* Navigation */,
 				F3E7EC4D2C67B985008CD17B /* Device Info.swift */,
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
 				F3E7EC4F2C67B985008CD17B /* ListLink.swift */,

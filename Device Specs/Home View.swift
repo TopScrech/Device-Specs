@@ -24,6 +24,7 @@ struct HomeView: View {
             ListLink("Battery", icon: "battery.100percent.bolt") {
                 BatterySpecs()
             }
+            .symbolRenderingMode(.multicolor)
             
             //            ListLink("Network", icon: "network") {
             //                NetworkView()

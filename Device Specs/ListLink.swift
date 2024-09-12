@@ -19,7 +19,6 @@ struct ListLink <Destination: View>: View {
         NavigationLink(destination: destination) {
             Label(title, systemImage: icon)
                 .foregroundStyle(.foreground)
-                .symbolRenderingMode(.multicolor)
         }
     }
 }
