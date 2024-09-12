@@ -26,9 +26,11 @@ struct HomeView: View {
                 NetworkView()
             }
             
-            //            ListLink("Sensors", icon: "barometer") {
-            //                SensorsView()
-            //            }
+#if DEBUG
+            ListLink("Sensors", icon: "barometer") {
+                SensorsView()
+            }
+#endif
         }
         .navigationTitle("Device Specs")
         .foregroundStyle(.foreground)
