@@ -14,17 +14,15 @@ struct DisplaySpecs: View {
         List {
             ListParameter("Screen resolution", parameter: display.resolution)
             
+            ListParameter("Screen size", parameter: display.diagonalSize)
+            
             ListParameter("Aspect ratio", parameter: display.aspectRatio)
             
-            if let ppi = Device.current.ppi?.description {
-                ListParameter("Pixel density", parameter: "\(ppi) PPI")
-            }
+            ListParameter("Pixel density", parameter: display.dencity)
             
             ListParameter("Refresh rate", parameter: display.refreshRate)
             
-            let isRounded = Device.current.hasRoundedDisplayCorners ? "Yes" : "No"
-            ListParameter("Rounded corners", parameter: isRounded)
-            
+            ListParameter("Rounded corners", parameter: display.isRounded)
             
             Section {
                 ListParameter("Brightness", parameter: "\(Int(brightness))%")
@@ -38,6 +36,9 @@ struct DisplaySpecs: View {
         .onChange(of: brightness) { _, newValue in
             let value = CGFloat(newValue / 100)
             setDeviceBrightness(value)
+        }
+        .refreshableTask {
+            display.fetchScreenResolution()
         }
     }
     
