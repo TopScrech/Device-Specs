@@ -21,6 +21,8 @@
 		F3C3BDE02C92DB9300BF91EE /* Ram VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5F2C67B985008CD17B /* Ram VM.swift */; };
 		F3C3BDE12C92DB9800BF91EE /* Storage VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5E2C67B985008CD17B /* Storage VM.swift */; };
 		F3C3BDE22C92DB9D00BF91EE /* Memory View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5D2C67B985008CD17B /* Memory View.swift */; };
+		F3C3BDE32C92DBF700BF91EE /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5A2C67B985008CD17B /* Battery Specs.swift */; };
+		F3C3BDE42C92DBFB00BF91EE /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5B2C67B985008CD17B /* Battery VM.swift */; };
 		F3E7EC3E2C676A13008CD17B /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC3D2C676A13008CD17B /* Device Specs.swift */; };
 		F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
 		F3E7EC762C67B985008CD17B /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6C2C67B985008CD17B /* Test List.swift */; };
@@ -416,6 +418,8 @@
 				F3C3BDE22C92DB9D00BF91EE /* Memory View.swift in Sources */,
 				F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */,
 				F3C3BDDA2C92D99900BF91EE /* Device VM.swift in Sources */,
+				F3C3BDE42C92DBFB00BF91EE /* Battery VM.swift in Sources */,
+				F3C3BDE32C92DBF700BF91EE /* Battery Specs.swift in Sources */,
 				F3C3BDE12C92DB9800BF91EE /* Storage VM.swift in Sources */,
 				F3C3BDE02C92DB9300BF91EE /* Ram VM.swift in Sources */,
 				F3C3BDD42C92D8E000BF91EE /* Device Specs.swift in Sources */,

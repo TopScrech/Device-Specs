@@ -13,18 +13,18 @@ struct HomeView: View {
             //                DisplaySpecs()
             //            }
             
-                        ListLink("Memory", icon: "memorychip") {
-                            MemoryView()
-                        }
-                        
+            ListLink("Memory", icon: "memorychip") {
+                MemoryView()
+            }
+            
             //            ListLink("Camera", icon: "camera") {
             //                CameraSpecs()
             //            }
             //
-            //            ListLink("Battery", icon: "battery.100percent.bolt") {
-            //                BatterySpecs()
-            //            }
-            //            .symbolRenderingMode(.multicolor)
+            ListLink("Battery", icon: "battery.100percent.bolt") {
+                BatterySpecs()
+            }
+            .symbolRenderingMode(.multicolor)
             //
             //            //            ListLink("Network", icon: "network") {
             //            //                NetworkView()
