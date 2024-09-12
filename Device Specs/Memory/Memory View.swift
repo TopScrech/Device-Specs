@@ -2,22 +2,31 @@ import ScrechKit
 
 struct MemoryView: View {
     private var storage = StorageVM()
-    private var memory = MemoryVM()
+    private var ram = MemoryVM()
     
     var body: some View {
         List {
             Section("Storage") {
                 ListParameter("Total storage", parameter: storage.total)
+                ListParameter("Used storage", parameter: storage.used)
                 ListParameter("Available storage", parameter: storage.available)
             }
             
             Section("RAM") {
-                ListParameter("Total RAM", parameter: formatBytes(memory.totalMemory, countStyle: .memory))
-                ListParameter("Used RAM", parameter: formatBytes(memory.usedMemory, countStyle: .memory))
-                ListParameter("Free RAM", parameter: formatBytes(memory.freeMemory, countStyle: .memory))
+                let totalRam = formatBytes(ram.total, countStyle: .memory)
+                let usedRam = formatBytes(ram.used, countStyle: .memory)
+                let freeRam = formatBytes(ram.free, countStyle: .memory)
+                
+                ListParameter("Total RAM", parameter: totalRam)
+                ListParameter("Used RAM", parameter: usedRam)
+                ListParameter("Free RAM", parameter: freeRam)
             }
         }
         .navigationTitle("Memory")
+        .refreshableTask {
+            storage.fetchStorageInfo()
+            ram.getMemoryUsage()
+        }
     }
 }
 

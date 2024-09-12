@@ -2,13 +2,9 @@ import ScrechKit
 
 @Observable
 final class StorageVM {
-    var available = ""
     var total = ""
-//    var systemSize = ""
-    
-    init() {
-        fetchStorageInfo()
-    }
+    var used = ""
+    var available = ""
     
     func fetchStorageInfo() {
         let fileURL = URL(fileURLWithPath: NSHomeDirectory() as String)
@@ -33,9 +29,17 @@ final class StorageVM {
             } else {
                 available = "Unavailable"
             }
+            
+            if let totalCapacity, let availableCapacity {
+                let usedCapacity = totalCapacity - availableCapacity
+                used = formatBytes(usedCapacity, countStyle: .decimal)
+            } else {
+                used = "Unavailable"
+            }
         } catch {
             available = "Error"
             total = "Error"
+            used = "Error"
             print(error.localizedDescription)
         }
     }
