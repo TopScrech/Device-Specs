@@ -11,6 +11,9 @@
 		F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A522C898B62008FB911 /* Nav Destinations.swift */; };
 		F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A542C898B7E008FB911 /* Nav Extension.swift */; };
 		F36FBC4B2C9312BB00F5E174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
+		F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
+		F36FBC4D2C9319D600F5E174 /* Wifi VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Wifi VM.swift */; };
+		F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
 		F3C3BDD42C92D8E000BF91EE /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs.swift */; };
 		F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD52C92D8F600BF91EE /* App Container.swift */; };
 		F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD72C92D90700BF91EE /* Home View.swift */; };
@@ -418,12 +421,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */,
+				F36FBC4D2C9319D600F5E174 /* Wifi VM.swift in Sources */,
 				F3C3BDE22C92DB9D00BF91EE /* Memory View.swift in Sources */,
 				F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */,
 				F3C3BDDA2C92D99900BF91EE /* Device VM.swift in Sources */,
 				F3C3BDE82C92DCA300BF91EE /* Display Specs.swift in Sources */,
 				F3C3BDE42C92DBFB00BF91EE /* Battery VM.swift in Sources */,
 				F3C3BDE32C92DBF700BF91EE /* Battery Specs.swift in Sources */,
+				F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */,
 				F3C3BDE12C92DB9800BF91EE /* Storage VM.swift in Sources */,
 				F3C3BDE02C92DB9300BF91EE /* Ram VM.swift in Sources */,
 				F3C3BDD42C92D8E000BF91EE /* Device Specs.swift in Sources */,
