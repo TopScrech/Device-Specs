@@ -12,10 +12,12 @@ struct DisplaySpecs: View {
     
     var body: some View {
         List {
-            ListParameter("Screen resolution", parameter: display.fetchScreenResolution())
+            ListParameter("Screen resolution", parameter: display.resolution)
+            
+            ListParameter("Aspect ratio", parameter: display.aspectRatio)
             
             if let ppi = Device.current.ppi?.description {
-                ListParameter("PPI", parameter: ppi)
+                ListParameter("Pixel density", parameter: "\(ppi) PPI")
             }
             
             ListParameter("Refresh rate", parameter: display.refreshRate)
