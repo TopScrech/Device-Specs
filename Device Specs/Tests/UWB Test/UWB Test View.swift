@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct UWTestView: View {
+struct UWBTestView: View {
     @State private var vm = NearbyVM()
     
     var body: some View {
@@ -72,5 +72,5 @@ struct UWTestView: View {
 }
 
 #Preview {
-    UWTestView()
+    UWBTestView()
 }

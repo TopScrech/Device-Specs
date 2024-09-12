@@ -5,7 +5,7 @@ extension View {
         self.navigationDestination(for: NavDestinations.self) { destination in
             switch destination {
             case .toUwbTest:
-                UWTestView()
+                UWBTestView()
                 
             case .toTests:
                 TestList()
