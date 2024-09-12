@@ -23,6 +23,7 @@
 		F3C3BDE22C92DB9D00BF91EE /* Memory View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5D2C67B985008CD17B /* Memory View.swift */; };
 		F3C3BDE32C92DBF700BF91EE /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5A2C67B985008CD17B /* Battery Specs.swift */; };
 		F3C3BDE42C92DBFB00BF91EE /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5B2C67B985008CD17B /* Battery VM.swift */; };
+		F3C3BDE82C92DCA300BF91EE /* Display Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDE72C92DCA300BF91EE /* Display Specs.swift */; };
 		F3E7EC3E2C676A13008CD17B /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC3D2C676A13008CD17B /* Device Specs.swift */; };
 		F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
 		F3E7EC762C67B985008CD17B /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6C2C67B985008CD17B /* Test List.swift */; };
@@ -71,6 +72,7 @@
 		F3C3BDD32C92D8E000BF91EE /* Device Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs.swift"; sourceTree = "<group>"; };
 		F3C3BDD52C92D8F600BF91EE /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F3C3BDD72C92D90700BF91EE /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
+		F3C3BDE72C92DCA300BF91EE /* Display Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Display Specs.swift"; sourceTree = "<group>"; };
 		F3E7EC3A2C676A13008CD17B /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E7EC3D2C676A13008CD17B /* Device Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs.swift"; sourceTree = "<group>"; };
 		F3E7EC412C676A14008CD17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				F3C3BDCC2C92D87C00BF91EE /* Info.plist */,
 				F3C3BDD52C92D8F600BF91EE /* App Container.swift */,
 				F3C3BDD72C92D90700BF91EE /* Home View.swift */,
+				F3C3BDE72C92DCA300BF91EE /* Display Specs.swift */,
 			);
 			path = visionOS;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				F3C3BDE22C92DB9D00BF91EE /* Memory View.swift in Sources */,
 				F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */,
 				F3C3BDDA2C92D99900BF91EE /* Device VM.swift in Sources */,
+				F3C3BDE82C92DCA300BF91EE /* Display Specs.swift in Sources */,
 				F3C3BDE42C92DBFB00BF91EE /* Battery VM.swift in Sources */,
 				F3C3BDE32C92DBF700BF91EE /* Battery Specs.swift in Sources */,
 				F3C3BDE12C92DB9800BF91EE /* Storage VM.swift in Sources */,

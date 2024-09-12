@@ -9,9 +9,9 @@ struct HomeView: View {
                 DeviceView()
             }
             
-            //            ListLink("Display", icon: "iphone") {
-            //                DisplaySpecs()
-            //            }
+            ListLink("Display", icon: "iphone") {
+                DisplaySpecs()
+            }
             
             ListLink("Memory", icon: "memorychip") {
                 MemoryView()
@@ -20,7 +20,7 @@ struct HomeView: View {
             //            ListLink("Camera", icon: "camera") {
             //                CameraSpecs()
             //            }
-            //
+            
             ListLink("Battery", icon: "battery.100percent.bolt") {
                 BatterySpecs()
             }

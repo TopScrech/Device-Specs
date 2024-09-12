@@ -3,7 +3,6 @@ import SwiftUI
 @Observable
 final class DisplayVM {
     var refreshRate = String(UIScreen.main.maximumFramesPerSecond)
-//    let brightness = String(format: "%.0f%%", UIScreen.main.brightness * 100)
     
     func fetchScreenResolution() -> String {
         let screenBounds = UIScreen.main.bounds

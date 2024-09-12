@@ -1,0 +1,29 @@
+import ScrechKit
+import DeviceKit
+
+struct DisplaySpecs: View {
+    @State private var brightness = 0.0
+    
+    init() {
+        _brightness = State(initialValue: Double(Device.current.screenBrightness))
+    }
+    
+    #warning("Check if works")
+    
+    var body: some View {
+        List {
+            if let ppi = Device.current.ppi?.description {
+                ListParameter("PPI", parameter: ppi)
+            }
+            
+            Section {
+                ListParameter("Brightness", parameter: "\(Int(brightness))%")
+            }
+        }
+        .navigationTitle("Display")
+    }
+}
+
+#Preview {
+    DisplaySpecs()
+}
