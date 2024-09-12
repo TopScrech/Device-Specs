@@ -1,4 +1,5 @@
 import ScrechKit
+import DeviceKit
 
 struct CameraSpecs: View {
     private var vm = CameraVM()
@@ -15,14 +16,11 @@ struct CameraSpecs: View {
             }
 #endif
             Section("Front Camera") {
-                ListParameter("Max Photo Resolution", 
-                              parameter: vm.frontMaxPhotoResolution)
+                ListParameter("Max Photo Resolution", parameter: vm.frontMaxPhotoResolution)
                 
-                ListParameter("Apperture",
-                              parameter: vm.frontApperture)
+                ListParameter("Apperture", parameter: vm.frontApperture)
                 
-                ListParameter("Optical Stabilization",
-                              parameter: vm.frontOpticalStabilization)
+                ListParameter("Optical Stabilization", parameter: vm.frontOpticalStabilization)
             }
         }
         .navigationTitle("Camera")
