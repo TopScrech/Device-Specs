@@ -6,9 +6,10 @@ struct NetworkView: View {
     
     var body: some View {
         List {
-            if let ipAddress = network.getIPAddress() {
-                ListParameter("IP-address", parameter: ipAddress)
-            }
+//            if let ipAddress = network.getIPAddress() {
+            ListParameter("IP-address", parameter: network.address)
+            ListParameter("Router", parameter: network.router)
+//            }
             
             Section("Wi-Fi") {
                 ListParameter("Connected to...", parameter: wifi.networkStatus)
@@ -17,6 +18,9 @@ struct NetworkView: View {
             }
         }
         .navigationTitle("Network")
+        .refreshableTask {
+            network.getIPAddresses()
+        }
     }
 }
 

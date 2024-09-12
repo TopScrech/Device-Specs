@@ -2,8 +2,12 @@ import Foundation
 
 @Observable
 final class NetworkVM {
-    func getIPAddress() -> String? {
-        var address: String?
+    var address = ""
+    var router = ""
+    
+    func getIPAddresses() {
+        var deviceIP: String?
+        var routerIP: String?
         var ifaddr: UnsafeMutablePointer<ifaddrs>?
         
         if getifaddrs(&ifaddr) == 0 {
@@ -23,9 +27,18 @@ final class NetworkVM {
                                     &hostname, socklen_t(hostname.count),
                                     nil, socklen_t(0), NI_NUMERICHOST)
                         
-                        address = String(cString: hostname)
+                        deviceIP = String(cString: hostname)
+                    }
+                    
+                    if ifaName == "en0", interface.ifa_dstaddr != nil {
+                        var addr = interface.ifa_dstaddr.pointee
+                        var hostname = [CChar](repeating: 0, count: Int(NI_MAXHOST))
                         
-                        break
+                        getnameinfo(&addr, socklen_t(interface.ifa_dstaddr.pointee.sa_len),
+                                    &hostname, socklen_t(hostname.count),
+                                    nil, socklen_t(0), NI_NUMERICHOST)
+                        
+                        routerIP = String(cString: hostname)
                     }
                 }
                 
@@ -35,6 +48,7 @@ final class NetworkVM {
         
         freeifaddrs(ifaddr)
         
-        return address
+        address = deviceIP ?? "-"
+        router = routerIP ?? "-"
     }
 }

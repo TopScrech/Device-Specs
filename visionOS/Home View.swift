@@ -25,7 +25,7 @@ struct HomeView: View {
                 BatterySpecs()
             }
             .symbolRenderingMode(.multicolor)
-            //
+            
             //            //            ListLink("Network", icon: "network") {
             //            //                NetworkView()
             //            //            }

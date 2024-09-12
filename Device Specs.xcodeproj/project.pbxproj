@@ -28,7 +28,7 @@
 		F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
 		F3E7EC762C67B985008CD17B /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6C2C67B985008CD17B /* Test List.swift */; };
 		F3E7EC772C67B985008CD17B /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
-		F3E7EC782C67B985008CD17B /* ListLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4F2C67B985008CD17B /* ListLink.swift */; };
+		F3E7EC782C67B985008CD17B /* List Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4F2C67B985008CD17B /* List Link.swift */; };
 		F3E7EC792C67B985008CD17B /* Activity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6A2C67B985008CD17B /* Activity VM.swift */; };
 		F3E7EC7A2C67B985008CD17B /* Device View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC512C67B985008CD17B /* Device View.swift */; };
 		F3E7EC7B2C67B985008CD17B /* Device VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC522C67B985008CD17B /* Device VM.swift */; };
@@ -79,7 +79,7 @@
 		F3E7EC432C676A14008CD17B /* Device_Specs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Device_Specs.entitlements; sourceTree = "<group>"; };
 		F3E7EC4D2C67B985008CD17B /* Device Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Info.swift"; sourceTree = "<group>"; };
 		F3E7EC4E2C67B985008CD17B /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
-		F3E7EC4F2C67B985008CD17B /* ListLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLink.swift; sourceTree = "<group>"; };
+		F3E7EC4F2C67B985008CD17B /* List Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List Link.swift"; sourceTree = "<group>"; };
 		F3E7EC502C67B985008CD17B /* Bluetooth VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bluetooth VM.swift"; sourceTree = "<group>"; };
 		F3E7EC512C67B985008CD17B /* Device View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device View.swift"; sourceTree = "<group>"; };
 		F3E7EC522C67B985008CD17B /* Device VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device VM.swift"; sourceTree = "<group>"; };
@@ -194,7 +194,7 @@
 				F3E7EC9C2C67BD99008CD17B /* Device-Specs-Info.plist */,
 				F3E7EC4D2C67B985008CD17B /* Device Info.swift */,
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
-				F3E7EC4F2C67B985008CD17B /* ListLink.swift */,
+				F3E7EC4F2C67B985008CD17B /* List Link.swift */,
 				F3E7EC502C67B985008CD17B /* Bluetooth VM.swift */,
 				F3E7EC532C67B985008CD17B /* Device */,
 				F3E7EC562C67B985008CD17B /* Display */,
@@ -438,7 +438,7 @@
 			files = (
 				F3E7EC762C67B985008CD17B /* Test List.swift in Sources */,
 				F3E7EC772C67B985008CD17B /* Network View.swift in Sources */,
-				F3E7EC782C67B985008CD17B /* ListLink.swift in Sources */,
+				F3E7EC782C67B985008CD17B /* List Link.swift in Sources */,
 				F3E7EC792C67B985008CD17B /* Activity VM.swift in Sources */,
 				F3E7EC7A2C67B985008CD17B /* Device View.swift in Sources */,
 				F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */,

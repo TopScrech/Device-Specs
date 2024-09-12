@@ -26,11 +26,11 @@ final class DeviceVM {
         "No"
 #endif
     }
+    
     var isForceTouchAvailable = ""
     
     var isUltraWidebandAvailable: String {
 #if canImport(NearbyInteraction)
-        NFCNDEFReaderSession.readingAvailable ? "Yes" : "No"
         if #available(iOS 16, watchOS 9, *) {
             NISession.deviceCapabilities.supportsPreciseDistanceMeasurement ? "Yes" : "No"
         } else {

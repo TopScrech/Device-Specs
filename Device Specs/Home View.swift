@@ -26,9 +26,11 @@ struct HomeView: View {
             }
             .symbolRenderingMode(.multicolor)
             
-            //            ListLink("Network", icon: "network") {
-            //                NetworkView()
-            //            }
+#if DEBUG
+            ListLink("Network", icon: "network") {
+                NetworkView()
+            }
+#endif
             
             ListLink("Sensors", icon: "barometer") {
                 SensorsView()
