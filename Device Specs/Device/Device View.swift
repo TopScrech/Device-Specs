@@ -28,12 +28,14 @@ struct DeviceView: View {
             }
             
             Section("Capabilities") {
+#if !os(visionOS)
                 ListParameter("Wireless Charging", parameter: Device.current.supportsWirelessCharging ? "Yes" : "No")
-                ListParameter("Ultra Wideband", parameter: vm.isUltraWidebandAvailable)
-                ListParameter("Force Touch", parameter: vm.isForceTouchAvailable)
                 ListParameter("5G", parameter: Device.current.has5gSupport ? "Yes" : "No")
                 ListParameter("Dynamic Island", parameter: Device.current.hasDynamicIsland ? "Yes" : "No")
                 ListParameter("Face ID", parameter: Device.current.isFaceIDCapable ? "Yes" : "No")
+#endif
+                ListParameter("Ultra Wideband", parameter: vm.isUltraWidebandAvailable)
+                ListParameter("Force Touch", parameter: vm.isForceTouchAvailable)
                 //                ListParameter("Bluetooth LE", parameter: bluetooth.isBluetoothLeEnabled)
             }
         }

@@ -1,7 +1,12 @@
-#if canImport(CoreNFC)
 import ScrechKit
-import CoreNFC
+
+#if canImport(NearbyInteraction)
 import NearbyInteraction
+#endif
+
+#if canImport(CoreNFC)
+import CoreNFC
+#endif
 
 @Observable
 final class DeviceVM {
@@ -14,15 +19,26 @@ final class DeviceVM {
     var buildNumber = ""
     
     // Capabilities
-    let isNfcAvailable = NFCNDEFReaderSession.readingAvailable ? "Yes" : "No"
+    var isNfcAvailable: String {
+#if canImport(CoreNFC)
+        NFCNDEFReaderSession.readingAvailable ? "Yes" : "No"
+#else
+        "No"
+#endif
+    }
     var isForceTouchAvailable = ""
     
     var isUltraWidebandAvailable: String {
+#if canImport(NearbyInteraction)
+        NFCNDEFReaderSession.readingAvailable ? "Yes" : "No"
         if #available(iOS 16, watchOS 9, *) {
             NISession.deviceCapabilities.supportsPreciseDistanceMeasurement ? "Yes" : "No"
         } else {
             NISession.isSupported ? "Yes" : "No"
         }
+#else
+        "No"
+#endif
     }
     
     var thermalState: String {
@@ -98,5 +114,3 @@ final class DeviceVM {
         }
     }
 }
-
-#endif

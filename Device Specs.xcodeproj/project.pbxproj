@@ -10,6 +10,14 @@
 		F3187A502C898B37008FB911 /* Nav State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A4F2C898B37008FB911 /* Nav State.swift */; };
 		F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A522C898B62008FB911 /* Nav Destinations.swift */; };
 		F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A542C898B7E008FB911 /* Nav Extension.swift */; };
+		F3C3BDC82C92D87C00BF91EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3C3BDC72C92D87C00BF91EE /* Assets.xcassets */; };
+		F3C3BDD42C92D8E000BF91EE /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs.swift */; };
+		F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD52C92D8F600BF91EE /* App Container.swift */; };
+		F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD72C92D90700BF91EE /* Home View.swift */; };
+		F3C3BDD92C92D99300BF91EE /* Device View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC512C67B985008CD17B /* Device View.swift */; };
+		F3C3BDDA2C92D99900BF91EE /* Device VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC522C67B985008CD17B /* Device VM.swift */; };
+		F3C3BDDD2C92DAAA00BF91EE /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3C3BDDC2C92DAAA00BF91EE /* DeviceKit */; };
+		F3C3BDDF2C92DAB000BF91EE /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3C3BDDE2C92DAB000BF91EE /* ScrechKit */; };
 		F3E7EC3E2C676A13008CD17B /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC3D2C676A13008CD17B /* Device Specs.swift */; };
 		F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
 		F3E7EC762C67B985008CD17B /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6C2C67B985008CD17B /* Test List.swift */; };
@@ -52,6 +60,12 @@
 		F3187A4F2C898B37008FB911 /* Nav State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav State.swift"; sourceTree = "<group>"; };
 		F3187A522C898B62008FB911 /* Nav Destinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Destinations.swift"; sourceTree = "<group>"; };
 		F3187A542C898B7E008FB911 /* Nav Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Extension.swift"; sourceTree = "<group>"; };
+		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3C3BDC72C92D87C00BF91EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3C3BDCC2C92D87C00BF91EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3C3BDD32C92D8E000BF91EE /* Device Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs.swift"; sourceTree = "<group>"; };
+		F3C3BDD52C92D8F600BF91EE /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
+		F3C3BDD72C92D90700BF91EE /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F3E7EC3A2C676A13008CD17B /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E7EC3D2C676A13008CD17B /* Device Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs.swift"; sourceTree = "<group>"; };
 		F3E7EC412C676A14008CD17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +106,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F3C3BDBA2C92D87C00BF91EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C3BDDD2C92DAAA00BF91EE /* DeviceKit in Frameworks */,
+				F3C3BDDF2C92DAB000BF91EE /* ScrechKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3E7EC372C676A13008CD17B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,10 +138,31 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		F3C3BDD12C92D89600BF91EE /* visionOS */ = {
+			isa = PBXGroup;
+			children = (
+				F3C3BDD32C92D8E000BF91EE /* Device Specs.swift */,
+				F3C3BDC72C92D87C00BF91EE /* Assets.xcassets */,
+				F3C3BDCC2C92D87C00BF91EE /* Info.plist */,
+				F3C3BDD52C92D8F600BF91EE /* App Container.swift */,
+				F3C3BDD72C92D90700BF91EE /* Home View.swift */,
+			);
+			path = visionOS;
+			sourceTree = "<group>";
+		};
+		F3C3BDDB2C92DAAA00BF91EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F3E7EC312C676A13008CD17B = {
 			isa = PBXGroup;
 			children = (
 				F3E7EC4C2C67B8DA008CD17B /* Device Specs */,
+				F3C3BDD12C92D89600BF91EE /* visionOS */,
+				F3C3BDDB2C92DAAA00BF91EE /* Frameworks */,
 				F3E7EC3B2C676A13008CD17B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC3A2C676A13008CD17B /* Device Specs.app */,
+				F3C3BDBD2C92D87C00BF91EE /* visionOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,6 +302,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F3C3BDBC2C92D87C00BF91EE /* visionOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3C3BDCE2C92D87C00BF91EE /* Build configuration list for PBXNativeTarget "visionOS" */;
+			buildPhases = (
+				F3C3BDB92C92D87C00BF91EE /* Sources */,
+				F3C3BDBA2C92D87C00BF91EE /* Frameworks */,
+				F3C3BDBB2C92D87C00BF91EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = visionOS;
+			packageProductDependencies = (
+				F3C3BDDC2C92DAAA00BF91EE /* DeviceKit */,
+				F3C3BDDE2C92DAB000BF91EE /* ScrechKit */,
+			);
+			productName = visionOS;
+			productReference = F3C3BDBD2C92D87C00BF91EE /* visionOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F3E7EC392C676A13008CD17B /* Device Specs */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3E7EC492C676A14008CD17B /* Build configuration list for PBXNativeTarget "Device Specs" */;
@@ -288,6 +354,9 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					F3C3BDBC2C92D87C00BF91EE = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					F3E7EC392C676A13008CD17B = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -312,11 +381,20 @@
 			projectRoot = "";
 			targets = (
 				F3E7EC392C676A13008CD17B /* Device Specs */,
+				F3C3BDBC2C92D87C00BF91EE /* visionOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F3C3BDBB2C92D87C00BF91EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C3BDC82C92D87C00BF91EE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3E7EC382C676A13008CD17B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -328,6 +406,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F3C3BDB92C92D87C00BF91EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */,
+				F3C3BDDA2C92D99900BF91EE /* Device VM.swift in Sources */,
+				F3C3BDD42C92D8E000BF91EE /* Device Specs.swift in Sources */,
+				F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */,
+				F3C3BDD92C92D99300BF91EE /* Device View.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3E7EC362C676A13008CD17B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,6 +464,61 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		F3C3BDCF2C92D87C00BF91EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.visionOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		F3C3BDD02C92D87C00BF91EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.visionOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		F3E7EC472C676A14008CD17B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -526,11 +671,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Debug;
@@ -573,11 +718,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Release;
@@ -585,6 +730,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F3C3BDCE2C92D87C00BF91EE /* Build configuration list for PBXNativeTarget "visionOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3C3BDCF2C92D87C00BF91EE /* Debug */,
+				F3C3BDD02C92D87C00BF91EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F3E7EC352C676A13008CD17B /* Build configuration list for PBXProject "Device Specs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -625,6 +779,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F3C3BDDC2C92DAAA00BF91EE /* DeviceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
+			productName = DeviceKit;
+		};
+		F3C3BDDE2C92DAB000BF91EE /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
 		F3E7EC952C67B99E008CD17B /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
