@@ -1,5 +1,4 @@
 import SwiftUI
-import SystemConfiguration.CaptiveNetwork
 import Network
 
 @Observable
@@ -7,11 +6,8 @@ final class WifiVM {
     private let monitor = NWPathMonitor()
     
     var networkStatus = ""
-    var ssid = ""
-    var bssid = ""
     
     init() {
-        getWiFiInfo()
         monitorNetworkStatus()
     }
     
@@ -28,7 +24,6 @@ final class WifiVM {
                 switch true {
                 case path.usesInterfaceType(.wifi):
                     self.networkStatus = "Wi-Fi"
-                    self.getWiFiInfo()
                     
                 case path.usesInterfaceType(.cellular):
                     self.networkStatus = "Cellular"
@@ -46,35 +41,6 @@ final class WifiVM {
                     self.networkStatus = "No Interface"
                 }
             }
-        }
-    }
-    
-    private func getWiFiInfo() {
-        guard let interfaces = CNCopySupportedInterfaces() as? [String] else {
-            print("Failed to fetch interfaces")
-            return
-        }
-        
-        guard let interface = interfaces.first else {
-            print("Failed to fetch interface")
-            return
-        }
-        
-        guard let info = CNCopyCurrentNetworkInfo(interface as CFString) as? [String: Any] else {
-            print("Failed to fetch network info")
-            return
-        }
-        
-        if let ssid = info[kCNNetworkInfoKeySSID as String] as? String {
-            self.ssid = ssid
-        } else {
-            print("Failed to fetch SSID")
-        }
-        
-        if let bssid = info[kCNNetworkInfoKeyBSSID as String] as? String {
-            self.bssid = bssid
-        } else {
-            print("Failed to fetch BSSID")
         }
     }
 }

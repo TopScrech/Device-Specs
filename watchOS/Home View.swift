@@ -24,10 +24,10 @@ struct HomeView: View {
             }
             .symbolRenderingMode(.multicolor)
             
-            //            ListLink("Network", icon: "network") {
-            //                NetworkView()
-            //            }
-            //
+            ListLink("Network", icon: "network") {
+                NetworkView()
+            }
+            
             //            ListLink("Sensors", icon: "barometer") {
             //                SensorsView()
             //            }

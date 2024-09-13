@@ -1,5 +1,4 @@
 import Foundation
-import SystemConfiguration.CaptiveNetwork
 import Network
 
 @Observable

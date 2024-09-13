@@ -89,6 +89,9 @@
 		F3F85E912C9453AE00AE0A1D /* Accessibility View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */; };
 		F3F85E922C9453AE00AE0A1D /* Accessibility Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */; };
 		F3F85E932C9453AE00AE0A1D /* Accessibility VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */; };
+		F3F85E9E2C94863100AE0A1D /* Wifi VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */; };
+		F3F85E9F2C94865900AE0A1D /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
+		F3F85EA12C9486C200AE0A1D /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EA02C9486C200AE0A1D /* Network View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +182,9 @@
 		F3E7EC9D2C680561008CD17B /* Torch VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Torch VM.swift"; sourceTree = "<group>"; };
 		F3F85E8A2C94529A00AE0A1D /* Device-Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Device-Specs-Info.plist"; sourceTree = "<group>"; };
 		F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility Param.swift"; sourceTree = "<group>"; };
+		F3F85E962C94858F00AE0A1D /* watchOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = watchOS.entitlements; sourceTree = "<group>"; };
+		F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wifi VM.swift"; sourceTree = "<group>"; };
+		F3F85EA02C9486C200AE0A1D /* Network View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,9 +252,12 @@
 		F36FBCC32C9449AB00F5E174 /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
+				F3F85E962C94858F00AE0A1D /* watchOS.entitlements */,
 				F36FBCB32C9449A200F5E174 /* watchOS App.swift */,
 				F36FBCCF2C944B5000F5E174 /* App Container.swift */,
 				F36FBCB52C9449A300F5E174 /* Home View.swift */,
+				F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */,
+				F3F85EA02C9486C200AE0A1D /* Network View.swift */,
 				F36FBCC82C944A5B00F5E174 /* Battery VM.swift */,
 			);
 			path = watchOS;
@@ -572,7 +581,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F85E9F2C94865900AE0A1D /* Network VM.swift in Sources */,
+				F3F85EA12C9486C200AE0A1D /* Network View.swift in Sources */,
 				F36FBCB62C9449A300F5E174 /* Home View.swift in Sources */,
+				F3F85E9E2C94863100AE0A1D /* Wifi VM.swift in Sources */,
 				F36FBCB42C9449A300F5E174 /* watchOS App.swift in Sources */,
 				F36FBCD02C944B5000F5E174 /* App Container.swift in Sources */,
 				F36FBCC92C944A5B00F5E174 /* Battery VM.swift in Sources */,
@@ -676,6 +688,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = watchOS/watchOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
@@ -705,6 +718,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = watchOS/watchOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
