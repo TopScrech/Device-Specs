@@ -92,6 +92,9 @@
 		F3F85E9E2C94863100AE0A1D /* Wifi VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */; };
 		F3F85E9F2C94865900AE0A1D /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
 		F3F85EA12C9486C200AE0A1D /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EA02C9486C200AE0A1D /* Network View.swift */; };
+		F3F85EA22C94873000AE0A1D /* Processor View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC632C9353FF00F5E174 /* Processor View.swift */; };
+		F3F85EA32C94873000AE0A1D /* CPU Usage Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */; };
+		F3F85EA42C94873000AE0A1D /* Processor VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC662C93542700F5E174 /* Processor VM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -583,6 +586,9 @@
 			files = (
 				F3F85E9F2C94865900AE0A1D /* Network VM.swift in Sources */,
 				F3F85EA12C9486C200AE0A1D /* Network View.swift in Sources */,
+				F3F85EA22C94873000AE0A1D /* Processor View.swift in Sources */,
+				F3F85EA32C94873000AE0A1D /* CPU Usage Chart.swift in Sources */,
+				F3F85EA42C94873000AE0A1D /* Processor VM.swift in Sources */,
 				F36FBCB62C9449A300F5E174 /* Home View.swift in Sources */,
 				F3F85E9E2C94863100AE0A1D /* Wifi VM.swift in Sources */,
 				F36FBCB42C9449A300F5E174 /* watchOS App.swift in Sources */,

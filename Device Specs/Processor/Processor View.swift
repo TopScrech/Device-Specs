@@ -30,6 +30,7 @@ struct ProcessorView: View {
                 ListParameter("Active core count", parameter: vm.activeCores.description)
             }
             
+#if !os(watchOS)
             Section("GPU") {
                 if let device = MTLCreateSystemDefaultDevice() {
                     ListParameter("GPU", parameter: device.name)
@@ -57,6 +58,7 @@ struct ProcessorView: View {
                     Text("Metal is not supported on this device")
                 }
             }
+#endif
             
             Section("CPU load") {
                 CpuUsageChart(vm.cpuUsage)
