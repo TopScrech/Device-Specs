@@ -25,7 +25,6 @@
 		F36FBC6C2C9413E100F5E174 /* CPU Usage Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */; };
 		F36FBC6F2C941F6200F5E174 /* Accessibility View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */; };
 		F36FBC732C942F7600F5E174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36FBC722C942F7600F5E174 /* Assets.xcassets */; };
-		F36FBC742C94328E00F5E174 /* Accessibility View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */; };
 		F36FBCB42C9449A300F5E174 /* watchOS App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCB32C9449A200F5E174 /* watchOS App.swift */; };
 		F36FBCB62C9449A300F5E174 /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCB52C9449A300F5E174 /* Home View.swift */; };
 		F36FBCBE2C9449A300F5E174 /* watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F36FBCB12C9449A200F5E174 /* watchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -35,6 +34,7 @@
 		F36FBCCE2C944B1700F5E174 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36FBCCD2C944B1700F5E174 /* DeviceKit */; };
 		F36FBCD02C944B5000F5E174 /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCCF2C944B5000F5E174 /* App Container.swift */; };
 		F36FBCD12C944BC800F5E174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
+		F36FBCD42C944DA200F5E174 /* Accessibility VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */; };
 		F3C3BDD42C92D8E000BF91EE /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs.swift */; };
 		F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD52C92D8F600BF91EE /* App Container.swift */; };
 		F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD72C92D90700BF91EE /* Home View.swift */; };
@@ -84,6 +84,11 @@
 		F3E7EC992C67B9A8008CD17B /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E7EC982C67B9A8008CD17B /* DeviceKit */; };
 		F3E7EC9B2C67B9CF008CD17B /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC9A2C67B9CF008CD17B /* App Container.swift */; };
 		F3E7EC9E2C680561008CD17B /* Torch VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC9D2C680561008CD17B /* Torch VM.swift */; };
+		F3F85E8B2C94529A00AE0A1D /* Device-Specs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3F85E8A2C94529A00AE0A1D /* Device-Specs-Info.plist */; };
+		F3F85E8E2C9452CB00AE0A1D /* Accessibility Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */; };
+		F3F85E912C9453AE00AE0A1D /* Accessibility View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */; };
+		F3F85E922C9453AE00AE0A1D /* Accessibility Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */; };
+		F3F85E932C9453AE00AE0A1D /* Accessibility VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +134,7 @@
 		F36FBCB52C9449A300F5E174 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F36FBCC82C944A5B00F5E174 /* Battery VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery VM.swift"; sourceTree = "<group>"; };
 		F36FBCCF2C944B5000F5E174 /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
+		F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility VM.swift"; sourceTree = "<group>"; };
 		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C3BDCC2C92D87C00BF91EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3C3BDD32C92D8E000BF91EE /* Device Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs.swift"; sourceTree = "<group>"; };
@@ -170,8 +176,9 @@
 		F3E7EC712C67B985008CD17B /* MCP Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MCP Session.swift"; sourceTree = "<group>"; };
 		F3E7EC722C67B985008CD17B /* Math Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Math Utilities.swift"; sourceTree = "<group>"; };
 		F3E7EC9A2C67B9CF008CD17B /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
-		F3E7EC9C2C67BD99008CD17B /* Device-Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Device-Specs-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F3E7EC9D2C680561008CD17B /* Torch VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Torch VM.swift"; sourceTree = "<group>"; };
+		F3F85E8A2C94529A00AE0A1D /* Device-Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Device-Specs-Info.plist"; sourceTree = "<group>"; };
+		F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility Param.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */,
+				F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */,
+				F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */,
 			);
 			path = Accessability;
 			sourceTree = "<group>";
@@ -298,7 +307,7 @@
 				F3187A512C898B40008FB911 /* Navigation */,
 				F3E7EC412C676A14008CD17B /* Assets.xcassets */,
 				F3E7EC432C676A14008CD17B /* Device_Specs.entitlements */,
-				F3E7EC9C2C67BD99008CD17B /* Device-Specs-Info.plist */,
+				F3F85E8A2C94529A00AE0A1D /* Device-Specs-Info.plist */,
 				F3E7EC4D2C67B985008CD17B /* Device Info.swift */,
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
 				F3E7EC4F2C67B985008CD17B /* List Link.swift */,
@@ -536,6 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F36FBCD12C944BC800F5E174 /* Assets.xcassets in Resources */,
+				F3F85E8B2C94529A00AE0A1D /* Device-Specs-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,12 +585,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F36FBC562C931C1000F5E174 /* Sensors View.swift in Sources */,
+				F3F85E912C9453AE00AE0A1D /* Accessibility View.swift in Sources */,
+				F3F85E922C9453AE00AE0A1D /* Accessibility Param.swift in Sources */,
+				F3F85E932C9453AE00AE0A1D /* Accessibility VM.swift in Sources */,
 				F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */,
 				F36FBC4D2C9319D600F5E174 /* Wifi VM.swift in Sources */,
 				F3C3BDE22C92DB9D00BF91EE /* Memory View.swift in Sources */,
 				F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */,
 				F36FBC6C2C9413E100F5E174 /* CPU Usage Chart.swift in Sources */,
-				F36FBC742C94328E00F5E174 /* Accessibility View.swift in Sources */,
 				F3C3BDDA2C92D99900BF91EE /* Device VM.swift in Sources */,
 				F3C3BDE82C92DCA300BF91EE /* Display Specs.swift in Sources */,
 				F36FBC652C9353FF00F5E174 /* Processor View.swift in Sources */,
@@ -603,6 +615,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F85E8E2C9452CB00AE0A1D /* Accessibility Param.swift in Sources */,
 				F3E7EC762C67B985008CD17B /* Test List.swift in Sources */,
 				F3E7EC772C67B985008CD17B /* Network View.swift in Sources */,
 				F3E7EC782C67B985008CD17B /* List Link.swift in Sources */,
@@ -620,6 +633,7 @@
 				F3E7EC802C67B985008CD17B /* Display VM.swift in Sources */,
 				F3E7EC812C67B985008CD17B /* Network VM.swift in Sources */,
 				F3E7EC822C67B985008CD17B /* Location VM.swift in Sources */,
+				F36FBCD42C944DA200F5E174 /* Accessibility VM.swift in Sources */,
 				F3E7EC832C67B985008CD17B /* MCP Session.swift in Sources */,
 				F3E7EC842C67B985008CD17B /* UWB Test View.swift in Sources */,
 				F3E7EC852C67B985008CD17B /* Sensors View.swift in Sources */,
@@ -901,7 +915,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Device-Specs-Info.plist";
+				INFOPLIST_FILE = "Device Specs/Device-Specs-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
@@ -948,7 +962,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Device-Specs-Info.plist";
+				INFOPLIST_FILE = "Device Specs/Device-Specs-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
