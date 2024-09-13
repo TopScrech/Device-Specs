@@ -10,7 +10,6 @@
 		F3187A502C898B37008FB911 /* Nav State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A4F2C898B37008FB911 /* Nav State.swift */; };
 		F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A522C898B62008FB911 /* Nav Destinations.swift */; };
 		F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A542C898B7E008FB911 /* Nav Extension.swift */; };
-		F36FBC4B2C9312BB00F5E174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
 		F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
 		F36FBC4D2C9319D600F5E174 /* Wifi VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Wifi VM.swift */; };
 		F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
@@ -25,6 +24,7 @@
 		F36FBC6B2C9413E100F5E174 /* CPU Usage Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */; };
 		F36FBC6C2C9413E100F5E174 /* CPU Usage Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */; };
 		F36FBC6F2C941F6200F5E174 /* Accessibility View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */; };
+		F36FBC732C942F7600F5E174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36FBC722C942F7600F5E174 /* Assets.xcassets */; };
 		F3C3BDD42C92D8E000BF91EE /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs.swift */; };
 		F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD52C92D8F600BF91EE /* App Container.swift */; };
 		F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD72C92D90700BF91EE /* Home View.swift */; };
@@ -89,6 +89,7 @@
 		F36FBC662C93542700F5E174 /* Processor VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Processor VM.swift"; sourceTree = "<group>"; };
 		F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CPU Usage Chart.swift"; sourceTree = "<group>"; };
 		F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility View.swift"; sourceTree = "<group>"; };
+		F36FBC722C942F7600F5E174 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C3BDCC2C92D87C00BF91EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3C3BDD32C92D8E000BF91EE /* Device Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs.swift"; sourceTree = "<group>"; };
@@ -191,6 +192,7 @@
 				F36FBC4A2C93127000F5E174 /* visionOS.entitlements */,
 				F3C3BDD32C92D8E000BF91EE /* Device Specs.swift */,
 				F3C3BDCC2C92D87C00BF91EE /* Info.plist */,
+				F36FBC722C942F7600F5E174 /* Assets.xcassets */,
 				F3C3BDD52C92D8F600BF91EE /* App Container.swift */,
 				F3C3BDD72C92D90700BF91EE /* Home View.swift */,
 				F3C3BDE72C92DCA300BF91EE /* Display Specs.swift */,
@@ -445,7 +447,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F36FBC4B2C9312BB00F5E174 /* Assets.xcassets in Resources */,
+				F36FBC732C942F7600F5E174 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -749,7 +751,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -796,7 +798,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
