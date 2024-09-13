@@ -8,7 +8,7 @@ struct DeviceView: View {
     //    private var bluetooth = BluetoothManager()
     
     var body: some View {
-        List {            
+        List {
 #warning("Carrier Info")
             //            Button("test") {
             //                //                func fetchCurrentRadioAccessTechnology() {
@@ -29,7 +29,7 @@ struct DeviceView: View {
                 ListParameter("Identifier", parameter: Device.identifier)
                 
                 if let vendorId = UIDevice.current.identifierForVendor?.uuidString {
-                    ListParameter("Vendor identifier", parameter: vendorId)
+                    ListParameter("Identifier for vendor", parameter: vendorId)
                 }
                 
 #warning("idfa")
