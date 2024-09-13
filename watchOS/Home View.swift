@@ -18,10 +18,6 @@ struct HomeView: View {
 //            ListLink("Memory", icon: "memorychip") {
 //                MemoryView()
 //            }
-//            
-//            ListLink("Camera", icon: "camera") {
-//                CameraSpecs()
-//            }
             
             ListLink("Battery", icon: "battery.100percent.bolt") {
                 BatterySpecs()
