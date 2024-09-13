@@ -61,13 +61,11 @@ final class DeviceVM {
     init() {
         fetchBuildNumber()
         fetchDeviceModelIdentifier()
-#if !os(watchOS)
         fetchForceTouch()
-#endif
     }
     
-#if !os(watchOS)
     func fetchForceTouch() {
+#if !os(watchOS)
         switch UIViewController().traitCollection.forceTouchCapability {
             
         case .available:
@@ -76,8 +74,8 @@ final class DeviceVM {
         default:
             isForceTouchAvailable = "No"
         }
-    }
 #endif
+    }
     
     func fetchSystemUptime() -> String {
         let uptime = ProcessInfo.processInfo.systemUptime
