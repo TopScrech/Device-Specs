@@ -8,12 +8,7 @@ struct DeviceView: View {
     //    private var bluetooth = BluetoothManager()
     
     var body: some View {
-        List {
-            #warning("Accessability")
-//            Text("Increase Contrast Enabled: \(UIAccessibility.isDarkerSystemColorsEnabled ? "Yes" : "No")")
-//            Text("VoiceOver Enabled: \(UIAccessibility.isVoiceOverRunning ? "Yes" : "No")")
-//            Text("VoiceOver Enabled: \(UIAccessibility. ? "Yes" : "No")")
-            
+        List {            
 #warning("Carrier Info")
             //            Button("test") {
             //                //                func fetchCurrentRadioAccessTechnology() {
@@ -68,7 +63,7 @@ struct DeviceView: View {
                 //                ListParameter("Bluetooth LE", parameter: bluetooth.isBluetoothLeEnabled)
             }
         }
-        .navigationTitle("Device")
+        .navigationTitle("Device and system")
     }
 }
 

@@ -19,6 +19,7 @@ struct ProcessorView: View {
                 CpuUsageChart(vm.cpuUsage)
             }
         }
+        .navigationTitle("Processor")
         .refreshableTask {
             vm.cpuUsagePerCore()
         }

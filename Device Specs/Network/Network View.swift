@@ -13,12 +13,12 @@ struct NetworkView: View {
 #warning("Router differs from settings")
             ListParameter("Router", parameter: network.router)
             
-            ListParameter("Subnet Mask", parameter: network.subnetMask)
+            ListParameter("Subnet mask", parameter: network.subnetMask)
             
             Section {
                 ListParameter("Network type", parameter: wifi.networkStatus)
-                ListParameter("Name", parameter: wifi.ssid)
-                ListParameter("Address", parameter: wifi.bssid)
+                ListParameter("SSID", parameter: wifi.ssid)
+                ListParameter("BSSID", parameter: wifi.bssid)
             }
         }
         .navigationTitle("Network")

@@ -30,14 +30,16 @@ struct HomeView: View {
             }
             .symbolRenderingMode(.multicolor)
             
-#if DEBUG
             ListLink("Network", icon: "network") {
                 NetworkView()
             }
-#endif
             
             ListLink("Sensors", icon: "barometer") {
                 SensorsView()
+            }
+            
+            ListLink("Accessibility", icon: "accessibility") {
+                AccessibilityView()
             }
             
             Section {
