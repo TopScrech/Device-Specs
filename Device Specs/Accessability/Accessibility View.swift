@@ -18,20 +18,36 @@ struct AccessibilityParam: Identifiable {
 
 struct AccessibilityView: View {
     @State private var vm = AccessibilityVM()
-        
+    
     var body: some View {
         List {
-            ForEach(vm.accessibilityParams) { param in
+            ForEach(vm.filteredParams) { param in
                 ListParameter(param.name, parameter: param.text)
             }
         }
         .navigationTitle("Accessibility")
+        .searchable(text: $vm.filter)
+        .scrollIndicators(.never)
     }
 }
 
 @Observable
 final class AccessibilityVM {
-    let accessibilityParams: [AccessibilityParam] = [
+    var filter = ""
+    
+    var filteredParams: [AccessibilityParam] {
+        if filter.isEmpty {
+            return accessibilityParams
+        } else {
+            let prompt = filter.lowercased()
+            
+            return accessibilityParams.filter {
+                $0.name.lowercased().contains(prompt)
+            }
+        }
+    }
+    
+    private let accessibilityParams: [AccessibilityParam] = [
         AccessibilityParam("VoiceOver", isEnabled: UIAccessibility.isVoiceOverRunning),
         AccessibilityParam("Reduce Motion", isEnabled: UIAccessibility.isReduceMotionEnabled),
         AccessibilityParam("Reduce Transparency", isEnabled: UIAccessibility.isReduceTransparencyEnabled),
