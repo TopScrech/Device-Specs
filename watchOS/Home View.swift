@@ -39,6 +39,7 @@ struct HomeView: View {
             //                .foregroundStyle(.foreground)
             //            }
         }
+        .navigationTitle("Device Specs")
     }
 }
 
