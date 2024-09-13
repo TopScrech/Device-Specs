@@ -64,6 +64,10 @@ struct DeviceView: View {
                 ListParameter("Ultra Wideband", parameter: vm.isUltraWidebandAvailable)
                 //                ListParameter("Bluetooth LE", parameter: bluetooth.isBluetoothLeEnabled)
             }
+            
+#if os(watchOS)
+            DeviceWatchInfo()
+#endif
         }
         .navigationTitle("Device and system")
     }
