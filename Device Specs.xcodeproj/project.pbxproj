@@ -262,9 +262,9 @@
 		F36FBCC32C9449AB00F5E174 /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
-				F3F85E962C94858F00AE0A1D /* watchOS.entitlements */,
 				F36FBCB32C9449A200F5E174 /* watchOS App.swift */,
 				F36FBCCF2C944B5000F5E174 /* App Container.swift */,
+				F3F85E962C94858F00AE0A1D /* watchOS.entitlements */,
 				F36FBCB52C9449A300F5E174 /* Home View.swift */,
 				F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */,
 				F3F85EA02C9486C200AE0A1D /* Network View.swift */,
