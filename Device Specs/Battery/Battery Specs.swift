@@ -1,7 +1,7 @@
 import ScrechKit
 
 struct BatterySpecs: View {
-    private var vm = BatteryVM()
+    @State private var vm = BatteryVM()
     
     var body: some View {
         List {
