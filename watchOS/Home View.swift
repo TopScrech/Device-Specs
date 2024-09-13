@@ -28,9 +28,9 @@ struct HomeView: View {
                 NetworkView()
             }
             
-            //            ListLink("Sensors", icon: "barometer") {
-            //                SensorsView()
-            //            }
+            ListLink("Sensors", icon: "barometer") {
+                SensorsView()
+            }
             
             //            Section {
             //                Button("Tests") {

@@ -102,6 +102,12 @@
 		F3F85EA92C948A3300AE0A1D /* Memory View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5D2C67B985008CD17B /* Memory View.swift */; };
 		F3F85EAA2C948A5200AE0A1D /* Display View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC542C67B985008CD17B /* Display View.swift */; };
 		F3F85EAB2C948A5200AE0A1D /* Display VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC552C67B985008CD17B /* Display VM.swift */; };
+		F3F85EB22C948C8A00AE0A1D /* Altitude VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC692C67B985008CD17B /* Altitude VM.swift */; };
+		F3F85EB32C948CB400AE0A1D /* Pressure VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC682C67B985008CD17B /* Pressure VM.swift */; };
+		F3F85EB62C948D0200AE0A1D /* Orientation VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EB52C948D0200AE0A1D /* Orientation VM.swift */; };
+		F3F85EB72C948D3100AE0A1D /* Location VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC662C67B985008CD17B /* Location VM.swift */; };
+		F3F85EB92C948D4300AE0A1D /* Sensors View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EB82C948D4300AE0A1D /* Sensors View.swift */; };
+		F3F85EBA2C948D8700AE0A1D /* Activity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6A2C67B985008CD17B /* Activity VM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,6 +201,8 @@
 		F3F85E962C94858F00AE0A1D /* watchOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = watchOS.entitlements; sourceTree = "<group>"; };
 		F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wifi VM.swift"; sourceTree = "<group>"; };
 		F3F85EA02C9486C200AE0A1D /* Network View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network View.swift"; sourceTree = "<group>"; };
+		F3F85EB52C948D0200AE0A1D /* Orientation VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Orientation VM.swift"; sourceTree = "<group>"; };
+		F3F85EB82C948D4300AE0A1D /* Sensors View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensors View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +277,8 @@
 				F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */,
 				F3F85EA02C9486C200AE0A1D /* Network View.swift */,
 				F36FBCC82C944A5B00F5E174 /* Battery VM.swift */,
+				F3F85EB52C948D0200AE0A1D /* Orientation VM.swift */,
+				F3F85EB82C948D4300AE0A1D /* Sensors View.swift */,
 			);
 			path = watchOS;
 			sourceTree = "<group>";
@@ -591,9 +601,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F85EB72C948D3100AE0A1D /* Location VM.swift in Sources */,
+				F3F85EB92C948D4300AE0A1D /* Sensors View.swift in Sources */,
+				F3F85EB62C948D0200AE0A1D /* Orientation VM.swift in Sources */,
 				F3F85E9F2C94865900AE0A1D /* Network VM.swift in Sources */,
 				F3F85EA72C948A3300AE0A1D /* Ram VM.swift in Sources */,
 				F3F85EA82C948A3300AE0A1D /* Storage VM.swift in Sources */,
+				F3F85EB22C948C8A00AE0A1D /* Altitude VM.swift in Sources */,
 				F3F85EA92C948A3300AE0A1D /* Memory View.swift in Sources */,
 				F3F85EA12C9486C200AE0A1D /* Network View.swift in Sources */,
 				F3F85EA22C94873000AE0A1D /* Processor View.swift in Sources */,
@@ -606,6 +620,8 @@
 				F36FBCB42C9449A300F5E174 /* watchOS App.swift in Sources */,
 				F3F85EA52C94883D00AE0A1D /* Device View.swift in Sources */,
 				F3F85EA62C94883D00AE0A1D /* Device VM.swift in Sources */,
+				F3F85EB32C948CB400AE0A1D /* Pressure VM.swift in Sources */,
+				F3F85EBA2C948D8700AE0A1D /* Activity VM.swift in Sources */,
 				F36FBCD02C944B5000F5E174 /* App Container.swift in Sources */,
 				F36FBCC92C944A5B00F5E174 /* Battery VM.swift in Sources */,
 				F36FBCCA2C944B0300F5E174 /* Battery Specs.swift in Sources */,
@@ -715,6 +731,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
+				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "dev.topscrech.Device-Specs";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -745,6 +763,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
+				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "dev.topscrech.Device-Specs";
 				LD_RUNPATH_SEARCH_PATHS = (
