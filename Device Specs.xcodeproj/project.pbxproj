@@ -208,6 +208,7 @@
 		F3F85EB82C948D4300AE0A1D /* Sensors View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensors View.swift"; sourceTree = "<group>"; };
 		F3F85EC02C948F9D00AE0A1D /* Test List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test List.swift"; sourceTree = "<group>"; };
 		F3F85EC22C9492F300AE0A1D /* Device Watch Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Watch Info.swift"; sourceTree = "<group>"; };
+		F3F85EC82C94AED800AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +276,7 @@
 		F36FBCC32C9449AB00F5E174 /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
+				F3F85EC82C94AED800AE0A1D /* Info.plist */,
 				F36FBCB32C9449A200F5E174 /* watchOS App.swift */,
 				F36FBCCF2C944B5000F5E174 /* App Container.swift */,
 				F3F85E962C94858F00AE0A1D /* watchOS.entitlements */,
@@ -756,6 +758,7 @@
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = watchOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
@@ -789,6 +792,7 @@
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = watchOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
