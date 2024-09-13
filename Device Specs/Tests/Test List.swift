@@ -22,7 +22,7 @@ struct TestList: View {
                 .disabled(!DeviceInfo.isUltraWidebandAvailable)
             }
             
-            Section("Static color") {
+            Section("Static colors") {
                 ForEach(colorTests.keys.sorted(), id: \.self) { key in
                     NavigationLink(key) {
                         ColorTestView(colorTests[key]!)
