@@ -97,6 +97,11 @@
 		F3F85EA42C94873000AE0A1D /* Processor VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC662C93542700F5E174 /* Processor VM.swift */; };
 		F3F85EA52C94883D00AE0A1D /* Device View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC512C67B985008CD17B /* Device View.swift */; };
 		F3F85EA62C94883D00AE0A1D /* Device VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC522C67B985008CD17B /* Device VM.swift */; };
+		F3F85EA72C948A3300AE0A1D /* Ram VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5F2C67B985008CD17B /* Ram VM.swift */; };
+		F3F85EA82C948A3300AE0A1D /* Storage VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5E2C67B985008CD17B /* Storage VM.swift */; };
+		F3F85EA92C948A3300AE0A1D /* Memory View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5D2C67B985008CD17B /* Memory View.swift */; };
+		F3F85EAA2C948A5200AE0A1D /* Display View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC542C67B985008CD17B /* Display View.swift */; };
+		F3F85EAB2C948A5200AE0A1D /* Display VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC552C67B985008CD17B /* Display VM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -587,10 +592,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F85E9F2C94865900AE0A1D /* Network VM.swift in Sources */,
+				F3F85EA72C948A3300AE0A1D /* Ram VM.swift in Sources */,
+				F3F85EA82C948A3300AE0A1D /* Storage VM.swift in Sources */,
+				F3F85EA92C948A3300AE0A1D /* Memory View.swift in Sources */,
 				F3F85EA12C9486C200AE0A1D /* Network View.swift in Sources */,
 				F3F85EA22C94873000AE0A1D /* Processor View.swift in Sources */,
 				F3F85EA32C94873000AE0A1D /* CPU Usage Chart.swift in Sources */,
 				F3F85EA42C94873000AE0A1D /* Processor VM.swift in Sources */,
+				F3F85EAA2C948A5200AE0A1D /* Display View.swift in Sources */,
+				F3F85EAB2C948A5200AE0A1D /* Display VM.swift in Sources */,
 				F36FBCB62C9449A300F5E174 /* Home View.swift in Sources */,
 				F3F85E9E2C94863100AE0A1D /* Wifi VM.swift in Sources */,
 				F36FBCB42C9449A300F5E174 /* watchOS App.swift in Sources */,

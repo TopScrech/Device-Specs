@@ -6,8 +6,11 @@ final class DisplayVM {
     var resolution = ""
     var dencity = ""
     var diagonalSize = ""
+    
+#if !os(watchOS)
     var refreshRate = String(UIScreen.main.maximumFramesPerSecond)
     let isRounded = Device.current.hasRoundedDisplayCorners ? "Yes" : "No"
+#endif
     
     var aspectRatio: String {
         let screenRatio = Device.current.screenRatio
@@ -15,8 +18,13 @@ final class DisplayVM {
     }
     
     func fetchScreenResolution() {
+#if os(watchOS)
+        let screenBounds = WKInterfaceDevice.current().screenBounds
+        let screenScale = WKInterfaceDevice.current().screenScale
+#else
         let screenBounds = UIScreen.main.bounds
         let screenScale = UIScreen.main.scale
+#endif
         let screenWidth = Int(screenBounds.size.width * screenScale)
         let screenHeight = Int(screenBounds.size.height * screenScale)
         

@@ -7,17 +7,17 @@ struct HomeView: View {
                 DeviceView()
             }
             
-            //            ListLink("Display", icon: "iphone") {
-            //                DisplaySpecs()
-            //            }
+            ListLink("Display", icon: "iphone") {
+                DisplaySpecs()
+            }
             
             ListLink("Processor", icon: "cpu") {
                 ProcessorView()
             }
             
-            //            ListLink("Memory", icon: "memorychip") {
-            //                MemoryView()
-            //            }
+            ListLink("Memory", icon: "memorychip") {
+                MemoryView()
+            }
             
             ListLink("Battery", icon: "battery.100percent.bolt") {
                 BatterySpecs()

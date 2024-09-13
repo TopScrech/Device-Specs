@@ -20,16 +20,20 @@ struct DisplaySpecs: View {
             
             ListParameter("Pixel density", parameter: display.dencity)
             
+#if !os(watchOS)
             ListParameter("Refresh rate", parameter: display.refreshRate)
             
             ListParameter("Rounded corners", parameter: display.isRounded)
+#endif
             
             Section {
                 ListParameter("Brightness", parameter: "\(Int(brightness))%")
                 
+#if !os(watchOS)
                 Slider(value: $brightness, in: 0...100, step: 1) {
                     Text("Brightness")
                 }
+#endif
             }
         }
         .navigationTitle("Display")
@@ -43,7 +47,9 @@ struct DisplaySpecs: View {
     }
     
     private func setDeviceBrightness(_ level: CGFloat) {
+#if !os(watchOS)
         UIScreen.main.brightness = level
+#endif
     }
 }
 
