@@ -59,9 +59,9 @@ struct DeviceView: View {
                 ListParameter("5G", parameter: Device.current.has5gSupport ? "Yes" : "No")
                 ListParameter("Dynamic Island", parameter: Device.current.hasDynamicIsland ? "Yes" : "No")
                 ListParameter("Face ID", parameter: Device.current.isFaceIDCapable ? "Yes" : "No")
+                ListParameter("Force Touch", parameter: vm.isForceTouchAvailable)
 #endif
                 ListParameter("Ultra Wideband", parameter: vm.isUltraWidebandAvailable)
-                ListParameter("Force Touch", parameter: vm.isForceTouchAvailable)
                 //                ListParameter("Bluetooth LE", parameter: bluetooth.isBluetoothLeEnabled)
             }
         }
