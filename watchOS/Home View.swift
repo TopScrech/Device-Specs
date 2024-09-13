@@ -32,12 +32,12 @@ struct HomeView: View {
                 SensorsView()
             }
             
-            //            Section {
-            //                Button("Tests") {
-            //                    navState.navigate(.toTests)
-            //                }
-            //                .foregroundStyle(.foreground)
-            //            }
+            Section {
+                NavigationLink("Tests") {
+                    TestList()
+                }
+                .foregroundStyle(.foreground)
+            }
         }
         .navigationTitle("Device Specs")
     }

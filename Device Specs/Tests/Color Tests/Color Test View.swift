@@ -10,7 +10,9 @@ struct ColorTestView: View {
     var body: some View {
         color
             .ignoresSafeArea()
+#if !os(watchOS)
             .statusBar(hidden: true)
+#endif
     }
 }
 
