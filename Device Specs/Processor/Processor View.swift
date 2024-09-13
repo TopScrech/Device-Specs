@@ -14,6 +14,13 @@ struct ProcessorView: View {
             ListParameter("Core count", parameter: vm.cores.description)
             
             ListParameter("Active core count", parameter: vm.activeCores.description)
+                        
+            Section("CPU load") {
+                CpuUsageChart(vm.cpuUsage)
+            }
+        }
+        .refreshableTask {
+            vm.cpuUsagePerCore()
         }
     }
 }
