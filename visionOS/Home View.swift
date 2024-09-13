@@ -34,9 +34,9 @@ struct HomeView: View {
             }
 #endif
             
-//            ListLink("Accessibility", icon: "accessibility") {
-//                AccessibilityView()
-//            }
+            ListLink("Accessibility", icon: "accessibility") {
+                AccessibilityView()
+            }
         }
         .navigationTitle("Device Specs")
         .foregroundStyle(.foreground)
