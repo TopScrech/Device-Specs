@@ -1,21 +1,25 @@
 import ScrechKit
 import DeviceKit
-//import Metal
-
-//@Observable
-//final class GpuVM {
-//    if let device = MTLCreateSystemDefaultDevice()
-//        
-//    var hasUnifiedMemory =
-//}
 
 struct ProcessorView: View {
     private var vm = ProcessorVM()
-//    private var gpu = GpuVM()
     
     var body: some View {
         List {
             Section("CPU") {
+#warning("Number of threads")
+                //                Button("Test") {
+                //                    var threadCount = mach_msg_type_number_t()
+                //                    var threadList: thread_act_array_t?
+                //                    let kerr = task_threads(mach_task_self_, &threadList, &threadCount)
+                //
+                //                    if kerr == KERN_SUCCESS {
+                //                        print("Number of Threads: \(Int(threadCount))")
+                //                    } else {
+                //                        print("Hopa")
+                //                    }
+                //                }
+                
                 let cpu = Device.current.cpu.description
                 ListParameter("CPU", parameter: cpu)
                 
