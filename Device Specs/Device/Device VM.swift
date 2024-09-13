@@ -15,7 +15,14 @@ final class DeviceVM {
     var architecture = ""
     
     // System
-    let operatingSystem = "\(UIDevice.current.systemName) \(UIDevice.current.systemVersion)"
+    var operatingSystem: String {
+#if os(watchOS)
+        "\(WKInterfaceDevice.current().systemName) \(WKInterfaceDevice.current().systemVersion)"
+#else
+        "\(UIDevice.current.systemName) \(UIDevice.current.systemVersion)"
+#endif
+    }
+    
     var buildNumber = ""
     
     // Capabilities
@@ -54,9 +61,12 @@ final class DeviceVM {
     init() {
         fetchBuildNumber()
         fetchDeviceModelIdentifier()
+#if !os(watchOS)
         fetchForceTouch()
+#endif
     }
     
+#if !os(watchOS)
     func fetchForceTouch() {
         switch UIViewController().traitCollection.forceTouchCapability {
             
@@ -67,6 +77,7 @@ final class DeviceVM {
             isForceTouchAvailable = "No"
         }
     }
+#endif
     
     func fetchSystemUptime() -> String {
         let uptime = ProcessInfo.processInfo.systemUptime

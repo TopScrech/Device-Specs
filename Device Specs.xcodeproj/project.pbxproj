@@ -95,6 +95,8 @@
 		F3F85EA22C94873000AE0A1D /* Processor View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC632C9353FF00F5E174 /* Processor View.swift */; };
 		F3F85EA32C94873000AE0A1D /* CPU Usage Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */; };
 		F3F85EA42C94873000AE0A1D /* Processor VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC662C93542700F5E174 /* Processor VM.swift */; };
+		F3F85EA52C94883D00AE0A1D /* Device View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC512C67B985008CD17B /* Device View.swift */; };
+		F3F85EA62C94883D00AE0A1D /* Device VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC522C67B985008CD17B /* Device VM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -592,6 +594,8 @@
 				F36FBCB62C9449A300F5E174 /* Home View.swift in Sources */,
 				F3F85E9E2C94863100AE0A1D /* Wifi VM.swift in Sources */,
 				F36FBCB42C9449A300F5E174 /* watchOS App.swift in Sources */,
+				F3F85EA52C94883D00AE0A1D /* Device View.swift in Sources */,
+				F3F85EA62C94883D00AE0A1D /* Device VM.swift in Sources */,
 				F36FBCD02C944B5000F5E174 /* App Container.swift in Sources */,
 				F36FBCC92C944A5B00F5E174 /* Battery VM.swift in Sources */,
 				F36FBCCA2C944B0300F5E174 /* Battery Specs.swift in Sources */,

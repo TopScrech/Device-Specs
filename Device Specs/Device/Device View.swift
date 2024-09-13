@@ -28,9 +28,11 @@ struct DeviceView: View {
                 ListParameter("Device", parameter: "\(Device.current)")
                 ListParameter("Identifier", parameter: Device.identifier)
                 
+#if !os(watchOS)
                 if let vendorId = UIDevice.current.identifierForVendor?.uuidString {
                     ListParameter("Identifier for vendor", parameter: vendorId)
                 }
+#endif
                 
 #warning("idfa")
                 //                let idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
@@ -52,7 +54,7 @@ struct DeviceView: View {
             }
             
             Section("Capabilities") {
-#if !os(visionOS)
+#if os(iOS)
                 ListParameter("Wireless Charging", parameter: Device.current.supportsWirelessCharging ? "Yes" : "No")
                 ListParameter("5G", parameter: Device.current.has5gSupport ? "Yes" : "No")
                 ListParameter("Dynamic Island", parameter: Device.current.hasDynamicIsland ? "Yes" : "No")
