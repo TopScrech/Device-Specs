@@ -25,8 +25,10 @@ final class ProcessorVM {
     }
     
     func fetchNumberOfCores() {
-        cores = ProcessInfo.processInfo.processorCount
-        activeCores = ProcessInfo.processInfo.activeProcessorCount
+        let process = ProcessInfo.processInfo
+        
+        cores = process.processorCount
+        activeCores = process.activeProcessorCount
     }
     
     func cpuUsagePerCore() {
