@@ -298,11 +298,8 @@
 				F36FBC722C942F7600F5E174 /* Assets.xcassets */,
 				F3C3BDD52C92D8F600BF91EE /* App Container.swift */,
 				F3C3BDD72C92D90700BF91EE /* Home View.swift */,
-				F3C3BDE72C92DCA300BF91EE /* Display Specs.swift */,
-				F36FBC552C931C1000F5E174 /* Sensors View.swift */,
-				F36FBC5D2C931C7500F5E174 /* Orientation VM.swift */,
-				F36FBC5F2C931CBD00F5E174 /* Location VM.swift */,
-				F36FBC612C931E2600F5E174 /* AltitudeVM.swift */,
+				F3F85EC62C94A7AF00AE0A1D /* Display */,
+				F3F85EC72C94A7B800AE0A1D /* Sensors */,
 			);
 			path = visionOS;
 			sourceTree = "<group>";
@@ -459,6 +456,25 @@
 				F3E7EC732C67B985008CD17B /* UWB Test */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		F3F85EC62C94A7AF00AE0A1D /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				F3C3BDE72C92DCA300BF91EE /* Display Specs.swift */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		F3F85EC72C94A7B800AE0A1D /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				F36FBC552C931C1000F5E174 /* Sensors View.swift */,
+				F36FBC5D2C931C7500F5E174 /* Orientation VM.swift */,
+				F36FBC5F2C931CBD00F5E174 /* Location VM.swift */,
+				F36FBC612C931E2600F5E174 /* AltitudeVM.swift */,
+			);
+			path = Sensors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
