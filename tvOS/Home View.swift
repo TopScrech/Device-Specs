@@ -35,10 +35,10 @@ struct HomeView: View {
             //            ListLink("Sensors", icon: "barometer") {
             //                SensorsView()
             //            }
-            //
-            //            ListLink("Accessibility", icon: "accessibility") {
-            //                AccessibilityView()
-            //            }
+            
+            ListLink("Accessibility", icon: "accessibility") {
+                AccessibilityView()
+            }
             
             Section {
                 NavigationLink("Tests") {

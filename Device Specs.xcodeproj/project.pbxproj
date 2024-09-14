@@ -119,6 +119,12 @@
 		F3F85EE32C957CF700AE0A1D /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85EE22C957CF700AE0A1D /* DeviceKit */; };
 		F3F85EE42C957D4F00AE0A1D /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EC02C948F9D00AE0A1D /* Test List.swift */; };
 		F3F85EE52C957D5900AE0A1D /* Color Test View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6D2C67B985008CD17B /* Color Test View.swift */; };
+		F3F85EE62C957ED300AE0A1D /* Accessibility VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */; };
+		F3F85EE72C957EDA00AE0A1D /* Accessibility Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */; };
+		F3F85EE82C957EE200AE0A1D /* Accessibility View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */; };
+		F3F85EEA2C957F9100AE0A1D /* Accessibility Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EE92C957F9100AE0A1D /* Accessibility Item.swift */; };
+		F3F85EEB2C957F9100AE0A1D /* Accessibility Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EE92C957F9100AE0A1D /* Accessibility Item.swift */; };
+		F3F85EEF2C95801D00AE0A1D /* Accessibility Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EE92C957F9100AE0A1D /* Accessibility Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -222,6 +228,7 @@
 		F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3F85EDC2C94DD6800AE0A1D /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F3F85EDE2C94DD7900AE0A1D /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
+		F3F85EE92C957F9100AE0A1D /* Accessibility Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility Item.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +297,7 @@
 			children = (
 				F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */,
 				F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */,
+				F3F85EE92C957F9100AE0A1D /* Accessibility Item.swift */,
 				F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */,
 			);
 			path = Accessability;
@@ -747,6 +755,7 @@
 				F36FBC5E2C931C7500F5E174 /* Orientation VM.swift in Sources */,
 				F36FBC602C931CBD00F5E174 /* Location VM.swift in Sources */,
 				F3C3BDE12C92DB9800BF91EE /* Storage VM.swift in Sources */,
+				F3F85EEA2C957F9100AE0A1D /* Accessibility Item.swift in Sources */,
 				F3C3BDE02C92DB9300BF91EE /* Ram VM.swift in Sources */,
 				F36FBC672C93542700F5E174 /* Processor VM.swift in Sources */,
 				F3C3BDD42C92D8E000BF91EE /* Device Specs.swift in Sources */,
@@ -767,6 +776,7 @@
 				F3E7EC7A2C67B985008CD17B /* Device View.swift in Sources */,
 				F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */,
 				F36FBC682C93542700F5E174 /* Processor VM.swift in Sources */,
+				F3F85EEB2C957F9100AE0A1D /* Accessibility Item.swift in Sources */,
 				F3E7EC7B2C67B985008CD17B /* Device VM.swift in Sources */,
 				F3E7EC7C2C67B985008CD17B /* Altitude VM.swift in Sources */,
 				F3E7EC9E2C680561008CD17B /* Torch VM.swift in Sources */,
@@ -808,10 +818,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F85EE72C957EDA00AE0A1D /* Accessibility Param.swift in Sources */,
 				F3F85EDF2C94DD7900AE0A1D /* Home View.swift in Sources */,
 				F3F85ED02C94AF5A00AE0A1D /* tvOS App.swift in Sources */,
 				F3F85EE52C957D5900AE0A1D /* Color Test View.swift in Sources */,
 				F3F85EE42C957D4F00AE0A1D /* Test List.swift in Sources */,
+				F3F85EEF2C95801D00AE0A1D /* Accessibility Item.swift in Sources */,
+				F3F85EE62C957ED300AE0A1D /* Accessibility VM.swift in Sources */,
+				F3F85EE82C957EE200AE0A1D /* Accessibility View.swift in Sources */,
 				F3F85EDD2C94DD6800AE0A1D /* App Container.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

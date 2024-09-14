@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct AccessibilityView: View {
     @State private var vm = AccessibilityVM()
@@ -6,7 +6,7 @@ struct AccessibilityView: View {
     var body: some View {
         List {
             ForEach(vm.filteredParams) { param in
-                ListParameter(param.name, parameter: param.text)
+                AccessibilityItem(param)
             }
         }
         .navigationTitle("Accessibility")
