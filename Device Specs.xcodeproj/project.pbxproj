@@ -141,6 +141,11 @@
 		F3F85F032C9587C400AE0A1D /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
 		F3F85F042C95880600AE0A1D /* Wifi VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */; };
 		F3F85F062C9588BE00AE0A1D /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F052C9588BE00AE0A1D /* Network View.swift */; };
+		F3F85F112C962C4600AE0A1D /* macOS App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F102C962C4600AE0A1D /* macOS App.swift */; };
+		F3F85F132C962C4600AE0A1D /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F122C962C4600AE0A1D /* Home View.swift */; };
+		F3F85F152C962C4700AE0A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F85F142C962C4700AE0A1D /* Assets.xcassets */; };
+		F3F85F212C962CBD00AE0A1D /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F202C962CBD00AE0A1D /* App Container.swift */; };
+		F3F85F232C962CE600AE0A1D /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F222C962CE600AE0A1D /* Battery Specs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -249,6 +254,14 @@
 		F3F85EF92C95857C00AE0A1D /* GPU Families.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPU Families.swift"; sourceTree = "<group>"; };
 		F3F85F052C9588BE00AE0A1D /* Network View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network View.swift"; sourceTree = "<group>"; };
 		F3F85F092C959DE300AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F3F85F0E2C962C4600AE0A1D /* macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3F85F102C962C4600AE0A1D /* macOS App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "macOS App.swift"; sourceTree = "<group>"; };
+		F3F85F122C962C4600AE0A1D /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
+		F3F85F142C962C4700AE0A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3F85F192C962C4700AE0A1D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		F3F85F1D2C962C6600AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3F85F202C962CBD00AE0A1D /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
+		F3F85F222C962CE600AE0A1D /* Battery Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Specs.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +298,13 @@
 			files = (
 				F3F85EE12C957CF500AE0A1D /* ScrechKit in Frameworks */,
 				F3F85EE32C957CF700AE0A1D /* DeviceKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F85F0B2C962C4600AE0A1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +391,7 @@
 				F3C3BDD12C92D89600BF91EE /* visionOS */,
 				F36FBCC32C9449AB00F5E174 /* watchOS */,
 				F3F85EDB2C94AF8000AE0A1D /* tvOS */,
+				F3F85F1F2C962C9400AE0A1D /* macOS */,
 				F3C3BDDB2C92DAAA00BF91EE /* Frameworks */,
 				F3E7EC3B2C676A13008CD17B /* Products */,
 			);
@@ -383,6 +404,7 @@
 				F3C3BDBD2C92D87C00BF91EE /* visionOS.app */,
 				F36FBCB12C9449A200F5E174 /* watchOS.app */,
 				F3F85ECD2C94AF5A00AE0A1D /* tvOS.app */,
+				F3F85F0E2C962C4600AE0A1D /* macOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -546,6 +568,20 @@
 			path = tvOS;
 			sourceTree = "<group>";
 		};
+		F3F85F1F2C962C9400AE0A1D /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				F3F85F102C962C4600AE0A1D /* macOS App.swift */,
+				F3F85F202C962CBD00AE0A1D /* App Container.swift */,
+				F3F85F1D2C962C6600AE0A1D /* Info.plist */,
+				F3F85F142C962C4700AE0A1D /* Assets.xcassets */,
+				F3F85F192C962C4700AE0A1D /* macOS.entitlements */,
+				F3F85F122C962C4600AE0A1D /* Home View.swift */,
+				F3F85F222C962CE600AE0A1D /* Battery Specs.swift */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -635,6 +671,25 @@
 			productReference = F3F85ECD2C94AF5A00AE0A1D /* tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F3F85F0D2C962C4600AE0A1D /* macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3F85F1A2C962C4700AE0A1D /* Build configuration list for PBXNativeTarget "macOS" */;
+			buildPhases = (
+				F3F85F0A2C962C4600AE0A1D /* Sources */,
+				F3F85F0B2C962C4600AE0A1D /* Frameworks */,
+				F3F85F0C2C962C4600AE0A1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = macOS;
+			packageProductDependencies = (
+			);
+			productName = macOS;
+			productReference = F3F85F0E2C962C4600AE0A1D /* macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -655,6 +710,9 @@
 						CreatedOnToolsVersion = 16.0;
 					};
 					F3F85ECC2C94AF5A00AE0A1D = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					F3F85F0D2C962C4600AE0A1D = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -681,6 +739,7 @@
 				F36FBCB02C9449A200F5E174 /* watchOS */,
 				F3C3BDBC2C92D87C00BF91EE /* visionOS */,
 				F3F85ECC2C94AF5A00AE0A1D /* tvOS */,
+				F3F85F0D2C962C4600AE0A1D /* macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -716,6 +775,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F85ED42C94AF5B00AE0A1D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F85F0C2C962C4600AE0A1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F85F152C962C4700AE0A1D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -867,6 +934,17 @@
 				F3F85EE62C957ED300AE0A1D /* Accessibility VM.swift in Sources */,
 				F3F85EE82C957EE200AE0A1D /* Accessibility View.swift in Sources */,
 				F3F85EDD2C94DD6800AE0A1D /* App Container.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F85F0A2C962C4600AE0A1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F85F132C962C4600AE0A1D /* Home View.swift in Sources */,
+				F3F85F112C962C4600AE0A1D /* macOS App.swift in Sources */,
+				F3F85F212C962CBD00AE0A1D /* App Container.swift in Sources */,
+				F3F85F232C962CE600AE0A1D /* Battery Specs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1274,6 +1352,64 @@
 			};
 			name = Release;
 		};
+		F3F85F1B2C962C4700AE0A1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F3F85F1C2C962C4700AE0A1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1318,6 +1454,15 @@
 			buildConfigurations = (
 				F3F85ED92C94AF5B00AE0A1D /* Debug */,
 				F3F85EDA2C94AF5B00AE0A1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3F85F1A2C962C4700AE0A1D /* Build configuration list for PBXNativeTarget "macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F85F1B2C962C4700AE0A1D /* Debug */,
+				F3F85F1C2C962C4700AE0A1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
