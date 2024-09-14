@@ -28,7 +28,11 @@ struct DeviceView: View {
                 ListParameter("Device", parameter: "\(Device.current)")
                 ListParameter("Identifier", parameter: Device.identifier)
                 
-#if !os(watchOS)
+#if os(watchOS)
+                if let vendorId = WKInterfaceDevice.current().identifierForVendor?.uuidString {
+                    ListParameter("Identifier for vendor", parameter: vendorId)
+                }
+#else
                 if let vendorId = UIDevice.current.identifierForVendor?.uuidString {
                     ListParameter("Identifier for vendor", parameter: vendorId)
                 }

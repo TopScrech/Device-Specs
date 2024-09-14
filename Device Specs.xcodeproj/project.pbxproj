@@ -127,6 +127,8 @@
 		F3F85EEF2C95801D00AE0A1D /* Accessibility Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EE92C957F9100AE0A1D /* Accessibility Item.swift */; };
 		F3F85EF12C9580AD00AE0A1D /* Display VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC552C67B985008CD17B /* Display VM.swift */; };
 		F3F85EF32C9582EA00AE0A1D /* Display Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EF22C9582EA00AE0A1D /* Display Specs.swift */; };
+		F3F85EF42C9583E400AE0A1D /* Device VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC522C67B985008CD17B /* Device VM.swift */; };
+		F3F85EF52C9583EB00AE0A1D /* Device View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC512C67B985008CD17B /* Device View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -399,8 +401,8 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC512C67B985008CD17B /* Device View.swift */,
-				F3F85EC22C9492F300AE0A1D /* Device Watch Info.swift */,
 				F3E7EC522C67B985008CD17B /* Device VM.swift */,
+				F3F85EC22C9492F300AE0A1D /* Device Watch Info.swift */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -823,6 +825,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F85EE72C957EDA00AE0A1D /* Accessibility Param.swift in Sources */,
+				F3F85EF52C9583EB00AE0A1D /* Device View.swift in Sources */,
+				F3F85EF42C9583E400AE0A1D /* Device VM.swift in Sources */,
 				F3F85EF32C9582EA00AE0A1D /* Display Specs.swift in Sources */,
 				F3F85EDF2C94DD7900AE0A1D /* Home View.swift in Sources */,
 				F3F85ED02C94AF5A00AE0A1D /* tvOS App.swift in Sources */,
