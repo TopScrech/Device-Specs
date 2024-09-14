@@ -139,6 +139,9 @@
 		F3F85EFE2C95875C00AE0A1D /* Memory View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5D2C67B985008CD17B /* Memory View.swift */; };
 		F3F85EFF2C95875C00AE0A1D /* Storage VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5E2C67B985008CD17B /* Storage VM.swift */; };
 		F3F85F002C95875C00AE0A1D /* Ram VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5F2C67B985008CD17B /* Ram VM.swift */; };
+		F3F85F032C9587C400AE0A1D /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
+		F3F85F042C95880600AE0A1D /* Wifi VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */; };
+		F3F85F062C9588BE00AE0A1D /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F052C9588BE00AE0A1D /* Network View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -245,6 +248,7 @@
 		F3F85EE92C957F9100AE0A1D /* Accessibility Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility Item.swift"; sourceTree = "<group>"; };
 		F3F85EF22C9582EA00AE0A1D /* Display Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Display Specs.swift"; sourceTree = "<group>"; };
 		F3F85EF92C95857C00AE0A1D /* GPU Families.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPU Families.swift"; sourceTree = "<group>"; };
+		F3F85F052C9588BE00AE0A1D /* Network View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -535,6 +539,7 @@
 				F3F85EDC2C94DD6800AE0A1D /* App Container.swift */,
 				F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */,
 				F3F85EDE2C94DD7900AE0A1D /* Home View.swift */,
+				F3F85F052C9588BE00AE0A1D /* Network View.swift */,
 				F3F85EF22C9582EA00AE0A1D /* Display Specs.swift */,
 			);
 			path = tvOS;
@@ -848,13 +853,16 @@
 				F3F85EFF2C95875C00AE0A1D /* Storage VM.swift in Sources */,
 				F3F85F002C95875C00AE0A1D /* Ram VM.swift in Sources */,
 				F3F85ED02C94AF5A00AE0A1D /* tvOS App.swift in Sources */,
+				F3F85F042C95880600AE0A1D /* Wifi VM.swift in Sources */,
 				F3F85EFC2C95857C00AE0A1D /* GPU Families.swift in Sources */,
 				F3F85EE52C957D5900AE0A1D /* Color Test View.swift in Sources */,
+				F3F85F032C9587C400AE0A1D /* Network VM.swift in Sources */,
 				F3F85EF12C9580AD00AE0A1D /* Display VM.swift in Sources */,
 				F3F85EE42C957D4F00AE0A1D /* Test List.swift in Sources */,
 				F3F85EF62C95854E00AE0A1D /* Processor VM.swift in Sources */,
 				F3F85EF72C95854E00AE0A1D /* Processor View.swift in Sources */,
 				F3F85EF82C95854E00AE0A1D /* CPU Usage Chart.swift in Sources */,
+				F3F85F062C9588BE00AE0A1D /* Network View.swift in Sources */,
 				F3F85EEF2C95801D00AE0A1D /* Accessibility Item.swift in Sources */,
 				F3F85EE62C957ED300AE0A1D /* Accessibility VM.swift in Sources */,
 				F3F85EE82C957EE200AE0A1D /* Accessibility View.swift in Sources */,

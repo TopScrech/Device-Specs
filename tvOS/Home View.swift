@@ -19,10 +19,10 @@ struct HomeView: View {
                 MemoryView()
             }
             
-            //            ListLink("Network", icon: "network") {
-            //                NetworkView()
-            //            }
-            //
+            ListLink("Network", icon: "network") {
+                NetworkView()
+            }
+            
             //            ListLink("Sensors", icon: "barometer") {
             //                SensorsView()
             //            }
