@@ -12,9 +12,9 @@ final class BatteryVM {
     var cellRevision = "Unknown"
     
     // Charge
-    var isBelowWarningLevel: Bool?
-    var isFullyCharged: Bool?
-    var isCharging: Bool?
+    var isBelowWarningLevel = "Unknown"
+    var isFullyCharged = "Unknown"
+    var isCharging = "Unknown"
     var stateOfCharge: Int?
     
     // Health
@@ -93,9 +93,9 @@ final class BatteryVM {
                     }
                     
                     // Charge Information
-                    self.isBelowWarningLevel = (props["AtCriticalLevel"] as? Int) == 1
-                    self.isFullyCharged = (props["FullyCharged"] as? Int) == 1
-                    self.isCharging = (props["IsCharging"] as? Int) == 1
+                    self.isBelowWarningLevel = (props["AtCriticalLevel"] as? Int) == 1 ? "Yes" : "No"
+                    self.isFullyCharged = (props["FullyCharged"] as? Int) == 1 ? "Yes" : "No"
+                    self.isCharging = (props["IsCharging"] as? Int) == 1 ? "Yes" : "No"
                     
                     if let currentCapacity = props["CurrentCapacity"] as? Int,
                        let maxCapacity = props["MaxCapacity"] as? Int {

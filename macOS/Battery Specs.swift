@@ -18,9 +18,9 @@ struct BatterySpecs: View {
             
             // Charge Information Section
             Section("Charge Information") {
-                SpecItem("Below Warning Level", param: vm.isBelowWarningLevel == true ? "Yes" : "No")
-                SpecItem("Fully Charged", param: vm.isFullyCharged == true ? "Yes" : "No")
-                SpecItem("Charging", param: vm.isCharging == true ? "Yes" : "No")
+                SpecItem("Below Warning Level", param: vm.isBelowWarningLevel)
+                SpecItem("Fully Charged", param: vm.isFullyCharged)
+                SpecItem("Charging", param: vm.isCharging)
                 SpecItem("State of Charge (%)", param: vm.stateOfCharge != nil ? "\(vm.stateOfCharge!)%" : "Unknown")
             }
             
