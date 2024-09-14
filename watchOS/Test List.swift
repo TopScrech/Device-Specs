@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct TestList: View {
-    private let colorTests: [String: Color] = [
+    private let colorTests = [
         "White": Color(red: 1, green: 1, blue: 1),
         "Black": Color(red: 0, green: 0, blue: 0),
         "Red": Color(red: 1, green: 0, blue: 0),

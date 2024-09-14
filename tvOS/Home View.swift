@@ -39,13 +39,13 @@ struct HomeView: View {
             //            ListLink("Accessibility", icon: "accessibility") {
             //                AccessibilityView()
             //            }
-            //
-            //            Section {
-            //                Button("Tests") {
-            //
-            //                }
-            //                .foregroundStyle(.foreground)
-            //            }
+            
+            Section {
+                NavigationLink("Tests") {
+                    TestList()
+                }
+                .foregroundStyle(.foreground)
+            }
         }
         .navigationTitle("Device Specs")
     }

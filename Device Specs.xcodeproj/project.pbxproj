@@ -117,6 +117,8 @@
 		F3F85EDF2C94DD7900AE0A1D /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EDE2C94DD7900AE0A1D /* Home View.swift */; };
 		F3F85EE12C957CF500AE0A1D /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85EE02C957CF500AE0A1D /* ScrechKit */; };
 		F3F85EE32C957CF700AE0A1D /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85EE22C957CF700AE0A1D /* DeviceKit */; };
+		F3F85EE42C957D4F00AE0A1D /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EC02C948F9D00AE0A1D /* Test List.swift */; };
+		F3F85EE52C957D5900AE0A1D /* Color Test View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6D2C67B985008CD17B /* Color Test View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -808,6 +810,8 @@
 			files = (
 				F3F85EDF2C94DD7900AE0A1D /* Home View.swift in Sources */,
 				F3F85ED02C94AF5A00AE0A1D /* tvOS App.swift in Sources */,
+				F3F85EE52C957D5900AE0A1D /* Color Test View.swift in Sources */,
+				F3F85EE42C957D4F00AE0A1D /* Test List.swift in Sources */,
 				F3F85EDD2C94DD6800AE0A1D /* App Container.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
