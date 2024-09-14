@@ -11,10 +11,10 @@ struct HomeView: View {
                 DisplaySpecs()
             }
             
-            //            ListLink("Processor", icon: "cpu") {
-            //                ProcessorView()
-            //            }
-            //
+            ListLink("Processor", icon: "cpu") {
+                ProcessorView()
+            }
+            
             //            ListLink("Memory", icon: "memorychip") {
             //                MemoryView()
             //            }
