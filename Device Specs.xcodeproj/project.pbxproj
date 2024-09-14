@@ -248,6 +248,7 @@
 		F3F85EF22C9582EA00AE0A1D /* Display Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Display Specs.swift"; sourceTree = "<group>"; };
 		F3F85EF92C95857C00AE0A1D /* GPU Families.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPU Families.swift"; sourceTree = "<group>"; };
 		F3F85F052C9588BE00AE0A1D /* Network View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network View.swift"; sourceTree = "<group>"; };
+		F3F85F092C959DE300AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -534,6 +535,7 @@
 		F3F85EDB2C94AF8000AE0A1D /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
+				F3F85F092C959DE300AE0A1D /* Info.plist */,
 				F3F85ECF2C94AF5A00AE0A1D /* tvOS App.swift */,
 				F3F85EDC2C94DD6800AE0A1D /* App Container.swift */,
 				F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */,
@@ -1225,8 +1227,7 @@
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_FILE = tvOS/Info.plist;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1254,8 +1255,7 @@
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_FILE = tvOS/Info.plist;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
