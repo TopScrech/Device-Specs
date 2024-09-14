@@ -30,23 +30,26 @@ final class BatteryVM {
         DispatchQueue.global(qos: .background).async {
             // Create a matching dictionary to find the battery service
             guard let matchingDict = IOServiceMatching("AppleSmartBattery") else {
-                print("Failed to create matching dictionary.")
+                print("Failed to create matching dictionary")
                 return
             }
             
             // Get the battery service
             let serviceObject = IOServiceGetMatchingService(kIOMainPortDefault, matchingDict)
+            
             if serviceObject == 0 {
-                print("Battery service not found.")
+                print("Battery service not found")
                 return
             }
             
             // Retrieve the properties of the battery
             var properties: Unmanaged<CFMutableDictionary>?
+            
             let result = IORegistryEntryCreateCFProperties(serviceObject, &properties, kCFAllocatorDefault, 0)
             IOObjectRelease(serviceObject)
+            
             if result != KERN_SUCCESS {
-                print("Failed to retrieve battery properties.")
+                print("Failed to retrieve battery properties")
                 return
             }
             
