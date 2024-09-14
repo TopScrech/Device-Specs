@@ -22,7 +22,9 @@ struct DisplaySpecs: View {
             
 #if !os(watchOS)
             ListParameter("Refresh rate", parameter: display.refreshRate)
+#endif
             
+#if os(iOS)
             ListParameter("Rounded corners", parameter: display.isRounded)
 #endif
             

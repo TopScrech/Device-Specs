@@ -6,11 +6,11 @@ struct HomeView: View {
             //            ListLink("Device and system", icon: "info.circle") {
             //                DeviceView()
             //            }
-            //
-            //            ListLink("Display", icon: "iphone") {
-            //                DisplaySpecs()
-            //            }
-            //
+            
+            ListLink("Display", icon: "iphone") {
+                DisplaySpecs()
+            }
+            
             //            ListLink("Processor", icon: "cpu") {
             //                ProcessorView()
             //            }
@@ -18,16 +18,7 @@ struct HomeView: View {
             //            ListLink("Memory", icon: "memorychip") {
             //                MemoryView()
             //            }
-            //
-            //            ListLink("Camera", icon: "camera") {
-            //                CameraSpecs()
-            //            }
-            //
-            //            ListLink("Battery", icon: "battery.100percent.bolt") {
-            //                BatterySpecs()
-            //            }
-            //            .symbolRenderingMode(.multicolor)
-            //
+            
             //            ListLink("Network", icon: "network") {
             //                NetworkView()
             //            }

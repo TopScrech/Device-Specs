@@ -9,6 +9,9 @@ final class DisplayVM {
     
 #if !os(watchOS)
     var refreshRate = String(UIScreen.main.maximumFramesPerSecond)
+#endif
+    
+#if os(iOS)
     let isRounded = Device.current.hasRoundedDisplayCorners ? "Yes" : "No"
 #endif
     

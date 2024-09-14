@@ -125,6 +125,8 @@
 		F3F85EEA2C957F9100AE0A1D /* Accessibility Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EE92C957F9100AE0A1D /* Accessibility Item.swift */; };
 		F3F85EEB2C957F9100AE0A1D /* Accessibility Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EE92C957F9100AE0A1D /* Accessibility Item.swift */; };
 		F3F85EEF2C95801D00AE0A1D /* Accessibility Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EE92C957F9100AE0A1D /* Accessibility Item.swift */; };
+		F3F85EF12C9580AD00AE0A1D /* Display VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC552C67B985008CD17B /* Display VM.swift */; };
+		F3F85EF32C9582EA00AE0A1D /* Display Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EF22C9582EA00AE0A1D /* Display Specs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +231,7 @@
 		F3F85EDC2C94DD6800AE0A1D /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F3F85EDE2C94DD7900AE0A1D /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F3F85EE92C957F9100AE0A1D /* Accessibility Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility Item.swift"; sourceTree = "<group>"; };
+		F3F85EF22C9582EA00AE0A1D /* Display Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Display Specs.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -518,6 +521,7 @@
 				F3F85EDC2C94DD6800AE0A1D /* App Container.swift */,
 				F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */,
 				F3F85EDE2C94DD7900AE0A1D /* Home View.swift */,
+				F3F85EF22C9582EA00AE0A1D /* Display Specs.swift */,
 			);
 			path = tvOS;
 			sourceTree = "<group>";
@@ -819,9 +823,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F85EE72C957EDA00AE0A1D /* Accessibility Param.swift in Sources */,
+				F3F85EF32C9582EA00AE0A1D /* Display Specs.swift in Sources */,
 				F3F85EDF2C94DD7900AE0A1D /* Home View.swift in Sources */,
 				F3F85ED02C94AF5A00AE0A1D /* tvOS App.swift in Sources */,
 				F3F85EE52C957D5900AE0A1D /* Color Test View.swift in Sources */,
+				F3F85EF12C9580AD00AE0A1D /* Display VM.swift in Sources */,
 				F3F85EE42C957D4F00AE0A1D /* Test List.swift in Sources */,
 				F3F85EEF2C95801D00AE0A1D /* Accessibility Item.swift in Sources */,
 				F3F85EE62C957ED300AE0A1D /* Accessibility VM.swift in Sources */,
