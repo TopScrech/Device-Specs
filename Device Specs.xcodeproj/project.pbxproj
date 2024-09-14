@@ -112,8 +112,11 @@
 		F3F85EC12C948F9D00AE0A1D /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EC02C948F9D00AE0A1D /* Test List.swift */; };
 		F3F85EC52C9492F300AE0A1D /* Device Watch Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EC22C9492F300AE0A1D /* Device Watch Info.swift */; };
 		F3F85ED02C94AF5A00AE0A1D /* tvOS App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85ECF2C94AF5A00AE0A1D /* tvOS App.swift */; };
-		F3F85ED22C94AF5A00AE0A1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85ED12C94AF5A00AE0A1D /* ContentView.swift */; };
 		F3F85ED42C94AF5B00AE0A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */; };
+		F3F85EDD2C94DD6800AE0A1D /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EDC2C94DD6800AE0A1D /* App Container.swift */; };
+		F3F85EDF2C94DD7900AE0A1D /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EDE2C94DD7900AE0A1D /* Home View.swift */; };
+		F3F85EE12C957CF500AE0A1D /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85EE02C957CF500AE0A1D /* ScrechKit */; };
+		F3F85EE32C957CF700AE0A1D /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85EE22C957CF700AE0A1D /* DeviceKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,8 +217,9 @@
 		F3F85EC82C94AED800AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F3F85ECD2C94AF5A00AE0A1D /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F85ECF2C94AF5A00AE0A1D /* tvOS App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "tvOS App.swift"; sourceTree = "<group>"; };
-		F3F85ED12C94AF5A00AE0A1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3F85EDC2C94DD6800AE0A1D /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
+		F3F85EDE2C94DD7900AE0A1D /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +254,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F85EE12C957CF500AE0A1D /* ScrechKit in Frameworks */,
+				F3F85EE32C957CF700AE0A1D /* DeviceKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,8 +505,9 @@
 			isa = PBXGroup;
 			children = (
 				F3F85ECF2C94AF5A00AE0A1D /* tvOS App.swift */,
+				F3F85EDC2C94DD6800AE0A1D /* App Container.swift */,
 				F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */,
-				F3F85ED12C94AF5A00AE0A1D /* ContentView.swift */,
+				F3F85EDE2C94DD7900AE0A1D /* Home View.swift */,
 			);
 			path = tvOS;
 			sourceTree = "<group>";
@@ -587,6 +594,8 @@
 			);
 			name = tvOS;
 			packageProductDependencies = (
+				F3F85EE02C957CF500AE0A1D /* ScrechKit */,
+				F3F85EE22C957CF700AE0A1D /* DeviceKit */,
 			);
 			productName = tvOS;
 			productReference = F3F85ECD2C94AF5A00AE0A1D /* tvOS.app */;
@@ -797,8 +806,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3F85ED22C94AF5A00AE0A1D /* ContentView.swift in Sources */,
+				F3F85EDF2C94DD7900AE0A1D /* Home View.swift in Sources */,
 				F3F85ED02C94AF5A00AE0A1D /* tvOS App.swift in Sources */,
+				F3F85EDD2C94DD6800AE0A1D /* App Container.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1304,6 +1314,16 @@
 			productName = ScrechKit;
 		};
 		F3E7EC982C67B9A8008CD17B /* DeviceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
+			productName = DeviceKit;
+		};
+		F3F85EE02C957CF500AE0A1D /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F3F85EE22C957CF700AE0A1D /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;

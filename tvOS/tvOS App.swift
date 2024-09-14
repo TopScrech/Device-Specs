@@ -4,7 +4,7 @@ import SwiftUI
 struct tvOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppContainer()
         }
     }
 }
