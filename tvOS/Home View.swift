@@ -23,10 +23,6 @@ struct HomeView: View {
                 NetworkView()
             }
             
-            //            ListLink("Sensors", icon: "barometer") {
-            //                SensorsView()
-            //            }
-            
             ListLink("Accessibility", icon: "accessibility") {
                 AccessibilityView()
             }
