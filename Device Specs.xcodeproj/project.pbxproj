@@ -136,6 +136,9 @@
 		F3F85EFB2C95857C00AE0A1D /* GPU Families.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EF92C95857C00AE0A1D /* GPU Families.swift */; };
 		F3F85EFC2C95857C00AE0A1D /* GPU Families.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EF92C95857C00AE0A1D /* GPU Families.swift */; };
 		F3F85EFD2C95857C00AE0A1D /* GPU Families.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EF92C95857C00AE0A1D /* GPU Families.swift */; };
+		F3F85EFE2C95875C00AE0A1D /* Memory View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5D2C67B985008CD17B /* Memory View.swift */; };
+		F3F85EFF2C95875C00AE0A1D /* Storage VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5E2C67B985008CD17B /* Storage VM.swift */; };
+		F3F85F002C95875C00AE0A1D /* Ram VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5F2C67B985008CD17B /* Ram VM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -841,6 +844,9 @@
 				F3F85EF42C9583E400AE0A1D /* Device VM.swift in Sources */,
 				F3F85EF32C9582EA00AE0A1D /* Display Specs.swift in Sources */,
 				F3F85EDF2C94DD7900AE0A1D /* Home View.swift in Sources */,
+				F3F85EFE2C95875C00AE0A1D /* Memory View.swift in Sources */,
+				F3F85EFF2C95875C00AE0A1D /* Storage VM.swift in Sources */,
+				F3F85F002C95875C00AE0A1D /* Ram VM.swift in Sources */,
 				F3F85ED02C94AF5A00AE0A1D /* tvOS App.swift in Sources */,
 				F3F85EFC2C95857C00AE0A1D /* GPU Families.swift in Sources */,
 				F3F85EE52C957D5900AE0A1D /* Color Test View.swift in Sources */,

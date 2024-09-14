@@ -15,9 +15,9 @@ struct HomeView: View {
                 ProcessorView()
             }
             
-            //            ListLink("Memory", icon: "memorychip") {
-            //                MemoryView()
-            //            }
+            ListLink("Memory", icon: "memorychip") {
+                MemoryView()
+            }
             
             //            ListLink("Network", icon: "network") {
             //                NetworkView()
