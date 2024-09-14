@@ -146,6 +146,9 @@
 		F3F85F152C962C4700AE0A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F85F142C962C4700AE0A1D /* Assets.xcassets */; };
 		F3F85F212C962CBD00AE0A1D /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F202C962CBD00AE0A1D /* App Container.swift */; };
 		F3F85F232C962CE600AE0A1D /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F222C962CE600AE0A1D /* Battery Specs.swift */; };
+		F3F85F252C962E7200AE0A1D /* Battery Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F242C962E7200AE0A1D /* Battery Monitor.swift */; };
+		F3F85F272C962EC600AE0A1D /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85F262C962EC600AE0A1D /* ScrechKit */; };
+		F3F85F292C962EC900AE0A1D /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85F282C962EC900AE0A1D /* DeviceKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -262,6 +265,7 @@
 		F3F85F1D2C962C6600AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3F85F202C962CBD00AE0A1D /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F3F85F222C962CE600AE0A1D /* Battery Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Specs.swift"; sourceTree = "<group>"; };
+		F3F85F242C962E7200AE0A1D /* Battery Monitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Monitor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +309,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F85F272C962EC600AE0A1D /* ScrechKit in Frameworks */,
+				F3F85F292C962EC900AE0A1D /* DeviceKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +584,7 @@
 				F3F85F192C962C4700AE0A1D /* macOS.entitlements */,
 				F3F85F122C962C4600AE0A1D /* Home View.swift */,
 				F3F85F222C962CE600AE0A1D /* Battery Specs.swift */,
+				F3F85F242C962E7200AE0A1D /* Battery Monitor.swift */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -685,6 +692,8 @@
 			);
 			name = macOS;
 			packageProductDependencies = (
+				F3F85F262C962EC600AE0A1D /* ScrechKit */,
+				F3F85F282C962EC900AE0A1D /* DeviceKit */,
 			);
 			productName = macOS;
 			productReference = F3F85F0E2C962C4600AE0A1D /* macOS.app */;
@@ -944,6 +953,7 @@
 				F3F85F132C962C4600AE0A1D /* Home View.swift in Sources */,
 				F3F85F112C962C4600AE0A1D /* macOS App.swift in Sources */,
 				F3F85F212C962CBD00AE0A1D /* App Container.swift in Sources */,
+				F3F85F252C962E7200AE0A1D /* Battery Monitor.swift in Sources */,
 				F3F85F232C962CE600AE0A1D /* Battery Specs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1525,6 +1535,16 @@
 			productName = ScrechKit;
 		};
 		F3F85EE22C957CF700AE0A1D /* DeviceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
+			productName = DeviceKit;
+		};
+		F3F85F262C962EC600AE0A1D /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F3F85F282C962EC900AE0A1D /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
