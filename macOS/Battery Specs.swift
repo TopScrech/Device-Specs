@@ -26,7 +26,7 @@ struct BatterySpecs: View {
             
             // Health Information Section
             Section("Health Information") {
-                SpecItem("Cycle Count", param: vm.cycleCount != nil ? "\(vm.cycleCount!)" : "Unknown")
+                SpecItem("Cycle Count", param: vm.cycleCount)
                 SpecItem("Condition", param: vm.condition)
                 SpecItem("Maximum Capacity", param: vm.maximumCapacityPercent != nil ? "\(vm.maximumCapacityPercent!)%" : "Unknown")
             }

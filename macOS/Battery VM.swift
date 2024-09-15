@@ -18,7 +18,7 @@ final class BatteryVM {
     var stateOfCharge: Int?
     
     // Health
-    var cycleCount: Int?
+    var cycleCount = "Unknown"
     var condition = "Unknown"
     var maximumCapacityPercent: Int?
     
@@ -55,7 +55,7 @@ final class BatteryVM {
             
             // Extract the properties
             if let props = properties?.takeRetainedValue() as NSDictionary? {
-                print(props)
+//                print(props)
                 
                 DispatchQueue.main.async {
                     // Model Information
@@ -103,7 +103,9 @@ final class BatteryVM {
                     }
                     
                     // Health Information
-                    self.cycleCount = props["CycleCount"] as? Int
+                    if let cycleCount = props["CycleCount"] as? Int {
+                        self.cycleCount = String(cycleCount)
+                    }
                     
                     if let permanentFailureStatus = props["PermanentFailureStatus"] as? Int, permanentFailureStatus == 0 {
                         self.condition = "Normal"
