@@ -5,11 +5,7 @@ final class BatteryVM {
     var batteryLevel = ""
     var batteryState = ""
     var lowPowerMode = ""
-    
-    init() {
-        fetchBatteryInfo()
-    }
-    
+        
     func fetchBatteryInfo() {
         let device = WKInterfaceDevice.current()
         device.isBatteryMonitoringEnabled = true

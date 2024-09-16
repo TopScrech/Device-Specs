@@ -6,14 +6,6 @@ final class BatteryVM {
     var batteryState = ""
     var lowPowerMode = ""
     
-    //    init() {
-    //        NotificationCenter.default.addObserver(self, selector: #selector(batteryLevelDidChange), name: .UIDeviceBatteryLevelDidChange, object: nil)
-    //    }
-    //
-    //    func batteryLevelDidChange(_ notification: Notification) {
-    //        print(batteryLevel)
-    //    }
-    
     func fetchBatteryInfo() {
         UIDevice.current.isBatteryMonitoringEnabled = true
         
