@@ -34,7 +34,7 @@ final class SystemReportVM {
                         DispatchQueue.main.async { [self] in
                             output += chunk
                             // Update progress (this is a placeholder)
-                            progress = min(1.0, progress + 0.005)
+                            progress = min(1, progress + 0.005)
                         }
                     }
                 } else {
@@ -42,7 +42,10 @@ final class SystemReportVM {
                     fileHandle.readabilityHandler = nil
                     
                     DispatchQueue.main.async { [self] in
-                        isFetching = false
+                        withAnimation {
+                            isFetching = false
+                        }
+                        
                         progress = 1
                     }
                 }

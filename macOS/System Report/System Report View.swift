@@ -5,13 +5,13 @@ struct SystemReportView: View {
     
     var body: some View {
         VStack {
-            Button("Create a complete system report") {
+            Button("Create a full system report") {
                 vm.fetchSystemReport()
             }
             .disabled(vm.isFetching)
             
             if vm.isFetching {
-                ProgressView(value: vm.progress, total: 1.0)
+                ProgressView(value: vm.progress, total: 1)
                     .padding()
             }
         }

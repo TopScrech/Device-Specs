@@ -395,6 +395,15 @@
 			path = "System Report";
 			sourceTree = "<group>";
 		};
+		F35721502C98637100967ACA /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F3F85F202C962CBD00AE0A1D /* App Container.swift */,
+				F33FEE572C982EC200214288 /* Nav Links.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		F36FBC692C93551B00F5E174 /* Processor */ = {
 			isa = PBXGroup;
 			children = (
@@ -647,11 +656,10 @@
 			isa = PBXGroup;
 			children = (
 				F3F85F102C962C4600AE0A1D /* macOS App.swift */,
-				F3F85F202C962CBD00AE0A1D /* App Container.swift */,
+				F35721502C98637100967ACA /* Navigation */,
 				F3F85F1D2C962C6600AE0A1D /* Info.plist */,
 				F3F85F142C962C4700AE0A1D /* Assets.xcassets */,
 				F3F85F192C962C4700AE0A1D /* macOS.entitlements */,
-				F33FEE572C982EC200214288 /* Nav Links.swift */,
 				F33FEE5C2C98386E00214288 /* Param.swift */,
 				F33FEE5E2C9838AE00214288 /* Spec Item.swift */,
 				F33FEE552C982AFB00214288 /* Battery */,
