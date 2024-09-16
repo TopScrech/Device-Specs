@@ -4,6 +4,7 @@ import SwiftUI
 final class BatteryVM {
     var batteryLevel = ""
     var batteryState = ""
+    var lowPowerMode = ""
     
     init() {
         fetchBatteryInfo()
@@ -15,6 +16,8 @@ final class BatteryVM {
         
         let batteryLevelNumber = String(format: "%.0f", device.batteryLevel * 100)
         batteryLevel = batteryLevelNumber + "%"
+        
+        lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled ? "Yes" : "No"
         
         let batteryStateEnum = device.batteryState
         
