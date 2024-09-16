@@ -3,22 +3,22 @@ import SwiftUI
 @Observable
 final class BatteryVM {
     // Model
-    var serialNumber = "Unknown"
-    var deviceName = "Unknown"
-    var packLotCode = "Unknown"
-    var pcbLotCode = "Unknown"
-    var firmwareVersion = "Unknown"
-    var hardwareRevision = "Unknown"
-    var cellRevision = "Unknown"
+    var serialNumber: String?
+    var deviceName: String?
+    var packLotCode: String?
+    var pcbLotCode: String?
+    var firmwareVersion: String?
+    var hardwareRevision: String?
+    var cellRevision: String?
     
     // Charge
-    var isBelowWarningLevel = "Unknown"
-    var isFullyCharged = "Unknown"
-    var isCharging = "Unknown"
+    var isBelowWarningLevel: Bool?
+    var isFullyCharged: Bool?
+    var isCharging: Bool?
     var stateOfCharge: Int?
     
     // Health
-    var cycleCount = "Unknown"
+    var cycleCount: Int?
     var condition = "Unknown"
     var maximumCapacityPercent: Int?
     
@@ -55,7 +55,7 @@ final class BatteryVM {
             
             // Extract the properties
             if let props = properties?.takeRetainedValue() as NSDictionary? {
-                //                print(props)
+                print(props)
                 
                 DispatchQueue.main.async {
                     // Model Information
@@ -93,9 +93,9 @@ final class BatteryVM {
                     }
                     
                     // Charge Information
-                    self.isBelowWarningLevel = (props["AtCriticalLevel"] as? Int) == 1 ? "Yes" : "No"
-                    self.isFullyCharged = (props["FullyCharged"] as? Int) == 1 ? "Yes" : "No"
-                    self.isCharging = (props["IsCharging"] as? Int) == 1 ? "Yes" : "No"
+                    self.isBelowWarningLevel = (props["AtCriticalLevel"] as? Int) == 1
+                    self.isFullyCharged = (props["FullyCharged"] as? Int) == 1
+                    self.isCharging = (props["IsCharging"] as? Int) == 1
                     
                     if let currentCapacity = props["CurrentCapacity"] as? Int,
                        let maxCapacity = props["MaxCapacity"] as? Int {
@@ -104,7 +104,7 @@ final class BatteryVM {
                     
                     // Health Information
                     if let cycleCount = props["CycleCount"] as? Int {
-                        self.cycleCount = String(cycleCount)
+                        self.cycleCount = cycleCount
                     }
                     
                     if let permanentFailureStatus = props["PermanentFailureStatus"] as? Int, permanentFailureStatus == 0 {

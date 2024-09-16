@@ -7,31 +7,78 @@ struct BatterySpecs: View {
         List {
             // Model Information Section
             Section("Model Information") {
-                SpecItem("Serial Number", param: vm.serialNumber)
-                SpecItem("Device Name", param: vm.deviceName)
-                SpecItem("Pack Lot Code", param: vm.packLotCode)
-                SpecItem("PCB Lot Code", param: vm.pcbLotCode)
-                SpecItem("Firmware Version", param: vm.firmwareVersion)
-                SpecItem("Hardware Revision", param: vm.hardwareRevision)
-                SpecItem("Cell Revision", param: vm.cellRevision)
+                Param("Serial Number", param: vm.serialNumber)
+                Param("Device Name", param: vm.deviceName)
+                Param("Pack Lot Code", param: vm.packLotCode)
+                Param("PCB Lot Code", param: vm.pcbLotCode)
+                
+                Param("Firmware Version", param: vm.firmwareVersion)
+                Param("Hardware Revision", param: vm.hardwareRevision)
+                Param("Cell Revision", param: vm.cellRevision)
             }
             
             // Charge Information Section
             Section("Charge Information") {
-                SpecItem("Below Warning Level", param: vm.isBelowWarningLevel)
-                SpecItem("Fully Charged", param: vm.isFullyCharged)
-                SpecItem("Charging", param: vm.isCharging)
+                Param("Below Warning Level", param: vm.isBelowWarningLevel)
+                Param("Fully Charged", param: vm.isFullyCharged)
+                Param("Charging", param: vm.isCharging)
+                
                 SpecItem("State of Charge (%)", param: vm.stateOfCharge != nil ? "\(vm.stateOfCharge!)%" : "Unknown")
             }
             
             // Health Information Section
             Section("Health Information") {
-                SpecItem("Cycle Count", param: vm.cycleCount)
+                Param("Cycle Count", param: vm.cycleCount)
                 SpecItem("Condition", param: vm.condition)
                 SpecItem("Maximum Capacity", param: vm.maximumCapacityPercent != nil ? "\(vm.maximumCapacityPercent!)%" : "Unknown")
             }
         }
         .navigationTitle("Battery Info")
+    }
+}
+
+struct Param: View {
+    private let name: LocalizedStringResource
+    private let value: String
+    
+    init(_ name: LocalizedStringResource, param: Bool?) {
+        self.name = name
+        
+        if let param {
+            self.value = param ? "Yes" : "No"
+        } else {
+            self.value = "Unknown"
+        }
+    }
+    
+    init(_ name: LocalizedStringResource, param: String?) {
+        self.name = name
+        
+        if let param {
+            self.value = param
+        } else {
+            self.value = "Unknown"
+        }
+    }
+    
+    init(_ name: LocalizedStringResource, param: Int?) {
+        self.name = name
+        
+        if let param {
+            self.value = param.description
+        } else {
+            self.value = "Unknown"
+        }
+    }
+    
+    var body: some View {
+        HStack {
+            Text(name)
+            
+            Spacer()
+            
+            Text(value)
+        }
     }
 }
 
