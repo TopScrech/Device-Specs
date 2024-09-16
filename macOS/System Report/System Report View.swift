@@ -14,6 +14,22 @@ struct SystemReportView: View {
                 ProgressView(value: vm.progress, total: 1)
                     .padding()
             }
+            
+            if !vm.isFetching, !vm.output.isEmpty {
+                Image(systemName: "text.document")
+                    .largeTitle()
+                    .padding()
+                
+                if let url = vm.reportURL {
+                    ShareLink(item: url)
+                }
+                
+                Button {
+                    vm.saveFileToLocation("test.txt")
+                } label: {
+                    Text("Save...")
+                }
+            }
         }
     }
 }
