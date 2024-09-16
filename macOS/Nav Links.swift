@@ -4,7 +4,7 @@ struct NavLinks: View {
     var body: some View {
         List {
             NavigationLink("Hardware") {
-                HardwareView()
+                HardwareSpecs()
             }
             
             NavigationLink("Battery") {

@@ -152,7 +152,7 @@
 		F3F85F272C962EC600AE0A1D /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85F262C962EC600AE0A1D /* ScrechKit */; };
 		F3F85F292C962EC900AE0A1D /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85F282C962EC900AE0A1D /* DeviceKit */; };
 		F3F85F2B2C96448E00AE0A1D /* System Report View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F2A2C96448E00AE0A1D /* System Report View.swift */; };
-		F3F85F2D2C96455300AE0A1D /* Hardware View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F2C2C96455300AE0A1D /* Hardware View.swift */; };
+		F3F85F2D2C96455300AE0A1D /* Hardware Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F2C2C96455300AE0A1D /* Hardware Specs.swift */; };
 		F3F85F2F2C9645AF00AE0A1D /* Hardware VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F2E2C9645AF00AE0A1D /* Hardware VM.swift */; };
 /* End PBXBuildFile section */
 
@@ -281,7 +281,7 @@
 		F3F85F222C962CE600AE0A1D /* Battery Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Specs.swift"; sourceTree = "<group>"; };
 		F3F85F242C962E7200AE0A1D /* Battery VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery VM.swift"; sourceTree = "<group>"; };
 		F3F85F2A2C96448E00AE0A1D /* System Report View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System Report View.swift"; sourceTree = "<group>"; };
-		F3F85F2C2C96455300AE0A1D /* Hardware View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hardware View.swift"; sourceTree = "<group>"; };
+		F3F85F2C2C96455300AE0A1D /* Hardware Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hardware Specs.swift"; sourceTree = "<group>"; };
 		F3F85F2E2C9645AF00AE0A1D /* Hardware VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hardware VM.swift"; sourceTree = "<group>"; };
 		F3F85F342C96491700AE0A1D /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -373,7 +373,7 @@
 		F33FEE562C982B2600214288 /* Hardware */ = {
 			isa = PBXGroup;
 			children = (
-				F3F85F2C2C96455300AE0A1D /* Hardware View.swift */,
+				F3F85F2C2C96455300AE0A1D /* Hardware Specs.swift */,
 				F3F85F2E2C9645AF00AE0A1D /* Hardware VM.swift */,
 			);
 			path = Hardware;
@@ -1051,7 +1051,7 @@
 				F3F85F212C962CBD00AE0A1D /* App Container.swift in Sources */,
 				F33FEE582C982EC200214288 /* Nav Links.swift in Sources */,
 				F3F85F252C962E7200AE0A1D /* Battery VM.swift in Sources */,
-				F3F85F2D2C96455300AE0A1D /* Hardware View.swift in Sources */,
+				F3F85F2D2C96455300AE0A1D /* Hardware Specs.swift in Sources */,
 				F3F85F232C962CE600AE0A1D /* Battery Specs.swift in Sources */,
 				F3F85F2F2C9645AF00AE0A1D /* Hardware VM.swift in Sources */,
 			);

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HardwareView: View {
+struct HardwareSpecs: View {
     @State private var vm = HardwareVM()
     
     var body: some View {
@@ -28,5 +28,5 @@ struct HardwareView: View {
 }
 
 #Preview {
-    HardwareView()
+    HardwareSpecs()
 }
