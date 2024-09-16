@@ -12,6 +12,9 @@ struct BatterySpecs: View {
             ListParameter("Low power mode", parameter: vm.lowPowerMode)
         }
         .navigationTitle("Battery")
+        .refreshableTask {
+            vm.fetchBatteryInfo()
+        }
     }
 }
 

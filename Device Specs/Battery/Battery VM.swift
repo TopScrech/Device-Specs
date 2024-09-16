@@ -14,10 +14,6 @@ final class BatteryVM {
     //        print(batteryLevel)
     //    }
     
-    init() {
-        fetchBatteryInfo()
-    }
-    
     func fetchBatteryInfo() {
         UIDevice.current.isBatteryMonitoringEnabled = true
         
