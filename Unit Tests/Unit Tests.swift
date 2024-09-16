@@ -2,7 +2,6 @@ import Testing
 import Foundation
 
 struct Unit_Tests {
-    
     @Test func example() async throws {
         let accessibilityInfo = parseAccessibilityInfo(from: accessibilityString)
         
@@ -16,8 +15,8 @@ struct Unit_Tests {
 
 func parseAccessibilityInfo(from input: String) -> [String: String] {
     var result = [String: String]()
-    let lines = input.components(separatedBy: "\n")
     var isInAccessibilitySection = false
+    let lines = input.components(separatedBy: "\n")
     
     for line in lines {
         let trimmedLine = line.trimmingCharacters(in: .whitespaces)
@@ -37,6 +36,7 @@ func parseAccessibilityInfo(from input: String) -> [String: String] {
         if isInAccessibilitySection, let colonRange = trimmedLine.range(of: ":") {
             let key = String(trimmedLine[..<colonRange.lowerBound]).trimmingCharacters(in: .whitespaces)
             let value = String(trimmedLine[colonRange.upperBound...]).trimmingCharacters(in: .whitespaces)
+            
             result[key] = value
         }
     }

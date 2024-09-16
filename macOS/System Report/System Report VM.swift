@@ -1,25 +1,12 @@
 import SwiftUI
 
-struct FullReportView: View {
-    @State private var output = ""
-    @State private var isFetching = false
-    @State private var progress = 0.0
+@Observable
+final class SystemReportVM {
+    var output = ""
+    var progress = 0.0
+    var isFetching = false
     
-    var body: some View {
-        VStack {
-            Button("Create a complete system report") {
-                fetchSystemReport()
-            }
-            .disabled(isFetching)
-            
-            if isFetching {
-                ProgressView(value: progress, total: 1.0)
-                    .padding()
-            }
-        }
-    }
-    
-    private func fetchSystemReport() {
+    func fetchSystemReport() {
         withAnimation {
             isFetching = true
         }
@@ -56,7 +43,7 @@ struct FullReportView: View {
                     
                     DispatchQueue.main.async { [self] in
                         isFetching = false
-                        progress = 1.0
+                        progress = 1
                     }
                 }
             }
@@ -81,8 +68,4 @@ struct FullReportView: View {
             }
         }
     }
-}
-
-#Preview {
-    FullReportView()
 }

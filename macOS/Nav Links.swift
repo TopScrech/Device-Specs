@@ -13,7 +13,7 @@ struct NavLinks: View {
             
             Section {
                 NavigationLink("Full system report") {
-                    FullReportView()
+                    SystemReportView()
                 }
             }
         }
