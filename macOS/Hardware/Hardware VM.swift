@@ -2,18 +2,18 @@ import Foundation
 
 @Observable
 final class HardwareVM {
-    var modelName: String = "Unknown"
-    var modelIdentifier: String = "Unknown"
-    var modelNumber: String = "Unknown"
-    var chip: String = "Unknown"
-    var totalNumberOfCores: String = "Unknown"
-    var memory: String = "Unknown"
-    var systemFirmwareVersion: String = "Unknown"
-    var osLoaderVersion: String = "Unknown"
-    var serialNumber: String = "Unknown"
-    var hardwareUUID: String = "Unknown"
-    var provisioningUDID: String = "Unknown"
-    var activationLockStatus: String = "Unknown"
+    var modelName = "Unknown"
+    var modelIdentifier = "Unknown"
+    var modelNumber = "Unknown"
+    var chip = "Unknown"
+    var totalNumberOfCores = "Unknown"
+    var memory = "Unknown"
+    var systemFirmwareVersion = "Unknown"
+    var osLoaderVersion = "Unknown"
+    var serialNumber = "Unknown"
+    var hardwareUUID = "Unknown"
+    var provisioningUDID = "Unknown"
+    var activationLockStatus = "Unknown"
     
     init() {
         fetchHardwareInfo()

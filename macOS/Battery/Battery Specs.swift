@@ -22,86 +22,19 @@ struct BatterySpecs: View {
                 Param("Below Warning Level", param: vm.isBelowWarningLevel)
                 Param("Fully Charged", param: vm.isFullyCharged)
                 Param("Charging", param: vm.isCharging)
-                
-                SpecItem("State of Charge (%)", param: vm.stateOfCharge != nil ? "\(vm.stateOfCharge!)%" : "Unknown")
+                Param("State of Charge (%)", param: vm.stateOfCharge)
             }
             
             // Health Information Section
             Section("Health Information") {
                 Param("Cycle Count", param: vm.cycleCount)
-                SpecItem("Condition", param: vm.condition)
-                SpecItem("Maximum Capacity", param: vm.maximumCapacityPercent != nil ? "\(vm.maximumCapacityPercent!)%" : "Unknown")
+                Param("Condition", param: vm.condition)
+                Param("Maximum Capacity", param: vm.maximumCapacityPercent)
             }
         }
         .navigationTitle("Battery Info")
     }
 }
-
-struct Param: View {
-    private let name: LocalizedStringResource
-    private let value: String
-    
-    init(_ name: LocalizedStringResource, param: Bool?) {
-        self.name = name
-        
-        if let param {
-            self.value = param ? "Yes" : "No"
-        } else {
-            self.value = "Unknown"
-        }
-    }
-    
-    init(_ name: LocalizedStringResource, param: String?) {
-        self.name = name
-        
-        if let param {
-            self.value = param
-        } else {
-            self.value = "Unknown"
-        }
-    }
-    
-    init(_ name: LocalizedStringResource, param: Int?) {
-        self.name = name
-        
-        if let param {
-            self.value = param.description
-        } else {
-            self.value = "Unknown"
-        }
-    }
-    
-    var body: some View {
-        HStack {
-            Text(name)
-            
-            Spacer()
-            
-            Text(value)
-        }
-    }
-}
-
-struct SpecItem: View {
-    private let name: String
-    private let param: String
-    
-    init(_ name: String, param: String) {
-        self.name = name
-        self.param = param
-    }
-    
-    var body: some View {
-        HStack {
-            Text(name)
-            
-            Spacer()
-            
-            Text(param)
-        }
-    }
-}
-
 
 #Preview {
     BatterySpecs()

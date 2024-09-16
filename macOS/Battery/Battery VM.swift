@@ -15,12 +15,12 @@ final class BatteryVM {
     var isBelowWarningLevel: Bool?
     var isFullyCharged: Bool?
     var isCharging: Bool?
-    var stateOfCharge: Int?
+    var stateOfCharge: String?
     
     // Health
     var cycleCount: Int?
-    var condition = "Unknown"
-    var maximumCapacityPercent: Int?
+    var condition: String?
+    var maximumCapacityPercent: String?
     
     init() {
         fetchBatteryInfo()
@@ -94,12 +94,15 @@ final class BatteryVM {
                     
                     // Charge Information
                     self.isBelowWarningLevel = (props["AtCriticalLevel"] as? Int) == 1
+                    
                     self.isFullyCharged = (props["FullyCharged"] as? Int) == 1
+                    
                     self.isCharging = (props["IsCharging"] as? Int) == 1
                     
                     if let currentCapacity = props["CurrentCapacity"] as? Int,
                        let maxCapacity = props["MaxCapacity"] as? Int {
-                        self.stateOfCharge = Int(Double(currentCapacity) / Double(maxCapacity) * 100)
+                        let state = Int(Double(currentCapacity) / Double(maxCapacity) * 100)
+                        self.stateOfCharge = "\(state)%"
                     }
                     
                     // Health Information
@@ -114,7 +117,7 @@ final class BatteryVM {
                     }
                     
                     if let maxCapacity = props["MaxCapacity"] as? Int {
-                        self.maximumCapacityPercent = maxCapacity
+                        self.maximumCapacityPercent = "\(maxCapacity)%"
                     }
                 }
             } else {
