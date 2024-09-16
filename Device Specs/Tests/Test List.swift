@@ -12,8 +12,15 @@ struct TestList: View {
         "Blue": Color(red: 0, green: 0, blue: 1)
     ]
     
+    @State private var sheetCamera = false
+    
     var body: some View {
         List {
+            Button("Camera") {
+                sheetCamera = true
+            }
+            .foregroundStyle(.foreground)
+            
             Section {
                 Button("Ultra Wideband Test") {
                     navState.navigate(.toUwbTest)
@@ -40,6 +47,9 @@ struct TestList: View {
                 }
             }
 #endif
+        }
+        .sheet($sheetCamera) {
+            CameraTest()
         }
     }
 }

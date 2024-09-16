@@ -16,6 +16,8 @@
 		F33FEE5D2C98386E00214288 /* Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE5C2C98386E00214288 /* Param.swift */; };
 		F33FEE5F2C9838AE00214288 /* Spec Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE5E2C9838AE00214288 /* Spec Item.swift */; };
 		F33FEE7B2C9848D000214288 /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5B2C67B985008CD17B /* Battery VM.swift */; };
+		F357214D2C98584100967ACA /* ScrechCam in Frameworks */ = {isa = PBXBuildFile; productRef = F357214C2C98584100967ACA /* ScrechCam */; };
+		F357214F2C985FFB00967ACA /* Camera Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357214E2C985FFB00967ACA /* Camera Test.swift */; };
 		F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
 		F36FBC4D2C9319D600F5E174 /* Wifi VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Wifi VM.swift */; };
 		F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
@@ -198,6 +200,7 @@
 		F33FEE592C982FF000214288 /* System Report VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System Report VM.swift"; sourceTree = "<group>"; };
 		F33FEE5C2C98386E00214288 /* Param.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Param.swift; sourceTree = "<group>"; };
 		F33FEE5E2C9838AE00214288 /* Spec Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spec Item.swift"; sourceTree = "<group>"; };
+		F357214E2C985FFB00967ACA /* Camera Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera Test.swift"; sourceTree = "<group>"; };
 		F36FBC4A2C93127000F5E174 /* visionOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = visionOS.entitlements; sourceTree = "<group>"; };
 		F36FBC552C931C1000F5E174 /* Sensors View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensors View.swift"; sourceTree = "<group>"; };
 		F36FBC5D2C931C7500F5E174 /* Orientation VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Orientation VM.swift"; sourceTree = "<group>"; };
@@ -312,6 +315,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F357214D2C98584100967ACA /* ScrechCam in Frameworks */,
 				F3E7EC962C67B99E008CD17B /* ScrechKit in Frameworks */,
 				F3E7EC992C67B9A8008CD17B /* DeviceKit in Frameworks */,
 			);
@@ -598,6 +602,7 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC6C2C67B985008CD17B /* Test List.swift */,
+				F357214E2C985FFB00967ACA /* Camera Test.swift */,
 				F3E7EC9D2C680561008CD17B /* Torch VM.swift */,
 				F3E7EC6E2C67B985008CD17B /* Color Tests */,
 				F3E7EC732C67B985008CD17B /* UWB Test */,
@@ -719,6 +724,7 @@
 			packageProductDependencies = (
 				F3E7EC952C67B99E008CD17B /* ScrechKit */,
 				F3E7EC982C67B9A8008CD17B /* DeviceKit */,
+				F357214C2C98584100967ACA /* ScrechCam */,
 			);
 			productName = "Device Specs";
 			productReference = F3E7EC3A2C676A13008CD17B /* Device Specs.app */;
@@ -830,6 +836,7 @@
 			packageReferences = (
 				F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */,
 				F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */,
+				F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */,
 			);
 			productRefGroup = F3E7EC3B2C676A13008CD17B /* Products */;
 			projectDirPath = "";
@@ -989,6 +996,7 @@
 				F3E7EC822C67B985008CD17B /* Location VM.swift in Sources */,
 				F36FBCD42C944DA200F5E174 /* Accessibility VM.swift in Sources */,
 				F3E7EC832C67B985008CD17B /* MCP Session.swift in Sources */,
+				F357214F2C985FFB00967ACA /* Camera Test.swift in Sources */,
 				F3E7EC842C67B985008CD17B /* UWB Test View.swift in Sources */,
 				F3E7EC852C67B985008CD17B /* Sensors View.swift in Sources */,
 				F3E7EC862C67B985008CD17B /* Color Test View.swift in Sources */,
@@ -1344,6 +1352,7 @@
 				INFOPLIST_FILE = "Device Specs/Device-Specs-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires camera access to check its functionality";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
@@ -1391,6 +1400,7 @@
 				INFOPLIST_FILE = "Device Specs/Device-Specs-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires camera access to check its functionality";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
@@ -1653,6 +1663,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/ScrechCam";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/ScrechKit";
@@ -1672,6 +1690,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F357214C2C98584100967ACA /* ScrechCam */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */;
+			productName = ScrechCam;
+		};
 		F36FBCCB2C944B1300F5E174 /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;

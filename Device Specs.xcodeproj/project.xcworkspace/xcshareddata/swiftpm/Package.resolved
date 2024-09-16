@@ -1,5 +1,5 @@
 {
-  "originHash" : "c554cbdd94883370a71275e31f8dbd6764c7a80bc69c843760bb58484622c6e2",
+  "originHash" : "5ae081f7230504ab7817b40a1f91d6c285dc5818e978b2c642c7fb37cf8f3d67",
   "pins" : [
     {
       "identity" : "devicekit",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "5757447e9f92c476ee2ca41ead7eb6db07936430",
         "version" : "5.4.0"
+      }
+    },
+    {
+      "identity" : "screchcam",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TopScrech/ScrechCam",
+      "state" : {
+        "branch" : "main",
+        "revision" : "c9617f3f3712a35575d720f6b68fed17f06196f2"
       }
     },
     {
