@@ -37,7 +37,6 @@ struct TestList: View {
                 }
             }
             
-#if !targetEnvironment(simulator)
             Section("Flashlight") {
                 Button {
                     torch.toggleTorch()
@@ -45,8 +44,10 @@ struct TestList: View {
                     Label("Flashlight", systemImage: torch.isTorchOn ? "flashlight.on.fill" : "flashlight.off.fill")
                         .foregroundStyle(.foreground)
                 }
-            }
+#if !targetEnvironment(simulator)
+                .disabled(true)
 #endif
+            }
         }
         .sheet($sheetCamera) {
             CameraTest()
