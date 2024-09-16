@@ -2,12 +2,10 @@ import SwiftUI
 
 struct AppContainer: View {
     var body: some View {
-        NavigationStack {
-            HomeView()
+        NavigationSplitView {
+            NavLinks()
+        } detail: {
+            
         }
     }
-}
-
-#Preview {
-    AppContainer()
 }

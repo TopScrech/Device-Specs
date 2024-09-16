@@ -11,6 +11,7 @@
 		F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A522C898B62008FB911 /* Nav Destinations.swift */; };
 		F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A542C898B7E008FB911 /* Nav Extension.swift */; };
 		F33FEE532C982A1800214288 /* Unit Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE522C982A1800214288 /* Unit Tests.swift */; };
+		F33FEE582C982EC200214288 /* Nav Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE572C982EC200214288 /* Nav Links.swift */; };
 		F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
 		F36FBC4D2C9319D600F5E174 /* Wifi VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Wifi VM.swift */; };
 		F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
@@ -143,14 +144,13 @@
 		F3F85F042C95880600AE0A1D /* Wifi VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */; };
 		F3F85F062C9588BE00AE0A1D /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F052C9588BE00AE0A1D /* Network View.swift */; };
 		F3F85F112C962C4600AE0A1D /* macOS App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F102C962C4600AE0A1D /* macOS App.swift */; };
-		F3F85F132C962C4600AE0A1D /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F122C962C4600AE0A1D /* Home View.swift */; };
 		F3F85F152C962C4700AE0A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F85F142C962C4700AE0A1D /* Assets.xcassets */; };
 		F3F85F212C962CBD00AE0A1D /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F202C962CBD00AE0A1D /* App Container.swift */; };
 		F3F85F232C962CE600AE0A1D /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F222C962CE600AE0A1D /* Battery Specs.swift */; };
 		F3F85F252C962E7200AE0A1D /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F242C962E7200AE0A1D /* Battery VM.swift */; };
 		F3F85F272C962EC600AE0A1D /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85F262C962EC600AE0A1D /* ScrechKit */; };
 		F3F85F292C962EC900AE0A1D /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85F282C962EC900AE0A1D /* DeviceKit */; };
-		F3F85F2B2C96448E00AE0A1D /* Test View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F2A2C96448E00AE0A1D /* Test View.swift */; };
+		F3F85F2B2C96448E00AE0A1D /* Full Report View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F2A2C96448E00AE0A1D /* Full Report View.swift */; };
 		F3F85F2D2C96455300AE0A1D /* Hardware View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F2C2C96455300AE0A1D /* Hardware View.swift */; };
 		F3F85F2F2C9645AF00AE0A1D /* Hardware VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F2E2C9645AF00AE0A1D /* Hardware VM.swift */; };
 /* End PBXBuildFile section */
@@ -191,6 +191,7 @@
 		F3187A522C898B62008FB911 /* Nav Destinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Destinations.swift"; sourceTree = "<group>"; };
 		F3187A542C898B7E008FB911 /* Nav Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Extension.swift"; sourceTree = "<group>"; };
 		F33FEE522C982A1800214288 /* Unit Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit Tests.swift"; sourceTree = "<group>"; };
+		F33FEE572C982EC200214288 /* Nav Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Links.swift"; sourceTree = "<group>"; };
 		F36FBC4A2C93127000F5E174 /* visionOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = visionOS.entitlements; sourceTree = "<group>"; };
 		F36FBC552C931C1000F5E174 /* Sensors View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensors View.swift"; sourceTree = "<group>"; };
 		F36FBC5D2C931C7500F5E174 /* Orientation VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Orientation VM.swift"; sourceTree = "<group>"; };
@@ -271,14 +272,13 @@
 		F3F85F092C959DE300AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F3F85F0E2C962C4600AE0A1D /* macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F85F102C962C4600AE0A1D /* macOS App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "macOS App.swift"; sourceTree = "<group>"; };
-		F3F85F122C962C4600AE0A1D /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F3F85F142C962C4700AE0A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3F85F192C962C4700AE0A1D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F3F85F1D2C962C6600AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3F85F202C962CBD00AE0A1D /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F3F85F222C962CE600AE0A1D /* Battery Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Specs.swift"; sourceTree = "<group>"; };
 		F3F85F242C962E7200AE0A1D /* Battery VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery VM.swift"; sourceTree = "<group>"; };
-		F3F85F2A2C96448E00AE0A1D /* Test View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test View.swift"; sourceTree = "<group>"; };
+		F3F85F2A2C96448E00AE0A1D /* Full Report View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Full Report View.swift"; sourceTree = "<group>"; };
 		F3F85F2C2C96455300AE0A1D /* Hardware View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hardware View.swift"; sourceTree = "<group>"; };
 		F3F85F2E2C9645AF00AE0A1D /* Hardware VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hardware VM.swift"; sourceTree = "<group>"; };
 		F3F85F342C96491700AE0A1D /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -368,13 +368,13 @@
 			path = Battery;
 			sourceTree = "<group>";
 		};
-		F33FEE562C982B2600214288 /* Hardware */ = {
+		F33FEE562C982B2600214288 /* System Report */ = {
 			isa = PBXGroup;
 			children = (
 				F3F85F2C2C96455300AE0A1D /* Hardware View.swift */,
 				F3F85F2E2C9645AF00AE0A1D /* Hardware VM.swift */,
 			);
-			path = Hardware;
+			path = "System Report";
 			sourceTree = "<group>";
 		};
 		F36FBC692C93551B00F5E174 /* Processor */ = {
@@ -633,10 +633,10 @@
 				F3F85F1D2C962C6600AE0A1D /* Info.plist */,
 				F3F85F142C962C4700AE0A1D /* Assets.xcassets */,
 				F3F85F192C962C4700AE0A1D /* macOS.entitlements */,
-				F3F85F122C962C4600AE0A1D /* Home View.swift */,
+				F33FEE572C982EC200214288 /* Nav Links.swift */,
 				F33FEE552C982AFB00214288 /* Battery */,
-				F33FEE562C982B2600214288 /* Hardware */,
-				F3F85F2A2C96448E00AE0A1D /* Test View.swift */,
+				F33FEE562C982B2600214288 /* System Report */,
+				F3F85F2A2C96448E00AE0A1D /* Full Report View.swift */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -1034,10 +1034,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3F85F2B2C96448E00AE0A1D /* Test View.swift in Sources */,
-				F3F85F132C962C4600AE0A1D /* Home View.swift in Sources */,
+				F3F85F2B2C96448E00AE0A1D /* Full Report View.swift in Sources */,
 				F3F85F112C962C4600AE0A1D /* macOS App.swift in Sources */,
 				F3F85F212C962CBD00AE0A1D /* App Container.swift in Sources */,
+				F33FEE582C982EC200214288 /* Nav Links.swift in Sources */,
 				F3F85F252C962E7200AE0A1D /* Battery VM.swift in Sources */,
 				F3F85F2D2C96455300AE0A1D /* Hardware View.swift in Sources */,
 				F3F85F232C962CE600AE0A1D /* Battery Specs.swift in Sources */,

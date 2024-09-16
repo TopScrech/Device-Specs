@@ -1,8 +1,8 @@
 import SwiftUI
 
-struct HomeView: View {
+struct NavLinks: View {
     var body: some View {
-        VStack {
+        List {
             NavigationLink("Hardware") {
                 HardwareView()
             }
@@ -11,14 +11,15 @@ struct HomeView: View {
                 BatterySpecs()
             }
             
-            NavigationLink("Test") {
-                TestView()
+            Section {
+                NavigationLink("Full system report") {
+                    FullReportView()
+                }
             }
         }
-        .padding()
     }
 }
 
 #Preview {
-    HomeView()
+    NavLinks()
 }
