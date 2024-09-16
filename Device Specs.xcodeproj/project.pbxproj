@@ -15,6 +15,7 @@
 		F33FEE5A2C982FF000214288 /* System Report VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE592C982FF000214288 /* System Report VM.swift */; };
 		F33FEE5D2C98386E00214288 /* Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE5C2C98386E00214288 /* Param.swift */; };
 		F33FEE5F2C9838AE00214288 /* Spec Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE5E2C9838AE00214288 /* Spec Item.swift */; };
+		F33FEE7B2C9848D000214288 /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5B2C67B985008CD17B /* Battery VM.swift */; };
 		F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
 		F36FBC4D2C9319D600F5E174 /* Wifi VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Wifi VM.swift */; };
 		F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
@@ -33,7 +34,6 @@
 		F36FBCB42C9449A300F5E174 /* watchOS App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCB32C9449A200F5E174 /* watchOS App.swift */; };
 		F36FBCB62C9449A300F5E174 /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCB52C9449A300F5E174 /* Home View.swift */; };
 		F36FBCBE2C9449A300F5E174 /* watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F36FBCB12C9449A200F5E174 /* watchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F36FBCC92C944A5B00F5E174 /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCC82C944A5B00F5E174 /* Battery VM.swift */; };
 		F36FBCCA2C944B0300F5E174 /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5A2C67B985008CD17B /* Battery Specs.swift */; };
 		F36FBCCC2C944B1300F5E174 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36FBCCB2C944B1300F5E174 /* ScrechKit */; };
 		F36FBCCE2C944B1700F5E174 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36FBCCD2C944B1700F5E174 /* DeviceKit */; };
@@ -211,7 +211,6 @@
 		F36FBCB12C9449A200F5E174 /* watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F36FBCB32C9449A200F5E174 /* watchOS App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "watchOS App.swift"; sourceTree = "<group>"; };
 		F36FBCB52C9449A300F5E174 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
-		F36FBCC82C944A5B00F5E174 /* Battery VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery VM.swift"; sourceTree = "<group>"; };
 		F36FBCCF2C944B5000F5E174 /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility VM.swift"; sourceTree = "<group>"; };
 		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -425,7 +424,6 @@
 				F3F85EC02C948F9D00AE0A1D /* Test List.swift */,
 				F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */,
 				F3F85EA02C9486C200AE0A1D /* Network View.swift */,
-				F36FBCC82C944A5B00F5E174 /* Battery VM.swift */,
 				F3F85EB52C948D0200AE0A1D /* Orientation VM.swift */,
 				F3F85EB82C948D4300AE0A1D /* Sensors View.swift */,
 			);
@@ -920,6 +918,7 @@
 				F3F85EA42C94873000AE0A1D /* Processor VM.swift in Sources */,
 				F3F85EAA2C948A5200AE0A1D /* Display View.swift in Sources */,
 				F3F85EAB2C948A5200AE0A1D /* Display VM.swift in Sources */,
+				F33FEE7B2C9848D000214288 /* Battery VM.swift in Sources */,
 				F36FBCB62C9449A300F5E174 /* Home View.swift in Sources */,
 				F3F85E9E2C94863100AE0A1D /* Wifi VM.swift in Sources */,
 				F36FBCB42C9449A300F5E174 /* watchOS App.swift in Sources */,
@@ -928,7 +927,6 @@
 				F3F85EB32C948CB400AE0A1D /* Pressure VM.swift in Sources */,
 				F3F85EBA2C948D8700AE0A1D /* Activity VM.swift in Sources */,
 				F36FBCD02C944B5000F5E174 /* App Container.swift in Sources */,
-				F36FBCC92C944A5B00F5E174 /* Battery VM.swift in Sources */,
 				F36FBCCA2C944B0300F5E174 /* Battery Specs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

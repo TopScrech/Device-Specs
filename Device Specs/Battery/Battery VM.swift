@@ -7,14 +7,28 @@ final class BatteryVM {
     var lowPowerMode = ""
     
     func fetchBatteryInfo() {
-        UIDevice.current.isBatteryMonitoringEnabled = true
+#if os(watchOS)
+        let device = WKInterfaceDevice.current()
         
-        let batteryLevelNumber = String(format: "%.0f", UIDevice.current.batteryLevel * 100)
-        batteryLevel = batteryLevelNumber + "%"
+        device.isBatteryMonitoringEnabled = true
+        
+        let batteryLevelNumber = String(format: "%.0f", device.batteryLevel * 100)
         
         lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled ? "Yes" : "No"
         
-        let batteryStateEnum = UIDevice.current.batteryState
+        let batteryStateEnum = device.batteryState
+#else
+        let device = UIDevice.current
+        
+        device.isBatteryMonitoringEnabled = true
+        
+        let batteryLevelNumber = String(format: "%.0f", device.batteryLevel * 100)
+        
+        lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled ? "Yes" : "No"
+        
+        let batteryStateEnum = device.batteryState
+#endif
+        batteryLevel = batteryLevelNumber + "%"
         
         switch batteryStateEnum {
         case .unknown:
