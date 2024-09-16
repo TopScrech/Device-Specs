@@ -55,7 +55,7 @@ final class BatteryVM {
             
             // Extract the properties
             if let props = properties?.takeRetainedValue() as NSDictionary? {
-//                print(props)
+                //                print(props)
                 
                 DispatchQueue.main.async {
                     // Model Information
@@ -113,9 +113,8 @@ final class BatteryVM {
                         self.condition = "Service Battery"
                     }
                     
-                    if let maxCapacity = props["MaxCapacity"] as? Int,
-                       let designCapacity = props["DesignCapacity"] as? Int {
-                        self.maximumCapacityPercent = Int(Double(maxCapacity) / Double(designCapacity) * 100)
+                    if let maxCapacity = props["MaxCapacity"] as? Int {
+                        self.maximumCapacityPercent = maxCapacity
                     }
                 }
             } else {
