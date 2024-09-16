@@ -368,6 +368,15 @@
 			path = Battery;
 			sourceTree = "<group>";
 		};
+		F33FEE562C982B2600214288 /* Hardware */ = {
+			isa = PBXGroup;
+			children = (
+				F3F85F2C2C96455300AE0A1D /* Hardware View.swift */,
+				F3F85F2E2C9645AF00AE0A1D /* Hardware VM.swift */,
+			);
+			path = Hardware;
+			sourceTree = "<group>";
+		};
 		F36FBC692C93551B00F5E174 /* Processor */ = {
 			isa = PBXGroup;
 			children = (
@@ -626,9 +635,8 @@
 				F3F85F192C962C4700AE0A1D /* macOS.entitlements */,
 				F3F85F122C962C4600AE0A1D /* Home View.swift */,
 				F33FEE552C982AFB00214288 /* Battery */,
-				F3F85F2C2C96455300AE0A1D /* Hardware View.swift */,
+				F33FEE562C982B2600214288 /* Hardware */,
 				F3F85F2A2C96448E00AE0A1D /* Test View.swift */,
-				F3F85F2E2C9645AF00AE0A1D /* Hardware VM.swift */,
 			);
 			path = macOS;
 			sourceTree = "<group>";

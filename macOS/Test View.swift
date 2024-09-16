@@ -2,7 +2,7 @@ import SwiftUI
 
 struct TestView: View {
     var body: some View {
-        Button("Test") {
+        Button("Create a complete system report") {
             if let systemReport = fetchSystemReport() {
                 print(systemReport)
             } else {
