@@ -52,8 +52,9 @@ struct SensorsView: View {
                 ListParameter("Confidence", parameter: activity.confidence)
             }
         }
-        .numericTransition()
         .navigationTitle("Sensors")
+        .numericTransition()
+        .scrollIndicators(.never)
     }
 }
 

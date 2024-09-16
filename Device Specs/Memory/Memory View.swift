@@ -1,8 +1,8 @@
 import ScrechKit
 
 struct MemoryView: View {
-    private var storage = StorageVM()
-    private var ram = RamVM()
+    @State private var storage = StorageVM()
+    @State private var ram = RamVM()
     
     var body: some View {
         List {

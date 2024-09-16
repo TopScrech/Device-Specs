@@ -66,6 +66,7 @@ struct ProcessorView: View {
 #endif
         }
         .navigationTitle("Processor")
+        .scrollIndicators(.never)
         .refreshableTask {
             vm.cpuUsagePerCore()
         }

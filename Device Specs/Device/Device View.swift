@@ -74,6 +74,7 @@ struct DeviceView: View {
 #endif
         }
         .navigationTitle("Device and system")
+        .scrollIndicators(.never)
     }
 }
 
