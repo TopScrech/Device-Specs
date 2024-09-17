@@ -16,6 +16,7 @@
 		F33FEE5D2C98386E00214288 /* Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE5C2C98386E00214288 /* Param.swift */; };
 		F33FEE5F2C9838AE00214288 /* Spec Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE5E2C9838AE00214288 /* Spec Item.swift */; };
 		F33FEE7B2C9848D000214288 /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5B2C67B985008CD17B /* Battery VM.swift */; };
+		F35279552C98DCB600AF581C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35279542C98DCB600AF581C /* Assets.xcassets */; };
 		F357214D2C98584100967ACA /* ScrechCam in Frameworks */ = {isa = PBXBuildFile; productRef = F357214C2C98584100967ACA /* ScrechCam */; };
 		F357214F2C985FFB00967ACA /* Camera Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357214E2C985FFB00967ACA /* Camera Test.swift */; };
 		F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
@@ -40,7 +41,6 @@
 		F36FBCCC2C944B1300F5E174 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36FBCCB2C944B1300F5E174 /* ScrechKit */; };
 		F36FBCCE2C944B1700F5E174 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36FBCCD2C944B1700F5E174 /* DeviceKit */; };
 		F36FBCD02C944B5000F5E174 /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCCF2C944B5000F5E174 /* App Container.swift */; };
-		F36FBCD12C944BC800F5E174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
 		F36FBCD42C944DA200F5E174 /* Accessibility VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */; };
 		F3C3BDD42C92D8E000BF91EE /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs.swift */; };
 		F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD52C92D8F600BF91EE /* App Container.swift */; };
@@ -200,6 +200,7 @@
 		F33FEE592C982FF000214288 /* System Report VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System Report VM.swift"; sourceTree = "<group>"; };
 		F33FEE5C2C98386E00214288 /* Param.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Param.swift; sourceTree = "<group>"; };
 		F33FEE5E2C9838AE00214288 /* Spec Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spec Item.swift"; sourceTree = "<group>"; };
+		F35279542C98DCB600AF581C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F357214E2C985FFB00967ACA /* Camera Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera Test.swift"; sourceTree = "<group>"; };
 		F36FBC4A2C93127000F5E174 /* visionOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = visionOS.entitlements; sourceTree = "<group>"; };
 		F36FBC552C931C1000F5E174 /* Sensors View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensors View.swift"; sourceTree = "<group>"; };
@@ -267,7 +268,7 @@
 		F3F85EB82C948D4300AE0A1D /* Sensors View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensors View.swift"; sourceTree = "<group>"; };
 		F3F85EC02C948F9D00AE0A1D /* Test List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test List.swift"; sourceTree = "<group>"; };
 		F3F85EC22C9492F300AE0A1D /* Device Watch Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Watch Info.swift"; sourceTree = "<group>"; };
-		F3F85EC82C94AED800AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F3F85EC82C94AED800AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3F85ECD2C94AF5A00AE0A1D /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F85ECF2C94AF5A00AE0A1D /* tvOS App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "tvOS App.swift"; sourceTree = "<group>"; };
 		F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -429,10 +430,11 @@
 		F36FBCC32C9449AB00F5E174 /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
-				F3F85EC82C94AED800AE0A1D /* Info.plist */,
 				F36FBCB32C9449A200F5E174 /* watchOS App.swift */,
 				F36FBCCF2C944B5000F5E174 /* App Container.swift */,
+				F3F85EC82C94AED800AE0A1D /* Info.plist */,
 				F3F85E962C94858F00AE0A1D /* watchOS.entitlements */,
+				F35279542C98DCB600AF581C /* Assets.xcassets */,
 				F36FBCB52C9449A300F5E174 /* Home View.swift */,
 				F3F85EC02C948F9D00AE0A1D /* Test List.swift */,
 				F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */,
@@ -865,7 +867,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F36FBCD12C944BC800F5E174 /* Assets.xcassets in Resources */,
+				F35279552C98DCB600AF581C /* Assets.xcassets in Resources */,
 				F3F85E8B2C94529A00AE0A1D /* Device-Specs-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
