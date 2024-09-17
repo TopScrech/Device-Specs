@@ -45,11 +45,11 @@ struct UWBTestView: View {
                 
                 Text(vm.elevationText)
                     .monospaced()
-                    .foregroundStyle(vm.currentDistanceDirectionState == .unknown ||
-                                     vm.currentDistanceDirectionState == .outOfFOV ? .red : .primary)
+                    .foregroundStyle(
+                        vm.currentDistanceDirectionState == .unknown ||
+                        vm.currentDistanceDirectionState == .outOfFOV ? .red : .primary
+                    )
             }
-            
-            //            Text("\(model.monkeyRotationAngle)")
             
             Text(vm.monkeyLabel)
                 .opacity(1)
