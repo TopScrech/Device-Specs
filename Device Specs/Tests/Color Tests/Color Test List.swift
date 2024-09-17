@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct TestList: View {
+struct ColorTestList: View {
     private let colorTests = [
         "White": Color(red: 1, green: 1, blue: 1),
         "Black": Color(red: 0, green: 0, blue: 0),
@@ -10,11 +10,13 @@ struct TestList: View {
     ]
     
     var body: some View {
-        List {
-            Section("Static colors") {
-                ForEach(colorTests.keys.sorted(), id: \.self) { key in
-                    NavigationLink(key) {
-                        ColorView(colorTests[key]!)
+        Section("Static colors") {
+            ForEach(colorTests.keys.sorted(), id: \.self) { key in
+                NavigationLink(key) {
+                    if let color = colorTests[key] {
+                        ColorView(color)
+                    } else {
+                        Text("Error")
                     }
                 }
             }
@@ -23,5 +25,7 @@ struct TestList: View {
 }
 
 #Preview {
-    TestList()
+    List {
+        ColorTestList()
+    }
 }

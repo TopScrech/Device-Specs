@@ -73,7 +73,7 @@
 		F3E7EC832C67B985008CD17B /* MCP Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC712C67B985008CD17B /* MCP Session.swift */; };
 		F3E7EC842C67B985008CD17B /* UWB Test View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6F2C67B985008CD17B /* UWB Test View.swift */; };
 		F3E7EC852C67B985008CD17B /* Sensors View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC652C67B985008CD17B /* Sensors View.swift */; };
-		F3E7EC862C67B985008CD17B /* Color Test View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6D2C67B985008CD17B /* Color Test View.swift */; };
+		F3E7EC862C67B985008CD17B /* Color View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6D2C67B985008CD17B /* Color View.swift */; };
 		F3E7EC872C67B985008CD17B /* Orientation VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC672C67B985008CD17B /* Orientation VM.swift */; };
 		F3E7EC882C67B985008CD17B /* Math Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC722C67B985008CD17B /* Math Utilities.swift */; };
 		F3E7EC892C67B985008CD17B /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5A2C67B985008CD17B /* Battery Specs.swift */; };
@@ -91,6 +91,10 @@
 		F3E7EC992C67B9A8008CD17B /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E7EC982C67B9A8008CD17B /* DeviceKit */; };
 		F3E7EC9B2C67B9CF008CD17B /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC9A2C67B9CF008CD17B /* App Container.swift */; };
 		F3E7EC9E2C680561008CD17B /* Torch VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC9D2C680561008CD17B /* Torch VM.swift */; };
+		F3EA43AF2C998759009820F6 /* Torch Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43AE2C998759009820F6 /* Torch Test.swift */; };
+		F3EA43B12C998787009820F6 /* Color Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43B02C998787009820F6 /* Color Test List.swift */; };
+		F3EA43B22C998787009820F6 /* Color Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43B02C998787009820F6 /* Color Test List.swift */; };
+		F3EA43B32C998787009820F6 /* Color Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43B02C998787009820F6 /* Color Test List.swift */; };
 		F3F85E8B2C94529A00AE0A1D /* Device-Specs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3F85E8A2C94529A00AE0A1D /* Device-Specs-Info.plist */; };
 		F3F85E8E2C9452CB00AE0A1D /* Accessibility Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */; };
 		F3F85E912C9453AE00AE0A1D /* Accessibility View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */; };
@@ -115,7 +119,7 @@
 		F3F85EB72C948D3100AE0A1D /* Location VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC662C67B985008CD17B /* Location VM.swift */; };
 		F3F85EB92C948D4300AE0A1D /* Sensors View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EB82C948D4300AE0A1D /* Sensors View.swift */; };
 		F3F85EBA2C948D8700AE0A1D /* Activity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6A2C67B985008CD17B /* Activity VM.swift */; };
-		F3F85EBF2C948F6300AE0A1D /* Color Test View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6D2C67B985008CD17B /* Color Test View.swift */; };
+		F3F85EBF2C948F6300AE0A1D /* Color View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6D2C67B985008CD17B /* Color View.swift */; };
 		F3F85EC12C948F9D00AE0A1D /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EC02C948F9D00AE0A1D /* Test List.swift */; };
 		F3F85EC52C9492F300AE0A1D /* Device Watch Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EC22C9492F300AE0A1D /* Device Watch Info.swift */; };
 		F3F85ED02C94AF5A00AE0A1D /* tvOS App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85ECF2C94AF5A00AE0A1D /* tvOS App.swift */; };
@@ -125,7 +129,7 @@
 		F3F85EE12C957CF500AE0A1D /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85EE02C957CF500AE0A1D /* ScrechKit */; };
 		F3F85EE32C957CF700AE0A1D /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85EE22C957CF700AE0A1D /* DeviceKit */; };
 		F3F85EE42C957D4F00AE0A1D /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EC02C948F9D00AE0A1D /* Test List.swift */; };
-		F3F85EE52C957D5900AE0A1D /* Color Test View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6D2C67B985008CD17B /* Color Test View.swift */; };
+		F3F85EE52C957D5900AE0A1D /* Color View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6D2C67B985008CD17B /* Color View.swift */; };
 		F3F85EE62C957ED300AE0A1D /* Accessibility VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */; };
 		F3F85EE72C957EDA00AE0A1D /* Accessibility Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */; };
 		F3F85EE82C957EE200AE0A1D /* Accessibility View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */; };
@@ -252,13 +256,15 @@
 		F3E7EC692C67B985008CD17B /* Altitude VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Altitude VM.swift"; sourceTree = "<group>"; };
 		F3E7EC6A2C67B985008CD17B /* Activity VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity VM.swift"; sourceTree = "<group>"; };
 		F3E7EC6C2C67B985008CD17B /* Test List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test List.swift"; sourceTree = "<group>"; };
-		F3E7EC6D2C67B985008CD17B /* Color Test View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Test View.swift"; sourceTree = "<group>"; };
+		F3E7EC6D2C67B985008CD17B /* Color View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color View.swift"; sourceTree = "<group>"; };
 		F3E7EC6F2C67B985008CD17B /* UWB Test View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UWB Test View.swift"; sourceTree = "<group>"; };
 		F3E7EC702C67B985008CD17B /* Nearby VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nearby VM.swift"; sourceTree = "<group>"; };
 		F3E7EC712C67B985008CD17B /* MCP Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MCP Session.swift"; sourceTree = "<group>"; };
 		F3E7EC722C67B985008CD17B /* Math Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Math Utilities.swift"; sourceTree = "<group>"; };
 		F3E7EC9A2C67B9CF008CD17B /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F3E7EC9D2C680561008CD17B /* Torch VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Torch VM.swift"; sourceTree = "<group>"; };
+		F3EA43AE2C998759009820F6 /* Torch Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Torch Test.swift"; sourceTree = "<group>"; };
+		F3EA43B02C998787009820F6 /* Color Test List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Test List.swift"; sourceTree = "<group>"; };
 		F3F85E8A2C94529A00AE0A1D /* Device-Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Device-Specs-Info.plist"; sourceTree = "<group>"; };
 		F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility Param.swift"; sourceTree = "<group>"; };
 		F3F85E962C94858F00AE0A1D /* watchOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = watchOS.entitlements; sourceTree = "<group>"; };
@@ -593,7 +599,8 @@
 		F3E7EC6E2C67B985008CD17B /* Color Tests */ = {
 			isa = PBXGroup;
 			children = (
-				F3E7EC6D2C67B985008CD17B /* Color Test View.swift */,
+				F3EA43B02C998787009820F6 /* Color Test List.swift */,
+				F3E7EC6D2C67B985008CD17B /* Color View.swift */,
 			);
 			path = "Color Tests";
 			sourceTree = "<group>";
@@ -613,12 +620,29 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC6C2C67B985008CD17B /* Test List.swift */,
-				F357214E2C985FFB00967ACA /* Camera Test.swift */,
-				F3E7EC9D2C680561008CD17B /* Torch VM.swift */,
+				F3EA43AE2C998759009820F6 /* Torch Test.swift */,
+				F3EA43AD2C998712009820F6 /* Camera */,
+				F3EA43AC2C998707009820F6 /* Torch */,
 				F3E7EC6E2C67B985008CD17B /* Color Tests */,
 				F3E7EC732C67B985008CD17B /* UWB Test */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		F3EA43AC2C998707009820F6 /* Torch */ = {
+			isa = PBXGroup;
+			children = (
+				F3E7EC9D2C680561008CD17B /* Torch VM.swift */,
+			);
+			path = Torch;
+			sourceTree = "<group>";
+		};
+		F3EA43AD2C998712009820F6 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				F357214E2C985FFB00967ACA /* Camera Test.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 		F3F85EC62C94A7AF00AE0A1D /* Display */ = {
@@ -925,12 +949,13 @@
 				F3F85EA72C948A3300AE0A1D /* Ram VM.swift in Sources */,
 				F3F85EA82C948A3300AE0A1D /* Storage VM.swift in Sources */,
 				F3F85EB22C948C8A00AE0A1D /* Altitude VM.swift in Sources */,
-				F3F85EBF2C948F6300AE0A1D /* Color Test View.swift in Sources */,
+				F3F85EBF2C948F6300AE0A1D /* Color View.swift in Sources */,
 				F3F85EC52C9492F300AE0A1D /* Device Watch Info.swift in Sources */,
 				F3F85EA92C948A3300AE0A1D /* Memory View.swift in Sources */,
 				F3F85EA12C9486C200AE0A1D /* Network View.swift in Sources */,
 				F3F85EA22C94873000AE0A1D /* Processor View.swift in Sources */,
 				F3F85EC12C948F9D00AE0A1D /* Test List.swift in Sources */,
+				F3EA43B12C998787009820F6 /* Color Test List.swift in Sources */,
 				F3F85EA32C94873000AE0A1D /* CPU Usage Chart.swift in Sources */,
 				F3F85EA42C94873000AE0A1D /* Processor VM.swift in Sources */,
 				F3F85EAA2C948A5200AE0A1D /* Display View.swift in Sources */,
@@ -995,6 +1020,7 @@
 				F36FBC682C93542700F5E174 /* Processor VM.swift in Sources */,
 				F3F85EEB2C957F9100AE0A1D /* Accessibility Item.swift in Sources */,
 				F3E7EC7B2C67B985008CD17B /* Device VM.swift in Sources */,
+				F3EA43AF2C998759009820F6 /* Torch Test.swift in Sources */,
 				F3E7EC7C2C67B985008CD17B /* Altitude VM.swift in Sources */,
 				F3E7EC9E2C680561008CD17B /* Torch VM.swift in Sources */,
 				F3E7EC7D2C67B985008CD17B /* Camera Specs.swift in Sources */,
@@ -1009,7 +1035,7 @@
 				F357214F2C985FFB00967ACA /* Camera Test.swift in Sources */,
 				F3E7EC842C67B985008CD17B /* UWB Test View.swift in Sources */,
 				F3E7EC852C67B985008CD17B /* Sensors View.swift in Sources */,
-				F3E7EC862C67B985008CD17B /* Color Test View.swift in Sources */,
+				F3E7EC862C67B985008CD17B /* Color View.swift in Sources */,
 				F3E7EC9B2C67B9CF008CD17B /* App Container.swift in Sources */,
 				F3E7EC872C67B985008CD17B /* Orientation VM.swift in Sources */,
 				F3E7EC882C67B985008CD17B /* Math Utilities.swift in Sources */,
@@ -1026,6 +1052,7 @@
 				F3E7EC902C67B985008CD17B /* Device Info.swift in Sources */,
 				F3E7EC912C67B985008CD17B /* Home View.swift in Sources */,
 				F3E7EC922C67B985008CD17B /* Wifi VM.swift in Sources */,
+				F3EA43B22C998787009820F6 /* Color Test List.swift in Sources */,
 				F3E7EC932C67B985008CD17B /* Pressure VM.swift in Sources */,
 				F3E7EC3E2C676A13008CD17B /* Device Specs.swift in Sources */,
 				F36FBC6F2C941F6200F5E174 /* Accessibility View.swift in Sources */,
@@ -1038,6 +1065,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F85EE72C957EDA00AE0A1D /* Accessibility Param.swift in Sources */,
+				F3EA43B32C998787009820F6 /* Color Test List.swift in Sources */,
 				F3F85EF52C9583EB00AE0A1D /* Device View.swift in Sources */,
 				F3F85EF42C9583E400AE0A1D /* Device VM.swift in Sources */,
 				F3F85EF32C9582EA00AE0A1D /* Display Specs.swift in Sources */,
@@ -1048,7 +1076,7 @@
 				F3F85ED02C94AF5A00AE0A1D /* tvOS App.swift in Sources */,
 				F3F85F042C95880600AE0A1D /* Wifi VM.swift in Sources */,
 				F3F85EFC2C95857C00AE0A1D /* GPU Families.swift in Sources */,
-				F3F85EE52C957D5900AE0A1D /* Color Test View.swift in Sources */,
+				F3F85EE52C957D5900AE0A1D /* Color View.swift in Sources */,
 				F3F85F032C9587C400AE0A1D /* Network VM.swift in Sources */,
 				F3F85EF12C9580AD00AE0A1D /* Display VM.swift in Sources */,
 				F3F85EE42C957D4F00AE0A1D /* Test List.swift in Sources */,

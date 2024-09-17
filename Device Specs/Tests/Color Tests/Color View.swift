@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ColorTestView: View {
+struct ColorView: View {
     private let color: Color
     
     init(_ color: Color) {
@@ -17,5 +17,5 @@ struct ColorTestView: View {
 }
 
 #Preview {
-    ColorTestView(.red)
+    ColorView(.red)
 }
