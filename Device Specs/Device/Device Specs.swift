@@ -24,26 +24,25 @@ struct DeviceSpecs: View {
             //                //                }
             //            }
             
-            Section("Device") {
-                ListParameter("Device", parameter: "\(vm.deviceIdentifier)")
-                ListParameter("Identifier", parameter: Device.identifier)
-                ListParameter("Internal name", parameter: vm.getInternalDeviceName() ?? "-")
-                
+            ListParameter("Device", parameter: "\(vm.deviceIdentifier)")
+            ListParameter("Identifier", parameter: Device.identifier)
+            ListParameter("Name", parameter: "\(vm.deviceName)")
+            ListParameter("Internal name", parameter: vm.getInternalDeviceName() ?? "-")
+            
 #if os(watchOS)
-                if let vendorId = WKInterfaceDevice.current().identifierForVendor?.uuidString {
-                    ListParameter("Identifier for vendor", parameter: vendorId)
-                }
-#else
-                if let vendorId = UIDevice.current.identifierForVendor?.uuidString {
-                    ListParameter("Identifier for vendor", parameter: vendorId)
-                }
-#endif
-                
-#warning("idfa")
-                //                let idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
-                //                ListParameter("Advertising Identifier (IDFA)", parameter: idfa)
+            if let vendorId = WKInterfaceDevice.current().identifierForVendor?.uuidString {
+                ListParameter("Identifier for vendor", parameter: vendorId)
             }
-                        
+#else
+            if let vendorId = UIDevice.current.identifierForVendor?.uuidString {
+                ListParameter("Identifier for vendor", parameter: vendorId)
+            }
+#endif
+            
+#warning("idfa")
+            //                let idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
+            //                ListParameter("Advertising Identifier (IDFA)", parameter: idfa)
+            
             Section {
                 ListParameter("Thermal state", parameter: vm.thermalState)
             }

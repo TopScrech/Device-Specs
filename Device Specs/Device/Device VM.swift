@@ -16,17 +16,18 @@ final class DeviceVM {
     
     var architecture = ""
     var isForceTouchAvailable = ""
+    let deviceName = Device.current.name ?? "-"
     
 #warning("Finish")
-    //    var deviceIcon: String {
-    //        switch Device.current.name {
-    //        case "iPhone":
-    //            ""
-    //
-    //        default:
-    //            ""
-    //        }
-    //    }
+        var deviceIcon: String {
+            switch Device.current.name {
+            case "iPhone":
+                ""
+    
+            default:
+                ""
+            }
+        }
     
     // Capabilities
     var isNfcAvailable: String {
