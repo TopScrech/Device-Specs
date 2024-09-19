@@ -5,9 +5,35 @@ struct BatterySpecs: View {
     
     var body: some View {
         List {
-            ListParameter("Battery level", parameter: vm.batteryLevel)
+            HStack {
+                Text("Battery level")
+                
+                Spacer()
+                
+                VStack {
+                    Text(vm.batteryLevel)
+                        .foregroundStyle(.secondary)
+                    
+                    Image(systemName: vm.icon)
+                        .title()
+                        .foregroundColor(vm.color)
+                        .symbolRenderingMode(vm.batteryState == "Full" ? .multicolor : .hierarchical)
+                }
+            }
             
-            ListParameter("Battery state", parameter: vm.batteryState)
+            HStack {
+                Text("Battery state")
+                
+                Spacer()
+                
+                Text(vm.batteryState)
+                    .foregroundStyle(.secondary)
+                
+                if vm.batteryState == "Charging" {
+                    Image(systemName: "bolt.fill")
+                        .footnote()
+                }
+            }
             
             ListParameter("Low power mode", parameter: vm.lowPowerMode)
         }

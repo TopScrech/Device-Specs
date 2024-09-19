@@ -1,10 +1,47 @@
 import SwiftUI
+import DeviceKit
 
 @Observable
 final class BatteryVM {
     var batteryLevel = ""
     var batteryState = ""
     var lowPowerMode = ""
+    
+    var color: Color {
+        if lowPowerMode == "Yes" {
+            .yellow
+        } else {
+            batteryState == "Charging" ? .green : .primary
+        }
+    }
+    
+    var icon: String {
+#if os(watchOS)
+        let battery = WKInterfaceDevice.current().batteryLevel * 100
+#else
+        let battery = UIDevice.current.batteryLevel * 100
+#endif
+        
+        switch battery {
+        case 0...24:
+            return "battery.0percent"
+            
+        case 25...49:
+            return "battery.25percent"
+            
+        case 50...74:
+            return "battery.50percent"
+            
+        case 75...89:
+            return "battery.75percent"
+            
+        case 90...100:
+            return "battery.100percent"
+            
+        default:
+            return "battery.0percent"
+        }
+    }
     
     func fetchBatteryInfo() {
 #if os(watchOS)
@@ -28,7 +65,7 @@ final class BatteryVM {
         
         let batteryStateEnum = device.batteryState
 #endif
-        batteryLevel = batteryLevelNumber + "%"
+        batteryLevel = batteryLevelNumber + " %"
         
         switch batteryStateEnum {
         case .unknown:
