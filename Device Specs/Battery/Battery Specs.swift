@@ -1,43 +1,18 @@
 import ScrechKit
 
 struct BatterySpecs: View {
-    @State private var vm = BatteryVM()
+    @Environment(BatteryVM.self) private var vm
     
     var body: some View {
         List {
-            HStack {
-                Text("Battery level")
-                
-                Spacer()
-                
-                VStack {
-                    Text(vm.batteryLevel)
-                        .foregroundStyle(.secondary)
-                    
-                    Image(systemName: vm.icon)
-                        .title()
-                        .foregroundColor(vm.color)
-                        .symbolRenderingMode(vm.batteryState == "Full" ? .multicolor : .hierarchical)
-                }
-            }
+            BatteryLevel()
             
-            HStack {
-                Text("Battery state")
-                
-                Spacer()
-                
-                Text(vm.batteryState)
-                    .foregroundStyle(.secondary)
-                
-                if vm.batteryState == "Charging" {
-                    Image(systemName: "bolt.fill")
-                        .footnote()
-                }
-            }
+            BatteryState()
             
             ListParameter("Low power mode", parameter: vm.lowPowerMode)
         }
         .navigationTitle("Battery")
+        .environment(vm)
         .refreshableTask {
             vm.fetchBatteryInfo()
         }
