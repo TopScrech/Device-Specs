@@ -1,6 +1,8 @@
 import ScrechKit
 
 struct HomeView: View {
+    @State private var battery = BatteryVM()
+    
     @Environment(NavState.self) private var navState
     
     var body: some View {
@@ -25,10 +27,20 @@ struct HomeView: View {
                 CameraSpecs()
             }
             
-            ListLink("Battery", icon: "battery.100percent.bolt") {
+            NavigationLink {
                 BatterySpecs()
+                    .environment(battery)
+            } label: {
+                HStack {
+                    Label("Battery", systemImage: "battery.100percent.bolt")
+                        .symbolRenderingMode(.multicolor)
+                    
+                    Spacer()
+                    
+                    Text(battery.batteryLevel)
+                        .foregroundStyle(.secondary)
+                }
             }
-            .symbolRenderingMode(.multicolor)
             
             ListLink("Network", icon: "network") {
                 NetworkView()
@@ -50,6 +62,9 @@ struct HomeView: View {
             }
         }
         .navigationTitle("Device Specs")
+        .refreshableTask {
+            battery.fetchBatteryInfo()
+        }
     }
 }
 
