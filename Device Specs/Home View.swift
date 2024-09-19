@@ -33,9 +33,7 @@ struct HomeView: View {
             } label: {
                 HStack {
                     Label("System", systemImage: "apple.terminal")
-//                    Label("System", systemImage: "apple.terminal.fill")
                         .foregroundStyle(.foreground)
-//                        .symbolRenderingMode(.multicolor)
                     
                     Spacer()
                     
