@@ -33,7 +33,9 @@ struct HomeView: View {
             } label: {
                 HStack {
                     Label("System", systemImage: "apple.terminal")
+//                    Label("System", systemImage: "apple.terminal.fill")
                         .foregroundStyle(.foreground)
+//                        .symbolRenderingMode(.multicolor)
                     
                     Spacer()
                     
@@ -139,4 +141,7 @@ struct HomeView: View {
     .environment(ProcessorVM())
     .environment(DisplayVM())
     .environment(SystemVM())
+    .environment(DeviceVM())
+    .environment(MemoryVM())
+    .environment(NavState())
 }

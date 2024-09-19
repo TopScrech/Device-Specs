@@ -10,28 +10,13 @@ final class MemoryVM {
     var usedRam = ""
     var freeRam = ""
     
-    private let totalMemoryBytes = ProcessInfo.processInfo.physicalMemory
-    
     init() {
         getMemoryUsage()
         getDiskInfo()
     }
     
     var totalRamAndDisk: String {
-        let ram = roundUp(formatBytes(totalMemoryBytes))
-        
-        return "\(ram) / \(totalDisk)"
-    }
-    
-    private func roundUp(_ value: String) -> String {
-        let components = value.split(separator: " ")
-        
-        if components.count == 2, let number = Double(components[0]) {
-            let roundedNumber = Int(ceil(number))
-            return "\(roundedNumber) \(components[1])"
-        }
-        
-        return value
+        "\(totalRam) / \(totalDisk)"
     }
     
     // Memory
@@ -47,13 +32,14 @@ final class MemoryVM {
         }
         
         if status == KERN_SUCCESS {
+            let totalMemoryBytes = ProcessInfo.processInfo.physicalMemory
             let pageSize = vm_kernel_page_size
             let usedMemory = (UInt64(stats.active_count) + UInt64(stats.inactive_count) + UInt64(stats.wire_count)) * UInt64(pageSize)
             let freeMemory = totalMemoryBytes - usedMemory
             
-            totalRam = formatBytes(totalMemoryBytes)
-            usedRam = formatBytes(usedMemory)
-            freeRam = formatBytes(freeMemory)
+            totalRam = formatBytes(totalMemoryBytes, countStyle: .memory)
+            usedRam = formatBytes(usedMemory, countStyle: .memory)
+            freeRam = formatBytes(freeMemory, countStyle: .memory)
         }
     }
     
