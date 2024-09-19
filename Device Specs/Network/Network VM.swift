@@ -1,4 +1,4 @@
-import Foundation
+import ScrechKit
 import Network
 
 @Observable
@@ -11,13 +11,24 @@ final class NetworkVM {
     var hostname = [CChar](repeating: 0, count: Int(NI_MAXHOST))
     
     func getIPAddresses() {
-        do {
-            let ip = try String(contentsOf: URL(string: "https://www.bluewindsolution.com/tools/getpublicip.php")!, encoding: .utf8)
-            publicIp = ip.trimmingCharacters(in: .whitespaces)
-        } catch {
-            print("Error: \(error)")
-        }
+        let url = URL(string: "https://www.bluewindsolution.com/tools/getpublicip.php")!
         
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error = error {
+                print("Error: \(error)")
+                return
+            }
+            
+            if let data = data, let ipString = String(data: data, encoding: .utf8) {
+                let publicIp = ipString.trimmingCharacters(in: .whitespacesAndNewlines)
+                
+                main {
+                    self.publicIp = publicIp
+                }
+            }
+        }
+        .resume()
+                
         var ifaddr: UnsafeMutablePointer<ifaddrs>?
         
         guard getifaddrs(&ifaddr) == 0 else {
