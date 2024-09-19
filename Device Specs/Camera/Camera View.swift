@@ -9,8 +9,6 @@ struct CameraView: View {
     
     var body: some View {
         Section(camera.name) {
-            SpecCard("Position", spec: camera.position)
-            
             SpecCard("Apperture", spec: camera.lensApperture)
             
             SpecCard("Exposure", spec: camera.exposure)
