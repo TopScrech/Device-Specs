@@ -16,7 +16,7 @@ struct NetworkView: View {
             ListParameter("Subnet mask", parameter: network.subnetMask)
             
             Section {
-                ListParameter("Network type", parameter: wifi.networkStatus)
+                ListParameter("Network type", parameter: wifi.type)
                 ListParameter("SSID", parameter: wifi.ssid)
                 ListParameter("BSSID", parameter: wifi.bssid)
             }

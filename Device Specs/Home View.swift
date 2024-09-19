@@ -3,6 +3,7 @@ import ScrechKit
 struct HomeView: View {
     @State private var battery = BatteryVM()
     @State private var processor = ProcessorVM()
+    @State private var display = DisplayVM()
     
     @Environment(NavState.self) private var navState
     
@@ -12,8 +13,19 @@ struct HomeView: View {
                 DeviceView()
             }
             
-            ListLink("Display", icon: "iphone") {
+            NavigationLink {
                 DisplaySpecs()
+                    .environment(display)
+            } label: {
+                HStack {
+                    Label("Display", systemImage: "iphone")
+                        .foregroundStyle(.foreground)
+                    
+                    Spacer()
+                    
+                    Text(display.diagonalSize)
+                        .foregroundStyle(.secondary)
+                }
             }
             
 #warning("Display on other platforms")
@@ -85,4 +97,5 @@ struct HomeView: View {
     }
     .environment(BatteryVM())
     .environment(ProcessorVM())
+    .environment(DisplayVM())
 }

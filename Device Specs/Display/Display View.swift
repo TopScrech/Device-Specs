@@ -2,7 +2,7 @@ import ScrechKit
 import DeviceKit
 
 struct DisplaySpecs: View {
-    private var display = DisplayVM()
+    @Environment(DisplayVM.self) private var vm
     
     @State private var brightness = 0.0
     
@@ -12,20 +12,20 @@ struct DisplaySpecs: View {
     
     var body: some View {
         List {
-            ListParameter("Screen resolution", parameter: display.resolution)
+            ListParameter("Screen resolution", parameter: vm.resolution)
             
-            ListParameter("Screen size", parameter: display.diagonalSize)
+            ListParameter("Screen size", parameter: vm.diagonalSize)
             
-            ListParameter("Aspect ratio", parameter: display.aspectRatio)
+            ListParameter("Aspect ratio", parameter: vm.aspectRatio)
             
-            ListParameter("Pixel density", parameter: display.dencity)
+            ListParameter("Pixel density", parameter: vm.dencity)
             
 #if !os(watchOS)
-            ListParameter("Refresh rate", parameter: display.refreshRate)
+            ListParameter("Refresh rate", parameter: vm.refreshRate)
 #endif
             
 #if os(iOS)
-            ListParameter("Rounded corners", parameter: display.isRounded)
+            ListParameter("Rounded corners", parameter: vm.isRounded)
 #endif
             
             Section {
@@ -44,7 +44,7 @@ struct DisplaySpecs: View {
             setDeviceBrightness(value)
         }
         .refreshableTask {
-            display.fetchScreenResolution()
+            vm.fetchScreenResolution()
         }
     }
     
@@ -57,4 +57,5 @@ struct DisplaySpecs: View {
 
 #Preview {
     DisplaySpecs()
+        .environment(DisplayVM())
 }

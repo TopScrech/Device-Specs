@@ -587,8 +587,8 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC612C67B985008CD17B /* Network View.swift */,
-				F3E7EC622C67B985008CD17B /* Wifi VM.swift */,
 				F3E7EC632C67B985008CD17B /* Network VM.swift */,
+				F3E7EC622C67B985008CD17B /* Wifi VM.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";

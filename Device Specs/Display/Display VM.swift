@@ -7,6 +7,10 @@ final class DisplayVM {
     var dencity = ""
     var diagonalSize = ""
     
+    init() {
+        fetchScreenResolution()
+    }
+    
 #if !os(watchOS)
     var refreshRate = String(UIScreen.main.maximumFramesPerSecond)
 #endif

@@ -6,7 +6,7 @@ import Network
 final class WifiVM {
     private let monitor = NWPathMonitor()
     
-    var networkStatus = ""
+    var type = ""
     var ssid = ""
     var bssid = ""
     
@@ -27,23 +27,23 @@ final class WifiVM {
             DispatchQueue.main.async {
                 switch true {
                 case path.usesInterfaceType(.wifi):
-                    self.networkStatus = "Wi-Fi"
+                    self.type = "Wi-Fi"
                     self.getWiFiInfo()
                     
                 case path.usesInterfaceType(.cellular):
-                    self.networkStatus = "Cellular"
+                    self.type = "Cellular"
                     
                 case path.usesInterfaceType(.wiredEthernet):
-                    self.networkStatus = "Wired Ethernet"
+                    self.type = "Wired Ethernet"
                     
                 case path.usesInterfaceType(.loopback):
-                    self.networkStatus = "Loopback Interface"
+                    self.type = "Loopback Interface"
                     
                 case path.usesInterfaceType(.other):
-                    self.networkStatus = "Other Interface"
+                    self.type = "Other Interface"
                     
                 default:
-                    self.networkStatus = "No Interface"
+                    self.type = "No Interface"
                 }
             }
         }
