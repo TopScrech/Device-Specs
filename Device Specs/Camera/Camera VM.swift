@@ -13,7 +13,6 @@ final class CameraVM {
     }
     
     func parseDevice(_ device: AVCaptureDevice) -> Camera? {
-//        let type = device.deviceType
         let apperture = floatToString(device.lensAperture)
         var position = ""
         var exposure = ""
@@ -71,7 +70,6 @@ final class CameraVM {
         
         return Camera(
             name: name,
-//            type: type,
             lensApperture: apperture,
             position: position,
             exposure: exposure,
