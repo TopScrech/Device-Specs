@@ -12,7 +12,7 @@ struct HomeView: View {
             }
             
             ListLink("Processor", icon: "cpu") {
-                ProcessorView()
+                ProcessorSpecs()
             }
             
             ListLink("Memory", icon: "memorychip") {

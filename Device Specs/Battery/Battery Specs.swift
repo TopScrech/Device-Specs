@@ -23,4 +23,5 @@ struct BatterySpecs: View {
     NavigationView {
         BatterySpecs()
     }
+    .environment(BatteryVM())
 }

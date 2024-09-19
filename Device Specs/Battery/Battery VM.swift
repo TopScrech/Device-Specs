@@ -7,6 +7,10 @@ final class BatteryVM {
     var batteryState = ""
     var lowPowerMode = ""
     
+    init() {
+        fetchBatteryInfo()
+    }
+    
     var color: Color {
         if lowPowerMode == "Yes" {
             .yellow

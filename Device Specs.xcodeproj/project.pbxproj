@@ -26,8 +26,8 @@
 		F36FBC5E2C931C7500F5E174 /* Orientation VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC5D2C931C7500F5E174 /* Orientation VM.swift */; };
 		F36FBC602C931CBD00F5E174 /* Location VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC5F2C931CBD00F5E174 /* Location VM.swift */; };
 		F36FBC622C931E2600F5E174 /* AltitudeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC612C931E2600F5E174 /* AltitudeVM.swift */; };
-		F36FBC642C9353FF00F5E174 /* Processor View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC632C9353FF00F5E174 /* Processor View.swift */; };
-		F36FBC652C9353FF00F5E174 /* Processor View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC632C9353FF00F5E174 /* Processor View.swift */; };
+		F36FBC642C9353FF00F5E174 /* Processor Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC632C9353FF00F5E174 /* Processor Specs.swift */; };
+		F36FBC652C9353FF00F5E174 /* Processor Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC632C9353FF00F5E174 /* Processor Specs.swift */; };
 		F36FBC672C93542700F5E174 /* Processor VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC662C93542700F5E174 /* Processor VM.swift */; };
 		F36FBC682C93542700F5E174 /* Processor VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC662C93542700F5E174 /* Processor VM.swift */; };
 		F36FBC6B2C9413E100F5E174 /* CPU Usage Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */; };
@@ -109,7 +109,7 @@
 		F3F85E9E2C94863100AE0A1D /* Wifi VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */; };
 		F3F85E9F2C94865900AE0A1D /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
 		F3F85EA12C9486C200AE0A1D /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EA02C9486C200AE0A1D /* Network View.swift */; };
-		F3F85EA22C94873000AE0A1D /* Processor View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC632C9353FF00F5E174 /* Processor View.swift */; };
+		F3F85EA22C94873000AE0A1D /* Processor Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC632C9353FF00F5E174 /* Processor Specs.swift */; };
 		F3F85EA32C94873000AE0A1D /* CPU Usage Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */; };
 		F3F85EA42C94873000AE0A1D /* Processor VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC662C93542700F5E174 /* Processor VM.swift */; };
 		F3F85EA52C94883D00AE0A1D /* Device View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC512C67B985008CD17B /* Device View.swift */; };
@@ -147,7 +147,7 @@
 		F3F85EF42C9583E400AE0A1D /* Device VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC522C67B985008CD17B /* Device VM.swift */; };
 		F3F85EF52C9583EB00AE0A1D /* Device View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC512C67B985008CD17B /* Device View.swift */; };
 		F3F85EF62C95854E00AE0A1D /* Processor VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC662C93542700F5E174 /* Processor VM.swift */; };
-		F3F85EF72C95854E00AE0A1D /* Processor View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC632C9353FF00F5E174 /* Processor View.swift */; };
+		F3F85EF72C95854E00AE0A1D /* Processor Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC632C9353FF00F5E174 /* Processor Specs.swift */; };
 		F3F85EF82C95854E00AE0A1D /* CPU Usage Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */; };
 		F3F85EFB2C95857C00AE0A1D /* GPU Families.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EF92C95857C00AE0A1D /* GPU Families.swift */; };
 		F3F85EFC2C95857C00AE0A1D /* GPU Families.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EF92C95857C00AE0A1D /* GPU Families.swift */; };
@@ -217,7 +217,7 @@
 		F36FBC5D2C931C7500F5E174 /* Orientation VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Orientation VM.swift"; sourceTree = "<group>"; };
 		F36FBC5F2C931CBD00F5E174 /* Location VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location VM.swift"; sourceTree = "<group>"; };
 		F36FBC612C931E2600F5E174 /* AltitudeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltitudeVM.swift; sourceTree = "<group>"; };
-		F36FBC632C9353FF00F5E174 /* Processor View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Processor View.swift"; sourceTree = "<group>"; };
+		F36FBC632C9353FF00F5E174 /* Processor Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Processor Specs.swift"; sourceTree = "<group>"; };
 		F36FBC662C93542700F5E174 /* Processor VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Processor VM.swift"; sourceTree = "<group>"; };
 		F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CPU Usage Chart.swift"; sourceTree = "<group>"; };
 		F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility View.swift"; sourceTree = "<group>"; };
@@ -422,7 +422,7 @@
 		F36FBC692C93551B00F5E174 /* Processor */ = {
 			isa = PBXGroup;
 			children = (
-				F36FBC632C9353FF00F5E174 /* Processor View.swift */,
+				F36FBC632C9353FF00F5E174 /* Processor Specs.swift */,
 				F3F85EF92C95857C00AE0A1D /* GPU Families.swift */,
 				F36FBC662C93542700F5E174 /* Processor VM.swift */,
 				F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */,
@@ -964,7 +964,7 @@
 				F3F85EC52C9492F300AE0A1D /* Device Watch Info.swift in Sources */,
 				F3F85EA92C948A3300AE0A1D /* Memory View.swift in Sources */,
 				F3F85EA12C9486C200AE0A1D /* Network View.swift in Sources */,
-				F3F85EA22C94873000AE0A1D /* Processor View.swift in Sources */,
+				F3F85EA22C94873000AE0A1D /* Processor Specs.swift in Sources */,
 				F3F85EC12C948F9D00AE0A1D /* Test List.swift in Sources */,
 				F3EA43B12C998787009820F6 /* Color Test List.swift in Sources */,
 				F3D1E77F2C9C0CD3000C81FF /* Battery Level.swift in Sources */,
@@ -1001,7 +1001,7 @@
 				F36FBC6C2C9413E100F5E174 /* CPU Usage Chart.swift in Sources */,
 				F3C3BDDA2C92D99900BF91EE /* Device VM.swift in Sources */,
 				F3C3BDE82C92DCA300BF91EE /* Display Specs.swift in Sources */,
-				F36FBC652C9353FF00F5E174 /* Processor View.swift in Sources */,
+				F36FBC652C9353FF00F5E174 /* Processor Specs.swift in Sources */,
 				F3C3BDE42C92DBFB00BF91EE /* Battery VM.swift in Sources */,
 				F36FBC622C931E2600F5E174 /* AltitudeVM.swift in Sources */,
 				F3C3BDE32C92DBF700BF91EE /* Battery Specs.swift in Sources */,
@@ -1072,7 +1072,7 @@
 				F3E7EC932C67B985008CD17B /* Pressure VM.swift in Sources */,
 				F3E7EC3E2C676A13008CD17B /* Device Specs.swift in Sources */,
 				F36FBC6F2C941F6200F5E174 /* Accessibility View.swift in Sources */,
-				F36FBC642C9353FF00F5E174 /* Processor View.swift in Sources */,
+				F36FBC642C9353FF00F5E174 /* Processor Specs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1097,7 +1097,7 @@
 				F3F85EF12C9580AD00AE0A1D /* Display VM.swift in Sources */,
 				F3F85EE42C957D4F00AE0A1D /* Test List.swift in Sources */,
 				F3F85EF62C95854E00AE0A1D /* Processor VM.swift in Sources */,
-				F3F85EF72C95854E00AE0A1D /* Processor View.swift in Sources */,
+				F3F85EF72C95854E00AE0A1D /* Processor Specs.swift in Sources */,
 				F3F85EF82C95854E00AE0A1D /* CPU Usage Chart.swift in Sources */,
 				F3F85F062C9588BE00AE0A1D /* Network View.swift in Sources */,
 				F3F85EEF2C95801D00AE0A1D /* Accessibility Item.swift in Sources */,

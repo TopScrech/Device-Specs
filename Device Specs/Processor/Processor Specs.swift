@@ -1,8 +1,8 @@
 import ScrechKit
 import DeviceKit
 
-struct ProcessorView: View {
-    private var vm = ProcessorVM()
+struct ProcessorSpecs: View {
+    @Environment(ProcessorVM.self) private var vm
     
     var body: some View {
         List {
@@ -20,8 +20,7 @@ struct ProcessorView: View {
                 //                    }
                 //                }
                 
-                let cpu = Device.current.cpu.description
-                ListParameter("CPU", parameter: cpu)
+                ListParameter("CPU", parameter: vm.cpu)
                 
                 ListParameter("Architecture", parameter: vm.arch)
                 
@@ -74,5 +73,6 @@ struct ProcessorView: View {
 }
 
 #Preview {
-    ProcessorView()
+    ProcessorSpecs()
+        .environment(ProcessorVM())
 }

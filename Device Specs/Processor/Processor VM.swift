@@ -1,7 +1,9 @@
 import Foundation
+import DeviceKit
 
 @Observable
 final class ProcessorVM {
+    let cpu = Device.current.cpu.description
     var cores = 0
     var activeCores = 0
     var cpuUsage: [Double] = []

@@ -2,6 +2,7 @@ import ScrechKit
 
 struct HomeView: View {
     @State private var battery = BatteryVM()
+    @State private var processor = ProcessorVM()
     
     @Environment(NavState.self) private var navState
     
@@ -15,8 +16,21 @@ struct HomeView: View {
                 DisplaySpecs()
             }
             
-            ListLink("Processor", icon: "cpu") {
-                ProcessorView()
+#warning("Display on other platforms")
+            
+            NavigationLink {
+                ProcessorSpecs()
+                    .environment(processor)
+            } label: {
+                HStack {
+                    Label("Processor", systemImage: "cpu")
+                        .foregroundStyle(.foreground)
+                    
+                    Spacer()
+                    
+                    Text(processor.cpu)
+                        .foregroundStyle(.secondary)
+                }
             }
             
             ListLink("Memory", icon: "memorychip") {
@@ -62,9 +76,6 @@ struct HomeView: View {
             }
         }
         .navigationTitle("Device Specs")
-        .refreshableTask {
-            battery.fetchBatteryInfo()
-        }
     }
 }
 
@@ -72,4 +83,6 @@ struct HomeView: View {
     NavigationView {
         HomeView()
     }
+    .environment(BatteryVM())
+    .environment(ProcessorVM())
 }
