@@ -13,13 +13,13 @@ final class CameraVM {
     }
     
     func parseDevice(_ device: AVCaptureDevice) -> Camera? {
-        let apperture = floatToString(device.lensAperture)
         var position = ""
         var exposure = ""
-        let manufacturer = device.manufacturer
-        let formats = device.formats
         var colorSpace = ""
         
+        let apperture = floatToString(device.lensAperture)
+        let manufacturer = device.manufacturer
+        let formats = device.formats
         let iso = floatToString(device.iso)
         let name = device.localizedName
         
