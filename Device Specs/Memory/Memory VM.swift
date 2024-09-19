@@ -16,7 +16,7 @@ final class MemoryVM {
     }
     
     var totalRamAndDisk: String {
-        "\(totalRam) / \(totalDisk)"
+        "\(totalRam) & \(totalDisk)"
     }
     
     // Memory
@@ -37,9 +37,9 @@ final class MemoryVM {
             let usedMemory = (UInt64(stats.active_count) + UInt64(stats.inactive_count) + UInt64(stats.wire_count)) * UInt64(pageSize)
             let freeMemory = totalMemoryBytes - usedMemory
             
-            totalRam = formatBytes(totalMemoryBytes, countStyle: .memory)
-            usedRam = formatBytes(usedMemory, countStyle: .memory)
-            freeRam = formatBytes(freeMemory, countStyle: .memory)
+            totalRam = formatBytes(totalMemoryBytes)
+            usedRam = formatBytes(usedMemory)
+            freeRam = formatBytes(freeMemory)
         }
     }
     

@@ -68,6 +68,7 @@
 		F3D1E78E2C9C12D6000C81FF /* System VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E78C2C9C12D6000C81FF /* System VM.swift */; };
 		F3D1E78F2C9C12D6000C81FF /* System VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E78C2C9C12D6000C81FF /* System VM.swift */; };
 		F3D1E7902C9C12D6000C81FF /* System VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E78C2C9C12D6000C81FF /* System VM.swift */; };
+		F3D1E7972C9C5A0E000C81FF /* Camera Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7962C9C5A0E000C81FF /* Camera Model.swift */; };
 		F3E7EC3E2C676A13008CD17B /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */; };
 		F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
 		F3E7EC762C67B985008CD17B /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6C2C67B985008CD17B /* Test List.swift */; };
@@ -241,6 +242,7 @@
 		F3D1E7822C9C0D14000C81FF /* Battery State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery State.swift"; sourceTree = "<group>"; };
 		F3D1E7872C9C12C2000C81FF /* System Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System Specs.swift"; sourceTree = "<group>"; };
 		F3D1E78C2C9C12D6000C81FF /* System VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System VM.swift"; sourceTree = "<group>"; };
+		F3D1E7962C9C5A0E000C81FF /* Camera Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera Model.swift"; sourceTree = "<group>"; };
 		F3E7EC3A2C676A13008CD17B /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs App.swift"; sourceTree = "<group>"; };
 		F3E7EC412C676A14008CD17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -573,6 +575,7 @@
 			children = (
 				F3E7EC572C67B985008CD17B /* Camera Specs.swift */,
 				F3E7EC582C67B985008CD17B /* Camera VM.swift */,
+				F3D1E7962C9C5A0E000C81FF /* Camera Model.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -1076,6 +1079,7 @@
 				F3E7EC892C67B985008CD17B /* Battery Specs.swift in Sources */,
 				F3E7EC8A2C67B985008CD17B /* Battery VM.swift in Sources */,
 				F3E7EC8B2C67B985008CD17B /* Bluetooth VM.swift in Sources */,
+				F3D1E7972C9C5A0E000C81FF /* Camera Model.swift in Sources */,
 				F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */,
 				F3E7EC8C2C67B985008CD17B /* Display View.swift in Sources */,
 				F3187A502C898B37008FB911 /* Nav State.swift in Sources */,
@@ -1249,6 +1253,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1278,6 +1283,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

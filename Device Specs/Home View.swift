@@ -89,7 +89,7 @@ struct HomeView: View {
                 }
             }
             
-            ListLink("Camera", icon: "camera") {
+            ListLink("Cameras", icon: "camera") {
                 CameraSpecs()
             }
             

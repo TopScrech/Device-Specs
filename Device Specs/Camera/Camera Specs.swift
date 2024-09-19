@@ -4,56 +4,40 @@ import DeviceKit
 struct CameraSpecs: View {
     @State private var vm = CameraVM()
     
-    private let cameras = Device.current.cameras
+    //    private let cameras = Device.current.cameras
     
     var body: some View {
         List {
-#if DEBUG
-            Button("Front camera test") {
-                vm.fetchCameraData(.front)
-            }
-            
-            Button("Back camera test") {
-                vm.fetchCameraData(.back)
-            }
-#endif
-            
-            if !cameras.isEmpty {
-                Section("Back cameras") {
-                    ForEach(cameras, id: \.self) { camera in
-                        switch camera {
-                        case .wide:
-                            Text("Wide")
-                            
-                        case .telephoto:
-                            Text("Telephoto")
-                            
-                        case .ultraWide:
-                            Text("Ultra wide")
-                            
-                        default:
-                            Text("Unknown")
-                        }
-                    }
+            ForEach(vm.cameras) { camera in
+                Section {
+                    Text("Type: \(camera.typeDescription)")
+                    Text("Position: \(camera.position)")
+                    Text("Apperture: \(camera.lensApperture)")
+                    Text("Exposure: \(camera.exposure)")
+                    Text("Best format: \(camera.bestFormat)")
                 }
-                
-#if DEBUG
-                ListParameter("backAperture", parameter: vm.backAperture)
-                ListParameter("backMaxFrameRateInfo", parameter: vm.backMaxFrameRateInfo)
-                ListParameter("backMaxVideoResolution", parameter: vm.backMaxVideoResolution)
-                ListParameter("backOpticalStabilization", parameter: vm.backOpticalStabilization)
-                ListParameter("backExposureRange", parameter: vm.backExposureRange)
-#endif
-            }
-            
-            Section("Front Camera") {
-                ListParameter("Max Photo Resolution", parameter: vm.frontMaxPhotoResolution)
-                
-                ListParameter("Apperture", parameter: vm.frontApperture)
-                
-                ListParameter("Optical Stabilization", parameter: vm.frontOpticalStabilization)
             }
         }
+        
+        //            if !cameras.isEmpty {
+        //                Section("Back cameras") {
+        //                    ForEach(cameras, id: \.self) { camera in
+        //                        switch camera {
+        //                        case .wide:
+        //                            Text("Wide")
+        //
+        //                        case .telephoto:
+        //                            Text("Telephoto")
+        //
+        //                        case .ultraWide:
+        //                            Text("Ultra wide")
+        //
+        //                        default:
+        //                            Text("Unknown")
+        //                        }
+        //                    }
+        //                }
+        //        }
         .navigationTitle("Camera")
     }
 }
