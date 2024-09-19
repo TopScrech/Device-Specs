@@ -44,10 +44,6 @@ struct DeviceSpecs: View {
             }
                         
             Section {
-                let locale = Locale.current
-                
-                ListParameter("System language", parameter: locale.identifier)
-                ListParameter("System region", parameter: locale.region?.identifier ?? "-")
                 ListParameter("Thermal state", parameter: vm.thermalState)
             }
             
@@ -67,7 +63,7 @@ struct DeviceSpecs: View {
             DeviceWatchInfo()
 #endif
         }
-        .navigationTitle("Device and system")
+        .navigationTitle("Device")
         .scrollIndicators(.never)
     }
 }

@@ -1,8 +1,27 @@
 import SwiftUI
+import DeviceKit
 
 @Observable
 final class SystemVM {
+    private let locale = Locale.current
+    
     var buildNumber = ""
+    
+    var multitaskingSupported: String {
+#if os(watchOS)
+        "No"
+#else
+        UIDevice.current.isMultitaskingSupported ? "Yes" : "No"
+#endif
+    }
+    
+    var language: String {
+        locale.identifier
+    }
+    
+    var region: String {
+        locale.region?.identifier ?? "-"
+    }
     
     init() {
         fetchBuildNumber()
@@ -15,7 +34,7 @@ final class SystemVM {
         "\(UIDevice.current.systemName) \(UIDevice.current.systemVersion)"
 #endif
     }
-
+    
     func fetchBuildNumber() {
         let build = ProcessInfo.processInfo.operatingSystemVersionString
         
@@ -39,25 +58,26 @@ final class SystemVM {
     
     func fetchSystemActiveTime() -> String {
         var bootTime = timeval()
-        var mib: [Int32] = [CTL_KERN, KERN_BOOTTIME]
+        var mib = [CTL_KERN, KERN_BOOTTIME]
         var size = MemoryLayout<timeval>.stride
-
+        
         let result = sysctl(&mib, UInt32(mib.count), &bootTime, &size, nil, 0)
+        
         if result != 0 {
             perror("sysctl")
             return "Error fetching boot time"
         }
-
+        
         let bootDate = Date(timeIntervalSince1970: TimeInterval(bootTime.tv_sec))
         let activeTimeInterval = Date().timeIntervalSince(bootDate)
-
+        
         let totalSeconds = Int(activeTimeInterval)
         let days = totalSeconds / 86400
         let hours = (totalSeconds % 86400) / 3600
         let minutes = (totalSeconds % 3600) / 60
-
+        
         let formattedActiveTime = "\(days)d \(hours)h \(minutes)m"
-
+        
         return formattedActiveTime
     }
 }
