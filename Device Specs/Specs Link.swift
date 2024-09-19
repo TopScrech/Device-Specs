@@ -6,7 +6,12 @@ struct SpecsLink<Destination: View>: View {
     private let spec: String
     private let destination: () -> Destination
     
-    init(_ name: LocalizedStringKey, icon: String, spec: String = "", destination: @escaping () -> Destination) {
+    init(
+        _ name: LocalizedStringKey,
+        icon: String,
+        spec: String = "",
+        destination: @escaping () -> Destination
+    ) {
         self.name = name
         self.icon = icon
         self.spec = spec
@@ -15,6 +20,23 @@ struct SpecsLink<Destination: View>: View {
     
     var body: some View {
         NavigationLink(destination: destination) {
+#if os(watchOS)
+            HStack(spacing: 10) {
+                Image(systemName: icon)
+                    .title3(.semibold)
+                
+                VStack(alignment: .leading, spacing: 0) {
+                    Text(name)
+                    
+                    if !spec.isEmpty {
+                        Text(spec)
+                            .footnote(.semibold)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+                .foregroundStyle(.foreground)
+            }
+#else
             HStack {
                 Label(name, systemImage: icon)
                     .foregroundStyle(.foreground)
@@ -23,9 +45,11 @@ struct SpecsLink<Destination: View>: View {
                 
                 if !spec.isEmpty {
                     Text(spec)
+                        .fontWeight(.medium)
                         .foregroundStyle(.secondary)
                 }
             }
+#endif
         }
     }
 }
