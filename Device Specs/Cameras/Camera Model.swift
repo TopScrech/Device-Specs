@@ -11,7 +11,7 @@ struct Camera: Identifiable {
     let iso: String
     let manufacturer: String
     let formats: [AVCaptureDevice.Format]
-        
+    
     var bestFormat: AVCaptureDevice.Format? {
         // Sort formats by highest frame rate first, then by highest resolution
         

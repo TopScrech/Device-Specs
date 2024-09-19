@@ -86,7 +86,7 @@
 		F3E7EC7A2C67B985008CD17B /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC512C67B985008CD17B /* Device Specs.swift */; };
 		F3E7EC7B2C67B985008CD17B /* Device VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC522C67B985008CD17B /* Device VM.swift */; };
 		F3E7EC7C2C67B985008CD17B /* Altitude VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC692C67B985008CD17B /* Altitude VM.swift */; };
-		F3E7EC7D2C67B985008CD17B /* Camera Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC572C67B985008CD17B /* Camera Specs.swift */; };
+		F3E7EC7D2C67B985008CD17B /* Cameras Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC572C67B985008CD17B /* Cameras Specs.swift */; };
 		F3E7EC7E2C67B985008CD17B /* Nearby VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC702C67B985008CD17B /* Nearby VM.swift */; };
 		F3E7EC7F2C67B985008CD17B /* Memory VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5E2C67B985008CD17B /* Memory VM.swift */; };
 		F3E7EC802C67B985008CD17B /* Display VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC552C67B985008CD17B /* Display VM.swift */; };
@@ -268,7 +268,7 @@
 		F3E7EC522C67B985008CD17B /* Device VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device VM.swift"; sourceTree = "<group>"; };
 		F3E7EC542C67B985008CD17B /* Display View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Display View.swift"; sourceTree = "<group>"; };
 		F3E7EC552C67B985008CD17B /* Display VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Display VM.swift"; sourceTree = "<group>"; };
-		F3E7EC572C67B985008CD17B /* Camera Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera Specs.swift"; sourceTree = "<group>"; };
+		F3E7EC572C67B985008CD17B /* Cameras Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cameras Specs.swift"; sourceTree = "<group>"; };
 		F3E7EC582C67B985008CD17B /* Camera VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera VM.swift"; sourceTree = "<group>"; };
 		F3E7EC5A2C67B985008CD17B /* Battery Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Specs.swift"; sourceTree = "<group>"; };
 		F3E7EC5B2C67B985008CD17B /* Battery VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery VM.swift"; sourceTree = "<group>"; };
@@ -555,7 +555,7 @@
 				F3D1E7862C9C12A0000C81FF /* System */,
 				F36FBC692C93551B00F5E174 /* Processor */,
 				F3E7EC562C67B985008CD17B /* Display */,
-				F3E7EC592C67B985008CD17B /* Camera */,
+				F3E7EC592C67B985008CD17B /* Cameras */,
 				F3E7EC5C2C67B985008CD17B /* Battery */,
 				F3E7EC602C67B985008CD17B /* Memory */,
 				F3E7EC642C67B985008CD17B /* Network */,
@@ -585,17 +585,17 @@
 			path = Display;
 			sourceTree = "<group>";
 		};
-		F3E7EC592C67B985008CD17B /* Camera */ = {
+		F3E7EC592C67B985008CD17B /* Cameras */ = {
 			isa = PBXGroup;
 			children = (
-				F3E7EC572C67B985008CD17B /* Camera Specs.swift */,
+				F3E7EC572C67B985008CD17B /* Cameras Specs.swift */,
 				F3D1E79D2C9CC262000C81FF /* Camera View.swift */,
 				F3D1E79F2C9CC2AE000C81FF /* Camera Formats.swift */,
 				F3D1E7A12C9CC304000C81FF /* Format Card.swift */,
 				F3E7EC582C67B985008CD17B /* Camera VM.swift */,
 				F3D1E7962C9C5A0E000C81FF /* Camera Model.swift */,
 			);
-			path = Camera;
+			path = Cameras;
 			sourceTree = "<group>";
 		};
 		F3E7EC5C2C67B985008CD17B /* Battery */ = {
@@ -1080,7 +1080,7 @@
 				F3E7EC7C2C67B985008CD17B /* Altitude VM.swift in Sources */,
 				F3E7EC9E2C680561008CD17B /* Torch VM.swift in Sources */,
 				F3D1E7832C9C0D14000C81FF /* Battery State.swift in Sources */,
-				F3E7EC7D2C67B985008CD17B /* Camera Specs.swift in Sources */,
+				F3E7EC7D2C67B985008CD17B /* Cameras Specs.swift in Sources */,
 				F36FBC6B2C9413E100F5E174 /* CPU Usage Chart.swift in Sources */,
 				F3E7EC7E2C67B985008CD17B /* Nearby VM.swift in Sources */,
 				F3E7EC7F2C67B985008CD17B /* Memory VM.swift in Sources */,

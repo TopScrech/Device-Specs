@@ -8,8 +8,14 @@ final class CameraVM {
         test()
     }
     
-    private func floatToString(_ value: Float) -> String {
-        String(format: "%g", value)
+    private func numberToString<T: Numeric>(_ value: T) -> String {
+        if let doubleValue = value as? Float {
+            String(format: "%g", doubleValue)
+        } else if let floatValue = value as? Double {
+            String(format: "%g", floatValue)
+        } else {
+            String(describing: value)
+        }
     }
     
     func parseDevice(_ device: AVCaptureDevice) -> Camera? {
@@ -17,10 +23,10 @@ final class CameraVM {
         var exposure = ""
         var colorSpace = ""
         
-        let apperture = floatToString(device.lensAperture)
+        let apperture = numberToString(device.lensAperture)
         let manufacturer = device.manufacturer
         let formats = device.formats
-        let iso = floatToString(device.iso)
+        let iso = numberToString(device.iso)
         let name = device.localizedName
         
         switch device.activeColorSpace {
