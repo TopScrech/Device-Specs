@@ -27,6 +27,7 @@ struct DeviceSpecs: View {
             Section("Device") {
                 ListParameter("Device", parameter: "\(vm.deviceIdentifier)")
                 ListParameter("Identifier", parameter: Device.identifier)
+                ListParameter("Internal name", parameter: vm.getInternalDeviceName() ?? "-")
                 
 #if os(watchOS)
                 if let vendorId = WKInterfaceDevice.current().identifierForVendor?.uuidString {
