@@ -4,6 +4,8 @@
 <dict>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
+	<key>MusicHapticsSupported</key>
+	<true/>
 	<key>NSBonjourServices</key>
 	<array>
 		<string>_specs._tcp</string>
