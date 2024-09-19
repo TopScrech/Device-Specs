@@ -25,10 +25,12 @@ final class MemoryVM {
     
     private func roundUp(_ value: String) -> String {
         let components = value.split(separator: " ")
+        
         if components.count == 2, let number = Double(components[0]) {
             let roundedNumber = Int(ceil(number))
             return "\(roundedNumber) \(components[1])"
         }
+        
         return value
     }
     
