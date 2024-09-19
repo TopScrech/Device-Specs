@@ -13,11 +13,33 @@ final class CameraVM {
     }
     
     func parseDevice(_ device: AVCaptureDevice) -> Camera? {
-        let type = device.deviceType
+//        let type = device.deviceType
         let apperture = floatToString(device.lensAperture)
         var position = ""
         var exposure = ""
+        let manufacturer = device.manufacturer
         let formats = device.formats
+        var colorSpace = ""
+        
+        let iso = floatToString(device.iso)
+        let name = device.localizedName
+        
+        switch device.activeColorSpace {
+        case .HLG_BT2020:
+            colorSpace = "HLG_BT2020"
+            
+        case .P3_D65:
+            colorSpace = "P3_D65"
+            
+        case .sRGB:
+            colorSpace = "sRGB"
+            
+        case .appleLog:
+            colorSpace = "Apple Log"
+            
+        default:
+            colorSpace = "Unknown"
+        }
         
         switch device.exposureMode {
         case .autoExpose:
@@ -48,10 +70,14 @@ final class CameraVM {
         }
         
         return Camera(
-            type: type,
+            name: name,
+//            type: type,
             lensApperture: apperture,
             position: position,
             exposure: exposure,
+            colorSpace: colorSpace,
+            iso: iso,
+            manufacturer: manufacturer,
             formats: formats
         )
     }

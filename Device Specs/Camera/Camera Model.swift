@@ -3,27 +3,31 @@ import AVFoundation
 struct Camera: Identifiable {
     let id = UUID()
     
-    let type: AVCaptureDevice.DeviceType
+    let name: String
+//    let type: AVCaptureDevice.DeviceType
     let lensApperture: String
     let position: String
     let exposure: String
+    let colorSpace: String
+    let iso: String
+    let manufacturer: String
     let formats: [AVCaptureDevice.Format]
     
-    var typeDescription: String {
-        switch type {
-        case .builtInDualCamera: "Dual Camera"
-        case .builtInDualWideCamera: "Dual Wide Camera"
-        case .builtInLiDARDepthCamera: "LiDAR Depth Camera"
-        case .builtInTelephotoCamera: "Telephoto Camera"
-        case .builtInTripleCamera: "Triple Camera"
-        case .builtInTrueDepthCamera: "True Depth Camera"
-        case .builtInUltraWideCamera: "Ultra Wide Camera"
-        case .builtInWideAngleCamera: "Wide Angle Camera"
-        case .continuityCamera: "Continuity Camera"
-        case .external: "Webcam"
-        default: "Unknown Camera"
-        }
-    }
+//    var typeDescription: String {
+//        switch type {
+//        case .builtInDualCamera: "Dual Camera"
+//        case .builtInDualWideCamera: "Dual Wide Camera"
+//        case .builtInLiDARDepthCamera: "LiDAR Depth Camera"
+//        case .builtInTelephotoCamera: "Telephoto Camera"
+//        case .builtInTripleCamera: "Triple Camera"
+//        case .builtInTrueDepthCamera: "True Depth Camera"
+//        case .builtInUltraWideCamera: "Ultra Wide Camera"
+//        case .builtInWideAngleCamera: "Wide Angle Camera"
+//        case .continuityCamera: "Continuity Camera"
+//        case .external: "Webcam"
+//        default: "Unknown Camera"
+//        }
+//    }
     
     var bestFormat: AVCaptureDevice.Format? {
         // Sort formats by highest frame rate first, then by highest resolution
