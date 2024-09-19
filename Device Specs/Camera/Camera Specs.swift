@@ -36,6 +36,14 @@ struct CameraSpecs: View {
                         }
                     }
                 }
+                
+#if DEBUG
+                ListParameter("backAperture", parameter: vm.backAperture)
+                ListParameter("backMaxFrameRateInfo", parameter: vm.backMaxFrameRateInfo)
+                ListParameter("backMaxVideoResolution", parameter: vm.backMaxVideoResolution)
+                ListParameter("backOpticalStabilization", parameter: vm.backOpticalStabilization)
+                ListParameter("backExposureRange", parameter: vm.backExposureRange)
+#endif
             }
             
             Section("Front Camera") {
