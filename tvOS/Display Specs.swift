@@ -2,7 +2,7 @@ import ScrechKit
 import DeviceKit
 
 struct DisplaySpecs: View {
-    private var display = DisplayVM()
+    @Environment(DisplayVM.self) private var vm
     
     @State private var brightness = 0.0
     
@@ -12,9 +12,9 @@ struct DisplaySpecs: View {
     
     var body: some View {
         List {
-            ListParameter("Screen resolution", parameter: display.resolution)
+            ListParameter("Screen resolution", parameter: vm.resolution)
             
-            ListParameter("Refresh rate", parameter: display.refreshRate)
+            ListParameter("Refresh rate", parameter: vm.refreshRate)
             
             Section {
                 ListParameter("Brightness", parameter: "\(Int(brightness))%")
@@ -22,7 +22,7 @@ struct DisplaySpecs: View {
         }
         .navigationTitle("Display")
         .refreshableTask {
-            display.fetchScreenResolution()
+            vm.fetchScreenResolution()
         }
     }
 }

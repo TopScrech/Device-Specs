@@ -83,13 +83,9 @@ final class CameraVM {
             position: .front
         )
         
-        var devices: [Camera] = [
-            
-        ]
+        var devices: [Camera] = []
         
         for device in discoverySession.devices + discoverySession2.devices {
-            print(device.deviceType)
-            
             if let camera = parseDevice(device) {
                 devices.append(camera)
             }
@@ -138,9 +134,6 @@ final class CameraVM {
         //        } else {
         //            backMaxFrameRateInfo = "N/A"
         //        }
-        //
-        //        // Lens Aperture
-        //        backAperture = String(format: "%.1f", device.lensAperture)
         //
         //        // Optical Stabilization Support (Cinematic Stabilization as an example)
         //        backOpticalStabilization = device.activeFormat.isVideoStabilizationModeSupported(.cinematic) ? "Yes" : "No"

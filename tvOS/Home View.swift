@@ -1,29 +1,44 @@
 import ScrechKit
 
 struct HomeView: View {
+    @State private var processor = ProcessorVM()
+    @State private var display = DisplayVM()
+    @State private var system = SystemVM()
+    @State private var device = DeviceVM()
+    @State private var memory = MemoryVM()
+    
     var body: some View {
         List {
-            ListLink("Device and system", icon: "info.circle") {
+            SpecsLink("Device", icon: "info.circle", spec: device.deviceIdentifier) {
                 DeviceSpecs()
+                    .environment(device)
             }
             
-            ListLink("Display", icon: "iphone") {
+            SpecsLink("System", icon: "apple.terminal", spec: system.operatingSystem) {
+                SystemSpecs()
+                    .environment(system)
+            }
+            
+            SpecsLink("Display", icon: "iphone", spec: display.diagonalSize) {
                 DisplaySpecs()
+                    .environment(display)
             }
             
-            ListLink("Processor", icon: "cpu") {
+            SpecsLink("Processor", icon: "cpu", spec: processor.cpu) {
                 ProcessorSpecs()
+                    .environment(processor)
             }
             
-            ListLink("Memory", icon: "memorychip") {
-                MemoryView()
+            SpecsLink("Memory", icon: "memorychip", spec: memory.totalRamAndDisk) {
+                MemorySpecs()
+                    .environment(memory)
             }
             
-            ListLink("Network", icon: "network") {
+            SpecsLink("Network", icon: "network") {
                 NetworkSpecs()
             }
             
-            ListLink("Accessibility", icon: "accessibility") {
+            SpecsLink("Accessibility", icon: "accessibility") {
                 AccessibilityView()
             }
             
@@ -42,4 +57,9 @@ struct HomeView: View {
     NavigationView {
         HomeView()
     }
+    .environment(ProcessorVM())
+    .environment(DisplayVM())
+    .environment(SystemVM())
+    .environment(DeviceVM())
+    .environment(MemoryVM())
 }

@@ -1,40 +1,53 @@
 import ScrechKit
 
 struct HomeView: View {
+    @State private var battery = BatteryVM()
+    @State private var processor = ProcessorVM()
+    @State private var system = SystemVM()
+    @State private var device = DeviceVM()
+    @State private var memory = MemoryVM()
+    
     var body: some View {
         List {
-            ListLink("Device and system", icon: "info.circle") {
+            SpecsLink("Device", icon: "info.circle", spec: device.deviceIdentifier) {
                 DeviceSpecs()
+                    .environment(device)
             }
             
-            ListLink("Display", icon: "iphone") {
+            SpecsLink("System", icon: "apple.terminal", spec: system.operatingSystem) {
+                SystemSpecs()
+                    .environment(system)
+            }
+            
+            SpecsLink("Display", icon: "iphone") {
                 DisplaySpecs()
             }
             
-            ListLink("Processor", icon: "cpu") {
+            SpecsLink("Processor", icon: "cpu", spec: processor.cpu) {
                 ProcessorSpecs()
+                    .environment(processor)
             }
             
-            ListLink("Memory", icon: "memorychip") {
-                MemoryView()
+            SpecsLink("Memory", icon: "memorychip", spec: memory.totalRamAndDisk) {
+                MemorySpecs()
+                    .environment(memory)
             }
             
-            ListLink("Battery", icon: "battery.100percent.bolt") {
+            SpecsLink("Battery", icon: "battery.100percent.bolt", spec: battery.batteryLevel) {
                 BatterySpecs()
+                    .environment(battery)
             }
             .symbolRenderingMode(.multicolor)
             
-            ListLink("Network", icon: "network") {
+            SpecsLink("Network", icon: "network") {
                 NetworkSpecs()
             }
-            
 #if DEBUG
-            ListLink("Sensors", icon: "barometer") {
+            SpecsLink("Sensors", icon: "barometer") {
                 SensorsView()
             }
 #endif
-            
-            ListLink("Accessibility", icon: "accessibility") {
+            SpecsLink("Accessibility", icon: "accessibility") {
                 AccessibilityView()
             }
         }
@@ -47,4 +60,9 @@ struct HomeView: View {
     NavigationView {
         HomeView()
     }
+    .environment(BatteryVM())
+    .environment(ProcessorVM())
+    .environment(SystemVM())
+    .environment(DeviceVM())
+    .environment(MemoryVM())
 }

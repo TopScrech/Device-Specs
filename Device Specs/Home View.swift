@@ -1,6 +1,8 @@
-import ScrechKit
+import SwiftUI
 
 struct HomeView: View {
+    @Environment(NavState.self) private var navState
+    
     @State private var battery = BatteryVM()
     @State private var processor = ProcessorVM()
     @State private var display = DisplayVM()
@@ -8,115 +10,52 @@ struct HomeView: View {
     @State private var device = DeviceVM()
     @State private var memory = MemoryVM()
     
-    @Environment(NavState.self) private var navState
-    
     var body: some View {
         List {
-            NavigationLink {
+            SpecsLink("Device", icon: "info.circle", spec: device.deviceIdentifier) {
                 DeviceSpecs()
                     .environment(device)
-            } label: {
-                HStack {
-                    Label("Device", systemImage: "info.circle")
-                        .foregroundStyle(.foreground)
-                    
-                    Spacer()
-                    
-                    Text(device.deviceIdentifier)
-                        .foregroundStyle(.secondary)
-                }
             }
             
-            NavigationLink {
+            SpecsLink("System", icon: "apple.terminal", spec: system.operatingSystem) {
                 SystemSpecs()
                     .environment(system)
-            } label: {
-                HStack {
-                    Label("System", systemImage: "apple.terminal")
-                        .foregroundStyle(.foreground)
-                    
-                    Spacer()
-                    
-                    Text(system.operatingSystem)
-                        .foregroundStyle(.secondary)
-                }
             }
             
-            NavigationLink {
+            SpecsLink("Display", icon: "iphone", spec: display.diagonalSize) {
                 DisplaySpecs()
                     .environment(display)
-            } label: {
-                HStack {
-                    Label("Display", systemImage: "iphone")
-                        .foregroundStyle(.foreground)
-                    
-                    Spacer()
-                    
-                    Text(display.diagonalSize)
-                        .foregroundStyle(.secondary)
-                }
             }
             
-#warning("Display on other platforms")
-            
-            NavigationLink {
+            SpecsLink("Processor", icon: "cpu", spec: processor.cpu) {
                 ProcessorSpecs()
                     .environment(processor)
-            } label: {
-                HStack {
-                    Label("Processor", systemImage: "cpu")
-                        .foregroundStyle(.foreground)
-                    
-                    Spacer()
-                    
-                    Text(processor.cpu)
-                        .foregroundStyle(.secondary)
-                }
             }
             
-            NavigationLink {
+            SpecsLink("Memory", icon: "memorychip", spec: memory.totalRamAndDisk) {
                 MemorySpecs()
                     .environment(memory)
-            } label: {
-                HStack {
-                    Label("Memory", systemImage: "memorychip")
-                        .foregroundStyle(.foreground)
-                    
-                    Spacer()
-                    
-                    Text(memory.totalRamAndDisk)
-                        .foregroundStyle(.secondary)
-                }
             }
             
-            ListLink("Cameras", icon: "camera") {
+            SpecsLink("Cameras", icon: "camera") {
                 CameraSpecs()
             }
             
-            NavigationLink {
+            SpecsLink("Battery", icon: "battery.100percent.bolt", spec: battery.batteryLevel) {
                 BatterySpecs()
                     .environment(battery)
-            } label: {
-                HStack {
-                    Label("Battery", systemImage: "battery.100percent.bolt")
-                        .symbolRenderingMode(.multicolor)
-                    
-                    Spacer()
-                    
-                    Text(battery.batteryLevel)
-                        .foregroundStyle(.secondary)
-                }
             }
+            .symbolRenderingMode(.multicolor)
             
-            ListLink("Network", icon: "network") {
+            SpecsLink("Network", icon: "network") {
                 NetworkSpecs()
             }
             
-            ListLink("Sensors", icon: "barometer") {
+            SpecsLink("Sensors", icon: "barometer") {
                 SensorsView()
             }
             
-            ListLink("Accessibility", icon: "accessibility") {
+            SpecsLink("Accessibility", icon: "accessibility") {
                 AccessibilityView()
             }
             
