@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct DeviceSpecs: App {
+struct DeviceSpecsApp: App {
     private var navState = NavState()
     
     var body: some Scene {

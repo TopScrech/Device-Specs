@@ -4,7 +4,7 @@ struct HomeView: View {
     var body: some View {
         List {
             ListLink("Device and system", icon: "info.circle") {
-                DeviceView()
+                DeviceSpecs()
             }
             
             ListLink("Display", icon: "iphone") {

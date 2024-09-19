@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct DeviceSpecs: App {
+struct DeviceSpecsApp: App {
     var body: some Scene {
         WindowGroup {
             AppContainer()

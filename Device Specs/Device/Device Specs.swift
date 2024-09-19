@@ -3,8 +3,8 @@ import DeviceKit
 //import CoreTelephony
 //import AdSupport
 
-struct DeviceView: View {
-    private var vm = DeviceVM()
+struct DeviceSpecs: View {
+    @Environment(DeviceVM.self) private var vm
     //    private var bluetooth = BluetoothManager()
     
     var body: some View {
@@ -25,7 +25,7 @@ struct DeviceView: View {
             //            }
             
             Section("Device") {
-                ListParameter("Device", parameter: "\(Device.current)")
+                ListParameter("Device", parameter: "\(vm.deviceIdentifier)")
                 ListParameter("Identifier", parameter: Device.identifier)
                 
 #if os(watchOS)
@@ -42,18 +42,12 @@ struct DeviceView: View {
                 //                let idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
                 //                ListParameter("Advertising Identifier (IDFA)", parameter: idfa)
             }
-            
-            Section("System") {
-                ListParameter("Operating system", parameter: vm.operatingSystem)
-                ListParameter("Build number", parameter: vm.buildNumber)
-            }
-            
+                        
             Section {
                 let locale = Locale.current
                 
                 ListParameter("System language", parameter: locale.identifier)
                 ListParameter("System region", parameter: locale.region?.identifier ?? "-")
-                ListParameter("System uptime", parameter: vm.fetchSystemUptime())
                 ListParameter("Thermal state", parameter: vm.thermalState)
             }
             
@@ -79,5 +73,6 @@ struct DeviceView: View {
 }
 
 #Preview {
-    DeviceView()
+    DeviceSpecs()
+        .environment(DeviceVM())
 }

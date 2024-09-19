@@ -1,6 +1,6 @@
 import ScrechKit
 
-struct NetworkView: View {
+struct NetworkSpecs: View {
     @State private var network = NetworkVM()
     @State private var wifi = WifiVM()
     
@@ -29,5 +29,5 @@ struct NetworkView: View {
 }
 
 #Preview {
-    NetworkView()
+    NetworkSpecs()
 }

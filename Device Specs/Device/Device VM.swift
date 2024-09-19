@@ -1,4 +1,5 @@
 import ScrechKit
+import DeviceKit
 
 #if canImport(NearbyInteraction)
 import NearbyInteraction
@@ -11,19 +12,8 @@ import CoreNFC
 @Observable
 final class DeviceVM {
     // Device
-    var deviceIdentifier: String?
+    let deviceIdentifier = Device.current.description
     var architecture = ""
-    
-    // System
-    var operatingSystem: String {
-#if os(watchOS)
-        "\(WKInterfaceDevice.current().systemName) \(WKInterfaceDevice.current().systemVersion)"
-#else
-        "\(UIDevice.current.systemName) \(UIDevice.current.systemVersion)"
-#endif
-    }
-    
-    var buildNumber = ""
     
     // Capabilities
     var isNfcAvailable: String {
@@ -59,8 +49,6 @@ final class DeviceVM {
     }
     
     init() {
-        fetchBuildNumber()
-        fetchDeviceModelIdentifier()
         fetchForceTouch()
     }
     
@@ -75,36 +63,5 @@ final class DeviceVM {
             isForceTouchAvailable = "No"
         }
 #endif
-    }
-    
-    func fetchSystemUptime() -> String {
-        let uptime = ProcessInfo.processInfo.systemUptime
-        
-        let days = Int(uptime) / 86400
-        let hours = (Int(uptime) % 86400) / 3600
-        let minutes = (Int(uptime) % 3600) / 60
-        
-        let formattedUptime = "\(days)d \(hours)h \(minutes)m"
-        
-        return formattedUptime
-    }
-    
-    func fetchDeviceModelIdentifier() {
-        var sysinfo = utsname()
-        uname(&sysinfo)
-        
-        let bytes = Data(bytes: &sysinfo.machine, count: Int(_SYS_NAMELEN))
-        
-        deviceIdentifier = String(bytes: bytes, encoding: .ascii)?
-            .trimmingCharacters(in: .controlCharacters)
-    }
-    
-    func fetchBuildNumber() {
-        let build = ProcessInfo.processInfo.operatingSystemVersionString
-        
-        if let range = build.range(of: "\\((Build )([A-Za-z0-9]+)\\)", options: .regularExpression) {
-            buildNumber = String(build[range]).replacingOccurrences(of: "(Build ", with: "")
-                .replacingOccurrences(of: ")", with: "")
-        }
     }
 }

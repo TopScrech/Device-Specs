@@ -4,7 +4,7 @@ struct HomeView: View {
     var body: some View {
         List {
             ListLink("Device and system", icon: "info.circle") {
-                DeviceView()
+                DeviceSpecs()
             }
             
             ListLink("Display", icon: "iphone") {
@@ -12,7 +12,7 @@ struct HomeView: View {
             }
             
             ListLink("Processor", icon: "cpu") {
-                ProcessorView()
+                ProcessorSpecs()
             }
             
             ListLink("Memory", icon: "memorychip") {
@@ -20,7 +20,7 @@ struct HomeView: View {
             }
             
             ListLink("Network", icon: "network") {
-                NetworkView()
+                NetworkSpecs()
             }
             
             ListLink("Accessibility", icon: "accessibility") {

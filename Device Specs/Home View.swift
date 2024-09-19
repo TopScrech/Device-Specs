@@ -4,13 +4,41 @@ struct HomeView: View {
     @State private var battery = BatteryVM()
     @State private var processor = ProcessorVM()
     @State private var display = DisplayVM()
+    @State private var system = SystemVM()
+    @State private var device = DeviceVM()
     
     @Environment(NavState.self) private var navState
     
     var body: some View {
         List {
-            ListLink("Device and system", icon: "info.circle") {
-                DeviceView()
+            NavigationLink {
+                DeviceSpecs()
+                    .environment(device)
+            } label: {
+                HStack {
+                    Label("Device", systemImage: "info.circle")
+                        .foregroundStyle(.foreground)
+                    
+                    Spacer()
+                    
+                    Text(device.deviceIdentifier)
+                        .foregroundStyle(.secondary)
+                }
+            }
+            
+            NavigationLink {
+                SystemSpecs()
+                    .environment(system)
+            } label: {
+                HStack {
+                    Label("System", systemImage: "apple.terminal")
+                        .foregroundStyle(.foreground)
+                    
+                    Spacer()
+                    
+                    Text(system.operatingSystem)
+                        .foregroundStyle(.secondary)
+                }
             }
             
             NavigationLink {
@@ -69,7 +97,7 @@ struct HomeView: View {
             }
             
             ListLink("Network", icon: "network") {
-                NetworkView()
+                NetworkSpecs()
             }
             
             ListLink("Sensors", icon: "barometer") {
@@ -98,4 +126,5 @@ struct HomeView: View {
     .environment(BatteryVM())
     .environment(ProcessorVM())
     .environment(DisplayVM())
+    .environment(SystemVM())
 }
