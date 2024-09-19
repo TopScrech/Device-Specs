@@ -6,6 +6,7 @@ struct HomeView: View {
     @State private var display = DisplayVM()
     @State private var system = SystemVM()
     @State private var device = DeviceVM()
+    @State private var memory = MemoryVM()
     
     @Environment(NavState.self) private var navState
     
@@ -73,8 +74,19 @@ struct HomeView: View {
                 }
             }
             
-            ListLink("Memory", icon: "memorychip") {
-                MemoryView()
+            NavigationLink {
+                MemorySpecs()
+                    .environment(memory)
+            } label: {
+                HStack {
+                    Label("Memory", systemImage: "memorychip")
+                        .foregroundStyle(.foreground)
+                    
+                    Spacer()
+                    
+                    Text(memory.totalRamAndDisk)
+                        .foregroundStyle(.secondary)
+                }
             }
             
             ListLink("Camera", icon: "camera") {

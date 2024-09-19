@@ -16,7 +16,7 @@ struct HomeView: View {
             }
             
             ListLink("Memory", icon: "memorychip") {
-                MemoryView()
+                MemorySpecs()
             }
             
             ListLink("Battery", icon: "battery.100percent.bolt") {
