@@ -50,14 +50,19 @@ final class BatteryVM {
         switch battery {
         case 0...24:
             return "battery.0percent"
+            
         case 25...49:
             return "battery.25percent"
+            
         case 50...74:
             return "battery.50percent"
+            
         case 75...89:
             return "battery.75percent"
+            
         case 90...100:
             return "battery.100percent"
+            
         default:
             return "battery.0percent"
         }
