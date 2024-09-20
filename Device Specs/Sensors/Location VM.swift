@@ -6,6 +6,7 @@ final class LocationVM: NSObject, CLLocationManagerDelegate {
     var latitude = 0.0
     var longitude = 0.0
     var trueHeading = 0.0
+    var magneticHeading = 0.0
     var headingAccuracy = 0.0
     
     private var locationManager: CLLocationManager
@@ -32,6 +33,7 @@ final class LocationVM: NSObject, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
         withAnimation {
             trueHeading = newHeading.trueHeading
+            magneticHeading = newHeading.magneticHeading
             headingAccuracy = newHeading.headingAccuracy
         }
     }
