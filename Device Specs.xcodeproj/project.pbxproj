@@ -93,8 +93,8 @@
 		F3D1E7BA2C9D611A000C81FF /* App Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AA2C9D4BFA000C81FF /* App Specs.swift */; };
 		F3D1E7BC2C9D6A9C000C81FF /* Magnetic Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7BB2C9D6A9C000C81FF /* Magnetic Field.swift */; };
 		F3D1E7BD2C9D6A9C000C81FF /* Magnetic Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7BB2C9D6A9C000C81FF /* Magnetic Field.swift */; };
-		F3D1E7BF2C9D6AC8000C81FF /* MagneticFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7BE2C9D6AC8000C81FF /* MagneticFieldViewModel.swift */; };
-		F3D1E7C02C9D6AC8000C81FF /* MagneticFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7BE2C9D6AC8000C81FF /* MagneticFieldViewModel.swift */; };
+		F3D1E7BF2C9D6AC8000C81FF /* MagneticFieldVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7BE2C9D6AC8000C81FF /* MagneticFieldVM.swift */; };
+		F3D1E7C02C9D6AC8000C81FF /* MagneticFieldVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7BE2C9D6AC8000C81FF /* MagneticFieldVM.swift */; };
 		F3D1E7C32C9D6B13000C81FF /* MagneticFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7C12C9D6B13000C81FF /* MagneticFieldView.swift */; };
 		F3E7EC3E2C676A13008CD17B /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */; };
 		F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
@@ -280,7 +280,7 @@
 		F3D1E7AD2C9D5BF8000C81FF /* App VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App VM.swift"; sourceTree = "<group>"; };
 		F3D1E7AF2C9D5D96000C81FF /* Specs Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Specs Button.swift"; sourceTree = "<group>"; };
 		F3D1E7BB2C9D6A9C000C81FF /* Magnetic Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Magnetic Field.swift"; sourceTree = "<group>"; };
-		F3D1E7BE2C9D6AC8000C81FF /* MagneticFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagneticFieldViewModel.swift; sourceTree = "<group>"; };
+		F3D1E7BE2C9D6AC8000C81FF /* MagneticFieldVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagneticFieldVM.swift; sourceTree = "<group>"; };
 		F3D1E7C12C9D6B13000C81FF /* MagneticFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagneticFieldView.swift; sourceTree = "<group>"; };
 		F3E7EC3A2C676A13008CD17B /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs App.swift"; sourceTree = "<group>"; };
@@ -558,7 +558,7 @@
 			isa = PBXGroup;
 			children = (
 				F3D1E7BB2C9D6A9C000C81FF /* Magnetic Field.swift */,
-				F3D1E7BE2C9D6AC8000C81FF /* MagneticFieldViewModel.swift */,
+				F3D1E7BE2C9D6AC8000C81FF /* MagneticFieldVM.swift */,
 				F3D1E7C12C9D6B13000C81FF /* MagneticFieldView.swift */,
 			);
 			path = "Magnetic Field";
@@ -1053,7 +1053,7 @@
 				F3F85EA82C948A3300AE0A1D /* Memory VM.swift in Sources */,
 				F3F85EB22C948C8A00AE0A1D /* Altitude VM.swift in Sources */,
 				F3F85EBF2C948F6300AE0A1D /* Color View.swift in Sources */,
-				F3D1E7C02C9D6AC8000C81FF /* MagneticFieldViewModel.swift in Sources */,
+				F3D1E7C02C9D6AC8000C81FF /* MagneticFieldVM.swift in Sources */,
 				F3F85EC52C9492F300AE0A1D /* Device Watch Info.swift in Sources */,
 				F3F85EA92C948A3300AE0A1D /* Memory Specs.swift in Sources */,
 				F3F85EA12C9486C200AE0A1D /* Network Specs.swift in Sources */,
@@ -1147,7 +1147,7 @@
 				F3D1E7C32C9D6B13000C81FF /* MagneticFieldView.swift in Sources */,
 				F3E7EC7C2C67B985008CD17B /* Altitude VM.swift in Sources */,
 				F3E7EC9E2C680561008CD17B /* Torch VM.swift in Sources */,
-				F3D1E7BF2C9D6AC8000C81FF /* MagneticFieldViewModel.swift in Sources */,
+				F3D1E7BF2C9D6AC8000C81FF /* MagneticFieldVM.swift in Sources */,
 				F3D1E7832C9C0D14000C81FF /* Battery State.swift in Sources */,
 				F3E7EC7D2C67B985008CD17B /* Cameras Specs.swift in Sources */,
 				F36FBC6B2C9413E100F5E174 /* CPU Usage Chart.swift in Sources */,

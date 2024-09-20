@@ -30,6 +30,8 @@ struct SensorsView: View {
                     Text(String(format: "%.1f", location.trueHeading) + "°")
                         .foregroundStyle(.secondary)
                 }
+                
+                ListParameter("Heading accuracy", parameter: String(location.headingAccuracy) + "°")
             }
             
             Section("Rotation") {

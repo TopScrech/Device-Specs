@@ -2,15 +2,30 @@ import SwiftUI
 import CoreMotion
 
 @Observable
-final class MagneticFieldViewModel: NSObject, CLLocationManagerDelegate {
-    var magneticField = MagneticField(x: 0, y: 0, z: 0)
+final class MagneticFieldVM: NSObject, CLLocationManagerDelegate {
+    // MARK: - Published Properties
+    
+    // Raw Magnetic Field Data
     var rawMagneticField: MagneticField? = nil
+    
+    // Calibrated Magnetic Field Data
+    var calibratedMagneticField: MagneticField? = nil
+    
+    // Heading Data
+    var heading: CLHeading? = nil
     var headingAccuracy: CLLocationDirection? = nil
+    
+    // Authorization and Error States
     var authorizationStatus: CLAuthorizationStatus = .notDetermined
     var locationError: Error? = nil
+    var motionError: Error? = nil
+    
+    // MARK: - Private Properties
     
     private var motionManager: CMMotionManager
     private var locationManager: CLLocationManager
+    
+    // MARK: - Initialization
     
     override init() {
         motionManager = CMMotionManager()
@@ -19,11 +34,13 @@ final class MagneticFieldViewModel: NSObject, CLLocationManagerDelegate {
         locationManager.delegate = self
         requestLocationAuthorization()
         startMagnetometerUpdates()
+        startDeviceMotionUpdates()
         startLocationUpdates()
     }
     
     deinit {
         stopMagnetometerUpdates()
+        stopDeviceMotionUpdates()
         stopLocationUpdates()
     }
     
@@ -37,33 +54,64 @@ final class MagneticFieldViewModel: NSObject, CLLocationManagerDelegate {
         
         motionManager.magnetometerUpdateInterval = 1.0 / 60.0 // 60 Hz
         motionManager.startMagnetometerUpdates(to: .main) { [weak self] data, error in
-            guard let self = self, let data = data else {
-                if let error = error {
-                    print("Magnetometer error: \(error.localizedDescription)")
-                }
+            guard let self = self else { return }
+            
+            if let error = error {
+                print("Magnetometer error: \(error.localizedDescription)")
+                self.motionError = error
                 return
             }
             
-            // Update normal magnetic field data
-            self.magneticField = MagneticField(
+            guard let data = data else {
+                print("No magnetometer data available.")
+                return
+            }
+            
+            // Update raw magnetic field data
+            self.rawMagneticField = MagneticField(
                 x: data.magneticField.x,
                 y: data.magneticField.y,
                 z: data.magneticField.z
             )
-            
-            // Update raw magnetic field data if available
-            if let calibratedData = data as? CMMagnetometerData {
-                self.rawMagneticField = MagneticField(
-                    x: calibratedData.magneticField.x,
-                    y: calibratedData.magneticField.y,
-                    z: calibratedData.magneticField.z
-                )
-            }
         }
     }
     
     private func stopMagnetometerUpdates() {
         motionManager.stopMagnetometerUpdates()
+    }
+    
+    private func startDeviceMotionUpdates() {
+        guard motionManager.isDeviceMotionAvailable else {
+            print("Device Motion is not available on this device.")
+            return
+        }
+        
+        motionManager.deviceMotionUpdateInterval = 1.0 / 60.0 // 60 Hz
+        motionManager.startDeviceMotionUpdates(to: .main) { [weak self] data, error in
+            guard let self = self else { return }
+            
+            if let error = error {
+                print("Device Motion error: \(error.localizedDescription)")
+                self.motionError = error
+                return
+            }
+            
+            guard let data = data else {
+                print("No device motion data available.")
+                return
+            }
+            
+            // Update calibrated magnetic field data
+            self.calibratedMagneticField = MagneticField(
+                x: data.magneticField.field.x,
+                y: data.magneticField.field.y,
+                z: data.magneticField.field.z
+            )
+        }
+    }
+    
+    private func stopDeviceMotionUpdates() {
+        motionManager.stopDeviceMotionUpdates()
     }
     
     // MARK: - Core Location
@@ -105,7 +153,8 @@ final class MagneticFieldViewModel: NSObject, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
-        // Update heading accuracy
+        // Update heading data and accuracy
+        heading = newHeading
         headingAccuracy = newHeading.headingAccuracy
     }
     
