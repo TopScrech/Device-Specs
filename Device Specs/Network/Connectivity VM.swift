@@ -3,7 +3,7 @@ import SystemConfiguration.CaptiveNetwork
 import Network
 
 @Observable
-final class WifiVM {
+final class ConnectivityVM {
     private let monitor = NWPathMonitor()
     
     var type = ""

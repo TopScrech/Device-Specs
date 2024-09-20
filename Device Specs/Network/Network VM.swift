@@ -28,7 +28,7 @@ final class NetworkVM {
             }
         }
         .resume()
-                
+        
         var ifaddr: UnsafeMutablePointer<ifaddrs>?
         
         guard getifaddrs(&ifaddr) == 0 else {

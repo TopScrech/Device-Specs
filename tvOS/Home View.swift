@@ -6,6 +6,7 @@ struct HomeView: View {
     @State private var system = SystemVM()
     @State private var device = DeviceVM()
     @State private var memory = MemoryVM()
+    @State private var connectivity = ConnectivityVM()
     
     var body: some View {
         List {
@@ -34,8 +35,9 @@ struct HomeView: View {
                     .environment(memory)
             }
             
-            SpecsLink("Network", icon: "network") {
+            SpecsLink("Network", icon: "network", spec: connectivity.type) {
                 NetworkSpecs()
+                    .environment(connectivity)
             }
             
             SpecsLink("Accessibility", icon: "accessibility") {
@@ -62,4 +64,5 @@ struct HomeView: View {
     .environment(SystemVM())
     .environment(DeviceVM())
     .environment(MemoryVM())
+    .environment(ConnectivityVM())
 }

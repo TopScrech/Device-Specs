@@ -2,10 +2,10 @@ import SwiftUI
 import Network
 
 @Observable
-final class WifiVM {
+final class ConnectivityVM {
     private let monitor = NWPathMonitor()
     
-    var networkStatus = ""
+    var type = ""
     
     init() {
         monitorNetworkStatus()
@@ -23,22 +23,22 @@ final class WifiVM {
             DispatchQueue.main.async {
                 switch true {
                 case path.usesInterfaceType(.wifi):
-                    self.networkStatus = "Wi-Fi"
+                    self.type = "Wi-Fi"
                     
                 case path.usesInterfaceType(.cellular):
-                    self.networkStatus = "Cellular"
+                    self.type = "Cellular"
                     
                 case path.usesInterfaceType(.wiredEthernet):
-                    self.networkStatus = "Wired Ethernet"
+                    self.type = "Wired Ethernet"
                     
                 case path.usesInterfaceType(.loopback):
-                    self.networkStatus = "Loopback Interface"
+                    self.type = "Loopback Interface"
                     
                 case path.usesInterfaceType(.other):
-                    self.networkStatus = "Other Interface"
+                    self.type = "Other Interface"
                     
                 default:
-                    self.networkStatus = "No Interface"
+                    self.type = "No Interface"
                 }
             }
         }

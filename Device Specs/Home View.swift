@@ -10,6 +10,7 @@ struct HomeView: View {
     @State private var device = DeviceVM()
     @State private var memory = MemoryVM()
     @State private var app = AppVM()
+    @State private var connectivity = ConnectivityVM()
     
     var body: some View {
         List {
@@ -44,12 +45,13 @@ struct HomeView: View {
             }
             .symbolRenderingMode(.multicolor)
             
-            SpecsLink("Cameras", icon: "camera") {
-                CameraSpecs()
+            SpecsLink("Network", icon: "network", spec: connectivity.type) {
+                NetworkSpecs()
+                    .environment(connectivity)
             }
             
-            SpecsLink("Network", icon: "network") {
-                NetworkSpecs()
+            SpecsLink("Cameras", icon: "camera") {
+                CameraSpecs()
             }
             
             SpecsLink("Sensors", icon: "barometer") {
@@ -88,5 +90,6 @@ struct HomeView: View {
     .environment(DeviceVM())
     .environment(MemoryVM())
     .environment(AppVM())
+    .environment(ConnectivityVM())
     .environment(NavState())
 }

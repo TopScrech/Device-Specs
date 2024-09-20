@@ -20,7 +20,7 @@
 		F357214D2C98584100967ACA /* ScrechCam in Frameworks */ = {isa = PBXBuildFile; productRef = F357214C2C98584100967ACA /* ScrechCam */; };
 		F357214F2C985FFB00967ACA /* Camera Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357214E2C985FFB00967ACA /* Camera Test.swift */; };
 		F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
-		F36FBC4D2C9319D600F5E174 /* Wifi VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Wifi VM.swift */; };
+		F36FBC4D2C9319D600F5E174 /* Connectivity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Connectivity VM.swift */; };
 		F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
 		F36FBC562C931C1000F5E174 /* Sensors View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC552C931C1000F5E174 /* Sensors View.swift */; };
 		F36FBC5E2C931C7500F5E174 /* Orientation VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC5D2C931C7500F5E174 /* Orientation VM.swift */; };
@@ -113,7 +113,7 @@
 		F3E7EC8F2C67B985008CD17B /* Memory Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5D2C67B985008CD17B /* Memory Specs.swift */; };
 		F3E7EC902C67B985008CD17B /* Device Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4D2C67B985008CD17B /* Device Info.swift */; };
 		F3E7EC912C67B985008CD17B /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4E2C67B985008CD17B /* Home View.swift */; };
-		F3E7EC922C67B985008CD17B /* Wifi VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Wifi VM.swift */; };
+		F3E7EC922C67B985008CD17B /* Connectivity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Connectivity VM.swift */; };
 		F3E7EC932C67B985008CD17B /* Pressure VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC682C67B985008CD17B /* Pressure VM.swift */; };
 		F3E7EC962C67B99E008CD17B /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E7EC952C67B99E008CD17B /* ScrechKit */; };
 		F3E7EC992C67B9A8008CD17B /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E7EC982C67B9A8008CD17B /* DeviceKit */; };
@@ -286,7 +286,7 @@
 		F3E7EC5D2C67B985008CD17B /* Memory Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Memory Specs.swift"; sourceTree = "<group>"; };
 		F3E7EC5E2C67B985008CD17B /* Memory VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Memory VM.swift"; sourceTree = "<group>"; };
 		F3E7EC612C67B985008CD17B /* Network View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network View.swift"; sourceTree = "<group>"; };
-		F3E7EC622C67B985008CD17B /* Wifi VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wifi VM.swift"; sourceTree = "<group>"; };
+		F3E7EC622C67B985008CD17B /* Connectivity VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Connectivity VM.swift"; sourceTree = "<group>"; };
 		F3E7EC632C67B985008CD17B /* Network VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network VM.swift"; sourceTree = "<group>"; };
 		F3E7EC652C67B985008CD17B /* Sensors View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensors View.swift"; sourceTree = "<group>"; };
 		F3E7EC662C67B985008CD17B /* Location VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location VM.swift"; sourceTree = "<group>"; };
@@ -646,7 +646,7 @@
 			children = (
 				F3E7EC612C67B985008CD17B /* Network View.swift */,
 				F3E7EC632C67B985008CD17B /* Network VM.swift */,
-				F3E7EC622C67B985008CD17B /* Wifi VM.swift */,
+				F3E7EC622C67B985008CD17B /* Connectivity VM.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -1056,7 +1056,7 @@
 				F3F85E922C9453AE00AE0A1D /* Accessibility Param.swift in Sources */,
 				F3F85E932C9453AE00AE0A1D /* Accessibility VM.swift in Sources */,
 				F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */,
-				F36FBC4D2C9319D600F5E174 /* Wifi VM.swift in Sources */,
+				F36FBC4D2C9319D600F5E174 /* Connectivity VM.swift in Sources */,
 				F3D1E7842C9C0D14000C81FF /* Battery State.swift in Sources */,
 				F3D1E7A82C9CD453000C81FF /* Current Process.swift in Sources */,
 				F3C3BDE22C92DB9D00BF91EE /* Memory Specs.swift in Sources */,
@@ -1140,7 +1140,7 @@
 				F3E7EC8F2C67B985008CD17B /* Memory Specs.swift in Sources */,
 				F3E7EC902C67B985008CD17B /* Device Info.swift in Sources */,
 				F3E7EC912C67B985008CD17B /* Home View.swift in Sources */,
-				F3E7EC922C67B985008CD17B /* Wifi VM.swift in Sources */,
+				F3E7EC922C67B985008CD17B /* Connectivity VM.swift in Sources */,
 				F3EA43B22C998787009820F6 /* Color Test List.swift in Sources */,
 				F3E7EC932C67B985008CD17B /* Pressure VM.swift in Sources */,
 				F3E7EC3E2C676A13008CD17B /* Device Specs App.swift in Sources */,

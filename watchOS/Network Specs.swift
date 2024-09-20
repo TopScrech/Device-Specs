@@ -2,7 +2,7 @@ import ScrechKit
 
 struct NetworkSpecs: View {
     @State private var network = NetworkVM()
-    @State private var wifi = WifiVM()
+    @State private var connectivity = ConnectivityVM()
     
     var body: some View {
         List {
@@ -16,7 +16,7 @@ struct NetworkSpecs: View {
             ListParameter("Subnet mask", parameter: network.subnetMask)
             
             Section {
-                ListParameter("Network type", parameter: wifi.networkStatus)
+                ListParameter("Network type", parameter: connectivity.type)
             }
         }
         .navigationTitle("Network")

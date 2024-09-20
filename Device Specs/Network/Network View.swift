@@ -2,7 +2,7 @@ import ScrechKit
 
 struct NetworkSpecs: View {
     @State private var network = NetworkVM()
-    @State private var wifi = WifiVM()
+    @Environment(ConnectivityVM.self) private var connectivity
     
     var body: some View {
 #warning("Router differs from settings")
@@ -16,9 +16,9 @@ struct NetworkSpecs: View {
             ListParameter("Subnet mask", parameter: network.subnetMask)
             
             Section {
-                ListParameter("Network type", parameter: wifi.type)
-                ListParameter("SSID", parameter: wifi.ssid)
-                ListParameter("BSSID", parameter: wifi.bssid)
+                ListParameter("Network type", parameter: connectivity.type)
+                ListParameter("SSID", parameter: connectivity.ssid)
+                ListParameter("BSSID", parameter: connectivity.bssid)
             }
         }
         .navigationTitle("Network")
@@ -30,4 +30,5 @@ struct NetworkSpecs: View {
 
 #Preview {
     NetworkSpecs()
+        .environment(ConnectivityVM())
 }
