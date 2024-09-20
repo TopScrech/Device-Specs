@@ -96,6 +96,7 @@
 		F3D1E7BF2C9D6AC8000C81FF /* Magnetic VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7BE2C9D6AC8000C81FF /* Magnetic VM.swift */; };
 		F3D1E7C02C9D6AC8000C81FF /* Magnetic VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7BE2C9D6AC8000C81FF /* Magnetic VM.swift */; };
 		F3D1E7C32C9D6B13000C81FF /* Magnetic Field Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7C12C9D6B13000C81FF /* Magnetic Field Data.swift */; };
+		F3D1E7C52C9D8041000C81FF /* Magnetic Field Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7C12C9D6B13000C81FF /* Magnetic Field Data.swift */; };
 		F3E7EC3E2C676A13008CD17B /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */; };
 		F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
 		F3E7EC762C67B985008CD17B /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6C2C67B985008CD17B /* Test List.swift */; };
@@ -1050,6 +1051,7 @@
 				F3D1E7892C9C12C2000C81FF /* System Specs.swift in Sources */,
 				F3F85E9F2C94865900AE0A1D /* Network VM.swift in Sources */,
 				F3D1E7852C9C0D14000C81FF /* Battery State.swift in Sources */,
+				F3D1E7C52C9D8041000C81FF /* Magnetic Field Data.swift in Sources */,
 				F3F85EA82C948A3300AE0A1D /* Memory VM.swift in Sources */,
 				F3F85EB22C948C8A00AE0A1D /* Altitude VM.swift in Sources */,
 				F3F85EBF2C948F6300AE0A1D /* Color View.swift in Sources */,

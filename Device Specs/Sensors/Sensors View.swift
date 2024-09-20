@@ -1,11 +1,11 @@
 import ScrechKit
 
 struct SensorsView: View {
-    private var location = LocationVM()
-    private var orientation = OrientationVM()
-    private var altitude = AltitudeVM()
-    private var pressure = PressureVM()
-    private var activity = ActivityVM()
+    @State private var location = LocationVM()
+    @State private var orientation = OrientationVM()
+    @State private var altitude = AltitudeVM()
+    @State private var pressure = PressureVM()
+    @State private var activity = ActivityVM()
     
     var body: some View {
         List {

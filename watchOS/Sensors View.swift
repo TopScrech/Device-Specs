@@ -18,14 +18,34 @@ struct SensorsView: View {
                     
                     Spacer()
                     
+                    let trueHeading = location.trueHeading
+                    
                     Image(systemName: "arrow.up.circle")
                         .title3(.semibold)
-                        .foregroundColor((location.trueHeading >= 355 || location.trueHeading <= 5) ? .green : .primary)
-                        .rotationEffect(.degrees(location.trueHeading))
+                        .foregroundColor((trueHeading >= 355 || trueHeading <= 5) ? .green : .primary)
+                        .rotationEffect(.degrees(trueHeading))
                     
-                    Text(String(format: "%.1f", location.trueHeading) + "°")
+                    Text(String(format: "%.1f", trueHeading) + "°")
                         .foregroundStyle(.secondary)
                 }
+                
+                HStack {
+                    Text("Magnetic heading")
+                    
+                    Spacer()
+                    
+                    let magneticHeading = location.magneticHeading
+                    
+                    Image(systemName: "arrow.up.circle")
+                        .title3(.semibold)
+                        .foregroundColor((magneticHeading >= 355 || magneticHeading <= 5) ? .green : .primary)
+                        .rotationEffect(.degrees(magneticHeading))
+                    
+                    Text(String(format: "%.1f", magneticHeading) + "°")
+                        .foregroundStyle(.secondary)
+                }
+                
+                ListParameter("Heading accuracy", parameter: String(location.headingAccuracy) + "°")
             }
             
             Section("Rotation") {
@@ -47,6 +67,10 @@ struct SensorsView: View {
                 ListParameter("Pressure", parameter: pressure.pressureKilo)
                 ListParameter("Relative altitude", parameter: altitude.relativeAltitude)
                 ListParameter("Absolute altitude", parameter: altitude.absoluteAltitude)
+            }
+            
+            Section("Magnetic field") {
+                MagneticFieldData()
             }
             
             Section("Motion coprocessor") {
