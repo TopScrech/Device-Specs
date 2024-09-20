@@ -16,7 +16,7 @@ struct HomeView: View {
                     .environment(device)
             }
             
-            SpecsLink("System", icon: "apple.terminal", spec: system.operatingSystem) {
+            SpecsLink("System", icon: "apple.terminal", spec: "\(system.operatingSystem) (\(system.buildNumber))") {
                 SystemSpecs()
                     .environment(system)
             }
@@ -26,7 +26,7 @@ struct HomeView: View {
                     .environment(display)
             }
             
-            SpecsLink("Processor", icon: "cpu", spec: processor.cpu) {
+            SpecsLink("Processor", icon: "cpu", spec: "\(processor.cpu) (\(processor.cores) cores)") {
                 ProcessorSpecs()
                     .environment(processor)
             }
