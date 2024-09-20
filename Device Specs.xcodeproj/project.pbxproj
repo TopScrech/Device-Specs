@@ -323,7 +323,7 @@
 		F3F85EF22C9582EA00AE0A1D /* Display Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Display Specs.swift"; sourceTree = "<group>"; };
 		F3F85EF92C95857C00AE0A1D /* GPU Families.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPU Families.swift"; sourceTree = "<group>"; };
 		F3F85F052C9588BE00AE0A1D /* Network Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Specs.swift"; sourceTree = "<group>"; };
-		F3F85F092C959DE300AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F3F85F092C959DE300AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3F85F0E2C962C4600AE0A1D /* macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F85F102C962C4600AE0A1D /* macOS App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "macOS App.swift"; sourceTree = "<group>"; };
 		F3F85F142C962C4700AE0A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -531,6 +531,14 @@
 			path = About;
 			sourceTree = "<group>";
 		};
+		F3D1E7B12C9D6053000C81FF /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F3F85EDC2C94DD6800AE0A1D /* App Container.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		F3E7EC312C676A13008CD17B = {
 			isa = PBXGroup;
 			children = (
@@ -735,10 +743,10 @@
 		F3F85EDB2C94AF8000AE0A1D /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				F3F85F092C959DE300AE0A1D /* Info.plist */,
 				F3F85ECF2C94AF5A00AE0A1D /* tvOS App.swift */,
-				F3F85EDC2C94DD6800AE0A1D /* App Container.swift */,
+				F3D1E7B12C9D6053000C81FF /* Navigation */,
 				F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */,
+				F3F85F092C959DE300AE0A1D /* Info.plist */,
 				F3F85EDE2C94DD7900AE0A1D /* Home View.swift */,
 				F3F85F052C9588BE00AE0A1D /* Network Specs.swift */,
 				F3F85EF22C9582EA00AE0A1D /* Display Specs.swift */,
