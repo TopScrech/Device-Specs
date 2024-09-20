@@ -8,13 +8,14 @@ final class BatteryVM {
     var batteryState = ""
     var lowPowerMode = ""
     
-    // Combine cancellables
     private var cancellables = Set<AnyCancellable>()
     
+#if os(watchOS)
     private var batteryTimer: Timer?
+#endif
     
     init() {
-        // Enable battery monitoring
+        // Enable monitoring
         setupBatteryMonitoring()
         
         // Initial fetch
