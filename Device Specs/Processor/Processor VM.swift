@@ -40,6 +40,18 @@ final class ProcessorVM {
         info.arguments.description
     }
     
+    var threadCount: String {
+        var threadCount = mach_msg_type_number_t()
+        var threadList: thread_act_array_t?
+        let kerr = task_threads(mach_task_self_, &threadList, &threadCount)
+        
+        if kerr == KERN_SUCCESS {
+            return String(threadCount)
+        } else {
+            return "-"
+        }
+    }
+    
 #if os(iOS)
     var performanceProfile: String {
         if #available(iOS 18, *) {

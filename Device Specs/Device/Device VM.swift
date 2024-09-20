@@ -19,15 +19,15 @@ final class DeviceVM {
     let deviceName = Device.current.name ?? "-"
     
 #warning("Finish")
-        var deviceIcon: String {
-            switch Device.current.name {
-            case "iPhone":
-                ""
-    
-            default:
-                ""
-            }
-        }
+    //    var deviceIcon: String {
+    //        switch Device.current.name {
+    //        case "iPhone":
+    //            ""
+    //
+    //        default:
+    //            ""
+    //        }
+    //    }
     
     // Capabilities
     var isNfcAvailable: String {
@@ -65,7 +65,8 @@ final class DeviceVM {
     }
     
     func getInternalDeviceName() -> String? {
-        var size: Int = 0
+        var size = 0
+        
         // Get the size of the data to be returned
         if sysctlbyname("hw.model", nil, &size, nil, 0) != 0 {
             perror("sysctlbyname")

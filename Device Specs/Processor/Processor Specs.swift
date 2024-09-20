@@ -7,19 +7,6 @@ struct ProcessorSpecs: View {
     var body: some View {
         List {
             Section("CPU") {
-#warning("Number of threads")
-                //                Button("Test") {
-                //                    var threadCount = mach_msg_type_number_t()
-                //                    var threadList: thread_act_array_t?
-                //                    let kerr = task_threads(mach_task_self_, &threadList, &threadCount)
-                //
-                //                    if kerr == KERN_SUCCESS {
-                //                        print("Number of Threads: \(Int(threadCount))")
-                //                    } else {
-                //                        print("Hopa")
-                //                    }
-                //                }
-                
                 ListParameter("CPU", parameter: vm.cpu)
                 
                 ListParameter("Architecture", parameter: vm.arch)
@@ -27,6 +14,8 @@ struct ProcessorSpecs: View {
                 ListParameter("Core count", parameter: "\(vm.cores) (\(vm.activeCores) active)")
                 
                 ListParameter("Host name", parameter: vm.hostName)
+                
+                ListParameter("Thread count", parameter: vm.threadCount)
                 
                 NavigationLink {
                     CurrentProcess()
