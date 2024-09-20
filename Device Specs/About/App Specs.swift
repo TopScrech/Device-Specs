@@ -1,19 +1,7 @@
 import ScrechKit
 
 struct AppSpecs: View {
-    private var version: String {
-        Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "-"
-    }
-    
-    private var build: String {
-        Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "-"
-    }
-    
-    private var minimumOSVersion: String {
-        Bundle.main.object(forInfoDictionaryKey: "MinimumOSVersion") as? String ?? "Unknown"
-    }
-    
-    @State private var trigger = false
+    @Environment(AppVM.self) private var vm
     
     var body: some View {
         List {
@@ -27,12 +15,12 @@ struct AppSpecs: View {
             }
             .listRowBackground(Color.clear)
             .onTapGesture {
-                trigger.toggle()
+                vm.trigger.toggle()
             }
             
-            ListParameter("App version", parameter: version)
+            ListParameter("App version", parameter: vm.version)
             
-            ListParameter("Build number", parameter: build)
+            ListParameter("Build number", parameter: vm.build)
             
             Section {
                 if let url = URL(string: "https://topscrech.dev/bisquit.host/privacy.pdf") {
@@ -46,10 +34,11 @@ struct AppSpecs: View {
                 }
             }
         }
-        .sensoryFeedback(.impact, trigger: trigger)
+        .sensoryFeedback(.impact, trigger: vm.trigger)
     }
 }
 
 #Preview {
     AppSpecs()
+        .environment(AppVM())
 }

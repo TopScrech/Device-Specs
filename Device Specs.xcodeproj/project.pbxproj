@@ -82,6 +82,8 @@
 		F3D1E7A82C9CD453000C81FF /* Current Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A52C9CD453000C81FF /* Current Process.swift */; };
 		F3D1E7A92C9CD453000C81FF /* Current Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A52C9CD453000C81FF /* Current Process.swift */; };
 		F3D1E7AB2C9D4BFA000C81FF /* App Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AA2C9D4BFA000C81FF /* App Specs.swift */; };
+		F3D1E7AE2C9D5BF8000C81FF /* App VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AD2C9D5BF8000C81FF /* App VM.swift */; };
+		F3D1E7B02C9D5D96000C81FF /* Specs Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AF2C9D5D96000C81FF /* Specs Button.swift */; };
 		F3E7EC3E2C676A13008CD17B /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */; };
 		F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
 		F3E7EC762C67B985008CD17B /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6C2C67B985008CD17B /* Test List.swift */; };
@@ -263,6 +265,8 @@
 		F3D1E7A32C9CC898000C81FF /* Spec Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spec Card.swift"; sourceTree = "<group>"; };
 		F3D1E7A52C9CD453000C81FF /* Current Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Current Process.swift"; sourceTree = "<group>"; };
 		F3D1E7AA2C9D4BFA000C81FF /* App Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Specs.swift"; sourceTree = "<group>"; };
+		F3D1E7AD2C9D5BF8000C81FF /* App VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App VM.swift"; sourceTree = "<group>"; };
+		F3D1E7AF2C9D5D96000C81FF /* Specs Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Specs Button.swift"; sourceTree = "<group>"; };
 		F3E7EC3A2C676A13008CD17B /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs App.swift"; sourceTree = "<group>"; };
 		F3E7EC412C676A14008CD17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -518,6 +522,15 @@
 			path = System;
 			sourceTree = "<group>";
 		};
+		F3D1E7AC2C9D5BE1000C81FF /* About */ = {
+			isa = PBXGroup;
+			children = (
+				F3D1E7AA2C9D4BFA000C81FF /* App Specs.swift */,
+				F3D1E7AD2C9D5BF8000C81FF /* App VM.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
 		F3E7EC312C676A13008CD17B = {
 			isa = PBXGroup;
 			children = (
@@ -555,8 +568,8 @@
 				F3F85E8A2C94529A00AE0A1D /* Device-Specs-Info.plist */,
 				F3E7EC4D2C67B985008CD17B /* Device Info.swift */,
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
-				F3D1E7AA2C9D4BFA000C81FF /* App Specs.swift */,
 				F3D1E7982C9C8444000C81FF /* Specs Link.swift */,
+				F3D1E7AF2C9D5D96000C81FF /* Specs Button.swift */,
 				F3D1E7A32C9CC898000C81FF /* Spec Card.swift */,
 				F3E7EC4F2C67B985008CD17B /* List Link.swift */,
 				F3E7EC502C67B985008CD17B /* Bluetooth VM.swift */,
@@ -571,6 +584,7 @@
 				F3E7EC6B2C67B985008CD17B /* Sensors */,
 				F36FBC6D2C941F5100F5E174 /* Accessability */,
 				F3E7EC742C67B985008CD17B /* Tests */,
+				F3D1E7AC2C9D5BE1000C81FF /* About */,
 			);
 			path = "Device Specs";
 			sourceTree = "<group>";
@@ -1112,6 +1126,7 @@
 				F3F85EFD2C95857C00AE0A1D /* GPU Families.swift in Sources */,
 				F3E7EC892C67B985008CD17B /* Battery Specs.swift in Sources */,
 				F3D1E7992C9C8444000C81FF /* Specs Link.swift in Sources */,
+				F3D1E7B02C9D5D96000C81FF /* Specs Button.swift in Sources */,
 				F3E7EC8A2C67B985008CD17B /* Battery VM.swift in Sources */,
 				F3E7EC8B2C67B985008CD17B /* Bluetooth VM.swift in Sources */,
 				F3D1E7972C9C5A0E000C81FF /* Camera Model.swift in Sources */,
@@ -1130,6 +1145,7 @@
 				F3E7EC932C67B985008CD17B /* Pressure VM.swift in Sources */,
 				F3E7EC3E2C676A13008CD17B /* Device Specs App.swift in Sources */,
 				F3D1E78F2C9C12D6000C81FF /* System VM.swift in Sources */,
+				F3D1E7AE2C9D5BF8000C81FF /* App VM.swift in Sources */,
 				F36FBC6F2C941F6200F5E174 /* Accessibility View.swift in Sources */,
 				F36FBC642C9353FF00F5E174 /* Processor Specs.swift in Sources */,
 			);
