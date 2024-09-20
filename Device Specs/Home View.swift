@@ -37,15 +37,15 @@ struct HomeView: View {
                     .environment(memory)
             }
             
-            SpecsLink("Cameras", icon: "camera") {
-                CameraSpecs()
-            }
-            
             SpecsLink("Battery", icon: "battery.100percent.bolt", spec: battery.batteryLevel) {
                 BatterySpecs()
                     .environment(battery)
             }
             .symbolRenderingMode(.multicolor)
+            
+            SpecsLink("Cameras", icon: "camera") {
+                CameraSpecs()
+            }
             
             SpecsLink("Network", icon: "network") {
                 NetworkSpecs()
@@ -64,6 +64,12 @@ struct HomeView: View {
                     navState.navigate(.toTests)
                 }
                 .foregroundStyle(.foreground)
+            }
+            
+            Section {
+                NavigationLink("About") {
+                    AppSpecs()
+                }
             }
         }
         .navigationTitle("Device Specs")

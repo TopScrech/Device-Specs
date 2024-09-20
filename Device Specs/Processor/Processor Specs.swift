@@ -24,7 +24,7 @@ struct ProcessorSpecs: View {
                 
                 ListParameter("Architecture", parameter: vm.arch)
                 
-                ListParameter("Core count", parameter: "\(vm.cores) (\(vm.activeCores) active")
+                ListParameter("Core count", parameter: "\(vm.cores) (\(vm.activeCores) active)")
                 
                 ListParameter("Host name", parameter: vm.hostName)
                 
