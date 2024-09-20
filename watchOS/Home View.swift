@@ -50,10 +50,9 @@ struct HomeView: View {
             }
             
             Section {
-                NavigationLink("Tests") {
+                SpecsLink("Tests", icon: "testtube.2") {
                     TestList()
                 }
-                .foregroundStyle(.foreground)
             }
         }
         .navigationTitle("Device Specs")

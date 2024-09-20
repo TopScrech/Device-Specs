@@ -84,6 +84,7 @@
 		F3D1E7AB2C9D4BFA000C81FF /* App Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AA2C9D4BFA000C81FF /* App Specs.swift */; };
 		F3D1E7AE2C9D5BF8000C81FF /* App VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AD2C9D5BF8000C81FF /* App VM.swift */; };
 		F3D1E7B02C9D5D96000C81FF /* Specs Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AF2C9D5D96000C81FF /* Specs Button.swift */; };
+		F3D1E7B32C9D60D1000C81FF /* Specs Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AF2C9D5D96000C81FF /* Specs Button.swift */; };
 		F3E7EC3E2C676A13008CD17B /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */; };
 		F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
 		F3E7EC762C67B985008CD17B /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6C2C67B985008CD17B /* Test List.swift */; };
@@ -1049,6 +1050,7 @@
 				F3F85EA62C94883D00AE0A1D /* Device VM.swift in Sources */,
 				F3F85EB32C948CB400AE0A1D /* Pressure VM.swift in Sources */,
 				F3F85EBA2C948D8700AE0A1D /* Activity VM.swift in Sources */,
+				F3D1E7B32C9D60D1000C81FF /* Specs Button.swift in Sources */,
 				F36FBCD02C944B5000F5E174 /* App Container.swift in Sources */,
 				F36FBCCA2C944B0300F5E174 /* Battery Specs.swift in Sources */,
 			);
