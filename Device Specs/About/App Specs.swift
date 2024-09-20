@@ -22,6 +22,7 @@ struct AppSpecs: View {
             
             ListParameter("Build number", parameter: vm.build)
             
+#if !os(watchOS) && !os(tvOS)
             Section {
                 if let url = URL(string: "https://topscrech.dev/bisquit.host/privacy.pdf") {
                     Link("Privacy Policy", destination: url)
@@ -33,6 +34,7 @@ struct AppSpecs: View {
                     Link("More apps", destination: url)
                 }
             }
+#endif
         }
         .sensoryFeedback(.impact, trigger: vm.trigger)
     }
