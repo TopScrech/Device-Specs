@@ -24,9 +24,16 @@ struct ProcessorSpecs: View {
                 
                 ListParameter("Architecture", parameter: vm.arch)
                 
-                ListParameter("Core count", parameter: vm.cores.description)
+                ListParameter("Core count", parameter: "\(vm.cores) (\(vm.activeCores) active")
                 
-                ListParameter("Active core count", parameter: vm.activeCores.description)
+                ListParameter("Host name", parameter: vm.hostName)
+                
+                NavigationLink {
+                    CurrentProcess()
+                        .environment(vm)
+                } label: {
+                    Text("Current process")
+                }
             }
             
 #if !os(watchOS)

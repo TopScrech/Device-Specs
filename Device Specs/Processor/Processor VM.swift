@@ -3,14 +3,66 @@ import DeviceKit
 
 @Observable
 final class ProcessorVM {
+    private let info = ProcessInfo.processInfo
+    
     let cpu = Device.current.cpu.description
-    var cores = 0
-    var activeCores = 0
     var cpuUsage: [Double] = []
     
-    init() {
-        fetchNumberOfCores()
+    var cores: Int {
+        info.processorCount
     }
+    
+    var activeCores: Int {
+        info.activeProcessorCount
+    }
+    
+    var processName: String {
+        info.processName
+    }
+    
+    var environment: String {
+        info.environment.description
+    }
+    
+    var hostName: String {
+        info.hostName
+    }
+    
+    var processIdentifier: String {
+        info.processIdentifier.description
+    }
+    
+    var globallyUniqueString: String {
+        info.globallyUniqueString
+    }
+    
+    var arguments: String {
+        info.arguments.description
+    }
+    
+#if os(iOS)
+    var performanceProfile: String {
+        if #available(iOS 18, *) {
+            if info.hasPerformanceProfile(.sustained) {
+                "Sustained"
+            } else if info.hasPerformanceProfile(.default) {
+                "Default"
+            } else {
+                "-"
+            }
+        } else {
+            "-"
+        }
+    }
+    
+    var sertifiedForIphonePerformanceGaming: String {
+        if #available(iOS 18, *) {
+            info.isDeviceCertified(for: .iPhonePerformanceGaming) ? "Yes" : "No"
+        } else {
+            "No"
+        }
+    }
+#endif
     
     var arch: String {
 #if arch(arm64)
@@ -24,13 +76,6 @@ final class ProcessorVM {
 #else
         "unknown"
 #endif
-    }
-    
-    func fetchNumberOfCores() {
-        let process = ProcessInfo.processInfo
-        
-        cores = process.processorCount
-        activeCores = process.activeProcessorCount
     }
     
     func cpuUsagePerCore() {

@@ -77,6 +77,10 @@
 		F3D1E7A02C9CC2AE000C81FF /* Camera Formats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E79F2C9CC2AE000C81FF /* Camera Formats.swift */; };
 		F3D1E7A22C9CC304000C81FF /* Format Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A12C9CC304000C81FF /* Format Card.swift */; };
 		F3D1E7A42C9CC898000C81FF /* Spec Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A32C9CC898000C81FF /* Spec Card.swift */; };
+		F3D1E7A62C9CD453000C81FF /* Current Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A52C9CD453000C81FF /* Current Process.swift */; };
+		F3D1E7A72C9CD453000C81FF /* Current Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A52C9CD453000C81FF /* Current Process.swift */; };
+		F3D1E7A82C9CD453000C81FF /* Current Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A52C9CD453000C81FF /* Current Process.swift */; };
+		F3D1E7A92C9CD453000C81FF /* Current Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A52C9CD453000C81FF /* Current Process.swift */; };
 		F3E7EC3E2C676A13008CD17B /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */; };
 		F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
 		F3E7EC762C67B985008CD17B /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6C2C67B985008CD17B /* Test List.swift */; };
@@ -256,6 +260,7 @@
 		F3D1E79F2C9CC2AE000C81FF /* Camera Formats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera Formats.swift"; sourceTree = "<group>"; };
 		F3D1E7A12C9CC304000C81FF /* Format Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Format Card.swift"; sourceTree = "<group>"; };
 		F3D1E7A32C9CC898000C81FF /* Spec Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spec Card.swift"; sourceTree = "<group>"; };
+		F3D1E7A52C9CD453000C81FF /* Current Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Current Process.swift"; sourceTree = "<group>"; };
 		F3E7EC3A2C676A13008CD17B /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs App.swift"; sourceTree = "<group>"; };
 		F3E7EC412C676A14008CD17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -443,6 +448,7 @@
 			isa = PBXGroup;
 			children = (
 				F36FBC632C9353FF00F5E174 /* Processor Specs.swift */,
+				F3D1E7A52C9CD453000C81FF /* Current Process.swift */,
 				F3F85EF92C95857C00AE0A1D /* GPU Families.swift */,
 				F36FBC662C93542700F5E174 /* Processor VM.swift */,
 				F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */,
@@ -1000,6 +1006,7 @@
 				F3F85EA92C948A3300AE0A1D /* Memory Specs.swift in Sources */,
 				F3F85EA12C9486C200AE0A1D /* Network Specs.swift in Sources */,
 				F3F85EA22C94873000AE0A1D /* Processor Specs.swift in Sources */,
+				F3D1E7A62C9CD453000C81FF /* Current Process.swift in Sources */,
 				F3F85EC12C948F9D00AE0A1D /* Test List.swift in Sources */,
 				F3EA43B12C998787009820F6 /* Color Test List.swift in Sources */,
 				F3D1E77F2C9C0CD3000C81FF /* Battery Level.swift in Sources */,
@@ -1034,6 +1041,7 @@
 				F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */,
 				F36FBC4D2C9319D600F5E174 /* Wifi VM.swift in Sources */,
 				F3D1E7842C9C0D14000C81FF /* Battery State.swift in Sources */,
+				F3D1E7A82C9CD453000C81FF /* Current Process.swift in Sources */,
 				F3C3BDE22C92DB9D00BF91EE /* Memory Specs.swift in Sources */,
 				F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */,
 				F36FBC6C2C9413E100F5E174 /* CPU Usage Chart.swift in Sources */,
@@ -1106,6 +1114,7 @@
 				F3D1E7A02C9CC2AE000C81FF /* Camera Formats.swift in Sources */,
 				F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */,
 				F3E7EC8C2C67B985008CD17B /* Display View.swift in Sources */,
+				F3D1E7A92C9CD453000C81FF /* Current Process.swift in Sources */,
 				F3187A502C898B37008FB911 /* Nav State.swift in Sources */,
 				F3E7EC8E2C67B985008CD17B /* Camera VM.swift in Sources */,
 				F3D1E7A22C9CC304000C81FF /* Format Card.swift in Sources */,
@@ -1136,6 +1145,7 @@
 				F3F85EFF2C95875C00AE0A1D /* Memory VM.swift in Sources */,
 				F3D1E78B2C9C12C2000C81FF /* System Specs.swift in Sources */,
 				F3D1E7902C9C12D6000C81FF /* System VM.swift in Sources */,
+				F3D1E7A72C9CD453000C81FF /* Current Process.swift in Sources */,
 				F3F85ED02C94AF5A00AE0A1D /* tvOS App.swift in Sources */,
 				F3D1E79C2C9C8882000C81FF /* Specs Link.swift in Sources */,
 				F3F85F042C95880600AE0A1D /* Wifi VM.swift in Sources */,
