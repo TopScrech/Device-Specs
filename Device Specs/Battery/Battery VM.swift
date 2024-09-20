@@ -1,5 +1,6 @@
 import SwiftUI
 import DeviceKit
+import Combine
 
 @Observable
 final class BatteryVM {
@@ -7,8 +8,29 @@ final class BatteryVM {
     var batteryState = ""
     var lowPowerMode = ""
     
+    // Combine cancellables
+    private var cancellables = Set<AnyCancellable>()
+    
+    private var batteryTimer: Timer?
+    
     init() {
+        // Enable battery monitoring
+        setupBatteryMonitoring()
+        
+        // Initial fetch
         fetchBatteryInfo()
+        
+        // Setup observers
+        setupNotifications()
+    }
+    
+    // Disable battery monitoring
+    deinit {
+#if os(watchOS)
+        WKInterfaceDevice.current().isBatteryMonitoringEnabled = false
+#else
+        UIDevice.current.isBatteryMonitoringEnabled = false
+#endif
     }
     
     var color: Color {
@@ -25,52 +47,74 @@ final class BatteryVM {
 #else
         let battery = UIDevice.current.batteryLevel * 100
 #endif
-        
         switch battery {
         case 0...24:
             return "battery.0percent"
-            
         case 25...49:
             return "battery.25percent"
-            
         case 50...74:
             return "battery.50percent"
-            
         case 75...89:
             return "battery.75percent"
-            
         case 90...100:
             return "battery.100percent"
-            
         default:
             return "battery.0percent"
         }
     }
     
+    // MARK: - Setup Methods
+    
+    private func setupBatteryMonitoring() {
+#if os(watchOS)
+        let device = WKInterfaceDevice.current()
+#else
+        let device = UIDevice.current
+#endif
+        device.isBatteryMonitoringEnabled = true
+    }
+    
+    private func setupNotifications() {
+#if os(watchOS)
+        batteryTimer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { [weak self] _ in
+            self?.fetchBatteryInfo()
+        }
+#else
+        // Observe battery level changes
+        NotificationCenter.default.publisher(for: UIDevice.batteryLevelDidChangeNotification)
+            .sink { [weak self] _ in
+                self?.fetchBatteryInfo()
+            }
+            .store(in: &cancellables)
+        
+        // Observe battery state changes
+        NotificationCenter.default.publisher(for: UIDevice.batteryStateDidChangeNotification)
+            .sink { [weak self] _ in
+                self?.fetchBatteryInfo()
+            }
+            .store(in: &cancellables)
+#endif
+    }
+    
+    // MARK: - Fetch Battery Info
+    
     func fetchBatteryInfo() {
 #if os(watchOS)
         let device = WKInterfaceDevice.current()
-        
-        device.isBatteryMonitoringEnabled = true
-        
         let batteryLevelNumber = String(format: "%.0f", device.batteryLevel * 100)
-        
-        lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled ? "Yes" : "No"
-        
         let batteryStateEnum = device.batteryState
 #else
         let device = UIDevice.current
-        
-        device.isBatteryMonitoringEnabled = true
-        
         let batteryLevelNumber = String(format: "%.0f", device.batteryLevel * 100)
-        
-        lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled ? "Yes" : "No"
-        
         let batteryStateEnum = device.batteryState
 #endif
-        batteryLevel = batteryLevelNumber + " %"
+        // Update battery level
+        batteryLevel = "\(batteryLevelNumber) %"
         
+        // Update Low Power Mode status
+        lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled ? "Yes" : "No"
+        
+        // Update battery state
         switch batteryStateEnum {
         case .unknown:
             batteryState = "Unknown"
@@ -84,7 +128,7 @@ final class BatteryVM {
         case .full:
             batteryState = "Full"
             
-        @unknown default:
+        default:
             batteryState = "Unknown"
         }
     }
