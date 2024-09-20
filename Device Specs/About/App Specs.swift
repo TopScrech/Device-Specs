@@ -36,7 +36,9 @@ struct AppSpecs: View {
             }
 #endif
         }
+#if !os(visionOS)
         .sensoryFeedback(.impact, trigger: vm.trigger)
+#endif
     }
 }
 

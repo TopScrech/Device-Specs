@@ -7,6 +7,7 @@ struct HomeView: View {
     @State private var device = DeviceVM()
     @State private var memory = MemoryVM()
     @State private var connectivity = ConnectivityVM()
+    @State private var app = AppVM()
     
     var body: some View {
         List {
@@ -52,6 +53,13 @@ struct HomeView: View {
             SpecsLink("Accessibility", icon: "accessibility") {
                 AccessibilityView()
             }
+            
+            Section {
+                SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
+                    AppSpecs()
+                        .environment(app)
+                }
+            }
         }
         .navigationTitle("Device Specs")
         .foregroundStyle(.foreground)
@@ -68,4 +76,5 @@ struct HomeView: View {
     .environment(DeviceVM())
     .environment(MemoryVM())
     .environment(ConnectivityVM())
+    .environment(AppVM())
 }
