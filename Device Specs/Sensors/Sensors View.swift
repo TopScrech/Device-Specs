@@ -9,6 +9,10 @@ struct SensorsView: View {
     
     var body: some View {
         List {
+            NavigationLink("Test") {
+                MagneticFieldView()
+            }
+            
             Section("Location") {
                 ListParameter("Latitude", parameter: String(location.latitude))
                 ListParameter("Longitude", parameter: String(location.longitude))
