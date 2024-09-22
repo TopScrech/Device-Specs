@@ -18,12 +18,17 @@ struct TestList: View {
                 }
                 .foregroundStyle(.foreground)
                 .disabled(!DeviceInfo.isUltraWidebandAvailable)
+            } footer: {
+                if !DeviceInfo.isUltraWidebandAvailable {
+                    Text("This device is not UWB capable")
+                }
             }
             
             ColorTestList()
             
             TorchTest()
         }
+        .navigationTitle("Tests")
         .sheet($sheetCamera) {
             CameraTest()
         }
