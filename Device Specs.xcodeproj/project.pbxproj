@@ -19,6 +19,8 @@
 		F35279552C98DCB600AF581C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35279542C98DCB600AF581C /* Assets.xcassets */; };
 		F357214D2C98584100967ACA /* ScrechCam in Frameworks */ = {isa = PBXBuildFile; productRef = F357214C2C98584100967ACA /* ScrechCam */; };
 		F357214F2C985FFB00967ACA /* Camera Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357214E2C985FFB00967ACA /* Camera Test.swift */; };
+		F36F7FC52CA0CC110007F120 /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
+		F36F7FC62CA0CC110007F120 /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
 		F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
 		F36FBC4D2C9319D600F5E174 /* Connectivity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Connectivity VM.swift */; };
 		F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
@@ -34,7 +36,6 @@
 		F36FBC6C2C9413E100F5E174 /* CPU Usage Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */; };
 		F36FBC6F2C941F6200F5E174 /* Accessibility View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */; };
 		F36FBC732C942F7600F5E174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36FBC722C942F7600F5E174 /* Assets.xcassets */; };
-		F36FBCB42C9449A300F5E174 /* watchOS App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCB32C9449A200F5E174 /* watchOS App.swift */; };
 		F36FBCB62C9449A300F5E174 /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCB52C9449A300F5E174 /* Home View.swift */; };
 		F36FBCBE2C9449A300F5E174 /* watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F36FBCB12C9449A200F5E174 /* watchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F36FBCCA2C944B0300F5E174 /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5A2C67B985008CD17B /* Battery Specs.swift */; };
@@ -162,7 +163,6 @@
 		F3F85EBF2C948F6300AE0A1D /* Color View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6D2C67B985008CD17B /* Color View.swift */; };
 		F3F85EC12C948F9D00AE0A1D /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EC02C948F9D00AE0A1D /* Test List.swift */; };
 		F3F85EC52C9492F300AE0A1D /* Device Watch Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EC22C9492F300AE0A1D /* Device Watch Info.swift */; };
-		F3F85ED02C94AF5A00AE0A1D /* tvOS App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85ECF2C94AF5A00AE0A1D /* tvOS App.swift */; };
 		F3F85ED42C94AF5B00AE0A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */; };
 		F3F85EDD2C94DD6800AE0A1D /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EDC2C94DD6800AE0A1D /* App Container.swift */; };
 		F3F85EDF2C94DD7900AE0A1D /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EDE2C94DD7900AE0A1D /* Home View.swift */; };
@@ -256,7 +256,6 @@
 		F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility View.swift"; sourceTree = "<group>"; };
 		F36FBC722C942F7600F5E174 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F36FBCB12C9449A200F5E174 /* watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F36FBCB32C9449A200F5E174 /* watchOS App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "watchOS App.swift"; sourceTree = "<group>"; };
 		F36FBCB52C9449A300F5E174 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F36FBCCF2C944B5000F5E174 /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility VM.swift"; sourceTree = "<group>"; };
@@ -331,7 +330,6 @@
 		F3F85EC22C9492F300AE0A1D /* Device Watch Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Watch Info.swift"; sourceTree = "<group>"; };
 		F3F85EC82C94AED800AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3F85ECD2C94AF5A00AE0A1D /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3F85ECF2C94AF5A00AE0A1D /* tvOS App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "tvOS App.swift"; sourceTree = "<group>"; };
 		F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3F85EDC2C94DD6800AE0A1D /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F3F85EDE2C94DD7900AE0A1D /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
@@ -492,7 +490,6 @@
 		F36FBCC32C9449AB00F5E174 /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
-				F36FBCB32C9449A200F5E174 /* watchOS App.swift */,
 				F36FBCCF2C944B5000F5E174 /* App Container.swift */,
 				F3F85EC82C94AED800AE0A1D /* Info.plist */,
 				F3F85E962C94858F00AE0A1D /* watchOS.entitlements */,
@@ -770,7 +767,6 @@
 		F3F85EDB2C94AF8000AE0A1D /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				F3F85ECF2C94AF5A00AE0A1D /* tvOS App.swift */,
 				F3D1E7B12C9D6053000C81FF /* Navigation */,
 				F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */,
 				F3F85F092C959DE300AE0A1D /* Info.plist */,
@@ -1053,6 +1049,7 @@
 				F3D1E7852C9C0D14000C81FF /* Battery State.swift in Sources */,
 				F3D1E7C52C9D8041000C81FF /* Magnetic Field Data.swift in Sources */,
 				F3F85EA82C948A3300AE0A1D /* Memory VM.swift in Sources */,
+				F36F7FC52CA0CC110007F120 /* Device Specs App.swift in Sources */,
 				F3F85EB22C948C8A00AE0A1D /* Altitude VM.swift in Sources */,
 				F3F85EBF2C948F6300AE0A1D /* Color View.swift in Sources */,
 				F3D1E7C02C9D6AC8000C81FF /* Magnetic VM.swift in Sources */,
@@ -1074,7 +1071,6 @@
 				F36FBCB62C9449A300F5E174 /* Home View.swift in Sources */,
 				F3D1E79B2C9C8781000C81FF /* Specs Link.swift in Sources */,
 				F3F85E9E2C94863100AE0A1D /* Wifi VM.swift in Sources */,
-				F36FBCB42C9449A300F5E174 /* watchOS App.swift in Sources */,
 				F3F85EA52C94883D00AE0A1D /* Device Specs.swift in Sources */,
 				F3F85EA62C94883D00AE0A1D /* Device VM.swift in Sources */,
 				F3F85EB32C948CB400AE0A1D /* Pressure VM.swift in Sources */,
@@ -1212,7 +1208,6 @@
 				F3D1E78B2C9C12C2000C81FF /* System Specs.swift in Sources */,
 				F3D1E7902C9C12D6000C81FF /* System VM.swift in Sources */,
 				F3D1E7A72C9CD453000C81FF /* Current Process.swift in Sources */,
-				F3F85ED02C94AF5A00AE0A1D /* tvOS App.swift in Sources */,
 				F3D1E79C2C9C8882000C81FF /* Specs Link.swift in Sources */,
 				F3F85F042C95880600AE0A1D /* Wifi VM.swift in Sources */,
 				F3F85EFC2C95857C00AE0A1D /* GPU Families.swift in Sources */,
@@ -1229,6 +1224,7 @@
 				F3D1E7BA2C9D611A000C81FF /* App Specs.swift in Sources */,
 				F3F85EE62C957ED300AE0A1D /* Accessibility VM.swift in Sources */,
 				F3F85EE82C957EE200AE0A1D /* Accessibility View.swift in Sources */,
+				F36F7FC62CA0CC110007F120 /* Device Specs App.swift in Sources */,
 				F3F85EDD2C94DD6800AE0A1D /* App Container.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
