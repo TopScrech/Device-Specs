@@ -28,6 +28,11 @@
 		F36F7FE12CA0D04C0007F120 /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F7FE02CA0D04C0007F120 /* App Container.swift */; };
 		F36F7FE32CA0D0740007F120 /* Messages VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F7FE22CA0D0740007F120 /* Messages VM.swift */; };
 		F36F7FE62CA0D0CF0007F120 /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F7FE42CA0D0B50007F120 /* Home View.swift */; };
+		F36F7FE72CA0D1FA0007F120 /* Specs Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7982C9C8444000C81FF /* Specs Link.swift */; };
+		F36F7FE82CA0D2030007F120 /* App Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AA2C9D4BFA000C81FF /* App Specs.swift */; };
+		F36F7FE92CA0D2190007F120 /* App VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AD2C9D5BF8000C81FF /* App VM.swift */; };
+		F36F7FEB2CA0D23D0007F120 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36F7FEA2CA0D23D0007F120 /* ScrechKit */; };
+		F36F7FED2CA0D2400007F120 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36F7FEC2CA0D2400007F120 /* DeviceKit */; };
 		F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
 		F36FBC4D2C9319D600F5E174 /* Connectivity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Connectivity VM.swift */; };
 		F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
@@ -391,6 +396,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F36F7FCD2CA0CFDF0007F120 /* Messages.framework in Frameworks */,
+				F36F7FEB2CA0D23D0007F120 /* ScrechKit in Frameworks */,
+				F36F7FED2CA0D2400007F120 /* DeviceKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -868,6 +875,8 @@
 			);
 			name = iMessage;
 			packageProductDependencies = (
+				F36F7FEA2CA0D23D0007F120 /* ScrechKit */,
+				F36F7FEC2CA0D2400007F120 /* DeviceKit */,
 			);
 			productName = iMessage;
 			productReference = F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */;
@@ -1132,9 +1141,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F36F7FD02CA0CFDF0007F120 /* Messages VC.swift in Sources */,
+				F36F7FE82CA0D2030007F120 /* App Specs.swift in Sources */,
 				F36F7FE12CA0D04C0007F120 /* App Container.swift in Sources */,
 				F36F7FE62CA0D0CF0007F120 /* Home View.swift in Sources */,
+				F36F7FE92CA0D2190007F120 /* App VM.swift in Sources */,
 				F36F7FE32CA0D0740007F120 /* Messages VM.swift in Sources */,
+				F36F7FE72CA0D1FA0007F120 /* Specs Link.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2044,6 +2056,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */;
 			productName = ScrechCam;
+		};
+		F36F7FEA2CA0D23D0007F120 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F36F7FEC2CA0D2400007F120 /* DeviceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
+			productName = DeviceKit;
 		};
 		F36FBCCB2C944B1300F5E174 /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;
