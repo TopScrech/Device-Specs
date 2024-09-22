@@ -31,7 +31,7 @@ struct DisplaySpecs: View {
             Section {
                 ListParameter("Brightness", parameter: "\(Int(brightness))%")
                 
-#if !os(watchOS)
+#if !os(watchOS) && !EXTENSION
                 Slider(value: $brightness, in: 0...100, step: 1) {
                     Text("Brightness")
                 }
