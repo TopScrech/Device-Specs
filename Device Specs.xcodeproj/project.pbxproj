@@ -1534,7 +1534,7 @@
 				INFOPLIST_FILE = "Device Specs/Device-Specs-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires camera access to check its functionality";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
@@ -1582,7 +1582,7 @@
 				INFOPLIST_FILE = "Device Specs/Device-Specs-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires camera access to check its functionality";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
