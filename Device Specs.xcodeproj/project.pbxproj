@@ -21,6 +21,13 @@
 		F357214F2C985FFB00967ACA /* Camera Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357214E2C985FFB00967ACA /* Camera Test.swift */; };
 		F36F7FC52CA0CC110007F120 /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
 		F36F7FC62CA0CC110007F120 /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
+		F36F7FCD2CA0CFDF0007F120 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36F7FCC2CA0CFDF0007F120 /* Messages.framework */; };
+		F36F7FD02CA0CFDF0007F120 /* Messages VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F7FCF2CA0CFDF0007F120 /* Messages VC.swift */; };
+		F36F7FD52CA0CFE00007F120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36F7FD42CA0CFE00007F120 /* Assets.xcassets */; };
+		F36F7FD92CA0CFE00007F120 /* iMessage.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F36F7FE12CA0D04C0007F120 /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F7FE02CA0D04C0007F120 /* App Container.swift */; };
+		F36F7FE32CA0D0740007F120 /* Messages VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F7FE22CA0D0740007F120 /* Messages VM.swift */; };
+		F36F7FE62CA0D0CF0007F120 /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F7FE42CA0D0B50007F120 /* Home View.swift */; };
 		F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
 		F36FBC4D2C9319D600F5E174 /* Connectivity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Connectivity VM.swift */; };
 		F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
@@ -204,6 +211,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F36F7FD72CA0CFE00007F120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3E7EC322C676A13008CD17B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F36F7FCA2CA0CFDF0007F120;
+			remoteInfo = iMessage;
+		};
 		F36FBCBC2C9449A300F5E174 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F3E7EC322C676A13008CD17B /* Project object */;
@@ -221,6 +235,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		F36F7FDE2CA0CFE00007F120 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F36F7FD92CA0CFE00007F120 /* iMessage.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F36FBCBF2C9449A300F5E174 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,6 +270,14 @@
 		F33FEE5E2C9838AE00214288 /* Spec Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spec Item.swift"; sourceTree = "<group>"; };
 		F35279542C98DCB600AF581C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F357214E2C985FFB00967ACA /* Camera Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera Test.swift"; sourceTree = "<group>"; };
+		F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iMessage.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F36F7FCC2CA0CFDF0007F120 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = Library/Frameworks/Messages.framework; sourceTree = DEVELOPER_DIR; };
+		F36F7FCF2CA0CFDF0007F120 /* Messages VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Messages VC.swift"; sourceTree = "<group>"; };
+		F36F7FD42CA0CFE00007F120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F36F7FD62CA0CFE00007F120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F36F7FE02CA0D04C0007F120 /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
+		F36F7FE22CA0D0740007F120 /* Messages VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Messages VM.swift"; sourceTree = "<group>"; };
+		F36F7FE42CA0D0B50007F120 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F36FBC4A2C93127000F5E174 /* visionOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = visionOS.entitlements; sourceTree = "<group>"; };
 		F36FBC552C931C1000F5E174 /* Sensors View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensors View.swift"; sourceTree = "<group>"; };
 		F36FBC5D2C931C7500F5E174 /* Orientation VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Orientation VM.swift"; sourceTree = "<group>"; };
@@ -353,6 +386,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F36F7FC82CA0CFDF0007F120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36F7FCD2CA0CFDF0007F120 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F36FBCAE2C9449A200F5E174 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -464,6 +505,19 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		F36F7FDF2CA0CFF20007F120 /* iMessage */ = {
+			isa = PBXGroup;
+			children = (
+				F36F7FCF2CA0CFDF0007F120 /* Messages VC.swift */,
+				F36F7FE02CA0D04C0007F120 /* App Container.swift */,
+				F36F7FD42CA0CFE00007F120 /* Assets.xcassets */,
+				F36F7FD62CA0CFE00007F120 /* Info.plist */,
+				F36F7FE22CA0D0740007F120 /* Messages VM.swift */,
+				F36F7FE42CA0D0B50007F120 /* Home View.swift */,
+			);
+			path = iMessage;
+			sourceTree = "<group>";
+		};
 		F36FBC692C93551B00F5E174 /* Processor */ = {
 			isa = PBXGroup;
 			children = (
@@ -522,6 +576,7 @@
 		F3C3BDDB2C92DAAA00BF91EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F36F7FCC2CA0CFDF0007F120 /* Messages.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -571,6 +626,7 @@
 				F3F85EDB2C94AF8000AE0A1D /* tvOS */,
 				F3F85F1F2C962C9400AE0A1D /* macOS */,
 				F33FEE542C982A2800214288 /* Unit Tests */,
+				F36F7FDF2CA0CFF20007F120 /* iMessage */,
 				F3C3BDDB2C92DAAA00BF91EE /* Frameworks */,
 				F3E7EC3B2C676A13008CD17B /* Products */,
 			);
@@ -585,6 +641,7 @@
 				F3F85ECD2C94AF5A00AE0A1D /* tvOS.app */,
 				F3F85F0E2C962C4600AE0A1D /* macOS.app */,
 				F3F85F342C96491700AE0A1D /* Unit Tests.xctest */,
+				F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -797,6 +854,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F36F7FCA2CA0CFDF0007F120 /* iMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F36F7FDB2CA0CFE00007F120 /* Build configuration list for PBXNativeTarget "iMessage" */;
+			buildPhases = (
+				F36F7FC72CA0CFDF0007F120 /* Sources */,
+				F36F7FC82CA0CFDF0007F120 /* Frameworks */,
+				F36F7FC92CA0CFDF0007F120 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iMessage;
+			packageProductDependencies = (
+			);
+			productName = iMessage;
+			productReference = F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 		F36FBCB02C9449A200F5E174 /* watchOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F36FBCC22C9449A300F5E174 /* Build configuration list for PBXNativeTarget "watchOS" */;
@@ -847,11 +923,13 @@
 				F3E7EC372C676A13008CD17B /* Frameworks */,
 				F3E7EC382C676A13008CD17B /* Resources */,
 				F36FBCBF2C9449A300F5E174 /* Embed Watch Content */,
+				F36F7FDE2CA0CFE00007F120 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				F36FBCBD2C9449A300F5E174 /* PBXTargetDependency */,
+				F36F7FD82CA0CFE00007F120 /* PBXTargetDependency */,
 			);
 			name = "Device Specs";
 			packageProductDependencies = (
@@ -935,6 +1013,9 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					F36F7FCA2CA0CFDF0007F120 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					F36FBCB02C9449A200F5E174 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -981,11 +1062,20 @@
 				F3F85ECC2C94AF5A00AE0A1D /* tvOS */,
 				F3F85F0D2C962C4600AE0A1D /* macOS */,
 				F3F85F332C96491700AE0A1D /* Unit Tests */,
+				F36F7FCA2CA0CFDF0007F120 /* iMessage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F36F7FC92CA0CFDF0007F120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36F7FD52CA0CFE00007F120 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F36FBCAF2C9449A200F5E174 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1037,6 +1127,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F36F7FC72CA0CFDF0007F120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36F7FD02CA0CFDF0007F120 /* Messages VC.swift in Sources */,
+				F36F7FE12CA0D04C0007F120 /* App Container.swift in Sources */,
+				F36F7FE62CA0D0CF0007F120 /* Home View.swift in Sources */,
+				F36F7FE32CA0D0740007F120 /* Messages VM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F36FBCAD2C9449A200F5E174 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1258,6 +1359,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F36F7FD82CA0CFE00007F120 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F36F7FCA2CA0CFDF0007F120 /* iMessage */;
+			targetProxy = F36F7FD72CA0CFE00007F120 /* PBXContainerItemProxy */;
+		};
 		F36FBCBD2C9449A300F5E174 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F36FBCB02C9449A200F5E174 /* watchOS */;
@@ -1271,6 +1377,63 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		F36F7FDC2CA0CFE00007F120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iMessage/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iMessage;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.iMessage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F36F7FDD2CA0CFE00007F120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iMessage/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iMessage;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.iMessage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		F36FBCC02C9449A300F5E174 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1775,6 +1938,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F36F7FDB2CA0CFE00007F120 /* Build configuration list for PBXNativeTarget "iMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F36F7FDC2CA0CFE00007F120 /* Debug */,
+				F36F7FDD2CA0CFE00007F120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F36FBCC22C9449A300F5E174 /* Build configuration list for PBXNativeTarget "watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
