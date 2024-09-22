@@ -344,6 +344,7 @@
 		F36F80242CA0D5760007F120 /* Secondary Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Secondary Container.swift"; sourceTree = "<group>"; };
 		F36F80282CA0D5CD0007F120 /* UWBTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWBTestView.swift; sourceTree = "<group>"; };
 		F36F802C2CA0D6090007F120 /* Fake Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fake Home View.swift"; sourceTree = "<group>"; };
+		F36F802E2CA0D9530007F120 /* iMessage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iMessage.entitlements; sourceTree = "<group>"; };
 		F36FBC4A2C93127000F5E174 /* visionOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = visionOS.entitlements; sourceTree = "<group>"; };
 		F36FBC552C931C1000F5E174 /* Sensors View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensors View.swift"; sourceTree = "<group>"; };
 		F36FBC5D2C931C7500F5E174 /* Orientation VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Orientation VM.swift"; sourceTree = "<group>"; };
@@ -577,6 +578,7 @@
 		F36F7FDF2CA0CFF20007F120 /* iMessage */ = {
 			isa = PBXGroup;
 			children = (
+				F36F802E2CA0D9530007F120 /* iMessage.entitlements */,
 				F36F7FCF2CA0CFDF0007F120 /* Messages VC.swift */,
 				F36F7FE02CA0D04C0007F120 /* App Container.swift */,
 				F36F7FD42CA0CFE00007F120 /* Assets.xcassets */,
@@ -1516,6 +1518,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = iMessage/iMessage.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
@@ -1523,6 +1526,10 @@
 				INFOPLIST_FILE = iMessage/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = iMessage;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
+				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "This permission is required in order to test UWB capabilities";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1545,6 +1552,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = iMessage/iMessage.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
@@ -1552,6 +1560,10 @@
 				INFOPLIST_FILE = iMessage/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = iMessage;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
+				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "This permission is required in order to test UWB capabilities";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
