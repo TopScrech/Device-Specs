@@ -12,14 +12,8 @@ struct HomeView: View {
     @State private var app = AppVM()
     @State private var connectivity = ConnectivityVM()
     
-    @State private var isPresented = false
-    
     var body: some View {
         List {
-            Button("Open in full screen") {
-                isPresented = true
-            }
-            
             SpecsLink("Device", icon: "info.circle", spec: device.deviceIdentifier) {
                 DeviceSpecs()
                     .environment(device)
@@ -82,9 +76,6 @@ struct HomeView: View {
                     }
                 }
             }
-        }
-        .fullScreenCover(isPresented: $isPresented) {
-            SecondaryContainer()
         }
     }
 }

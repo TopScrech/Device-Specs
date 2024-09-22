@@ -1,5 +1,28 @@
 import SwiftUI
 
+fileprivate struct ListSpec: View {
+    private let name: LocalizedStringKey
+    private let icon: String
+    private let spec: String
+    
+    init(_ name: LocalizedStringKey, icon: String, spec: String = "") {
+        self.name = name
+        self.icon = icon
+        self.spec = spec
+    }
+    
+    var body: some View {
+        HStack {
+            Label(name, systemImage: icon)
+            
+            Spacer()
+            
+            Text(spec)
+        }
+        .foregroundStyle(.foreground)
+    }
+}
+
 struct FakeHomeView: View {
     @State private var navState = NavState()
     
@@ -16,71 +39,39 @@ struct FakeHomeView: View {
     
     var body: some View {
         List {
-            Button("Open in full screen") {
-                isPresented = true
-            }
-            
-            SpecsLink("Device", icon: "info.circle", spec: device.deviceIdentifier) {
-                DeviceSpecs()
-                    .environment(device)
-            }
-            
-            SpecsLink("System", icon: "apple.terminal", spec: system.operatingSystem) {
-                SystemSpecs()
-                    .environment(system)
-            }
-            
-            SpecsLink("Display", icon: "iphone", spec: display.diagonalSize) {
-                DisplaySpecs()
-                    .environment(display)
-            }
-            
-            SpecsLink("Processor", icon: "cpu", spec: processor.cpu) {
-                ProcessorSpecs()
-                    .environment(processor)
-            }
-            
-            SpecsLink("Memory", icon: "memorychip", spec: memory.totalRamAndDisk) {
-                MemorySpecs()
-                    .environment(memory)
-            }
-            
-            SpecsLink("Battery", icon: "battery.100percent.bolt", spec: battery.batteryLevel) {
-                BatterySpecs()
-                    .environment(battery)
-            }
-            .symbolRenderingMode(.multicolor)
-            
-            SpecsLink("Network", icon: "network", spec: connectivity.type) {
-                NetworkSpecs()
-                    .environment(connectivity)
-            }
-            
-            SpecsLink("Cameras", icon: "camera") {
-                CameraSpecs()
-            }
-            
-            SpecsLink("Sensors", icon: "barometer") {
-                SensorsView()
-            }
-            
-            SpecsLink("Accessibility", icon: "accessibility") {
-                AccessibilityView()
-            }
-            
             Section {
-                SpecsButton("Tests", icon: "testtube.2") {
-                    //                    navState.navigate(.toTests)
+                Button("Open in full screen") {
+                    isPresented = true
                 }
             }
             
+            ListSpec("Device", icon: "info.circle", spec: device.deviceIdentifier)
+            
+            ListSpec("System", icon: "apple.terminal", spec: system.operatingSystem)
+            
+            ListSpec("Display", icon: "iphone", spec: display.diagonalSize)
+            
+            ListSpec("Processor", icon: "cpu", spec: processor.cpu)
+            
+            ListSpec("Memory", icon: "memorychip", spec: memory.totalRamAndDisk)
+            
+            ListSpec("Battery", icon: "battery.100percent.bolt", spec: battery.batteryLevel)
+                .symbolRenderingMode(.multicolor)
+            
+            ListSpec("Network", icon: "network", spec: connectivity.type)
+            
+            ListSpec("Cameras", icon: "camera")
+            
+            ListSpec("Sensors", icon: "barometer")
+            
+            ListSpec("Accessibility", icon: "accessibility")
+            
             Section {
-                SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
-                    NavigationView {
-                        AppSpecs()
-                            .environment(app)
-                    }
-                }
+                ListSpec("Tests", icon: "testtube.2")
+            }
+            
+            Section {
+                ListSpec("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild)
             }
         }
         .fullScreenCover(isPresented: $isPresented) {
