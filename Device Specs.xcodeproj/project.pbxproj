@@ -33,6 +33,64 @@
 		F36F7FE92CA0D2190007F120 /* App VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AD2C9D5BF8000C81FF /* App VM.swift */; };
 		F36F7FEB2CA0D23D0007F120 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36F7FEA2CA0D23D0007F120 /* ScrechKit */; };
 		F36F7FED2CA0D2400007F120 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36F7FEC2CA0D2400007F120 /* DeviceKit */; };
+		F36F7FEE2CA0D4370007F120 /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5A2C67B985008CD17B /* Battery Specs.swift */; };
+		F36F7FEF2CA0D4370007F120 /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5B2C67B985008CD17B /* Battery VM.swift */; };
+		F36F7FF02CA0D4370007F120 /* Battery Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E77E2C9C0CD3000C81FF /* Battery Level.swift */; };
+		F36F7FF12CA0D4370007F120 /* Battery State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7822C9C0D14000C81FF /* Battery State.swift */; };
+		F36F7FF22CA0D4420007F120 /* Display View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC542C67B985008CD17B /* Display View.swift */; };
+		F36F7FF32CA0D4420007F120 /* Display VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC552C67B985008CD17B /* Display VM.swift */; };
+		F36F7FF42CA0D47C0007F120 /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
+		F36F7FF52CA0D47C0007F120 /* Connectivity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Connectivity VM.swift */; };
+		F36F7FF62CA0D47C0007F120 /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
+		F36F7FF72CA0D4830007F120 /* Format Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A12C9CC304000C81FF /* Format Card.swift */; };
+		F36F7FF82CA0D4830007F120 /* Camera Formats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E79F2C9CC2AE000C81FF /* Camera Formats.swift */; };
+		F36F7FF92CA0D4830007F120 /* Camera VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC582C67B985008CD17B /* Camera VM.swift */; };
+		F36F7FFA2CA0D4830007F120 /* Camera Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7962C9C5A0E000C81FF /* Camera Model.swift */; };
+		F36F7FFB2CA0D4830007F120 /* Camera View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E79D2C9CC262000C81FF /* Camera View.swift */; };
+		F36F7FFC2CA0D4830007F120 /* Cameras Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC572C67B985008CD17B /* Cameras Specs.swift */; };
+		F36F7FFD2CA0D48C0007F120 /* Spec Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A32C9CC898000C81FF /* Spec Card.swift */; };
+		F36F7FFE2CA0D4B40007F120 /* Memory Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5D2C67B985008CD17B /* Memory Specs.swift */; };
+		F36F7FFF2CA0D4B40007F120 /* Memory VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5E2C67B985008CD17B /* Memory VM.swift */; };
+		F36F80002CA0D4B90007F120 /* Processor Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC632C9353FF00F5E174 /* Processor Specs.swift */; };
+		F36F80012CA0D4B90007F120 /* Current Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A52C9CD453000C81FF /* Current Process.swift */; };
+		F36F80022CA0D4B90007F120 /* CPU Usage Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */; };
+		F36F80032CA0D4B90007F120 /* Processor VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC662C93542700F5E174 /* Processor VM.swift */; };
+		F36F80042CA0D4B90007F120 /* GPU Families.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EF92C95857C00AE0A1D /* GPU Families.swift */; };
+		F36F80052CA0D4D00007F120 /* Accessibility VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */; };
+		F36F80062CA0D4D00007F120 /* Accessibility View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */; };
+		F36F80072CA0D4D00007F120 /* Accessibility Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */; };
+		F36F80082CA0D4D00007F120 /* Accessibility Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EE92C957F9100AE0A1D /* Accessibility Item.swift */; };
+		F36F80092CA0D4D70007F120 /* Sensors View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC652C67B985008CD17B /* Sensors View.swift */; };
+		F36F800A2CA0D4DE0007F120 /* Pressure VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC682C67B985008CD17B /* Pressure VM.swift */; };
+		F36F800B2CA0D4DE0007F120 /* Magnetic Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7BB2C9D6A9C000C81FF /* Magnetic Model.swift */; };
+		F36F800C2CA0D4DE0007F120 /* Orientation VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC672C67B985008CD17B /* Orientation VM.swift */; };
+		F36F800D2CA0D4DE0007F120 /* Activity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6A2C67B985008CD17B /* Activity VM.swift */; };
+		F36F800E2CA0D4DE0007F120 /* Location VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC662C67B985008CD17B /* Location VM.swift */; };
+		F36F800F2CA0D4DE0007F120 /* Altitude VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC692C67B985008CD17B /* Altitude VM.swift */; };
+		F36F80102CA0D4DE0007F120 /* Magnetic VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7BE2C9D6AC8000C81FF /* Magnetic VM.swift */; };
+		F36F80112CA0D4DE0007F120 /* Magnetic Field Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7C12C9D6B13000C81FF /* Magnetic Field Data.swift */; };
+		F36F80122CA0D4F80007F120 /* System VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E78C2C9C12D6000C81FF /* System VM.swift */; };
+		F36F80132CA0D4F80007F120 /* System Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7872C9C12C2000C81FF /* System Specs.swift */; };
+		F36F80142CA0D4FF0007F120 /* Device VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC522C67B985008CD17B /* Device VM.swift */; };
+		F36F80152CA0D4FF0007F120 /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC512C67B985008CD17B /* Device Specs.swift */; };
+		F36F80172CA0D51B0007F120 /* Torch Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43AE2C998759009820F6 /* Torch Test.swift */; };
+		F36F80182CA0D51B0007F120 /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6C2C67B985008CD17B /* Test List.swift */; };
+		F36F80192CA0D5200007F120 /* Camera Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357214E2C985FFB00967ACA /* Camera Test.swift */; };
+		F36F801A2CA0D52B0007F120 /* Torch VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC9D2C680561008CD17B /* Torch VM.swift */; };
+		F36F801B2CA0D52F0007F120 /* Color View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6D2C67B985008CD17B /* Color View.swift */; };
+		F36F801C2CA0D52F0007F120 /* Color Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43B02C998787009820F6 /* Color Test List.swift */; };
+		F36F801D2CA0D5330007F120 /* Nearby VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC702C67B985008CD17B /* Nearby VM.swift */; };
+		F36F801E2CA0D5330007F120 /* Math Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC722C67B985008CD17B /* Math Utilities.swift */; };
+		F36F80202CA0D5330007F120 /* MCP Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC712C67B985008CD17B /* MCP Session.swift */; };
+		F36F80212CA0D54C0007F120 /* Nav Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A542C898B7E008FB911 /* Nav Extension.swift */; };
+		F36F80222CA0D54C0007F120 /* Nav Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A522C898B62008FB911 /* Nav Destinations.swift */; };
+		F36F80232CA0D54C0007F120 /* Nav State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A4F2C898B37008FB911 /* Nav State.swift */; };
+		F36F80252CA0D5760007F120 /* Secondary Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F80242CA0D5760007F120 /* Secondary Container.swift */; };
+		F36F80262CA0D5A60007F120 /* Specs Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AF2C9D5D96000C81FF /* Specs Button.swift */; };
+		F36F80272CA0D5B00007F120 /* Device Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4D2C67B985008CD17B /* Device Info.swift */; };
+		F36F80292CA0D5CD0007F120 /* UWBTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F80282CA0D5CD0007F120 /* UWBTestView.swift */; };
+		F36F802B2CA0D5E90007F120 /* ScrechCam in Frameworks */ = {isa = PBXBuildFile; productRef = F36F802A2CA0D5E90007F120 /* ScrechCam */; };
+		F36F802D2CA0D6090007F120 /* Fake Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F802C2CA0D6090007F120 /* Fake Home View.swift */; };
 		F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
 		F36FBC4D2C9319D600F5E174 /* Connectivity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Connectivity VM.swift */; };
 		F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
@@ -283,6 +341,9 @@
 		F36F7FE02CA0D04C0007F120 /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F36F7FE22CA0D0740007F120 /* Messages VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Messages VM.swift"; sourceTree = "<group>"; };
 		F36F7FE42CA0D0B50007F120 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
+		F36F80242CA0D5760007F120 /* Secondary Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Secondary Container.swift"; sourceTree = "<group>"; };
+		F36F80282CA0D5CD0007F120 /* UWBTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWBTestView.swift; sourceTree = "<group>"; };
+		F36F802C2CA0D6090007F120 /* Fake Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fake Home View.swift"; sourceTree = "<group>"; };
 		F36FBC4A2C93127000F5E174 /* visionOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = visionOS.entitlements; sourceTree = "<group>"; };
 		F36FBC552C931C1000F5E174 /* Sensors View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensors View.swift"; sourceTree = "<group>"; };
 		F36FBC5D2C931C7500F5E174 /* Orientation VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Orientation VM.swift"; sourceTree = "<group>"; };
@@ -397,6 +458,7 @@
 			files = (
 				F36F7FCD2CA0CFDF0007F120 /* Messages.framework in Frameworks */,
 				F36F7FEB2CA0D23D0007F120 /* ScrechKit in Frameworks */,
+				F36F802B2CA0D5E90007F120 /* ScrechCam in Frameworks */,
 				F36F7FED2CA0D2400007F120 /* DeviceKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,7 +582,10 @@
 				F36F7FD42CA0CFE00007F120 /* Assets.xcassets */,
 				F36F7FD62CA0CFE00007F120 /* Info.plist */,
 				F36F7FE22CA0D0740007F120 /* Messages VM.swift */,
+				F36F802C2CA0D6090007F120 /* Fake Home View.swift */,
 				F36F7FE42CA0D0B50007F120 /* Home View.swift */,
+				F36F80282CA0D5CD0007F120 /* UWBTestView.swift */,
+				F36F80242CA0D5760007F120 /* Secondary Container.swift */,
 			);
 			path = iMessage;
 			sourceTree = "<group>";
@@ -671,10 +736,10 @@
 				F3E7EC532C67B985008CD17B /* Device */,
 				F3D1E7862C9C12A0000C81FF /* System */,
 				F36FBC692C93551B00F5E174 /* Processor */,
+				F3E7EC602C67B985008CD17B /* Memory */,
 				F3E7EC562C67B985008CD17B /* Display */,
 				F3E7EC592C67B985008CD17B /* Cameras */,
 				F3E7EC5C2C67B985008CD17B /* Battery */,
-				F3E7EC602C67B985008CD17B /* Memory */,
 				F3E7EC642C67B985008CD17B /* Network */,
 				F3E7EC6B2C67B985008CD17B /* Sensors */,
 				F36FBC6D2C941F5100F5E174 /* Accessability */,
@@ -877,6 +942,7 @@
 			packageProductDependencies = (
 				F36F7FEA2CA0D23D0007F120 /* ScrechKit */,
 				F36F7FEC2CA0D2400007F120 /* DeviceKit */,
+				F36F802A2CA0D5E90007F120 /* ScrechCam */,
 			);
 			productName = iMessage;
 			productReference = F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */;
@@ -1141,11 +1207,68 @@
 			buildActionMask = 2147483647;
 			files = (
 				F36F7FD02CA0CFDF0007F120 /* Messages VC.swift in Sources */,
+				F36F801A2CA0D52B0007F120 /* Torch VM.swift in Sources */,
 				F36F7FE82CA0D2030007F120 /* App Specs.swift in Sources */,
+				F36F80122CA0D4F80007F120 /* System VM.swift in Sources */,
+				F36F80142CA0D4FF0007F120 /* Device VM.swift in Sources */,
+				F36F80152CA0D4FF0007F120 /* Device Specs.swift in Sources */,
+				F36F80132CA0D4F80007F120 /* System Specs.swift in Sources */,
+				F36F7FFE2CA0D4B40007F120 /* Memory Specs.swift in Sources */,
+				F36F7FFF2CA0D4B40007F120 /* Memory VM.swift in Sources */,
 				F36F7FE12CA0D04C0007F120 /* App Container.swift in Sources */,
+				F36F7FEE2CA0D4370007F120 /* Battery Specs.swift in Sources */,
+				F36F7FF42CA0D47C0007F120 /* Network View.swift in Sources */,
+				F36F80052CA0D4D00007F120 /* Accessibility VM.swift in Sources */,
+				F36F802D2CA0D6090007F120 /* Fake Home View.swift in Sources */,
+				F36F80092CA0D4D70007F120 /* Sensors View.swift in Sources */,
+				F36F80062CA0D4D00007F120 /* Accessibility View.swift in Sources */,
+				F36F80072CA0D4D00007F120 /* Accessibility Param.swift in Sources */,
+				F36F80082CA0D4D00007F120 /* Accessibility Item.swift in Sources */,
+				F36F80262CA0D5A60007F120 /* Specs Button.swift in Sources */,
+				F36F7FF52CA0D47C0007F120 /* Connectivity VM.swift in Sources */,
+				F36F7FF72CA0D4830007F120 /* Format Card.swift in Sources */,
+				F36F7FF82CA0D4830007F120 /* Camera Formats.swift in Sources */,
+				F36F80272CA0D5B00007F120 /* Device Info.swift in Sources */,
+				F36F801D2CA0D5330007F120 /* Nearby VM.swift in Sources */,
+				F36F801E2CA0D5330007F120 /* Math Utilities.swift in Sources */,
+				F36F80252CA0D5760007F120 /* Secondary Container.swift in Sources */,
+				F36F80202CA0D5330007F120 /* MCP Session.swift in Sources */,
+				F36F7FF92CA0D4830007F120 /* Camera VM.swift in Sources */,
+				F36F7FFA2CA0D4830007F120 /* Camera Model.swift in Sources */,
+				F36F80292CA0D5CD0007F120 /* UWBTestView.swift in Sources */,
+				F36F7FFB2CA0D4830007F120 /* Camera View.swift in Sources */,
+				F36F7FFC2CA0D4830007F120 /* Cameras Specs.swift in Sources */,
+				F36F7FF62CA0D47C0007F120 /* Network VM.swift in Sources */,
+				F36F7FFD2CA0D48C0007F120 /* Spec Card.swift in Sources */,
+				F36F7FEF2CA0D4370007F120 /* Battery VM.swift in Sources */,
+				F36F7FF02CA0D4370007F120 /* Battery Level.swift in Sources */,
+				F36F80002CA0D4B90007F120 /* Processor Specs.swift in Sources */,
+				F36F80012CA0D4B90007F120 /* Current Process.swift in Sources */,
+				F36F80022CA0D4B90007F120 /* CPU Usage Chart.swift in Sources */,
+				F36F80212CA0D54C0007F120 /* Nav Extension.swift in Sources */,
+				F36F80222CA0D54C0007F120 /* Nav Destinations.swift in Sources */,
+				F36F80232CA0D54C0007F120 /* Nav State.swift in Sources */,
+				F36F800A2CA0D4DE0007F120 /* Pressure VM.swift in Sources */,
+				F36F80192CA0D5200007F120 /* Camera Test.swift in Sources */,
+				F36F800B2CA0D4DE0007F120 /* Magnetic Model.swift in Sources */,
+				F36F800C2CA0D4DE0007F120 /* Orientation VM.swift in Sources */,
+				F36F80172CA0D51B0007F120 /* Torch Test.swift in Sources */,
+				F36F80182CA0D51B0007F120 /* Test List.swift in Sources */,
+				F36F800D2CA0D4DE0007F120 /* Activity VM.swift in Sources */,
+				F36F800E2CA0D4DE0007F120 /* Location VM.swift in Sources */,
+				F36F800F2CA0D4DE0007F120 /* Altitude VM.swift in Sources */,
+				F36F801B2CA0D52F0007F120 /* Color View.swift in Sources */,
+				F36F801C2CA0D52F0007F120 /* Color Test List.swift in Sources */,
+				F36F80102CA0D4DE0007F120 /* Magnetic VM.swift in Sources */,
+				F36F80112CA0D4DE0007F120 /* Magnetic Field Data.swift in Sources */,
+				F36F80032CA0D4B90007F120 /* Processor VM.swift in Sources */,
+				F36F80042CA0D4B90007F120 /* GPU Families.swift in Sources */,
+				F36F7FF12CA0D4370007F120 /* Battery State.swift in Sources */,
 				F36F7FE62CA0D0CF0007F120 /* Home View.swift in Sources */,
 				F36F7FE92CA0D2190007F120 /* App VM.swift in Sources */,
 				F36F7FE32CA0D0740007F120 /* Messages VM.swift in Sources */,
+				F36F7FF22CA0D4420007F120 /* Display View.swift in Sources */,
+				F36F7FF32CA0D4420007F120 /* Display VM.swift in Sources */,
 				F36F7FE72CA0D1FA0007F120 /* Specs Link.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2066,6 +2189,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
+		};
+		F36F802A2CA0D5E90007F120 /* ScrechCam */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */;
+			productName = ScrechCam;
 		};
 		F36FBCCB2C944B1300F5E174 /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;

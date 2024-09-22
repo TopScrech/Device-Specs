@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct HomeView: View {
-    @Environment(NavState.self) private var navState
+struct FakeHomeView: View {
+    @State private var navState = NavState()
     
     @State private var system = SystemVM()
     @State private var device = DeviceVM()
@@ -70,7 +70,7 @@ struct HomeView: View {
             
             Section {
                 SpecsButton("Tests", icon: "testtube.2") {
-                    navState.navigate(.toTests)
+                    //                    navState.navigate(.toTests)
                 }
             }
             
@@ -85,6 +85,7 @@ struct HomeView: View {
         }
         .fullScreenCover(isPresented: $isPresented) {
             SecondaryContainer()
+                .environment(navState)
         }
     }
 }
@@ -101,5 +102,4 @@ struct HomeView: View {
     .environment(MemoryVM())
     .environment(AppVM())
     .environment(ConnectivityVM())
-    .environment(NavState())
 }
