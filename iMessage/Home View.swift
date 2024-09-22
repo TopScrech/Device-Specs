@@ -2,6 +2,7 @@ import SwiftUI
 
 struct HomeView: View {
     @Environment(NavState.self) private var navState
+    @Environment(\.dismiss) private var dismiss
     
     @State private var system = SystemVM()
     @State private var device = DeviceVM()
@@ -74,6 +75,12 @@ struct HomeView: View {
                         AppSpecs()
                             .environment(app)
                     }
+                }
+            }
+            
+            Section {
+                Button("Dismiss", role: .destructive) {
+                    dismiss()
                 }
             }
         }

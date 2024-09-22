@@ -26,7 +26,9 @@ struct TestList: View {
             
             ColorTestList()
             
+#if !EXTENSION
             TorchTest()
+#endif
         }
         .navigationTitle("Tests")
         .sheet($sheetCamera) {

@@ -73,7 +73,6 @@
 		F36F80132CA0D4F80007F120 /* System Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7872C9C12C2000C81FF /* System Specs.swift */; };
 		F36F80142CA0D4FF0007F120 /* Device VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC522C67B985008CD17B /* Device VM.swift */; };
 		F36F80152CA0D4FF0007F120 /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC512C67B985008CD17B /* Device Specs.swift */; };
-		F36F80172CA0D51B0007F120 /* Torch Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43AE2C998759009820F6 /* Torch Test.swift */; };
 		F36F80182CA0D51B0007F120 /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6C2C67B985008CD17B /* Test List.swift */; };
 		F36F80192CA0D5200007F120 /* Camera Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357214E2C985FFB00967ACA /* Camera Test.swift */; };
 		F36F801A2CA0D52B0007F120 /* Torch VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC9D2C680561008CD17B /* Torch VM.swift */; };
@@ -1254,7 +1253,6 @@
 				F36F80192CA0D5200007F120 /* Camera Test.swift in Sources */,
 				F36F800B2CA0D4DE0007F120 /* Magnetic Model.swift in Sources */,
 				F36F800C2CA0D4DE0007F120 /* Orientation VM.swift in Sources */,
-				F36F80172CA0D51B0007F120 /* Torch Test.swift in Sources */,
 				F36F80182CA0D51B0007F120 /* Test List.swift in Sources */,
 				F36F800D2CA0D4DE0007F120 /* Activity VM.swift in Sources */,
 				F36F800E2CA0D4DE0007F120 /* Location VM.swift in Sources */,
