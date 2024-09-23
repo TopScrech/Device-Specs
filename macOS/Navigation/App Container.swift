@@ -7,5 +7,8 @@ struct AppContainer: View {
         } detail: {
             
         }
+        .background {
+            BackgroundBlur()
+        }
     }
 }

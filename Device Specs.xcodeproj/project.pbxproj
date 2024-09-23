@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F317334C2CA1D57800CFA041 /* Background Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317334B2CA1D57800CFA041 /* Background Blur.swift */; };
+		F317334E2CA1D61B00CFA041 /* Nav Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317334D2CA1D61B00CFA041 /* Nav Link.swift */; };
 		F3187A502C898B37008FB911 /* Nav State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A4F2C898B37008FB911 /* Nav State.swift */; };
 		F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A522C898B62008FB911 /* Nav Destinations.swift */; };
 		F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A542C898B7E008FB911 /* Nav Extension.swift */; };
@@ -118,6 +120,7 @@
 		F36FBCCE2C944B1700F5E174 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36FBCCD2C944B1700F5E174 /* DeviceKit */; };
 		F36FBCD02C944B5000F5E174 /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCCF2C944B5000F5E174 /* App Container.swift */; };
 		F36FBCD42C944DA200F5E174 /* Accessibility VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */; };
+		F3B7098B2CA1DD4F006ECAD1 /* Version View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B7098A2CA1DD4F006ECAD1 /* Version View.swift */; };
 		F3C3BDD42C92D8E000BF91EE /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
 		F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD52C92D8F600BF91EE /* App Container.swift */; };
 		F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD72C92D90700BF91EE /* Home View.swift */; };
@@ -327,6 +330,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F317334B2CA1D57800CFA041 /* Background Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Background Blur.swift"; sourceTree = "<group>"; };
+		F317334D2CA1D61B00CFA041 /* Nav Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Link.swift"; sourceTree = "<group>"; };
 		F3187A4F2C898B37008FB911 /* Nav State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav State.swift"; sourceTree = "<group>"; };
 		F3187A522C898B62008FB911 /* Nav Destinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Destinations.swift"; sourceTree = "<group>"; };
 		F3187A542C898B7E008FB911 /* Nav Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Extension.swift"; sourceTree = "<group>"; };
@@ -364,6 +369,7 @@
 		F36FBCB52C9449A300F5E174 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F36FBCCF2C944B5000F5E174 /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility VM.swift"; sourceTree = "<group>"; };
+		F3B7098A2CA1DD4F006ECAD1 /* Version View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Version View.swift"; sourceTree = "<group>"; };
 		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C3BDCC2C92D87C00BF91EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs App.swift"; sourceTree = "<group>"; };
@@ -575,6 +581,8 @@
 			children = (
 				F3F85F202C962CBD00AE0A1D /* App Container.swift */,
 				F33FEE572C982EC200214288 /* Nav Links.swift */,
+				F3B7098A2CA1DD4F006ECAD1 /* Version View.swift */,
+				F317334D2CA1D61B00CFA041 /* Nav Link.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -922,6 +930,7 @@
 				F3F85F192C962C4700AE0A1D /* macOS.entitlements */,
 				F33FEE5C2C98386E00214288 /* Param.swift */,
 				F33FEE5E2C9838AE00214288 /* Spec Item.swift */,
+				F317334B2CA1D57800CFA041 /* Background Blur.swift */,
 				F33FEE552C982AFB00214288 /* Battery */,
 				F33FEE562C982B2600214288 /* Hardware */,
 				F33FEE5B2C98307C00214288 /* System Report */,
@@ -1484,10 +1493,13 @@
 				F33FEE5D2C98386E00214288 /* Param.swift in Sources */,
 				F33FEE5A2C982FF000214288 /* System Report VM.swift in Sources */,
 				F3F85F112C962C4600AE0A1D /* macOS App.swift in Sources */,
+				F317334C2CA1D57800CFA041 /* Background Blur.swift in Sources */,
+				F317334E2CA1D61B00CFA041 /* Nav Link.swift in Sources */,
 				F3F85F212C962CBD00AE0A1D /* App Container.swift in Sources */,
 				F33FEE582C982EC200214288 /* Nav Links.swift in Sources */,
 				F3F85F252C962E7200AE0A1D /* Battery VM.swift in Sources */,
 				F3F85F2D2C96455300AE0A1D /* Hardware Specs.swift in Sources */,
+				F3B7098B2CA1DD4F006ECAD1 /* Version View.swift in Sources */,
 				F33FEE5F2C9838AE00214288 /* Spec Item.swift in Sources */,
 				F3F85F232C962CE600AE0A1D /* Battery Specs.swift in Sources */,
 				F3F85F2F2C9645AF00AE0A1D /* Hardware VM.swift in Sources */,
