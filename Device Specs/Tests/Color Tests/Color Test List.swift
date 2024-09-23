@@ -12,11 +12,18 @@ struct ColorTestList: View {
     var body: some View {
         Section("Static colors") {
             ForEach(colorTests.keys.sorted(), id: \.self) { key in
-                NavigationLink(key) {
+                NavigationLink {
                     if let color = colorTests[key] {
                         ColorView(color)
                     } else {
                         Text("Error")
+                    }
+                } label: {
+                    Label {
+                        Text(key)
+                    } icon: {
+                        Image(systemName: "circle.fill")
+                            .foregroundStyle(colorTests[key] ?? .secondary)
                     }
                 }
             }
