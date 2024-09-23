@@ -7,14 +7,18 @@ struct TestList: View {
     
     var body: some View {
         List {
-            Button("Camera") {
+            Button {
                 sheetCamera = true
+            } label: {
+                Label("Camera", systemImage: "camera")
             }
             .foregroundStyle(.foreground)
             
             Section {
-                Button("Ultra Wideband Test") {
+                Button {
                     navState.navigate(.toUwbTest)
+                } label: {
+                    Label("Ultra Wideband Test", systemImage: "location.viewfinder")
                 }
                 .foregroundStyle(.foreground)
                 .disabled(!DeviceInfo.isUltraWidebandAvailable)
