@@ -1,62 +1,50 @@
 import ScrechKit
 import DeviceKit
-//import CoreTelephony
 //import AdSupport
 
 struct DeviceSpecs: View {
     @Environment(DeviceVM.self) private var vm
-    //    private var bluetooth = BluetoothManager()
     
     var body: some View {
         List {
-#warning("Carrier Info")
-            //            Button("test") {
-            //                //                func fetchCurrentRadioAccessTechnology() {
-            //                let networkInfo = CTTelephonyNetworkInfo()
-            //
-            //                if let currentRadioTech = networkInfo.serviceCurrentRadioAccessTechnology {
-            //                    for (carrier, radioTech) in currentRadioTech {
-            //                        print("Carrier: \(carrier), Radio Access Technology: \(radioTech)")
-            //                    }
-            //                } else {
-            //                    print("Unable to fetch cellular capabilities.")
-            //                }
-            //                //                }
-            //            }
-            
-            ListParameter("Device", parameter: "\(vm.deviceIdentifier)")
-            ListParameter("Identifier", parameter: Device.identifier)
-            ListParameter("Name", parameter: "\(vm.deviceName)")
-            ListParameter("Internal name", parameter: vm.getInternalDeviceName() ?? "-")
-            
-#if os(watchOS)
-            if let vendorId = WKInterfaceDevice.current().identifierForVendor?.uuidString {
-                ListParameter("Identifier for vendor", parameter: vendorId)
-            }
-#else
-            if let vendorId = UIDevice.current.identifierForVendor?.uuidString {
-                ListParameter("Identifier for vendor", parameter: vendorId)
-            }
-#endif
+            ListParam("Device", param: vm.deviceIdentifier)
+            ListParam("Identifier", param: Device.identifier)
+            ListParam("Name", param: vm.deviceName)
+            ListParam("Internal name", param: vm.internalName)
+            ListParam("Identifier for vendor", param: vm.vandorId)
             
 #warning("idfa")
             //                let idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
-            //                ListParameter("Advertising Identifier (IDFA)", parameter: idfa)
+            //                ListParam("Advertising Identifier (IDFA)", param: idfa)
             
             Section {
-                ListParameter("Thermal state", parameter: vm.thermalState)
+                ListParam("Thermal state", param: vm.thermalState)
             }
             
             Section("Capabilities") {
-#if os(iOS)
-                ListParameter("Wireless Charging", parameter: Device.current.supportsWirelessCharging ? "Yes" : "No")
-                ListParameter("5G", parameter: Device.current.has5gSupport ? "Yes" : "No")
-                ListParameter("Dynamic Island", parameter: Device.current.hasDynamicIsland ? "Yes" : "No")
-                ListParameter("Face ID", parameter: Device.current.isFaceIDCapable ? "Yes" : "No")
-                ListParameter("Force Touch", parameter: vm.isForceTouchAvailable)
+#if !os(tvOS)
+                HStack {
+                    Text("Biometric authentication")
+                    
+                    Spacer()
+                    
+                    
+                    Image(systemName: vm.bioIcon)
+                        .title3()
+                        .foregroundStyle(.secondary)
+                    
+                    Text(vm.bioType)
+                        .foregroundStyle(.secondary)
+                }
 #endif
-                ListParameter("Ultra Wideband", parameter: vm.isUltraWidebandAvailable)
-                //                ListParameter("Bluetooth LE", parameter: bluetooth.isBluetoothLeEnabled)
+                
+#if os(iOS)
+                ListParam("Wireless Charging", param: Device.current.supportsWirelessCharging ? "Yes" : "No")
+                ListParam("5G", param: Device.current.has5gSupport ? "Yes" : "No")
+                ListParam("Dynamic Island", param: Device.current.hasDynamicIsland ? "Yes" : "No")
+                ListParam("Force Touch", param: vm.isForceTouchAvailable)
+#endif
+                ListParam("Ultra Wideband", param: vm.isUltraWidebandAvailable)
             }
             
 #if os(watchOS)

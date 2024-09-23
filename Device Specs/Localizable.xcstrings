@@ -1,0 +1,869 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "5G" : {
+      "shouldTranslate" : false
+    },
+    "About" : {
+
+    },
+    "Absolute altitude" : {
+
+    },
+    "Acceleration" : {
+
+    },
+    "Accessibility" : {
+
+    },
+    "Active time" : {
+
+    },
+    "Activity" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Активность"
+          }
+        }
+      }
+    },
+    "Altimeter" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Высотомер"
+          }
+        }
+      }
+    },
+    "App version" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Версия приложения"
+          }
+        }
+      }
+    },
+    "Apperture" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "u"
+          }
+        }
+      }
+    },
+    "Apple 1" : {
+      "shouldTranslate" : false
+    },
+    "Apple 2" : {
+      "shouldTranslate" : false
+    },
+    "Apple 3" : {
+      "shouldTranslate" : false
+    },
+    "Apple 4" : {
+      "shouldTranslate" : false
+    },
+    "Apple 5" : {
+      "shouldTranslate" : false
+    },
+    "Apple 6" : {
+      "shouldTranslate" : false
+    },
+    "Apple 7" : {
+      "shouldTranslate" : false
+    },
+    "Apple 8" : {
+      "shouldTranslate" : false
+    },
+    "Apple 9" : {
+      "shouldTranslate" : false
+    },
+    "Architecture" : {
+
+    },
+    "Arguments" : {
+
+    },
+    "Aspect ratio" : {
+
+    },
+    "Assistive Touch" : {
+
+    },
+    "Back" : {
+
+    },
+    "Battery" : {
+
+    },
+    "Battery Info" : {
+
+    },
+    "Battery level" : {
+
+    },
+    "Battery state" : {
+
+    },
+    "Below Warning Level" : {
+
+    },
+    "Biometric authentication" : {
+
+    },
+    "Bold Text" : {
+
+    },
+    "Brightness" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Яркость"
+          }
+        }
+      }
+    },
+    "BSSID" : {
+      "shouldTranslate" : false
+    },
+    "Build number" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Номер сборки"
+          }
+        }
+      }
+    },
+    "Button Shapes" : {
+
+    },
+    "Camera" : {
+
+    },
+    "Cameras" : {
+
+    },
+    "Cancel" : {
+
+    },
+    "Capabilities" : {
+
+    },
+    "Cell Revision" : {
+
+    },
+    "Charge Information" : {
+
+    },
+    "Charging" : {
+
+    },
+    "Closed Captioning" : {
+
+    },
+    "Color space" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Цветовое пространство"
+          }
+        }
+      }
+    },
+    "Common 1" : {
+      "shouldTranslate" : false
+    },
+    "Common 2" : {
+      "shouldTranslate" : false
+    },
+    "Common 3" : {
+      "shouldTranslate" : false
+    },
+    "Condition" : {
+
+    },
+    "Confidence" : {
+
+    },
+    "Core" : {
+
+    },
+    "Core count" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кол-во ядер"
+          }
+        }
+      }
+    },
+    "CPU" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ЦПУ"
+          }
+        }
+      }
+    },
+    "CPU load" : {
+
+    },
+    "Create a full system report" : {
+
+    },
+    "Crown orientation" : {
+
+    },
+    "Current process" : {
+
+    },
+    "Current session" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Текущая сессия"
+          }
+        }
+      }
+    },
+    "Cycle Count" : {
+
+    },
+    "Darker System Colors" : {
+
+    },
+    "Device" : {
+
+    },
+    "Device Name" : {
+
+    },
+    "Device Specs" : {
+
+    },
+    "Dismiss" : {
+
+    },
+    "Display" : {
+
+    },
+    "Dynamic Island" : {
+
+    },
+    "Environment" : {
+
+    },
+    "Error" : {
+
+    },
+    "Exposure" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Экспозиция"
+          }
+        }
+      }
+    },
+    "Face ID" : {
+      "shouldTranslate" : false
+    },
+    "Firmware Version" : {
+
+    },
+    "Flashlight" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Фонарик"
+          }
+        }
+      }
+    },
+    "Force Touch" : {
+
+    },
+    "Free RAM" : {
+
+    },
+    "Free storage" : {
+
+    },
+    "Front" : {
+
+    },
+    "Full system report" : {
+
+    },
+    "Fully Charged" : {
+
+    },
+    "Globally unique string" : {
+
+    },
+    "Go to Settings" : {
+
+    },
+    "GPU" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ГПУ"
+          }
+        }
+      }
+    },
+    "Grayscale" : {
+
+    },
+    "Guided Access" : {
+
+    },
+    "Hardware" : {
+
+    },
+    "Hardware Info" : {
+
+    },
+    "Hardware Overview" : {
+
+    },
+    "Hardware Revision" : {
+
+    },
+    "Heading accuracy" : {
+
+    },
+    "Health Information" : {
+
+    },
+    "Host name" : {
+
+    },
+    "Identifier" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Идентификатор"
+          }
+        }
+      }
+    },
+    "Identifier for vendor" : {
+
+    },
+    "Internal name" : {
+
+    },
+    "Invert Colors" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Инверсия Цветов"
+          }
+        }
+      }
+    },
+    "ISO" : {
+
+    },
+    "Language & Region" : {
+
+    },
+    "Latitude" : {
+
+    },
+    "Layout direction" : {
+
+    },
+    "Location" : {
+
+    },
+    "Longitude" : {
+
+    },
+    "Low power mode" : {
+
+    },
+    "Mac 2" : {
+      "shouldTranslate" : false
+    },
+    "Magnetic field" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Магнитное поле"
+          }
+        }
+      }
+    },
+    "Magnetic heading" : {
+
+    },
+    "Manufacturer" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Производитель"
+          }
+        }
+      }
+    },
+    "Max" : {
+
+    },
+    "Max Load" : {
+
+    },
+    "Maximum Capacity" : {
+
+    },
+    "Memory" : {
+
+    },
+    "Metal 3" : {
+      "shouldTranslate" : false
+    },
+    "Metal is not supported on this device" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metal не поддерживается на этом устройстве"
+          }
+        }
+      }
+    },
+    "Model Information" : {
+
+    },
+    "Mono Audio" : {
+
+    },
+    "More apps" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Больше приложений"
+          }
+        }
+      }
+    },
+    "Motion coprocessor" : {
+
+    },
+    "Multitasking" : {
+
+    },
+    "Music Haptics" : {
+
+    },
+    "Name" : {
+
+    },
+    "Network" : {
+
+    },
+    "Network interface" : {
+
+    },
+    "Network type" : {
+
+    },
+    "On/Off Switch Labels" : {
+
+    },
+    "Open in full screen to view all specs" : {
+
+    },
+    "Open this app section on another UWB-capable device" : {
+
+    },
+    "Operating system" : {
+
+    },
+    "Orientation" : {
+
+    },
+    "Pack Lot Code" : {
+
+    },
+    "PCB Lot Code" : {
+
+    },
+    "Performance profile" : {
+
+    },
+    "Pitch" : {
+
+    },
+    "Pixel density" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Плотность пикселей"
+          }
+        }
+      }
+    },
+    "Position" : {
+
+    },
+    "Prefers Cross Fade Transitions" : {
+
+    },
+    "Pressure" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Давление"
+          }
+        }
+      }
+    },
+    "Privacy Policy" : {
+
+    },
+    "Process identifier" : {
+
+    },
+    "Process name" : {
+
+    },
+    "Processor" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Процессор"
+          }
+        }
+      }
+    },
+    "Public IP address" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Публичный IP-адрес"
+          }
+        }
+      }
+    },
+    "RAM" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ОЗУ"
+          }
+        }
+      }
+    },
+    "Raw X" : {
+
+    },
+    "Raw Y" : {
+
+    },
+    "Raw Z" : {
+
+    },
+    "Reduce Motion" : {
+
+    },
+    "Reduce Transparency" : {
+
+    },
+    "Refresh rate" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Частота обновления"
+          }
+        }
+      }
+    },
+    "Relative altitude" : {
+
+    },
+    "Roll" : {
+
+    },
+    "Rotation" : {
+
+    },
+    "Rounded corners" : {
+
+    },
+    "Router" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Роутер"
+          }
+        }
+      }
+    },
+    "Save..." : {
+
+    },
+    "Screen resolution" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разрешение экрана"
+          }
+        }
+      }
+    },
+    "Screen size" : {
+
+    },
+    "Sensors" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сенсоры"
+          }
+        }
+      }
+    },
+    "Serial Number" : {
+
+    },
+    "Sertified for iPhone performance gaming" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сертифицировано для высокопроизводительных игр на iPhone"
+          }
+        }
+      }
+    },
+    "Settings" : {
+
+    },
+    "Shake to Undo" : {
+
+    },
+    "Should Differentiate Without Color" : {
+
+    },
+    "Speak Screen" : {
+
+    },
+    "Speak Selection" : {
+
+    },
+    "SSID" : {
+      "shouldTranslate" : false
+    },
+    "State of Charge (%)" : {
+
+    },
+    "Static colors" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Статические цвета"
+          }
+        }
+      }
+    },
+    "Storage" : {
+
+    },
+    "Subnet mask" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Маска подсети"
+          }
+        }
+      }
+    },
+    "Supported GPU families" : {
+
+    },
+    "Supports raytracing" : {
+
+    },
+    "Switch Camera" : {
+
+    },
+    "Switch Control" : {
+
+    },
+    "System" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Система"
+          }
+        }
+      }
+    },
+    "System language" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Язык системы"
+          }
+        }
+      }
+    },
+    "System region" : {
+
+    },
+    "System uptime" : {
+
+    },
+    "Tests" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тесты"
+          }
+        }
+      }
+    },
+    "Thermal state" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Состояние нагрева"
+          }
+        }
+      }
+    },
+    "This device is not UWB capable" : {
+
+    },
+    "Thread count" : {
+
+    },
+    "Total RAM" : {
+
+    },
+    "Total storage" : {
+
+    },
+    "True heading" : {
+
+    },
+    "Ultra Wideband" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Сверхширокополосная Cвязь"
+          }
+        }
+      }
+    },
+    "Ultra Wideband Test" : {
+
+    },
+    "Unified memory" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Объединённая память"
+          }
+        }
+      }
+    },
+    "Usage" : {
+
+    },
+    "Used RAM" : {
+
+    },
+    "Used storage" : {
+
+    },
+    "Video Autoplay" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Автовоспроизведение Видео"
+          }
+        }
+      }
+    },
+    "VoiceOver" : {
+
+    },
+    "Watch Specific" : {
+
+    },
+    "Water lock" : {
+
+    },
+    "Water resistance rating" : {
+
+    },
+    "Wireless Charging" : {
+
+    },
+    "Wrist location" : {
+
+    },
+    "X Axis" : {
+
+    },
+    "Y Axis" : {
+
+    },
+    "Yaw" : {
+
+    },
+    "Z Axis" : {
+
+    }
+  },
+  "version" : "1.0"
+}

@@ -12,12 +12,12 @@ struct DisplaySpecs: View {
     
     var body: some View {
         List {
-            ListParameter("Screen resolution", parameter: vm.resolution)
+            ListParam("Screen resolution", param: vm.resolution)
             
-            ListParameter("Refresh rate", parameter: vm.refreshRate)
+            ListParam("Refresh rate", param: vm.refreshRate)
             
             Section {
-                ListParameter("Brightness", parameter: "\(Int(brightness))%")
+                ListParam("Brightness", param: "\(Int(brightness))%")
             }
         }
         .navigationTitle("Display")

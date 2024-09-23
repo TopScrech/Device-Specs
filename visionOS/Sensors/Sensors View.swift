@@ -8,24 +8,24 @@ struct SensorsView: View {
     var body: some View {
         List {
             Section("Location") {
-                ListParameter("Latitude", parameter: String(location.latitude))
-                ListParameter("Longitude", parameter: String(location.longitude))
+                ListParam("Latitude", param: String(location.latitude))
+                ListParam("Longitude", param: String(location.longitude))
             }
             
             Section("Rotation") {
-                ListParameter("Roll", parameter: orientation.roll)
-                ListParameter("Pitch", parameter: orientation.pitch)
-                ListParameter("Yaw", parameter: orientation.yaw)
+                ListParam("Roll", param: orientation.roll)
+                ListParam("Pitch", param: orientation.pitch)
+                ListParam("Yaw", param: orientation.yaw)
             }
             
             Section("Acceleration") {
-                ListParameter("X Axis", parameter: orientation.x)
-                ListParameter("Y Axis", parameter: orientation.y)
-                ListParameter("Z Axis", parameter: orientation.z)
+                ListParam("X Axis", param: orientation.x)
+                ListParam("Y Axis", param: orientation.y)
+                ListParam("Z Axis", param: orientation.z)
             }
             
             Section("Altimeter") {
-                ListParameter("Absolute altitude", parameter: altitude.absoluteAltitude)
+                ListParam("Absolute altitude", param: altitude.absoluteAltitude)
             }
         }
         .numericTransition()

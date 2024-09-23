@@ -1,6 +1,10 @@
 import ScrechKit
 import DeviceKit
 
+#if canImport(LocalAuthentication)
+import LocalAuthentication
+#endif
+
 #if canImport(NearbyInteraction)
 import NearbyInteraction
 #endif
@@ -14,9 +18,16 @@ final class DeviceVM {
     // Device
     let deviceIdentifier = Device.current.description
     
+    var bioIcon = ""
+    var bioType = ""
+    
     var architecture = ""
     var isForceTouchAvailable = ""
     let deviceName = Device.current.name ?? "-"
+    
+    var internalName: String {
+        getInternalDeviceName() ?? "-"
+    }
     
 #warning("Finish")
     //    var deviceIcon: String {
@@ -50,6 +61,14 @@ final class DeviceVM {
 #endif
     }
     
+    var vandorId: String {
+#if os(watchOS)
+        WKInterfaceDevice.current().identifierForVendor?.uuidString ?? "-"
+#else
+        UIDevice.current.identifierForVendor?.uuidString ?? "-"
+#endif
+    }
+    
     var thermalState: String {
         switch ProcessInfo.processInfo.thermalState {
         case .nominal: "Nominal"
@@ -62,6 +81,40 @@ final class DeviceVM {
     
     init() {
         fetchForceTouch()
+        getBiometryType()
+    }
+    
+    func getBiometryType() {
+#if !os(tvOS)
+        if #available(watchOS 11, *) {
+            let type = LAContext().biometryType
+            
+            switch type {
+            case .faceID:
+                bioIcon = "faceid"
+                bioType = "Face ID"
+                
+            case .touchID:
+                bioIcon = "touchid"
+                bioType = "Touch ID"
+                
+            case .opticID:
+                bioIcon = "opticid"
+                bioType = "Optic ID"
+                
+            case .none:
+                bioIcon = ""
+                bioType = "None"
+                
+            default:
+                bioIcon = ""
+                bioType = "Unknown"
+            }
+        } else {
+            bioIcon = ""
+            bioType = "None"
+        }
+#endif
     }
     
     func getInternalDeviceName() -> String? {

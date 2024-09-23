@@ -18,9 +18,9 @@ struct AppSpecs: View {
                 vm.trigger.toggle()
             }
             
-            ListParameter("App version", parameter: vm.version)
+            ListParam("App version", param: vm.version)
             
-            ListParameter("Build number", parameter: vm.build)
+            ListParam("Build number", param: vm.build)
             
 #if !os(watchOS) && !os(tvOS)
             Section {

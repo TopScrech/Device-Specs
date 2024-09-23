@@ -9,9 +9,9 @@ struct MagneticFieldData: View {
             let y = String(format: "%.2f µT", raw.y)
             let z = String(format: "%.2f µT", raw.z)
             
-            ListParameter("Raw X", parameter: x)
-            ListParameter("Raw Y", parameter: y)
-            ListParameter("Raw Z", parameter: z)
+            ListParam("Raw X", param: x)
+            ListParam("Raw Y", param: y)
+            ListParam("Raw Z", param: z)
         }        
     }
 }

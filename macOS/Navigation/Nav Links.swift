@@ -3,20 +3,25 @@ import SwiftUI
 struct NavLinks: View {
     var body: some View {
         List {
-            NavigationLink("Hardware") {
+            NavLink("Hardware", icon: "pc") {
                 HardwareSpecs()
             }
             
-            NavigationLink("Battery") {
+            NavLink("Battery", icon: "battery.100percent.bolt") {
                 BatterySpecs()
             }
             
-            Section {
-                NavigationLink("Full system report") {
-                    SystemReportView()
-                }
+            Divider()
+            
+            NavLink("Full system report", icon: "terminal") {
+                SystemReportView()
             }
+            
+            Spacer()
+            
+            NavLink("Settings", icon: "gear")
         }
+        .padding(10)
     }
 }
 

@@ -10,8 +10,8 @@ struct SensorsView: View {
     var body: some View {
         List {
             Section("Location") {
-                ListParameter("Latitude", parameter: String(location.latitude))
-                ListParameter("Longitude", parameter: String(location.longitude))
+                ListParam("Latitude", param: String(location.latitude))
+                ListParam("Longitude", param: String(location.longitude))
                 
                 HStack {
                     Text("True heading")
@@ -45,26 +45,26 @@ struct SensorsView: View {
                         .foregroundStyle(.secondary)
                 }
                 
-                ListParameter("Heading accuracy", parameter: String(location.headingAccuracy) + "°")
+                ListParam("Heading accuracy", param: String(location.headingAccuracy) + "°")
             }
             
             Section("Rotation") {
-                ListParameter("Roll", parameter: orientation.roll)
-                ListParameter("Pitch", parameter: orientation.pitch)
-                ListParameter("Yaw", parameter: orientation.yaw)
-                ListParameter("Orientation", parameter: orientation.orientation)
+                ListParam("Roll", param: orientation.roll)
+                ListParam("Pitch", param: orientation.pitch)
+                ListParam("Yaw", param: orientation.yaw)
+                ListParam("Orientation", param: orientation.orientation)
             }
             
             Section("Acceleration") {
-                ListParameter("X Axis", parameter: orientation.x)
-                ListParameter("Y Axis", parameter: orientation.y)
-                ListParameter("Z Axis", parameter: orientation.z)
+                ListParam("X Axis", param: orientation.x)
+                ListParam("Y Axis", param: orientation.y)
+                ListParam("Z Axis", param: orientation.z)
             }
             
             Section("Altimeter") {
-                ListParameter("Pressure", parameter: pressure.pressureKilo)
-                ListParameter("Relative altitude", parameter: altitude.relativeAltitude)
-                ListParameter("Absolute altitude", parameter: altitude.absoluteAltitude)
+                ListParam("Pressure", param: pressure.pressureKilo)
+                ListParam("Relative altitude", param: altitude.relativeAltitude)
+                ListParam("Absolute altitude", param: altitude.absoluteAltitude)
             }
             
             Section("Magnetic field") {
@@ -72,8 +72,8 @@ struct SensorsView: View {
             }
             
             Section("Motion coprocessor") {
-                ListParameter("Activity", parameter: activity.activity)
-                ListParameter("Confidence", parameter: activity.confidence)
+                ListParam("Activity", param: activity.activity)
+                ListParam("Confidence", param: activity.confidence)
             }
         }
         .navigationTitle("Sensors")

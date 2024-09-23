@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F317334C2CA1D57800CFA041 /* Background Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317334B2CA1D57800CFA041 /* Background Blur.swift */; };
+		F317334E2CA1D61B00CFA041 /* Nav Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317334D2CA1D61B00CFA041 /* Nav Link.swift */; };
 		F3187A502C898B37008FB911 /* Nav State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A4F2C898B37008FB911 /* Nav State.swift */; };
 		F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A522C898B62008FB911 /* Nav Destinations.swift */; };
 		F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A542C898B7E008FB911 /* Nav Extension.swift */; };
@@ -21,6 +23,81 @@
 		F357214F2C985FFB00967ACA /* Camera Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357214E2C985FFB00967ACA /* Camera Test.swift */; };
 		F36F7FC52CA0CC110007F120 /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
 		F36F7FC62CA0CC110007F120 /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
+		F36F7FCD2CA0CFDF0007F120 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36F7FCC2CA0CFDF0007F120 /* Messages.framework */; };
+		F36F7FD02CA0CFDF0007F120 /* Messages VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F7FCF2CA0CFDF0007F120 /* Messages VC.swift */; };
+		F36F7FD52CA0CFE00007F120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36F7FD42CA0CFE00007F120 /* Assets.xcassets */; };
+		F36F7FD92CA0CFE00007F120 /* iMessage.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F36F7FE12CA0D04C0007F120 /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F7FE02CA0D04C0007F120 /* App Container.swift */; };
+		F36F7FE32CA0D0740007F120 /* Messages VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F7FE22CA0D0740007F120 /* Messages VM.swift */; };
+		F36F7FE62CA0D0CF0007F120 /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F7FE42CA0D0B50007F120 /* Home View.swift */; };
+		F36F7FE72CA0D1FA0007F120 /* Specs Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7982C9C8444000C81FF /* Specs Link.swift */; };
+		F36F7FE82CA0D2030007F120 /* App Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AA2C9D4BFA000C81FF /* App Specs.swift */; };
+		F36F7FE92CA0D2190007F120 /* App VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AD2C9D5BF8000C81FF /* App VM.swift */; };
+		F36F7FEB2CA0D23D0007F120 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36F7FEA2CA0D23D0007F120 /* ScrechKit */; };
+		F36F7FED2CA0D2400007F120 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36F7FEC2CA0D2400007F120 /* DeviceKit */; };
+		F36F7FEE2CA0D4370007F120 /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5A2C67B985008CD17B /* Battery Specs.swift */; };
+		F36F7FEF2CA0D4370007F120 /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5B2C67B985008CD17B /* Battery VM.swift */; };
+		F36F7FF02CA0D4370007F120 /* Battery Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E77E2C9C0CD3000C81FF /* Battery Level.swift */; };
+		F36F7FF12CA0D4370007F120 /* Battery State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7822C9C0D14000C81FF /* Battery State.swift */; };
+		F36F7FF22CA0D4420007F120 /* Display View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC542C67B985008CD17B /* Display View.swift */; };
+		F36F7FF32CA0D4420007F120 /* Display VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC552C67B985008CD17B /* Display VM.swift */; };
+		F36F7FF42CA0D47C0007F120 /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
+		F36F7FF52CA0D47C0007F120 /* Connectivity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Connectivity VM.swift */; };
+		F36F7FF62CA0D47C0007F120 /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
+		F36F7FF72CA0D4830007F120 /* Format Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A12C9CC304000C81FF /* Format Card.swift */; };
+		F36F7FF82CA0D4830007F120 /* Camera Formats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E79F2C9CC2AE000C81FF /* Camera Formats.swift */; };
+		F36F7FF92CA0D4830007F120 /* Camera VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC582C67B985008CD17B /* Camera VM.swift */; };
+		F36F7FFA2CA0D4830007F120 /* Camera Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7962C9C5A0E000C81FF /* Camera Model.swift */; };
+		F36F7FFB2CA0D4830007F120 /* Camera View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E79D2C9CC262000C81FF /* Camera View.swift */; };
+		F36F7FFC2CA0D4830007F120 /* Cameras Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC572C67B985008CD17B /* Cameras Specs.swift */; };
+		F36F7FFE2CA0D4B40007F120 /* Memory Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5D2C67B985008CD17B /* Memory Specs.swift */; };
+		F36F7FFF2CA0D4B40007F120 /* Memory VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5E2C67B985008CD17B /* Memory VM.swift */; };
+		F36F80002CA0D4B90007F120 /* Processor Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC632C9353FF00F5E174 /* Processor Specs.swift */; };
+		F36F80012CA0D4B90007F120 /* Current Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A52C9CD453000C81FF /* Current Process.swift */; };
+		F36F80022CA0D4B90007F120 /* CPU Usage Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */; };
+		F36F80032CA0D4B90007F120 /* Processor VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC662C93542700F5E174 /* Processor VM.swift */; };
+		F36F80042CA0D4B90007F120 /* GPU Families.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EF92C95857C00AE0A1D /* GPU Families.swift */; };
+		F36F80052CA0D4D00007F120 /* Accessibility VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */; };
+		F36F80062CA0D4D00007F120 /* Accessibility View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */; };
+		F36F80072CA0D4D00007F120 /* Accessibility Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */; };
+		F36F80082CA0D4D00007F120 /* Accessibility Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EE92C957F9100AE0A1D /* Accessibility Item.swift */; };
+		F36F80092CA0D4D70007F120 /* Sensors View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC652C67B985008CD17B /* Sensors View.swift */; };
+		F36F800A2CA0D4DE0007F120 /* Pressure VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC682C67B985008CD17B /* Pressure VM.swift */; };
+		F36F800B2CA0D4DE0007F120 /* Magnetic Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7BB2C9D6A9C000C81FF /* Magnetic Model.swift */; };
+		F36F800C2CA0D4DE0007F120 /* Orientation VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC672C67B985008CD17B /* Orientation VM.swift */; };
+		F36F800D2CA0D4DE0007F120 /* Activity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6A2C67B985008CD17B /* Activity VM.swift */; };
+		F36F800E2CA0D4DE0007F120 /* Location VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC662C67B985008CD17B /* Location VM.swift */; };
+		F36F800F2CA0D4DE0007F120 /* Altitude VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC692C67B985008CD17B /* Altitude VM.swift */; };
+		F36F80102CA0D4DE0007F120 /* Magnetic VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7BE2C9D6AC8000C81FF /* Magnetic VM.swift */; };
+		F36F80112CA0D4DE0007F120 /* Magnetic Field Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7C12C9D6B13000C81FF /* Magnetic Field Data.swift */; };
+		F36F80122CA0D4F80007F120 /* System VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E78C2C9C12D6000C81FF /* System VM.swift */; };
+		F36F80132CA0D4F80007F120 /* System Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7872C9C12C2000C81FF /* System Specs.swift */; };
+		F36F80142CA0D4FF0007F120 /* Device VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC522C67B985008CD17B /* Device VM.swift */; };
+		F36F80152CA0D4FF0007F120 /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC512C67B985008CD17B /* Device Specs.swift */; };
+		F36F80182CA0D51B0007F120 /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6C2C67B985008CD17B /* Test List.swift */; };
+		F36F80192CA0D5200007F120 /* Camera Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357214E2C985FFB00967ACA /* Camera Test.swift */; };
+		F36F801A2CA0D52B0007F120 /* Torch VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC9D2C680561008CD17B /* Torch VM.swift */; };
+		F36F801B2CA0D52F0007F120 /* Color View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6D2C67B985008CD17B /* Color View.swift */; };
+		F36F801C2CA0D52F0007F120 /* Color Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43B02C998787009820F6 /* Color Test List.swift */; };
+		F36F801D2CA0D5330007F120 /* Nearby VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC702C67B985008CD17B /* Nearby VM.swift */; };
+		F36F801E2CA0D5330007F120 /* Math Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC722C67B985008CD17B /* Math Utilities.swift */; };
+		F36F80202CA0D5330007F120 /* MCP Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC712C67B985008CD17B /* MCP Session.swift */; };
+		F36F80212CA0D54C0007F120 /* Nav Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A542C898B7E008FB911 /* Nav Extension.swift */; };
+		F36F80222CA0D54C0007F120 /* Nav Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A522C898B62008FB911 /* Nav Destinations.swift */; };
+		F36F80232CA0D54C0007F120 /* Nav State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A4F2C898B37008FB911 /* Nav State.swift */; };
+		F36F80252CA0D5760007F120 /* Secondary Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F80242CA0D5760007F120 /* Secondary Container.swift */; };
+		F36F80262CA0D5A60007F120 /* Specs Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AF2C9D5D96000C81FF /* Specs Button.swift */; };
+		F36F80272CA0D5B00007F120 /* Device Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4D2C67B985008CD17B /* Device Info.swift */; };
+		F36F80292CA0D5CD0007F120 /* UWB Test View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F80282CA0D5CD0007F120 /* UWB Test View.swift */; };
+		F36F802B2CA0D5E90007F120 /* ScrechCam in Frameworks */ = {isa = PBXBuildFile; productRef = F36F802A2CA0D5E90007F120 /* ScrechCam */; };
+		F36F802D2CA0D6090007F120 /* Fake Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F802C2CA0D6090007F120 /* Fake Home View.swift */; };
+		F36F802F2CA0E9AF0007F120 /* Torch Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43AE2C998759009820F6 /* Torch Test.swift */; };
+		F36F803B2CA170870007F120 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F36F803A2CA170870007F120 /* Localizable.xcstrings */; };
+		F36F803C2CA170870007F120 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F36F803A2CA170870007F120 /* Localizable.xcstrings */; };
+		F36F803D2CA170870007F120 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F36F803A2CA170870007F120 /* Localizable.xcstrings */; };
+		F36F803E2CA170870007F120 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F36F803A2CA170870007F120 /* Localizable.xcstrings */; };
+		F36F803F2CA170870007F120 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F36F803A2CA170870007F120 /* Localizable.xcstrings */; };
+		F36F80402CA170870007F120 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F36F803A2CA170870007F120 /* Localizable.xcstrings */; };
 		F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
 		F36FBC4D2C9319D600F5E174 /* Connectivity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Connectivity VM.swift */; };
 		F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
@@ -43,6 +120,7 @@
 		F36FBCCE2C944B1700F5E174 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36FBCCD2C944B1700F5E174 /* DeviceKit */; };
 		F36FBCD02C944B5000F5E174 /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCCF2C944B5000F5E174 /* App Container.swift */; };
 		F36FBCD42C944DA200F5E174 /* Accessibility VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */; };
+		F3B7098B2CA1DD4F006ECAD1 /* Version View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B7098A2CA1DD4F006ECAD1 /* Version View.swift */; };
 		F3C3BDD42C92D8E000BF91EE /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
 		F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD52C92D8F600BF91EE /* App Container.swift */; };
 		F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD72C92D90700BF91EE /* Home View.swift */; };
@@ -77,7 +155,6 @@
 		F3D1E79E2C9CC262000C81FF /* Camera View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E79D2C9CC262000C81FF /* Camera View.swift */; };
 		F3D1E7A02C9CC2AE000C81FF /* Camera Formats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E79F2C9CC2AE000C81FF /* Camera Formats.swift */; };
 		F3D1E7A22C9CC304000C81FF /* Format Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A12C9CC304000C81FF /* Format Card.swift */; };
-		F3D1E7A42C9CC898000C81FF /* Spec Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A32C9CC898000C81FF /* Spec Card.swift */; };
 		F3D1E7A62C9CD453000C81FF /* Current Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A52C9CD453000C81FF /* Current Process.swift */; };
 		F3D1E7A72C9CD453000C81FF /* Current Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A52C9CD453000C81FF /* Current Process.swift */; };
 		F3D1E7A82C9CD453000C81FF /* Current Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A52C9CD453000C81FF /* Current Process.swift */; };
@@ -204,6 +281,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F36F7FD72CA0CFE00007F120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3E7EC322C676A13008CD17B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F36F7FCA2CA0CFDF0007F120;
+			remoteInfo = iMessage;
+		};
 		F36FBCBC2C9449A300F5E174 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F3E7EC322C676A13008CD17B /* Project object */;
@@ -221,6 +305,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		F36F7FDE2CA0CFE00007F120 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F36F7FD92CA0CFE00007F120 /* iMessage.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F36FBCBF2C9449A300F5E174 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,6 +330,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F317334B2CA1D57800CFA041 /* Background Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Background Blur.swift"; sourceTree = "<group>"; };
+		F317334D2CA1D61B00CFA041 /* Nav Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Link.swift"; sourceTree = "<group>"; };
 		F3187A4F2C898B37008FB911 /* Nav State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav State.swift"; sourceTree = "<group>"; };
 		F3187A522C898B62008FB911 /* Nav Destinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Destinations.swift"; sourceTree = "<group>"; };
 		F3187A542C898B7E008FB911 /* Nav Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Extension.swift"; sourceTree = "<group>"; };
@@ -245,6 +342,19 @@
 		F33FEE5E2C9838AE00214288 /* Spec Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spec Item.swift"; sourceTree = "<group>"; };
 		F35279542C98DCB600AF581C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F357214E2C985FFB00967ACA /* Camera Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera Test.swift"; sourceTree = "<group>"; };
+		F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iMessage.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F36F7FCC2CA0CFDF0007F120 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = Library/Frameworks/Messages.framework; sourceTree = DEVELOPER_DIR; };
+		F36F7FCF2CA0CFDF0007F120 /* Messages VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Messages VC.swift"; sourceTree = "<group>"; };
+		F36F7FD42CA0CFE00007F120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F36F7FD62CA0CFE00007F120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F36F7FE02CA0D04C0007F120 /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
+		F36F7FE22CA0D0740007F120 /* Messages VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Messages VM.swift"; sourceTree = "<group>"; };
+		F36F7FE42CA0D0B50007F120 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
+		F36F80242CA0D5760007F120 /* Secondary Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Secondary Container.swift"; sourceTree = "<group>"; };
+		F36F80282CA0D5CD0007F120 /* UWB Test View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UWB Test View.swift"; sourceTree = "<group>"; };
+		F36F802C2CA0D6090007F120 /* Fake Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fake Home View.swift"; sourceTree = "<group>"; };
+		F36F802E2CA0D9530007F120 /* iMessage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iMessage.entitlements; sourceTree = "<group>"; };
+		F36F803A2CA170870007F120 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F36FBC4A2C93127000F5E174 /* visionOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = visionOS.entitlements; sourceTree = "<group>"; };
 		F36FBC552C931C1000F5E174 /* Sensors View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensors View.swift"; sourceTree = "<group>"; };
 		F36FBC5D2C931C7500F5E174 /* Orientation VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Orientation VM.swift"; sourceTree = "<group>"; };
@@ -259,6 +369,7 @@
 		F36FBCB52C9449A300F5E174 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F36FBCCF2C944B5000F5E174 /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility VM.swift"; sourceTree = "<group>"; };
+		F3B7098A2CA1DD4F006ECAD1 /* Version View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Version View.swift"; sourceTree = "<group>"; };
 		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C3BDCC2C92D87C00BF91EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs App.swift"; sourceTree = "<group>"; };
@@ -274,7 +385,6 @@
 		F3D1E79D2C9CC262000C81FF /* Camera View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera View.swift"; sourceTree = "<group>"; };
 		F3D1E79F2C9CC2AE000C81FF /* Camera Formats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera Formats.swift"; sourceTree = "<group>"; };
 		F3D1E7A12C9CC304000C81FF /* Format Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Format Card.swift"; sourceTree = "<group>"; };
-		F3D1E7A32C9CC898000C81FF /* Spec Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spec Card.swift"; sourceTree = "<group>"; };
 		F3D1E7A52C9CD453000C81FF /* Current Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Current Process.swift"; sourceTree = "<group>"; };
 		F3D1E7AA2C9D4BFA000C81FF /* App Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Specs.swift"; sourceTree = "<group>"; };
 		F3D1E7AD2C9D5BF8000C81FF /* App VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App VM.swift"; sourceTree = "<group>"; };
@@ -285,7 +395,7 @@
 		F3E7EC3A2C676A13008CD17B /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs App.swift"; sourceTree = "<group>"; };
 		F3E7EC412C676A14008CD17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F3E7EC432C676A14008CD17B /* Device_Specs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Device_Specs.entitlements; sourceTree = "<group>"; };
+		F3E7EC432C676A14008CD17B /* Device Specs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Device Specs.entitlements"; sourceTree = "<group>"; };
 		F3E7EC4D2C67B985008CD17B /* Device Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Info.swift"; sourceTree = "<group>"; };
 		F3E7EC4E2C67B985008CD17B /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F3E7EC4F2C67B985008CD17B /* List Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List Link.swift"; sourceTree = "<group>"; };
@@ -353,6 +463,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F36F7FC82CA0CFDF0007F120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36F7FCD2CA0CFDF0007F120 /* Messages.framework in Frameworks */,
+				F36F7FEB2CA0D23D0007F120 /* ScrechKit in Frameworks */,
+				F36F802B2CA0D5E90007F120 /* ScrechCam in Frameworks */,
+				F36F7FED2CA0D2400007F120 /* DeviceKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F36FBCAE2C9449A200F5E174 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -460,8 +581,27 @@
 			children = (
 				F3F85F202C962CBD00AE0A1D /* App Container.swift */,
 				F33FEE572C982EC200214288 /* Nav Links.swift */,
+				F3B7098A2CA1DD4F006ECAD1 /* Version View.swift */,
+				F317334D2CA1D61B00CFA041 /* Nav Link.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		F36F7FDF2CA0CFF20007F120 /* iMessage */ = {
+			isa = PBXGroup;
+			children = (
+				F36F802E2CA0D9530007F120 /* iMessage.entitlements */,
+				F36F7FCF2CA0CFDF0007F120 /* Messages VC.swift */,
+				F36F7FE02CA0D04C0007F120 /* App Container.swift */,
+				F36F80242CA0D5760007F120 /* Secondary Container.swift */,
+				F36F7FD42CA0CFE00007F120 /* Assets.xcassets */,
+				F36F7FD62CA0CFE00007F120 /* Info.plist */,
+				F36F7FE22CA0D0740007F120 /* Messages VM.swift */,
+				F36F802C2CA0D6090007F120 /* Fake Home View.swift */,
+				F36F7FE42CA0D0B50007F120 /* Home View.swift */,
+				F36F80282CA0D5CD0007F120 /* UWB Test View.swift */,
+			);
+			path = iMessage;
 			sourceTree = "<group>";
 		};
 		F36FBC692C93551B00F5E174 /* Processor */ = {
@@ -522,6 +662,7 @@
 		F3C3BDDB2C92DAAA00BF91EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F36F7FCC2CA0CFDF0007F120 /* Messages.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -571,6 +712,7 @@
 				F3F85EDB2C94AF8000AE0A1D /* tvOS */,
 				F3F85F1F2C962C9400AE0A1D /* macOS */,
 				F33FEE542C982A2800214288 /* Unit Tests */,
+				F36F7FDF2CA0CFF20007F120 /* iMessage */,
 				F3C3BDDB2C92DAAA00BF91EE /* Frameworks */,
 				F3E7EC3B2C676A13008CD17B /* Products */,
 			);
@@ -585,6 +727,7 @@
 				F3F85ECD2C94AF5A00AE0A1D /* tvOS.app */,
 				F3F85F0E2C962C4600AE0A1D /* macOS.app */,
 				F3F85F342C96491700AE0A1D /* Unit Tests.xctest */,
+				F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -595,22 +738,22 @@
 				F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */,
 				F3187A512C898B40008FB911 /* Navigation */,
 				F3E7EC412C676A14008CD17B /* Assets.xcassets */,
-				F3E7EC432C676A14008CD17B /* Device_Specs.entitlements */,
+				F3E7EC432C676A14008CD17B /* Device Specs.entitlements */,
 				F3F85E8A2C94529A00AE0A1D /* Device-Specs-Info.plist */,
+				F36F803A2CA170870007F120 /* Localizable.xcstrings */,
 				F3E7EC4D2C67B985008CD17B /* Device Info.swift */,
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
 				F3D1E7982C9C8444000C81FF /* Specs Link.swift */,
 				F3D1E7AF2C9D5D96000C81FF /* Specs Button.swift */,
-				F3D1E7A32C9CC898000C81FF /* Spec Card.swift */,
 				F3E7EC4F2C67B985008CD17B /* List Link.swift */,
 				F3E7EC502C67B985008CD17B /* Bluetooth VM.swift */,
 				F3E7EC532C67B985008CD17B /* Device */,
 				F3D1E7862C9C12A0000C81FF /* System */,
 				F36FBC692C93551B00F5E174 /* Processor */,
+				F3E7EC602C67B985008CD17B /* Memory */,
 				F3E7EC562C67B985008CD17B /* Display */,
 				F3E7EC592C67B985008CD17B /* Cameras */,
 				F3E7EC5C2C67B985008CD17B /* Battery */,
-				F3E7EC602C67B985008CD17B /* Memory */,
 				F3E7EC642C67B985008CD17B /* Network */,
 				F3E7EC6B2C67B985008CD17B /* Sensors */,
 				F36FBC6D2C941F5100F5E174 /* Accessability */,
@@ -656,8 +799,8 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC5A2C67B985008CD17B /* Battery Specs.swift */,
-				F3D1E7822C9C0D14000C81FF /* Battery State.swift */,
 				F3D1E77E2C9C0CD3000C81FF /* Battery Level.swift */,
+				F3D1E7822C9C0D14000C81FF /* Battery State.swift */,
 				F3E7EC5B2C67B985008CD17B /* Battery VM.swift */,
 			);
 			path = Battery;
@@ -787,6 +930,7 @@
 				F3F85F192C962C4700AE0A1D /* macOS.entitlements */,
 				F33FEE5C2C98386E00214288 /* Param.swift */,
 				F33FEE5E2C9838AE00214288 /* Spec Item.swift */,
+				F317334B2CA1D57800CFA041 /* Background Blur.swift */,
 				F33FEE552C982AFB00214288 /* Battery */,
 				F33FEE562C982B2600214288 /* Hardware */,
 				F33FEE5B2C98307C00214288 /* System Report */,
@@ -797,6 +941,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F36F7FCA2CA0CFDF0007F120 /* iMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F36F7FDB2CA0CFE00007F120 /* Build configuration list for PBXNativeTarget "iMessage" */;
+			buildPhases = (
+				F36F7FC72CA0CFDF0007F120 /* Sources */,
+				F36F7FC82CA0CFDF0007F120 /* Frameworks */,
+				F36F7FC92CA0CFDF0007F120 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iMessage;
+			packageProductDependencies = (
+				F36F7FEA2CA0D23D0007F120 /* ScrechKit */,
+				F36F7FEC2CA0D2400007F120 /* DeviceKit */,
+				F36F802A2CA0D5E90007F120 /* ScrechCam */,
+			);
+			productName = iMessage;
+			productReference = F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 		F36FBCB02C9449A200F5E174 /* watchOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F36FBCC22C9449A300F5E174 /* Build configuration list for PBXNativeTarget "watchOS" */;
@@ -847,11 +1013,13 @@
 				F3E7EC372C676A13008CD17B /* Frameworks */,
 				F3E7EC382C676A13008CD17B /* Resources */,
 				F36FBCBF2C9449A300F5E174 /* Embed Watch Content */,
+				F36F7FDE2CA0CFE00007F120 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				F36FBCBD2C9449A300F5E174 /* PBXTargetDependency */,
+				F36F7FD82CA0CFE00007F120 /* PBXTargetDependency */,
 			);
 			name = "Device Specs";
 			packageProductDependencies = (
@@ -935,6 +1103,9 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					F36F7FCA2CA0CFDF0007F120 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					F36FBCB02C9449A200F5E174 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -957,12 +1128,12 @@
 				};
 			};
 			buildConfigurationList = F3E7EC352C676A13008CD17B /* Build configuration list for PBXProject "Device Specs" */;
-			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = F3E7EC312C676A13008CD17B;
 			minimizedProjectReferenceProxies = 1;
@@ -971,6 +1142,7 @@
 				F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */,
 				F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */,
 			);
+			preferredProjectObjectVersion = 77;
 			productRefGroup = F3E7EC3B2C676A13008CD17B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -981,17 +1153,28 @@
 				F3F85ECC2C94AF5A00AE0A1D /* tvOS */,
 				F3F85F0D2C962C4600AE0A1D /* macOS */,
 				F3F85F332C96491700AE0A1D /* Unit Tests */,
+				F36F7FCA2CA0CFDF0007F120 /* iMessage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F36F7FC92CA0CFDF0007F120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36F80402CA170870007F120 /* Localizable.xcstrings in Resources */,
+				F36F7FD52CA0CFE00007F120 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F36FBCAF2C9449A200F5E174 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F35279552C98DCB600AF581C /* Assets.xcassets in Resources */,
 				F3F85E8B2C94529A00AE0A1D /* Device-Specs-Info.plist in Resources */,
+				F36F803C2CA170870007F120 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -999,6 +1182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36F803D2CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F36FBC732C942F7600F5E174 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1007,6 +1191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36F803B2CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1015,6 +1200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36F803E2CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F3F85ED42C94AF5B00AE0A1D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1023,6 +1209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36F803F2CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F3F85F152C962C4700AE0A1D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1037,6 +1224,76 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F36F7FC72CA0CFDF0007F120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36F7FD02CA0CFDF0007F120 /* Messages VC.swift in Sources */,
+				F36F801A2CA0D52B0007F120 /* Torch VM.swift in Sources */,
+				F36F7FE82CA0D2030007F120 /* App Specs.swift in Sources */,
+				F36F80122CA0D4F80007F120 /* System VM.swift in Sources */,
+				F36F80142CA0D4FF0007F120 /* Device VM.swift in Sources */,
+				F36F80152CA0D4FF0007F120 /* Device Specs.swift in Sources */,
+				F36F80132CA0D4F80007F120 /* System Specs.swift in Sources */,
+				F36F7FFE2CA0D4B40007F120 /* Memory Specs.swift in Sources */,
+				F36F802F2CA0E9AF0007F120 /* Torch Test.swift in Sources */,
+				F36F7FFF2CA0D4B40007F120 /* Memory VM.swift in Sources */,
+				F36F7FE12CA0D04C0007F120 /* App Container.swift in Sources */,
+				F36F7FEE2CA0D4370007F120 /* Battery Specs.swift in Sources */,
+				F36F7FF42CA0D47C0007F120 /* Network View.swift in Sources */,
+				F36F80052CA0D4D00007F120 /* Accessibility VM.swift in Sources */,
+				F36F802D2CA0D6090007F120 /* Fake Home View.swift in Sources */,
+				F36F80092CA0D4D70007F120 /* Sensors View.swift in Sources */,
+				F36F80062CA0D4D00007F120 /* Accessibility View.swift in Sources */,
+				F36F80072CA0D4D00007F120 /* Accessibility Param.swift in Sources */,
+				F36F80082CA0D4D00007F120 /* Accessibility Item.swift in Sources */,
+				F36F80262CA0D5A60007F120 /* Specs Button.swift in Sources */,
+				F36F7FF52CA0D47C0007F120 /* Connectivity VM.swift in Sources */,
+				F36F7FF72CA0D4830007F120 /* Format Card.swift in Sources */,
+				F36F7FF82CA0D4830007F120 /* Camera Formats.swift in Sources */,
+				F36F80272CA0D5B00007F120 /* Device Info.swift in Sources */,
+				F36F801D2CA0D5330007F120 /* Nearby VM.swift in Sources */,
+				F36F801E2CA0D5330007F120 /* Math Utilities.swift in Sources */,
+				F36F80252CA0D5760007F120 /* Secondary Container.swift in Sources */,
+				F36F80202CA0D5330007F120 /* MCP Session.swift in Sources */,
+				F36F7FF92CA0D4830007F120 /* Camera VM.swift in Sources */,
+				F36F7FFA2CA0D4830007F120 /* Camera Model.swift in Sources */,
+				F36F80292CA0D5CD0007F120 /* UWB Test View.swift in Sources */,
+				F36F7FFB2CA0D4830007F120 /* Camera View.swift in Sources */,
+				F36F7FFC2CA0D4830007F120 /* Cameras Specs.swift in Sources */,
+				F36F7FF62CA0D47C0007F120 /* Network VM.swift in Sources */,
+				F36F7FEF2CA0D4370007F120 /* Battery VM.swift in Sources */,
+				F36F7FF02CA0D4370007F120 /* Battery Level.swift in Sources */,
+				F36F80002CA0D4B90007F120 /* Processor Specs.swift in Sources */,
+				F36F80012CA0D4B90007F120 /* Current Process.swift in Sources */,
+				F36F80022CA0D4B90007F120 /* CPU Usage Chart.swift in Sources */,
+				F36F80212CA0D54C0007F120 /* Nav Extension.swift in Sources */,
+				F36F80222CA0D54C0007F120 /* Nav Destinations.swift in Sources */,
+				F36F80232CA0D54C0007F120 /* Nav State.swift in Sources */,
+				F36F800A2CA0D4DE0007F120 /* Pressure VM.swift in Sources */,
+				F36F80192CA0D5200007F120 /* Camera Test.swift in Sources */,
+				F36F800B2CA0D4DE0007F120 /* Magnetic Model.swift in Sources */,
+				F36F800C2CA0D4DE0007F120 /* Orientation VM.swift in Sources */,
+				F36F80182CA0D51B0007F120 /* Test List.swift in Sources */,
+				F36F800D2CA0D4DE0007F120 /* Activity VM.swift in Sources */,
+				F36F800E2CA0D4DE0007F120 /* Location VM.swift in Sources */,
+				F36F800F2CA0D4DE0007F120 /* Altitude VM.swift in Sources */,
+				F36F801B2CA0D52F0007F120 /* Color View.swift in Sources */,
+				F36F801C2CA0D52F0007F120 /* Color Test List.swift in Sources */,
+				F36F80102CA0D4DE0007F120 /* Magnetic VM.swift in Sources */,
+				F36F80112CA0D4DE0007F120 /* Magnetic Field Data.swift in Sources */,
+				F36F80032CA0D4B90007F120 /* Processor VM.swift in Sources */,
+				F36F80042CA0D4B90007F120 /* GPU Families.swift in Sources */,
+				F36F7FF12CA0D4370007F120 /* Battery State.swift in Sources */,
+				F36F7FE62CA0D0CF0007F120 /* Home View.swift in Sources */,
+				F36F7FE92CA0D2190007F120 /* App VM.swift in Sources */,
+				F36F7FE32CA0D0740007F120 /* Messages VM.swift in Sources */,
+				F36F7FF22CA0D4420007F120 /* Display View.swift in Sources */,
+				F36F7FF32CA0D4420007F120 /* Display VM.swift in Sources */,
+				F36F7FE72CA0D1FA0007F120 /* Specs Link.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F36FBCAD2C9449A200F5E174 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1133,7 +1390,6 @@
 				F3E7EC782C67B985008CD17B /* List Link.swift in Sources */,
 				F3E7EC792C67B985008CD17B /* Activity VM.swift in Sources */,
 				F3E7EC7A2C67B985008CD17B /* Device Specs.swift in Sources */,
-				F3D1E7A42C9CC898000C81FF /* Spec Card.swift in Sources */,
 				F3D1E79E2C9CC262000C81FF /* Camera View.swift in Sources */,
 				F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */,
 				F36FBC682C93542700F5E174 /* Processor VM.swift in Sources */,
@@ -1237,10 +1493,13 @@
 				F33FEE5D2C98386E00214288 /* Param.swift in Sources */,
 				F33FEE5A2C982FF000214288 /* System Report VM.swift in Sources */,
 				F3F85F112C962C4600AE0A1D /* macOS App.swift in Sources */,
+				F317334C2CA1D57800CFA041 /* Background Blur.swift in Sources */,
+				F317334E2CA1D61B00CFA041 /* Nav Link.swift in Sources */,
 				F3F85F212C962CBD00AE0A1D /* App Container.swift in Sources */,
 				F33FEE582C982EC200214288 /* Nav Links.swift in Sources */,
 				F3F85F252C962E7200AE0A1D /* Battery VM.swift in Sources */,
 				F3F85F2D2C96455300AE0A1D /* Hardware Specs.swift in Sources */,
+				F3B7098B2CA1DD4F006ECAD1 /* Version View.swift in Sources */,
 				F33FEE5F2C9838AE00214288 /* Spec Item.swift in Sources */,
 				F3F85F232C962CE600AE0A1D /* Battery Specs.swift in Sources */,
 				F3F85F2F2C9645AF00AE0A1D /* Hardware VM.swift in Sources */,
@@ -1258,6 +1517,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F36F7FD82CA0CFE00007F120 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F36F7FCA2CA0CFDF0007F120 /* iMessage */;
+			targetProxy = F36F7FD72CA0CFE00007F120 /* PBXContainerItemProxy */;
+		};
 		F36FBCBD2C9449A300F5E174 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F36FBCB02C9449A200F5E174 /* watchOS */;
@@ -1271,6 +1535,75 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		F36F7FDC2CA0CFE00007F120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = iMessage/iMessage.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iMessage/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
+				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "This permission is required in order to test UWB capabilities";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.iMessage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited) EXTENSION";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F36F7FDD2CA0CFE00007F120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = iMessage/iMessage.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iMessage/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
+				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "This permission is required in order to test UWB capabilities";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.iMessage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = EXTENSION;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		F36FBCC02C9449A300F5E174 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1278,7 +1611,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = watchOS/watchOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1293,7 +1626,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1312,7 +1645,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = watchOS/watchOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1327,7 +1660,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1347,7 +1680,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = visionOS/visionOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1358,7 +1691,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = xros;
@@ -1377,7 +1710,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = visionOS/visionOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1388,7 +1721,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = xros;
@@ -1458,6 +1791,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -1512,6 +1846,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
@@ -1520,9 +1855,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Device Specs/Device_Specs.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Device Specs/Device Specs.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -1550,7 +1885,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -1568,9 +1903,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Device Specs/Device_Specs.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Device Specs/Device Specs.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -1598,7 +1933,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -1617,7 +1952,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1630,7 +1965,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -1647,7 +1982,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1660,7 +1995,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -1680,7 +2015,7 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -1694,7 +2029,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1711,7 +2046,7 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -1725,7 +2060,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1775,6 +2110,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F36F7FDB2CA0CFE00007F120 /* Build configuration list for PBXNativeTarget "iMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F36F7FDC2CA0CFE00007F120 /* Debug */,
+				F36F7FDD2CA0CFE00007F120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F36FBCC22C9449A300F5E174 /* Build configuration list for PBXNativeTarget "watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1853,8 +2197,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/ScrechKit";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 		F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
@@ -1869,6 +2213,21 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		F357214C2C98584100967ACA /* ScrechCam */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */;
+			productName = ScrechCam;
+		};
+		F36F7FEA2CA0D23D0007F120 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F36F7FEC2CA0D2400007F120 /* DeviceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
+			productName = DeviceKit;
+		};
+		F36F802A2CA0D5E90007F120 /* ScrechCam */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */;
 			productName = ScrechCam;

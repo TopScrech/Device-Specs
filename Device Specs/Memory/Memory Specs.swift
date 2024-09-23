@@ -6,15 +6,15 @@ struct MemorySpecs: View {
     var body: some View {
         List {
             Section("RAM") {
-                ListParameter("Total RAM", parameter: vm.totalRam)
-                ListParameter("Used RAM", parameter: vm.usedRam)
-                ListParameter("Free RAM", parameter: vm.freeRam)
+                ListParam("Total RAM", param: vm.totalRam)
+                ListParam("Used RAM", param: vm.usedRam)
+                ListParam("Free RAM", param: vm.freeRam)
             }
             
             Section("Storage") {
-                ListParameter("Total storage", parameter: vm.totalDisk)
-                ListParameter("Used storage", parameter: vm.usedDisk)
-                ListParameter("Free storage", parameter: vm.freeDisk)
+                ListParam("Total storage", param: vm.totalDisk)
+                ListParam("Used storage", param: vm.usedDisk)
+                ListParam("Free storage", param: vm.freeDisk)
             }
         }
         .navigationTitle("Memory")

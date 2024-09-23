@@ -6,17 +6,17 @@ struct NetworkSpecs: View {
     
     var body: some View {
         List {
-            ListParameter("Public IP address", parameter: network.publicIp)
+            ListParam("Public IP address", param: network.publicIp)
             
-            ListParameter("Network interface", parameter: network.networkinterface)
+            ListParam("Network interface", param: network.networkinterface)
             
 #warning("Router differs from settings")
-            ListParameter("Router", parameter: network.router)
+            ListParam("Router", param: network.router)
             
-            ListParameter("Subnet mask", parameter: network.subnetMask)
+            ListParam("Subnet mask", param: network.subnetMask)
             
             Section {
-                ListParameter("Network type", parameter: connectivity.type)
+                ListParam("Network type", param: connectivity.type)
             }
         }
         .navigationTitle("Network")
