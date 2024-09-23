@@ -18,6 +18,10 @@ final class DeviceVM {
     var isForceTouchAvailable = ""
     let deviceName = Device.current.name ?? "-"
     
+    var internalName: String {
+        getInternalDeviceName() ?? "-"
+    }
+    
 #warning("Finish")
     //    var deviceIcon: String {
     //        switch Device.current.name {
@@ -47,6 +51,14 @@ final class DeviceVM {
         }
 #else
         "No"
+#endif
+    }
+    
+    var vandorId: String {
+#if os(watchOS)
+        WKInterfaceDevice.current().identifierForVendor?.uuidString ?? "-"
+#else
+        UIDevice.current.identifierForVendor?.uuidString ?? "-"
 #endif
     }
     

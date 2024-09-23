@@ -90,6 +90,12 @@
 		F36F802B2CA0D5E90007F120 /* ScrechCam in Frameworks */ = {isa = PBXBuildFile; productRef = F36F802A2CA0D5E90007F120 /* ScrechCam */; };
 		F36F802D2CA0D6090007F120 /* Fake Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F802C2CA0D6090007F120 /* Fake Home View.swift */; };
 		F36F802F2CA0E9AF0007F120 /* Torch Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43AE2C998759009820F6 /* Torch Test.swift */; };
+		F36F803B2CA170870007F120 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F36F803A2CA170870007F120 /* Localizable.xcstrings */; };
+		F36F803C2CA170870007F120 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F36F803A2CA170870007F120 /* Localizable.xcstrings */; };
+		F36F803D2CA170870007F120 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F36F803A2CA170870007F120 /* Localizable.xcstrings */; };
+		F36F803E2CA170870007F120 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F36F803A2CA170870007F120 /* Localizable.xcstrings */; };
+		F36F803F2CA170870007F120 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F36F803A2CA170870007F120 /* Localizable.xcstrings */; };
+		F36F80402CA170870007F120 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F36F803A2CA170870007F120 /* Localizable.xcstrings */; };
 		F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
 		F36FBC4D2C9319D600F5E174 /* Connectivity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Connectivity VM.swift */; };
 		F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
@@ -343,6 +349,7 @@
 		F36F80282CA0D5CD0007F120 /* UWB Test View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UWB Test View.swift"; sourceTree = "<group>"; };
 		F36F802C2CA0D6090007F120 /* Fake Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fake Home View.swift"; sourceTree = "<group>"; };
 		F36F802E2CA0D9530007F120 /* iMessage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iMessage.entitlements; sourceTree = "<group>"; };
+		F36F803A2CA170870007F120 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F36FBC4A2C93127000F5E174 /* visionOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = visionOS.entitlements; sourceTree = "<group>"; };
 		F36FBC552C931C1000F5E174 /* Sensors View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensors View.swift"; sourceTree = "<group>"; };
 		F36FBC5D2C931C7500F5E174 /* Orientation VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Orientation VM.swift"; sourceTree = "<group>"; };
@@ -725,6 +732,7 @@
 				F3E7EC412C676A14008CD17B /* Assets.xcassets */,
 				F3E7EC432C676A14008CD17B /* Device Specs.entitlements */,
 				F3F85E8A2C94529A00AE0A1D /* Device-Specs-Info.plist */,
+				F36F803A2CA170870007F120 /* Localizable.xcstrings */,
 				F3E7EC4D2C67B985008CD17B /* Device Info.swift */,
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
 				F3D1E7982C9C8444000C81FF /* Specs Link.swift */,
@@ -1116,6 +1124,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = F3E7EC312C676A13008CD17B;
 			minimizedProjectReferenceProxies = 1;
@@ -1145,6 +1154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36F80402CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F36F7FD52CA0CFE00007F120 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1155,6 +1165,7 @@
 			files = (
 				F35279552C98DCB600AF581C /* Assets.xcassets in Resources */,
 				F3F85E8B2C94529A00AE0A1D /* Device-Specs-Info.plist in Resources */,
+				F36F803C2CA170870007F120 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1162,6 +1173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36F803D2CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F36FBC732C942F7600F5E174 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1170,6 +1182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36F803B2CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1178,6 +1191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36F803E2CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F3F85ED42C94AF5B00AE0A1D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1186,6 +1200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36F803F2CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F3F85F152C962C4700AE0A1D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1764,6 +1779,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -1818,6 +1834,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};

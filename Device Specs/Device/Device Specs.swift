@@ -24,20 +24,12 @@ struct DeviceSpecs: View {
             //                //                }
             //            }
             
-            ListParam("Device", param: "\(vm.deviceIdentifier)")
+            ListParam("Device", param: vm.deviceIdentifier)
             ListParam("Identifier", param: Device.identifier)
-            ListParam("Name", param: "\(vm.deviceName)")
-            ListParam("Internal name", param: vm.getInternalDeviceName() ?? "-")
+            ListParam("Name", param: vm.deviceName)
+            ListParam("Internal name", param: vm.internalName)
             
-#if os(watchOS)
-            if let vendorId = WKInterfaceDevice.current().identifierForVendor?.uuidString {
-                ListParam("Identifier for vendor", param: vendorId)
-            }
-#else
-            if let vendorId = UIDevice.current.identifierForVendor?.uuidString {
-                ListParam("Identifier for vendor", param: vendorId)
-            }
-#endif
+            ListParam("Identifier for vendor", param: vm.vandorId)
             
 #warning("idfa")
             //                let idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
