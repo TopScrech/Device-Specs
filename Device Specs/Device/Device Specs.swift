@@ -22,11 +22,26 @@ struct DeviceSpecs: View {
             }
             
             Section("Capabilities") {
+#if !os(tvOS)
+                HStack {
+                    Text("Biometric authentication")
+                    
+                    Spacer()
+                    
+                    
+                    Image(systemName: vm.bioIcon)
+                        .title3()
+                        .foregroundStyle(.secondary)
+                    
+                    Text(vm.bioType)
+                        .foregroundStyle(.secondary)
+                }
+#endif
+                
 #if os(iOS)
                 ListParam("Wireless Charging", param: Device.current.supportsWirelessCharging ? "Yes" : "No")
                 ListParam("5G", param: Device.current.has5gSupport ? "Yes" : "No")
                 ListParam("Dynamic Island", param: Device.current.hasDynamicIsland ? "Yes" : "No")
-                ListParam("Face ID", param: Device.current.isFaceIDCapable ? "Yes" : "No")
                 ListParam("Force Touch", param: vm.isForceTouchAvailable)
 #endif
                 ListParam("Ultra Wideband", param: vm.isUltraWidebandAvailable)
