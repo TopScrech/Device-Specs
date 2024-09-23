@@ -46,6 +46,13 @@ struct DisplaySpecs: View {
         .refreshableTask {
             vm.fetchScreenResolution()
         }
+#if !os(watchOS)
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
+            withAnimation {
+                brightness = Double(Device.current.screenBrightness)
+            }
+        }
+#endif
     }
     
     private func setDeviceBrightness(_ level: CGFloat) {
