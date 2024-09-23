@@ -17,7 +17,7 @@ struct FakeHomeView: View {
     var body: some View {
         List {
             Section {
-                Button("Open in full screen") {
+                Button("Open in full screen to view all specs") {
                     isPresented = true
                 }
             }

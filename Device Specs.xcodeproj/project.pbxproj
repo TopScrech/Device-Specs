@@ -86,7 +86,7 @@
 		F36F80252CA0D5760007F120 /* Secondary Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F80242CA0D5760007F120 /* Secondary Container.swift */; };
 		F36F80262CA0D5A60007F120 /* Specs Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AF2C9D5D96000C81FF /* Specs Button.swift */; };
 		F36F80272CA0D5B00007F120 /* Device Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4D2C67B985008CD17B /* Device Info.swift */; };
-		F36F80292CA0D5CD0007F120 /* UWBTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F80282CA0D5CD0007F120 /* UWBTestView.swift */; };
+		F36F80292CA0D5CD0007F120 /* UWB Test View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F80282CA0D5CD0007F120 /* UWB Test View.swift */; };
 		F36F802B2CA0D5E90007F120 /* ScrechCam in Frameworks */ = {isa = PBXBuildFile; productRef = F36F802A2CA0D5E90007F120 /* ScrechCam */; };
 		F36F802D2CA0D6090007F120 /* Fake Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F802C2CA0D6090007F120 /* Fake Home View.swift */; };
 		F36F802F2CA0E9AF0007F120 /* Torch Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43AE2C998759009820F6 /* Torch Test.swift */; };
@@ -340,7 +340,7 @@
 		F36F7FE22CA0D0740007F120 /* Messages VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Messages VM.swift"; sourceTree = "<group>"; };
 		F36F7FE42CA0D0B50007F120 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F36F80242CA0D5760007F120 /* Secondary Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Secondary Container.swift"; sourceTree = "<group>"; };
-		F36F80282CA0D5CD0007F120 /* UWBTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWBTestView.swift; sourceTree = "<group>"; };
+		F36F80282CA0D5CD0007F120 /* UWB Test View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UWB Test View.swift"; sourceTree = "<group>"; };
 		F36F802C2CA0D6090007F120 /* Fake Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fake Home View.swift"; sourceTree = "<group>"; };
 		F36F802E2CA0D9530007F120 /* iMessage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iMessage.entitlements; sourceTree = "<group>"; };
 		F36FBC4A2C93127000F5E174 /* visionOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = visionOS.entitlements; sourceTree = "<group>"; };
@@ -578,13 +578,13 @@
 				F36F802E2CA0D9530007F120 /* iMessage.entitlements */,
 				F36F7FCF2CA0CFDF0007F120 /* Messages VC.swift */,
 				F36F7FE02CA0D04C0007F120 /* App Container.swift */,
+				F36F80242CA0D5760007F120 /* Secondary Container.swift */,
 				F36F7FD42CA0CFE00007F120 /* Assets.xcassets */,
 				F36F7FD62CA0CFE00007F120 /* Info.plist */,
 				F36F7FE22CA0D0740007F120 /* Messages VM.swift */,
 				F36F802C2CA0D6090007F120 /* Fake Home View.swift */,
 				F36F7FE42CA0D0B50007F120 /* Home View.swift */,
-				F36F80282CA0D5CD0007F120 /* UWBTestView.swift */,
-				F36F80242CA0D5760007F120 /* Secondary Container.swift */,
+				F36F80282CA0D5CD0007F120 /* UWB Test View.swift */,
 			);
 			path = iMessage;
 			sourceTree = "<group>";
@@ -1234,7 +1234,7 @@
 				F36F80202CA0D5330007F120 /* MCP Session.swift in Sources */,
 				F36F7FF92CA0D4830007F120 /* Camera VM.swift in Sources */,
 				F36F7FFA2CA0D4830007F120 /* Camera Model.swift in Sources */,
-				F36F80292CA0D5CD0007F120 /* UWBTestView.swift in Sources */,
+				F36F80292CA0D5CD0007F120 /* UWB Test View.swift in Sources */,
 				F36F7FFB2CA0D4830007F120 /* Camera View.swift in Sources */,
 				F36F7FFC2CA0D4830007F120 /* Cameras Specs.swift in Sources */,
 				F36F7FF62CA0D47C0007F120 /* Network VM.swift in Sources */,
