@@ -799,8 +799,8 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC5A2C67B985008CD17B /* Battery Specs.swift */,
-				F3D1E7822C9C0D14000C81FF /* Battery State.swift */,
 				F3D1E77E2C9C0CD3000C81FF /* Battery Level.swift */,
+				F3D1E7822C9C0D14000C81FF /* Battery State.swift */,
 				F3E7EC5B2C67B985008CD17B /* Battery VM.swift */,
 			);
 			path = Battery;
