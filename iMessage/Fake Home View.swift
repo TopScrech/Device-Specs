@@ -5,12 +5,12 @@ struct FakeHomeView: View {
     
     @State private var system = SystemVM()
     @State private var device = DeviceVM()
-    @State private var battery = BatteryVM()
+    @State private var display = DisplayVM()
     @State private var processor = ProcessorVM()
     @State private var memory = MemoryVM()
-    @State private var display = DisplayVM()
-    @State private var app = AppVM()
+    @State private var battery = BatteryVM()
     @State private var connectivity = ConnectivityVM()
+    @State private var app = AppVM()
     
     @State private var isPresented = false
     
@@ -62,12 +62,12 @@ struct FakeHomeView: View {
     NavigationView {
         HomeView()
     }
+    .environment(DeviceVM())
+    .environment(SystemVM())
+    .environment(DisplayVM())
     .environment(BatteryVM())
     .environment(ProcessorVM())
-    .environment(DisplayVM())
-    .environment(SystemVM())
-    .environment(DeviceVM())
     .environment(MemoryVM())
-    .environment(AppVM())
     .environment(ConnectivityVM())
+    .environment(AppVM())
 }
