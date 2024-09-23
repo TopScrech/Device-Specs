@@ -13,11 +13,11 @@ struct DisplaySpecs: View {
     var body: some View {
         List {
             if let ppi = Device.current.ppi?.description {
-                ListParameter("PPI", parameter: ppi)
+                ListParam("PPI", param: ppi)
             }
             
             Section {
-                ListParameter("Brightness", parameter: "\(Int(brightness))%")
+                ListParam("Brightness", param: "\(Int(brightness))%")
             }
         }
         .navigationTitle("Display")

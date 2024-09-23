@@ -7,18 +7,18 @@ struct NetworkSpecs: View {
     var body: some View {
 #warning("Router differs from settings")
         List {
-            ListParameter("Public IP address", parameter: network.publicIp)
+            ListParam("Public IP address", param: network.publicIp)
             
-            ListParameter("Network interface", parameter: network.networkinterface)
+            ListParam("Network interface", param: network.networkinterface)
             
-            ListParameter("Router", parameter: network.router)
+            ListParam("Router", param: network.router)
             
-            ListParameter("Subnet mask", parameter: network.subnetMask)
+            ListParam("Subnet mask", param: network.subnetMask)
             
             Section {
-                ListParameter("Network type", parameter: connectivity.type)
-                ListParameter("SSID", parameter: connectivity.ssid)
-                ListParameter("BSSID", parameter: connectivity.bssid)
+                ListParam("Network type", param: connectivity.type)
+                ListParam("SSID", param: connectivity.ssid)
+                ListParam("BSSID", param: connectivity.bssid)
             }
         }
         .navigationTitle("Network")

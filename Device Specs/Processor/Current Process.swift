@@ -5,19 +5,19 @@ struct CurrentProcess: View {
     
     var body: some View {
         List {
-            ListParameter("Process name", parameter: vm.processName)
+            ListParam("Process name", param: vm.processName)
             
-            ListParameter("Process identifier", parameter: vm.processIdentifier)
+            ListParam("Process identifier", param: vm.processIdentifier)
             
-            ListParameter("Globally unique string", parameter: vm.globallyUniqueString)
+            ListParam("Globally unique string", param: vm.globallyUniqueString)
             
-            ListParameter("Arguments", parameter: vm.arguments)
+            ListParam("Arguments", param: vm.arguments)
             
-            ListParameter("Environment", parameter: vm.environment)
+            ListParam("Environment", param: vm.environment)
 #if os(iOS)
-            ListParameter("Performance profile", parameter: vm.performanceProfile)
+            ListParam("Performance profile", param: vm.performanceProfile)
             
-            ListParameter("Sertified for iPhone performance gaming", parameter: vm.sertifiedForIphonePerformanceGaming)
+            ListParam("Sertified for iPhone performance gaming", param: vm.sertifiedForIphonePerformanceGaming)
 #endif
         }
         .navigationTitle("Current process")

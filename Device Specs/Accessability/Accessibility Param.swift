@@ -1,12 +1,12 @@
-import Foundation
+import SwiftUI
 
 struct AccessibilityParam: Identifiable {
     let id = UUID()
     
-    let name: String
+    let name: LocalizedStringKey
     let isEnabled: Bool
     
-    init(_ name: String, isEnabled: Bool) {
+    init(_ name: LocalizedStringKey, isEnabled: Bool) {
         self.name = name
         self.isEnabled = isEnabled
     }

@@ -5,18 +5,18 @@ struct SystemSpecs: View {
     
     var body: some View {
         List {
-            ListParameter("Operating system", parameter: vm.operatingSystem)
-            ListParameter("Build number", parameter: vm.buildNumber)
-            ListParameter("Multitasking", parameter: vm.multitaskingSupported)
+            ListParam("Operating system", param: vm.operatingSystem)
+            ListParam("Build number", param: vm.buildNumber)
+            ListParam("Multitasking", param: vm.multitaskingSupported)
             
             Section("Current session") {
-                ListParameter("Active time", parameter: vm.fetchSystemActiveTime())
-                ListParameter("System uptime", parameter: vm.fetchSystemUptime())
+                ListParam("Active time", param: vm.fetchSystemActiveTime())
+                ListParam("System uptime", param: vm.fetchSystemUptime())
             }
             
             Section("Language & Region") {
-                ListParameter("System region", parameter: vm.region)
-                ListParameter("System language", parameter: vm.language)
+                ListParam("System region", param: vm.region)
+                ListParam("System language", param: vm.language)
             }
         }
         .navigationTitle("System")
