@@ -6,9 +6,9 @@ struct NetworkSpecs: View {
     
     var body: some View {
         List {
-            ListParameter("Public IP address", parameter: network.publicIp)
+            ListParam("Public IP address", param: network.publicIp)
             
-            ListParameter("Network type", parameter: connectivity.type)
+            ListParam("Network type", param: connectivity.type)
         }
         .navigationTitle("Network")
         .refreshableTask {

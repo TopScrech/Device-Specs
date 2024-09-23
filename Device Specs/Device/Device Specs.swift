@@ -24,39 +24,39 @@ struct DeviceSpecs: View {
             //                //                }
             //            }
             
-            ListParameter("Device", parameter: "\(vm.deviceIdentifier)")
-            ListParameter("Identifier", parameter: Device.identifier)
-            ListParameter("Name", parameter: "\(vm.deviceName)")
-            ListParameter("Internal name", parameter: vm.getInternalDeviceName() ?? "-")
+            ListParam("Device", param: "\(vm.deviceIdentifier)")
+            ListParam("Identifier", param: Device.identifier)
+            ListParam("Name", param: "\(vm.deviceName)")
+            ListParam("Internal name", param: vm.getInternalDeviceName() ?? "-")
             
 #if os(watchOS)
             if let vendorId = WKInterfaceDevice.current().identifierForVendor?.uuidString {
-                ListParameter("Identifier for vendor", parameter: vendorId)
+                ListParam("Identifier for vendor", param: vendorId)
             }
 #else
             if let vendorId = UIDevice.current.identifierForVendor?.uuidString {
-                ListParameter("Identifier for vendor", parameter: vendorId)
+                ListParam("Identifier for vendor", param: vendorId)
             }
 #endif
             
 #warning("idfa")
             //                let idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
-            //                ListParameter("Advertising Identifier (IDFA)", parameter: idfa)
+            //                ListParam("Advertising Identifier (IDFA)", param: idfa)
             
             Section {
-                ListParameter("Thermal state", parameter: vm.thermalState)
+                ListParam("Thermal state", param: vm.thermalState)
             }
             
             Section("Capabilities") {
 #if os(iOS)
-                ListParameter("Wireless Charging", parameter: Device.current.supportsWirelessCharging ? "Yes" : "No")
-                ListParameter("5G", parameter: Device.current.has5gSupport ? "Yes" : "No")
-                ListParameter("Dynamic Island", parameter: Device.current.hasDynamicIsland ? "Yes" : "No")
-                ListParameter("Face ID", parameter: Device.current.isFaceIDCapable ? "Yes" : "No")
-                ListParameter("Force Touch", parameter: vm.isForceTouchAvailable)
+                ListParam("Wireless Charging", param: Device.current.supportsWirelessCharging ? "Yes" : "No")
+                ListParam("5G", param: Device.current.has5gSupport ? "Yes" : "No")
+                ListParam("Dynamic Island", param: Device.current.hasDynamicIsland ? "Yes" : "No")
+                ListParam("Face ID", param: Device.current.isFaceIDCapable ? "Yes" : "No")
+                ListParam("Force Touch", param: vm.isForceTouchAvailable)
 #endif
-                ListParameter("Ultra Wideband", parameter: vm.isUltraWidebandAvailable)
-                //                ListParameter("Bluetooth LE", parameter: bluetooth.isBluetoothLeEnabled)
+                ListParam("Ultra Wideband", param: vm.isUltraWidebandAvailable)
+                //                ListParam("Bluetooth LE", param: bluetooth.isBluetoothLeEnabled)
             }
             
 #if os(watchOS)

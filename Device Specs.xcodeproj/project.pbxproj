@@ -48,7 +48,6 @@
 		F36F7FFA2CA0D4830007F120 /* Camera Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7962C9C5A0E000C81FF /* Camera Model.swift */; };
 		F36F7FFB2CA0D4830007F120 /* Camera View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E79D2C9CC262000C81FF /* Camera View.swift */; };
 		F36F7FFC2CA0D4830007F120 /* Cameras Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC572C67B985008CD17B /* Cameras Specs.swift */; };
-		F36F7FFD2CA0D48C0007F120 /* Spec Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A32C9CC898000C81FF /* Spec Card.swift */; };
 		F36F7FFE2CA0D4B40007F120 /* Memory Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5D2C67B985008CD17B /* Memory Specs.swift */; };
 		F36F7FFF2CA0D4B40007F120 /* Memory VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5E2C67B985008CD17B /* Memory VM.swift */; };
 		F36F80002CA0D4B90007F120 /* Processor Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC632C9353FF00F5E174 /* Processor Specs.swift */; };
@@ -90,6 +89,7 @@
 		F36F80292CA0D5CD0007F120 /* UWBTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F80282CA0D5CD0007F120 /* UWBTestView.swift */; };
 		F36F802B2CA0D5E90007F120 /* ScrechCam in Frameworks */ = {isa = PBXBuildFile; productRef = F36F802A2CA0D5E90007F120 /* ScrechCam */; };
 		F36F802D2CA0D6090007F120 /* Fake Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F802C2CA0D6090007F120 /* Fake Home View.swift */; };
+		F36F802F2CA0E9AF0007F120 /* Torch Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43AE2C998759009820F6 /* Torch Test.swift */; };
 		F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC612C67B985008CD17B /* Network View.swift */; };
 		F36FBC4D2C9319D600F5E174 /* Connectivity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Connectivity VM.swift */; };
 		F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC632C67B985008CD17B /* Network VM.swift */; };
@@ -146,7 +146,6 @@
 		F3D1E79E2C9CC262000C81FF /* Camera View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E79D2C9CC262000C81FF /* Camera View.swift */; };
 		F3D1E7A02C9CC2AE000C81FF /* Camera Formats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E79F2C9CC2AE000C81FF /* Camera Formats.swift */; };
 		F3D1E7A22C9CC304000C81FF /* Format Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A12C9CC304000C81FF /* Format Card.swift */; };
-		F3D1E7A42C9CC898000C81FF /* Spec Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A32C9CC898000C81FF /* Spec Card.swift */; };
 		F3D1E7A62C9CD453000C81FF /* Current Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A52C9CD453000C81FF /* Current Process.swift */; };
 		F3D1E7A72C9CD453000C81FF /* Current Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A52C9CD453000C81FF /* Current Process.swift */; };
 		F3D1E7A82C9CD453000C81FF /* Current Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7A52C9CD453000C81FF /* Current Process.swift */; };
@@ -373,7 +372,6 @@
 		F3D1E79D2C9CC262000C81FF /* Camera View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera View.swift"; sourceTree = "<group>"; };
 		F3D1E79F2C9CC2AE000C81FF /* Camera Formats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera Formats.swift"; sourceTree = "<group>"; };
 		F3D1E7A12C9CC304000C81FF /* Format Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Format Card.swift"; sourceTree = "<group>"; };
-		F3D1E7A32C9CC898000C81FF /* Spec Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spec Card.swift"; sourceTree = "<group>"; };
 		F3D1E7A52C9CD453000C81FF /* Current Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Current Process.swift"; sourceTree = "<group>"; };
 		F3D1E7AA2C9D4BFA000C81FF /* App Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Specs.swift"; sourceTree = "<group>"; };
 		F3D1E7AD2C9D5BF8000C81FF /* App VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App VM.swift"; sourceTree = "<group>"; };
@@ -731,7 +729,6 @@
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
 				F3D1E7982C9C8444000C81FF /* Specs Link.swift */,
 				F3D1E7AF2C9D5D96000C81FF /* Specs Button.swift */,
-				F3D1E7A32C9CC898000C81FF /* Spec Card.swift */,
 				F3E7EC4F2C67B985008CD17B /* List Link.swift */,
 				F3E7EC502C67B985008CD17B /* Bluetooth VM.swift */,
 				F3E7EC532C67B985008CD17B /* Device */,
@@ -1215,6 +1212,7 @@
 				F36F80152CA0D4FF0007F120 /* Device Specs.swift in Sources */,
 				F36F80132CA0D4F80007F120 /* System Specs.swift in Sources */,
 				F36F7FFE2CA0D4B40007F120 /* Memory Specs.swift in Sources */,
+				F36F802F2CA0E9AF0007F120 /* Torch Test.swift in Sources */,
 				F36F7FFF2CA0D4B40007F120 /* Memory VM.swift in Sources */,
 				F36F7FE12CA0D04C0007F120 /* App Container.swift in Sources */,
 				F36F7FEE2CA0D4370007F120 /* Battery Specs.swift in Sources */,
@@ -1240,7 +1238,6 @@
 				F36F7FFB2CA0D4830007F120 /* Camera View.swift in Sources */,
 				F36F7FFC2CA0D4830007F120 /* Cameras Specs.swift in Sources */,
 				F36F7FF62CA0D47C0007F120 /* Network VM.swift in Sources */,
-				F36F7FFD2CA0D48C0007F120 /* Spec Card.swift in Sources */,
 				F36F7FEF2CA0D4370007F120 /* Battery VM.swift in Sources */,
 				F36F7FF02CA0D4370007F120 /* Battery Level.swift in Sources */,
 				F36F80002CA0D4B90007F120 /* Processor Specs.swift in Sources */,
@@ -1369,7 +1366,6 @@
 				F3E7EC782C67B985008CD17B /* List Link.swift in Sources */,
 				F3E7EC792C67B985008CD17B /* Activity VM.swift in Sources */,
 				F3E7EC7A2C67B985008CD17B /* Device Specs.swift in Sources */,
-				F3D1E7A42C9CC898000C81FF /* Spec Card.swift in Sources */,
 				F3D1E79E2C9CC262000C81FF /* Camera View.swift in Sources */,
 				F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */,
 				F36FBC682C93542700F5E174 /* Processor VM.swift in Sources */,
@@ -2172,8 +2168,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/ScrechKit";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 		F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */ = {

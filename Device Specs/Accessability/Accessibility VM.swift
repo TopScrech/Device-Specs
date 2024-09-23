@@ -11,7 +11,7 @@ final class AccessibilityVM {
             let prompt = filter.lowercased()
             
             return accessibilityParams.filter {
-                $0.name.lowercased().contains(prompt)
+                "\($0.name)".lowercased().contains(prompt)
             }
         }
     }

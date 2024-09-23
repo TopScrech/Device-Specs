@@ -1,27 +1,4 @@
-import SwiftUI
-
-fileprivate struct ListSpec: View {
-    private let name: LocalizedStringKey
-    private let icon: String
-    private let spec: String
-    
-    init(_ name: LocalizedStringKey, icon: String, spec: String = "") {
-        self.name = name
-        self.icon = icon
-        self.spec = spec
-    }
-    
-    var body: some View {
-        HStack {
-            Label(name, systemImage: icon)
-            
-            Spacer()
-            
-            Text(spec)
-        }
-        .foregroundStyle(.foreground)
-    }
-}
+import ScrechKit
 
 struct FakeHomeView: View {
     @State private var navState = NavState()
@@ -45,33 +22,33 @@ struct FakeHomeView: View {
                 }
             }
             
-            ListSpec("Device", icon: "info.circle", spec: device.deviceIdentifier)
+            ListParam("Device", icon: "info.circle", param: device.deviceIdentifier)
             
-            ListSpec("System", icon: "apple.terminal", spec: system.operatingSystem)
+            ListParam("System", icon: "apple.terminal", param: system.operatingSystem)
             
-            ListSpec("Display", icon: "iphone", spec: display.diagonalSize)
+            ListParam("Display", icon: "iphone", param: display.diagonalSize)
             
-            ListSpec("Processor", icon: "cpu", spec: processor.cpu)
+            ListParam("Processor", icon: "cpu", param: processor.cpu)
             
-            ListSpec("Memory", icon: "memorychip", spec: memory.totalRamAndDisk)
+            ListParam("Memory", icon: "memorychip", param: memory.totalRamAndDisk)
             
-            ListSpec("Battery", icon: "battery.100percent.bolt", spec: battery.batteryLevel)
+            ListParam("Battery", icon: "battery.100percent.bolt", param: battery.batteryLevel)
                 .symbolRenderingMode(.multicolor)
             
-            ListSpec("Network", icon: "network", spec: connectivity.type)
+            ListParam("Network", icon: "network", param: connectivity.type)
             
-            ListSpec("Cameras", icon: "camera")
+            ListParam("Cameras", icon: "camera")
             
-            ListSpec("Sensors", icon: "barometer")
+            ListParam("Sensors", icon: "barometer")
             
-            ListSpec("Accessibility", icon: "accessibility")
+            ListParam("Accessibility", icon: "accessibility")
             
             Section {
-                ListSpec("Tests", icon: "testtube.2")
+                ListParam("Tests", icon: "testtube.2")
             }
             
             Section {
-                ListSpec("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild)
+                ListParam("About", icon: "questionmark.square.dashed", param: app.versionAndBuild)
             }
         }
         .fullScreenCover(isPresented: $isPresented) {

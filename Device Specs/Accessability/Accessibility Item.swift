@@ -12,10 +12,10 @@ struct AccessibilityItem: View {
         Button {
             
         } label: {
-            ListParameter(param.name, parameter: param.text)
+            ListParam(param.name, param: param.text)
         }
 #else
-        ListParameter(param.name, parameter: param.text)
+        ListParam(param.name, param: param.text)
 #endif
     }
 }

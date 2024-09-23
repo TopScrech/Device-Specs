@@ -36,11 +36,11 @@ struct DeviceWatchInfo: View {
     
     var body: some View {
         Section("Watch Specific") {
-            ListParameter("Crown orientation", parameter: crownOrientation)
-            ListParameter("Water lock", parameter: WKInterfaceDevice.current().isWaterLockEnabled ? "Yes" : "No")
-            ListParameter("Layout direction", parameter: layoutDirection)
-            ListParameter("Water resistance rating", parameter: waterResistanceRating)
-            ListParameter("Wrist location", parameter: wristLocation)
+            ListParam("Crown orientation", param: crownOrientation)
+            ListParam("Water lock", param: WKInterfaceDevice.current().isWaterLockEnabled ? "Yes" : "No")
+            ListParam("Layout direction", param: layoutDirection)
+            ListParam("Water resistance rating", param: waterResistanceRating)
+            ListParam("Wrist location", param: wristLocation)
         }
     }
 }

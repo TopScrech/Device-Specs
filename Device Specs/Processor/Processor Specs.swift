@@ -7,15 +7,15 @@ struct ProcessorSpecs: View {
     var body: some View {
         List {
             Section("CPU") {
-                ListParameter("CPU", parameter: vm.cpu)
+                ListParam("CPU", param: vm.cpu)
                 
-                ListParameter("Architecture", parameter: vm.arch)
+                ListParam("Architecture", param: vm.arch)
                 
-                ListParameter("Core count", parameter: "\(vm.cores) (\(vm.activeCores) active)")
+                ListParam("Core count", param: "\(vm.cores) (\(vm.activeCores) active)")
                 
-                ListParameter("Host name", parameter: vm.hostName)
+                ListParam("Host name", param: vm.hostName)
                 
-                ListParameter("Thread count", parameter: vm.threadCount)
+                ListParam("Thread count", param: vm.threadCount)
                 
                 NavigationLink {
                     CurrentProcess()
@@ -28,10 +28,10 @@ struct ProcessorSpecs: View {
 #if !os(watchOS)
             Section("GPU") {
                 if let device = MTLCreateSystemDefaultDevice() {
-                    ListParameter("GPU", parameter: device.name)
-                    ListParameter("Architecture", parameter: device.architecture.name)
-                    ListParameter("Unified memory", parameter: device.hasUnifiedMemory ? "Yes" : "No")
-                    ListParameter("Supports raytracing", parameter: device.supportsRaytracing ? "Yes" : "No")
+                    ListParam("GPU", param: device.name)
+                    ListParam("Architecture", param: device.architecture.name)
+                    ListParam("Unified memory", param: device.hasUnifiedMemory ? "Yes" : "No")
+                    ListParam("Supports raytracing", param: device.supportsRaytracing ? "Yes" : "No")
                     
 #if os(tvOS)
                     NavigationLink("Supported GPU families") {

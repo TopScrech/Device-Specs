@@ -11,7 +11,7 @@ struct TorchTest: View {
                 Label("Flashlight", systemImage: torch.isTorchOn ? "flashlight.on.fill" : "flashlight.off.fill")
                     .foregroundStyle(.foreground)
             }
-#if !targetEnvironment(simulator)
+#if targetEnvironment(simulator)
             .disabled(true)
 #endif
         }

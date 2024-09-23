@@ -12,24 +12,24 @@ struct DisplaySpecs: View {
     
     var body: some View {
         List {
-            ListParameter("Screen resolution", parameter: vm.resolution)
+            ListParam("Screen resolution", param: vm.resolution)
             
-            ListParameter("Screen size", parameter: vm.diagonalSize)
+            ListParam("Screen size", param: vm.diagonalSize)
             
-            ListParameter("Aspect ratio", parameter: vm.aspectRatio)
+            ListParam("Aspect ratio", param: vm.aspectRatio)
             
-            ListParameter("Pixel density", parameter: vm.dencity)
+            ListParam("Pixel density", param: vm.dencity)
             
 #if !os(watchOS)
-            ListParameter("Refresh rate", parameter: vm.refreshRate)
+            ListParam("Refresh rate", param: vm.refreshRate)
 #endif
             
 #if os(iOS)
-            ListParameter("Rounded corners", parameter: vm.isRounded)
+            ListParam("Rounded corners", param: vm.isRounded)
 #endif
             
             Section {
-                ListParameter("Brightness", parameter: "\(Int(brightness))%")
+                ListParam("Brightness", param: "\(Int(brightness))%")
                 
 #if !os(watchOS) && !EXTENSION
                 Slider(value: $brightness, in: 0...100, step: 1) {

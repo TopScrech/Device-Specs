@@ -8,20 +8,20 @@ struct GPUFamilies: View {
     }
     
     var body: some View {
-        ListParameter("Apple 1", parameter: device.supportsFamily(.apple1) ? "Yes" : "No")
-        ListParameter("Apple 2", parameter: device.supportsFamily(.apple2) ? "Yes" : "No")
-        ListParameter("Apple 3", parameter: device.supportsFamily(.apple3) ? "Yes" : "No")
-        ListParameter("Apple 4", parameter: device.supportsFamily(.apple4) ? "Yes" : "No")
-        ListParameter("Apple 5", parameter: device.supportsFamily(.apple5) ? "Yes" : "No")
-        ListParameter("Apple 6", parameter: device.supportsFamily(.apple6) ? "Yes" : "No")
-        ListParameter("Apple 7", parameter: device.supportsFamily(.apple7) ? "Yes" : "No")
-        ListParameter("Apple 8", parameter: device.supportsFamily(.apple8) ? "Yes" : "No")
-        ListParameter("Apple 9", parameter: device.supportsFamily(.apple9) ? "Yes" : "No")
-        ListParameter("Common 1", parameter: device.supportsFamily(.common1) ? "Yes" : "No")
-        ListParameter("Common 2", parameter: device.supportsFamily(.common2) ? "Yes" : "No")
-        ListParameter("Common 3", parameter: device.supportsFamily(.common3) ? "Yes" : "No")
-        ListParameter("Mac 2", parameter: device.supportsFamily(.mac2) ? "Yes" : "No")
-        ListParameter("Metal 3", parameter: device.supportsFamily(.metal3) ? "Yes" : "No")
+        ListParam("Apple 1", param: device.supportsFamily(.apple1) ? "Yes" : "No")
+        ListParam("Apple 2", param: device.supportsFamily(.apple2) ? "Yes" : "No")
+        ListParam("Apple 3", param: device.supportsFamily(.apple3) ? "Yes" : "No")
+        ListParam("Apple 4", param: device.supportsFamily(.apple4) ? "Yes" : "No")
+        ListParam("Apple 5", param: device.supportsFamily(.apple5) ? "Yes" : "No")
+        ListParam("Apple 6", param: device.supportsFamily(.apple6) ? "Yes" : "No")
+        ListParam("Apple 7", param: device.supportsFamily(.apple7) ? "Yes" : "No")
+        ListParam("Apple 8", param: device.supportsFamily(.apple8) ? "Yes" : "No")
+        ListParam("Apple 9", param: device.supportsFamily(.apple9) ? "Yes" : "No")
+        ListParam("Common 1", param: device.supportsFamily(.common1) ? "Yes" : "No")
+        ListParam("Common 2", param: device.supportsFamily(.common2) ? "Yes" : "No")
+        ListParam("Common 3", param: device.supportsFamily(.common3) ? "Yes" : "No")
+        ListParam("Mac 2", param: device.supportsFamily(.mac2) ? "Yes" : "No")
+        ListParam("Metal 3", param: device.supportsFamily(.metal3) ? "Yes" : "No")
     }
 }
 
