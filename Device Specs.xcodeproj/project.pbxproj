@@ -121,6 +121,11 @@
 		F36FBCD02C944B5000F5E174 /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCCF2C944B5000F5E174 /* App Container.swift */; };
 		F36FBCD42C944DA200F5E174 /* Accessibility VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */; };
 		F3B7098B2CA1DD4F006ECAD1 /* Version View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B7098A2CA1DD4F006ECAD1 /* Version View.swift */; };
+		F3B709A12CA22E09006ECAD1 /* Locale List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A02CA22E09006ECAD1 /* Locale List.swift */; };
+		F3B709A22CA22E09006ECAD1 /* Locale List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A02CA22E09006ECAD1 /* Locale List.swift */; };
+		F3B709A32CA22E09006ECAD1 /* Locale List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A02CA22E09006ECAD1 /* Locale List.swift */; };
+		F3B709A42CA22E09006ECAD1 /* Locale List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A02CA22E09006ECAD1 /* Locale List.swift */; };
+		F3B709A52CA22E09006ECAD1 /* Locale List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A02CA22E09006ECAD1 /* Locale List.swift */; };
 		F3C3BDD42C92D8E000BF91EE /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
 		F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD52C92D8F600BF91EE /* App Container.swift */; };
 		F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD72C92D90700BF91EE /* Home View.swift */; };
@@ -370,6 +375,7 @@
 		F36FBCCF2C944B5000F5E174 /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility VM.swift"; sourceTree = "<group>"; };
 		F3B7098A2CA1DD4F006ECAD1 /* Version View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Version View.swift"; sourceTree = "<group>"; };
+		F3B709A02CA22E09006ECAD1 /* Locale List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale List.swift"; sourceTree = "<group>"; };
 		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C3BDCC2C92D87C00BF91EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs App.swift"; sourceTree = "<group>"; };
@@ -671,6 +677,7 @@
 			isa = PBXGroup;
 			children = (
 				F3D1E7872C9C12C2000C81FF /* System Specs.swift */,
+				F3B709A02CA22E09006ECAD1 /* Locale List.swift */,
 				F3D1E78C2C9C12D6000C81FF /* System VM.swift */,
 			);
 			path = System;
@@ -1284,6 +1291,7 @@
 				F36F80112CA0D4DE0007F120 /* Magnetic Field Data.swift in Sources */,
 				F36F80032CA0D4B90007F120 /* Processor VM.swift in Sources */,
 				F36F80042CA0D4B90007F120 /* GPU Families.swift in Sources */,
+				F3B709A52CA22E09006ECAD1 /* Locale List.swift in Sources */,
 				F36F7FF12CA0D4370007F120 /* Battery State.swift in Sources */,
 				F36F7FE62CA0D0CF0007F120 /* Home View.swift in Sources */,
 				F36F7FE92CA0D2190007F120 /* App VM.swift in Sources */,
@@ -1306,6 +1314,7 @@
 				F3D1E7852C9C0D14000C81FF /* Battery State.swift in Sources */,
 				F3D1E7C52C9D8041000C81FF /* Magnetic Field Data.swift in Sources */,
 				F3F85EA82C948A3300AE0A1D /* Memory VM.swift in Sources */,
+				F3B709A12CA22E09006ECAD1 /* Locale List.swift in Sources */,
 				F36F7FC52CA0CC110007F120 /* Device Specs App.swift in Sources */,
 				F3F85EB22C948C8A00AE0A1D /* Altitude VM.swift in Sources */,
 				F3F85EBF2C948F6300AE0A1D /* Color View.swift in Sources */,
@@ -1364,6 +1373,7 @@
 				F36FBC622C931E2600F5E174 /* AltitudeVM.swift in Sources */,
 				F3C3BDE32C92DBF700BF91EE /* Battery Specs.swift in Sources */,
 				F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */,
+				F3B709A32CA22E09006ECAD1 /* Locale List.swift in Sources */,
 				F3D1E7B72C9D611A000C81FF /* App VM.swift in Sources */,
 				F3D1E7B82C9D611A000C81FF /* App Specs.swift in Sources */,
 				F3D1E79A2C9C86AD000C81FF /* Specs Link.swift in Sources */,
@@ -1387,6 +1397,7 @@
 				F3F85E8E2C9452CB00AE0A1D /* Accessibility Param.swift in Sources */,
 				F3E7EC762C67B985008CD17B /* Test List.swift in Sources */,
 				F3E7EC772C67B985008CD17B /* Network View.swift in Sources */,
+				F3B709A42CA22E09006ECAD1 /* Locale List.swift in Sources */,
 				F3E7EC782C67B985008CD17B /* List Link.swift in Sources */,
 				F3E7EC792C67B985008CD17B /* Activity VM.swift in Sources */,
 				F3E7EC7A2C67B985008CD17B /* Device Specs.swift in Sources */,
@@ -1471,6 +1482,7 @@
 				F3F85F032C9587C400AE0A1D /* Network VM.swift in Sources */,
 				F3F85EF12C9580AD00AE0A1D /* Display VM.swift in Sources */,
 				F3F85EE42C957D4F00AE0A1D /* Test List.swift in Sources */,
+				F3B709A22CA22E09006ECAD1 /* Locale List.swift in Sources */,
 				F3F85EF62C95854E00AE0A1D /* Processor VM.swift in Sources */,
 				F3F85EF72C95854E00AE0A1D /* Processor Specs.swift in Sources */,
 				F3F85EF82C95854E00AE0A1D /* CPU Usage Chart.swift in Sources */,

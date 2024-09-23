@@ -14,10 +14,8 @@ struct SystemSpecs: View {
                 ListParam("System uptime", param: vm.fetchSystemUptime())
             }
             
-            Section("Language & Region") {
-                ListParam("System region", param: vm.region)
-                ListParam("System language", param: vm.language)
-            }
+            LocaleList()
+                .environment(vm)
         }
         .navigationTitle("System")
     }

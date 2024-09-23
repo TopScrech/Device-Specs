@@ -32,6 +32,12 @@
         }
       }
     },
+    "Alternate quotation begin delimiter" : {
+
+    },
+    "Alternate quotation end delimiter" : {
+
+    },
     "Altimeter" : {
       "localizations" : {
         "ru" : {
@@ -101,6 +107,9 @@
     "Assistive Touch" : {
 
     },
+    "Available numbering systems" : {
+
+    },
     "Back" : {
 
     },
@@ -151,6 +160,9 @@
     "Button Shapes" : {
 
     },
+    "Calendar" : {
+
+    },
     "Camera" : {
 
     },
@@ -173,6 +185,12 @@
 
     },
     "Closed Captioning" : {
+
+    },
+    "Collation" : {
+
+    },
+    "Collator identifier" : {
 
     },
     "Color space" : {
@@ -198,6 +216,12 @@
 
     },
     "Confidence" : {
+
+    },
+    "Containing region" : {
+
+    },
+    "Continent" : {
 
     },
     "Core" : {
@@ -232,6 +256,12 @@
     "Crown orientation" : {
 
     },
+    "Currency code" : {
+
+    },
+    "Currency symbol" : {
+
+    },
     "Current process" : {
 
     },
@@ -249,6 +279,9 @@
 
     },
     "Darker System Colors" : {
+
+    },
+    "Decimal separator" : {
 
     },
     "Device" : {
@@ -289,6 +322,9 @@
       "shouldTranslate" : false
     },
     "Firmware Version" : {
+
+    },
+    "First day of week" : {
 
     },
     "Flashlight" : {
@@ -338,6 +374,9 @@
     "Grayscale" : {
 
     },
+    "Grouping separator" : {
+
+    },
     "Guided Access" : {
 
     },
@@ -363,6 +402,9 @@
 
     },
     "Host name" : {
+
+    },
+    "Hour cycle" : {
 
     },
     "Identifier" : {
@@ -392,6 +434,9 @@
       }
     },
     "ISO" : {
+
+    },
+    "ISO region" : {
 
     },
     "Language & Region" : {
@@ -463,6 +508,9 @@
         }
       }
     },
+    "Metric system" : {
+
+    },
     "Model Information" : {
 
     },
@@ -498,6 +546,9 @@
 
     },
     "Network type" : {
+
+    },
+    "Numbering system" : {
 
     },
     "On/Off Switch Labels" : {
@@ -543,6 +594,9 @@
     "PPI" : {
 
     },
+    "Preferred languages" : {
+
+    },
     "Prefers Cross Fade Transitions" : {
 
     },
@@ -584,6 +638,12 @@
           }
         }
       }
+    },
+    "Quotation begin delimiter" : {
+
+    },
+    "Quotation end delimiter" : {
+
     },
     "RAM" : {
       "localizations" : {
@@ -715,6 +775,9 @@
     "Storage" : {
 
     },
+    "Subdivision" : {
+
+    },
     "Subnet mask" : {
       "localizations" : {
         "ru" : {
@@ -724,6 +787,9 @@
           }
         }
       }
+    },
+    "Subregions" : {
+
     },
     "Supported GPU families" : {
 
@@ -828,6 +894,9 @@
 
     },
     "Used storage" : {
+
+    },
+    "Variant" : {
 
     },
     "Video Autoplay" : {
