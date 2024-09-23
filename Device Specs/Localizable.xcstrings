@@ -359,6 +359,9 @@
     "Health Information" : {
 
     },
+    "Hello, World!" : {
+
+    },
     "Host name" : {
 
     },
@@ -535,6 +538,9 @@
       }
     },
     "Position" : {
+
+    },
+    "PPI" : {
 
     },
     "Prefers Cross Fade Transitions" : {
