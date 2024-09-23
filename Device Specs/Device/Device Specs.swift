@@ -4,7 +4,6 @@ import DeviceKit
 
 struct DeviceSpecs: View {
     @Environment(DeviceVM.self) private var vm
-    //    private var bluetooth = BluetoothManager()
     
     var body: some View {
         List {
@@ -31,7 +30,6 @@ struct DeviceSpecs: View {
                 ListParam("Force Touch", param: vm.isForceTouchAvailable)
 #endif
                 ListParam("Ultra Wideband", param: vm.isUltraWidebandAvailable)
-                //                ListParam("Bluetooth LE", param: bluetooth.isBluetoothLeEnabled)
             }
             
 #if os(watchOS)
