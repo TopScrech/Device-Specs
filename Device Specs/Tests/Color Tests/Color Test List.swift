@@ -15,8 +15,6 @@ struct ColorTestList: View {
                 NavigationLink {
                     if let color = colorTests[key] {
                         ColorView(color)
-                    } else {
-                        Text("Error")
                     }
                 } label: {
                     Label {
