@@ -420,6 +420,9 @@
     "Identifier for vendor" : {
 
     },
+    "Installation date" : {
+
+    },
     "Internal name" : {
 
     },
@@ -439,13 +442,13 @@
     "ISO region" : {
 
     },
-    "Language & Region" : {
-
-    },
     "Latitude" : {
 
     },
     "Layout direction" : {
+
+    },
+    "Locale" : {
 
     },
     "Location" : {

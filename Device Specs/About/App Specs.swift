@@ -22,6 +22,8 @@ struct AppSpecs: View {
             
             ListParam("Build number", param: vm.build)
             
+            ListParam("Installation date", param: vm.getAppInstallationDate)
+            
 #if !os(watchOS) && !os(tvOS)
             Section {
                 if let url = URL(string: "https://topscrech.dev/bisquit.host/privacy.pdf") {
