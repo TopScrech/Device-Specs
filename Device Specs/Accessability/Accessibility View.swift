@@ -1,4 +1,5 @@
 import SwiftUI
+import DeviceKit
 import MediaAccessibility
 
 struct AccessibilityView: View {
@@ -19,6 +20,17 @@ struct AccessibilityView: View {
                 }
             }
             
+            let guidedAccess: LocalizedStringKey = "Guided Access"
+            
+            if "\(guidedAccess)".contains(vm.filter) || vm.filter.isEmpty {
+                Section {
+                    let isEnabled = Device.current.isGuidedAccessSessionActive
+                    let param = AccessibilityParam(guidedAccess, isEnabled: isEnabled)
+                    
+                    AccessibilityItem(param)
+                }
+            }
+                        
             ForEach(vm.filteredParams) { param in
                 AccessibilityItem(param)
             }
