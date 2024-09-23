@@ -1,6 +1,5 @@
 import ScrechKit
 import DeviceKit
-//import CoreTelephony
 //import AdSupport
 
 struct DeviceSpecs: View {
@@ -9,26 +8,10 @@ struct DeviceSpecs: View {
     
     var body: some View {
         List {
-#warning("Carrier Info")
-            //            Button("test") {
-            //                //                func fetchCurrentRadioAccessTechnology() {
-            //                let networkInfo = CTTelephonyNetworkInfo()
-            //
-            //                if let currentRadioTech = networkInfo.serviceCurrentRadioAccessTechnology {
-            //                    for (carrier, radioTech) in currentRadioTech {
-            //                        print("Carrier: \(carrier), Radio Access Technology: \(radioTech)")
-            //                    }
-            //                } else {
-            //                    print("Unable to fetch cellular capabilities.")
-            //                }
-            //                //                }
-            //            }
-            
             ListParam("Device", param: vm.deviceIdentifier)
             ListParam("Identifier", param: Device.identifier)
             ListParam("Name", param: vm.deviceName)
             ListParam("Internal name", param: vm.internalName)
-            
             ListParam("Identifier for vendor", param: vm.vandorId)
             
 #warning("idfa")
