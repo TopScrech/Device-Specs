@@ -5,9 +5,26 @@ struct SystemSpecs: View {
     
     var body: some View {
         List {
-            ListParam("Operating system", param: vm.operatingSystem)
-            ListParam("Build number", param: vm.buildNumber)
-            ListParam("Multitasking", param: vm.multitaskingSupported)
+            Section {
+                ListParam("Operating system", param: vm.operatingSystem)
+                ListParam("Build number", param: vm.buildNumber)
+            }
+            
+            Section {
+                ListParam("Multitasking", param: vm.multitaskingSupported)
+                
+                NavigationLink {
+                    Timezone()
+                } label: {
+                    ListParam("Time zone", param: TimeZone.current.abbreviation() ?? "")
+                }
+                
+                NavigationLink {
+                    LocaleList()
+                } label: {
+                    ListParam("Locale", param: Locale.current.identifier)
+                }
+            }
             
             Section("Current session") {
                 ListParam("Active time", param: vm.fetchSystemActiveTime())
@@ -17,9 +34,6 @@ struct SystemSpecs: View {
 #if !os(tvOS)
             HealthKit()
 #endif
-            
-            LocaleList()
-                .environment(vm)
         }
         .navigationTitle("System")
     }

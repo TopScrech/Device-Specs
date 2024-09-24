@@ -7,6 +7,9 @@
     "5G" : {
       "shouldTranslate" : false
     },
+    "Abbreviation" : {
+
+    },
     "About" : {
 
     },
@@ -105,6 +108,9 @@
 
     },
     "Assistive Touch" : {
+
+    },
+    "Autoupdating current" : {
 
     },
     "Available numbering systems" : {
@@ -284,6 +290,9 @@
     "Darker System Colors" : {
 
     },
+    "Daylight saving time offset" : {
+
+    },
     "Decimal separator" : {
 
     },
@@ -398,7 +407,7 @@
     "Heading accuracy" : {
 
     },
-    "Health data availible" : {
+    "Health data available" : {
 
     },
     "Health Information" : {
@@ -442,10 +451,19 @@
         }
       }
     },
+    "Is daylight saving time" : {
+
+    },
     "ISO" : {
 
     },
     "ISO region" : {
+
+    },
+    "Known time zones" : {
+
+    },
+    "Known Time Zones" : {
 
     },
     "Latitude" : {
@@ -555,6 +573,9 @@
 
     },
     "Network type" : {
+
+    },
+    "Next daylight saving time transition" : {
 
     },
     "Numbering system" : {
@@ -727,6 +748,9 @@
     "Screen size" : {
 
     },
+    "Seconds from GMT" : {
+
+    },
     "Sensors" : {
       "localizations" : {
         "ru" : {
@@ -862,6 +886,15 @@
 
     },
     "Thread count" : {
+
+    },
+    "Time zone" : {
+
+    },
+    "Time Zone" : {
+
+    },
+    "Time zone data version" : {
 
     },
     "Total RAM" : {
