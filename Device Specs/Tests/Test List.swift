@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct TestList: View {
     @Environment(NavState.self) private var navState
@@ -14,6 +14,14 @@ struct TestList: View {
             }
             .foregroundStyle(.foreground)
             
+            ColorTestList()
+            
+            TorchTest()
+            
+            ListLink("Haptic feedback", icon: "hand.tap") {
+                HapticTests()
+            }
+            
             Section {
                 Button {
                     navState.navigate(.toUwbTest)
@@ -27,10 +35,6 @@ struct TestList: View {
                     Text("This device is not UWB capable")
                 }
             }
-            
-            ColorTestList()
-            
-            TorchTest()
         }
         .navigationTitle("Tests")
         .sheet($sheetCamera) {

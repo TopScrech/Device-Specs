@@ -392,6 +392,9 @@
     "Guided Access" : {
 
     },
+    "Haptic feedback" : {
+
+    },
     "Hardware" : {
 
     },
@@ -952,6 +955,9 @@
       }
     },
     "VoiceOver" : {
+
+    },
+    "Volume" : {
 
     },
     "Watch Specific" : {

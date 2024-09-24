@@ -160,6 +160,12 @@
 		F3B709D12CA2C912006ECAD1 /* Volume Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709CF2CA2C912006ECAD1 /* Volume Slider.swift */; };
 		F3B709D22CA2C912006ECAD1 /* Volume Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709CF2CA2C912006ECAD1 /* Volume Slider.swift */; };
 		F3B709D42CA2C912006ECAD1 /* Volume Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709CF2CA2C912006ECAD1 /* Volume Slider.swift */; };
+		F3B709D72CA2CA1F006ECAD1 /* Haptic Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709D62CA2CA1F006ECAD1 /* Haptic Tests.swift */; };
+		F3B709D82CA2CA1F006ECAD1 /* Haptic Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709D62CA2CA1F006ECAD1 /* Haptic Tests.swift */; };
+		F3B709D92CA2CA1F006ECAD1 /* Haptic Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709D62CA2CA1F006ECAD1 /* Haptic Tests.swift */; };
+		F3B709DB2CA2CEE0006ECAD1 /* Haptic Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709DA2CA2CEE0006ECAD1 /* Haptic Button.swift */; };
+		F3B709DC2CA2CEE0006ECAD1 /* Haptic Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709DA2CA2CEE0006ECAD1 /* Haptic Button.swift */; };
+		F3B709DD2CA2CF39006ECAD1 /* Haptic Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709DA2CA2CEE0006ECAD1 /* Haptic Button.swift */; };
 		F3C3BDD42C92D8E000BF91EE /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
 		F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD52C92D8F600BF91EE /* App Container.swift */; };
 		F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD72C92D90700BF91EE /* Home View.swift */; };
@@ -417,6 +423,8 @@
 		F3B709C22CA2C5E3006ECAD1 /* Locale VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale VM.swift"; sourceTree = "<group>"; };
 		F3B709C92CA2C853006ECAD1 /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
 		F3B709CF2CA2C912006ECAD1 /* Volume Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Volume Slider.swift"; sourceTree = "<group>"; };
+		F3B709D62CA2CA1F006ECAD1 /* Haptic Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Haptic Tests.swift"; sourceTree = "<group>"; };
+		F3B709DA2CA2CEE0006ECAD1 /* Haptic Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Haptic Button.swift"; sourceTree = "<group>"; };
 		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C3BDCC2C92D87C00BF91EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs App.swift"; sourceTree = "<group>"; };
@@ -942,6 +950,8 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC6C2C67B985008CD17B /* Test List.swift */,
+				F3B709D62CA2CA1F006ECAD1 /* Haptic Tests.swift */,
+				F3B709DA2CA2CEE0006ECAD1 /* Haptic Button.swift */,
 				F3EA43AE2C998759009820F6 /* Torch Test.swift */,
 				F3EA43AD2C998712009820F6 /* Camera */,
 				F3EA43AC2C998707009820F6 /* Torch */,
@@ -1316,6 +1326,7 @@
 				F36F80152CA0D4FF0007F120 /* Device Specs.swift in Sources */,
 				F36F80132CA0D4F80007F120 /* System Specs.swift in Sources */,
 				F36F7FFE2CA0D4B40007F120 /* Memory Specs.swift in Sources */,
+				F3B709D72CA2CA1F006ECAD1 /* Haptic Tests.swift in Sources */,
 				F36F802F2CA0E9AF0007F120 /* Torch Test.swift in Sources */,
 				F36F7FFF2CA0D4B40007F120 /* Memory VM.swift in Sources */,
 				F3B709BE2CA2C31E006ECAD1 /* Timezone VM.swift in Sources */,
@@ -1332,6 +1343,7 @@
 				F36F7FF52CA0D47C0007F120 /* Connectivity VM.swift in Sources */,
 				F3B709A82CA2BCE4006ECAD1 /* Health Kit.swift in Sources */,
 				F36F7FF72CA0D4830007F120 /* Format Card.swift in Sources */,
+				F3B709DB2CA2CEE0006ECAD1 /* Haptic Button.swift in Sources */,
 				F36F7FF82CA0D4830007F120 /* Camera Formats.swift in Sources */,
 				F36F80272CA0D5B00007F120 /* Device Info.swift in Sources */,
 				F36F801D2CA0D5330007F120 /* Nearby VM.swift in Sources */,
@@ -1392,6 +1404,7 @@
 				F3D1E7892C9C12C2000C81FF /* System Specs.swift in Sources */,
 				F3F85E9F2C94865900AE0A1D /* Network VM.swift in Sources */,
 				F3D1E7852C9C0D14000C81FF /* Battery State.swift in Sources */,
+				F3B709D92CA2CA1F006ECAD1 /* Haptic Tests.swift in Sources */,
 				F3D1E7C52C9D8041000C81FF /* Magnetic Field Data.swift in Sources */,
 				F3F85EA82C948A3300AE0A1D /* Memory VM.swift in Sources */,
 				F3B709A12CA22E09006ECAD1 /* Locale List.swift in Sources */,
@@ -1412,6 +1425,7 @@
 				F3D1E78D2C9C12D6000C81FF /* System VM.swift in Sources */,
 				F3F85EA42C94873000AE0A1D /* Processor VM.swift in Sources */,
 				F3B709B02CA2BE84006ECAD1 /* Timezone.swift in Sources */,
+				F3B709DD2CA2CF39006ECAD1 /* Haptic Button.swift in Sources */,
 				F3F85EAA2C948A5200AE0A1D /* Display View.swift in Sources */,
 				F3B709A72CA2BCE4006ECAD1 /* Health Kit.swift in Sources */,
 				F3F85EAB2C948A5200AE0A1D /* Display VM.swift in Sources */,
@@ -1527,6 +1541,7 @@
 				F3E7EC862C67B985008CD17B /* Color View.swift in Sources */,
 				F3D1E7AB2C9D4BFA000C81FF /* App Specs.swift in Sources */,
 				F3E7EC9B2C67B9CF008CD17B /* App Container.swift in Sources */,
+				F3B709DC2CA2CEE0006ECAD1 /* Haptic Button.swift in Sources */,
 				F3E7EC872C67B985008CD17B /* Orientation VM.swift in Sources */,
 				F3E7EC882C67B985008CD17B /* Math Utilities.swift in Sources */,
 				F3F85EFD2C95857C00AE0A1D /* GPU Families.swift in Sources */,
@@ -1546,6 +1561,7 @@
 				F3D1E7A22C9CC304000C81FF /* Format Card.swift in Sources */,
 				F3E7EC8F2C67B985008CD17B /* Memory Specs.swift in Sources */,
 				F3E7EC902C67B985008CD17B /* Device Info.swift in Sources */,
+				F3B709D82CA2CA1F006ECAD1 /* Haptic Tests.swift in Sources */,
 				F3E7EC912C67B985008CD17B /* Home View.swift in Sources */,
 				F3E7EC922C67B985008CD17B /* Connectivity VM.swift in Sources */,
 				F3EA43B22C998787009820F6 /* Color Test List.swift in Sources */,

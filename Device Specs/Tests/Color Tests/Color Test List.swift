@@ -22,6 +22,8 @@ struct ColorTestList: View {
                     } icon: {
                         Image(systemName: "circle.fill")
                             .foregroundStyle(colorTests[key] ?? .secondary)
+                            .padding(1)
+                            .background(.ultraThinMaterial, in: .circle)
                     }
                 }
             }
