@@ -22,6 +22,8 @@ struct AppSpecs: View {
             
             ListParam("Build number", param: vm.build)
             
+            ListParam("Bundle identifier", param: vm.bundleIdentifier)
+            
             ListParam("Installation date", param: vm.getAppInstallationDate)
             
 #if !os(watchOS) && !os(tvOS)

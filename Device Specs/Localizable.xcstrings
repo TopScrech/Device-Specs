@@ -157,6 +157,9 @@
         }
       }
     },
+    "Bundle identifier" : {
+
+    },
     "Button Shapes" : {
 
     },
@@ -393,6 +396,9 @@
 
     },
     "Heading accuracy" : {
+
+    },
+    "Health data availible" : {
 
     },
     "Health Information" : {
