@@ -129,7 +129,6 @@
 		F3B709A72CA2BCE4006ECAD1 /* Health Kit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */; };
 		F3B709A82CA2BCE4006ECAD1 /* Health Kit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */; };
 		F3B709A92CA2BCE4006ECAD1 /* Health Kit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */; };
-		F3B709AA2CA2BCE4006ECAD1 /* Health Kit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */; };
 		F3B709AB2CA2BCE4006ECAD1 /* Health Kit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */; };
 		F3B709AE2CA2BE84006ECAD1 /* Timezone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709AD2CA2BE84006ECAD1 /* Timezone.swift */; };
 		F3B709AF2CA2BE84006ECAD1 /* Timezone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709AD2CA2BE84006ECAD1 /* Timezone.swift */; };
@@ -179,6 +178,9 @@
 		F3B709ED2CA2F683006ECAD1 /* Font List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709E82CA2F683006ECAD1 /* Font List.swift */; };
 		F3B709EF2CA2FCAB006ECAD1 /* Proximity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709EE2CA2FCAB006ECAD1 /* Proximity VM.swift */; };
 		F3B709F12CA2FCAB006ECAD1 /* Proximity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709EE2CA2FCAB006ECAD1 /* Proximity VM.swift */; };
+		F3B709F62CA30470006ECAD1 /* Advertising Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709F42CA30470006ECAD1 /* Advertising Identifier.swift */; };
+		F3B709F72CA30470006ECAD1 /* Advertising Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709F42CA30470006ECAD1 /* Advertising Identifier.swift */; };
+		F3B709F92CA30470006ECAD1 /* Advertising Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709F42CA30470006ECAD1 /* Advertising Identifier.swift */; };
 		F3C3BDD42C92D8E000BF91EE /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
 		F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD52C92D8F600BF91EE /* App Container.swift */; };
 		F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD72C92D90700BF91EE /* Home View.swift */; };
@@ -441,6 +443,7 @@
 		F3B709E12CA2F1DC006ECAD1 /* DeviceKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceKit.swift; sourceTree = "<group>"; };
 		F3B709E82CA2F683006ECAD1 /* Font List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font List.swift"; sourceTree = "<group>"; };
 		F3B709EE2CA2FCAB006ECAD1 /* Proximity VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Proximity VM.swift"; sourceTree = "<group>"; };
+		F3B709F42CA30470006ECAD1 /* Advertising Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Advertising Identifier.swift"; sourceTree = "<group>"; };
 		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C3BDCC2C92D87C00BF91EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs App.swift"; sourceTree = "<group>"; };
@@ -871,6 +874,7 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC512C67B985008CD17B /* Device Specs.swift */,
+				F3B709F42CA30470006ECAD1 /* Advertising Identifier.swift */,
 				F3E7EC522C67B985008CD17B /* Device VM.swift */,
 				F3F85EC22C9492F300AE0A1D /* Device Watch Info.swift */,
 				F3B709D52CA2C933006ECAD1 /* Volume */,
@@ -1378,6 +1382,7 @@
 				F3B709B62CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
 				F36F7FFC2CA0D4830007F120 /* Cameras Specs.swift in Sources */,
 				F3B709C52CA2C5E3006ECAD1 /* Locale VM.swift in Sources */,
+				F3B709F92CA30470006ECAD1 /* Advertising Identifier.swift in Sources */,
 				F36F7FF62CA0D47C0007F120 /* Network VM.swift in Sources */,
 				F36F7FEF2CA0D4370007F120 /* Battery VM.swift in Sources */,
 				F36F7FF02CA0D4370007F120 /* Battery Level.swift in Sources */,
@@ -1587,6 +1592,7 @@
 				F3D1E7A92C9CD453000C81FF /* Current Process.swift in Sources */,
 				F3187A502C898B37008FB911 /* Nav State.swift in Sources */,
 				F3E7EC8E2C67B985008CD17B /* Camera VM.swift in Sources */,
+				F3B709F72CA30470006ECAD1 /* Advertising Identifier.swift in Sources */,
 				F3D1E7A22C9CC304000C81FF /* Format Card.swift in Sources */,
 				F3E7EC8F2C67B985008CD17B /* Memory Specs.swift in Sources */,
 				F3E7EC902C67B985008CD17B /* Device Info.swift in Sources */,
@@ -1626,7 +1632,6 @@
 				F3D1E79C2C9C8882000C81FF /* Specs Link.swift in Sources */,
 				F3F85F042C95880600AE0A1D /* Wifi VM.swift in Sources */,
 				F3F85EFC2C95857C00AE0A1D /* GPU Families.swift in Sources */,
-				F3B709AA2CA2BCE4006ECAD1 /* Health Kit.swift in Sources */,
 				F3F85EE52C957D5900AE0A1D /* Color View.swift in Sources */,
 				F3F85F032C9587C400AE0A1D /* Network VM.swift in Sources */,
 				F3F85EF12C9580AD00AE0A1D /* Display VM.swift in Sources */,
@@ -1646,6 +1651,7 @@
 				F3F85EE82C957EE200AE0A1D /* Accessibility View.swift in Sources */,
 				F36F7FC62CA0CC110007F120 /* Device Specs App.swift in Sources */,
 				F3F85EDD2C94DD6800AE0A1D /* App Container.swift in Sources */,
+				F3B709F62CA30470006ECAD1 /* Advertising Identifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2036,6 +2042,7 @@
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "This permission is required in order to test UWB capabilities";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "The app will be able to display your IDFA. It will NOT track any of your activities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -2084,6 +2091,7 @@
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "This permission is required in order to test UWB capabilities";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "The app will be able to display your IDFA. It will NOT track any of your activities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

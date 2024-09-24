@@ -35,6 +35,9 @@
         }
       }
     },
+    "Advertising Identifier (IDFA)" : {
+
+    },
     "Alternate quotation begin delimiter" : {
 
     },
@@ -720,6 +723,9 @@
       }
     },
     "Relative altitude" : {
+
+    },
+    "Request IDFA access" : {
 
     },
     "Roll" : {

@@ -1,6 +1,5 @@
 import ScrechKit
 import DeviceKit
-//import AdSupport
 
 struct DeviceSpecs: View {
     @Environment(DeviceVM.self) private var vm
@@ -13,13 +12,9 @@ struct DeviceSpecs: View {
             ListParam("Internal name", param: vm.internalName)
             ListParam("Identifier for vendor", param: vm.vandorId)
             
-#if !os(watchOS)
-            Volume()
+#if !os(watchOS) && !os(visionOS)
+            AdvertisingIdentifier()
 #endif
-            
-#warning("idfa")
-            //                let idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
-            //                ListParam("Advertising Identifier (IDFA)", param: idfa)
             
             Section {
                 ListParam("Thermal state", param: vm.thermalState)
@@ -53,6 +48,8 @@ struct DeviceSpecs: View {
             
 #if os(watchOS)
             DeviceWatchInfo()
+#else
+            Volume()
 #endif
         }
         .navigationTitle("Device")
