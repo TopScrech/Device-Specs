@@ -152,6 +152,14 @@
 		F3B709C52CA2C5E3006ECAD1 /* Locale VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709C22CA2C5E3006ECAD1 /* Locale VM.swift */; };
 		F3B709C62CA2C5E3006ECAD1 /* Locale VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709C22CA2C5E3006ECAD1 /* Locale VM.swift */; };
 		F3B709C72CA2C5E3006ECAD1 /* Locale VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709C22CA2C5E3006ECAD1 /* Locale VM.swift */; };
+		F3B709CA2CA2C853006ECAD1 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709C92CA2C853006ECAD1 /* Volume.swift */; };
+		F3B709CC2CA2C853006ECAD1 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709C92CA2C853006ECAD1 /* Volume.swift */; };
+		F3B709CD2CA2C853006ECAD1 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709C92CA2C853006ECAD1 /* Volume.swift */; };
+		F3B709CE2CA2C853006ECAD1 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709C92CA2C853006ECAD1 /* Volume.swift */; };
+		F3B709D02CA2C912006ECAD1 /* Volume Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709CF2CA2C912006ECAD1 /* Volume Slider.swift */; };
+		F3B709D12CA2C912006ECAD1 /* Volume Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709CF2CA2C912006ECAD1 /* Volume Slider.swift */; };
+		F3B709D22CA2C912006ECAD1 /* Volume Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709CF2CA2C912006ECAD1 /* Volume Slider.swift */; };
+		F3B709D42CA2C912006ECAD1 /* Volume Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709CF2CA2C912006ECAD1 /* Volume Slider.swift */; };
 		F3C3BDD42C92D8E000BF91EE /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
 		F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD52C92D8F600BF91EE /* App Container.swift */; };
 		F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD72C92D90700BF91EE /* Home View.swift */; };
@@ -407,6 +415,8 @@
 		F3B709B42CA2C187006ECAD1 /* Known Time Zones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Known Time Zones.swift"; sourceTree = "<group>"; };
 		F3B709BC2CA2C31E006ECAD1 /* Timezone VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timezone VM.swift"; sourceTree = "<group>"; };
 		F3B709C22CA2C5E3006ECAD1 /* Locale VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale VM.swift"; sourceTree = "<group>"; };
+		F3B709C92CA2C853006ECAD1 /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+		F3B709CF2CA2C912006ECAD1 /* Volume Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Volume Slider.swift"; sourceTree = "<group>"; };
 		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C3BDCC2C92D87C00BF91EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs App.swift"; sourceTree = "<group>"; };
@@ -700,6 +710,15 @@
 			path = Locale;
 			sourceTree = "<group>";
 		};
+		F3B709D52CA2C933006ECAD1 /* Volume */ = {
+			isa = PBXGroup;
+			children = (
+				F3B709C92CA2C853006ECAD1 /* Volume.swift */,
+				F3B709CF2CA2C912006ECAD1 /* Volume Slider.swift */,
+			);
+			path = Volume;
+			sourceTree = "<group>";
+		};
 		F3C3BDD12C92D89600BF91EE /* visionOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -828,6 +847,7 @@
 				F3E7EC512C67B985008CD17B /* Device Specs.swift */,
 				F3E7EC522C67B985008CD17B /* Device VM.swift */,
 				F3F85EC22C9492F300AE0A1D /* Device Watch Info.swift */,
+				F3B709D52CA2C933006ECAD1 /* Volume */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -1292,6 +1312,7 @@
 				F36F7FE82CA0D2030007F120 /* App Specs.swift in Sources */,
 				F36F80122CA0D4F80007F120 /* System VM.swift in Sources */,
 				F36F80142CA0D4FF0007F120 /* Device VM.swift in Sources */,
+				F3B709CC2CA2C853006ECAD1 /* Volume.swift in Sources */,
 				F36F80152CA0D4FF0007F120 /* Device Specs.swift in Sources */,
 				F36F80132CA0D4F80007F120 /* System Specs.swift in Sources */,
 				F36F7FFE2CA0D4B40007F120 /* Memory Specs.swift in Sources */,
@@ -1319,6 +1340,7 @@
 				F36F80202CA0D5330007F120 /* MCP Session.swift in Sources */,
 				F36F7FF92CA0D4830007F120 /* Camera VM.swift in Sources */,
 				F36F7FFA2CA0D4830007F120 /* Camera Model.swift in Sources */,
+				F3B709D22CA2C912006ECAD1 /* Volume Slider.swift in Sources */,
 				F36F80292CA0D5CD0007F120 /* UWB Test View.swift in Sources */,
 				F36F7FFB2CA0D4830007F120 /* Camera View.swift in Sources */,
 				F3B709B62CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
@@ -1429,7 +1451,9 @@
 				F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */,
 				F36FBC6C2C9413E100F5E174 /* CPU Usage Chart.swift in Sources */,
 				F3C3BDDA2C92D99900BF91EE /* Device VM.swift in Sources */,
+				F3B709D42CA2C912006ECAD1 /* Volume Slider.swift in Sources */,
 				F3C3BDE82C92DCA300BF91EE /* Display Specs.swift in Sources */,
+				F3B709CA2CA2C853006ECAD1 /* Volume.swift in Sources */,
 				F36FBC652C9353FF00F5E174 /* Processor Specs.swift in Sources */,
 				F3B709C02CA2C31E006ECAD1 /* Timezone VM.swift in Sources */,
 				F3C3BDE42C92DBFB00BF91EE /* Battery VM.swift in Sources */,
@@ -1497,6 +1521,7 @@
 				F36FBCD42C944DA200F5E174 /* Accessibility VM.swift in Sources */,
 				F3E7EC832C67B985008CD17B /* MCP Session.swift in Sources */,
 				F357214F2C985FFB00967ACA /* Camera Test.swift in Sources */,
+				F3B709CE2CA2C853006ECAD1 /* Volume.swift in Sources */,
 				F3E7EC842C67B985008CD17B /* UWB Test View.swift in Sources */,
 				F3E7EC852C67B985008CD17B /* Sensors View.swift in Sources */,
 				F3E7EC862C67B985008CD17B /* Color View.swift in Sources */,
@@ -1510,6 +1535,7 @@
 				F3D1E7B02C9D5D96000C81FF /* Specs Button.swift in Sources */,
 				F3E7EC8A2C67B985008CD17B /* Battery VM.swift in Sources */,
 				F3E7EC8B2C67B985008CD17B /* Bluetooth VM.swift in Sources */,
+				F3B709D02CA2C912006ECAD1 /* Volume Slider.swift in Sources */,
 				F3D1E7972C9C5A0E000C81FF /* Camera Model.swift in Sources */,
 				F3D1E7A02C9CC2AE000C81FF /* Camera Formats.swift in Sources */,
 				F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */,
@@ -1539,6 +1565,8 @@
 				F3F85EE72C957EDA00AE0A1D /* Accessibility Param.swift in Sources */,
 				F3EA43B32C998787009820F6 /* Color Test List.swift in Sources */,
 				F3F85EF52C9583EB00AE0A1D /* Device Specs.swift in Sources */,
+				F3B709CD2CA2C853006ECAD1 /* Volume.swift in Sources */,
+				F3B709D12CA2C912006ECAD1 /* Volume Slider.swift in Sources */,
 				F3F85EF42C9583E400AE0A1D /* Device VM.swift in Sources */,
 				F3F85EF32C9582EA00AE0A1D /* Display Specs.swift in Sources */,
 				F3F85EDF2C94DD7900AE0A1D /* Home View.swift in Sources */,

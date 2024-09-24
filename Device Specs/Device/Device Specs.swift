@@ -13,6 +13,10 @@ struct DeviceSpecs: View {
             ListParam("Internal name", param: vm.internalName)
             ListParam("Identifier for vendor", param: vm.vandorId)
             
+#if !os(watchOS)
+            Volume()
+#endif
+            
 #warning("idfa")
             //                let idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
             //                ListParam("Advertising Identifier (IDFA)", param: idfa)
