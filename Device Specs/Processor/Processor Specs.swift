@@ -35,16 +35,9 @@ struct ProcessorSpecs: View {
                     ListParam("Unified memory", param: device.hasUnifiedMemory ? "Yes" : "No")
                     ListParam("Supports raytracing", param: device.supportsRaytracing ? "Yes" : "No")
                     
-#if os(tvOS)
                     NavigationLink("Supported GPU families") {
                         GPUFamilies(device)
-                            .navigationTitle("Supported GPU families")
                     }
-#else
-                    DisclosureGroup("Supported GPU families") {
-                        GPUFamilies(device)
-                    }
-#endif
                 } else {
                     Text("Metal is not supported on this device")
                 }
