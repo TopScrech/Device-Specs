@@ -177,6 +177,8 @@
 		F3B709EB2CA2F683006ECAD1 /* Font List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709E82CA2F683006ECAD1 /* Font List.swift */; };
 		F3B709EC2CA2F683006ECAD1 /* Font List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709E82CA2F683006ECAD1 /* Font List.swift */; };
 		F3B709ED2CA2F683006ECAD1 /* Font List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709E82CA2F683006ECAD1 /* Font List.swift */; };
+		F3B709EF2CA2FCAB006ECAD1 /* Proximity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709EE2CA2FCAB006ECAD1 /* Proximity VM.swift */; };
+		F3B709F12CA2FCAB006ECAD1 /* Proximity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709EE2CA2FCAB006ECAD1 /* Proximity VM.swift */; };
 		F3C3BDD42C92D8E000BF91EE /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
 		F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD52C92D8F600BF91EE /* App Container.swift */; };
 		F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD72C92D90700BF91EE /* Home View.swift */; };
@@ -438,6 +440,7 @@
 		F3B709DA2CA2CEE0006ECAD1 /* Haptic Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Haptic Button.swift"; sourceTree = "<group>"; };
 		F3B709E12CA2F1DC006ECAD1 /* DeviceKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceKit.swift; sourceTree = "<group>"; };
 		F3B709E82CA2F683006ECAD1 /* Font List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font List.swift"; sourceTree = "<group>"; };
+		F3B709EE2CA2FCAB006ECAD1 /* Proximity VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Proximity VM.swift"; sourceTree = "<group>"; };
 		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C3BDCC2C92D87C00BF91EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs App.swift"; sourceTree = "<group>"; };
@@ -935,6 +938,7 @@
 				F3E7EC662C67B985008CD17B /* Location VM.swift */,
 				F3E7EC672C67B985008CD17B /* Orientation VM.swift */,
 				F3E7EC682C67B985008CD17B /* Pressure VM.swift */,
+				F3B709EE2CA2FCAB006ECAD1 /* Proximity VM.swift */,
 				F3E7EC692C67B985008CD17B /* Altitude VM.swift */,
 				F3E7EC6A2C67B985008CD17B /* Activity VM.swift */,
 			);
@@ -1400,6 +1404,7 @@
 				F36F80032CA0D4B90007F120 /* Processor VM.swift in Sources */,
 				F36F80042CA0D4B90007F120 /* GPU Families.swift in Sources */,
 				F3B709A52CA22E09006ECAD1 /* Locale List.swift in Sources */,
+				F3B709EF2CA2FCAB006ECAD1 /* Proximity VM.swift in Sources */,
 				F36F7FF12CA0D4370007F120 /* Battery State.swift in Sources */,
 				F36F7FE62CA0D0CF0007F120 /* Home View.swift in Sources */,
 				F36F7FE92CA0D2190007F120 /* App VM.swift in Sources */,
@@ -1556,6 +1561,7 @@
 				F3E7EC822C67B985008CD17B /* Location VM.swift in Sources */,
 				F36FBCD42C944DA200F5E174 /* Accessibility VM.swift in Sources */,
 				F3E7EC832C67B985008CD17B /* MCP Session.swift in Sources */,
+				F3B709F12CA2FCAB006ECAD1 /* Proximity VM.swift in Sources */,
 				F357214F2C985FFB00967ACA /* Camera Test.swift in Sources */,
 				F3B709CE2CA2C853006ECAD1 /* Volume.swift in Sources */,
 				F3E7EC842C67B985008CD17B /* UWB Test View.swift in Sources */,

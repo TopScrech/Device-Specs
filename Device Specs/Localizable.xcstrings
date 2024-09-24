@@ -665,6 +665,9 @@
         }
       }
     },
+    "Proximity sensor triggered" : {
+
+    },
     "Public IP address" : {
       "localizations" : {
         "ru" : {

@@ -6,9 +6,12 @@ struct SensorsView: View {
     @State private var altitude = AltitudeVM()
     @State private var pressure = PressureVM()
     @State private var activity = ActivityVM()
+    @State private var proximity = ProximityVM()
     
     var body: some View {
         List {
+            ListParam("Proximity sensor triggered", param: proximity.isDeviceCloseToUser ? "Yes" : "No")
+            
             Section("Location") {
                 ListParam("Latitude", param: String(location.latitude))
                 ListParam("Longitude", param: String(location.longitude))
