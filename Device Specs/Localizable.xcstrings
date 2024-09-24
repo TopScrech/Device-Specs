@@ -320,6 +320,9 @@
     "Error" : {
 
     },
+    "Example" : {
+
+    },
     "Exposure" : {
       "localizations" : {
         "ru" : {
@@ -348,6 +351,9 @@
           }
         }
       }
+    },
+    "Fonts" : {
+
     },
     "Force Touch" : {
 

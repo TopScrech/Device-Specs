@@ -24,6 +24,12 @@ struct SystemSpecs: View {
                 } label: {
                     ListParam("Locale", param: Locale.current.identifier)
                 }
+                
+                NavigationLink {
+                    FontList()
+                } label: {
+                    ListParam("System fonts", param: UIFont.familyNames.count.description)
+                }
             }
             
             Section("Current session") {

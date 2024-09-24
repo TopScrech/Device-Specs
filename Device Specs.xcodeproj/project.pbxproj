@@ -172,6 +172,11 @@
 		F3B709E52CA2F1DC006ECAD1 /* DeviceKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709E12CA2F1DC006ECAD1 /* DeviceKit.swift */; };
 		F3B709E62CA2F1DC006ECAD1 /* DeviceKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709E12CA2F1DC006ECAD1 /* DeviceKit.swift */; };
 		F3B709E72CA2F1DC006ECAD1 /* DeviceKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709E12CA2F1DC006ECAD1 /* DeviceKit.swift */; };
+		F3B709E92CA2F683006ECAD1 /* Font List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709E82CA2F683006ECAD1 /* Font List.swift */; };
+		F3B709EA2CA2F683006ECAD1 /* Font List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709E82CA2F683006ECAD1 /* Font List.swift */; };
+		F3B709EB2CA2F683006ECAD1 /* Font List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709E82CA2F683006ECAD1 /* Font List.swift */; };
+		F3B709EC2CA2F683006ECAD1 /* Font List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709E82CA2F683006ECAD1 /* Font List.swift */; };
+		F3B709ED2CA2F683006ECAD1 /* Font List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709E82CA2F683006ECAD1 /* Font List.swift */; };
 		F3C3BDD42C92D8E000BF91EE /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
 		F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD52C92D8F600BF91EE /* App Container.swift */; };
 		F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD72C92D90700BF91EE /* Home View.swift */; };
@@ -432,6 +437,7 @@
 		F3B709D62CA2CA1F006ECAD1 /* Haptic Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Haptic Tests.swift"; sourceTree = "<group>"; };
 		F3B709DA2CA2CEE0006ECAD1 /* Haptic Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Haptic Button.swift"; sourceTree = "<group>"; };
 		F3B709E12CA2F1DC006ECAD1 /* DeviceKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceKit.swift; sourceTree = "<group>"; };
+		F3B709E82CA2F683006ECAD1 /* Font List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font List.swift"; sourceTree = "<group>"; };
 		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C3BDCC2C92D87C00BF91EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs App.swift"; sourceTree = "<group>"; };
@@ -761,6 +767,7 @@
 			isa = PBXGroup;
 			children = (
 				F3D1E7872C9C12C2000C81FF /* System Specs.swift */,
+				F3B709E82CA2F683006ECAD1 /* Font List.swift */,
 				F3D1E78C2C9C12D6000C81FF /* System VM.swift */,
 				F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */,
 				F3B709BB2CA2C2F4006ECAD1 /* Time Zone */,
@@ -1349,6 +1356,7 @@
 				F36F80082CA0D4D00007F120 /* Accessibility Item.swift in Sources */,
 				F36F80262CA0D5A60007F120 /* Specs Button.swift in Sources */,
 				F36F7FF52CA0D47C0007F120 /* Connectivity VM.swift in Sources */,
+				F3B709ED2CA2F683006ECAD1 /* Font List.swift in Sources */,
 				F3B709A82CA2BCE4006ECAD1 /* Health Kit.swift in Sources */,
 				F36F7FF72CA0D4830007F120 /* Format Card.swift in Sources */,
 				F3B709DB2CA2CEE0006ECAD1 /* Haptic Button.swift in Sources */,
@@ -1428,6 +1436,7 @@
 				F3F85EA22C94873000AE0A1D /* Processor Specs.swift in Sources */,
 				F3D1E7A62C9CD453000C81FF /* Current Process.swift in Sources */,
 				F3F85EC12C948F9D00AE0A1D /* Test List.swift in Sources */,
+				F3B709EB2CA2F683006ECAD1 /* Font List.swift in Sources */,
 				F3EA43B12C998787009820F6 /* Color Test List.swift in Sources */,
 				F3D1E77F2C9C0CD3000C81FF /* Battery Level.swift in Sources */,
 				F3B709BD2CA2C31E006ECAD1 /* Timezone VM.swift in Sources */,
@@ -1502,6 +1511,7 @@
 				F3B709AB2CA2BCE4006ECAD1 /* Health Kit.swift in Sources */,
 				F3C3BDD42C92D8E000BF91EE /* Device Specs App.swift in Sources */,
 				F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */,
+				F3B709EC2CA2F683006ECAD1 /* Font List.swift in Sources */,
 				F3C3BDD92C92D99300BF91EE /* Device Specs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1563,6 +1573,7 @@
 				F3E7EC8A2C67B985008CD17B /* Battery VM.swift in Sources */,
 				F3E7EC8B2C67B985008CD17B /* Bluetooth VM.swift in Sources */,
 				F3B709D02CA2C912006ECAD1 /* Volume Slider.swift in Sources */,
+				F3B709E92CA2F683006ECAD1 /* Font List.swift in Sources */,
 				F3D1E7972C9C5A0E000C81FF /* Camera Model.swift in Sources */,
 				F3D1E7A02C9CC2AE000C81FF /* Camera Formats.swift in Sources */,
 				F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */,
@@ -1596,6 +1607,7 @@
 				F3B709CD2CA2C853006ECAD1 /* Volume.swift in Sources */,
 				F3B709D12CA2C912006ECAD1 /* Volume Slider.swift in Sources */,
 				F3F85EF42C9583E400AE0A1D /* Device VM.swift in Sources */,
+				F3B709EA2CA2F683006ECAD1 /* Font List.swift in Sources */,
 				F3F85EF32C9582EA00AE0A1D /* Display Specs.swift in Sources */,
 				F3F85EDF2C94DD7900AE0A1D /* Home View.swift in Sources */,
 				F3F85EFE2C95875C00AE0A1D /* Memory Specs.swift in Sources */,
