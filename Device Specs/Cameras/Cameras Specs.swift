@@ -2,7 +2,7 @@ import ScrechKit
 import DeviceKit
 
 struct CameraSpecs: View {
-    @State private var vm = CameraVM()
+    @Environment(CameraVM.self) private var vm
     
     @State private var position = "Back"
     
@@ -35,4 +35,5 @@ struct CameraSpecs: View {
 
 #Preview {
     CameraSpecs()
+        .environment(CameraVM())
 }

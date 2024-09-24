@@ -11,6 +11,7 @@ struct HomeView: View {
     @State private var memory = MemoryVM()
     @State private var display = DisplayVM()
     @State private var app = AppVM()
+    @State private var camera = CameraVM()
     @State private var connectivity = ConnectivityVM()
     
     var body: some View {
@@ -51,7 +52,7 @@ struct HomeView: View {
                     .environment(connectivity)
             }
             
-            SpecsLink("Cameras", icon: "camera") {
+            SpecsLink("Cameras", icon: "camera", spec: camera.hasLidar) {
                 CameraSpecs()
             }
             
@@ -99,5 +100,6 @@ struct HomeView: View {
     .environment(MemoryVM())
     .environment(AppVM())
     .environment(ConnectivityVM())
+    .environment(CameraVM())
     .environment(NavState())
 }

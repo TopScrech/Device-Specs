@@ -352,9 +352,6 @@
         }
       }
     },
-    "Fonts" : {
-
-    },
     "Force Touch" : {
 
     },
@@ -854,6 +851,9 @@
           }
         }
       }
+    },
+    "System fonts" : {
+
     },
     "System language" : {
       "localizations" : {

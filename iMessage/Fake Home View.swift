@@ -10,6 +10,7 @@ struct FakeHomeView: View {
     @State private var memory = MemoryVM()
     @State private var battery = BatteryVM()
     @State private var connectivity = ConnectivityVM()
+    @State private var camera = CameraVM()
     @State private var app = AppVM()
     
     @State private var isPresented = false
@@ -37,7 +38,7 @@ struct FakeHomeView: View {
             
             ListParam("Network", icon: "network", param: connectivity.type)
             
-            ListParam("Cameras", icon: "camera")
+            ListParam("Cameras", icon: "camera", param: camera.hasLidar)
             
             ListParam("Sensors", icon: "barometer")
             
@@ -69,5 +70,6 @@ struct FakeHomeView: View {
     .environment(ProcessorVM())
     .environment(MemoryVM())
     .environment(ConnectivityVM())
+    .environment(CameraVM())
     .environment(AppVM())
 }
