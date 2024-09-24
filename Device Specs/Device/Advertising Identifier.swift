@@ -40,7 +40,7 @@ struct AdvertisingIdentifier: View {
         case .authorized:
             true
             
-        case .notDetermined,.restricted,.denied:
+        case .notDetermined, .restricted, .denied:
             false
             
         default:
