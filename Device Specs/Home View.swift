@@ -15,6 +15,9 @@ struct HomeView: View {
     
     var body: some View {
         List {
+            WarningsSection()
+                .environment(battery)
+            
             SpecsLink("Device", icon: "info.circle", spec: device.deviceIdentifier) {
                 DeviceSpecs()
                     .environment(device)
@@ -78,6 +81,9 @@ struct HomeView: View {
             }
         }
         .navigationTitle("Device Specs")
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
+            battery.fetchBatteryInfo()
+        }
     }
 }
 

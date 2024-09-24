@@ -11,13 +11,10 @@ struct BatteryState: View {
             
             Text(vm.batteryState)
                 .foregroundStyle(.secondary)
-                .animation(.default, value: vm.batteryState)
             
             if vm.batteryState == "Charging" {
                 Image(systemName: "bolt.fill")
                     .footnote()
-                    .animation(.default, value: vm.batteryState)
-                    .transition(.identity)
             }
         }
     }

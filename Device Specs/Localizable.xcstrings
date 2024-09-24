@@ -265,6 +265,9 @@
     "Create a full system report" : {
 
     },
+    "Critical thermal state" : {
+
+    },
     "Crown orientation" : {
 
     },
@@ -488,6 +491,9 @@
 
     },
     "Longitude" : {
+
+    },
+    "Low battery" : {
 
     },
     "Low power mode" : {
@@ -779,6 +785,9 @@
     "Serial Number" : {
 
     },
+    "Serious thermal state" : {
+
+    },
     "Sertified for iPhone performance gaming" : {
       "localizations" : {
         "ru" : {
@@ -960,6 +969,9 @@
 
     },
     "Variant" : {
+
+    },
+    "Very low battery" : {
 
     },
     "Video Autoplay" : {

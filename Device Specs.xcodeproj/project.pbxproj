@@ -120,6 +120,8 @@
 		F36FBCCE2C944B1700F5E174 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36FBCCD2C944B1700F5E174 /* DeviceKit */; };
 		F36FBCD02C944B5000F5E174 /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCCF2C944B5000F5E174 /* App Container.swift */; };
 		F36FBCD42C944DA200F5E174 /* Accessibility VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */; };
+		F389A6D82CA368C600FF670F /* Warnings Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A6D72CA368C600FF670F /* Warnings Section.swift */; };
+		F389A6DB2CA36AAF00FF670F /* Warning Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A6DA2CA36AAF00FF670F /* Warning Card.swift */; };
 		F3B7098B2CA1DD4F006ECAD1 /* Version View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B7098A2CA1DD4F006ECAD1 /* Version View.swift */; };
 		F3B709A12CA22E09006ECAD1 /* Locale List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A02CA22E09006ECAD1 /* Locale List.swift */; };
 		F3B709A22CA22E09006ECAD1 /* Locale List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A02CA22E09006ECAD1 /* Locale List.swift */; };
@@ -429,6 +431,8 @@
 		F36FBCB52C9449A300F5E174 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F36FBCCF2C944B5000F5E174 /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility VM.swift"; sourceTree = "<group>"; };
+		F389A6D72CA368C600FF670F /* Warnings Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Warnings Section.swift"; sourceTree = "<group>"; };
+		F389A6DA2CA36AAF00FF670F /* Warning Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Warning Card.swift"; sourceTree = "<group>"; };
 		F3B7098A2CA1DD4F006ECAD1 /* Version View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Version View.swift"; sourceTree = "<group>"; };
 		F3B709A02CA22E09006ECAD1 /* Locale List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale List.swift"; sourceTree = "<group>"; };
 		F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Health Kit.swift"; sourceTree = "<group>"; };
@@ -718,6 +722,15 @@
 			path = watchOS;
 			sourceTree = "<group>";
 		};
+		F389A6D92CA36AA600FF670F /* Warnings */ = {
+			isa = PBXGroup;
+			children = (
+				F389A6D72CA368C600FF670F /* Warnings Section.swift */,
+				F389A6DA2CA36AAF00FF670F /* Warning Card.swift */,
+			);
+			path = Warnings;
+			sourceTree = "<group>";
+		};
 		F3B709BB2CA2C2F4006ECAD1 /* Time Zone */ = {
 			isa = PBXGroup;
 			children = (
@@ -849,6 +862,7 @@
 				F36F803A2CA170870007F120 /* Localizable.xcstrings */,
 				F3E7EC4D2C67B985008CD17B /* Device Info.swift */,
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
+				F389A6D92CA36AA600FF670F /* Warnings */,
 				F3D1E7982C9C8444000C81FF /* Specs Link.swift */,
 				F3D1E7AF2C9D5D96000C81FF /* Specs Button.swift */,
 				F3E7EC4F2C67B985008CD17B /* List Link.swift */,
@@ -1533,6 +1547,7 @@
 				F3F85E8E2C9452CB00AE0A1D /* Accessibility Param.swift in Sources */,
 				F3E7EC762C67B985008CD17B /* Test List.swift in Sources */,
 				F3E7EC772C67B985008CD17B /* Network View.swift in Sources */,
+				F389A6D82CA368C600FF670F /* Warnings Section.swift in Sources */,
 				F3B709A92CA2BCE4006ECAD1 /* Health Kit.swift in Sources */,
 				F3B709A42CA22E09006ECAD1 /* Locale List.swift in Sources */,
 				F3E7EC782C67B985008CD17B /* List Link.swift in Sources */,
@@ -1556,6 +1571,7 @@
 				F3D1E7832C9C0D14000C81FF /* Battery State.swift in Sources */,
 				F3E7EC7D2C67B985008CD17B /* Cameras Specs.swift in Sources */,
 				F3B709C72CA2C5E3006ECAD1 /* Locale VM.swift in Sources */,
+				F389A6DB2CA36AAF00FF670F /* Warning Card.swift in Sources */,
 				F36FBC6B2C9413E100F5E174 /* CPU Usage Chart.swift in Sources */,
 				F3E7EC7E2C67B985008CD17B /* Nearby VM.swift in Sources */,
 				F3E7EC7F2C67B985008CD17B /* Memory VM.swift in Sources */,

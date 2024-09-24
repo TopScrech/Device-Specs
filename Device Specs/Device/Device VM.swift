@@ -75,7 +75,7 @@ final class DeviceVM {
         case .fair: "Fair"
         case .serious: "Serious"
         case .critical: "Critical"
-        @unknown default: "Unknown"
+        default: "Unknown"
         }
     }
     

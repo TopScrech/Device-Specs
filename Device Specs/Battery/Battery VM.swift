@@ -6,6 +6,7 @@ import Combine
 final class BatteryVM {
     var batteryLevel = ""
     var batteryState = ""
+    var batteryLevelNumber: Int?
     var lowPowerMode = ""
     
     private var cancellables = Set<AnyCancellable>()
@@ -107,35 +108,41 @@ final class BatteryVM {
     func fetchBatteryInfo() {
 #if os(watchOS)
         let device = WKInterfaceDevice.current()
-        let batteryLevelNumber = String(format: "%.0f", device.batteryLevel * 100)
+        let batteryLvlNumber = String(format: "%.0f", device.batteryLevel * 100)
         let batteryStateEnum = device.batteryState
 #else
         let device = UIDevice.current
-        let batteryLevelNumber = String(format: "%.0f", device.batteryLevel * 100)
+        
+        
+        let batteryLvlNumber = String(format: "%.0f", device.batteryLevel * 100)
         let batteryStateEnum = device.batteryState
 #endif
-        // Update battery level
-        batteryLevel = "\(batteryLevelNumber) %"
-        
-        // Update Low Power Mode status
-        lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled ? "Yes" : "No"
-        
-        // Update battery state
-        switch batteryStateEnum {
-        case .unknown:
-            batteryState = "Unknown"
+        withAnimation {
+            batteryLevelNumber = Int(device.batteryLevel * 100)
             
-        case .unplugged:
-            batteryState = "Unplugged"
+            // Update battery level
+            batteryLevel = "\(batteryLvlNumber) %"
             
-        case .charging:
-            batteryState = "Charging"
+            // Update Low Power Mode status
+            lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled ? "Yes" : "No"
             
-        case .full:
-            batteryState = "Full"
-            
-        default:
-            batteryState = "Unknown"
+            // Update battery state
+            switch batteryStateEnum {
+            case .unknown:
+                batteryState = "Unknown"
+                
+            case .unplugged:
+                batteryState = "Unplugged"
+                
+            case .charging:
+                batteryState = "Charging"
+                
+            case .full:
+                batteryState = "Full"
+                
+            default:
+                batteryState = "Unknown"
+            }
         }
     }
 }

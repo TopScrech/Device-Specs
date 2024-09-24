@@ -12,13 +12,11 @@ struct BatteryLevel: View {
             VStack {
                 Text(vm.batteryLevel)
                     .foregroundStyle(.secondary)
-                    .animation(.default, value: vm.batteryLevel)
                 
                 Image(systemName: vm.icon)
                     .title()
                     .foregroundColor(vm.color)
                     .symbolRenderingMode(vm.batteryState == "Full" ? .multicolor : .hierarchical)
-                    .animation(.default, value: vm.icon)
             }
         }
     }
