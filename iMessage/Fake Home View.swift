@@ -28,7 +28,7 @@ struct FakeHomeView: View {
             
             ListParam("Display", icon: "iphone", param: display.diagonalSize)
             
-            ListParam("Processor", icon: "cpu", param: processor.cpu)
+            ListParam("Processor", icon: "cpu", param: processor.cpuNameAndTechnology)
             
             ListParam("Memory", icon: "memorychip", param: memory.totalRamAndDisk)
             

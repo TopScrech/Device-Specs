@@ -166,6 +166,12 @@
 		F3B709DB2CA2CEE0006ECAD1 /* Haptic Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709DA2CA2CEE0006ECAD1 /* Haptic Button.swift */; };
 		F3B709DC2CA2CEE0006ECAD1 /* Haptic Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709DA2CA2CEE0006ECAD1 /* Haptic Button.swift */; };
 		F3B709DD2CA2CF39006ECAD1 /* Haptic Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709DA2CA2CEE0006ECAD1 /* Haptic Button.swift */; };
+		F3B709E22CA2F1DC006ECAD1 /* DeviceKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709E12CA2F1DC006ECAD1 /* DeviceKit.swift */; };
+		F3B709E32CA2F1DC006ECAD1 /* DeviceKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709E12CA2F1DC006ECAD1 /* DeviceKit.swift */; };
+		F3B709E42CA2F1DC006ECAD1 /* DeviceKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709E12CA2F1DC006ECAD1 /* DeviceKit.swift */; };
+		F3B709E52CA2F1DC006ECAD1 /* DeviceKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709E12CA2F1DC006ECAD1 /* DeviceKit.swift */; };
+		F3B709E62CA2F1DC006ECAD1 /* DeviceKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709E12CA2F1DC006ECAD1 /* DeviceKit.swift */; };
+		F3B709E72CA2F1DC006ECAD1 /* DeviceKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709E12CA2F1DC006ECAD1 /* DeviceKit.swift */; };
 		F3C3BDD42C92D8E000BF91EE /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
 		F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD52C92D8F600BF91EE /* App Container.swift */; };
 		F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD72C92D90700BF91EE /* Home View.swift */; };
@@ -425,6 +431,7 @@
 		F3B709CF2CA2C912006ECAD1 /* Volume Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Volume Slider.swift"; sourceTree = "<group>"; };
 		F3B709D62CA2CA1F006ECAD1 /* Haptic Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Haptic Tests.swift"; sourceTree = "<group>"; };
 		F3B709DA2CA2CEE0006ECAD1 /* Haptic Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Haptic Button.swift"; sourceTree = "<group>"; };
+		F3B709E12CA2F1DC006ECAD1 /* DeviceKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceKit.swift; sourceTree = "<group>"; };
 		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C3BDCC2C92D87C00BF91EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs App.swift"; sourceTree = "<group>"; };
@@ -833,6 +840,7 @@
 				F3D1E7AF2C9D5D96000C81FF /* Specs Button.swift */,
 				F3E7EC4F2C67B985008CD17B /* List Link.swift */,
 				F3E7EC502C67B985008CD17B /* Bluetooth VM.swift */,
+				F3B709E12CA2F1DC006ECAD1 /* DeviceKit.swift */,
 				F3E7EC532C67B985008CD17B /* Device */,
 				F3D1E7862C9C12A0000C81FF /* System */,
 				F36FBC692C93551B00F5E174 /* Processor */,
@@ -1363,6 +1371,7 @@
 				F36F7FF02CA0D4370007F120 /* Battery Level.swift in Sources */,
 				F36F80002CA0D4B90007F120 /* Processor Specs.swift in Sources */,
 				F36F80012CA0D4B90007F120 /* Current Process.swift in Sources */,
+				F3B709E72CA2F1DC006ECAD1 /* DeviceKit.swift in Sources */,
 				F36F80022CA0D4B90007F120 /* CPU Usage Chart.swift in Sources */,
 				F36F80212CA0D54C0007F120 /* Nav Extension.swift in Sources */,
 				F36F80222CA0D54C0007F120 /* Nav Destinations.swift in Sources */,
@@ -1399,6 +1408,7 @@
 			files = (
 				F3F85EB72C948D3100AE0A1D /* Location VM.swift in Sources */,
 				F3F85EB92C948D4300AE0A1D /* Sensors View.swift in Sources */,
+				F3B709E32CA2F1DC006ECAD1 /* DeviceKit.swift in Sources */,
 				F3F85EB62C948D0200AE0A1D /* Orientation VM.swift in Sources */,
 				F3B709B72CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
 				F3D1E7892C9C12C2000C81FF /* System Specs.swift in Sources */,
@@ -1471,6 +1481,7 @@
 				F36FBC652C9353FF00F5E174 /* Processor Specs.swift in Sources */,
 				F3B709C02CA2C31E006ECAD1 /* Timezone VM.swift in Sources */,
 				F3C3BDE42C92DBFB00BF91EE /* Battery VM.swift in Sources */,
+				F3B709E42CA2F1DC006ECAD1 /* DeviceKit.swift in Sources */,
 				F3B709C42CA2C5E3006ECAD1 /* Locale VM.swift in Sources */,
 				F3D1E78A2C9C12C2000C81FF /* System Specs.swift in Sources */,
 				F36FBC622C931E2600F5E174 /* AltitudeVM.swift in Sources */,
@@ -1515,6 +1526,7 @@
 				F3B709AF2CA2BE84006ECAD1 /* Timezone.swift in Sources */,
 				F3F85EEB2C957F9100AE0A1D /* Accessibility Item.swift in Sources */,
 				F3D1E7BD2C9D6A9C000C81FF /* Magnetic Model.swift in Sources */,
+				F3B709E22CA2F1DC006ECAD1 /* DeviceKit.swift in Sources */,
 				F3E7EC7B2C67B985008CD17B /* Device VM.swift in Sources */,
 				F3EA43AF2C998759009820F6 /* Torch Test.swift in Sources */,
 				F3D1E7C32C9D6B13000C81FF /* Magnetic Field Data.swift in Sources */,
@@ -1610,6 +1622,7 @@
 				F3F85EEF2C95801D00AE0A1D /* Accessibility Item.swift in Sources */,
 				F3B709B82CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
 				F3D1E7B92C9D611A000C81FF /* App VM.swift in Sources */,
+				F3B709E52CA2F1DC006ECAD1 /* DeviceKit.swift in Sources */,
 				F3D1E7BA2C9D611A000C81FF /* App Specs.swift in Sources */,
 				F3F85EE62C957ED300AE0A1D /* Accessibility VM.swift in Sources */,
 				F3F85EE82C957EE200AE0A1D /* Accessibility View.swift in Sources */,
@@ -1624,6 +1637,7 @@
 			files = (
 				F3F85F2B2C96448E00AE0A1D /* System Report View.swift in Sources */,
 				F33FEE5D2C98386E00214288 /* Param.swift in Sources */,
+				F3B709E62CA2F1DC006ECAD1 /* DeviceKit.swift in Sources */,
 				F3B709BA2CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
 				F33FEE5A2C982FF000214288 /* System Report VM.swift in Sources */,
 				F3F85F112C962C4600AE0A1D /* macOS App.swift in Sources */,

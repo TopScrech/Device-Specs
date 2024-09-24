@@ -7,7 +7,9 @@ struct ProcessorSpecs: View {
     var body: some View {
         List {
             Section("CPU") {
-                ListParam("CPU", param: vm.cpu)
+                ListParam("CPU", param: vm.cpuName)
+                
+                ListParam("Technology node", param: "\(vm.techNode) nm")
                 
                 ListParam("Architecture", param: vm.arch)
                 

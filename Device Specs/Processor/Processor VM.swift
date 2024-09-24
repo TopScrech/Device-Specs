@@ -4,8 +4,20 @@ import DeviceKit
 @Observable
 final class ProcessorVM {
     private let info = ProcessInfo.processInfo
+    private let cpu = Device.current.cpu
     
-    let cpu = Device.current.cpu.description
+    var cpuNameAndTechnology: String {
+        "\(cpuName) (\(techNode)nm)"
+    }
+    
+    var cpuName: String {
+        cpu.description
+    }
+    
+    var techNode: String {
+        cpu.nanometers
+    }
+    
     var cpuUsage: [Double] = []
     
     var cores: Int {
