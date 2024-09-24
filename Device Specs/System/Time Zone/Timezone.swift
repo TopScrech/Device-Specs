@@ -8,7 +8,11 @@ struct Timezone: View {
             ListParam("Time zone", param: vm.timeZone)
             ListParam("Abbreviation", param: vm.abbreviation)
             ListParam("Seconds from GMT", param: vm.secondsFromGMT)
-            ListParam("Next daylight saving time transition", param: vm.nextDaylightSavingTimeTransition)
+            
+            if let date = vm.nextDaylightSavingTimeTransition?.formatted() {
+                ListParam("Next daylight saving time transition", param: date)
+            }
+            
             ListParam("Daylight saving time offset", param: vm.daylightSavingTimeOffset)
             ListParam("Is daylight saving time", param: vm.isDaylightSavingTime)
             ListParam("Time zone data version", param: vm.timeZoneDataVersion)

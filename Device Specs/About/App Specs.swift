@@ -24,7 +24,9 @@ struct AppSpecs: View {
             
             ListParam("Bundle identifier", param: vm.bundleIdentifier)
             
-            ListParam("Installation date", param: vm.getAppInstallationDate)
+            if let date = vm.getAppInstallationDate?.formatted() {
+                ListParam("Installation date", param: date)
+            }
             
 #if !os(watchOS) && !os(tvOS)
             Section {

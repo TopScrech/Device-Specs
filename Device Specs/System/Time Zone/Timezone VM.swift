@@ -16,8 +16,8 @@ final class TimezoneVM {
         time.secondsFromGMT().description
     }
     
-    var nextDaylightSavingTimeTransition: String {
-        time.nextDaylightSavingTimeTransition?.description ?? "-"
+    var nextDaylightSavingTimeTransition: Date? {
+        time.nextDaylightSavingTimeTransition
     }
     
     var daylightSavingTimeOffset: String {

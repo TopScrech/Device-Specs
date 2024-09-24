@@ -32,15 +32,15 @@ final class AppVM {
         info.isiOSAppOnMac ? "Yes" : "No"
     }
     
-    var getAppInstallationDate: String {
+    var getAppInstallationDate: Date? {
         guard
             let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first,
             let attributes = try? FileManager.default.attributesOfItem(atPath: documentsURL.path),
             let creationDate = attributes[.creationDate] as? Date
         else {
-            return "-"
+            return nil
         }
         
-        return creationDate.description
+        return creationDate
     }
 }
