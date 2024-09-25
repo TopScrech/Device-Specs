@@ -1,5 +1,8 @@
 import ScrechKit
+
+#if canImport(HealthKit)
 import HealthKit
+#endif
 
 struct HealthKit: View {
     private var healthDataAvailable: Bool {
