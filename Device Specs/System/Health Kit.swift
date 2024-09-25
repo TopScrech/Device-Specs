@@ -6,7 +6,7 @@ struct HealthKit: View {
     
     var body: some View {
         Section {
-            ListParam("Health data available", param: healthKitAvailable ? "Yes" : "No")
+            ListParam("Health data", param: healthKitAvailable ? "Available" : "Unavailable")
         }
     }
 }

@@ -7,6 +7,7 @@ struct FontList: View {
     @State private var isBold = false
     @State private var isItalic = false
     @State private var isUnderline = false
+    @State private var isStrikethrough = false
     
     private var filteredFonts: [String] {
         if searchText.isEmpty {
@@ -30,8 +31,10 @@ struct FontList: View {
                         .bold(isBold)
                         .italic(isItalic)
                         .underline(isUnderline)
+                        .strikethrough(isStrikethrough)
                         .font(.custom(fontFamily, size: 16))
                         .animation(.default, value: isUnderline)
+                        .animation(.default, value: isStrikethrough)
                 }
             }
         }
@@ -59,6 +62,13 @@ struct FontList: View {
             } label: {
                 Image(systemName: "underline")
                     .foregroundStyle(isUnderline ? .primary : .secondary)
+            }
+            
+            Button {
+                isStrikethrough.toggle()
+            } label: {
+                Image(systemName: "strikethrough")
+                    .foregroundStyle(isStrikethrough ? .primary : .secondary)
             }
         }
     }

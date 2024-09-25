@@ -13,7 +13,7 @@ struct AdvertisingIdentifier: View {
         }
     }
     
-    func request() {
+    private func request() {
         ATTrackingManager.requestTrackingAuthorization { status in
             switch status {
             case .notDetermined:
@@ -35,7 +35,7 @@ struct AdvertisingIdentifier: View {
         }
     }
     
-    func isTrackingAccessAvailable() -> Bool {
+    private func isTrackingAccessAvailable() -> Bool {
         switch ATTrackingManager.trackingAuthorizationStatus {
         case .authorized:
             true
@@ -53,7 +53,7 @@ struct AdvertisingIdentifier: View {
             ListParam("Advertising Identifier (IDFA)", param: idfa)
         } footer: {
             if idfa == "N/a" {
-                Button("Request IDFA access") {
+                Button("Request IDFA") {
                     request()
                 }
                 .footnote()
