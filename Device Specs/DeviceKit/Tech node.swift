@@ -1,7 +1,7 @@
 import DeviceKit
 
 extension Device.CPU {
-    var nanometers: String {
+    var techNode: String {
         switch self {
 #if os(iOS) || os(tvOS)
         case .a4: "45"

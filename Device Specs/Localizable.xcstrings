@@ -410,6 +410,9 @@
     "Haptic feedback" : {
 
     },
+    "Haptic Feedback" : {
+
+    },
     "Hardware" : {
 
     },
@@ -423,6 +426,9 @@
 
     },
     "Heading accuracy" : {
+
+    },
+    "Health" : {
 
     },
     "Health data" : {
@@ -600,6 +606,9 @@
 
     },
     "Next daylight saving time transition" : {
+
+    },
+    "Not all platforms will play feedback in response to certain types" : {
 
     },
     "Numbering system" : {

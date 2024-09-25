@@ -25,7 +25,7 @@ final class ProcessorVM {
     }
     
     var techNode: String {
-        cpu.nanometers
+        cpu.techNode
     }
     
     var cpuUsage: [Double] = []
