@@ -32,6 +32,12 @@ struct WarningsSection: View {
 }
 
 #Preview {
-    WarningsSection()
-        .environment(BatteryVM())
+    List {
+        WarningCard("Serious thermal state", icon: "flame", color: .yellow)
+        WarningCard("Critical thermal state", icon: "flame.fill", color: .red)
+        WarningCard("Low battery", icon: "battery.25percent", color: .yellow)
+        WarningCard("Very low battery", icon: "battery.0percent", color: .red)
+        WarningCard("Low power mode", icon: "leaf.fill", color: .green)
+    }
+    .environment(BatteryVM())
 }
