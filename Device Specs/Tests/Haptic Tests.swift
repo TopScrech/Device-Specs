@@ -28,6 +28,8 @@ struct HapticTests: View {
                 HapticButton("Path complete", feedback: .pathComplete)
             }
         }
+        .navigationTitle("Haptic Feedback")
+        .scrollIndicators(.never)
     }
 }
 
