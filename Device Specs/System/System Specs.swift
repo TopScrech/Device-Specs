@@ -37,9 +37,7 @@ struct SystemSpecs: View {
                 ListParam("System uptime", param: vm.fetchSystemUptime())
             }
             
-#if !os(tvOS)
             HealthKit()
-#endif
         }
         .navigationTitle("System")
     }

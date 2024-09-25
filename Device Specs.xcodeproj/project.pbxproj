@@ -276,6 +276,7 @@
 		F3EA43B12C998787009820F6 /* Color Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43B02C998787009820F6 /* Color Test List.swift */; };
 		F3EA43B22C998787009820F6 /* Color Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43B02C998787009820F6 /* Color Test List.swift */; };
 		F3EA43B32C998787009820F6 /* Color Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43B02C998787009820F6 /* Color Test List.swift */; };
+		F3ECFDDB2CA4252A00E72D41 /* Health Kit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */; };
 		F3F85E8B2C94529A00AE0A1D /* Device-Specs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3F85E8A2C94529A00AE0A1D /* Device-Specs-Info.plist */; };
 		F3F85E8E2C9452CB00AE0A1D /* Accessibility Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */; };
 		F3F85E912C9453AE00AE0A1D /* Accessibility View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */; };
@@ -1630,6 +1631,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F85EE72C957EDA00AE0A1D /* Accessibility Param.swift in Sources */,
+				F3ECFDDB2CA4252A00E72D41 /* Health Kit.swift in Sources */,
 				F3EA43B32C998787009820F6 /* Color Test List.swift in Sources */,
 				F3F85EF52C9583EB00AE0A1D /* Device Specs.swift in Sources */,
 				F3B709CD2CA2C853006ECAD1 /* Volume.swift in Sources */,
