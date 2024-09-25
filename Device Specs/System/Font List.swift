@@ -5,6 +5,8 @@ struct FontList: View {
     
     @State private var searchText = ""
     @State private var isBold = false
+    @State private var isItalic = false
+    @State private var isUnderline = false
     
     private var filteredFonts: [String] {
         if searchText.isEmpty {
@@ -26,7 +28,10 @@ struct FontList: View {
                     
                     Text("Example")
                         .bold(isBold)
+                        .italic(isItalic)
+                        .underline(isUnderline)
                         .font(.custom(fontFamily, size: 16))
+                        .animation(.default, value: isUnderline)
                 }
             }
         }
@@ -40,6 +45,20 @@ struct FontList: View {
             } label: {
                 Image(systemName: "bold")
                     .foregroundStyle(isBold ? .primary : .secondary)
+            }
+            
+            Button {
+                isItalic.toggle()
+            } label: {
+                Image(systemName: "italic")
+                    .foregroundStyle(isItalic ? .primary : .secondary)
+            }
+            
+            Button {
+                isUnderline.toggle()
+            } label: {
+                Image(systemName: "underline")
+                    .foregroundStyle(isUnderline ? .primary : .secondary)
             }
         }
     }
