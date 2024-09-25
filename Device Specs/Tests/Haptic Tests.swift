@@ -20,12 +20,16 @@ struct HapticTests: View {
     
     var body: some View {
         List {
-            ForEach(feedbacks.sorted(by: { $0.key < $1.key }), id: \.key) { key, feedback in
-                HapticButton(key, feedback: feedback)
-            }
-            
-            if #available(iOS 17.5, watchOS 10.5, *) {
-                HapticButton("Path complete", feedback: .pathComplete)
+            Section {
+                ForEach(feedbacks.sorted(by: { $0.key < $1.key }), id: \.key) { key, feedback in
+                    HapticButton(key, feedback: feedback)
+                }
+                
+                if #available(iOS 17.5, watchOS 10.5, *) {
+                    HapticButton("Path complete", feedback: .pathComplete)
+                }
+            } footer: {
+                Text("Not all platforms will play feedback in response to certain types")
             }
         }
         .navigationTitle("Haptic Feedback")
@@ -34,7 +38,5 @@ struct HapticTests: View {
 }
 
 #Preview {
-    List {
-        HapticTests()
-    }
+    HapticTests()
 }
