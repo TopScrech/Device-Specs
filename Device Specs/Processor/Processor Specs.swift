@@ -9,6 +9,8 @@ struct ProcessorSpecs: View {
             Section("CPU") {
                 ListParam("CPU", param: vm.cpuName)
                 
+                ListParam("Microarchitecture", param: vm.microArch)
+                
                 ListParam("Technology node", param: "\(vm.techNode) nm")
                 
                 ListParam("Architecture", param: vm.arch)

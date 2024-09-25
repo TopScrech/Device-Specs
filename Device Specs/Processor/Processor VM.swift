@@ -10,6 +10,16 @@ final class ProcessorVM {
         "\(cpuName) (\(techNode)nm)"
     }
     
+    var microArch: String {
+        if cpuName.contains("Fusion") {
+            "Fusion"
+        } else if cpuName.contains("Bionic") {
+            "Bionic"
+        } else {
+            "-"
+        }
+    }
+    
     var cpuName: String {
         cpu.description
     }
