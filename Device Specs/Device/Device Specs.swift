@@ -41,6 +41,7 @@ struct DeviceSpecs: View {
                 ListParam("Wireless Charging", param: Device.current.supportsWirelessCharging ? "Yes" : "No")
                 ListParam("5G", param: Device.current.has5gSupport ? "Yes" : "No")
                 ListParam("Dynamic Island", param: Device.current.hasDynamicIsland ? "Yes" : "No")
+                ListParam("Dock connector", param: Device.current.hasUSBCConnectivity ? "USB-C" : "Lightning")
                 ListParam("Force Touch", param: vm.isForceTouchAvailable)
 #endif
                 ListParam("Ultra Wideband", param: vm.isUltraWidebandAvailable)
