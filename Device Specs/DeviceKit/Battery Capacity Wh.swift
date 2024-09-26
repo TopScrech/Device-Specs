@@ -1,5 +1,6 @@
 import DeviceKit
 
+// MagSafe battery pack: 1460mAh / 11.13W
 // Source: https://app.clickdimensions.com/blob/chemtreccom-ajrb1/files/apis_bpisreportupdated20220909.pdf?1662765043983
 
 // Source 2: https://www.macworld.com/article/678413/iphone-battery-capacities-compared-all-iphones-battery-life-in-mah-and-wh.html
