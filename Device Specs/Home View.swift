@@ -68,8 +68,19 @@ struct HomeView: View {
             }
             
             Section {
-                SpecsButton("Tests", icon: "testtube.2") {
+                Button {
                     navState.navigate(.toTests)
+                } label: {
+                    HStack {
+                        Label("Tests", systemImage: "testtube.2")
+                        
+                        Spacer()
+                        
+                        Image(systemName: "chevron.forward")
+                            .foregroundStyle(.tertiary)
+                            .footnote(.bold)
+                    }
+                    .foregroundStyle(.foreground)
                 }
             }
             

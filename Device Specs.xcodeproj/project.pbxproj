@@ -349,6 +349,12 @@
 		F3ECFE3E2CA53AED00E72D41 /* Voltage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */; };
 		F3ECFE3F2CA53AED00E72D41 /* Voltage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */; };
 		F3ECFE402CA53AED00E72D41 /* Voltage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */; };
+		F3ECFE422CA5825800E72D41 /* Apple Intelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE412CA5825800E72D41 /* Apple Intelligence.swift */; };
+		F3ECFE432CA5825800E72D41 /* Apple Intelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE412CA5825800E72D41 /* Apple Intelligence.swift */; };
+		F3ECFE442CA5825800E72D41 /* Apple Intelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE412CA5825800E72D41 /* Apple Intelligence.swift */; };
+		F3ECFE452CA5825800E72D41 /* Apple Intelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE412CA5825800E72D41 /* Apple Intelligence.swift */; };
+		F3ECFE462CA5825800E72D41 /* Apple Intelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE412CA5825800E72D41 /* Apple Intelligence.swift */; };
+		F3ECFE472CA5825800E72D41 /* Apple Intelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE412CA5825800E72D41 /* Apple Intelligence.swift */; };
 		F3F85E8B2C94529A00AE0A1D /* Device-Specs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3F85E8A2C94529A00AE0A1D /* Device-Specs-Info.plist */; };
 		F3F85E8E2C9452CB00AE0A1D /* Accessibility Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */; };
 		F3F85E912C9453AE00AE0A1D /* Accessibility View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */; };
@@ -592,6 +598,7 @@
 		F3ECFE2C2CA53AE200E72D41 /* Battery Capacity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Capacity.swift"; sourceTree = "<group>"; };
 		F3ECFE332CA53AE900E72D41 /* Battery Capacity Wh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Capacity Wh.swift"; sourceTree = "<group>"; };
 		F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voltage.swift; sourceTree = "<group>"; };
+		F3ECFE412CA5825800E72D41 /* Apple Intelligence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Apple Intelligence.swift"; sourceTree = "<group>"; };
 		F3F85E8A2C94529A00AE0A1D /* Device-Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Device-Specs-Info.plist"; sourceTree = "<group>"; };
 		F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility Param.swift"; sourceTree = "<group>"; };
 		F3F85E962C94858F00AE0A1D /* watchOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = watchOS.entitlements; sourceTree = "<group>"; };
@@ -1110,6 +1117,7 @@
 				F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */,
 				F3ECFE2C2CA53AE200E72D41 /* Battery Capacity.swift */,
 				F3ECFE332CA53AE900E72D41 /* Battery Capacity Wh.swift */,
+				F3ECFE412CA5825800E72D41 /* Apple Intelligence.swift */,
 				F3ECFE2B2CA53A6700E72D41 /* Examples */,
 				F3ECFE0E2CA5343C00E72D41 /* Disabled */,
 			);
@@ -1485,6 +1493,7 @@
 				F36F80152CA0D4FF0007F120 /* Device Specs.swift in Sources */,
 				F36F80132CA0D4F80007F120 /* System Specs.swift in Sources */,
 				F36F7FFE2CA0D4B40007F120 /* Memory Specs.swift in Sources */,
+				F3ECFE452CA5825800E72D41 /* Apple Intelligence.swift in Sources */,
 				F3B709D72CA2CA1F006ECAD1 /* Haptic Tests.swift in Sources */,
 				F36F802F2CA0E9AF0007F120 /* Torch Test.swift in Sources */,
 				F36F7FFF2CA0D4B40007F120 /* Memory VM.swift in Sources */,
@@ -1597,6 +1606,7 @@
 				F3D1E7A62C9CD453000C81FF /* Current Process.swift in Sources */,
 				F3F85EC12C948F9D00AE0A1D /* Test List.swift in Sources */,
 				F3B709EB2CA2F683006ECAD1 /* Font List.swift in Sources */,
+				F3ECFE432CA5825800E72D41 /* Apple Intelligence.swift in Sources */,
 				F3ECFE352CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
 				F3EA43B12C998787009820F6 /* Color Test List.swift in Sources */,
 				F3D1E77F2C9C0CD3000C81FF /* Battery Level.swift in Sources */,
@@ -1647,6 +1657,7 @@
 				F3F85E932C9453AE00AE0A1D /* Accessibility VM.swift in Sources */,
 				F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */,
 				F36FBC4D2C9319D600F5E174 /* Connectivity VM.swift in Sources */,
+				F3ECFE462CA5825800E72D41 /* Apple Intelligence.swift in Sources */,
 				F3D1E7842C9C0D14000C81FF /* Battery State.swift in Sources */,
 				F3D1E7A82C9CD453000C81FF /* Current Process.swift in Sources */,
 				F3C3BDE22C92DB9D00BF91EE /* Memory Specs.swift in Sources */,
@@ -1786,6 +1797,7 @@
 				F3E7EC922C67B985008CD17B /* Connectivity VM.swift in Sources */,
 				F3EA43B22C998787009820F6 /* Color Test List.swift in Sources */,
 				F3E7EC932C67B985008CD17B /* Pressure VM.swift in Sources */,
+				F3ECFE422CA5825800E72D41 /* Apple Intelligence.swift in Sources */,
 				F3E7EC3E2C676A13008CD17B /* Device Specs App.swift in Sources */,
 				F3D1E78F2C9C12D6000C81FF /* System VM.swift in Sources */,
 				F3D1E7AE2C9D5BF8000C81FF /* App VM.swift in Sources */,
@@ -1825,6 +1837,7 @@
 				F3F85F032C9587C400AE0A1D /* Network VM.swift in Sources */,
 				F3ECFE302CA53AE200E72D41 /* Battery Capacity.swift in Sources */,
 				F3F85EF12C9580AD00AE0A1D /* Display VM.swift in Sources */,
+				F3ECFE472CA5825800E72D41 /* Apple Intelligence.swift in Sources */,
 				F3ECFDFD2CA4B53200E72D41 /* L3 Cache.swift in Sources */,
 				F3ECFE342CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
 				F3F85EE42C957D4F00AE0A1D /* Test List.swift in Sources */,
@@ -1879,6 +1892,7 @@
 				F3F85F252C962E7200AE0A1D /* Battery VM.swift in Sources */,
 				F3F85F2D2C96455300AE0A1D /* Hardware Specs.swift in Sources */,
 				F3B7098B2CA1DD4F006ECAD1 /* Version View.swift in Sources */,
+				F3ECFE442CA5825800E72D41 /* Apple Intelligence.swift in Sources */,
 				F3ECFDFC2CA4B53200E72D41 /* L3 Cache.swift in Sources */,
 				F33FEE5F2C9838AE00214288 /* Spec Item.swift in Sources */,
 				F3F85F232C962CE600AE0A1D /* Battery Specs.swift in Sources */,

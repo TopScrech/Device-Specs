@@ -3,6 +3,7 @@ import DeviceKit
 
 @Observable
 final class SystemVM {
+    private let device = Device.current
     
     var buildNumber = ""
     
@@ -17,6 +18,10 @@ final class SystemVM {
     
     init() {
         fetchBuildNumber()
+    }
+    
+    var supportsAppleIntelligence: Bool {
+        device.supportsAppleIntelligence
     }
     
     var operatingSystem: String {

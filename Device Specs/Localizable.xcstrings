@@ -101,6 +101,9 @@
     "Apple 9" : {
       "shouldTranslate" : false
     },
+    "Apple Intelligence" : {
+
+    },
     "Architecture" : {
 
     },
@@ -1051,6 +1054,12 @@
 
     },
     "Yaw" : {
+
+    },
+    "Your device does not support Apple Intelligence" : {
+
+    },
+    "Your device supports Apple Intelligence" : {
 
     },
     "Z Axis" : {
