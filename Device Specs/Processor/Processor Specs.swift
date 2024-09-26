@@ -11,7 +11,7 @@ struct ProcessorSpecs: View {
                 
                 ListParam("Microarchitecture", param: vm.microArch)
                 
-                ListParam("Technology node", param: "\(vm.techNode) nm")
+                ListParam("Technology node", param: vm.techNode)
                 
                 ListParam("Architecture", param: vm.arch)
                 

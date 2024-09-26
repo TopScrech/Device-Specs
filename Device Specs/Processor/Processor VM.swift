@@ -7,7 +7,7 @@ final class ProcessorVM {
     private let cpu = Device.current.cpu
     
     var cpuNameAndTechnology: String {
-        "\(cpuName) (\(techNode)nm)"
+        "\(cpuName) (\(techNode))"
     }
     
     var microArch: String {
