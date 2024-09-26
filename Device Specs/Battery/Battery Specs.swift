@@ -10,6 +10,12 @@ struct BatterySpecs: View {
             BatteryState()
             
             ListParam("Low power mode", param: vm.lowPowerMode)
+            
+            ListParam("Voltage", param: vm.voltage)
+            
+            ListParam("Capacity", param: vm.capacity)
+            
+            ListParam("Capacity in Wh", param: vm.capacityWh)
         }
         .navigationTitle("Battery")
         .environment(vm)

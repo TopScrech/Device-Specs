@@ -93,7 +93,7 @@ extension Device {
         case .appleWatchSeries10_46mm: ""
 #endif
         case .simulator: "-"
-        case .unknown: "-"
+        case .unknown(let device): "Unknown device \(device.description)"
         }
     }
 }

@@ -50,7 +50,7 @@ extension Device {
         case .iPadAir5: "March 18, 2022"
         case .iPad10, .iPadPro11Inch4, .iPadPro12Inch6: "October 26, 2022"
         case .iPadAir11M2, .iPadAir13M2, .iPadPro11M4, .iPadPro13M4: "May 15, 2024"
-        case .homePod: "N/a"
+        case .homePod: "-"
 #elseif os(tvOS)
         case .appleTVHD: "October 30, 2015"
         case .appleTV4K: "September 12, 2017"
@@ -74,7 +74,7 @@ extension Device {
         case .appleWatchSeries10_42mm, .appleWatchSeries10_46mm: "September 20, 2024"
 #endif
         case .simulator: "N/a"
-        case .unknown: "N/a"
+        case .unknown(let device): "Unknown device \(device.description)"
         }
     }
 }

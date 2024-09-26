@@ -1,7 +1,10 @@
 import ScrechKit
+import DeviceKit
 
 @Observable
 final class MemoryVM {
+    private let device = Device.current
+    
     var totalDisk = ""
     var usedDisk = ""
     var freeDisk = ""
@@ -17,6 +20,10 @@ final class MemoryVM {
     
     var totalRamAndDisk: String {
         "\(totalRam) & \(totalDisk)"
+    }
+    
+    var memoryType: String {
+        device.cpu.memoryType
     }
     
     // Memory

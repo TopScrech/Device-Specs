@@ -15,18 +15,29 @@ import CoreNFC
 
 @Observable
 final class DeviceVM {
-    // Device
-    let deviceIdentifier = Device.current.description
+    private let device = Device.current
+    
     
     var bioIcon = ""
     var bioType = ""
     
     var architecture = ""
     var isForceTouchAvailable = ""
-    let deviceName = Device.current.name ?? "-"
+    
+    var deviceName: String {
+        Device.current.name ?? "-"
+    }
+    
+    var deviceIdentifier: String {
+        device.description
+    }
     
     var internalName: String {
         getInternalDeviceName() ?? "-"
+    }
+    
+    var releaseDate: String {
+        device.releaseDate
     }
     
 #warning("Finish")

@@ -17,6 +17,10 @@ struct ProcessorSpecs: View {
                 
                 ListParam("Core count", param: "\(vm.cores) (\(vm.activeCores) active)")
                 
+                ListParam("Max. clock speed", param: vm.maxClockSpeed)
+                
+                ListParam("Instruction set", param: vm.instructionSet)
+                
                 ListParam("Host name", param: vm.hostName)
                 
                 ListParam("Thread count", param: vm.threadCount)

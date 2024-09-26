@@ -187,6 +187,12 @@
     "Capabilities" : {
 
     },
+    "Capacity" : {
+
+    },
+    "Capacity in Wh" : {
+
+    },
     "Cell Revision" : {
 
     },
@@ -462,6 +468,9 @@
     "Installation date" : {
 
     },
+    "Instruction set" : {
+
+    },
     "Internal name" : {
 
     },
@@ -541,6 +550,9 @@
 
     },
     "Max Load" : {
+
+    },
+    "Max. clock speed" : {
 
     },
     "Maximum Capacity" : {
@@ -749,6 +761,9 @@
     "Relative altitude" : {
 
     },
+    "Release date" : {
+
+    },
     "Request IDFA" : {
 
     },
@@ -785,6 +800,9 @@
       }
     },
     "Screen size" : {
+
+    },
+    "SDRAM Type" : {
 
     },
     "Seconds from GMT" : {
@@ -1003,6 +1021,9 @@
       }
     },
     "VoiceOver" : {
+
+    },
+    "Voltage" : {
 
     },
     "Volume" : {

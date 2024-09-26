@@ -28,6 +28,14 @@ final class ProcessorVM {
         cpu.techNode
     }
     
+    var maxClockSpeed: String {
+        cpu.maxClockSpeed
+    }
+    
+    var instructionSet: String {
+        cpu.instructionSet
+    }
+    
     var cpuUsage: [Double] = []
     
     var cores: Int {

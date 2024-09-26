@@ -46,8 +46,7 @@ extension Device.CPU {
         case .s9: "LPDDR4X (Probably)"
         case .s10: "LPDDR4X (Probably)"
 #endif
-        case .unknown:
-            "Unknown"
+        case .unknown: "Unknown"
         }
     }
 }

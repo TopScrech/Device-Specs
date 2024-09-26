@@ -9,6 +9,7 @@ struct DeviceSpecs: View {
             ListParam("Device", param: vm.deviceIdentifier)
             ListParam("Identifier", param: Device.identifier)
             ListParam("Name", param: vm.deviceName)
+            ListParam("Release date", param: vm.releaseDate)
             ListParam("Internal name", param: vm.internalName)
             ListParam("Identifier for vendor", param: vm.vandorId)
             

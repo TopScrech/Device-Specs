@@ -4,6 +4,8 @@ import Combine
 
 @Observable
 final class BatteryVM {
+    private let device = Device.current
+    
     var batteryLevel = ""
     var batteryState = ""
     var batteryLevelNumber: Int?
@@ -33,6 +35,18 @@ final class BatteryVM {
 #else
         UIDevice.current.isBatteryMonitoringEnabled = false
 #endif
+    }
+    
+    var capacity: String {
+        device.batteryCapacity
+    }
+    
+    var voltage: String {
+        device.voltage
+    }
+    
+    var capacityWh: String {
+        device.power
     }
     
     var color: Color {

@@ -9,6 +9,7 @@ struct MemorySpecs: View {
                 ListParam("Total RAM", param: vm.totalRam)
                 ListParam("Used RAM", param: vm.usedRam)
                 ListParam("Free RAM", param: vm.freeRam)
+                ListParam("SDRAM Type", param: vm.memoryType)
             }
             
             Section("Storage") {
