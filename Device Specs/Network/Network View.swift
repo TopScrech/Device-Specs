@@ -17,7 +17,9 @@ struct NetworkSpecs: View {
             
             Section {
                 ListParam("Network type", param: connectivity.type)
+                
                 ListParam("SSID", param: connectivity.ssid)
+                
                 ListParam("BSSID", param: connectivity.bssid)
             }
         }
