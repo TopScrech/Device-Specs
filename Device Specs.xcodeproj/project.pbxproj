@@ -2276,7 +2276,6 @@
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "This permission is required in order to test UWB capabilities";
-				INFOPLIST_KEY_NSUserTrackingUsageDescription = "The app will be able to display your IDFA. It will NOT track any of your activities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -2327,7 +2326,6 @@
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "This permission is required in order to test UWB capabilities";
-				INFOPLIST_KEY_NSUserTrackingUsageDescription = "The app will be able to display your IDFA. It will NOT track any of your activities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

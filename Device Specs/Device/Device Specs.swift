@@ -13,9 +13,9 @@ struct DeviceSpecs: View {
             ListParam("Internal name", param: vm.internalName)
             ListParam("Identifier for vendor", param: vm.vandorId)
             
-#if !os(watchOS) && !os(visionOS)
-            AdvertisingIdentifier()
-#endif
+//#if !os(watchOS) && !os(visionOS)
+//            AdvertisingIdentifier()
+//#endif
             
             Section {
                 ListParam("Thermal state", param: vm.thermalState)
