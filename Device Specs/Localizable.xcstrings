@@ -1064,7 +1064,14 @@
       }
     },
     "Privacy Policy" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Политика приватности"
+          }
+        }
+      }
     },
     "Process identifier" : {
 
