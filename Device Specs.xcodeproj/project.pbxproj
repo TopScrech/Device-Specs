@@ -778,9 +778,9 @@
 			isa = PBXGroup;
 			children = (
 				F36FBC632C9353FF00F5E174 /* Processor Specs.swift */,
+				F36FBC662C93542700F5E174 /* Processor VM.swift */,
 				F3D1E7A52C9CD453000C81FF /* Current Process.swift */,
 				F3F85EF92C95857C00AE0A1D /* GPU Families.swift */,
-				F36FBC662C93542700F5E174 /* Processor VM.swift */,
 				F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */,
 			);
 			path = Processor;

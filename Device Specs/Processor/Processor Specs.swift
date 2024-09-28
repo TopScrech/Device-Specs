@@ -25,6 +25,8 @@ struct ProcessorSpecs: View {
                 
                 ListParam("Thread count", param: vm.threadCount)
                 
+                ListParam("Thread explosion limit", param: vm.threadExplosionLimit)
+                
                 NavigationLink {
                     CurrentProcess()
                         .environment(vm)
@@ -37,8 +39,11 @@ struct ProcessorSpecs: View {
             Section("GPU") {
                 if let device = MTLCreateSystemDefaultDevice() {
                     ListParam("GPU", param: device.name)
+                    
                     ListParam("Architecture", param: device.architecture.name)
+                    
                     ListParam("Unified memory", param: device.hasUnifiedMemory ? "Yes" : "No")
+                    
                     ListParam("Supports raytracing", param: device.supportsRaytracing ? "Yes" : "No")
                     
                     NavigationLink("Supported GPU families") {

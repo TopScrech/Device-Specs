@@ -20,6 +20,14 @@ final class ProcessorVM {
         }
     }
     
+    var threadExplosionLimit: String {
+        if let threads = Int(threadCount) {
+            String(threads * 16)
+        } else {
+            "-"
+        }
+    }
+    
     var cpuName: String {
         cpu.description
     }
