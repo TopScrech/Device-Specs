@@ -14,13 +14,34 @@
 
     },
     "Absolute altitude" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Абсолютная высота"
+          }
+        }
+      }
     },
     "Acceleration" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ускорение"
+          }
+        }
+      }
     },
     "Accessibility" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Универсальный доступ"
+          }
+        }
+      }
     },
     "Active time" : {
 
@@ -69,7 +90,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "u"
+            "value" : "Апертура"
           }
         }
       }
@@ -108,10 +129,17 @@
 
     },
     "Aspect ratio" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Соотношение сторон"
+          }
+        }
+      }
     },
     "Assistive Touch" : {
-
+      "shouldTranslate" : false
     },
     "Autoupdating current" : {
 
@@ -123,7 +151,14 @@
 
     },
     "Battery" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Аккумулятор"
+          }
+        }
+      }
     },
     "Battery Info" : {
 
@@ -141,7 +176,14 @@
 
     },
     "Bold Text" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жирный Шрифт"
+          }
+        }
+      }
     },
     "Brightness" : {
       "localizations" : {
@@ -170,28 +212,77 @@
 
     },
     "Button Shapes" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Формы Кнопок"
+          }
+        }
+      }
     },
     "Calendar" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Календарь"
+          }
+        }
+      }
     },
     "Camera" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Камера"
+          }
+        }
+      }
     },
     "Cameras" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Камеры"
+          }
+        }
+      }
     },
     "Cancel" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отмена"
+          }
+        }
+      }
     },
     "Capabilities" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Возможности"
+          }
+        }
+      }
     },
     "Capacity" : {
 
     },
     "Capacity in Wh" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ёмкость"
+          }
+        }
+      }
     },
     "Cell Revision" : {
 
@@ -203,7 +294,14 @@
 
     },
     "Clinical records" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Клинические записи"
+          }
+        }
+      }
     },
     "Closed Captioning" : {
 
@@ -234,7 +332,14 @@
       "shouldTranslate" : false
     },
     "Condition" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Состояние"
+          }
+        }
+      }
     },
     "Confidence" : {
 
@@ -243,10 +348,24 @@
 
     },
     "Continent" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Континент"
+          }
+        }
+      }
     },
     "Core" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ядро"
+          }
+        }
+      }
     },
     "Core count" : {
       "localizations" : {
@@ -272,7 +391,14 @@
 
     },
     "Create a full system report" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Создать полный системный отчет"
+          }
+        }
+      }
     },
     "Critical thermal state" : {
 
@@ -281,13 +407,34 @@
 
     },
     "Currency code" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Код валюты"
+          }
+        }
+      }
     },
     "Currency symbol" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Символ валюты"
+          }
+        }
+      }
     },
     "Current process" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Текущий процесс"
+          }
+        }
+      }
     },
     "Current session" : {
       "localizations" : {
@@ -309,37 +456,65 @@
 
     },
     "Decimal separator" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Десятичный разделитель"
+          }
+        }
+      }
     },
     "Device" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Устройство"
+          }
+        }
+      }
     },
     "Device Name" : {
 
     },
     "Device Specs" : {
-
+      "shouldTranslate" : false
     },
     "Dismiss" : {
 
     },
     "Display" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Экран"
+          }
+        }
+      }
     },
     "Dock connector" : {
 
     },
     "Dynamic Island" : {
-
+      "shouldTranslate" : false
     },
     "Environment" : {
 
     },
     "Error" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка"
+          }
+        }
+      }
     },
     "Example" : {
-
+      "shouldTranslate" : false
     },
     "Exposure" : {
       "localizations" : {
@@ -355,10 +530,24 @@
       "shouldTranslate" : false
     },
     "Firmware Version" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Версия прошивки"
+          }
+        }
+      }
     },
     "First day of week" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Первый день недели"
+          }
+        }
+      }
     },
     "Flashlight" : {
       "localizations" : {
@@ -371,7 +560,7 @@
       }
     },
     "Force Touch" : {
-
+      "shouldTranslate" : false
     },
     "Free RAM" : {
 
@@ -383,7 +572,14 @@
 
     },
     "Full system report" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Полный системный отчет"
+          }
+        }
+      }
     },
     "Fully Charged" : {
 
@@ -408,16 +604,44 @@
 
     },
     "Grouping separator" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разделитель группировки"
+          }
+        }
+      }
     },
     "Guided Access" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Гид-доступ"
+          }
+        }
+      }
     },
     "Haptic feedback" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тактильная отдача"
+          }
+        }
+      }
     },
     "Haptic Feedback" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тактильная Отдача"
+          }
+        }
+      }
     },
     "Hardware" : {
 
@@ -435,7 +659,14 @@
 
     },
     "Health" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Здоровье"
+          }
+        }
+      }
     },
     "Health data" : {
 
@@ -444,13 +675,20 @@
 
     },
     "Hello, World!" : {
-
+      "shouldTranslate" : false
     },
     "Host name" : {
 
     },
     "Hour cycle" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Часовой цикл"
+          }
+        }
+      }
     },
     "Identifier" : {
       "localizations" : {
@@ -466,10 +704,24 @@
 
     },
     "Installation date" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дата установки"
+          }
+        }
+      }
     },
     "Instruction set" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Набор инструкций"
+          }
+        }
+      }
     },
     "Internal name" : {
 
@@ -494,13 +746,34 @@
 
     },
     "Known time zones" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Известные часовые пояса"
+          }
+        }
+      }
     },
     "Known Time Zones" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Известные часовые пояса"
+          }
+        }
+      }
     },
     "Latitude" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Широта"
+          }
+        }
+      }
     },
     "Layout direction" : {
 
@@ -512,13 +785,34 @@
 
     },
     "Longitude" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Долгота"
+          }
+        }
+      }
     },
     "Low battery" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Низкий заряд"
+          }
+        }
+      }
     },
     "Low power mode" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Режим энергосбережения"
+          }
+        }
+      }
     },
     "Mac 2" : {
       "shouldTranslate" : false
@@ -559,7 +853,14 @@
 
     },
     "Memory" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Память"
+          }
+        }
+      }
     },
     "Metal 3" : {
       "shouldTranslate" : false
@@ -575,16 +876,37 @@
       }
     },
     "Metric system" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Метрическая система мер"
+          }
+        }
+      }
     },
     "Microarchitecture" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Микроархитектура"
+          }
+        }
+      }
     },
     "Model Information" : {
 
     },
     "Mono Audio" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Моно-аудио"
+          }
+        }
+      }
     },
     "More apps" : {
       "localizations" : {
@@ -600,7 +922,14 @@
 
     },
     "Multitasking" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Многозадачность"
+          }
+        }
+      }
     },
     "Music Haptics" : {
 
@@ -609,13 +938,27 @@
 
     },
     "Network" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сеть"
+          }
+        }
+      }
     },
     "Network interface" : {
 
     },
     "Network type" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тип сети"
+          }
+        }
+      }
     },
     "Next daylight saving time transition" : {
 
@@ -624,10 +967,24 @@
 
     },
     "Numbering system" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Система исчисления"
+          }
+        }
+      }
     },
     "On/Off Switch Labels" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Этикетки Вкл./Выкл."
+          }
+        }
+      }
     },
     "Open in full screen to view all specs" : {
 
@@ -636,10 +993,24 @@
 
     },
     "Operating system" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Операционная система"
+          }
+        }
+      }
     },
     "Orientation" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ориентация"
+          }
+        }
+      }
     },
     "Pack Lot Code" : {
 
@@ -648,7 +1019,14 @@
 
     },
     "Performance profile" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Профиль производительности"
+          }
+        }
+      }
     },
     "Pitch" : {
 
@@ -743,10 +1121,24 @@
 
     },
     "Reduce Motion" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уменьшение движения"
+          }
+        }
+      }
     },
     "Reduce Transparency" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Понижение прозрачности"
+          }
+        }
+      }
     },
     "Refresh rate" : {
       "localizations" : {
@@ -759,10 +1151,24 @@
       }
     },
     "Relative altitude" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Относительная высота"
+          }
+        }
+      }
     },
     "Release date" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дата релиза"
+          }
+        }
+      }
     },
     "Request IDFA" : {
 
@@ -774,7 +1180,14 @@
 
     },
     "Rounded corners" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закругленные края"
+          }
+        }
+      }
     },
     "Router" : {
       "localizations" : {
@@ -787,7 +1200,14 @@
       }
     },
     "Save..." : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохранить…"
+          }
+        }
+      }
     },
     "Screen resolution" : {
       "localizations" : {
@@ -800,10 +1220,24 @@
       }
     },
     "Screen size" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Размер экрана"
+          }
+        }
+      }
     },
     "SDRAM Type" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тип SDRAM"
+          }
+        }
+      }
     },
     "Seconds from GMT" : {
 
@@ -819,7 +1253,14 @@
       }
     },
     "Serial Number" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Серийный Номер"
+          }
+        }
+      }
     },
     "Serious thermal state" : {
 
@@ -835,7 +1276,14 @@
       }
     },
     "Settings" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки"
+          }
+        }
+      }
     },
     "Shake to Undo" : {
 
@@ -844,10 +1292,24 @@
 
     },
     "Speak Screen" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Экран вслух"
+          }
+        }
+      }
     },
     "Speak Selection" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проговаривание"
+          }
+        }
+      }
     },
     "SSID" : {
       "shouldTranslate" : false
@@ -882,7 +1344,14 @@
       }
     },
     "Subregions" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Субрегионы"
+          }
+        }
+      }
     },
     "Supported GPU families" : {
 
@@ -894,7 +1363,14 @@
 
     },
     "Switch Control" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Виртуальный контроллер"
+          }
+        }
+      }
     },
     "System" : {
       "localizations" : {
@@ -907,7 +1383,14 @@
       }
     },
     "System fonts" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Системные шрифты"
+          }
+        }
+      }
     },
     "System language" : {
       "localizations" : {
@@ -920,13 +1403,27 @@
       }
     },
     "System region" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Регион системы"
+          }
+        }
+      }
     },
     "System uptime" : {
 
     },
     "Technology node" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тех. процесс"
+          }
+        }
+      }
     },
     "Tests" : {
       "localizations" : {
@@ -952,16 +1449,47 @@
 
     },
     "Thread count" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кол-во потоков"
+          }
+        }
+      }
+    },
+    "Thread explosion limit" : {
 
     },
     "Time zone" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Часовой пояс"
+          }
+        }
+      }
     },
     "Time Zone" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Часовой Пояс"
+          }
+        }
+      }
     },
     "Time zone data version" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Версия данных часового пояса"
+          }
+        }
+      }
     },
     "Total RAM" : {
 
@@ -983,7 +1511,14 @@
       }
     },
     "Ultra Wideband Test" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тест Ультраширокополосного подключения"
+          }
+        }
+      }
     },
     "Unified memory" : {
       "localizations" : {
@@ -1008,7 +1543,14 @@
 
     },
     "Very low battery" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Очень низкий заряд"
+          }
+        }
+      }
     },
     "Video Autoplay" : {
       "localizations" : {
@@ -1021,13 +1563,20 @@
       }
     },
     "VoiceOver" : {
-
+      "shouldTranslate" : false
     },
     "Voltage" : {
 
     },
     "Volume" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Громкость"
+          }
+        }
+      }
     },
     "Watch Specific" : {
 
@@ -1039,7 +1588,14 @@
 
     },
     "Wireless Charging" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Безпроводная зарядка"
+          }
+        }
+      }
     },
     "Wrist location" : {
 
@@ -1057,7 +1613,14 @@
 
     },
     "Your device supports Apple Intelligence" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваше устройство поддерживает Apple Intelligence"
+          }
+        }
+      }
     },
     "Z Axis" : {
 
