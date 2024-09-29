@@ -11,6 +11,9 @@ struct HomeView: View {
     
     var body: some View {
         List {
+            WarningsSection()
+                .padding(.vertical, 30)
+            
             SpecsLink("Device", icon: "info.circle", spec: device.deviceIdentifier) {
                 DeviceSpecs()
                     .environment(device)

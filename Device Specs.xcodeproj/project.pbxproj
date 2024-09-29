@@ -12,6 +12,8 @@
 		F3187A502C898B37008FB911 /* Nav State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A4F2C898B37008FB911 /* Nav State.swift */; };
 		F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A522C898B62008FB911 /* Nav Destinations.swift */; };
 		F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A542C898B7E008FB911 /* Nav Extension.swift */; };
+		F3291C262CA99C7D00A15CAE /* Warning Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A6DA2CA36AAF00FF670F /* Warning Card.swift */; };
+		F3291C282CA99CA000A15CAE /* Warnings Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C272CA99CA000A15CAE /* Warnings Section.swift */; };
 		F33FEE532C982A1800214288 /* Unit Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE522C982A1800214288 /* Unit Tests.swift */; };
 		F33FEE582C982EC200214288 /* Nav Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE572C982EC200214288 /* Nav Links.swift */; };
 		F33FEE5A2C982FF000214288 /* System Report VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE592C982FF000214288 /* System Report VM.swift */; };
@@ -476,6 +478,7 @@
 		F3187A4F2C898B37008FB911 /* Nav State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav State.swift"; sourceTree = "<group>"; };
 		F3187A522C898B62008FB911 /* Nav Destinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Destinations.swift"; sourceTree = "<group>"; };
 		F3187A542C898B7E008FB911 /* Nav Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Extension.swift"; sourceTree = "<group>"; };
+		F3291C272CA99CA000A15CAE /* Warnings Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Warnings Section.swift"; sourceTree = "<group>"; };
 		F33FEE522C982A1800214288 /* Unit Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit Tests.swift"; sourceTree = "<group>"; };
 		F33FEE572C982EC200214288 /* Nav Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Links.swift"; sourceTree = "<group>"; };
 		F33FEE592C982FF000214288 /* System Report VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System Report VM.swift"; sourceTree = "<group>"; };
@@ -1171,6 +1174,7 @@
 				F3F85EDE2C94DD7900AE0A1D /* Home View.swift */,
 				F3F85F052C9588BE00AE0A1D /* Network Specs.swift */,
 				F3F85EF22C9582EA00AE0A1D /* Display Specs.swift */,
+				F3291C272CA99CA000A15CAE /* Warnings Section.swift */,
 			);
 			path = tvOS;
 			sourceTree = "<group>";
@@ -1836,8 +1840,10 @@
 				F3F85EE52C957D5900AE0A1D /* Color View.swift in Sources */,
 				F3F85F032C9587C400AE0A1D /* Network VM.swift in Sources */,
 				F3ECFE302CA53AE200E72D41 /* Battery Capacity.swift in Sources */,
+				F3291C282CA99CA000A15CAE /* Warnings Section.swift in Sources */,
 				F3F85EF12C9580AD00AE0A1D /* Display VM.swift in Sources */,
 				F3ECFE472CA5825800E72D41 /* Apple Intelligence.swift in Sources */,
+				F3291C262CA99C7D00A15CAE /* Warning Card.swift in Sources */,
 				F3ECFDFD2CA4B53200E72D41 /* L3 Cache.swift in Sources */,
 				F3ECFE342CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
 				F3F85EE42C957D4F00AE0A1D /* Test List.swift in Sources */,
