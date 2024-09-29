@@ -23,6 +23,7 @@ struct FontList: View {
 #if !os(tvOS)
         .toolbar {
             FontCustomization()
+                .environment(vm)
         }
 #endif
     }
