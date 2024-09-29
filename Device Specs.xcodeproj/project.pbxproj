@@ -31,6 +31,8 @@
 		F3291C492CA9BF2B00A15CAE /* Font Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C462CA9BF2B00A15CAE /* Font Customization.swift */; };
 		F3291C4A2CA9BF2B00A15CAE /* Font Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C462CA9BF2B00A15CAE /* Font Customization.swift */; };
 		F3291C4B2CA9BF2B00A15CAE /* Font Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C462CA9BF2B00A15CAE /* Font Customization.swift */; };
+		F3291C4E2CA9EC0900A15CAE /* Warnings Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A6D72CA368C600FF670F /* Warnings Section.swift */; };
+		F3291C4F2CA9EC1600A15CAE /* Warning Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A6DA2CA36AAF00FF670F /* Warning Card.swift */; };
 		F33FEE532C982A1800214288 /* Unit Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE522C982A1800214288 /* Unit Tests.swift */; };
 		F33FEE582C982EC200214288 /* Nav Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE572C982EC200214288 /* Nav Links.swift */; };
 		F33FEE5A2C982FF000214288 /* System Report VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE592C982FF000214288 /* System Report VM.swift */; };
@@ -1704,6 +1706,7 @@
 				F3F85E912C9453AE00AE0A1D /* Accessibility View.swift in Sources */,
 				F3F85E922C9453AE00AE0A1D /* Accessibility Param.swift in Sources */,
 				F3F85E932C9453AE00AE0A1D /* Accessibility VM.swift in Sources */,
+				F3291C4F2CA9EC1600A15CAE /* Warning Card.swift in Sources */,
 				F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */,
 				F36FBC4D2C9319D600F5E174 /* Connectivity VM.swift in Sources */,
 				F3ECFE462CA5825800E72D41 /* Apple Intelligence.swift in Sources */,
@@ -1736,6 +1739,7 @@
 				F3ECFDF02CA4B3E500E72D41 /* L1 Cache.swift in Sources */,
 				F3B709A32CA22E09006ECAD1 /* Locale List.swift in Sources */,
 				F3D1E7B72C9D611A000C81FF /* App VM.swift in Sources */,
+				F3291C4E2CA9EC0900A15CAE /* Warnings Section.swift in Sources */,
 				F3D1E7B82C9D611A000C81FF /* App Specs.swift in Sources */,
 				F3D1E79A2C9C86AD000C81FF /* Specs Link.swift in Sources */,
 				F36FBC5E2C931C7500F5E174 /* Orientation VM.swift in Sources */,

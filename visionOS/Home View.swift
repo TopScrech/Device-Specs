@@ -11,6 +11,11 @@ struct HomeView: View {
     
     var body: some View {
         List {
+            Section {
+                WarningsSection()
+                    .environment(BatteryVM())
+            }
+            
             SpecsLink("Device", icon: "info.circle", spec: device.deviceIdentifier) {
                 DeviceSpecs()
                     .environment(device)
