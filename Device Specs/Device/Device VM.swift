@@ -17,7 +17,6 @@ import CoreNFC
 final class DeviceVM {
     private let device = Device.current
     
-    
     var bioIcon = ""
     var bioType = ""
     

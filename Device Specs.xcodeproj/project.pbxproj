@@ -1001,7 +1001,6 @@
 				F3D1E7982C9C8444000C81FF /* Specs Link.swift */,
 				F3D1E7AF2C9D5D96000C81FF /* Specs Button.swift */,
 				F3E7EC4F2C67B985008CD17B /* List Link.swift */,
-				F3E7EC502C67B985008CD17B /* Bluetooth VM.swift */,
 				F3ECFDDC2CA4B05700E72D41 /* DeviceKit */,
 				F3E7EC532C67B985008CD17B /* Device */,
 				F3D1E7862C9C12A0000C81FF /* System */,
@@ -1023,8 +1022,9 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC512C67B985008CD17B /* Device Specs.swift */,
-				F3B709F42CA30470006ECAD1 /* Advertising Identifier.swift */,
 				F3E7EC522C67B985008CD17B /* Device VM.swift */,
+				F3B709F42CA30470006ECAD1 /* Advertising Identifier.swift */,
+				F3E7EC502C67B985008CD17B /* Bluetooth VM.swift */,
 				F3F85EC22C9492F300AE0A1D /* Device Watch Info.swift */,
 				F3B709D52CA2C933006ECAD1 /* Volume */,
 			);
