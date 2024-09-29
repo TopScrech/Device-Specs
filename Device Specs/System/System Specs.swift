@@ -10,6 +10,9 @@ struct SystemSpecs: View {
                 ListParam("Build number", param: vm.buildNumber)
             }
             
+#warning("Enable after Apple Intelligence release")
+            
+#if DEBUG
             Section {
                 Label {
                     let text: LocalizedStringKey = vm.supportsAppleIntelligence
@@ -25,6 +28,7 @@ struct SystemSpecs: View {
                 .opacity(vm.supportsAppleIntelligence ? 1 : 0.1)
                 .padding(.vertical, 5)
             }
+#endif
             
             Section {
                 ListParam("Multitasking", param: vm.multitaskingSupported)
