@@ -14,12 +14,12 @@ final class NetworkVM {
         let url = URL(string: "https://www.bluewindsolution.com/tools/getpublicip.php")!
         
         URLSession.shared.dataTask(with: url) { data, response, error in
-            if let error = error {
+            if let error {
                 print("Error: \(error)")
                 return
             }
             
-            if let data = data, let ipString = String(data: data, encoding: .utf8) {
+            if let data, let ipString = String(data: data, encoding: .utf8) {
                 let publicIp = ipString.trimmingCharacters(in: .whitespacesAndNewlines)
                 
                 main {
