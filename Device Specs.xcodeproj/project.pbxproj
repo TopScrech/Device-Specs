@@ -39,6 +39,18 @@
 		F3291C542CAA02F200A15CAE /* Bluetooth Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C502CAA02F200A15CAE /* Bluetooth Version.swift */; };
 		F3291C552CAA02F200A15CAE /* Bluetooth Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C502CAA02F200A15CAE /* Bluetooth Version.swift */; };
 		F3291C562CAA02F200A15CAE /* Bluetooth Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C502CAA02F200A15CAE /* Bluetooth Version.swift */; };
+		F3291C582CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C572CAA0C0300A15CAE /* Water Resistance Rating.swift */; };
+		F3291C592CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C572CAA0C0300A15CAE /* Water Resistance Rating.swift */; };
+		F3291C5A2CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C572CAA0C0300A15CAE /* Water Resistance Rating.swift */; };
+		F3291C5B2CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C572CAA0C0300A15CAE /* Water Resistance Rating.swift */; };
+		F3291C5C2CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C572CAA0C0300A15CAE /* Water Resistance Rating.swift */; };
+		F3291C5D2CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C572CAA0C0300A15CAE /* Water Resistance Rating.swift */; };
+		F3291C5F2CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C5E2CAA0CFB00A15CAE /* Water Resistance Description.swift */; };
+		F3291C602CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C5E2CAA0CFB00A15CAE /* Water Resistance Description.swift */; };
+		F3291C612CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C5E2CAA0CFB00A15CAE /* Water Resistance Description.swift */; };
+		F3291C622CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C5E2CAA0CFB00A15CAE /* Water Resistance Description.swift */; };
+		F3291C632CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C5E2CAA0CFB00A15CAE /* Water Resistance Description.swift */; };
+		F3291C642CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C5E2CAA0CFB00A15CAE /* Water Resistance Description.swift */; };
 		F33FEE532C982A1800214288 /* Unit Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE522C982A1800214288 /* Unit Tests.swift */; };
 		F33FEE582C982EC200214288 /* Nav Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE572C982EC200214288 /* Nav Links.swift */; };
 		F33FEE5A2C982FF000214288 /* System Report VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE592C982FF000214288 /* System Report VM.swift */; };
@@ -507,6 +519,8 @@
 		F3291C382CA9BCE200A15CAE /* Font VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font VM.swift"; sourceTree = "<group>"; };
 		F3291C462CA9BF2B00A15CAE /* Font Customization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font Customization.swift"; sourceTree = "<group>"; };
 		F3291C502CAA02F200A15CAE /* Bluetooth Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bluetooth Version.swift"; sourceTree = "<group>"; };
+		F3291C572CAA0C0300A15CAE /* Water Resistance Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Water Resistance Rating.swift"; sourceTree = "<group>"; };
+		F3291C5E2CAA0CFB00A15CAE /* Water Resistance Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Water Resistance Description.swift"; sourceTree = "<group>"; };
 		F33FEE522C982A1800214288 /* Unit Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit Tests.swift"; sourceTree = "<group>"; };
 		F33FEE572C982EC200214288 /* Nav Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Links.swift"; sourceTree = "<group>"; };
 		F33FEE592C982FF000214288 /* System Report VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System Report VM.swift"; sourceTree = "<group>"; };
@@ -1160,6 +1174,8 @@
 			isa = PBXGroup;
 			children = (
 				F3B709E12CA2F1DC006ECAD1 /* Tech Node.swift */,
+				F3291C572CAA0C0300A15CAE /* Water Resistance Rating.swift */,
+				F3291C5E2CAA0CFB00A15CAE /* Water Resistance Description.swift */,
 				F3291C502CAA02F200A15CAE /* Bluetooth Version.swift */,
 				F3ECFDDD2CA4B0D000E72D41 /* Max Clock Speed.swift */,
 				F3ECFE002CA4BD9B00E72D41 /* Memory Type.swift */,
@@ -1572,6 +1588,7 @@
 				F36F801D2CA0D5330007F120 /* Nearby VM.swift in Sources */,
 				F36F801E2CA0D5330007F120 /* Math Utilities.swift in Sources */,
 				F36F80252CA0D5760007F120 /* Secondary Container.swift in Sources */,
+				F3291C612CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */,
 				F3ECFE2E2CA53AE200E72D41 /* Battery Capacity.swift in Sources */,
 				F36F80202CA0D5330007F120 /* MCP Session.swift in Sources */,
 				F36F7FF92CA0D4830007F120 /* Camera VM.swift in Sources */,
@@ -1590,6 +1607,7 @@
 				F3B709C52CA2C5E3006ECAD1 /* Locale VM.swift in Sources */,
 				F3B709F92CA30470006ECAD1 /* Advertising Identifier.swift in Sources */,
 				F36F7FF62CA0D47C0007F120 /* Network VM.swift in Sources */,
+				F3291C5C2CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */,
 				F36F7FEF2CA0D4370007F120 /* Battery VM.swift in Sources */,
 				F36F7FF02CA0D4370007F120 /* Battery Level.swift in Sources */,
 				F3ECFE362CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
@@ -1667,6 +1685,7 @@
 				F3ECFE352CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
 				F3EA43B12C998787009820F6 /* Color Test List.swift in Sources */,
 				F3D1E77F2C9C0CD3000C81FF /* Battery Level.swift in Sources */,
+				F3291C592CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */,
 				F3291C532CAA02F200A15CAE /* Bluetooth Version.swift in Sources */,
 				F3B709BD2CA2C31E006ECAD1 /* Timezone VM.swift in Sources */,
 				F3F85EA32C94873000AE0A1D /* CPU Usage Chart.swift in Sources */,
@@ -1680,6 +1699,7 @@
 				F3F85EAB2C948A5200AE0A1D /* Display VM.swift in Sources */,
 				F3B709C62CA2C5E3006ECAD1 /* Locale VM.swift in Sources */,
 				F3ECFE0C2CA4C09200E72D41 /* Instruction Set.swift in Sources */,
+				F3291C642CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */,
 				F33FEE7B2C9848D000214288 /* Battery VM.swift in Sources */,
 				F3D1E7BC2C9D6A9C000C81FF /* Magnetic Model.swift in Sources */,
 				F3ECFDE32CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */,
@@ -1725,6 +1745,7 @@
 				F3C3BDE22C92DB9D00BF91EE /* Memory Specs.swift in Sources */,
 				F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */,
 				F36FBC6C2C9413E100F5E174 /* CPU Usage Chart.swift in Sources */,
+				F3291C5D2CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */,
 				F3C3BDDA2C92D99900BF91EE /* Device VM.swift in Sources */,
 				F3B709D42CA2C912006ECAD1 /* Volume Slider.swift in Sources */,
 				F3C3BDE82C92DCA300BF91EE /* Display Specs.swift in Sources */,
@@ -1745,6 +1766,7 @@
 				F3ECFE222CA536FD00E72D41 /* Release Date.swift in Sources */,
 				F3B709B52CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
 				F3C3BDE32C92DBF700BF91EE /* Battery Specs.swift in Sources */,
+				F3291C622CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */,
 				F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */,
 				F3ECFDF02CA4B3E500E72D41 /* L1 Cache.swift in Sources */,
 				F3B709A32CA22E09006ECAD1 /* Locale List.swift in Sources */,
@@ -1815,6 +1837,7 @@
 				F3B709B92CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
 				F3ECFE252CA53A4B00E72D41 /* Device Extension.swift in Sources */,
 				F3D1E7812C9C0CD3000C81FF /* Battery Level.swift in Sources */,
+				F3291C5B2CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */,
 				F3E7EC802C67B985008CD17B /* Display VM.swift in Sources */,
 				F3E7EC812C67B985008CD17B /* Network VM.swift in Sources */,
 				F3ECFE1E2CA536FD00E72D41 /* Release Date.swift in Sources */,
@@ -1861,6 +1884,7 @@
 				F3B709F72CA30470006ECAD1 /* Advertising Identifier.swift in Sources */,
 				F3D1E7A22C9CC304000C81FF /* Format Card.swift in Sources */,
 				F3E7EC8F2C67B985008CD17B /* Memory Specs.swift in Sources */,
+				F3291C5F2CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */,
 				F3E7EC902C67B985008CD17B /* Device Info.swift in Sources */,
 				F3B709D82CA2CA1F006ECAD1 /* Haptic Tests.swift in Sources */,
 				F3E7EC912C67B985008CD17B /* Home View.swift in Sources */,
@@ -1894,6 +1918,7 @@
 				F3F85EDF2C94DD7900AE0A1D /* Home View.swift in Sources */,
 				F3ECFDE22CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */,
 				F3F85EFE2C95875C00AE0A1D /* Memory Specs.swift in Sources */,
+				F3291C582CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */,
 				F3F85EFF2C95875C00AE0A1D /* Memory VM.swift in Sources */,
 				F3D1E78B2C9C12C2000C81FF /* System Specs.swift in Sources */,
 				F3D1E7902C9C12D6000C81FF /* System VM.swift in Sources */,
@@ -1918,6 +1943,7 @@
 				F3ECFE342CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
 				F3F85EE42C957D4F00AE0A1D /* Test List.swift in Sources */,
 				F3B709A22CA22E09006ECAD1 /* Locale List.swift in Sources */,
+				F3291C632CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */,
 				F3B709AE2CA2BE84006ECAD1 /* Timezone.swift in Sources */,
 				F3ECFE012CA4BD9B00E72D41 /* Memory Type.swift in Sources */,
 				F3F85EF62C95854E00AE0A1D /* Processor VM.swift in Sources */,
@@ -1952,9 +1978,11 @@
 				F33FEE5D2C98386E00214288 /* Param.swift in Sources */,
 				F3B709E62CA2F1DC006ECAD1 /* Tech Node.swift in Sources */,
 				F3B709BA2CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
+				F3291C602CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */,
 				F33FEE5A2C982FF000214288 /* System Report VM.swift in Sources */,
 				F3ECFDF32CA4B3F800E72D41 /* L2 Cache.swift in Sources */,
 				F3ECFE0D2CA4C09200E72D41 /* Instruction Set.swift in Sources */,
+				F3291C5A2CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */,
 				F3F85F112C962C4600AE0A1D /* macOS App.swift in Sources */,
 				F3ECFE3B2CA53AED00E72D41 /* Voltage.swift in Sources */,
 				F317334C2CA1D57800CFA041 /* Background Blur.swift in Sources */,

@@ -22,14 +22,13 @@ struct DeviceSpecs: View {
             }
             
             Section("Capabilities") {
-                ListParam("Bluetooth version", param: vm.bluetoothVersion)                
+                ListParam("Bluetooth", param: vm.bluetoothVersion)
                 
 #if !os(tvOS)
                 HStack {
                     Text("Biometric authentication")
                     
                     Spacer()
-                    
                     
                     Image(systemName: vm.bioIcon)
                         .title3()
@@ -48,6 +47,14 @@ struct DeviceSpecs: View {
                 ListParam("Force Touch", param: vm.isForceTouchAvailable)
 #endif
                 ListParam("Ultra Wideband", param: vm.isUltraWidebandAvailable)
+            }
+            
+            Section("Water resistance") {
+                ListParam("Rating", param: vm.waterResistance)
+#if os(watchOS)
+                ListParam("System rating", param: vm.waterResistanceSystemRating)
+#endif
+                ListParam("Description", param: vm.waterResistanceDescription)
             }
             
 #if os(watchOS)

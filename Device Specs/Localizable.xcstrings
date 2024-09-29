@@ -172,8 +172,8 @@
     "Biometric authentication" : {
 
     },
-    "Bluetooth version" : {
-
+    "Bluetooth" : {
+      "shouldTranslate" : false
     },
     "Bold" : {
 
@@ -467,6 +467,9 @@
           }
         }
       }
+    },
+    "Description" : {
+
     },
     "Device" : {
       "localizations" : {
@@ -1127,6 +1130,9 @@
         }
       }
     },
+    "Rating" : {
+
+    },
     "Raw X" : {
 
     },
@@ -1418,6 +1424,9 @@
         }
       }
     },
+    "System rating" : {
+
+    },
     "System region" : {
       "localizations" : {
         "ru" : {
@@ -1603,7 +1612,7 @@
     "Water lock" : {
 
     },
-    "Water resistance rating" : {
+    "Water resistance" : {
 
     },
     "Wireless Charging" : {

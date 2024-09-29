@@ -2,6 +2,7 @@ import DeviceKit
 
 // Source 1: https://everymac.com/systems/apple/iphone/iphone-faq/iphone-bluetooth-support-by-model.html
 // Source 2: https://www.lifewire.com/does-ipad-support-bluetooth-1994315
+
 extension Device {
     var bluetoothVersion: String {
         switch self {

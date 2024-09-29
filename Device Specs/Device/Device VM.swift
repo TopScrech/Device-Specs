@@ -43,6 +43,25 @@ final class DeviceVM {
         device.bluetoothVersion
     }
     
+    var waterResistance: String {
+        device.waterResistance
+    }
+    
+    var waterResistanceDescription: String {
+        device.waterResistanceDescription
+    }
+    
+#if os(watchOS)
+    var waterResistanceSystemRating: String {
+        switch WKInterfaceDevice.current().waterResistanceRating {
+        case .ipx7: "IPX7"
+        case .wr50: "WR50"
+        case .wr100: "WR100"
+        default: "Unknown"
+        }
+    }
+#endif
+    
 #warning("Finish")
     //    var deviceIcon: String {
     //        switch Device.current.name {
