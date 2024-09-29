@@ -17,7 +17,11 @@ struct KnownTimeZones: View {
     
     var body: some View {
         List(foundZones, id: \.self) { zone in
+#if os(tvOS)
+            Button(zone) {}
+#else
             Text(zone)
+#endif
         }
         .animation(.default, value: foundZones)
         .searchable(text: $searchText)

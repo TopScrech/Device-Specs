@@ -21,8 +21,8 @@ struct SystemSpecs: View {
                     Image(.appleIntelligence)
                         .resizable()
                         .frame(width: 32, height: 32)
-                        .opacity(vm.supportsAppleIntelligence ? 1 : 0.1)
                 }
+                .opacity(vm.supportsAppleIntelligence ? 1 : 0.1)
                 .padding(.vertical, 5)
             }
             

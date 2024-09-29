@@ -16,6 +16,21 @@
 		F3291C282CA99CA000A15CAE /* Warnings Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C272CA99CA000A15CAE /* Warnings Section.swift */; };
 		F3291C292CA9A22D00A15CAE /* Haptic Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709D62CA2CA1F006ECAD1 /* Haptic Tests.swift */; };
 		F3291C2A2CA9A23F00A15CAE /* Haptic Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709DA2CA2CEE0006ECAD1 /* Haptic Button.swift */; };
+		F3291C332CA9BC0F00A15CAE /* Font Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C322CA9BC0F00A15CAE /* Font Row.swift */; };
+		F3291C342CA9BC0F00A15CAE /* Font Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C322CA9BC0F00A15CAE /* Font Row.swift */; };
+		F3291C352CA9BC0F00A15CAE /* Font Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C322CA9BC0F00A15CAE /* Font Row.swift */; };
+		F3291C362CA9BC0F00A15CAE /* Font Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C322CA9BC0F00A15CAE /* Font Row.swift */; };
+		F3291C372CA9BC0F00A15CAE /* Font Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C322CA9BC0F00A15CAE /* Font Row.swift */; };
+		F3291C392CA9BCE200A15CAE /* Font VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C382CA9BCE200A15CAE /* Font VM.swift */; };
+		F3291C3A2CA9BCE200A15CAE /* Font VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C382CA9BCE200A15CAE /* Font VM.swift */; };
+		F3291C3B2CA9BCE200A15CAE /* Font VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C382CA9BCE200A15CAE /* Font VM.swift */; };
+		F3291C3C2CA9BCE200A15CAE /* Font VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C382CA9BCE200A15CAE /* Font VM.swift */; };
+		F3291C3D2CA9BCE200A15CAE /* Font VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C382CA9BCE200A15CAE /* Font VM.swift */; };
+		F3291C472CA9BF2B00A15CAE /* Font Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C462CA9BF2B00A15CAE /* Font Customization.swift */; };
+		F3291C482CA9BF2B00A15CAE /* Font Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C462CA9BF2B00A15CAE /* Font Customization.swift */; };
+		F3291C492CA9BF2B00A15CAE /* Font Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C462CA9BF2B00A15CAE /* Font Customization.swift */; };
+		F3291C4A2CA9BF2B00A15CAE /* Font Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C462CA9BF2B00A15CAE /* Font Customization.swift */; };
+		F3291C4B2CA9BF2B00A15CAE /* Font Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C462CA9BF2B00A15CAE /* Font Customization.swift */; };
 		F33FEE532C982A1800214288 /* Unit Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE522C982A1800214288 /* Unit Tests.swift */; };
 		F33FEE582C982EC200214288 /* Nav Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE572C982EC200214288 /* Nav Links.swift */; };
 		F33FEE5A2C982FF000214288 /* System Report VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE592C982FF000214288 /* System Report VM.swift */; };
@@ -480,6 +495,9 @@
 		F3187A522C898B62008FB911 /* Nav Destinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Destinations.swift"; sourceTree = "<group>"; };
 		F3187A542C898B7E008FB911 /* Nav Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Extension.swift"; sourceTree = "<group>"; };
 		F3291C272CA99CA000A15CAE /* Warnings Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Warnings Section.swift"; sourceTree = "<group>"; };
+		F3291C322CA9BC0F00A15CAE /* Font Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font Row.swift"; sourceTree = "<group>"; };
+		F3291C382CA9BCE200A15CAE /* Font VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font VM.swift"; sourceTree = "<group>"; };
+		F3291C462CA9BF2B00A15CAE /* Font Customization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font Customization.swift"; sourceTree = "<group>"; };
 		F33FEE522C982A1800214288 /* Unit Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit Tests.swift"; sourceTree = "<group>"; };
 		F33FEE572C982EC200214288 /* Nav Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Links.swift"; sourceTree = "<group>"; };
 		F33FEE592C982FF000214288 /* System Report VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System Report VM.swift"; sourceTree = "<group>"; };
@@ -715,6 +733,25 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		F3291C3E2CA9BE4200A15CAE /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				F3B709E82CA2F683006ECAD1 /* Font List.swift */,
+				F3291C462CA9BF2B00A15CAE /* Font Customization.swift */,
+				F3291C382CA9BCE200A15CAE /* Font VM.swift */,
+				F3291C322CA9BC0F00A15CAE /* Font Row.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		F3291C452CA9BE5700A15CAE /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */,
+			);
+			path = Health;
+			sourceTree = "<group>";
+		};
 		F33FEE542C982A2800214288 /* Unit Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -882,9 +919,9 @@
 			isa = PBXGroup;
 			children = (
 				F3D1E7872C9C12C2000C81FF /* System Specs.swift */,
-				F3B709E82CA2F683006ECAD1 /* Font List.swift */,
 				F3D1E78C2C9C12D6000C81FF /* System VM.swift */,
-				F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */,
+				F3291C3E2CA9BE4200A15CAE /* Font */,
+				F3291C452CA9BE5700A15CAE /* Health */,
 				F3B709BB2CA2C2F4006ECAD1 /* Time Zone */,
 				F3B709C82CA2C657006ECAD1 /* Locale */,
 			);
@@ -1490,9 +1527,11 @@
 			files = (
 				F36F7FD02CA0CFDF0007F120 /* Messages VC.swift in Sources */,
 				F36F801A2CA0D52B0007F120 /* Torch VM.swift in Sources */,
+				F3291C392CA9BCE200A15CAE /* Font VM.swift in Sources */,
 				F36F7FE82CA0D2030007F120 /* App Specs.swift in Sources */,
 				F36F80122CA0D4F80007F120 /* System VM.swift in Sources */,
 				F36F80142CA0D4FF0007F120 /* Device VM.swift in Sources */,
+				F3291C342CA9BC0F00A15CAE /* Font Row.swift in Sources */,
 				F3ECFDEF2CA4B3E500E72D41 /* L1 Cache.swift in Sources */,
 				F3B709CC2CA2C853006ECAD1 /* Volume.swift in Sources */,
 				F36F80152CA0D4FF0007F120 /* Device Specs.swift in Sources */,
@@ -1532,6 +1571,7 @@
 				F3B709D22CA2C912006ECAD1 /* Volume Slider.swift in Sources */,
 				F3ECFDE82CA4B3A700E72D41 /* L1 Instruction Cache.swift in Sources */,
 				F36F80292CA0D5CD0007F120 /* UWB Test View.swift in Sources */,
+				F3291C492CA9BF2B00A15CAE /* Font Customization.swift in Sources */,
 				F36F7FFB2CA0D4830007F120 /* Camera View.swift in Sources */,
 				F3B709B62CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
 				F36F7FFC2CA0D4830007F120 /* Cameras Specs.swift in Sources */,
@@ -1587,6 +1627,7 @@
 			files = (
 				F3F85EB72C948D3100AE0A1D /* Location VM.swift in Sources */,
 				F3F85EB92C948D4300AE0A1D /* Sensors View.swift in Sources */,
+				F3291C3A2CA9BCE200A15CAE /* Font VM.swift in Sources */,
 				F3B709E32CA2F1DC006ECAD1 /* Tech Node.swift in Sources */,
 				F3F85EB62C948D0200AE0A1D /* Orientation VM.swift in Sources */,
 				F3B709B72CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
@@ -1632,6 +1673,8 @@
 				F3ECFDE32CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */,
 				F36FBCB62C9449A300F5E174 /* Home View.swift in Sources */,
 				F3D1E79B2C9C8781000C81FF /* Specs Link.swift in Sources */,
+				F3291C482CA9BF2B00A15CAE /* Font Customization.swift in Sources */,
+				F3291C372CA9BC0F00A15CAE /* Font Row.swift in Sources */,
 				F3F85E9E2C94863100AE0A1D /* Wifi VM.swift in Sources */,
 				F3F85EA52C94883D00AE0A1D /* Device Specs.swift in Sources */,
 				F3ECFDFB2CA4B53200E72D41 /* L3 Cache.swift in Sources */,
@@ -1657,6 +1700,7 @@
 				F3B709B12CA2BE84006ECAD1 /* Timezone.swift in Sources */,
 				F3D1E78E2C9C12D6000C81FF /* System VM.swift in Sources */,
 				F36FBC562C931C1000F5E174 /* Sensors View.swift in Sources */,
+				F3291C472CA9BF2B00A15CAE /* Font Customization.swift in Sources */,
 				F3F85E912C9453AE00AE0A1D /* Accessibility View.swift in Sources */,
 				F3F85E922C9453AE00AE0A1D /* Accessibility Param.swift in Sources */,
 				F3F85E932C9453AE00AE0A1D /* Accessibility VM.swift in Sources */,
@@ -1682,6 +1726,7 @@
 				F3D1E78A2C9C12C2000C81FF /* System Specs.swift in Sources */,
 				F3ECFDDE2CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */,
 				F3ECFE0B2CA4C09200E72D41 /* Instruction Set.swift in Sources */,
+				F3291C3B2CA9BCE200A15CAE /* Font VM.swift in Sources */,
 				F36FBC622C931E2600F5E174 /* AltitudeVM.swift in Sources */,
 				F3ECFDE72CA4B3A700E72D41 /* L1 Instruction Cache.swift in Sources */,
 				F3ECFE222CA536FD00E72D41 /* Release Date.swift in Sources */,
@@ -1707,6 +1752,7 @@
 				F3C3BDD42C92D8E000BF91EE /* Device Specs App.swift in Sources */,
 				F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */,
 				F3ECFE292CA53A4B00E72D41 /* Device Extension.swift in Sources */,
+				F3291C362CA9BC0F00A15CAE /* Font Row.swift in Sources */,
 				F3ECFE312CA53AE200E72D41 /* Battery Capacity.swift in Sources */,
 				F3B709EC2CA2F683006ECAD1 /* Font List.swift in Sources */,
 				F3C3BDD92C92D99300BF91EE /* Device Specs.swift in Sources */,
@@ -1768,6 +1814,7 @@
 				F3ECFE0A2CA4C09200E72D41 /* Instruction Set.swift in Sources */,
 				F3E7EC842C67B985008CD17B /* UWB Test View.swift in Sources */,
 				F3E7EC852C67B985008CD17B /* Sensors View.swift in Sources */,
+				F3291C4A2CA9BF2B00A15CAE /* Font Customization.swift in Sources */,
 				F3E7EC862C67B985008CD17B /* Color View.swift in Sources */,
 				F3D1E7AB2C9D4BFA000C81FF /* App Specs.swift in Sources */,
 				F3E7EC9B2C67B9CF008CD17B /* App Container.swift in Sources */,
@@ -1781,6 +1828,7 @@
 				F3E7EC892C67B985008CD17B /* Battery Specs.swift in Sources */,
 				F3D1E7992C9C8444000C81FF /* Specs Link.swift in Sources */,
 				F3D1E7B02C9D5D96000C81FF /* Specs Button.swift in Sources */,
+				F3291C3C2CA9BCE200A15CAE /* Font VM.swift in Sources */,
 				F3E7EC8A2C67B985008CD17B /* Battery VM.swift in Sources */,
 				F3E7EC8B2C67B985008CD17B /* Bluetooth VM.swift in Sources */,
 				F3B709D02CA2C912006ECAD1 /* Volume Slider.swift in Sources */,
@@ -1793,6 +1841,7 @@
 				F3187A502C898B37008FB911 /* Nav State.swift in Sources */,
 				F3ECFE392CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
 				F3E7EC8E2C67B985008CD17B /* Camera VM.swift in Sources */,
+				F3291C352CA9BC0F00A15CAE /* Font Row.swift in Sources */,
 				F3B709F72CA30470006ECAD1 /* Advertising Identifier.swift in Sources */,
 				F3D1E7A22C9CC304000C81FF /* Format Card.swift in Sources */,
 				F3E7EC8F2C67B985008CD17B /* Memory Specs.swift in Sources */,
@@ -1818,6 +1867,7 @@
 				F3F85EE72C957EDA00AE0A1D /* Accessibility Param.swift in Sources */,
 				F3ECFDDB2CA4252A00E72D41 /* Health Kit.swift in Sources */,
 				F3EA43B32C998787009820F6 /* Color Test List.swift in Sources */,
+				F3291C4B2CA9BF2B00A15CAE /* Font Customization.swift in Sources */,
 				F3291C2A2CA9A23F00A15CAE /* Haptic Button.swift in Sources */,
 				F3F85EF52C9583EB00AE0A1D /* Device Specs.swift in Sources */,
 				F3B709D12CA2C912006ECAD1 /* Volume Slider.swift in Sources */,
@@ -1843,6 +1893,7 @@
 				F3ECFE302CA53AE200E72D41 /* Battery Capacity.swift in Sources */,
 				F3291C282CA99CA000A15CAE /* Warnings Section.swift in Sources */,
 				F3F85EF12C9580AD00AE0A1D /* Display VM.swift in Sources */,
+				F3291C3D2CA9BCE200A15CAE /* Font VM.swift in Sources */,
 				F3291C292CA9A22D00A15CAE /* Haptic Tests.swift in Sources */,
 				F3ECFE472CA5825800E72D41 /* Apple Intelligence.swift in Sources */,
 				F3291C262CA99C7D00A15CAE /* Warning Card.swift in Sources */,
@@ -1868,6 +1919,7 @@
 				F3ECFDEA2CA4B3A700E72D41 /* L1 Instruction Cache.swift in Sources */,
 				F3F85EE82C957EE200AE0A1D /* Accessibility View.swift in Sources */,
 				F36F7FC62CA0CC110007F120 /* Device Specs App.swift in Sources */,
+				F3291C332CA9BC0F00A15CAE /* Font Row.swift in Sources */,
 				F3ECFE402CA53AED00E72D41 /* Voltage.swift in Sources */,
 				F3F85EDD2C94DD6800AE0A1D /* App Container.swift in Sources */,
 				F3B709F62CA30470006ECAD1 /* Advertising Identifier.swift in Sources */,

@@ -24,6 +24,7 @@ struct HealthKit: View {
     var body: some View {
         Section("Health") {
             ListParam("Health data", param: healthDataAvailable ? "Available" : "Unavailable")
+            
             ListParam("Clinical records", param: supportsHealthRecords ? "Supported" : "Unsupported")
         }
     }

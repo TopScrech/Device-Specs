@@ -172,6 +172,9 @@
     "Biometric authentication" : {
 
     },
+    "Bold" : {
+
+    },
     "Bold Text" : {
       "localizations" : {
         "ru" : {
@@ -740,6 +743,9 @@
 
     },
     "ISO region" : {
+
+    },
+    "Italic" : {
 
     },
     "Known time zones" : {
@@ -1331,6 +1337,9 @@
     "Storage" : {
 
     },
+    "Strikethrough" : {
+
+    },
     "Subdivision" : {
 
     },
@@ -1520,6 +1529,9 @@
           }
         }
       }
+    },
+    "Underline" : {
+
     },
     "Unified memory" : {
       "localizations" : {
