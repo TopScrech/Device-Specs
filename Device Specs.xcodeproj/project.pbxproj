@@ -157,7 +157,6 @@
 		F3B709C72CA2C5E3006ECAD1 /* Locale VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709C22CA2C5E3006ECAD1 /* Locale VM.swift */; };
 		F3B709CA2CA2C853006ECAD1 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709C92CA2C853006ECAD1 /* Volume.swift */; };
 		F3B709CC2CA2C853006ECAD1 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709C92CA2C853006ECAD1 /* Volume.swift */; };
-		F3B709CD2CA2C853006ECAD1 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709C92CA2C853006ECAD1 /* Volume.swift */; };
 		F3B709CE2CA2C853006ECAD1 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709C92CA2C853006ECAD1 /* Volume.swift */; };
 		F3B709D02CA2C912006ECAD1 /* Volume Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709CF2CA2C912006ECAD1 /* Volume Slider.swift */; };
 		F3B709D12CA2C912006ECAD1 /* Volume Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709CF2CA2C912006ECAD1 /* Volume Slider.swift */; };
@@ -1818,7 +1817,6 @@
 				F3ECFDDB2CA4252A00E72D41 /* Health Kit.swift in Sources */,
 				F3EA43B32C998787009820F6 /* Color Test List.swift in Sources */,
 				F3F85EF52C9583EB00AE0A1D /* Device Specs.swift in Sources */,
-				F3B709CD2CA2C853006ECAD1 /* Volume.swift in Sources */,
 				F3B709D12CA2C912006ECAD1 /* Volume Slider.swift in Sources */,
 				F3F85EF42C9583E400AE0A1D /* Device VM.swift in Sources */,
 				F3B709EA2CA2F683006ECAD1 /* Font List.swift in Sources */,

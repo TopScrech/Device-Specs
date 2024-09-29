@@ -50,7 +50,9 @@ struct DeviceSpecs: View {
             
 #if os(watchOS)
             DeviceWatchInfo()
-#else
+#endif
+            
+#if !os(watchOS) && !os(tvOS)
             Volume()
 #endif
         }
