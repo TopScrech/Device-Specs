@@ -1,43 +1,43 @@
 {
   "images" : [
     {
-      "filename" : "bisquit 10.png",
+      "filename" : "Device Specs iMessage 1.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "bisquit 11.png",
+      "filename" : "Device Specs iMessage.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "bisquit 6.png",
+      "filename" : "Device Specs iMessage 7.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x45"
     },
     {
-      "filename" : "bisquit 5.png",
+      "filename" : "Device Specs iMessage 8.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x45"
     },
     {
-      "filename" : "bisquit 9.png",
+      "filename" : "Device Specs iMessage 2.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "bisquit 8.png",
+      "filename" : "Device Specs iMessage 6.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "67x50"
     },
     {
-      "filename" : "bisquit 7.png",
+      "filename" : "Device Specs iMessage 9.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "74x55"
@@ -49,35 +49,35 @@
       "size" : "1024x1024"
     },
     {
-      "filename" : "bisquit 3.png",
+      "filename" : "Device Specs iMessage 10.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "2x",
       "size" : "27x20"
     },
     {
-      "filename" : "bisquit 4.png",
+      "filename" : "Device Specs iMessage 11.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "3x",
       "size" : "27x20"
     },
     {
-      "filename" : "bisquit 2.png",
+      "filename" : "Device Specs iMessage 4.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "2x",
       "size" : "32x24"
     },
     {
-      "filename" : "bisquit 1.png",
+      "filename" : "Device Specs iMessage 5.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "3x",
       "size" : "32x24"
     },
     {
-      "filename" : "bisquit.png",
+      "filename" : "Device Specs iMessage 3.png",
       "idiom" : "ios-marketing",
       "platform" : "ios",
       "scale" : "1x",
