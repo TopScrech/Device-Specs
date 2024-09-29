@@ -33,7 +33,7 @@ struct HomeView: View {
                     .environment(display)
             }
             
-            SpecsLink("Processor", icon: "cpu", spec: processor.cpuNameAndTechnology) {
+            SpecsLink("Processor", icon: "cpu", spec: processor.cpuName) {
                 ProcessorSpecs()
                     .environment(processor)
             }

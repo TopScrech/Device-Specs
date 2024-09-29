@@ -677,6 +677,9 @@
     "Hello, World!" : {
       "shouldTranslate" : false
     },
+    "Hide status bar and this menu" : {
+
+    },
     "Host name" : {
 
     },

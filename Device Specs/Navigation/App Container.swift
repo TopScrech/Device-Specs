@@ -3,12 +3,30 @@ import SwiftUI
 struct AppContainer: View {
     @Environment(NavState.self) private var navState
     
+    @State private var statusBarHidden = false
+    
     var body: some View {
-        @Bindable var binding = navState
+        @Bindable var navState = navState
         
-        NavigationStack(path: $binding.path) {
+        NavigationStack(path: $navState.path) {
             HomeView()
                 .withNavDestinations()
+#if DEBUG
+                .toolbar {
+                    if !statusBarHidden {
+                        Menu {
+                            Button {
+                                statusBarHidden = true
+                            } label: {
+                                Text("Hide status bar and this menu")
+                            }
+                        } label: {
+                            Image(systemName: "ellipsis.circle")
+                        }
+                    }
+                }
+#endif
         }
+        .statusBarHidden(statusBarHidden)
     }
 }
