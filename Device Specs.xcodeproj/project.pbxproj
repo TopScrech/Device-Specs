@@ -375,7 +375,7 @@
 		F3ECFE452CA5825800E72D41 /* Apple Intelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE412CA5825800E72D41 /* Apple Intelligence.swift */; };
 		F3ECFE462CA5825800E72D41 /* Apple Intelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE412CA5825800E72D41 /* Apple Intelligence.swift */; };
 		F3ECFE472CA5825800E72D41 /* Apple Intelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE412CA5825800E72D41 /* Apple Intelligence.swift */; };
-		F3F85E8B2C94529A00AE0A1D /* Device-Specs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3F85E8A2C94529A00AE0A1D /* Device-Specs-Info.plist */; };
+		F3F85E8B2C94529A00AE0A1D /* Device Specs Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3F85E8A2C94529A00AE0A1D /* Device Specs Info.plist */; };
 		F3F85E8E2C9452CB00AE0A1D /* Accessibility Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */; };
 		F3F85E912C9453AE00AE0A1D /* Accessibility View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6E2C941F6200F5E174 /* Accessibility View.swift */; };
 		F3F85E922C9453AE00AE0A1D /* Accessibility Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */; };
@@ -623,7 +623,7 @@
 		F3ECFE332CA53AE900E72D41 /* Battery Capacity Wh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Capacity Wh.swift"; sourceTree = "<group>"; };
 		F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voltage.swift; sourceTree = "<group>"; };
 		F3ECFE412CA5825800E72D41 /* Apple Intelligence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Apple Intelligence.swift"; sourceTree = "<group>"; };
-		F3F85E8A2C94529A00AE0A1D /* Device-Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Device-Specs-Info.plist"; sourceTree = "<group>"; };
+		F3F85E8A2C94529A00AE0A1D /* Device Specs Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Device Specs Info.plist"; sourceTree = "<group>"; };
 		F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility Param.swift"; sourceTree = "<group>"; };
 		F3F85E962C94858F00AE0A1D /* watchOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = watchOS.entitlements; sourceTree = "<group>"; };
 		F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wifi VM.swift"; sourceTree = "<group>"; };
@@ -993,7 +993,7 @@
 				F3187A512C898B40008FB911 /* Navigation */,
 				F3E7EC412C676A14008CD17B /* Assets.xcassets */,
 				F3E7EC432C676A14008CD17B /* Device Specs.entitlements */,
-				F3F85E8A2C94529A00AE0A1D /* Device-Specs-Info.plist */,
+				F3F85E8A2C94529A00AE0A1D /* Device Specs Info.plist */,
 				F36F803A2CA170870007F120 /* Localizable.xcstrings */,
 				F3E7EC4D2C67B985008CD17B /* Device Info.swift */,
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
@@ -1472,7 +1472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F35279552C98DCB600AF581C /* Assets.xcassets in Resources */,
-				F3F85E8B2C94529A00AE0A1D /* Device-Specs-Info.plist in Resources */,
+				F3F85E8B2C94529A00AE0A1D /* Device Specs Info.plist in Resources */,
 				F36F803C2CA170870007F120 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2330,7 +2330,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Device Specs/Device-Specs-Info.plist";
+				INFOPLIST_FILE = "Device Specs/Device Specs Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
@@ -2380,7 +2380,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Device Specs/Device-Specs-Info.plist";
+				INFOPLIST_FILE = "Device Specs/Device Specs Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
