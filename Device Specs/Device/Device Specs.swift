@@ -22,6 +22,8 @@ struct DeviceSpecs: View {
             }
             
             Section("Capabilities") {
+                ListParam("Bluetooth version", param: vm.bluetoothVersion)                
+                
 #if !os(tvOS)
                 HStack {
                     Text("Biometric authentication")

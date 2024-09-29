@@ -39,6 +39,10 @@ final class DeviceVM {
         device.releaseDate
     }
     
+    var bluetoothVersion: String {
+        device.bluetoothVersion
+    }
+    
 #warning("Finish")
     //    var deviceIcon: String {
     //        switch Device.current.name {

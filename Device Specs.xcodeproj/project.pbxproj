@@ -33,6 +33,12 @@
 		F3291C4B2CA9BF2B00A15CAE /* Font Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C462CA9BF2B00A15CAE /* Font Customization.swift */; };
 		F3291C4E2CA9EC0900A15CAE /* Warnings Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A6D72CA368C600FF670F /* Warnings Section.swift */; };
 		F3291C4F2CA9EC1600A15CAE /* Warning Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A6DA2CA36AAF00FF670F /* Warning Card.swift */; };
+		F3291C512CAA02F200A15CAE /* Bluetooth Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C502CAA02F200A15CAE /* Bluetooth Version.swift */; };
+		F3291C522CAA02F200A15CAE /* Bluetooth Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C502CAA02F200A15CAE /* Bluetooth Version.swift */; };
+		F3291C532CAA02F200A15CAE /* Bluetooth Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C502CAA02F200A15CAE /* Bluetooth Version.swift */; };
+		F3291C542CAA02F200A15CAE /* Bluetooth Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C502CAA02F200A15CAE /* Bluetooth Version.swift */; };
+		F3291C552CAA02F200A15CAE /* Bluetooth Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C502CAA02F200A15CAE /* Bluetooth Version.swift */; };
+		F3291C562CAA02F200A15CAE /* Bluetooth Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C502CAA02F200A15CAE /* Bluetooth Version.swift */; };
 		F33FEE532C982A1800214288 /* Unit Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE522C982A1800214288 /* Unit Tests.swift */; };
 		F33FEE582C982EC200214288 /* Nav Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE572C982EC200214288 /* Nav Links.swift */; };
 		F33FEE5A2C982FF000214288 /* System Report VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE592C982FF000214288 /* System Report VM.swift */; };
@@ -500,6 +506,7 @@
 		F3291C322CA9BC0F00A15CAE /* Font Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font Row.swift"; sourceTree = "<group>"; };
 		F3291C382CA9BCE200A15CAE /* Font VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font VM.swift"; sourceTree = "<group>"; };
 		F3291C462CA9BF2B00A15CAE /* Font Customization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font Customization.swift"; sourceTree = "<group>"; };
+		F3291C502CAA02F200A15CAE /* Bluetooth Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bluetooth Version.swift"; sourceTree = "<group>"; };
 		F33FEE522C982A1800214288 /* Unit Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit Tests.swift"; sourceTree = "<group>"; };
 		F33FEE572C982EC200214288 /* Nav Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Links.swift"; sourceTree = "<group>"; };
 		F33FEE592C982FF000214288 /* System Report VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System Report VM.swift"; sourceTree = "<group>"; };
@@ -1153,6 +1160,7 @@
 			isa = PBXGroup;
 			children = (
 				F3B709E12CA2F1DC006ECAD1 /* Tech Node.swift */,
+				F3291C502CAA02F200A15CAE /* Bluetooth Version.swift */,
 				F3ECFDDD2CA4B0D000E72D41 /* Max Clock Speed.swift */,
 				F3ECFE002CA4BD9B00E72D41 /* Memory Type.swift */,
 				F3ECFE072CA4C09200E72D41 /* Instruction Set.swift */,
@@ -1596,6 +1604,7 @@
 				F36F80232CA0D54C0007F120 /* Nav State.swift in Sources */,
 				F36F800A2CA0D4DE0007F120 /* Pressure VM.swift in Sources */,
 				F36F80192CA0D5200007F120 /* Camera Test.swift in Sources */,
+				F3291C522CAA02F200A15CAE /* Bluetooth Version.swift in Sources */,
 				F36F800B2CA0D4DE0007F120 /* Magnetic Model.swift in Sources */,
 				F36F800C2CA0D4DE0007F120 /* Orientation VM.swift in Sources */,
 				F36F80182CA0D51B0007F120 /* Test List.swift in Sources */,
@@ -1658,6 +1667,7 @@
 				F3ECFE352CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
 				F3EA43B12C998787009820F6 /* Color Test List.swift in Sources */,
 				F3D1E77F2C9C0CD3000C81FF /* Battery Level.swift in Sources */,
+				F3291C532CAA02F200A15CAE /* Bluetooth Version.swift in Sources */,
 				F3B709BD2CA2C31E006ECAD1 /* Timezone VM.swift in Sources */,
 				F3F85EA32C94873000AE0A1D /* CPU Usage Chart.swift in Sources */,
 				F3D1E78D2C9C12D6000C81FF /* System VM.swift in Sources */,
@@ -1738,6 +1748,7 @@
 				F36FBC4C2C9319D200F5E174 /* Network View.swift in Sources */,
 				F3ECFDF02CA4B3E500E72D41 /* L1 Cache.swift in Sources */,
 				F3B709A32CA22E09006ECAD1 /* Locale List.swift in Sources */,
+				F3291C562CAA02F200A15CAE /* Bluetooth Version.swift in Sources */,
 				F3D1E7B72C9D611A000C81FF /* App VM.swift in Sources */,
 				F3291C4E2CA9EC0900A15CAE /* Warnings Section.swift in Sources */,
 				F3D1E7B82C9D611A000C81FF /* App Specs.swift in Sources */,
@@ -1822,6 +1833,7 @@
 				F3E7EC862C67B985008CD17B /* Color View.swift in Sources */,
 				F3D1E7AB2C9D4BFA000C81FF /* App Specs.swift in Sources */,
 				F3E7EC9B2C67B9CF008CD17B /* App Container.swift in Sources */,
+				F3291C512CAA02F200A15CAE /* Bluetooth Version.swift in Sources */,
 				F3ECFE322CA53AE200E72D41 /* Battery Capacity.swift in Sources */,
 				F3B709DC2CA2CEE0006ECAD1 /* Haptic Button.swift in Sources */,
 				F3E7EC872C67B985008CD17B /* Orientation VM.swift in Sources */,
@@ -1893,6 +1905,7 @@
 				F3F85EFC2C95857C00AE0A1D /* GPU Families.swift in Sources */,
 				F3ECFE092CA4C09200E72D41 /* Instruction Set.swift in Sources */,
 				F3F85EE52C957D5900AE0A1D /* Color View.swift in Sources */,
+				F3291C552CAA02F200A15CAE /* Bluetooth Version.swift in Sources */,
 				F3F85F032C9587C400AE0A1D /* Network VM.swift in Sources */,
 				F3ECFE302CA53AE200E72D41 /* Battery Capacity.swift in Sources */,
 				F3291C282CA99CA000A15CAE /* Warnings Section.swift in Sources */,
@@ -1959,6 +1972,7 @@
 				F3ECFE442CA5825800E72D41 /* Apple Intelligence.swift in Sources */,
 				F3ECFDFC2CA4B53200E72D41 /* L3 Cache.swift in Sources */,
 				F33FEE5F2C9838AE00214288 /* Spec Item.swift in Sources */,
+				F3291C542CAA02F200A15CAE /* Bluetooth Version.swift in Sources */,
 				F3F85F232C962CE600AE0A1D /* Battery Specs.swift in Sources */,
 				F3ECFE2F2CA53AE200E72D41 /* Battery Capacity.swift in Sources */,
 				F3ECFDF12CA4B3E500E72D41 /* L1 Cache.swift in Sources */,
