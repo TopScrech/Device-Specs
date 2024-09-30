@@ -1,5 +1,4 @@
 import ScrechKit
-import DeviceKit
 
 struct ProcessorSpecs: View {
     @Environment(ProcessorVM.self) private var vm
@@ -33,6 +32,11 @@ struct ProcessorSpecs: View {
                 } label: {
                     Text("Current process")
                 }
+            }
+            
+            Section("Neural Engine") {
+                ListParam("TOPS", param: vm.neuralEngineTOPS)
+                ListParam("Core count", param: vm.neuralEngineCores)
             }
             
 #if !os(watchOS)

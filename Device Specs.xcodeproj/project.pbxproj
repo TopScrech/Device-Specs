@@ -51,6 +51,12 @@
 		F3291C622CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C5E2CAA0CFB00A15CAE /* Water Resistance Description.swift */; };
 		F3291C632CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C5E2CAA0CFB00A15CAE /* Water Resistance Description.swift */; };
 		F3291C642CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C5E2CAA0CFB00A15CAE /* Water Resistance Description.swift */; };
+		F3291C6D2CAA9A3B00A15CAE /* Neural Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C6C2CAA9A3B00A15CAE /* Neural Engine.swift */; };
+		F3291C6E2CAA9A3B00A15CAE /* Neural Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C6C2CAA9A3B00A15CAE /* Neural Engine.swift */; };
+		F3291C6F2CAA9A3B00A15CAE /* Neural Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C6C2CAA9A3B00A15CAE /* Neural Engine.swift */; };
+		F3291C702CAA9A3B00A15CAE /* Neural Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C6C2CAA9A3B00A15CAE /* Neural Engine.swift */; };
+		F3291C712CAA9A3B00A15CAE /* Neural Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C6C2CAA9A3B00A15CAE /* Neural Engine.swift */; };
+		F3291C722CAA9A3B00A15CAE /* Neural Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C6C2CAA9A3B00A15CAE /* Neural Engine.swift */; };
 		F33FEE532C982A1800214288 /* Unit Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE522C982A1800214288 /* Unit Tests.swift */; };
 		F33FEE582C982EC200214288 /* Nav Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE572C982EC200214288 /* Nav Links.swift */; };
 		F33FEE5A2C982FF000214288 /* System Report VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE592C982FF000214288 /* System Report VM.swift */; };
@@ -521,6 +527,7 @@
 		F3291C502CAA02F200A15CAE /* Bluetooth Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bluetooth Version.swift"; sourceTree = "<group>"; };
 		F3291C572CAA0C0300A15CAE /* Water Resistance Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Water Resistance Rating.swift"; sourceTree = "<group>"; };
 		F3291C5E2CAA0CFB00A15CAE /* Water Resistance Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Water Resistance Description.swift"; sourceTree = "<group>"; };
+		F3291C6C2CAA9A3B00A15CAE /* Neural Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Neural Engine.swift"; sourceTree = "<group>"; };
 		F33FEE522C982A1800214288 /* Unit Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit Tests.swift"; sourceTree = "<group>"; };
 		F33FEE572C982EC200214288 /* Nav Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Links.swift"; sourceTree = "<group>"; };
 		F33FEE592C982FF000214288 /* System Report VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System Report VM.swift"; sourceTree = "<group>"; };
@@ -1174,6 +1181,7 @@
 			isa = PBXGroup;
 			children = (
 				F3B709E12CA2F1DC006ECAD1 /* Tech Node.swift */,
+				F3291C6C2CAA9A3B00A15CAE /* Neural Engine.swift */,
 				F3291C572CAA0C0300A15CAE /* Water Resistance Rating.swift */,
 				F3291C5E2CAA0CFB00A15CAE /* Water Resistance Description.swift */,
 				F3291C502CAA02F200A15CAE /* Bluetooth Version.swift */,
@@ -1643,6 +1651,7 @@
 				F36F7FF12CA0D4370007F120 /* Battery State.swift in Sources */,
 				F36F7FE62CA0D0CF0007F120 /* Home View.swift in Sources */,
 				F36F7FE92CA0D2190007F120 /* App VM.swift in Sources */,
+				F3291C6E2CAA9A3B00A15CAE /* Neural Engine.swift in Sources */,
 				F36F7FE32CA0D0740007F120 /* Messages VM.swift in Sources */,
 				F36F7FF22CA0D4420007F120 /* Display View.swift in Sources */,
 				F36F7FF32CA0D4420007F120 /* Display VM.swift in Sources */,
@@ -1673,6 +1682,7 @@
 				F3F85EB22C948C8A00AE0A1D /* Altitude VM.swift in Sources */,
 				F3F85EBF2C948F6300AE0A1D /* Color View.swift in Sources */,
 				F3D1E7C02C9D6AC8000C81FF /* Magnetic VM.swift in Sources */,
+				F3291C702CAA9A3B00A15CAE /* Neural Engine.swift in Sources */,
 				F3F85EC52C9492F300AE0A1D /* Device Watch Info.swift in Sources */,
 				F3F85EA92C948A3300AE0A1D /* Memory Specs.swift in Sources */,
 				F3F85EA12C9486C200AE0A1D /* Network Specs.swift in Sources */,
@@ -1755,6 +1765,7 @@
 				F3C3BDE42C92DBFB00BF91EE /* Battery VM.swift in Sources */,
 				F3ECFE3C2CA53AED00E72D41 /* Voltage.swift in Sources */,
 				F3B709E42CA2F1DC006ECAD1 /* Tech Node.swift in Sources */,
+				F3291C6D2CAA9A3B00A15CAE /* Neural Engine.swift in Sources */,
 				F3B709C42CA2C5E3006ECAD1 /* Locale VM.swift in Sources */,
 				F3ECFDF62CA4B3F800E72D41 /* L2 Cache.swift in Sources */,
 				F3D1E78A2C9C12C2000C81FF /* System Specs.swift in Sources */,
@@ -1860,6 +1871,7 @@
 				F3ECFE322CA53AE200E72D41 /* Battery Capacity.swift in Sources */,
 				F3B709DC2CA2CEE0006ECAD1 /* Haptic Button.swift in Sources */,
 				F3E7EC872C67B985008CD17B /* Orientation VM.swift in Sources */,
+				F3291C6F2CAA9A3B00A15CAE /* Neural Engine.swift in Sources */,
 				F3ECFDF42CA4B3F800E72D41 /* L2 Cache.swift in Sources */,
 				F3E7EC882C67B985008CD17B /* Math Utilities.swift in Sources */,
 				F3ECFDFF2CA4B53200E72D41 /* L3 Cache.swift in Sources */,
@@ -1908,6 +1920,7 @@
 				F3ECFDDB2CA4252A00E72D41 /* Health Kit.swift in Sources */,
 				F3EA43B32C998787009820F6 /* Color Test List.swift in Sources */,
 				F3291C4B2CA9BF2B00A15CAE /* Font Customization.swift in Sources */,
+				F3291C722CAA9A3B00A15CAE /* Neural Engine.swift in Sources */,
 				F3291C2A2CA9A23F00A15CAE /* Haptic Button.swift in Sources */,
 				F3F85EF52C9583EB00AE0A1D /* Device Specs.swift in Sources */,
 				F3B709D12CA2C912006ECAD1 /* Volume Slider.swift in Sources */,
@@ -1983,6 +1996,7 @@
 				F3ECFDF32CA4B3F800E72D41 /* L2 Cache.swift in Sources */,
 				F3ECFE0D2CA4C09200E72D41 /* Instruction Set.swift in Sources */,
 				F3291C5A2CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */,
+				F3291C712CAA9A3B00A15CAE /* Neural Engine.swift in Sources */,
 				F3F85F112C962C4600AE0A1D /* macOS App.swift in Sources */,
 				F3ECFE3B2CA53AED00E72D41 /* Voltage.swift in Sources */,
 				F317334C2CA1D57800CFA041 /* Background Blur.swift in Sources */,

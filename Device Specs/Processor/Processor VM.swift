@@ -28,6 +28,14 @@ final class ProcessorVM {
         }
     }
     
+    var neuralEngineTOPS: String {
+        cpu.tops ?? "-"
+    }
+    
+    var neuralEngineCores: String {
+        cpu.neuralEngineCores ?? "-"
+    }
+    
     var cpuName: String {
         cpu.description
     }
