@@ -82,8 +82,8 @@ final class ProcessorVM {
         info.globallyUniqueString
     }
     
-    var arguments: String {
-        info.arguments.description
+    var arguments: [String] {
+        info.arguments
     }
     
     var threadCount: String {

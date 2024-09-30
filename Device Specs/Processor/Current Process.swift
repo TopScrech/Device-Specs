@@ -9,20 +9,26 @@ struct CurrentProcess: View {
             
             ListParam("Process identifier", param: vm.processIdentifier)
             
-            ListParam("Globally unique string", param: vm.globallyUniqueString)
+#if os(iOS)
+            ListParam("Performance profile", param: vm.performanceProfile)
             
-            ListParam("Arguments", param: vm.arguments)
+            ListParam("Sertified for iPhone performance gaming", param: vm.sertifiedForIphonePerformanceGaming)
+#endif
             
             NavigationLink("Environment variables") {
                 CurrentProcessEnvironment()
                     .environment(vm)
             }
             
-#if os(iOS)
-            ListParam("Performance profile", param: vm.performanceProfile)
+            Section("Globally unique string") {
+                Text(vm.globallyUniqueString)
+            }
             
-            ListParam("Sertified for iPhone performance gaming", param: vm.sertifiedForIphonePerformanceGaming)
-#endif
+            Section("Arguments") {
+                ForEach(vm.arguments, id: \.self) { argument in
+                    Text(argument)
+                }
+            }
         }
         .navigationTitle("Current process")
     }
