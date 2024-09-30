@@ -7,9 +7,8 @@ extension Device {
     var bluetoothVersion: String {
         switch self {
 #if os(iOS)
-        case .iPodTouch5: ""
-        case .iPodTouch6: ""
-        case .iPodTouch7: ""
+        case .iPodTouch5: "4.0"
+        case .iPodTouch6, .iPodTouch7: "4.1"
         case .iPhone4: "2.1 + EDR"
             
         case .iPhone4s,
