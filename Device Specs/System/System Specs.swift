@@ -57,7 +57,10 @@ struct SystemSpecs: View {
                 ListParam("System uptime", param: vm.fetchSystemUptime())
             }
             
+#warning("TODO: Add HealthKit to visionOS")
+#if !os(visionOS)
             HealthKit()
+#endif
         }
         .navigationTitle("System")
     }
