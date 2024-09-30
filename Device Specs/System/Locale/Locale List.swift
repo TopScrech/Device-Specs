@@ -37,7 +37,20 @@ struct LocaleList: View {
             
             Section {
                 ListParam("Numbering system", param: vm.numberingSystem)
-                ListParam("Available numbering systems", param: vm.availableNumberingSystems)
+                                
+                HStack {
+                    Text("Available numbering systems")
+                    
+                    Spacer()
+                    
+                    VStack {
+                        ForEach(vm.availableNumberingSystems, id: \.self) { num in
+                            Text(num.debugDescription)
+                                .secondary()
+                        }
+                    }
+                }
+                
                 ListParam("Metric system", param: vm.metricSystem)
                 ListParam("Calendar", param: vm.calendar)
                 ListParam("Hour cycle", param: vm.hourCycle)

@@ -48,7 +48,7 @@ struct ProcessorSpecs: View {
                     
                     ListParam("Unified memory", param: device.hasUnifiedMemory ? "Yes" : "No")
                     
-                    ListParam("Supports raytracing", param: device.supportsRaytracing ? "Yes" : "No")
+                    ListParam("Raytracing", param: device.supportsRaytracing ? "Supported" : "Unsupported")
                     
                     NavigationLink("Supported GPU families") {
                         GPUFamilies(device)

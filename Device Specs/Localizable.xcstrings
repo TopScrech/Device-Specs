@@ -57,10 +57,24 @@
       }
     },
     "Alternate quotation begin delimiter" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Альт. разделитель начала цитаты"
+          }
+        }
+      }
     },
     "Alternate quotation end delimiter" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Альт. разделитель конца цитаты"
+          }
+        }
+      }
     },
     "Altimeter" : {
       "localizations" : {
@@ -120,7 +134,14 @@
       "shouldTranslate" : false
     },
     "Architecture" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Архитектура"
+          }
+        }
+      }
     },
     "Arguments" : {
 
@@ -142,7 +163,14 @@
 
     },
     "Available numbering systems" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Доступные системы исчисления"
+          }
+        }
+      }
     },
     "Back" : {
 
@@ -749,13 +777,20 @@
 
     },
     "ISO" : {
-
+      "shouldTranslate" : false
     },
     "ISO region" : {
 
     },
     "Italic" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Курсив"
+          }
+        }
+      }
     },
     "Known time zones" : {
       "localizations" : {
@@ -1063,7 +1098,14 @@
 
     },
     "Preferred languages" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Предпочитаемые языки"
+          }
+        }
+      }
     },
     "Prefers Cross Fade Transitions" : {
 
@@ -1118,10 +1160,24 @@
       }
     },
     "Quotation begin delimiter" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разделитель начала цитаты"
+          }
+        }
+      }
     },
     "Quotation end delimiter" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разделитель конца цитаты"
+          }
+        }
+      }
     },
     "RAM" : {
       "localizations" : {
@@ -1134,7 +1190,14 @@
       }
     },
     "Rating" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рейтинг"
+          }
+        }
+      }
     },
     "Raw X" : {
 
@@ -1144,6 +1207,16 @@
     },
     "Raw Z" : {
 
+    },
+    "Raytracing" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Трассировка лучей"
+          }
+        }
+      }
     },
     "Reduce Motion" : {
       "localizations" : {
@@ -1381,9 +1454,6 @@
     "Supported GPU families" : {
 
     },
-    "Supports raytracing" : {
-
-    },
     "Switch Camera" : {
 
     },
@@ -1518,6 +1588,9 @@
           }
         }
       }
+    },
+    "TOPS" : {
+      "shouldTranslate" : false
     },
     "Total RAM" : {
 
