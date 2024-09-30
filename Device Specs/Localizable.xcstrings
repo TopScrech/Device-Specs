@@ -534,7 +534,7 @@
     "Dynamic Island" : {
       "shouldTranslate" : false
     },
-    "Environment" : {
+    "Environment variables" : {
 
     },
     "Error" : {

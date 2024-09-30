@@ -66,8 +66,8 @@ final class ProcessorVM {
         info.processName
     }
     
-    var environment: String {
-        info.environment.description
+    var environment: [String: String] {
+        info.environment
     }
     
     var hostName: String {

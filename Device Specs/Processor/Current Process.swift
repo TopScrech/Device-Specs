@@ -13,7 +13,11 @@ struct CurrentProcess: View {
             
             ListParam("Arguments", param: vm.arguments)
             
-            ListParam("Environment", param: vm.environment)
+            NavigationLink("Environment variables") {
+                CurrentProcessEnvironment()
+                    .environment(vm)
+            }
+            
 #if os(iOS)
             ListParam("Performance profile", param: vm.performanceProfile)
             

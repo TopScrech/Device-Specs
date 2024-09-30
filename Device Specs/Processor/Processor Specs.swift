@@ -26,11 +26,9 @@ struct ProcessorSpecs: View {
                 
                 ListParam("Thread explosion limit", param: vm.threadExplosionLimit)
                 
-                NavigationLink {
+                NavigationLink("Current process") {
                     CurrentProcess()
                         .environment(vm)
-                } label: {
-                    Text("Current process")
                 }
             }
             
