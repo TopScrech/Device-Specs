@@ -1606,8 +1606,8 @@
       "localizations" : {
         "ru" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Сверхширокополосная Cвязь"
+            "state" : "translated",
+            "value" : "Сверхширокополосная связь"
           }
         }
       }

@@ -11,7 +11,13 @@ struct DeviceSpecs: View {
             ListParam("Name", param: vm.deviceName)
             ListParam("Release date", param: vm.releaseDate)
             ListParam("Internal name", param: vm.internalName)
-            ListParam("Identifier for vendor", param: vm.vandorId)
+            
+            VStack(alignment: .leading, spacing: 5) {
+                Text("Identifier for vendor")
+                
+                Text(vm.vandorId)
+                    .secondary()
+            }
             
             //#if !os(watchOS) && !os(visionOS)
             //            AdvertisingIdentifier()
