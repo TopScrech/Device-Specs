@@ -596,11 +596,15 @@
     "Force Touch" : {
       "shouldTranslate" : false
     },
-    "Free RAM" : {
-
-    },
-    "Free storage" : {
-
+    "Free" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Свободно"
+          }
+        }
+      }
     },
     "Front" : {
 
@@ -1324,15 +1328,8 @@
         }
       }
     },
-    "SDRAM Type" : {
-      "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Тип SDRAM"
-          }
-        }
-      }
+    "SDRAM" : {
+      "shouldTranslate" : false
     },
     "Seconds from GMT" : {
 
@@ -1592,11 +1589,15 @@
     "TOPS" : {
       "shouldTranslate" : false
     },
-    "Total RAM" : {
-
-    },
-    "Total storage" : {
-
+    "Total" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Всего"
+          }
+        }
+      }
     },
     "True heading" : {
 
@@ -1637,11 +1638,15 @@
     "Usage" : {
 
     },
-    "Used RAM" : {
-
-    },
-    "Used storage" : {
-
+    "Used" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Использовано"
+          }
+        }
+      }
     },
     "Variant" : {
 
