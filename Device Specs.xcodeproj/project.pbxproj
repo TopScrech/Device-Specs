@@ -952,6 +952,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F3CCB1DE2CAF44BC000F8207 /* Haptic */ = {
+			isa = PBXGroup;
+			children = (
+				F3B709D62CA2CA1F006ECAD1 /* Haptic Tests.swift */,
+				F3B709DA2CA2CEE0006ECAD1 /* Haptic Button.swift */,
+			);
+			path = Haptic;
+			sourceTree = "<group>";
+		};
+		F3CCB1E02CAF44D6000F8207 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		F3D1E7862C9C12A0000C81FF /* System */ = {
 			isa = PBXGroup;
 			children = (
@@ -1157,9 +1173,8 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC6C2C67B985008CD17B /* Test List.swift */,
-				F3B709D62CA2CA1F006ECAD1 /* Haptic Tests.swift */,
-				F3B709DA2CA2CEE0006ECAD1 /* Haptic Button.swift */,
-				F3EA43AE2C998759009820F6 /* Torch Test.swift */,
+				F3CCB1E02CAF44D6000F8207 /* Auth */,
+				F3CCB1DE2CAF44BC000F8207 /* Haptic */,
 				F3EA43AD2C998712009820F6 /* Camera */,
 				F3EA43AC2C998707009820F6 /* Torch */,
 				F3E7EC6E2C67B985008CD17B /* Color Tests */,
@@ -1171,6 +1186,7 @@
 		F3EA43AC2C998707009820F6 /* Torch */ = {
 			isa = PBXGroup;
 			children = (
+				F3EA43AE2C998759009820F6 /* Torch Test.swift */,
 				F3E7EC9D2C680561008CD17B /* Torch VM.swift */,
 			);
 			path = Torch;
