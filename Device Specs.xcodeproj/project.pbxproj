@@ -1035,8 +1035,8 @@
 			isa = PBXGroup;
 			children = (
 				F3D1E7AA2C9D4BFA000C81FF /* App Specs.swift */,
-				F3C68ACB2CAFCDB40021B6F3 /* Mail Feedback.swift */,
 				F3D1E7AD2C9D5BF8000C81FF /* App VM.swift */,
+				F3C68ACB2CAFCDB40021B6F3 /* Mail Feedback.swift */,
 			);
 			path = About;
 			sourceTree = "<group>";
