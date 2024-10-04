@@ -249,6 +249,12 @@
 		F3C68AC52CAFCB020021B6F3 /* Apple Intelligence Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */; };
 		F3C68AC62CAFCB020021B6F3 /* Apple Intelligence Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */; };
 		F3C68AC72CAFCB020021B6F3 /* Apple Intelligence Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */; };
+		F3C68ACA2CAFCD3E0021B6F3 /* MailCover in Frameworks */ = {isa = PBXBuildFile; productRef = F3C68AC92CAFCD3E0021B6F3 /* MailCover */; };
+		F3C68ACD2CAFCDB40021B6F3 /* Mail Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68ACB2CAFCDB40021B6F3 /* Mail Feedback.swift */; };
+		F3C68ACE2CAFCDB40021B6F3 /* Mail Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68ACB2CAFCDB40021B6F3 /* Mail Feedback.swift */; };
+		F3C68AD02CAFCDB40021B6F3 /* Mail Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68ACB2CAFCDB40021B6F3 /* Mail Feedback.swift */; };
+		F3C68AD22CAFCDD20021B6F3 /* MailCover in Frameworks */ = {isa = PBXBuildFile; productRef = F3C68AD12CAFCDD20021B6F3 /* MailCover */; };
+		F3C68AD42CAFCE750021B6F3 /* MailCover in Frameworks */ = {isa = PBXBuildFile; productRef = F3C68AD32CAFCE750021B6F3 /* MailCover */; };
 		F3CCB1E32CAF44E9000F8207 /* Auth Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */; };
 		F3CCB1E52CAF4518000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
 		F3CCB1E92CAF4992000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
@@ -614,6 +620,7 @@
 		F3C3BDD72C92D90700BF91EE /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F3C3BDE72C92DCA300BF91EE /* Display Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Display Specs.swift"; sourceTree = "<group>"; };
 		F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Apple Intelligence Support.swift"; sourceTree = "<group>"; };
+		F3C68ACB2CAFCDB40021B6F3 /* Mail Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mail Feedback.swift"; sourceTree = "<group>"; };
 		F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Auth Test.swift"; sourceTree = "<group>"; };
 		F3CCB1E42CAF4518000F8207 /* Auth VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Auth VM.swift"; sourceTree = "<group>"; };
 		F3CCB1F12CAFC1F1000F8207 /* GPU Families VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPU Families VM.swift"; sourceTree = "<group>"; };
@@ -725,6 +732,7 @@
 				F36F7FCD2CA0CFDF0007F120 /* Messages.framework in Frameworks */,
 				F36F7FEB2CA0D23D0007F120 /* ScrechKit in Frameworks */,
 				F36F802B2CA0D5E90007F120 /* ScrechCam in Frameworks */,
+				F3C68AD42CAFCE750021B6F3 /* MailCover in Frameworks */,
 				F36F7FED2CA0D2400007F120 /* DeviceKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -743,6 +751,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3C3BDDD2C92DAAA00BF91EE /* DeviceKit in Frameworks */,
+				F3C68AD22CAFCDD20021B6F3 /* MailCover in Frameworks */,
 				F3C3BDDF2C92DAB000BF91EE /* ScrechKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -754,6 +763,7 @@
 				F357214D2C98584100967ACA /* ScrechCam in Frameworks */,
 				F3E7EC962C67B99E008CD17B /* ScrechKit in Frameworks */,
 				F3E7EC992C67B9A8008CD17B /* DeviceKit in Frameworks */,
+				F3C68ACA2CAFCD3E0021B6F3 /* MailCover in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1025,6 +1035,7 @@
 			isa = PBXGroup;
 			children = (
 				F3D1E7AA2C9D4BFA000C81FF /* App Specs.swift */,
+				F3C68ACB2CAFCDB40021B6F3 /* Mail Feedback.swift */,
 				F3D1E7AD2C9D5BF8000C81FF /* App VM.swift */,
 			);
 			path = About;
@@ -1352,6 +1363,7 @@
 				F36F7FEA2CA0D23D0007F120 /* ScrechKit */,
 				F36F7FEC2CA0D2400007F120 /* DeviceKit */,
 				F36F802A2CA0D5E90007F120 /* ScrechCam */,
+				F3C68AD32CAFCE750021B6F3 /* MailCover */,
 			);
 			productName = iMessage;
 			productReference = F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */;
@@ -1394,6 +1406,7 @@
 			packageProductDependencies = (
 				F3C3BDDC2C92DAAA00BF91EE /* DeviceKit */,
 				F3C3BDDE2C92DAB000BF91EE /* ScrechKit */,
+				F3C68AD12CAFCDD20021B6F3 /* MailCover */,
 			);
 			productName = visionOS;
 			productReference = F3C3BDBD2C92D87C00BF91EE /* visionOS.app */;
@@ -1420,6 +1433,7 @@
 				F3E7EC952C67B99E008CD17B /* ScrechKit */,
 				F3E7EC982C67B9A8008CD17B /* DeviceKit */,
 				F357214C2C98584100967ACA /* ScrechCam */,
+				F3C68AC92CAFCD3E0021B6F3 /* MailCover */,
 			);
 			productName = "Device Specs";
 			productReference = F3E7EC3A2C676A13008CD17B /* Device Specs.app */;
@@ -1535,6 +1549,7 @@
 				F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */,
 				F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */,
 				F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */,
+				F3C68AC82CAFCD3E0021B6F3 /* XCRemoteSwiftPackageReference "MailCover" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F3E7EC3B2C676A13008CD17B /* Products */;
@@ -1659,6 +1674,7 @@
 				F36F7FF82CA0D4830007F120 /* Camera Formats.swift in Sources */,
 				F3C68AC32CAFCB020021B6F3 /* Apple Intelligence Support.swift in Sources */,
 				F36F80272CA0D5B00007F120 /* Device Info.swift in Sources */,
+				F3C68AD02CAFCDB40021B6F3 /* Mail Feedback.swift in Sources */,
 				F36F801D2CA0D5330007F120 /* Nearby VM.swift in Sources */,
 				F36F801E2CA0D5330007F120 /* Math Utilities.swift in Sources */,
 				F36F80252CA0D5760007F120 /* Secondary Container.swift in Sources */,
@@ -1866,6 +1882,7 @@
 				F36FBC5E2C931C7500F5E174 /* Orientation VM.swift in Sources */,
 				F3D1E7802C9C0CD3000C81FF /* Battery Level.swift in Sources */,
 				F3CCB1F52CAFC1F1000F8207 /* GPU Families VM.swift in Sources */,
+				F3C68ACE2CAFCDB40021B6F3 /* Mail Feedback.swift in Sources */,
 				F3ECFE062CA4BD9B00E72D41 /* Memory Type.swift in Sources */,
 				F3ECFDFE2CA4B53200E72D41 /* L3 Cache.swift in Sources */,
 				F36FBC602C931CBD00F5E174 /* Location VM.swift in Sources */,
@@ -1974,6 +1991,7 @@
 				F3E7EC8C2C67B985008CD17B /* Display View.swift in Sources */,
 				F3D1E7A92C9CD453000C81FF /* Current Process.swift in Sources */,
 				F3187A502C898B37008FB911 /* Nav State.swift in Sources */,
+				F3C68ACD2CAFCDB40021B6F3 /* Mail Feedback.swift in Sources */,
 				F3ECFE392CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
 				F3CCB1E52CAF4518000F8207 /* Auth VM.swift in Sources */,
 				F3E7EC8E2C67B985008CD17B /* Camera VM.swift in Sources */,
@@ -2813,6 +2831,14 @@
 				kind = branch;
 			};
 		};
+		F3C68AC82CAFCD3E0021B6F3 /* XCRemoteSwiftPackageReference "MailCover" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/MailCover";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/ScrechKit";
@@ -2871,6 +2897,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
 			productName = ScrechKit;
+		};
+		F3C68AC92CAFCD3E0021B6F3 /* MailCover */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3C68AC82CAFCD3E0021B6F3 /* XCRemoteSwiftPackageReference "MailCover" */;
+			productName = MailCover;
+		};
+		F3C68AD12CAFCDD20021B6F3 /* MailCover */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3C68AC82CAFCD3E0021B6F3 /* XCRemoteSwiftPackageReference "MailCover" */;
+			productName = MailCover;
+		};
+		F3C68AD32CAFCE750021B6F3 /* MailCover */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3C68AC82CAFCD3E0021B6F3 /* XCRemoteSwiftPackageReference "MailCover" */;
+			productName = MailCover;
 		};
 		F3E7EC952C67B99E008CD17B /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -655,6 +655,9 @@
     "Face ID" : {
       "shouldTranslate" : false
     },
+    "Feedback" : {
+
+    },
     "Firmware Version" : {
       "localizations" : {
         "ru" : {

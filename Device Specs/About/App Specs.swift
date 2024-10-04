@@ -28,7 +28,10 @@ struct AppSpecs: View {
                 ListParam("Installation date", param: date)
             }
             
+            
 #if !os(watchOS) && !os(tvOS)
+            MailFeedback()
+            
             Section {
                 if let url = URL(string: "https://topscrech.dev/bisquit.host/privacy.pdf") {
                     Link("Privacy Policy", destination: url)

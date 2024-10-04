@@ -1,5 +1,5 @@
 {
-  "originHash" : "5ae081f7230504ab7817b40a1f91d6c285dc5818e978b2c642c7fb37cf8f3d67",
+  "originHash" : "0bef70239378213b46df8633e4a6ce11f732c4222aacce31a7273bc863dfcc6d",
   "pins" : [
     {
       "identity" : "devicekit",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "7ff5331960151aec74fb422e1d45f54ef6cc086d",
         "version" : "5.5.0"
+      }
+    },
+    {
+      "identity" : "mailcover",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TopScrech/MailCover",
+      "state" : {
+        "branch" : "main",
+        "revision" : "c33771592360b836f114ebe32ad660590c7afc28"
       }
     },
     {
