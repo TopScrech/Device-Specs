@@ -745,7 +745,14 @@
       }
     },
     "GPU families" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GPU-семейства"
+          }
+        }
+      }
     },
     "Grayscale" : {
 

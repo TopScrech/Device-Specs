@@ -879,10 +879,7 @@
 				F36FBC662C93542700F5E174 /* Processor VM.swift */,
 				F3D1E7A52C9CD453000C81FF /* Current Process.swift */,
 				F31548FE2CAADBBB004CE26E /* Current Process Environment.swift */,
-				F3F85EF92C95857C00AE0A1D /* GPU Families.swift */,
-				F3CCB1F12CAFC1F1000F8207 /* GPU Families VM.swift */,
-				F3CCB1F72CAFC228000F8207 /* GPU Family Model.swift */,
-				F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */,
+				F3C68AC12CAFC6F30021B6F3 /* GPU Families */,
 			);
 			path = Processor;
 			sourceTree = "<group>";
@@ -973,6 +970,17 @@
 				F36F7FCC2CA0CFDF0007F120 /* Messages.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3C68AC12CAFC6F30021B6F3 /* GPU Families */ = {
+			isa = PBXGroup;
+			children = (
+				F3F85EF92C95857C00AE0A1D /* GPU Families.swift */,
+				F3CCB1F12CAFC1F1000F8207 /* GPU Families VM.swift */,
+				F3CCB1F72CAFC228000F8207 /* GPU Family Model.swift */,
+				F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */,
+			);
+			path = "GPU Families";
 			sourceTree = "<group>";
 		};
 		F3CCB1DE2CAF44BC000F8207 /* Haptic */ = {
