@@ -36,7 +36,7 @@ struct TestList: View {
                 .disabled(!DeviceInfo.isUltraWidebandAvailable)
             } footer: {
                 if !DeviceInfo.isUltraWidebandAvailable {
-                    Text("This device is not UWB capable")
+                    Text("This device is not UWB-capable")
                 }
             }
         }

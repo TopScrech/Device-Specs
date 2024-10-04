@@ -67,22 +67,7 @@ struct HomeView: View {
                 AccessibilityView()
             }
             
-            Section {
-                Button {
-                    navState.navigate(.toTests)
-                } label: {
-                    HStack {
-                        Label("Tests", systemImage: "testtube.2")
-                        
-                        Spacer()
-                        
-                        Image(systemName: "chevron.forward")
-                            .foregroundStyle(.tertiary)
-                            .footnote(.bold)
-                    }
-                    .foregroundStyle(.foreground)
-                }
-            }
+            testLink
             
             Section {
                 SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
@@ -94,6 +79,25 @@ struct HomeView: View {
         .navigationTitle("Device Specs")
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
             battery.fetchBatteryInfo()
+        }
+    }
+    
+    private var testLink: some View {
+        Section {
+            Button {
+                navState.navigate(.toTests)
+            } label: {
+                HStack {
+                    Label("Tests", systemImage: "testtube.2")
+                    
+                    Spacer()
+                    
+                    Image(systemName: "chevron.forward")
+                        .footnote(.bold)
+                        .foregroundStyle(.tertiary)
+                }
+                .foregroundStyle(.foreground)
+            }
         }
     }
 }
