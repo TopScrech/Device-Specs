@@ -244,6 +244,11 @@
 		F3C3BDE32C92DBF700BF91EE /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5A2C67B985008CD17B /* Battery Specs.swift */; };
 		F3C3BDE42C92DBFB00BF91EE /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5B2C67B985008CD17B /* Battery VM.swift */; };
 		F3C3BDE82C92DCA300BF91EE /* Display Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDE72C92DCA300BF91EE /* Display Specs.swift */; };
+		F3C68AC32CAFCB020021B6F3 /* Apple Intelligence Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */; };
+		F3C68AC42CAFCB020021B6F3 /* Apple Intelligence Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */; };
+		F3C68AC52CAFCB020021B6F3 /* Apple Intelligence Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */; };
+		F3C68AC62CAFCB020021B6F3 /* Apple Intelligence Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */; };
+		F3C68AC72CAFCB020021B6F3 /* Apple Intelligence Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */; };
 		F3CCB1E32CAF44E9000F8207 /* Auth Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */; };
 		F3CCB1E52CAF4518000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
 		F3CCB1E92CAF4992000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
@@ -608,6 +613,7 @@
 		F3C3BDD52C92D8F600BF91EE /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F3C3BDD72C92D90700BF91EE /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F3C3BDE72C92DCA300BF91EE /* Display Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Display Specs.swift"; sourceTree = "<group>"; };
+		F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Apple Intelligence Support.swift"; sourceTree = "<group>"; };
 		F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Auth Test.swift"; sourceTree = "<group>"; };
 		F3CCB1E42CAF4518000F8207 /* Auth VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Auth VM.swift"; sourceTree = "<group>"; };
 		F3CCB1F12CAFC1F1000F8207 /* GPU Families VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPU Families VM.swift"; sourceTree = "<group>"; };
@@ -1005,6 +1011,7 @@
 			isa = PBXGroup;
 			children = (
 				F3D1E7872C9C12C2000C81FF /* System Specs.swift */,
+				F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */,
 				F3D1E78C2C9C12D6000C81FF /* System VM.swift */,
 				F3291C3E2CA9BE4200A15CAE /* Font */,
 				F3291C452CA9BE5700A15CAE /* Health */,
@@ -1650,6 +1657,7 @@
 				F36F7FF72CA0D4830007F120 /* Format Card.swift in Sources */,
 				F3B709DB2CA2CEE0006ECAD1 /* Haptic Button.swift in Sources */,
 				F36F7FF82CA0D4830007F120 /* Camera Formats.swift in Sources */,
+				F3C68AC32CAFCB020021B6F3 /* Apple Intelligence Support.swift in Sources */,
 				F36F80272CA0D5B00007F120 /* Device Info.swift in Sources */,
 				F36F801D2CA0D5330007F120 /* Nearby VM.swift in Sources */,
 				F36F801E2CA0D5330007F120 /* Math Utilities.swift in Sources */,
@@ -1735,6 +1743,7 @@
 				F3ECFE262CA53A4B00E72D41 /* Device Extension.swift in Sources */,
 				F3D1E7892C9C12C2000C81FF /* System Specs.swift in Sources */,
 				F3CCB1EB2CAFBB54000F8207 /* Auth VM.swift in Sources */,
+				F3C68AC42CAFCB020021B6F3 /* Apple Intelligence Support.swift in Sources */,
 				F3F85E9F2C94865900AE0A1D /* Network VM.swift in Sources */,
 				F31548FF2CAADBBB004CE26E /* Current Process Environment.swift in Sources */,
 				F3D1E7852C9C0D14000C81FF /* Battery State.swift in Sources */,
@@ -1839,6 +1848,7 @@
 				F3ECFDDE2CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */,
 				F3ECFE0B2CA4C09200E72D41 /* Instruction Set.swift in Sources */,
 				F3291C3B2CA9BCE200A15CAE /* Font VM.swift in Sources */,
+				F3C68AC52CAFCB020021B6F3 /* Apple Intelligence Support.swift in Sources */,
 				F36FBC622C931E2600F5E174 /* AltitudeVM.swift in Sources */,
 				F3ECFDE72CA4B3A700E72D41 /* L1 Instruction Cache.swift in Sources */,
 				F3ECFE222CA536FD00E72D41 /* Release Date.swift in Sources */,
@@ -1982,6 +1992,7 @@
 				F3E7EC3E2C676A13008CD17B /* Device Specs App.swift in Sources */,
 				F3D1E78F2C9C12D6000C81FF /* System VM.swift in Sources */,
 				F3D1E7AE2C9D5BF8000C81FF /* App VM.swift in Sources */,
+				F3C68AC62CAFCB020021B6F3 /* Apple Intelligence Support.swift in Sources */,
 				F36FBC6F2C941F6200F5E174 /* Accessibility View.swift in Sources */,
 				F36FBC642C9353FF00F5E174 /* Processor Specs.swift in Sources */,
 			);
@@ -2022,6 +2033,7 @@
 				F3F85F032C9587C400AE0A1D /* Network VM.swift in Sources */,
 				F3ECFE302CA53AE200E72D41 /* Battery Capacity.swift in Sources */,
 				F3291C282CA99CA000A15CAE /* Warnings Section.swift in Sources */,
+				F3C68AC72CAFCB020021B6F3 /* Apple Intelligence Support.swift in Sources */,
 				F3F85EF12C9580AD00AE0A1D /* Display VM.swift in Sources */,
 				F3291C3D2CA9BCE200A15CAE /* Font VM.swift in Sources */,
 				F3291C292CA9A22D00A15CAE /* Haptic Tests.swift in Sources */,
