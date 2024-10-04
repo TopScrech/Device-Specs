@@ -31,18 +31,7 @@ struct DeviceSpecs: View {
                 ListParam("Bluetooth", param: vm.bluetoothVersion)
                 
 #if !os(tvOS)
-                HStack {
-                    Text("Biometric authentication")
-                    
-                    Spacer()
-                    
-                    Image(systemName: vm.bioIcon)
-                        .title3()
-                        .foregroundStyle(.secondary)
-                    
-                    Text(vm.bioType)
-                        .foregroundStyle(.secondary)
-                }
+                AuthTest()
 #endif
                 
 #if os(iOS)
