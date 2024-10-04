@@ -15,13 +15,20 @@ final class SystemVM {
 #endif
     }
     
-    
     init() {
         fetchBuildNumber()
     }
     
-    var supportsAppleIntelligence: Bool {
-        device.supportsAppleIntelligence
+    var timeZone: String {
+        TimeZone.current.abbreviation() ?? ""
+    }
+    
+    var lang: String {
+        Locale.current.identifier
+    }
+    
+    var fontCount: String {
+        UIFont.familyNames.count.description
     }
     
     var operatingSystem: String {

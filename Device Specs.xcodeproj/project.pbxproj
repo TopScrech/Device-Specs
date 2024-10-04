@@ -1011,8 +1011,8 @@
 			isa = PBXGroup;
 			children = (
 				F3D1E7872C9C12C2000C81FF /* System Specs.swift */,
-				F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */,
 				F3D1E78C2C9C12D6000C81FF /* System VM.swift */,
+				F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */,
 				F3291C3E2CA9BE4200A15CAE /* Font */,
 				F3291C452CA9BE5700A15CAE /* Health */,
 				F3B709BB2CA2C2F4006ECAD1 /* Time Zone */,

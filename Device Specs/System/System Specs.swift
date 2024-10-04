@@ -11,7 +11,6 @@ struct SystemSpecs: View {
             }
             
             AppleIntelligenceSupport()
-                .environment(vm)
             
             Section {
                 ListParam("Multitasking", param: vm.multitaskingSupported)
@@ -19,19 +18,19 @@ struct SystemSpecs: View {
                 NavigationLink {
                     Timezone()
                 } label: {
-                    ListParam("Time zone", param: TimeZone.current.abbreviation() ?? "")
+                    ListParam("Time zone", param: vm.timeZone)
                 }
                 
                 NavigationLink {
                     LocaleList()
                 } label: {
-                    ListParam("Locale", param: Locale.current.identifier)
+                    ListParam("Locale", param: vm.lang)
                 }
                 
                 NavigationLink {
                     FontList()
                 } label: {
-                    ListParam("System fonts", param: UIFont.familyNames.count.description)
+                    ListParam("System fonts", param: vm.fontCount)
                 }
             }
             

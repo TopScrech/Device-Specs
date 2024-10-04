@@ -1,14 +1,17 @@
 import SwiftUI
+import DeviceKit
 
 struct AppleIntelligenceSupport: View {
-    @Environment(SystemVM.self) private var vm
+    private var supportsAppleIntelligence: Bool {
+        Device.current.supportsAppleIntelligence
+    }
     
     var body: some View {
 #warning("Enable after Apple Intelligence release")
 #if DEBUG
         Section {
             Label {
-                let text: LocalizedStringKey = vm.supportsAppleIntelligence
+                let text: LocalizedStringKey = supportsAppleIntelligence
                 ? "Your device supports Apple Intelligence"
                 : "Your device does not support Apple Intelligence"
                 
@@ -18,7 +21,7 @@ struct AppleIntelligenceSupport: View {
                     .resizable()
                     .frame(width: 32, height: 32)
             }
-            .opacity(vm.supportsAppleIntelligence ? 1 : 0.1)
+            .opacity(supportsAppleIntelligence ? 1 : 0.1)
             .padding(.vertical, 5)
         }
 #endif
@@ -27,5 +30,4 @@ struct AppleIntelligenceSupport: View {
 
 #Preview {
     AppleIntelligenceSupport()
-        .environment(SystemVM())
 }
