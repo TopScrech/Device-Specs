@@ -33,8 +33,8 @@ struct ProcessorSpecs: View {
             }
             
             Section("Neural Engine") {
-                ListParam("TOPS", param: vm.neuralEngineTOPS)
                 ListParam("Core count", param: vm.neuralEngineCores)
+                ListParam("TOPS", param: vm.neuralEngineTOPS)
             }
             
 #if !os(watchOS)
