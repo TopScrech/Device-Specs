@@ -255,6 +255,7 @@
 		F3C68AD02CAFCDB40021B6F3 /* Mail Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68ACB2CAFCDB40021B6F3 /* Mail Feedback.swift */; };
 		F3C68AD22CAFCDD20021B6F3 /* MailCover in Frameworks */ = {isa = PBXBuildFile; productRef = F3C68AD12CAFCDD20021B6F3 /* MailCover */; };
 		F3C68AD42CAFCE750021B6F3 /* MailCover in Frameworks */ = {isa = PBXBuildFile; productRef = F3C68AD32CAFCE750021B6F3 /* MailCover */; };
+		F3C68AD62CAFD3030021B6F3 /* Health Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AD52CAFD3030021B6F3 /* Health Specs.swift */; };
 		F3CCB1E32CAF44E9000F8207 /* Auth Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */; };
 		F3CCB1E52CAF4518000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
 		F3CCB1E92CAF4992000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
@@ -621,6 +622,7 @@
 		F3C3BDE72C92DCA300BF91EE /* Display Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Display Specs.swift"; sourceTree = "<group>"; };
 		F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Apple Intelligence Support.swift"; sourceTree = "<group>"; };
 		F3C68ACB2CAFCDB40021B6F3 /* Mail Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mail Feedback.swift"; sourceTree = "<group>"; };
+		F3C68AD52CAFD3030021B6F3 /* Health Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Health Specs.swift"; sourceTree = "<group>"; };
 		F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Auth Test.swift"; sourceTree = "<group>"; };
 		F3CCB1E42CAF4518000F8207 /* Auth VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Auth VM.swift"; sourceTree = "<group>"; };
 		F3CCB1F12CAFC1F1000F8207 /* GPU Families VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPU Families VM.swift"; sourceTree = "<group>"; };
@@ -817,14 +819,6 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		F3291C452CA9BE5700A15CAE /* Health */ = {
-			isa = PBXGroup;
-			children = (
-				F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */,
-			);
-			path = Health;
-			sourceTree = "<group>";
-		};
 		F33FEE542C982A2800214288 /* Unit Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -999,6 +993,15 @@
 			path = "GPU Families";
 			sourceTree = "<group>";
 		};
+		F3C68AD72CAFD3330021B6F3 /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				F3C68AD52CAFD3030021B6F3 /* Health Specs.swift */,
+				F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */,
+			);
+			path = Health;
+			sourceTree = "<group>";
+		};
 		F3CCB1DE2CAF44BC000F8207 /* Haptic */ = {
 			isa = PBXGroup;
 			children = (
@@ -1024,7 +1027,6 @@
 				F3D1E78C2C9C12D6000C81FF /* System VM.swift */,
 				F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */,
 				F3291C3E2CA9BE4200A15CAE /* Font */,
-				F3291C452CA9BE5700A15CAE /* Health */,
 				F3B709BB2CA2C2F4006ECAD1 /* Time Zone */,
 				F3B709C82CA2C657006ECAD1 /* Locale */,
 			);
@@ -1114,6 +1116,7 @@
 				F3E7EC642C67B985008CD17B /* Network */,
 				F3E7EC6B2C67B985008CD17B /* Sensors */,
 				F36FBC6D2C941F5100F5E174 /* Accessability */,
+				F3C68AD72CAFD3330021B6F3 /* Health */,
 				F3E7EC742C67B985008CD17B /* Tests */,
 				F3D1E7AC2C9D5BE1000C81FF /* About */,
 			);
@@ -2003,6 +2006,7 @@
 				F3E7EC902C67B985008CD17B /* Device Info.swift in Sources */,
 				F3B709D82CA2CA1F006ECAD1 /* Haptic Tests.swift in Sources */,
 				F3E7EC912C67B985008CD17B /* Home View.swift in Sources */,
+				F3C68AD62CAFD3030021B6F3 /* Health Specs.swift in Sources */,
 				F3E7EC922C67B985008CD17B /* Connectivity VM.swift in Sources */,
 				F3EA43B22C998787009820F6 /* Color Test List.swift in Sources */,
 				F3E7EC932C67B985008CD17B /* Pressure VM.swift in Sources */,

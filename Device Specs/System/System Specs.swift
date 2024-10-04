@@ -38,8 +38,6 @@ struct SystemSpecs: View {
                 ListParam("Active time", param: vm.fetchSystemActiveTime())
                 ListParam("System uptime", param: vm.fetchSystemUptime())
             }
-            
-            HealthKit()
         }
         .navigationTitle("System")
     }

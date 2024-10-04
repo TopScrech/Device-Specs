@@ -69,6 +69,10 @@ struct HomeView: View {
                 AccessibilityView()
             }
             
+            SpecsLink("Health", icon: "facemask") {
+                HealthSpecs()
+            }
+            
             testLink
             
             Section {
