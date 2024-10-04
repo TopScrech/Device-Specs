@@ -256,6 +256,12 @@
 		F3C68AD22CAFCDD20021B6F3 /* MailCover in Frameworks */ = {isa = PBXBuildFile; productRef = F3C68AD12CAFCDD20021B6F3 /* MailCover */; };
 		F3C68AD42CAFCE750021B6F3 /* MailCover in Frameworks */ = {isa = PBXBuildFile; productRef = F3C68AD32CAFCE750021B6F3 /* MailCover */; };
 		F3C68AD62CAFD3030021B6F3 /* Health Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AD52CAFD3030021B6F3 /* Health Specs.swift */; };
+		F3C68AE72CAFD7C80021B6F3 /* HealthyKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3C68AE62CAFD7C80021B6F3 /* HealthyKit */; };
+		F3C68AEA2CAFD84E0021B6F3 /* Read Carbs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AE82CAFD84E0021B6F3 /* Read Carbs.swift */; };
+		F3C68AEB2CAFD84E0021B6F3 /* Read Body Mass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AE92CAFD84E0021B6F3 /* Read Body Mass.swift */; };
+		F3C68AEE2CAFD9900021B6F3 /* Health VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AED2CAFD9900021B6F3 /* Health VM.swift */; };
+		F3C68AF02CAFF4B00021B6F3 /* Body Mass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AEF2CAFF4B00021B6F3 /* Body Mass.swift */; };
+		F3C68AF52CAFF6660021B6F3 /* Body Mass List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AF12CAFF6660021B6F3 /* Body Mass List.swift */; };
 		F3CCB1E32CAF44E9000F8207 /* Auth Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */; };
 		F3CCB1E52CAF4518000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
 		F3CCB1E92CAF4992000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
@@ -623,6 +629,11 @@
 		F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Apple Intelligence Support.swift"; sourceTree = "<group>"; };
 		F3C68ACB2CAFCDB40021B6F3 /* Mail Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mail Feedback.swift"; sourceTree = "<group>"; };
 		F3C68AD52CAFD3030021B6F3 /* Health Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Health Specs.swift"; sourceTree = "<group>"; };
+		F3C68AE82CAFD84E0021B6F3 /* Read Carbs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Read Carbs.swift"; sourceTree = "<group>"; };
+		F3C68AE92CAFD84E0021B6F3 /* Read Body Mass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Read Body Mass.swift"; sourceTree = "<group>"; };
+		F3C68AED2CAFD9900021B6F3 /* Health VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Health VM.swift"; sourceTree = "<group>"; };
+		F3C68AEF2CAFF4B00021B6F3 /* Body Mass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Body Mass.swift"; sourceTree = "<group>"; };
+		F3C68AF12CAFF6660021B6F3 /* Body Mass List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Body Mass List.swift"; sourceTree = "<group>"; };
 		F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Auth Test.swift"; sourceTree = "<group>"; };
 		F3CCB1E42CAF4518000F8207 /* Auth VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Auth VM.swift"; sourceTree = "<group>"; };
 		F3CCB1F12CAFC1F1000F8207 /* GPU Families VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPU Families VM.swift"; sourceTree = "<group>"; };
@@ -763,6 +774,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F357214D2C98584100967ACA /* ScrechCam in Frameworks */,
+				F3C68AE72CAFD7C80021B6F3 /* HealthyKit in Frameworks */,
 				F3E7EC962C67B99E008CD17B /* ScrechKit in Frameworks */,
 				F3E7EC992C67B9A8008CD17B /* DeviceKit in Frameworks */,
 				F3C68ACA2CAFCD3E0021B6F3 /* MailCover in Frameworks */,
@@ -997,9 +1009,22 @@
 			isa = PBXGroup;
 			children = (
 				F3C68AD52CAFD3030021B6F3 /* Health Specs.swift */,
+				F3C68AF12CAFF6660021B6F3 /* Body Mass List.swift */,
 				F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */,
+				F3C68AEC2CAFD85B0021B6F3 /* New Group */,
 			);
 			path = Health;
+			sourceTree = "<group>";
+		};
+		F3C68AEC2CAFD85B0021B6F3 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				F3C68AED2CAFD9900021B6F3 /* Health VM.swift */,
+				F3C68AE92CAFD84E0021B6F3 /* Read Body Mass.swift */,
+				F3C68AEF2CAFF4B00021B6F3 /* Body Mass.swift */,
+				F3C68AE82CAFD84E0021B6F3 /* Read Carbs.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		F3CCB1DE2CAF44BC000F8207 /* Haptic */ = {
@@ -1437,6 +1462,7 @@
 				F3E7EC982C67B9A8008CD17B /* DeviceKit */,
 				F357214C2C98584100967ACA /* ScrechCam */,
 				F3C68AC92CAFCD3E0021B6F3 /* MailCover */,
+				F3C68AE62CAFD7C80021B6F3 /* HealthyKit */,
 			);
 			productName = "Device Specs";
 			productReference = F3E7EC3A2C676A13008CD17B /* Device Specs.app */;
@@ -1553,6 +1579,7 @@
 				F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */,
 				F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */,
 				F3C68AC82CAFCD3E0021B6F3 /* XCRemoteSwiftPackageReference "MailCover" */,
+				F3C68AE52CAFD7C80021B6F3 /* XCRemoteSwiftPackageReference "HealthyKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F3E7EC3B2C676A13008CD17B /* Products */;
@@ -1932,6 +1959,7 @@
 				F3B709E22CA2F1DC006ECAD1 /* Tech Node.swift in Sources */,
 				F3E7EC7B2C67B985008CD17B /* Device VM.swift in Sources */,
 				F3EA43AF2C998759009820F6 /* Torch Test.swift in Sources */,
+				F3C68AF52CAFF6660021B6F3 /* Body Mass List.swift in Sources */,
 				F3D1E7C32C9D6B13000C81FF /* Magnetic Field Data.swift in Sources */,
 				F3ECFDE02CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */,
 				F3CCB1E32CAF44E9000F8207 /* Auth Test.swift in Sources */,
@@ -1962,6 +1990,8 @@
 				F3B709CE2CA2C853006ECAD1 /* Volume.swift in Sources */,
 				F3ECFDED2CA4B3E500E72D41 /* L1 Cache.swift in Sources */,
 				F3ECFE0A2CA4C09200E72D41 /* Instruction Set.swift in Sources */,
+				F3C68AEA2CAFD84E0021B6F3 /* Read Carbs.swift in Sources */,
+				F3C68AEB2CAFD84E0021B6F3 /* Read Body Mass.swift in Sources */,
 				F3E7EC842C67B985008CD17B /* UWB Test View.swift in Sources */,
 				F3E7EC852C67B985008CD17B /* Sensors View.swift in Sources */,
 				F31549032CAADBBB004CE26E /* Current Process Environment.swift in Sources */,
@@ -1991,6 +2021,7 @@
 				F3D1E7A02C9CC2AE000C81FF /* Camera Formats.swift in Sources */,
 				F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */,
 				F3CCB1FC2CAFC228000F8207 /* GPU Family Model.swift in Sources */,
+				F3C68AEE2CAFD9900021B6F3 /* Health VM.swift in Sources */,
 				F3E7EC8C2C67B985008CD17B /* Display View.swift in Sources */,
 				F3D1E7A92C9CD453000C81FF /* Current Process.swift in Sources */,
 				F3187A502C898B37008FB911 /* Nav State.swift in Sources */,
@@ -2000,6 +2031,7 @@
 				F3E7EC8E2C67B985008CD17B /* Camera VM.swift in Sources */,
 				F3291C352CA9BC0F00A15CAE /* Font Row.swift in Sources */,
 				F3B709F72CA30470006ECAD1 /* Advertising Identifier.swift in Sources */,
+				F3C68AF02CAFF4B00021B6F3 /* Body Mass.swift in Sources */,
 				F3D1E7A22C9CC304000C81FF /* Format Card.swift in Sources */,
 				F3E7EC8F2C67B985008CD17B /* Memory Specs.swift in Sources */,
 				F3291C5F2CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */,
@@ -2503,8 +2535,9 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "This permission is required in order to test biometric authentication";
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app needs to check if health data is available on the device";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app needs to check if health data is available on the device";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "This permission is required in order to read health data";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This permission is required in order to read health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This permission is required in order to update health data";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
@@ -2554,8 +2587,9 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "This permission is required in order to test biometric authentication";
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app needs to check if health data is available on the device";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app needs to check if health data is available on the device";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "This permission is required in order to read health data";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This permission is required in order to read health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This permission is required in order to update health data";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
@@ -2843,6 +2877,14 @@
 				kind = branch;
 			};
 		};
+		F3C68AE52CAFD7C80021B6F3 /* XCRemoteSwiftPackageReference "HealthyKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/HealthyKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/ScrechKit";
@@ -2916,6 +2958,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F3C68AC82CAFCD3E0021B6F3 /* XCRemoteSwiftPackageReference "MailCover" */;
 			productName = MailCover;
+		};
+		F3C68AE62CAFD7C80021B6F3 /* HealthyKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3C68AE52CAFD7C80021B6F3 /* XCRemoteSwiftPackageReference "HealthyKit" */;
+			productName = HealthyKit;
 		};
 		F3E7EC952C67B99E008CD17B /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;

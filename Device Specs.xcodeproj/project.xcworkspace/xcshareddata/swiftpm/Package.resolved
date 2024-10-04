@@ -1,5 +1,5 @@
 {
-  "originHash" : "0bef70239378213b46df8633e4a6ce11f732c4222aacce31a7273bc863dfcc6d",
+  "originHash" : "750f055f572af367a017ff009557d5713649a54f88cf762fb063566bd90733de",
   "pins" : [
     {
       "identity" : "devicekit",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "7ff5331960151aec74fb422e1d45f54ef6cc086d",
         "version" : "5.5.0"
+      }
+    },
+    {
+      "identity" : "healthykit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TopScrech/HealthyKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "b52ddf6463c5b01b013a2c7f50218faa4a62a274"
       }
     },
     {
@@ -34,7 +43,7 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "973e1dc1a7d7d1e66389b0aee3b2ab85e4abf998"
+        "revision" : "aa7564dc1b64f5601c7cc69f3e2f3b69de490bd7"
       }
     }
   ],

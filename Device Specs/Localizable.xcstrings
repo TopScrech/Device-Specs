@@ -245,6 +245,9 @@
     "Bluetooth" : {
       "shouldTranslate" : false
     },
+    "Body mass" : {
+
+    },
     "Bold" : {
       "comment" : "Прикол)))",
       "localizations" : {
