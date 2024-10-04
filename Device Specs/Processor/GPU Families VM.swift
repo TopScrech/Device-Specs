@@ -1,7 +1,7 @@
 import SwiftUI
 
 @Observable
-final class GpuFamiliesVM {
+final class GPUFamiliesVM {
     var supportedFamilies: [GPUFamily] {
         families.filter {
             $0.supported

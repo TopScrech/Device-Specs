@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct GPUFamilies: View {
-    private var vm = GpuFamiliesVM()
+    private var vm = GPUFamiliesVM()
     
     var body: some View {
         List {
