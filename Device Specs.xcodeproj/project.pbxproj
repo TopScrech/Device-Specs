@@ -252,6 +252,15 @@
 		F3CCB1EC2CAFBB57000F8207 /* Auth Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */; };
 		F3CCB1EF2CAFBC3D000F8207 /* Auth Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */; };
 		F3CCB1F02CAFBC40000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
+		F3CCB1F22CAFC1F1000F8207 /* Gpu Families VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1F12CAFC1F1000F8207 /* Gpu Families VM.swift */; };
+		F3CCB1F42CAFC1F1000F8207 /* Gpu Families VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1F12CAFC1F1000F8207 /* Gpu Families VM.swift */; };
+		F3CCB1F52CAFC1F1000F8207 /* Gpu Families VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1F12CAFC1F1000F8207 /* Gpu Families VM.swift */; };
+		F3CCB1F62CAFC1F1000F8207 /* Gpu Families VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1F12CAFC1F1000F8207 /* Gpu Families VM.swift */; };
+		F3CCB1F82CAFC228000F8207 /* GPU Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1F72CAFC228000F8207 /* GPU Family.swift */; };
+		F3CCB1F92CAFC228000F8207 /* GPU Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1F72CAFC228000F8207 /* GPU Family.swift */; };
+		F3CCB1FA2CAFC228000F8207 /* GPU Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1F72CAFC228000F8207 /* GPU Family.swift */; };
+		F3CCB1FB2CAFC228000F8207 /* GPU Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1F72CAFC228000F8207 /* GPU Family.swift */; };
+		F3CCB1FC2CAFC228000F8207 /* GPU Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1F72CAFC228000F8207 /* GPU Family.swift */; };
 		F3D1E77F2C9C0CD3000C81FF /* Battery Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E77E2C9C0CD3000C81FF /* Battery Level.swift */; };
 		F3D1E7802C9C0CD3000C81FF /* Battery Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E77E2C9C0CD3000C81FF /* Battery Level.swift */; };
 		F3D1E7812C9C0CD3000C81FF /* Battery Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E77E2C9C0CD3000C81FF /* Battery Level.swift */; };
@@ -601,6 +610,8 @@
 		F3C3BDE72C92DCA300BF91EE /* Display Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Display Specs.swift"; sourceTree = "<group>"; };
 		F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Auth Test.swift"; sourceTree = "<group>"; };
 		F3CCB1E42CAF4518000F8207 /* Auth VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Auth VM.swift"; sourceTree = "<group>"; };
+		F3CCB1F12CAFC1F1000F8207 /* Gpu Families VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gpu Families VM.swift"; sourceTree = "<group>"; };
+		F3CCB1F72CAFC228000F8207 /* GPU Family.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPU Family.swift"; sourceTree = "<group>"; };
 		F3D1E77E2C9C0CD3000C81FF /* Battery Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Level.swift"; sourceTree = "<group>"; };
 		F3D1E7822C9C0D14000C81FF /* Battery State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery State.swift"; sourceTree = "<group>"; };
 		F3D1E7872C9C12C2000C81FF /* System Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System Specs.swift"; sourceTree = "<group>"; };
@@ -869,6 +880,8 @@
 				F3D1E7A52C9CD453000C81FF /* Current Process.swift */,
 				F31548FE2CAADBBB004CE26E /* Current Process Environment.swift */,
 				F3F85EF92C95857C00AE0A1D /* GPU Families.swift */,
+				F3CCB1F12CAFC1F1000F8207 /* Gpu Families VM.swift */,
+				F3CCB1F72CAFC228000F8207 /* GPU Family.swift */,
 				F36FBC6A2C9413E100F5E174 /* CPU Usage Chart.swift */,
 			);
 			path = Processor;
@@ -1622,6 +1635,7 @@
 				F36F80072CA0D4D00007F120 /* Accessibility Param.swift in Sources */,
 				F36F80082CA0D4D00007F120 /* Accessibility Item.swift in Sources */,
 				F36F80262CA0D5A60007F120 /* Specs Button.swift in Sources */,
+				F3CCB1F92CAFC228000F8207 /* GPU Family.swift in Sources */,
 				F36F7FF52CA0D47C0007F120 /* Connectivity VM.swift in Sources */,
 				F3B709ED2CA2F683006ECAD1 /* Font List.swift in Sources */,
 				F3B709A82CA2BCE4006ECAD1 /* Health Kit.swift in Sources */,
@@ -1643,6 +1657,7 @@
 				F3ECFDE82CA4B3A700E72D41 /* L1 Instruction Cache.swift in Sources */,
 				F36F80292CA0D5CD0007F120 /* UWB Test View.swift in Sources */,
 				F3291C492CA9BF2B00A15CAE /* Font Customization.swift in Sources */,
+				F3CCB1F22CAFC1F1000F8207 /* Gpu Families VM.swift in Sources */,
 				F36F7FFB2CA0D4830007F120 /* Camera View.swift in Sources */,
 				F3B709B62CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
 				F36F7FFC2CA0D4830007F120 /* Cameras Specs.swift in Sources */,
@@ -1702,6 +1717,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F85EB72C948D3100AE0A1D /* Location VM.swift in Sources */,
+				F3CCB1FA2CAFC228000F8207 /* GPU Family.swift in Sources */,
 				F3F85EB92C948D4300AE0A1D /* Sensors View.swift in Sources */,
 				F3291C3A2CA9BCE200A15CAE /* Font VM.swift in Sources */,
 				F3B709E32CA2F1DC006ECAD1 /* Tech Node.swift in Sources */,
@@ -1831,6 +1847,7 @@
 				F3D1E79A2C9C86AD000C81FF /* Specs Link.swift in Sources */,
 				F36FBC5E2C931C7500F5E174 /* Orientation VM.swift in Sources */,
 				F3D1E7802C9C0CD3000C81FF /* Battery Level.swift in Sources */,
+				F3CCB1F52CAFC1F1000F8207 /* Gpu Families VM.swift in Sources */,
 				F3ECFE062CA4BD9B00E72D41 /* Memory Type.swift in Sources */,
 				F3ECFDFE2CA4B53200E72D41 /* L3 Cache.swift in Sources */,
 				F36FBC602C931CBD00F5E174 /* Location VM.swift in Sources */,
@@ -1845,6 +1862,7 @@
 				F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */,
 				F3ECFE292CA53A4B00E72D41 /* Device Extension.swift in Sources */,
 				F3291C362CA9BC0F00A15CAE /* Font Row.swift in Sources */,
+				F3CCB1F82CAFC228000F8207 /* GPU Family.swift in Sources */,
 				F3ECFE312CA53AE200E72D41 /* Battery Capacity.swift in Sources */,
 				F3B709EC2CA2F683006ECAD1 /* Font List.swift in Sources */,
 				F3C3BDD92C92D99300BF91EE /* Device Specs.swift in Sources */,
@@ -1912,6 +1930,7 @@
 				F3291C4A2CA9BF2B00A15CAE /* Font Customization.swift in Sources */,
 				F3E7EC862C67B985008CD17B /* Color View.swift in Sources */,
 				F3D1E7AB2C9D4BFA000C81FF /* App Specs.swift in Sources */,
+				F3CCB1F42CAFC1F1000F8207 /* Gpu Families VM.swift in Sources */,
 				F3E7EC9B2C67B9CF008CD17B /* App Container.swift in Sources */,
 				F3291C512CAA02F200A15CAE /* Bluetooth Version.swift in Sources */,
 				F3ECFE322CA53AE200E72D41 /* Battery Capacity.swift in Sources */,
@@ -1933,6 +1952,7 @@
 				F3D1E7972C9C5A0E000C81FF /* Camera Model.swift in Sources */,
 				F3D1E7A02C9CC2AE000C81FF /* Camera Formats.swift in Sources */,
 				F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */,
+				F3CCB1FC2CAFC228000F8207 /* GPU Family.swift in Sources */,
 				F3E7EC8C2C67B985008CD17B /* Display View.swift in Sources */,
 				F3D1E7A92C9CD453000C81FF /* Current Process.swift in Sources */,
 				F3187A502C898B37008FB911 /* Nav State.swift in Sources */,
@@ -2003,6 +2023,7 @@
 				F3ECFE342CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
 				F3F85EE42C957D4F00AE0A1D /* Test List.swift in Sources */,
 				F3B709A22CA22E09006ECAD1 /* Locale List.swift in Sources */,
+				F3CCB1FB2CAFC228000F8207 /* GPU Family.swift in Sources */,
 				F3291C632CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */,
 				F3B709AE2CA2BE84006ECAD1 /* Timezone.swift in Sources */,
 				F3ECFE012CA4BD9B00E72D41 /* Memory Type.swift in Sources */,
@@ -2024,6 +2045,7 @@
 				F3F85EE82C957EE200AE0A1D /* Accessibility View.swift in Sources */,
 				F36F7FC62CA0CC110007F120 /* Device Specs App.swift in Sources */,
 				F3291C332CA9BC0F00A15CAE /* Font Row.swift in Sources */,
+				F3CCB1F62CAFC1F1000F8207 /* Gpu Families VM.swift in Sources */,
 				F3ECFE402CA53AED00E72D41 /* Voltage.swift in Sources */,
 				F3F85EDD2C94DD6800AE0A1D /* App Container.swift in Sources */,
 				F3B709F62CA30470006ECAD1 /* Advertising Identifier.swift in Sources */,

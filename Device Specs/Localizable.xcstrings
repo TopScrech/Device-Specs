@@ -744,6 +744,9 @@
         }
       }
     },
+    "GPU families" : {
+
+    },
     "Grayscale" : {
 
     },
@@ -1149,6 +1152,9 @@
       "shouldTranslate" : false
     },
     "Next daylight saving time transition" : {
+
+    },
+    "No" : {
 
     },
     "Not all platforms will play feedback in response to certain types" : {
@@ -1631,6 +1637,9 @@
         }
       }
     },
+    "Supported" : {
+
+    },
     "Supported GPU families" : {
       "localizations" : {
         "ru" : {
@@ -1853,6 +1862,9 @@
         }
       }
     },
+    "Unsupported" : {
+
+    },
     "Usage" : {
 
     },
@@ -1955,6 +1967,9 @@
 
     },
     "Yaw" : {
+
+    },
+    "Yes" : {
 
     },
     "Your device does not support Apple Intelligence" : {

@@ -49,7 +49,7 @@ struct ProcessorSpecs: View {
                     ListParam("Raytracing", param: device.supportsRaytracing ? "Supported" : "Unsupported")
                     
                     NavigationLink("Supported GPU families") {
-                        GPUFamilies(device)
+                        GPUFamilies()
                     }
                 } else {
                     Text("Metal is not supported on this device")
