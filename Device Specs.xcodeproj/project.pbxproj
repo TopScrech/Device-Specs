@@ -244,6 +244,10 @@
 		F3C3BDE32C92DBF700BF91EE /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5A2C67B985008CD17B /* Battery Specs.swift */; };
 		F3C3BDE42C92DBFB00BF91EE /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5B2C67B985008CD17B /* Battery VM.swift */; };
 		F3C3BDE82C92DCA300BF91EE /* Display Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDE72C92DCA300BF91EE /* Display Specs.swift */; };
+		F3CCB1E32CAF44E9000F8207 /* Auth Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */; };
+		F3CCB1E52CAF4518000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
+		F3CCB1E92CAF4992000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
+		F3CCB1EA2CAF499D000F8207 /* Auth Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */; };
 		F3D1E77F2C9C0CD3000C81FF /* Battery Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E77E2C9C0CD3000C81FF /* Battery Level.swift */; };
 		F3D1E7802C9C0CD3000C81FF /* Battery Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E77E2C9C0CD3000C81FF /* Battery Level.swift */; };
 		F3D1E7812C9C0CD3000C81FF /* Battery Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E77E2C9C0CD3000C81FF /* Battery Level.swift */; };
@@ -591,6 +595,8 @@
 		F3C3BDD52C92D8F600BF91EE /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F3C3BDD72C92D90700BF91EE /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F3C3BDE72C92DCA300BF91EE /* Display Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Display Specs.swift"; sourceTree = "<group>"; };
+		F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Auth Test.swift"; sourceTree = "<group>"; };
+		F3CCB1E42CAF4518000F8207 /* Auth VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Auth VM.swift"; sourceTree = "<group>"; };
 		F3D1E77E2C9C0CD3000C81FF /* Battery Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Level.swift"; sourceTree = "<group>"; };
 		F3D1E7822C9C0D14000C81FF /* Battery State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery State.swift"; sourceTree = "<group>"; };
 		F3D1E7872C9C12C2000C81FF /* System Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System Specs.swift"; sourceTree = "<group>"; };
@@ -964,6 +970,8 @@
 		F3CCB1E02CAF44D6000F8207 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */,
+				F3CCB1E42CAF4518000F8207 /* Auth VM.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -1594,6 +1602,7 @@
 				F36F80152CA0D4FF0007F120 /* Device Specs.swift in Sources */,
 				F36F80132CA0D4F80007F120 /* System Specs.swift in Sources */,
 				F36F7FFE2CA0D4B40007F120 /* Memory Specs.swift in Sources */,
+				F3CCB1E92CAF4992000F8207 /* Auth VM.swift in Sources */,
 				F3ECFE452CA5825800E72D41 /* Apple Intelligence.swift in Sources */,
 				F3B709D72CA2CA1F006ECAD1 /* Haptic Tests.swift in Sources */,
 				F36F802F2CA0E9AF0007F120 /* Torch Test.swift in Sources */,
@@ -1641,6 +1650,7 @@
 				F36F7FF62CA0D47C0007F120 /* Network VM.swift in Sources */,
 				F3291C5C2CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */,
 				F36F7FEF2CA0D4370007F120 /* Battery VM.swift in Sources */,
+				F3CCB1EA2CAF499D000F8207 /* Auth Test.swift in Sources */,
 				F36F7FF02CA0D4370007F120 /* Battery Level.swift in Sources */,
 				F3ECFE362CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
 				F36F80002CA0D4B90007F120 /* Processor Specs.swift in Sources */,
@@ -1860,6 +1870,7 @@
 				F3EA43AF2C998759009820F6 /* Torch Test.swift in Sources */,
 				F3D1E7C32C9D6B13000C81FF /* Magnetic Field Data.swift in Sources */,
 				F3ECFDE02CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */,
+				F3CCB1E32CAF44E9000F8207 /* Auth Test.swift in Sources */,
 				F3E7EC7C2C67B985008CD17B /* Altitude VM.swift in Sources */,
 				F3E7EC9E2C680561008CD17B /* Torch VM.swift in Sources */,
 				F3ECFE3F2CA53AED00E72D41 /* Voltage.swift in Sources */,
@@ -1918,6 +1929,7 @@
 				F3D1E7A92C9CD453000C81FF /* Current Process.swift in Sources */,
 				F3187A502C898B37008FB911 /* Nav State.swift in Sources */,
 				F3ECFE392CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
+				F3CCB1E52CAF4518000F8207 /* Auth VM.swift in Sources */,
 				F3E7EC8E2C67B985008CD17B /* Camera VM.swift in Sources */,
 				F3291C352CA9BC0F00A15CAE /* Font Row.swift in Sources */,
 				F3B709F72CA30470006ECAD1 /* Advertising Identifier.swift in Sources */,
@@ -2418,6 +2430,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "This permission is required in order to test biometric authentication";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app needs to check if health data is available on the device";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app needs to check if health data is available on the device";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
@@ -2468,6 +2481,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "This permission is required in order to test biometric authentication";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app needs to check if health data is available on the device";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app needs to check if health data is available on the device";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";

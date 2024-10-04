@@ -7,6 +7,10 @@ struct TestList: View {
     
     var body: some View {
         List {
+            Section {
+                AuthTest()
+            }
+            
             Button {
                 sheetCamera = true
             } label: {
