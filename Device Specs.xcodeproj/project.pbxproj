@@ -248,6 +248,10 @@
 		F3CCB1E52CAF4518000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
 		F3CCB1E92CAF4992000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
 		F3CCB1EA2CAF499D000F8207 /* Auth Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */; };
+		F3CCB1EB2CAFBB54000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
+		F3CCB1EC2CAFBB57000F8207 /* Auth Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */; };
+		F3CCB1EF2CAFBC3D000F8207 /* Auth Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */; };
+		F3CCB1F02CAFBC40000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
 		F3D1E77F2C9C0CD3000C81FF /* Battery Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E77E2C9C0CD3000C81FF /* Battery Level.swift */; };
 		F3D1E7802C9C0CD3000C81FF /* Battery Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E77E2C9C0CD3000C81FF /* Battery Level.swift */; };
 		F3D1E7812C9C0CD3000C81FF /* Battery Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E77E2C9C0CD3000C81FF /* Battery Level.swift */; };
@@ -1701,10 +1705,12 @@
 				F3F85EB92C948D4300AE0A1D /* Sensors View.swift in Sources */,
 				F3291C3A2CA9BCE200A15CAE /* Font VM.swift in Sources */,
 				F3B709E32CA2F1DC006ECAD1 /* Tech Node.swift in Sources */,
+				F3CCB1EC2CAFBB57000F8207 /* Auth Test.swift in Sources */,
 				F3F85EB62C948D0200AE0A1D /* Orientation VM.swift in Sources */,
 				F3B709B72CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
 				F3ECFE262CA53A4B00E72D41 /* Device Extension.swift in Sources */,
 				F3D1E7892C9C12C2000C81FF /* System Specs.swift in Sources */,
+				F3CCB1EB2CAFBB54000F8207 /* Auth VM.swift in Sources */,
 				F3F85E9F2C94865900AE0A1D /* Network VM.swift in Sources */,
 				F31548FF2CAADBBB004CE26E /* Current Process Environment.swift in Sources */,
 				F3D1E7852C9C0D14000C81FF /* Battery State.swift in Sources */,
@@ -1779,6 +1785,7 @@
 				F36FBC562C931C1000F5E174 /* Sensors View.swift in Sources */,
 				F3291C472CA9BF2B00A15CAE /* Font Customization.swift in Sources */,
 				F3F85E912C9453AE00AE0A1D /* Accessibility View.swift in Sources */,
+				F3CCB1F02CAFBC40000F8207 /* Auth VM.swift in Sources */,
 				F3F85E922C9453AE00AE0A1D /* Accessibility Param.swift in Sources */,
 				F3F85E932C9453AE00AE0A1D /* Accessibility VM.swift in Sources */,
 				F3291C4F2CA9EC1600A15CAE /* Warning Card.swift in Sources */,
@@ -1829,6 +1836,7 @@
 				F36FBC602C931CBD00F5E174 /* Location VM.swift in Sources */,
 				F3C3BDE12C92DB9800BF91EE /* Memory VM.swift in Sources */,
 				F3ECFE372CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
+				F3CCB1EF2CAFBC3D000F8207 /* Auth Test.swift in Sources */,
 				F3F85EEA2C957F9100AE0A1D /* Accessibility Item.swift in Sources */,
 				F3F85EFB2C95857C00AE0A1D /* GPU Families.swift in Sources */,
 				F36FBC672C93542700F5E174 /* Processor VM.swift in Sources */,

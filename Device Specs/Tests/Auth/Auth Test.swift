@@ -20,6 +20,7 @@ struct AuthTest: View {
                     .foregroundStyle(.secondary)
             }
         }
+        .disabled(vm.type == "None")
         .foregroundStyle(.foreground)
         .alert("Error", isPresented: $vm.alertError) {
             

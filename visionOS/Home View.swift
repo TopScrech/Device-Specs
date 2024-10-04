@@ -65,6 +65,20 @@ struct HomeView: View {
                         .environment(app)
                 }
             }
+            
+            NavigationLink {
+                AuthTest()
+            } label: {
+                HStack {
+                    Label("Tests", systemImage: "testtube.2")
+                    
+                    Spacer()
+                    
+                    Image(systemName: "chevron.forward")
+                        .foregroundStyle(.tertiary)
+                        .footnote(.bold)
+                }
+            }
         }
         .navigationTitle("Device Specs")
         .foregroundStyle(.foreground)

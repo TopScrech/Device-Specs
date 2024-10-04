@@ -47,7 +47,7 @@ final class AuthVM {
     }
     
     func checkAvailability() {
-        //        if #available(watchOS 11, *) {
+#if !os(watchOS)
         var error: NSError?
         
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
@@ -57,10 +57,11 @@ final class AuthVM {
             alertError = true
             return
         }
-        //        }
+#endif
     }
     
     private func authenticate() {
+#if !os(watchOS)
         context.evaluatePolicy(
             .deviceOwnerAuthenticationWithBiometrics,
             localizedReason: "This is a security check reason."
@@ -72,5 +73,6 @@ final class AuthVM {
                 self.alertError = true
             }
         }
+#endif
     }
 }
