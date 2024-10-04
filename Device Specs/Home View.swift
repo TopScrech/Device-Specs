@@ -22,6 +22,8 @@ struct HomeView: View {
                 DeviceSpecs()
                     .environment(device)
             }
+            .lineLimit(1)
+            .minimumScaleFactor(0.5)
             
             SpecsLink("System", icon: "apple.terminal", spec: system.operatingSystem) {
                 SystemSpecs()
