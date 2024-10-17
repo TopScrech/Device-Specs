@@ -828,7 +828,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F3187A512C898B40008FB911 /* Navigation */ = {
+		F3187A512C898B40008FB911 /* Nav */ = {
 			isa = PBXGroup;
 			children = (
 				F3E7EC9A2C67B9CF008CD17B /* App Container.swift */,
@@ -836,7 +836,7 @@
 				F3187A522C898B62008FB911 /* Nav Destinations.swift */,
 				F3187A542C898B7E008FB911 /* Nav Extension.swift */,
 			);
-			path = Navigation;
+			path = Nav;
 			sourceTree = "<group>";
 		};
 		F3291C3E2CA9BE4200A15CAE /* Font */ = {
@@ -1150,7 +1150,7 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */,
-				F3187A512C898B40008FB911 /* Navigation */,
+				F3187A512C898B40008FB911 /* Nav */,
 				F3E7EC412C676A14008CD17B /* Assets.xcassets */,
 				F36F803A2CA170870007F120 /* Localizable.xcstrings */,
 				F3E7EC432C676A14008CD17B /* Device Specs.entitlements */,
