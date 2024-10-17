@@ -5,13 +5,15 @@ import DeviceKit
 final class MemoryVM {
     private let device = Device.current
     
-    var totalDisk = ""
-    var usedDisk = ""
-    var freeDisk = ""
-    
     var totalRam = ""
     var usedRam = ""
     var freeRam = ""
+    
+    var totalDisk = ""
+    var usedDisk = ""
+    var freeDisk = ""
+    var freeDiskForImportantUsage = ""
+    var freeDiskForOpportunisticUsage = ""
     
     init() {
         getMemoryUsage()
@@ -55,11 +57,34 @@ final class MemoryVM {
         let fileURL = URL(fileURLWithPath: NSHomeDirectory() as String)
         
         do {
+#if os(watchOS)
             let values = try fileURL.resourceValues(forKeys: [
+                .volumeTotalCapacityKey,
                 .volumeAvailableCapacityKey,
-                .volumeTotalCapacityKey
+            ])
+#else
+            let values = try fileURL.resourceValues(forKeys: [
+                .volumeTotalCapacityKey,
+                .volumeAvailableCapacityKey,
+                .volumeAvailableCapacityForImportantUsageKey,
+                .volumeAvailableCapacityForOpportunisticUsageKey
             ])
             
+            let availableCapacityForImportantUsage = values.volumeAvailableCapacityForImportantUsage
+            let availableCapacityForOpportunisticUsage = values.volumeAvailableCapacityForOpportunisticUsage
+            
+            if let availableCapacityForOpportunisticUsage {
+                freeDiskForOpportunisticUsage = formatBytes(availableCapacityForOpportunisticUsage)
+            } else {
+                freeDiskForOpportunisticUsage = "Unavailable"
+            }
+            
+            if let availableCapacityForImportantUsage {
+                freeDiskForImportantUsage = formatBytes(availableCapacityForImportantUsage)
+            } else {
+                freeDiskForImportantUsage = "Unavailable"
+            }
+#endif
             let totalCapacity = values.volumeTotalCapacity
             let availableCapacity = values.volumeAvailableCapacity
             

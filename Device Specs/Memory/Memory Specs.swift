@@ -16,7 +16,18 @@ struct MemorySpecs: View {
             Section("Storage") {
                 ListParam("Total", param: vm.totalDisk)
                 ListParam("Used", param: vm.usedDisk)
+                
+#if os(watchOS)
                 ListParam("Free", param: vm.freeDisk)
+#else
+                DisclosureGroup {
+                    ListParam("Available for opportunistic usage", param: vm.freeDiskForOpportunisticUsage)
+                    
+                    ListParam("Available for important usage", param: vm.freeDiskForImportantUsage)
+                } label: {
+                    ListParam("Free", param: vm.freeDisk)
+                }
+#endif
             }
         }
         .navigationTitle("Memory")
