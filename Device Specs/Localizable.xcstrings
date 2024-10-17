@@ -245,7 +245,7 @@
     "Bluetooth" : {
       "shouldTranslate" : false
     },
-    "Body mass" : {
+    "Body Measurements" : {
 
     },
     "Bold" : {
@@ -1170,6 +1170,9 @@
     "No" : {
 
     },
+    "No records" : {
+
+    },
     "Not all platforms will play feedback in response to certain types" : {
       "localizations" : {
         "ru" : {
@@ -1756,6 +1759,9 @@
         }
       }
     },
+    "There're no records to show" : {
+
+    },
     "Thermal state" : {
       "localizations" : {
         "ru" : {
@@ -1952,6 +1958,9 @@
           }
         }
       }
+    },
+    "Weight" : {
+
     },
     "Wireless Charging" : {
       "localizations" : {

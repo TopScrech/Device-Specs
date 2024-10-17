@@ -261,7 +261,21 @@
 		F3C68AEB2CAFD84E0021B6F3 /* Read Body Mass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AE92CAFD84E0021B6F3 /* Read Body Mass.swift */; };
 		F3C68AEE2CAFD9900021B6F3 /* Health VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AED2CAFD9900021B6F3 /* Health VM.swift */; };
 		F3C68AF02CAFF4B00021B6F3 /* Body Mass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AEF2CAFF4B00021B6F3 /* Body Mass.swift */; };
-		F3C68AF52CAFF6660021B6F3 /* Body Mass List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AF12CAFF6660021B6F3 /* Body Mass List.swift */; };
+		F3C68AF52CAFF6660021B6F3 /* Record List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AF12CAFF6660021B6F3 /* Record List.swift */; };
+		F3C68B042CB091A50021B6F3 /* Health Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AD52CAFD3030021B6F3 /* Health Specs.swift */; };
+		F3C68B052CB091AD0021B6F3 /* Health VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AED2CAFD9900021B6F3 /* Health VM.swift */; };
+		F3C68B062CB091B30021B6F3 /* Record List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AF12CAFF6660021B6F3 /* Record List.swift */; };
+		F3C68B072CB091DE0021B6F3 /* Body Mass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AEF2CAFF4B00021B6F3 /* Body Mass.swift */; };
+		F3C68B092CB091F40021B6F3 /* HealthyKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3C68B082CB091F40021B6F3 /* HealthyKit */; };
+		F3C68B0A2CB0921C0021B6F3 /* Read Body Mass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AE92CAFD84E0021B6F3 /* Read Body Mass.swift */; };
+		F3C68B0C2CB123010021B6F3 /* Health Records Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68B0B2CB123010021B6F3 /* Health Records Link.swift */; };
+		F3C68B0D2CB123010021B6F3 /* Health Records Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68B0B2CB123010021B6F3 /* Health Records Link.swift */; };
+		F3C68B0F2CB1230F0021B6F3 /* Health Category Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68B0E2CB1230F0021B6F3 /* Health Category Link.swift */; };
+		F3C68B102CB1230F0021B6F3 /* Health Category Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68B0E2CB1230F0021B6F3 /* Health Category Link.swift */; };
+		F3C68B122CB1231D0021B6F3 /* Health Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68B112CB1231D0021B6F3 /* Health Categories.swift */; };
+		F3C68B132CB1231D0021B6F3 /* Health Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68B112CB1231D0021B6F3 /* Health Categories.swift */; };
+		F3C68B152CB1232C0021B6F3 /* Body Measurements Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68B142CB1232C0021B6F3 /* Body Measurements Category.swift */; };
+		F3C68B162CB1232C0021B6F3 /* Body Measurements Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68B142CB1232C0021B6F3 /* Body Measurements Category.swift */; };
 		F3CCB1E32CAF44E9000F8207 /* Auth Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */; };
 		F3CCB1E52CAF4518000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
 		F3CCB1E92CAF4992000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
@@ -633,7 +647,11 @@
 		F3C68AE92CAFD84E0021B6F3 /* Read Body Mass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Read Body Mass.swift"; sourceTree = "<group>"; };
 		F3C68AED2CAFD9900021B6F3 /* Health VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Health VM.swift"; sourceTree = "<group>"; };
 		F3C68AEF2CAFF4B00021B6F3 /* Body Mass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Body Mass.swift"; sourceTree = "<group>"; };
-		F3C68AF12CAFF6660021B6F3 /* Body Mass List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Body Mass List.swift"; sourceTree = "<group>"; };
+		F3C68AF12CAFF6660021B6F3 /* Record List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Record List.swift"; sourceTree = "<group>"; };
+		F3C68B0B2CB123010021B6F3 /* Health Records Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Health Records Link.swift"; sourceTree = "<group>"; };
+		F3C68B0E2CB1230F0021B6F3 /* Health Category Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Health Category Link.swift"; sourceTree = "<group>"; };
+		F3C68B112CB1231D0021B6F3 /* Health Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Health Categories.swift"; sourceTree = "<group>"; };
+		F3C68B142CB1232C0021B6F3 /* Body Measurements Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Body Measurements Category.swift"; sourceTree = "<group>"; };
 		F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Auth Test.swift"; sourceTree = "<group>"; };
 		F3CCB1E42CAF4518000F8207 /* Auth VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Auth VM.swift"; sourceTree = "<group>"; };
 		F3CCB1F12CAFC1F1000F8207 /* GPU Families VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPU Families VM.swift"; sourceTree = "<group>"; };
@@ -747,6 +765,7 @@
 				F36F802B2CA0D5E90007F120 /* ScrechCam in Frameworks */,
 				F3C68AD42CAFCE750021B6F3 /* MailCover in Frameworks */,
 				F36F7FED2CA0D2400007F120 /* DeviceKit in Frameworks */,
+				F3C68B092CB091F40021B6F3 /* HealthyKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1009,7 +1028,11 @@
 			isa = PBXGroup;
 			children = (
 				F3C68AD52CAFD3030021B6F3 /* Health Specs.swift */,
-				F3C68AF12CAFF6660021B6F3 /* Body Mass List.swift */,
+				F3C68B112CB1231D0021B6F3 /* Health Categories.swift */,
+				F3C68B0E2CB1230F0021B6F3 /* Health Category Link.swift */,
+				F3C68B172CB1239E0021B6F3 /* Categories */,
+				F3C68B0B2CB123010021B6F3 /* Health Records Link.swift */,
+				F3C68AF12CAFF6660021B6F3 /* Record List.swift */,
 				F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */,
 				F3C68AEC2CAFD85B0021B6F3 /* New Group */,
 			);
@@ -1025,6 +1048,14 @@
 				F3C68AE82CAFD84E0021B6F3 /* Read Carbs.swift */,
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		F3C68B172CB1239E0021B6F3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F3C68B142CB1232C0021B6F3 /* Body Measurements Category.swift */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		F3CCB1DE2CAF44BC000F8207 /* Haptic */ = {
@@ -1392,6 +1423,7 @@
 				F36F7FEC2CA0D2400007F120 /* DeviceKit */,
 				F36F802A2CA0D5E90007F120 /* ScrechCam */,
 				F3C68AD32CAFCE750021B6F3 /* MailCover */,
+				F3C68B082CB091F40021B6F3 /* HealthyKit */,
 			);
 			productName = iMessage;
 			productReference = F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */;
@@ -1676,6 +1708,7 @@
 				F3291C342CA9BC0F00A15CAE /* Font Row.swift in Sources */,
 				F3ECFDEF2CA4B3E500E72D41 /* L1 Cache.swift in Sources */,
 				F3B709CC2CA2C853006ECAD1 /* Volume.swift in Sources */,
+				F3C68B052CB091AD0021B6F3 /* Health VM.swift in Sources */,
 				F36F80152CA0D4FF0007F120 /* Device Specs.swift in Sources */,
 				F36F80132CA0D4F80007F120 /* System Specs.swift in Sources */,
 				F36F7FFE2CA0D4B40007F120 /* Memory Specs.swift in Sources */,
@@ -1705,11 +1738,13 @@
 				F3C68AC32CAFCB020021B6F3 /* Apple Intelligence Support.swift in Sources */,
 				F36F80272CA0D5B00007F120 /* Device Info.swift in Sources */,
 				F3C68AD02CAFCDB40021B6F3 /* Mail Feedback.swift in Sources */,
+				F3C68B0F2CB1230F0021B6F3 /* Health Category Link.swift in Sources */,
 				F36F801D2CA0D5330007F120 /* Nearby VM.swift in Sources */,
 				F36F801E2CA0D5330007F120 /* Math Utilities.swift in Sources */,
 				F36F80252CA0D5760007F120 /* Secondary Container.swift in Sources */,
 				F3291C612CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */,
 				F3ECFE2E2CA53AE200E72D41 /* Battery Capacity.swift in Sources */,
+				F3C68B0D2CB123010021B6F3 /* Health Records Link.swift in Sources */,
 				F36F80202CA0D5330007F120 /* MCP Session.swift in Sources */,
 				F36F7FF92CA0D4830007F120 /* Camera VM.swift in Sources */,
 				F36F7FFA2CA0D4830007F120 /* Camera Model.swift in Sources */,
@@ -1719,11 +1754,13 @@
 				F3ECFDE82CA4B3A700E72D41 /* L1 Instruction Cache.swift in Sources */,
 				F36F80292CA0D5CD0007F120 /* UWB Test View.swift in Sources */,
 				F3291C492CA9BF2B00A15CAE /* Font Customization.swift in Sources */,
+				F3C68B0A2CB0921C0021B6F3 /* Read Body Mass.swift in Sources */,
 				F3CCB1F22CAFC1F1000F8207 /* GPU Families VM.swift in Sources */,
 				F36F7FFB2CA0D4830007F120 /* Camera View.swift in Sources */,
 				F3B709B62CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
 				F36F7FFC2CA0D4830007F120 /* Cameras Specs.swift in Sources */,
 				F31549022CAADBBB004CE26E /* Current Process Environment.swift in Sources */,
+				F3C68B122CB1231D0021B6F3 /* Health Categories.swift in Sources */,
 				F3ECFDF52CA4B3F800E72D41 /* L2 Cache.swift in Sources */,
 				F3ECFE202CA536FD00E72D41 /* Release Date.swift in Sources */,
 				F3B709C52CA2C5E3006ECAD1 /* Locale VM.swift in Sources */,
@@ -1742,10 +1779,13 @@
 				F36F80022CA0D4B90007F120 /* CPU Usage Chart.swift in Sources */,
 				F36F80212CA0D54C0007F120 /* Nav Extension.swift in Sources */,
 				F36F80222CA0D54C0007F120 /* Nav Destinations.swift in Sources */,
+				F3C68B072CB091DE0021B6F3 /* Body Mass.swift in Sources */,
 				F36F80232CA0D54C0007F120 /* Nav State.swift in Sources */,
 				F36F800A2CA0D4DE0007F120 /* Pressure VM.swift in Sources */,
+				F3C68B152CB1232C0021B6F3 /* Body Measurements Category.swift in Sources */,
 				F36F80192CA0D5200007F120 /* Camera Test.swift in Sources */,
 				F3291C522CAA02F200A15CAE /* Bluetooth Version.swift in Sources */,
+				F3C68B062CB091B30021B6F3 /* Record List.swift in Sources */,
 				F36F800B2CA0D4DE0007F120 /* Magnetic Model.swift in Sources */,
 				F36F800C2CA0D4DE0007F120 /* Orientation VM.swift in Sources */,
 				F36F80182CA0D51B0007F120 /* Test List.swift in Sources */,
@@ -1762,6 +1802,7 @@
 				F36F80042CA0D4B90007F120 /* GPU Families.swift in Sources */,
 				F3B709A52CA22E09006ECAD1 /* Locale List.swift in Sources */,
 				F3ECFDDF2CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */,
+				F3C68B042CB091A50021B6F3 /* Health Specs.swift in Sources */,
 				F3B709EF2CA2FCAB006ECAD1 /* Proximity VM.swift in Sources */,
 				F36F7FF12CA0D4370007F120 /* Battery State.swift in Sources */,
 				F36F7FE62CA0D0CF0007F120 /* Home View.swift in Sources */,
@@ -1952,6 +1993,7 @@
 				F3D1E79E2C9CC262000C81FF /* Camera View.swift in Sources */,
 				F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */,
 				F36FBC682C93542700F5E174 /* Processor VM.swift in Sources */,
+				F3C68B102CB1230F0021B6F3 /* Health Category Link.swift in Sources */,
 				F3D1E7882C9C12C2000C81FF /* System Specs.swift in Sources */,
 				F3B709AF2CA2BE84006ECAD1 /* Timezone.swift in Sources */,
 				F3F85EEB2C957F9100AE0A1D /* Accessibility Item.swift in Sources */,
@@ -1959,7 +2001,8 @@
 				F3B709E22CA2F1DC006ECAD1 /* Tech Node.swift in Sources */,
 				F3E7EC7B2C67B985008CD17B /* Device VM.swift in Sources */,
 				F3EA43AF2C998759009820F6 /* Torch Test.swift in Sources */,
-				F3C68AF52CAFF6660021B6F3 /* Body Mass List.swift in Sources */,
+				F3C68B162CB1232C0021B6F3 /* Body Measurements Category.swift in Sources */,
+				F3C68AF52CAFF6660021B6F3 /* Record List.swift in Sources */,
 				F3D1E7C32C9D6B13000C81FF /* Magnetic Field Data.swift in Sources */,
 				F3ECFDE02CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */,
 				F3CCB1E32CAF44E9000F8207 /* Auth Test.swift in Sources */,
@@ -1976,6 +2019,7 @@
 				F3E7EC7F2C67B985008CD17B /* Memory VM.swift in Sources */,
 				F3B709B92CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
 				F3ECFE252CA53A4B00E72D41 /* Device Extension.swift in Sources */,
+				F3C68B132CB1231D0021B6F3 /* Health Categories.swift in Sources */,
 				F3D1E7812C9C0CD3000C81FF /* Battery Level.swift in Sources */,
 				F3291C5B2CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */,
 				F3E7EC802C67B985008CD17B /* Display VM.swift in Sources */,
@@ -2026,6 +2070,7 @@
 				F3D1E7A92C9CD453000C81FF /* Current Process.swift in Sources */,
 				F3187A502C898B37008FB911 /* Nav State.swift in Sources */,
 				F3C68ACD2CAFCDB40021B6F3 /* Mail Feedback.swift in Sources */,
+				F3C68B0C2CB123010021B6F3 /* Health Records Link.swift in Sources */,
 				F3ECFE392CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
 				F3CCB1E52CAF4518000F8207 /* Auth VM.swift in Sources */,
 				F3E7EC8E2C67B985008CD17B /* Camera VM.swift in Sources */,
@@ -2960,6 +3005,11 @@
 			productName = MailCover;
 		};
 		F3C68AE62CAFD7C80021B6F3 /* HealthyKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3C68AE52CAFD7C80021B6F3 /* XCRemoteSwiftPackageReference "HealthyKit" */;
+			productName = HealthyKit;
+		};
+		F3C68B082CB091F40021B6F3 /* HealthyKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F3C68AE52CAFD7C80021B6F3 /* XCRemoteSwiftPackageReference "HealthyKit" */;
 			productName = HealthyKit;

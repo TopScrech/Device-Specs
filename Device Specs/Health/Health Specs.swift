@@ -7,15 +7,13 @@ struct HealthSpecs: View {
         List {
             HealthAvailability()
             
-            NavigationLink {
-                BodyMassList()
-                    .environment(vm)
-            } label: {
-                Text("Body mass")
-            }
+            HealthCategories()
+                .environment(vm)
         }
     }
 }
+
+//            HealthRecordsLink("Body Mass", icon: "figure", records: vm.bodyMass)
 
 #Preview {
     HealthSpecs()

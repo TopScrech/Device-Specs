@@ -9,6 +9,9 @@ extension View {
                 
             case .toTests:
                 TestList()
+                
+            case .toHealth:
+                HealthSpecs()
             }
         }
     }

@@ -1,6 +1,6 @@
 import HealthKit
 
-struct BodyMass: Identifiable {
+struct HealthRecord: Identifiable {
     let id = UUID()
     
     var value: Double

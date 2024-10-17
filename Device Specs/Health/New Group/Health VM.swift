@@ -1,4 +1,4 @@
-import HealthKit
+import HealthyKit
 
 @Observable
 final class HealthVM {
@@ -423,7 +423,8 @@ final class HealthVM {
     let bmiType:                   HKQuantityType? = .bodyMassIndex()
     let bodyTemperatureType:       HKQuantityType? = .bodyTemperature()
     
-    var bodyMass: [BodyMass] = []
+    var bodyMass: [HealthRecord] = []
+//    var
     
     var isAvailable: Bool {
         HKHealthStore.isHealthDataAvailable()

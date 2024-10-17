@@ -43,7 +43,7 @@ extension HealthVM {
                 return
             }
             
-            var records: [BodyMass] = []
+            var records: [HealthRecord] = []
             
             for sample in samples {
                 let value = sample.quantity.doubleValue(for: .kilogram())
