@@ -113,7 +113,7 @@ final class ProcessorVM {
         }
     }
     
-    var sertifiedForIphonePerformanceGaming: String {
+    var iphonePerformanceGamingSertified: String {
         if #available(iOS 18, *) {
             info.isDeviceCertified(for: .iPhonePerformanceGaming) ? "Yes" : "No"
         } else {
