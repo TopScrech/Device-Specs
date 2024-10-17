@@ -27,6 +27,7 @@ struct MemorySpecs: View {
                 } label: {
                     ListParam("Free", param: vm.freeDisk)
                 }
+                .tint(.secondary)
 #endif
             }
         }
