@@ -13,8 +13,8 @@ struct Timezone: View {
                 ListParam("Next daylight saving time transition", param: date)
             }
             
-            ListParam("Daylight saving time offset", param: vm.daylightSavingTimeOffset)
             ListParam("Is daylight saving time", param: vm.isDaylightSavingTime)
+            ListParam("Daylight saving time offset", param: vm.daylightSavingTimeOffset)
             ListParam("Time zone data version", param: vm.timeZoneDataVersion)
             ListParam("Autoupdating current", param: vm.autoupdatingCurrent)
             
