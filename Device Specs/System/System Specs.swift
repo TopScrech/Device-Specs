@@ -3,6 +3,8 @@ import ScrechKit
 struct SystemSpecs: View {
     @Environment(SystemVM.self) private var vm
     
+    private let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
+    
     var body: some View {
         List {
             Section {
@@ -35,11 +37,24 @@ struct SystemSpecs: View {
             }
             
             Section("Current session") {
-                ListParam("Active time", param: vm.fetchSystemActiveTime())
-                ListParam("System uptime", param: vm.fetchSystemUptime())
+                ListParam("Active time", param: vm.systemActiveTime)
+                    .animation(.default, value: vm.systemActiveTime)
+                
+                ListParam("System uptime", param: vm.systemUptime)
+                    .animation(.default, value: vm.systemUptime)
             }
+            .monospacedDigit()
+            .contentTransition(.numericText())
         }
         .navigationTitle("System")
+        .task {
+            vm.fetchSystemActiveTime()
+            vm.fetchSystemUptime()            
+        }
+        .onReceive(timer) { _ in
+            vm.fetchSystemActiveTime()
+            vm.fetchSystemUptime()
+        }
     }
 }
 

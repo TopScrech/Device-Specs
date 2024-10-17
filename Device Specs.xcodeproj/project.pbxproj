@@ -2250,7 +2250,7 @@
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iMessage/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
@@ -2263,7 +2263,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.iMessage";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.debug.iMessage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2284,7 +2284,7 @@
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iMessage/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
@@ -2321,20 +2321,20 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = watchOS/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app needs to check if health data is available on the device";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app needs to check if health data is available on the device";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "dev.topscrech.Device-Specs";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "dev.topscrech.Device-Specs.debug";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.debug.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -2576,7 +2576,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Device Specs/Device Specs Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "This permission is required in order to test biometric authentication";
@@ -2598,12 +2598,13 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 2.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.debug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -2650,6 +2651,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";

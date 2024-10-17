@@ -10,6 +10,10 @@ final class ActivityVM {
     private let motionActivityManager = CMMotionActivityManager()
     
     init() {
+        initialize()
+    }
+    
+    private func initialize() {
         if CMMotionActivityManager.isActivityAvailable() {
             motionActivityManager.startActivityUpdates(to: .main) { [weak self] activity in
                 self?.updateActivity(activity)
