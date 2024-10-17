@@ -8,11 +8,9 @@ struct CurrentProcessEnvironment: View {
     }
     
     var body: some View {
-        List {
-            ForEach(sortedKeys, id: \.self) { key in
-                Section(key) {
-                    Text(vm.environment[key] ?? "")
-                }
+        List(sortedKeys, id: \.self) { key in
+            Section(key) {
+                Text(vm.environment[key] ?? "")
             }
         }
         .navigationTitle("Environment variables")
