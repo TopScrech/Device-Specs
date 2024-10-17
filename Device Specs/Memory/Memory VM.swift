@@ -57,7 +57,7 @@ final class MemoryVM {
         let fileURL = URL(fileURLWithPath: NSHomeDirectory() as String)
         
         do {
-#if os(watchOS)
+#if os(watchOS) || os(tvOS)
             let values = try fileURL.resourceValues(forKeys: [
                 .volumeTotalCapacityKey,
                 .volumeAvailableCapacityKey,

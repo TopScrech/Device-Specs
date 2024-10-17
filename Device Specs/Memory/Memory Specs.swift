@@ -17,7 +17,7 @@ struct MemorySpecs: View {
                 ListParam("Total", param: vm.totalDisk)
                 ListParam("Used", param: vm.usedDisk)
                 
-#if os(watchOS)
+#if os(watchOS) || os(tvOS)
                 ListParam("Free", param: vm.freeDisk)
 #else
                 DisclosureGroup {

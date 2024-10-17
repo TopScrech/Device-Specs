@@ -56,7 +56,7 @@ struct HomeView: View {
             }
 #endif
             SpecsLink("Accessibility", icon: "accessibility") {
-                AccessibilityView()
+                AccessibilitySpecs()
             }
             
             Section {
