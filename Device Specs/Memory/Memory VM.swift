@@ -75,36 +75,42 @@ final class MemoryVM {
             let availableCapacityForImportantUsage = values.volumeAvailableCapacityForImportantUsage
             let availableCapacityForOpportunisticUsage = values.volumeAvailableCapacityForOpportunisticUsage
             
-            if let availableCapacityForOpportunisticUsage {
-                freeDiskForOpportunisticUsage = formatBytes(availableCapacityForOpportunisticUsage)
-            } else {
+            guard
+                let availableCapacityForOpportunisticUsage,
+                let availableCapacityForImportantUsage
+            else {
                 freeDiskForOpportunisticUsage = "Unavailable"
-            }
-            
-            if let availableCapacityForImportantUsage {
-                freeDiskForImportantUsage = formatBytes(availableCapacityForImportantUsage)
-            } else {
                 freeDiskForImportantUsage = "Unavailable"
+                
+                return
             }
 #endif
-            let totalCapacity = values.volumeTotalCapacity
-            let availableCapacity = values.volumeAvailableCapacity
-            
-            if let totalCapacity {
-                totalDisk = formatBytes(totalCapacity)
-            } else {
-                totalDisk = "Unavailable"
-            }
-            
-            if let availableCapacity, let totalCapacity {
-                let usedCapacity = totalCapacity - availableCapacity
+            guard
+                let totalCapacity = values.volumeTotalCapacity,
+                let availableCapacity = values.volumeAvailableCapacity
+            else {
+                freeDisk = "N/a"
+                usedDisk = "N/a"
+                totalDisk = "N/a"
                 
-                freeDisk = format(totalCapacity, availableCapacity)
-                usedDisk = format(totalCapacity, usedCapacity)
-            } else {
-                freeDisk = "Unavailable"
-                usedDisk = "Unavailable"
+                return
             }
+            
+#if os(watchOS) || os(tvOS)
+            let usedCapacity = totalCapacity - availableCapacity
+            
+            freeDisk = format(totalCapacity, availableCapacity)
+#else
+            freeDiskForOpportunisticUsage = format(totalCapacity, Int(availableCapacityForOpportunisticUsage))
+            freeDiskForImportantUsage = format(totalCapacity, Int(availableCapacityForImportantUsage))
+            
+            let usedCapacity = totalCapacity - Int(availableCapacityForImportantUsage)
+            
+            freeDisk = format(totalCapacity, Int(availableCapacityForImportantUsage))
+#endif
+            
+            totalDisk = formatBytes(totalCapacity)
+            usedDisk = format(totalCapacity, usedCapacity)
         } catch {
             freeDisk = "Error"
             totalDisk = "Error"
