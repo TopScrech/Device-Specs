@@ -20,8 +20,8 @@ final class TimezoneVM {
         time.nextDaylightSavingTimeTransition
     }
     
-    var isDaylightSavingTime: String {
-        time.isDaylightSavingTime() ? "Yes" : "No"
+    var isDaylightSavingTime: Bool {
+        time.isDaylightSavingTime()
     }
     
     var daylightSavingTimeOffset: String {

@@ -564,7 +564,7 @@
     "Darker System Colors" : {
 
     },
-    "Daylight saving time offset" : {
+    "Daylight saving time" : {
 
     },
     "Decimal separator" : {
@@ -906,9 +906,6 @@
         }
       }
     },
-    "Is daylight saving time" : {
-
-    },
     "ISO" : {
       "localizations" : {
         "ru" : {
@@ -1163,9 +1160,6 @@
     },
     "Neural Engine" : {
       "shouldTranslate" : false
-    },
-    "Next daylight saving time transition" : {
-
     },
     "No" : {
 
