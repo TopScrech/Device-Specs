@@ -5,6 +5,18 @@ struct Timezone: View {
     
     var body: some View {
         List {
+            Section {
+                TimelineView(.periodic(from: Date(), by: 1)) { context in
+                    VStack(alignment: .leading) {
+                        Text(context.date, style: .date)
+                            .headline()
+                        
+                        Text(context.date, format: .dateTime.hour().minute().second())
+                            .title3()
+                    }
+                }
+            }
+            
             ListParam("Time zone", param: vm.timeZone)
             ListParam("Abbreviation", param: vm.abbreviation)
             ListParam("Seconds from GMT", param: vm.secondsFromGMT)
