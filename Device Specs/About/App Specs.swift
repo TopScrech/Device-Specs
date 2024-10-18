@@ -22,25 +22,27 @@ struct AppSpecs: View {
             
             ListParam("Build number", param: vm.build)
             
-            ListParam("Bundle identifier", param: vm.bundleIdentifier)
-            
             if let date = vm.getAppInstallationDate?.formatted() {
                 ListParam("Installation date", param: date)
             }
             
+            VStack(alignment: .leading, spacing: 5) {
+                Text("Bundle identifier")
+                
+                Text(vm.bundleIdentifier)
+                    .secondary()
+            }
             
 #if !os(watchOS) && !os(tvOS)
             MailFeedback()
             
             Section {
-                if let url = URL(string: "https://topscrech.dev/bisquit.host/privacy.pdf") {
-                    Link("Privacy Policy", destination: url)
-                }
-            }
-            
-            Section {
                 if let url = URL(string: "https://apps.apple.com/au/developer/sergei-saliukov/id1639409936") {
                     Link("More apps", destination: url)
+                }
+                
+                if let url = URL(string: "https://topscrech.dev/bisquit.host/privacy.pdf") {
+                    Link("Privacy Policy", destination: url)
                 }
             }
 #endif

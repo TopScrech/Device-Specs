@@ -82,7 +82,7 @@ struct HomeView: View {
                 }
             }
         }
-        .navigationTitle("Device Specs")
+        .navigationTitle(device.deviceIdentifier)
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
             battery.fetchBatteryInfo()
         }
