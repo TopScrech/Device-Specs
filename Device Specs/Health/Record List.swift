@@ -1,8 +1,6 @@
 import SwiftUI
 
 struct RecordList: View {
-//    @Environment(HealthVM.self) private var vm
-    
     private let records: [HealthRecord]
     
     init(_ records: [HealthRecord]) {
@@ -16,7 +14,9 @@ struct RecordList: View {
             }
             
             ForEach(records) { record in
-                Text(record.value)
+                let formatted = String(format: "%.2f", record.value)
+                
+                Text(formatted)
             }
         }
     }
@@ -24,5 +24,4 @@ struct RecordList: View {
 
 #Preview {
     RecordList([])
-//        .environment(HealthVM())
 }

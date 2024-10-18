@@ -6,7 +6,6 @@ struct BodyMeasurementsCategory: View {
     var body: some View {
         List {
             HealthRecordsLink("Weight", records: vm.bodyMass)
-            //        HealthLink("Body Mass", icon: "figure", records: vm.bodyMass)
         }
         .refreshableTask {
             vm.readBodyMass()
