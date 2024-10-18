@@ -68,11 +68,11 @@
 		F33FEE5D2C98386E00214288 /* Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE5C2C98386E00214288 /* Param.swift */; };
 		F33FEE5F2C9838AE00214288 /* Spec Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE5E2C9838AE00214288 /* Spec Item.swift */; };
 		F33FEE7B2C9848D000214288 /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5B2C67B985008CD17B /* Battery VM.swift */; };
-		F351EB2F2CC197CF001F424F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* ClockView.swift */; };
-		F351EB302CC197CF001F424F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* ClockView.swift */; };
-		F351EB312CC197CF001F424F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* ClockView.swift */; };
-		F351EB322CC197CF001F424F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* ClockView.swift */; };
-		F351EB332CC197CF001F424F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* ClockView.swift */; };
+		F351EB2F2CC197CF001F424F /* Clock View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* Clock View.swift */; };
+		F351EB302CC197CF001F424F /* Clock View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* Clock View.swift */; };
+		F351EB312CC197CF001F424F /* Clock View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* Clock View.swift */; };
+		F351EB322CC197CF001F424F /* Clock View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* Clock View.swift */; };
+		F351EB332CC197CF001F424F /* Clock View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* Clock View.swift */; };
 		F35279552C98DCB600AF581C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35279542C98DCB600AF581C /* Assets.xcassets */; };
 		F357214D2C98584100967ACA /* ScrechCam in Frameworks */ = {isa = PBXBuildFile; productRef = F357214C2C98584100967ACA /* ScrechCam */; };
 		F357214F2C985FFB00967ACA /* Camera Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357214E2C985FFB00967ACA /* Camera Test.swift */; };
@@ -593,7 +593,7 @@
 		F33FEE592C982FF000214288 /* System Report VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System Report VM.swift"; sourceTree = "<group>"; };
 		F33FEE5C2C98386E00214288 /* Param.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Param.swift; sourceTree = "<group>"; };
 		F33FEE5E2C9838AE00214288 /* Spec Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spec Item.swift"; sourceTree = "<group>"; };
-		F351EB2E2CC197CF001F424F /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		F351EB2E2CC197CF001F424F /* Clock View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Clock View.swift"; sourceTree = "<group>"; };
 		F35279542C98DCB600AF581C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F357214E2C985FFB00967ACA /* Camera Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera Test.swift"; sourceTree = "<group>"; };
 		F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iMessage.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -972,7 +972,7 @@
 			isa = PBXGroup;
 			children = (
 				F3B709AD2CA2BE84006ECAD1 /* Timezone.swift */,
-				F351EB2E2CC197CF001F424F /* ClockView.swift */,
+				F351EB2E2CC197CF001F424F /* Clock View.swift */,
 				F3B709BC2CA2C31E006ECAD1 /* Timezone VM.swift */,
 				F3B709B42CA2C187006ECAD1 /* Known Time Zones.swift */,
 			);
@@ -1725,7 +1725,7 @@
 				F36F802F2CA0E9AF0007F120 /* Torch Test.swift in Sources */,
 				F36F7FFF2CA0D4B40007F120 /* Memory VM.swift in Sources */,
 				F3B709BE2CA2C31E006ECAD1 /* Timezone VM.swift in Sources */,
-				F351EB2F2CC197CF001F424F /* ClockView.swift in Sources */,
+				F351EB2F2CC197CF001F424F /* Clock View.swift in Sources */,
 				F36F7FE12CA0D04C0007F120 /* App Container.swift in Sources */,
 				F36F7FEE2CA0D4370007F120 /* Battery Specs.swift in Sources */,
 				F36F7FF42CA0D47C0007F120 /* Network Specs.swift in Sources */,
@@ -1828,7 +1828,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F85EB72C948D3100AE0A1D /* Location VM.swift in Sources */,
-				F351EB322CC197CF001F424F /* ClockView.swift in Sources */,
+				F351EB322CC197CF001F424F /* Clock View.swift in Sources */,
 				F3CCB1FA2CAFC228000F8207 /* GPU Family Model.swift in Sources */,
 				F3F85EB92C948D4300AE0A1D /* Sensors View.swift in Sources */,
 				F3291C3A2CA9BCE200A15CAE /* Font VM.swift in Sources */,
@@ -1956,7 +1956,7 @@
 				F3B709A32CA22E09006ECAD1 /* Locale List.swift in Sources */,
 				F3291C562CAA02F200A15CAE /* Bluetooth Version.swift in Sources */,
 				F3D1E7B72C9D611A000C81FF /* App VM.swift in Sources */,
-				F351EB312CC197CF001F424F /* ClockView.swift in Sources */,
+				F351EB312CC197CF001F424F /* Clock View.swift in Sources */,
 				F3291C4E2CA9EC0900A15CAE /* Warnings Section.swift in Sources */,
 				F3D1E7B82C9D611A000C81FF /* App Specs.swift in Sources */,
 				F3D1E79A2C9C86AD000C81FF /* Specs Link.swift in Sources */,
@@ -2070,7 +2070,7 @@
 				F3E7EC8A2C67B985008CD17B /* Battery VM.swift in Sources */,
 				F3E7EC8B2C67B985008CD17B /* Bluetooth VM.swift in Sources */,
 				F3B709D02CA2C912006ECAD1 /* Volume Slider.swift in Sources */,
-				F351EB332CC197CF001F424F /* ClockView.swift in Sources */,
+				F351EB332CC197CF001F424F /* Clock View.swift in Sources */,
 				F3B709E92CA2F683006ECAD1 /* Font List.swift in Sources */,
 				F3D1E7972C9C5A0E000C81FF /* Camera Model.swift in Sources */,
 				F3D1E7A02C9CC2AE000C81FF /* Camera Formats.swift in Sources */,
@@ -2157,7 +2157,7 @@
 				F3291C632CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */,
 				F3B709AE2CA2BE84006ECAD1 /* Timezone.swift in Sources */,
 				F3ECFE012CA4BD9B00E72D41 /* Memory Type.swift in Sources */,
-				F351EB302CC197CF001F424F /* ClockView.swift in Sources */,
+				F351EB302CC197CF001F424F /* Clock View.swift in Sources */,
 				F3F85EF62C95854E00AE0A1D /* Processor VM.swift in Sources */,
 				F3F85EF72C95854E00AE0A1D /* Processor Specs.swift in Sources */,
 				F3F85EF82C95854E00AE0A1D /* CPU Usage Chart.swift in Sources */,
