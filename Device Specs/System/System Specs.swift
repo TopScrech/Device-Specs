@@ -9,7 +9,7 @@ struct SystemSpecs: View {
         List {
             Section {
                 ListParam("Operating system", param: vm.operatingSystem)
-                ListParam("Build number", param: vm.buildNumber)
+                ListParam("Build", param: vm.buildNumber)
             }
             
             AppleIntelligenceSupport()

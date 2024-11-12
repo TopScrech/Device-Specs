@@ -282,16 +282,6 @@
     "BSSID" : {
       "shouldTranslate" : false
     },
-    "Build number" : {
-      "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Номер сборки"
-          }
-        }
-      }
-    },
     "Bundle identifier" : {
 
     },

@@ -20,7 +20,7 @@ struct AppSpecs: View {
             
             ListParam("App version", param: vm.version)
             
-            ListParam("Build number", param: vm.build)
+            ListParam("Build", param: vm.build)
             
             if let date = vm.getAppInstallationDate?.formatted() {
                 ListParam("Installation date", param: date)
