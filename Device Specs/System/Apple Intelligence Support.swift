@@ -7,8 +7,6 @@ struct AppleIntelligenceSupport: View {
     }
     
     var body: some View {
-#warning("Enable after Apple Intelligence release")
-#if DEBUG
         Section {
             Label {
                 let text: LocalizedStringKey = supportsAppleIntelligence
@@ -24,7 +22,6 @@ struct AppleIntelligenceSupport: View {
             .opacity(supportsAppleIntelligence ? 1 : 0.1)
             .padding(.vertical, 5)
         }
-#endif
     }
 }
 
