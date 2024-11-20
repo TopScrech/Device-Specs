@@ -37,7 +37,7 @@ final class DisplayVM {
         
         resolution = "\(screenWidth) x \(screenHeight)"
         diagonalSize = "\(Device.current.diagonal)\""
-                
+        
         guard let ppi = Device.current.ppi else {
             return
         }
