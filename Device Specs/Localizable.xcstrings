@@ -1769,16 +1769,6 @@
         }
       }
     },
-    "Thread explosion limit" : {
-      "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Макс. кол-во потоков"
-          }
-        }
-      }
-    },
     "Time zone" : {
       "localizations" : {
         "ru" : {

@@ -20,14 +20,6 @@ final class ProcessorVM {
         }
     }
     
-    var threadExplosionLimit: String {
-        if let threads = Int(threadCount) {
-            String(threads * 16)
-        } else {
-            "-"
-        }
-    }
-    
     var neuralEngineTOPS: String {
         cpu.tops ?? "-"
     }

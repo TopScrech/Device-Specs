@@ -24,8 +24,6 @@ struct ProcessorSpecs: View {
                 
                 ListParam("Thread count", param: vm.threadCount)
                 
-                ListParam("Thread explosion limit", param: vm.threadExplosionLimit)
-                
                 NavigationLink("Current process") {
                     CurrentProcess()
                         .environment(vm)
