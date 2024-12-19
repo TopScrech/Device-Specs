@@ -36,8 +36,10 @@ final class DisplayVM {
         let screenHeight = Int(screenBounds.size.height * screenScale)
         
         resolution = "\(screenWidth) x \(screenHeight)"
-        diagonalSize = "\(Device.current.diagonal)\""
         
+#if !os(tvOS)
+        diagonalSize = "\(Device.current.diagonal)\""
+#endif
         guard let ppi = Device.current.ppi else {
             return
         }
