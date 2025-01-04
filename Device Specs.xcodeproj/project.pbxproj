@@ -186,7 +186,6 @@
 		F3B709A72CA2BCE4006ECAD1 /* Health Kit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */; };
 		F3B709A82CA2BCE4006ECAD1 /* Health Kit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */; };
 		F3B709A92CA2BCE4006ECAD1 /* Health Kit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */; };
-		F3B709AB2CA2BCE4006ECAD1 /* Health Kit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */; };
 		F3B709AE2CA2BE84006ECAD1 /* Timezone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709AD2CA2BE84006ECAD1 /* Timezone.swift */; };
 		F3B709AF2CA2BE84006ECAD1 /* Timezone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709AD2CA2BE84006ECAD1 /* Timezone.swift */; };
 		F3B709B02CA2BE84006ECAD1 /* Timezone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709AD2CA2BE84006ECAD1 /* Timezone.swift */; };
@@ -1973,7 +1972,6 @@
 				F3F85EEA2C957F9100AE0A1D /* Accessibility Item.swift in Sources */,
 				F3F85EFB2C95857C00AE0A1D /* GPU Families.swift in Sources */,
 				F36FBC672C93542700F5E174 /* Processor VM.swift in Sources */,
-				F3B709AB2CA2BCE4006ECAD1 /* Health Kit.swift in Sources */,
 				F3C3BDD42C92D8E000BF91EE /* Device Specs App.swift in Sources */,
 				F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */,
 				F3ECFE292CA53A4B00E72D41 /* Device Extension.swift in Sources */,
@@ -2407,8 +2405,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app needs to check if health data is available on the device";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app needs to check if health data is available on the device";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2439,8 +2435,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app needs to check if health data is available on the device";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app needs to check if health data is available on the device";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
