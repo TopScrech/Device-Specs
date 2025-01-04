@@ -809,6 +809,7 @@
 
     },
     "Health" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
