@@ -36,8 +36,8 @@ final class LocaleVM {
         loc.hourCycle.rawValue
     }
     
-    var availableNumberingSystems: String {
-        loc.availableNumberingSystems.description
+    var availableNumberingSystems: [Locale.NumberingSystem] {
+        loc.availableNumberingSystems
     }
     
     var numberingSystem: String {

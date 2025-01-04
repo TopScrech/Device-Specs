@@ -3,32 +3,16 @@ import ScrechKit
 struct SystemSpecs: View {
     @Environment(SystemVM.self) private var vm
     
+    private let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
+    
     var body: some View {
         List {
             Section {
                 ListParam("Operating system", param: vm.operatingSystem)
-                ListParam("Build number", param: vm.buildNumber)
+                ListParam("Build", param: vm.buildNumber)
             }
             
-#warning("Enable after Apple Intelligence release")
-            
-#if DEBUG
-            Section {
-                Label {
-                    let text: LocalizedStringKey = vm.supportsAppleIntelligence
-                    ? "Your device supports Apple Intelligence"
-                    : "Your device does not support Apple Intelligence"
-                    
-                    Text(text)
-                } icon: {
-                    Image(.appleIntelligence)
-                        .resizable()
-                        .frame(width: 32, height: 32)
-                }
-                .opacity(vm.supportsAppleIntelligence ? 1 : 0.1)
-                .padding(.vertical, 5)
-            }
-#endif
+            AppleIntelligenceSupport()
             
             Section {
                 ListParam("Multitasking", param: vm.multitaskingSupported)
@@ -36,33 +20,41 @@ struct SystemSpecs: View {
                 NavigationLink {
                     Timezone()
                 } label: {
-                    ListParam("Time zone", param: TimeZone.current.abbreviation() ?? "")
+                    ListParam("Time zone", param: vm.timeZone)
                 }
                 
                 NavigationLink {
                     LocaleList()
                 } label: {
-                    ListParam("Locale", param: Locale.current.identifier)
+                    ListParam("Locale", param: vm.lang)
                 }
                 
                 NavigationLink {
                     FontList()
                 } label: {
-                    ListParam("System fonts", param: UIFont.familyNames.count.description)
+                    ListParam("System fonts", param: vm.fontCount)
                 }
             }
             
             Section("Current session") {
-                ListParam("Active time", param: vm.fetchSystemActiveTime())
-                ListParam("System uptime", param: vm.fetchSystemUptime())
+                ListParam("Active time", param: vm.systemActiveTime)
+                    .animation(.default, value: vm.systemActiveTime)
+                
+                ListParam("System uptime", param: vm.systemUptime)
+                    .animation(.default, value: vm.systemUptime)
             }
-            
-#warning("TODO: Add HealthKit to visionOS")
-#if !os(visionOS)
-            HealthKit()
-#endif
+            .monospacedDigit()
+            .contentTransition(.numericText())
         }
         .navigationTitle("System")
+        .task {
+            vm.fetchSystemActiveTime()
+            vm.fetchSystemUptime()            
+        }
+        .onReceive(timer) { _ in
+            vm.fetchSystemActiveTime()
+            vm.fetchSystemUptime()
+        }
     }
 }
 

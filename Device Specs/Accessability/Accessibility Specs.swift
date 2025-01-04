@@ -2,7 +2,7 @@ import SwiftUI
 import DeviceKit
 import MediaAccessibility
 
-struct AccessibilityView: View {
+struct AccessibilitySpecs: View {
     @State private var vm = AccessibilityVM()
     
     var body: some View {
@@ -32,5 +32,5 @@ struct AccessibilityView: View {
 }
 
 #Preview {
-    AccessibilityView()
+    AccessibilitySpecs()
 }

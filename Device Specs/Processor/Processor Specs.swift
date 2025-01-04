@@ -1,5 +1,4 @@
 import ScrechKit
-import DeviceKit
 
 struct ProcessorSpecs: View {
     @Environment(ProcessorVM.self) private var vm
@@ -25,14 +24,15 @@ struct ProcessorSpecs: View {
                 
                 ListParam("Thread count", param: vm.threadCount)
                 
-                ListParam("Thread explosion limit", param: vm.threadExplosionLimit)
-                
-                NavigationLink {
+                NavigationLink("Current process") {
                     CurrentProcess()
                         .environment(vm)
-                } label: {
-                    Text("Current process")
                 }
+            }
+            
+            Section("Neural Engine") {
+                ListParam("Core count", param: vm.neuralEngineCores)
+                ListParam("TOPS", param: vm.neuralEngineTOPS)
             }
             
 #if !os(watchOS)
@@ -44,10 +44,10 @@ struct ProcessorSpecs: View {
                     
                     ListParam("Unified memory", param: device.hasUnifiedMemory ? "Yes" : "No")
                     
-                    ListParam("Supports raytracing", param: device.supportsRaytracing ? "Yes" : "No")
+                    ListParam("Raytracing", param: device.supportsRaytracing ? "Supported" : "Unsupported")
                     
                     NavigationLink("Supported GPU families") {
-                        GPUFamilies(device)
+                        GPUFamilies()
                     }
                 } else {
                     Text("Metal is not supported on this device")

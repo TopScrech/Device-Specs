@@ -20,12 +20,23 @@ final class TimezoneVM {
         time.nextDaylightSavingTimeTransition
     }
     
-    var daylightSavingTimeOffset: String {
-        time.daylightSavingTimeOffset().description
+    var isDaylightSavingTime: Bool {
+        time.isDaylightSavingTime()
     }
     
-    var isDaylightSavingTime: String {
-        time.isDaylightSavingTime() ? "Yes" : "No"
+    var daylightSavingTimeOffset: String {
+        let offset = time.daylightSavingTimeOffset()
+        
+        let formatter = DateComponentsFormatter()
+        formatter.allowedUnits = [.day, .hour, .minute, .second]
+        formatter.unitsStyle = .full
+        formatter.maximumUnitCount = 4
+        
+        if let formattedString = formatter.string(from: offset) {
+            return formattedString
+        } else {
+            return "-"
+        }
     }
     
     var timeZoneDataVersion: String {

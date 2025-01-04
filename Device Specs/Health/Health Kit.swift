@@ -4,7 +4,7 @@ import ScrechKit
 import HealthKit
 #endif
 
-struct HealthKit: View {
+struct HealthAvailability: View {
     private var healthDataAvailable: Bool {
 #if os(tvOS)
         false
@@ -22,7 +22,7 @@ struct HealthKit: View {
     }
     
     var body: some View {
-        Section("Health") {
+        Section {
             ListParam("Health data", param: healthDataAvailable ? "Available" : "Unavailable")
             
             ListParam("Clinical records", param: supportsHealthRecords ? "Supported" : "Unsupported")
@@ -31,5 +31,5 @@ struct HealthKit: View {
 }
 
 #Preview {
-    HealthKit()
+    HealthAvailability()
 }

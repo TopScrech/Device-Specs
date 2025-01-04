@@ -32,7 +32,7 @@ extension Device.CPU {
         case .m1: "LPDDR4X-4266 (2133 MHz)" // Pro, Max, Ultra - LPDDR4X-6400 (3200 MHz)
         case .m2: "LPDDR5-6400"
         case .m3: "LPDDR5-6400"
-        case .m4: "LPDDR5-6400" // Pro, Max, Ultra - ???
+        case .m4: "LPDDR5-7500" // Pro, Max, Ultra - ???
 #elseif os(watchOS)
         case .s1: "LPDDR3"
         case .s1P: "LPDDR3"

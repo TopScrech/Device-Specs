@@ -27,6 +27,7 @@ extension Device {
         case .iPhone14, .iPhone14Plus, .iPhone14Pro, .iPhone14ProMax: "September 16, 2022"
         case .iPhone15, .iPhone15Plus, .iPhone15Pro, .iPhone15ProMax: "September 22, 2023"
         case .iPhone16, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax: "September 20, 2024"
+            
         case .iPad2: "March 11, 2011"
         case .iPad3: "March 16, 2012"
         case .iPad4, .iPadMini: "November 2, 2012"

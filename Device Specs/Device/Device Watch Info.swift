@@ -8,16 +8,7 @@ struct DeviceWatchInfo: View {
         default: "Unknown"
         }
     }
-    
-    private var waterResistanceRating: String {
-        switch WKInterfaceDevice.current().waterResistanceRating {
-        case .ipx7: "IPX7"
-        case .wr50: "WR50"
-        case .wr100: "WR100"
-        default: "Unknown"
-        }
-    }
-    
+        
     private var wristLocation: String {
         switch WKInterfaceDevice.current().wristLocation {
         case .left: "Left"
@@ -39,7 +30,6 @@ struct DeviceWatchInfo: View {
             ListParam("Crown orientation", param: crownOrientation)
             ListParam("Water lock", param: WKInterfaceDevice.current().isWaterLockEnabled ? "Yes" : "No")
             ListParam("Layout direction", param: layoutDirection)
-            ListParam("Water resistance rating", param: waterResistanceRating)
             ListParam("Wrist location", param: wristLocation)
         }
     }

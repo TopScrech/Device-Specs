@@ -37,19 +37,13 @@ final class DisplayVM {
         
         resolution = "\(screenWidth) x \(screenHeight)"
         
-        // Diagonal size in pixels
-        let diagonalPixels = sqrt(pow(Double(screenWidth), 2) + pow(Double(screenHeight), 2))
-        
+#if !os(tvOS)
+        diagonalSize = "\(Device.current.diagonal)\""
+#endif
         guard let ppi = Device.current.ppi else {
             return
         }
         
         dencity = "\(ppi.description) PPI"
-        
-        let rounded = round(Double(ppi) / 10) * 10
-        print("Rounded \(ppi) to \(rounded)")
-        let diagonalInches = diagonalPixels / rounded
-        
-        diagonalSize = String(format: "%.2f\"", diagonalInches)
     }
 }

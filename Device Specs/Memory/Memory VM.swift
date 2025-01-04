@@ -5,13 +5,15 @@ import DeviceKit
 final class MemoryVM {
     private let device = Device.current
     
-    var totalDisk = ""
-    var usedDisk = ""
-    var freeDisk = ""
-    
     var totalRam = ""
     var usedRam = ""
     var freeRam = ""
+    
+    var totalDisk = ""
+    var usedDisk = ""
+    var freeDisk = ""
+    var freeDiskForImportantUsage = ""
+    var freeDiskForOpportunisticUsage = ""
     
     init() {
         getMemoryUsage()
@@ -39,14 +41,16 @@ final class MemoryVM {
         }
         
         if status == KERN_SUCCESS {
-            let totalMemoryBytes = ProcessInfo.processInfo.physicalMemory
+            let totalMemory = ProcessInfo.processInfo.physicalMemory
+            
             let pageSize = vm_kernel_page_size
             let usedMemory = (UInt64(stats.active_count) + UInt64(stats.inactive_count) + UInt64(stats.wire_count)) * UInt64(pageSize)
-            let freeMemory = totalMemoryBytes - usedMemory
+            let freeMemory = totalMemory - usedMemory
             
-            totalRam = formatBytes(totalMemoryBytes)
-            usedRam = formatBytes(usedMemory)
-            freeRam = formatBytes(freeMemory)
+            totalRam = formatBytes(totalMemory)
+            
+            usedRam = format(Int(totalMemory), Int(usedMemory))
+            freeRam = format(Int(totalMemory), Int(freeMemory))
         }
     }
     
@@ -55,32 +59,58 @@ final class MemoryVM {
         let fileURL = URL(fileURLWithPath: NSHomeDirectory() as String)
         
         do {
+#if os(watchOS) || os(tvOS)
             let values = try fileURL.resourceValues(forKeys: [
+                .volumeTotalCapacityKey,
+                .volumeAvailableCapacityKey
+            ])
+#else
+            let values = try fileURL.resourceValues(forKeys: [
+                .volumeTotalCapacityKey,
                 .volumeAvailableCapacityKey,
-                .volumeTotalCapacityKey
+                .volumeAvailableCapacityForImportantUsageKey,
+                .volumeAvailableCapacityForOpportunisticUsageKey
             ])
             
-            let totalCapacity = values.volumeTotalCapacity
-            let availableCapacity = values.volumeAvailableCapacity
+            let availableCapacityForImportantUsage = values.volumeAvailableCapacityForImportantUsage
+            let availableCapacityForOpportunisticUsage = values.volumeAvailableCapacityForOpportunisticUsage
             
-            if let totalCapacity {
-                totalDisk = formatBytes(totalCapacity)
-            } else {
-                totalDisk = "Unavailable"
+            guard
+                let availableCapacityForOpportunisticUsage,
+                let availableCapacityForImportantUsage
+            else {
+                freeDiskForOpportunisticUsage = "Unavailable"
+                freeDiskForImportantUsage = "Unavailable"
+                
+                return
+            }
+#endif
+            guard
+                let totalCapacity = values.volumeTotalCapacity,
+                let availableCapacity = values.volumeAvailableCapacity
+            else {
+                freeDisk = "N/a"
+                usedDisk = "N/a"
+                totalDisk = "N/a"
+                
+                return
             }
             
-            if let availableCapacity {
-                freeDisk = formatBytes(availableCapacity)
-            } else {
-                freeDisk = "Unavailable"
-            }
+#if os(watchOS) || os(tvOS)
+            let usedCapacity = totalCapacity - availableCapacity
             
-            if let totalCapacity, let availableCapacity {
-                let usedCapacity = totalCapacity - availableCapacity
-                usedDisk = formatBytes(usedCapacity)
-            } else {
-                usedDisk = "Unavailable"
-            }
+            freeDisk = format(totalCapacity, availableCapacity)
+#else
+            freeDiskForOpportunisticUsage = format(totalCapacity, Int(availableCapacityForOpportunisticUsage))
+            freeDiskForImportantUsage = format(totalCapacity, Int(availableCapacityForImportantUsage))
+            
+            let usedCapacity = totalCapacity - Int(availableCapacityForImportantUsage)
+            
+            freeDisk = format(totalCapacity, Int(availableCapacityForImportantUsage))
+#endif
+            
+            totalDisk = formatBytes(totalCapacity)
+            usedDisk = format(totalCapacity, usedCapacity)
         } catch {
             freeDisk = "Error"
             totalDisk = "Error"
@@ -88,5 +118,14 @@ final class MemoryVM {
             
             print(error.localizedDescription)
         }
+    }
+    
+    private func format(_ total: Int, _ value: Int) -> String {
+        let percentage = Double(value) / Double(total) * 100
+        let percentageString = String(format: " (%.1f%%)", percentage)
+        
+        let formattedValue = formatBytes(value)
+        
+        return formattedValue + percentageString
     }
 }

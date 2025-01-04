@@ -7,6 +7,10 @@ struct TestList: View {
     
     var body: some View {
         List {
+            Section {
+                AuthTest()
+            }
+            
             Button {
                 sheetCamera = true
             } label: {
@@ -32,7 +36,7 @@ struct TestList: View {
                 .disabled(!DeviceInfo.isUltraWidebandAvailable)
             } footer: {
                 if !DeviceInfo.isUltraWidebandAvailable {
-                    Text("This device is not UWB capable")
+                    Text("This device is not UWB-capable")
                 }
             }
         }

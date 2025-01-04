@@ -11,7 +11,13 @@ struct DeviceSpecs: View {
             ListParam("Name", param: vm.deviceName)
             ListParam("Release date", param: vm.releaseDate)
             ListParam("Internal name", param: vm.internalName)
-            ListParam("Identifier for vendor", param: vm.vandorId)
+            
+            VStack(alignment: .leading, spacing: 5) {
+                Text("Identifier for vendor")
+                
+                Text(vm.vandorId)
+                    .secondary()
+            }
             
             //#if !os(watchOS) && !os(visionOS)
             //            AdvertisingIdentifier()
@@ -22,20 +28,10 @@ struct DeviceSpecs: View {
             }
             
             Section("Capabilities") {
+                ListParam("Bluetooth", param: vm.bluetoothVersion)
+                
 #if !os(tvOS)
-                HStack {
-                    Text("Biometric authentication")
-                    
-                    Spacer()
-                    
-                    
-                    Image(systemName: vm.bioIcon)
-                        .title3()
-                        .foregroundStyle(.secondary)
-                    
-                    Text(vm.bioType)
-                        .foregroundStyle(.secondary)
-                }
+                AuthTest()
 #endif
                 
 #if os(iOS)
@@ -46,6 +42,14 @@ struct DeviceSpecs: View {
                 ListParam("Force Touch", param: vm.isForceTouchAvailable)
 #endif
                 ListParam("Ultra Wideband", param: vm.isUltraWidebandAvailable)
+            }
+            
+            Section("Water resistance") {
+                ListParam("Rating", param: vm.waterResistance)
+#if os(watchOS)
+                ListParam("System rating", param: vm.waterResistanceSystemRating)
+#endif
+                ListParam("Description", param: vm.waterResistanceDescription)
             }
             
 #if os(watchOS)

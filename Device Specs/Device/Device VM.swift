@@ -17,7 +17,6 @@ import CoreNFC
 final class DeviceVM {
     private let device = Device.current
     
-    
     var bioIcon = ""
     var bioType = ""
     
@@ -39,6 +38,29 @@ final class DeviceVM {
     var releaseDate: String {
         device.releaseDate
     }
+    
+    var bluetoothVersion: String {
+        device.bluetoothVersion
+    }
+    
+    var waterResistance: String {
+        device.waterResistance
+    }
+    
+    var waterResistanceDescription: String {
+        device.waterResistanceDescription
+    }
+    
+#if os(watchOS)
+    var waterResistanceSystemRating: String {
+        switch WKInterfaceDevice.current().waterResistanceRating {
+        case .ipx7: "IPX7"
+        case .wr50: "WR50"
+        case .wr100: "WR100"
+        default: "Unknown"
+        }
+    }
+#endif
     
 #warning("Finish")
     //    var deviceIcon: String {

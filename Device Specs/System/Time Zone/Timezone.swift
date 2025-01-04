@@ -5,18 +5,24 @@ struct Timezone: View {
     
     var body: some View {
         List {
+            ClockView()
+            
             ListParam("Time zone", param: vm.timeZone)
             ListParam("Abbreviation", param: vm.abbreviation)
             ListParam("Seconds from GMT", param: vm.secondsFromGMT)
             
-            if let date = vm.nextDaylightSavingTimeTransition?.formatted() {
-                ListParam("Next daylight saving time transition", param: date)
-            }
-            
-            ListParam("Daylight saving time offset", param: vm.daylightSavingTimeOffset)
-            ListParam("Is daylight saving time", param: vm.isDaylightSavingTime)
             ListParam("Time zone data version", param: vm.timeZoneDataVersion)
             ListParam("Autoupdating current", param: vm.autoupdatingCurrent)
+            
+            if vm.isDaylightSavingTime {
+                Section("Daylight saving time") {
+                    if let date = vm.nextDaylightSavingTimeTransition?.formatted() {
+                        ListParam("Next transition", param: date)
+                    }
+                    
+                    ListParam("Time offset", param: vm.daylightSavingTimeOffset)
+                }
+            }
             
             Section {
                 NavigationLink {

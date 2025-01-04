@@ -20,12 +20,12 @@ final class ProcessorVM {
         }
     }
     
-    var threadExplosionLimit: String {
-        if let threads = Int(threadCount) {
-            String(threads * 16)
-        } else {
-            "-"
-        }
+    var neuralEngineTOPS: String {
+        cpu.tops ?? "-"
+    }
+    
+    var neuralEngineCores: String {
+        cpu.neuralEngineCores ?? "-"
     }
     
     var cpuName: String {
@@ -58,8 +58,8 @@ final class ProcessorVM {
         info.processName
     }
     
-    var environment: String {
-        info.environment.description
+    var environment: [String: String] {
+        info.environment
     }
     
     var hostName: String {
@@ -74,8 +74,8 @@ final class ProcessorVM {
         info.globallyUniqueString
     }
     
-    var arguments: String {
-        info.arguments.description
+    var arguments: [String] {
+        info.arguments
     }
     
     var threadCount: String {
@@ -105,7 +105,7 @@ final class ProcessorVM {
         }
     }
     
-    var sertifiedForIphonePerformanceGaming: String {
+    var iphonePerformanceGamingSertified: String {
         if #available(iOS 18, *) {
             info.isDeviceCertified(for: .iPhonePerformanceGaming) ? "Yes" : "No"
         } else {

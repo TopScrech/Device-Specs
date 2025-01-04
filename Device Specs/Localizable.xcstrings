@@ -2,16 +2,30 @@
   "sourceLanguage" : "en",
   "strings" : {
     "" : {
-
+      "shouldTranslate" : false
     },
     "5G" : {
       "shouldTranslate" : false
     },
     "Abbreviation" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Аббревиатура"
+          }
+        }
+      }
     },
     "About" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "О приложении"
+          }
+        }
+      }
     },
     "Absolute altitude" : {
       "localizations" : {
@@ -44,7 +58,14 @@
       }
     },
     "Active time" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время активности"
+          }
+        }
+      }
     },
     "Activity" : {
       "localizations" : {
@@ -57,10 +78,24 @@
       }
     },
     "Alternate quotation begin delimiter" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Альт. разделитель начала цитаты"
+          }
+        }
+      }
     },
     "Alternate quotation end delimiter" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Альт. разделитель конца цитаты"
+          }
+        }
+      }
     },
     "Altimeter" : {
       "localizations" : {
@@ -120,7 +155,14 @@
       "shouldTranslate" : false
     },
     "Architecture" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Архитектура"
+          }
+        }
+      }
     },
     "Arguments" : {
 
@@ -142,7 +184,14 @@
 
     },
     "Available numbering systems" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Доступные системы исчисления"
+          }
+        }
+      }
     },
     "Back" : {
 
@@ -161,19 +210,54 @@
 
     },
     "Battery level" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уровень заряда"
+          }
+        }
+      }
     },
     "Battery state" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Состояние аккумулятора"
+          }
+        }
+      }
     },
     "Below Warning Level" : {
 
     },
     "Biometric authentication" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Биометрическая аутентификация"
+          }
+        }
+      }
+    },
+    "Bluetooth" : {
+      "shouldTranslate" : false
+    },
+    "Body measurements" : {
 
     },
     "Bold" : {
-
+      "comment" : "Прикол)))",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жиробас"
+          }
+        }
+      }
     },
     "Bold Text" : {
       "localizations" : {
@@ -197,16 +281,6 @@
     },
     "BSSID" : {
       "shouldTranslate" : false
-    },
-    "Build number" : {
-      "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Номер сборки"
-          }
-        }
-      }
     },
     "Bundle identifier" : {
 
@@ -272,7 +346,14 @@
       }
     },
     "Capacity" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ёмкость"
+          }
+        }
+      }
     },
     "Capacity in Wh" : {
       "localizations" : {
@@ -342,7 +423,14 @@
       }
     },
     "Confidence" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Устойчивость"
+          }
+        }
+      }
     },
     "Containing region" : {
 
@@ -401,10 +489,24 @@
       }
     },
     "Critical thermal state" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Критический перегрев"
+          }
+        }
+      }
     },
     "Crown orientation" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ориентация колёсика"
+          }
+        }
+      }
     },
     "Currency code" : {
       "localizations" : {
@@ -452,7 +554,7 @@
     "Darker System Colors" : {
 
     },
-    "Daylight saving time offset" : {
+    "Daylight saving time" : {
 
     },
     "Decimal separator" : {
@@ -461,6 +563,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Десятичный разделитель"
+          }
+        }
+      }
+    },
+    "Description" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Описание"
           }
         }
       }
@@ -495,12 +607,19 @@
       }
     },
     "Dock connector" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Коннектор"
+          }
+        }
+      }
     },
     "Dynamic Island" : {
       "shouldTranslate" : false
     },
-    "Environment" : {
+    "Environment variables" : {
 
     },
     "Error" : {
@@ -528,6 +647,9 @@
     },
     "Face ID" : {
       "shouldTranslate" : false
+    },
+    "Feedback" : {
+
     },
     "Firmware Version" : {
       "localizations" : {
@@ -562,11 +684,15 @@
     "Force Touch" : {
       "shouldTranslate" : false
     },
-    "Free RAM" : {
-
-    },
-    "Free storage" : {
-
+    "Free" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Свободно"
+          }
+        }
+      }
     },
     "Front" : {
 
@@ -585,10 +711,24 @@
 
     },
     "Globally unique string" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Глобально уникальная строка"
+          }
+        }
+      }
     },
     "Go to Settings" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Откройте настройки"
+          }
+        }
+      }
     },
     "GPU" : {
       "localizations" : {
@@ -596,6 +736,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ГПУ"
+          }
+        }
+      }
+    },
+    "GPU families" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GPU-семейства"
           }
         }
       }
@@ -659,6 +809,7 @@
 
     },
     "Health" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -678,7 +829,14 @@
       "shouldTranslate" : false
     },
     "Hide status bar and this menu" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скрыть строку состояния и это меню"
+          }
+        }
+      }
     },
     "Host name" : {
 
@@ -739,17 +897,35 @@
         }
       }
     },
-    "Is daylight saving time" : {
-
-    },
     "ISO" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ИСО"
+          }
+        }
+      }
     },
     "ISO region" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ИСО регион"
+          }
+        }
+      }
     },
     "Italic" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Курсив"
+          }
+        }
+      }
     },
     "Known time zones" : {
       "localizations" : {
@@ -853,7 +1029,14 @@
 
     },
     "Max. clock speed" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Макс. тактовая чистота"
+          }
+        }
+      }
     },
     "Maximum Capacity" : {
 
@@ -966,11 +1149,24 @@
         }
       }
     },
-    "Next daylight saving time transition" : {
+    "Neural Engine" : {
+      "shouldTranslate" : false
+    },
+    "No" : {
+
+    },
+    "No records" : {
 
     },
     "Not all platforms will play feedback in response to certain types" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не все платформы будут воспроизводить вибрацию в ответ на определенные типы обратной связи"
+          }
+        }
+      }
     },
     "Numbering system" : {
       "localizations" : {
@@ -996,7 +1192,14 @@
 
     },
     "Open this app section on another UWB-capable device" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Откройте этот раздел приложения на другом устройстве с поддержкой UWB"
+          }
+        }
+      }
     },
     "Operating system" : {
       "localizations" : {
@@ -1051,10 +1254,17 @@
 
     },
     "PPI" : {
-
+      "shouldTranslate" : false
     },
     "Preferred languages" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Предпочитаемые языки"
+          }
+        }
+      }
     },
     "Prefers Cross Fade Transitions" : {
 
@@ -1080,10 +1290,24 @@
       }
     },
     "Process identifier" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Идентификатор процесса"
+          }
+        }
+      }
     },
     "Process name" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Название процесса"
+          }
+        }
+      }
     },
     "Processor" : {
       "localizations" : {
@@ -1109,10 +1333,24 @@
       }
     },
     "Quotation begin delimiter" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разделитель начала цитаты"
+          }
+        }
+      }
     },
     "Quotation end delimiter" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разделитель конца цитаты"
+          }
+        }
+      }
     },
     "RAM" : {
       "localizations" : {
@@ -1120,6 +1358,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ОЗУ"
+          }
+        }
+      }
+    },
+    "Rating" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рейтинг"
           }
         }
       }
@@ -1132,6 +1380,16 @@
     },
     "Raw Z" : {
 
+    },
+    "Raytracing" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Трассировка лучей"
+          }
+        }
+      }
     },
     "Reduce Motion" : {
       "localizations" : {
@@ -1239,15 +1497,8 @@
         }
       }
     },
-    "SDRAM Type" : {
-      "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Тип SDRAM"
-          }
-        }
-      }
+    "SDRAM" : {
+      "shouldTranslate" : false
     },
     "Seconds from GMT" : {
 
@@ -1273,7 +1524,14 @@
       }
     },
     "Serious thermal state" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Серьёзный перегрев"
+          }
+        }
+      }
     },
     "Sertified for iPhone performance gaming" : {
       "localizations" : {
@@ -1296,7 +1554,14 @@
       }
     },
     "Shake to Undo" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Встряхивание для отмены"
+          }
+        }
+      }
     },
     "Should Differentiate Without Color" : {
 
@@ -1338,7 +1603,14 @@
       }
     },
     "Storage" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Хранилище"
+          }
+        }
+      }
     },
     "Strikethrough" : {
 
@@ -1366,11 +1638,18 @@
         }
       }
     },
-    "Supported GPU families" : {
+    "Supported" : {
 
     },
-    "Supports raytracing" : {
-
+    "Supported GPU families" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поддерживаемые GPU-семейства"
+          }
+        }
+      }
     },
     "Switch Camera" : {
 
@@ -1415,6 +1694,16 @@
         }
       }
     },
+    "System rating" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Системный рейтинг"
+          }
+        }
+      }
+    },
     "System region" : {
       "localizations" : {
         "ru" : {
@@ -1426,7 +1715,14 @@
       }
     },
     "System uptime" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время работы системы"
+          }
+        }
+      }
     },
     "Technology node" : {
       "localizations" : {
@@ -1448,6 +1744,9 @@
         }
       }
     },
+    "There're no records to show" : {
+
+    },
     "Thermal state" : {
       "localizations" : {
         "ru" : {
@@ -1458,7 +1757,7 @@
         }
       }
     },
-    "This device is not UWB capable" : {
+    "This device is not UWB-capable" : {
 
     },
     "Thread count" : {
@@ -1470,9 +1769,6 @@
           }
         }
       }
-    },
-    "Thread explosion limit" : {
-
     },
     "Time zone" : {
       "localizations" : {
@@ -1504,11 +1800,18 @@
         }
       }
     },
-    "Total RAM" : {
-
+    "TOPS" : {
+      "shouldTranslate" : false
     },
-    "Total storage" : {
-
+    "Total" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Всего"
+          }
+        }
+      }
     },
     "True heading" : {
 
@@ -1517,8 +1820,8 @@
       "localizations" : {
         "ru" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Сверхширокополосная Cвязь"
+            "state" : "translated",
+            "value" : "Сверхширокополосная связь"
           }
         }
       }
@@ -1534,7 +1837,14 @@
       }
     },
     "Underline" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подчеркивание"
+          }
+        }
+      }
     },
     "Unified memory" : {
       "localizations" : {
@@ -1546,14 +1856,21 @@
         }
       }
     },
+    "Unsupported" : {
+
+    },
     "Usage" : {
 
     },
-    "Used RAM" : {
-
-    },
-    "Used storage" : {
-
+    "Used" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Использовано"
+          }
+        }
+      }
     },
     "Variant" : {
 
@@ -1582,7 +1899,14 @@
       "shouldTranslate" : false
     },
     "Voltage" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напряжение"
+          }
+        }
+      }
     },
     "Volume" : {
       "localizations" : {
@@ -1600,7 +1924,17 @@
     "Water lock" : {
 
     },
-    "Water resistance rating" : {
+    "Water resistance" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Водонепроницаемость"
+          }
+        }
+      }
+    },
+    "Weight" : {
 
     },
     "Wireless Charging" : {
@@ -1608,13 +1942,20 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Безпроводная зарядка"
+            "value" : "Беспроводная зарядка"
           }
         }
       }
     },
     "Wrist location" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Расположение запястья"
+          }
+        }
+      }
     },
     "X Axis" : {
 
@@ -1625,8 +1966,18 @@
     "Yaw" : {
 
     },
-    "Your device does not support Apple Intelligence" : {
+    "Yes" : {
 
+    },
+    "Your device does not support Apple Intelligence" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваше устройство не поддерживает Apple Intelligence"
+          }
+        }
+      }
     },
     "Your device supports Apple Intelligence" : {
       "localizations" : {

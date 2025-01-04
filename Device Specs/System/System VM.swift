@@ -5,7 +5,8 @@ import DeviceKit
 final class SystemVM {
     private let device = Device.current
     
-    var buildNumber = ""
+    var systemUptime = "N/a"
+    var systemActiveTime = "N/a"
     
     var multitaskingSupported: String {
 #if os(watchOS)
@@ -15,13 +16,16 @@ final class SystemVM {
 #endif
     }
     
-    
-    init() {
-        fetchBuildNumber()
+    var timeZone: String {
+        TimeZone.current.abbreviation() ?? ""
     }
     
-    var supportsAppleIntelligence: Bool {
-        device.supportsAppleIntelligence
+    var lang: String {
+        Locale.current.identifier
+    }
+    
+    var fontCount: String {
+        UIFont.familyNames.count.description
     }
     
     var operatingSystem: String {
@@ -32,28 +36,23 @@ final class SystemVM {
 #endif
     }
     
-    func fetchBuildNumber() {
+    var buildNumber: String {
         let build = ProcessInfo.processInfo.operatingSystemVersionString
         
-        if let range = build.range(of: "\\((Build )([A-Za-z0-9]+)\\)", options: .regularExpression) {
-            buildNumber = String(build[range]).replacingOccurrences(of: "(Build ", with: "")
-                .replacingOccurrences(of: ")", with: "")
+        guard let range = build.range(of: "\\((Build )([A-Za-z0-9]+)\\)", options: .regularExpression) else {
+            return "-"
         }
+        
+        return String(build[range]).replacingOccurrences(of: "(Build ", with: "")
+            .replacingOccurrences(of: ")", with: "")
     }
     
-    func fetchSystemUptime() -> String {
+    func fetchSystemUptime() {
         let uptime = ProcessInfo.processInfo.systemUptime
-        
-        let days = Int(uptime) / 86400
-        let hours = (Int(uptime) % 86400) / 3600
-        let minutes = (Int(uptime) % 3600) / 60
-        
-        let formattedUptime = "\(days)d \(hours)h \(minutes)m"
-        
-        return formattedUptime
+        systemUptime = timeFormatter(uptime)
     }
     
-    func fetchSystemActiveTime() -> String {
+    func fetchSystemActiveTime() {
         var bootTime = timeval()
         var mib = [CTL_KERN, KERN_BOOTTIME]
         var size = MemoryLayout<timeval>.stride
@@ -62,19 +61,25 @@ final class SystemVM {
         
         if result != 0 {
             perror("sysctl")
-            return "Error fetching boot time"
+            systemActiveTime = "Error fetching boot time"
         }
         
         let bootDate = Date(timeIntervalSince1970: TimeInterval(bootTime.tv_sec))
         let activeTimeInterval = Date().timeIntervalSince(bootDate)
         
-        let totalSeconds = Int(activeTimeInterval)
-        let days = totalSeconds / 86400
-        let hours = (totalSeconds % 86400) / 3600
-        let minutes = (totalSeconds % 3600) / 60
+        systemActiveTime = timeFormatter(activeTimeInterval)
+    }
+    
+    private func timeFormatter(_ seconds: TimeInterval) -> String {
+        let formatter = DateComponentsFormatter()
+        formatter.allowedUnits = [.day, .hour, .minute, .second]
+        formatter.unitsStyle = .abbreviated
+        formatter.maximumUnitCount = 4
         
-        let formattedActiveTime = "\(days)d \(hours)h \(minutes)m"
-        
-        return formattedActiveTime
+        if let formattedString = formatter.string(from: seconds) {
+            return formattedString
+        } else {
+            return "N/a"
+        }
     }
 }

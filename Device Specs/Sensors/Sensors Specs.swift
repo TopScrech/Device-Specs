@@ -1,6 +1,6 @@
 import ScrechKit
 
-struct SensorsView: View {
+struct SensorsSpecs: View {
     @State private var location = LocationVM()
     @State private var orientation = OrientationVM()
     @State private var altitude = AltitudeVM()
@@ -86,5 +86,5 @@ struct SensorsView: View {
 }
 
 #Preview {
-    SensorsView()
+    SensorsSpecs()
 }

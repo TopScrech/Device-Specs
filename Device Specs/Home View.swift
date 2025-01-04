@@ -22,6 +22,8 @@ struct HomeView: View {
                 DeviceSpecs()
                     .environment(device)
             }
+            .lineLimit(1)
+            .minimumScaleFactor(0.5)
             
             SpecsLink("System", icon: "apple.terminal", spec: system.operatingSystem) {
                 SystemSpecs()
@@ -60,29 +62,19 @@ struct HomeView: View {
             }
             
             SpecsLink("Sensors", icon: "barometer") {
-                SensorsView()
+                SensorsSpecs()
             }
             
             SpecsLink("Accessibility", icon: "accessibility") {
-                AccessibilityView()
+                AccessibilitySpecs()
             }
             
-            Section {
-                Button {
-                    navState.navigate(.toTests)
-                } label: {
-                    HStack {
-                        Label("Tests", systemImage: "testtube.2")
-                        
-                        Spacer()
-                        
-                        Image(systemName: "chevron.forward")
-                            .foregroundStyle(.tertiary)
-                            .footnote(.bold)
-                    }
-                    .foregroundStyle(.foreground)
-                }
-            }
+#warning("To be released in v2.1")
+            //            SpecsLink("Health", icon: "facemask") {
+            //                HealthSpecs()
+            //            }
+            
+            testLink
             
             Section {
                 SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
@@ -91,9 +83,28 @@ struct HomeView: View {
                 }
             }
         }
-        .navigationTitle("Device Specs")
+        .navigationTitle(device.deviceIdentifier)
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
             battery.fetchBatteryInfo()
+        }
+    }
+    
+    private var testLink: some View {
+        Section {
+            Button {
+                navState.navigate(.toTests)
+            } label: {
+                HStack {
+                    Label("Tests", systemImage: "testtube.2")
+                    
+                    Spacer()
+                    
+                    Image(systemName: "chevron.forward")
+                        .caption(.semibold)
+                        .foregroundStyle(.tertiary)
+                }
+                .foregroundStyle(.foreground)
+            }
         }
     }
 }

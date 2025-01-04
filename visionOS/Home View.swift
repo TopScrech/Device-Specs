@@ -56,13 +56,27 @@ struct HomeView: View {
             }
 #endif
             SpecsLink("Accessibility", icon: "accessibility") {
-                AccessibilityView()
+                AccessibilitySpecs()
             }
             
             Section {
                 SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
                     AppSpecs()
                         .environment(app)
+                }
+            }
+            
+            NavigationLink {
+                AuthTest()
+            } label: {
+                HStack {
+                    Label("Tests", systemImage: "testtube.2")
+                    
+                    Spacer()
+                    
+                    Image(systemName: "chevron.forward")
+                        .footnote(.bold)
+                        .foregroundStyle(.tertiary)
                 }
             }
         }

@@ -57,11 +57,11 @@ struct HomeView: View {
             }
             
             SpecsLink("Sensors", icon: "barometer") {
-                SensorsView()
+                SensorsSpecs()
             }
             
             SpecsLink("Accessibility", icon: "accessibility") {
-                AccessibilityView()
+                AccessibilitySpecs()
             }
             
             Section {
