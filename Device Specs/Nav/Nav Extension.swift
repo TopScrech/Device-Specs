@@ -10,8 +10,8 @@ extension View {
             case .toTests:
                 TestList()
                 
-            case .toHealth:
-                HealthSpecs()
+//            case .toHealth:
+//                HealthSpecs()
             }
         }
     }

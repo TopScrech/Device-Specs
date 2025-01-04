@@ -245,9 +245,6 @@
     "Bluetooth" : {
       "shouldTranslate" : false
     },
-    "Body measurements" : {
-
-    },
     "Bold" : {
       "comment" : "Прикол)))",
       "localizations" : {
@@ -375,6 +372,7 @@
 
     },
     "Clinical records" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -819,9 +817,6 @@
         }
       }
     },
-    "Health data" : {
-
-    },
     "Health Information" : {
 
     },
@@ -1153,9 +1148,6 @@
       "shouldTranslate" : false
     },
     "No" : {
-
-    },
-    "No records" : {
 
     },
     "Not all platforms will play feedback in response to certain types" : {
@@ -1744,9 +1736,6 @@
         }
       }
     },
-    "There're no records to show" : {
-
-    },
     "Thermal state" : {
       "localizations" : {
         "ru" : {
@@ -1933,9 +1922,6 @@
           }
         }
       }
-    },
-    "Weight" : {
-
     },
     "Wireless Charging" : {
       "localizations" : {
