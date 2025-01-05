@@ -12,7 +12,9 @@ struct SystemSpecs: View {
                 ListParam("Build", param: vm.buildNumber)
             }
             
-            AppleIntelligenceSupport()
+            if #available(iOS 18, visionOS 2, *) {
+                AppleIntelligenceSupport()
+            }
             
             Section {
                 ListParam("Multitasking", param: vm.multitaskingSupported)
@@ -49,7 +51,7 @@ struct SystemSpecs: View {
         .navigationTitle("System")
         .task {
             vm.fetchSystemActiveTime()
-            vm.fetchSystemUptime()            
+            vm.fetchSystemUptime()
         }
         .onReceive(timer) { _ in
             vm.fetchSystemActiveTime()
