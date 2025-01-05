@@ -1,19 +1,26 @@
 import SwiftUI
-import DeviceKit
 
+#if canImport(ImagePlayground)
+import ImagePlayground
+#endif
+
+@available(iOS 18, *)
 struct AppleIntelligenceSupport: View {
-    private var supportsAppleIntelligence: Bool {
-        Device.current.supportsAppleIntelligence
-    }
+    
+#if canImport(ImagePlayground)
+    @Environment(\.supportsImagePlayground) private var supportsAppleIntelligence
+#else
+    private var supportsAppleIntelligence = false
+#endif
     
     var body: some View {
         Section {
             Label {
-                let text: LocalizedStringKey = supportsAppleIntelligence
-                ? "Your device supports Apple Intelligence"
-                : "Your device does not support Apple Intelligence"
-                
-                Text(text)
+                Text(
+                    supportsAppleIntelligence
+                    ? "Your device supports Apple Intelligence"
+                    : "Your device does not support Apple Intelligence"
+                )
             } icon: {
                 Image(.appleIntelligence)
                     .resizable()
@@ -25,6 +32,7 @@ struct AppleIntelligenceSupport: View {
     }
 }
 
+@available(iOS 18, *)
 #Preview {
     AppleIntelligenceSupport()
 }
