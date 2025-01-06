@@ -6,5 +6,9 @@ struct macOSApp: App {
         WindowGroup {
             AppContainer()
         }
+        
+        Settings {
+            SettingsView()
+        }
     }
 }

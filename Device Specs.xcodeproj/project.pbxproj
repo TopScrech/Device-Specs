@@ -79,6 +79,8 @@
 		F35279552C98DCB600AF581C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35279542C98DCB600AF581C /* Assets.xcassets */; };
 		F357214D2C98584100967ACA /* ScrechCam in Frameworks */ = {isa = PBXBuildFile; productRef = F357214C2C98584100967ACA /* ScrechCam */; };
 		F357214F2C985FFB00967ACA /* Camera Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357214E2C985FFB00967ACA /* Camera Test.swift */; };
+		F358F0232D2C185800BCC07B /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = F358F0222D2C185800BCC07B /* LaunchAtLogin */; };
+		F358F0252D2C187000BCC07B /* Settings View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358F0242D2C187000BCC07B /* Settings View.swift */; };
 		F36F7FC52CA0CC110007F120 /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
 		F36F7FC62CA0CC110007F120 /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
 		F36F7FCD2CA0CFDF0007F120 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36F7FCC2CA0CFDF0007F120 /* Messages.framework */; };
@@ -589,6 +591,7 @@
 		F351EB2E2CC197CF001F424F /* Clock View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Clock View.swift"; sourceTree = "<group>"; };
 		F35279542C98DCB600AF581C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F357214E2C985FFB00967ACA /* Camera Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera Test.swift"; sourceTree = "<group>"; };
+		F358F0242D2C187000BCC07B /* Settings View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings View.swift"; sourceTree = "<group>"; };
 		F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iMessage.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F36F7FCC2CA0CFDF0007F120 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = Library/Frameworks/Messages.framework; sourceTree = DEVELOPER_DIR; };
 		F36F7FCF2CA0CFDF0007F120 /* Messages VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Messages VC.swift"; sourceTree = "<group>"; };
@@ -739,7 +742,7 @@
 		F3F85EF92C95857C00AE0A1D /* GPU Families.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPU Families.swift"; sourceTree = "<group>"; };
 		F3F85F052C9588BE00AE0A1D /* Network Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Specs.swift"; sourceTree = "<group>"; };
 		F3F85F092C959DE300AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3F85F0E2C962C4600AE0A1D /* macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3F85F0E2C962C4600AE0A1D /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F85F102C962C4600AE0A1D /* macOS App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "macOS App.swift"; sourceTree = "<group>"; };
 		F3F85F142C962C4700AE0A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3F85F192C962C4700AE0A1D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
@@ -811,6 +814,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F358F0232D2C185800BCC07B /* LaunchAtLogin in Frameworks */,
 				F3F85F272C962EC600AE0A1D /* ScrechKit in Frameworks */,
 				F3F85F292C962EC900AE0A1D /* DeviceKit in Frameworks */,
 			);
@@ -892,6 +896,14 @@
 				F317334D2CA1D61B00CFA041 /* Nav Link.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		F358F0262D2C187500BCC07B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F358F0242D2C187000BCC07B /* Settings View.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		F36F7FDF2CA0CFF20007F120 /* iMessage */ = {
@@ -1138,7 +1150,7 @@
 				F3C3BDBD2C92D87C00BF91EE /* visionOS.app */,
 				F36FBCB12C9449A200F5E174 /* watchOS.app */,
 				F3F85ECD2C94AF5A00AE0A1D /* tvOS.app */,
-				F3F85F0E2C962C4600AE0A1D /* macOS.app */,
+				F3F85F0E2C962C4600AE0A1D /* Device Specs.app */,
 				F3F85F342C96491700AE0A1D /* Unit Tests.xctest */,
 				F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */,
 			);
@@ -1393,6 +1405,7 @@
 				F33FEE5C2C98386E00214288 /* Param.swift */,
 				F33FEE5E2C9838AE00214288 /* Spec Item.swift */,
 				F317334B2CA1D57800CFA041 /* Background Blur.swift */,
+				F358F0262D2C187500BCC07B /* Settings */,
 				F33FEE552C982AFB00214288 /* Battery */,
 				F33FEE562C982B2600214288 /* Hardware */,
 				F33FEE5B2C98307C00214288 /* System Report */,
@@ -1535,9 +1548,10 @@
 			packageProductDependencies = (
 				F3F85F262C962EC600AE0A1D /* ScrechKit */,
 				F3F85F282C962EC900AE0A1D /* DeviceKit */,
+				F358F0222D2C185800BCC07B /* LaunchAtLogin */,
 			);
 			productName = macOS;
-			productReference = F3F85F0E2C962C4600AE0A1D /* macOS.app */;
+			productReference = F3F85F0E2C962C4600AE0A1D /* Device Specs.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F3F85F332C96491700AE0A1D /* Unit Tests */ = {
@@ -1610,6 +1624,7 @@
 				F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */,
 				F3C68AC82CAFCD3E0021B6F3 /* XCRemoteSwiftPackageReference "MailCover" */,
 				F3C68AE52CAFD7C80021B6F3 /* XCRemoteSwiftPackageReference "HealthyKit" */,
+				F358F0212D2C185800BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F3E7EC3B2C676A13008CD17B /* Products */;
@@ -2193,6 +2208,7 @@
 				F3ECFE232CA536FD00E72D41 /* Release Date.swift in Sources */,
 				F3ECFDE12CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */,
 				F3ECFE382CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
+				F358F0252D2C187000BCC07B /* Settings View.swift in Sources */,
 				F33FEE582C982EC200214288 /* Nav Links.swift in Sources */,
 				F3F85F252C962E7200AE0A1D /* Battery VM.swift in Sources */,
 				F3F85F2D2C96455300AE0A1D /* Hardware Specs.swift in Sources */,
@@ -2258,7 +2274,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.debug.iMessage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -2292,7 +2308,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.iMessage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -2329,7 +2345,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.debug.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -2365,7 +2381,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -2396,7 +2412,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = xros;
@@ -2426,7 +2442,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = xros;
@@ -2592,7 +2608,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.debug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -2642,7 +2658,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -2674,7 +2690,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -2704,7 +2720,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -2738,9 +2754,9 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Device Specs";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -2769,9 +2785,9 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Device Specs";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -2902,6 +2918,14 @@
 				kind = branch;
 			};
 		};
+		F358F0212D2C185800BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/LaunchAtLogin";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		F3C68AC82CAFCD3E0021B6F3 /* XCRemoteSwiftPackageReference "MailCover" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/MailCover";
@@ -2941,6 +2965,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */;
 			productName = ScrechCam;
+		};
+		F358F0222D2C185800BCC07B /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F358F0212D2C185800BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
+			productName = LaunchAtLogin;
 		};
 		F36F7FEA2CA0D23D0007F120 /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;
