@@ -739,7 +739,7 @@
 		F3F85EF92C95857C00AE0A1D /* GPU Families.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPU Families.swift"; sourceTree = "<group>"; };
 		F3F85F052C9588BE00AE0A1D /* Network Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Specs.swift"; sourceTree = "<group>"; };
 		F3F85F092C959DE300AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3F85F0E2C962C4600AE0A1D /* macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3F85F0E2C962C4600AE0A1D /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F85F102C962C4600AE0A1D /* macOS App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "macOS App.swift"; sourceTree = "<group>"; };
 		F3F85F142C962C4700AE0A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3F85F192C962C4700AE0A1D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
@@ -1138,7 +1138,7 @@
 				F3C3BDBD2C92D87C00BF91EE /* visionOS.app */,
 				F36FBCB12C9449A200F5E174 /* watchOS.app */,
 				F3F85ECD2C94AF5A00AE0A1D /* tvOS.app */,
-				F3F85F0E2C962C4600AE0A1D /* macOS.app */,
+				F3F85F0E2C962C4600AE0A1D /* Device Specs.app */,
 				F3F85F342C96491700AE0A1D /* Unit Tests.xctest */,
 				F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */,
 			);
@@ -1537,7 +1537,7 @@
 				F3F85F282C962EC900AE0A1D /* DeviceKit */,
 			);
 			productName = macOS;
-			productReference = F3F85F0E2C962C4600AE0A1D /* macOS.app */;
+			productReference = F3F85F0E2C962C4600AE0A1D /* Device Specs.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F3F85F332C96491700AE0A1D /* Unit Tests */ = {
@@ -2740,7 +2740,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 2.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Device Specs";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -2771,7 +2771,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 2.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Device Specs";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
