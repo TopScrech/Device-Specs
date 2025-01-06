@@ -79,6 +79,8 @@
 		F35279552C98DCB600AF581C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35279542C98DCB600AF581C /* Assets.xcassets */; };
 		F357214D2C98584100967ACA /* ScrechCam in Frameworks */ = {isa = PBXBuildFile; productRef = F357214C2C98584100967ACA /* ScrechCam */; };
 		F357214F2C985FFB00967ACA /* Camera Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357214E2C985FFB00967ACA /* Camera Test.swift */; };
+		F358F0232D2C185800BCC07B /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = F358F0222D2C185800BCC07B /* LaunchAtLogin */; };
+		F358F0252D2C187000BCC07B /* Settings View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358F0242D2C187000BCC07B /* Settings View.swift */; };
 		F36F7FC52CA0CC110007F120 /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
 		F36F7FC62CA0CC110007F120 /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
 		F36F7FCD2CA0CFDF0007F120 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36F7FCC2CA0CFDF0007F120 /* Messages.framework */; };
@@ -589,6 +591,7 @@
 		F351EB2E2CC197CF001F424F /* Clock View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Clock View.swift"; sourceTree = "<group>"; };
 		F35279542C98DCB600AF581C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F357214E2C985FFB00967ACA /* Camera Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera Test.swift"; sourceTree = "<group>"; };
+		F358F0242D2C187000BCC07B /* Settings View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings View.swift"; sourceTree = "<group>"; };
 		F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iMessage.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F36F7FCC2CA0CFDF0007F120 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = Library/Frameworks/Messages.framework; sourceTree = DEVELOPER_DIR; };
 		F36F7FCF2CA0CFDF0007F120 /* Messages VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Messages VC.swift"; sourceTree = "<group>"; };
@@ -811,6 +814,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F358F0232D2C185800BCC07B /* LaunchAtLogin in Frameworks */,
 				F3F85F272C962EC600AE0A1D /* ScrechKit in Frameworks */,
 				F3F85F292C962EC900AE0A1D /* DeviceKit in Frameworks */,
 			);
@@ -892,6 +896,14 @@
 				F317334D2CA1D61B00CFA041 /* Nav Link.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		F358F0262D2C187500BCC07B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F358F0242D2C187000BCC07B /* Settings View.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		F36F7FDF2CA0CFF20007F120 /* iMessage */ = {
@@ -1393,6 +1405,7 @@
 				F33FEE5C2C98386E00214288 /* Param.swift */,
 				F33FEE5E2C9838AE00214288 /* Spec Item.swift */,
 				F317334B2CA1D57800CFA041 /* Background Blur.swift */,
+				F358F0262D2C187500BCC07B /* Settings */,
 				F33FEE552C982AFB00214288 /* Battery */,
 				F33FEE562C982B2600214288 /* Hardware */,
 				F33FEE5B2C98307C00214288 /* System Report */,
@@ -1535,6 +1548,7 @@
 			packageProductDependencies = (
 				F3F85F262C962EC600AE0A1D /* ScrechKit */,
 				F3F85F282C962EC900AE0A1D /* DeviceKit */,
+				F358F0222D2C185800BCC07B /* LaunchAtLogin */,
 			);
 			productName = macOS;
 			productReference = F3F85F0E2C962C4600AE0A1D /* Device Specs.app */;
@@ -1610,6 +1624,7 @@
 				F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */,
 				F3C68AC82CAFCD3E0021B6F3 /* XCRemoteSwiftPackageReference "MailCover" */,
 				F3C68AE52CAFD7C80021B6F3 /* XCRemoteSwiftPackageReference "HealthyKit" */,
+				F358F0212D2C185800BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F3E7EC3B2C676A13008CD17B /* Products */;
@@ -2193,6 +2208,7 @@
 				F3ECFE232CA536FD00E72D41 /* Release Date.swift in Sources */,
 				F3ECFDE12CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */,
 				F3ECFE382CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
+				F358F0252D2C187000BCC07B /* Settings View.swift in Sources */,
 				F33FEE582C982EC200214288 /* Nav Links.swift in Sources */,
 				F3F85F252C962E7200AE0A1D /* Battery VM.swift in Sources */,
 				F3F85F2D2C96455300AE0A1D /* Hardware Specs.swift in Sources */,
@@ -2902,6 +2918,14 @@
 				kind = branch;
 			};
 		};
+		F358F0212D2C185800BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/LaunchAtLogin";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		F3C68AC82CAFCD3E0021B6F3 /* XCRemoteSwiftPackageReference "MailCover" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/MailCover";
@@ -2941,6 +2965,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */;
 			productName = ScrechCam;
+		};
+		F358F0222D2C185800BCC07B /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F358F0212D2C185800BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
+			productName = LaunchAtLogin;
 		};
 		F36F7FEA2CA0D23D0007F120 /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;
