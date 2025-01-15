@@ -1,5 +1,6 @@
 import SwiftUI
 import Messages
+import SafariCover
 
 @objc(MessagesViewController)
 class MessagesViewController: MSMessagesAppViewController {
@@ -8,7 +9,7 @@ class MessagesViewController: MSMessagesAppViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view
+        // Any additional setup after loading the view
         
         let child = UIHostingController(rootView: AppContainer(.constant(self)))
         child.view.translatesAutoresizingMaskIntoConstraints = false

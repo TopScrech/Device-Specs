@@ -28,9 +28,7 @@ class AltitudeVM: NSObject {
                 if let data {
                     let relativeAlt = data.relativeAltitude.doubleValue
                     
-                    withAnimation {
-                        self?.relativeAltitude = String(format: "%.2f m", relativeAlt)
-                    }
+                    self?.relativeAltitude = String(format: "%.2f m", relativeAlt)
                 }
             }
         }

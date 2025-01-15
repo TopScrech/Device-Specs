@@ -23,15 +23,17 @@ struct SpecsLink<Destination: View>: View {
 #if os(watchOS)
             HStack(spacing: 10) {
                 Image(systemName: icon)
-                    .title3(.semibold)
+                    .semibold()
+                    .title3()
                 
                 VStack(alignment: .leading, spacing: 0) {
                     Text(name)
                     
                     if !spec.isEmpty {
                         Text(spec)
-                            .footnote(.semibold)
-                            .foregroundStyle(.secondary)
+                            .semibold()
+                            .footnote()
+                            .secondary()
                     }
                 }
                 .foregroundStyle(.foreground)
@@ -46,7 +48,7 @@ struct SpecsLink<Destination: View>: View {
                 if !spec.isEmpty {
                     Text(spec)
                         .fontWeight(.medium)
-                        .foregroundStyle(.secondary)
+                        .secondary()
                 }
             }
 #endif

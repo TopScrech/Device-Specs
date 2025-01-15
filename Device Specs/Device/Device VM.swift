@@ -17,9 +17,6 @@ import CoreNFC
 final class DeviceVM {
     private let device = Device.current
     
-    var bioIcon = ""
-    var bioType = ""
-    
     var architecture = ""
     var isForceTouchAvailable = ""
     
@@ -62,17 +59,6 @@ final class DeviceVM {
     }
 #endif
     
-#warning("Finish")
-    //    var deviceIcon: String {
-    //        switch Device.current.name {
-    //        case "iPhone":
-    //            ""
-    //
-    //        default:
-    //            ""
-    //        }
-    //    }
-    
     // Capabilities
     var isNfcAvailable: String {
 #if canImport(CoreNFC)
@@ -114,40 +100,6 @@ final class DeviceVM {
     
     init() {
         fetchForceTouch()
-        getBiometryType()
-    }
-    
-    func getBiometryType() {
-#if !os(tvOS)
-        if #available(watchOS 11, *) {
-            let type = LAContext().biometryType
-            
-            switch type {
-            case .faceID:
-                bioIcon = "faceid"
-                bioType = "Face ID"
-                
-            case .touchID:
-                bioIcon = "touchid"
-                bioType = "Touch ID"
-                
-            case .opticID:
-                bioIcon = "opticid"
-                bioType = "Optic ID"
-                
-            case .none:
-                bioIcon = ""
-                bioType = "None"
-                
-            default:
-                bioIcon = ""
-                bioType = "Unknown"
-            }
-        } else {
-            bioIcon = ""
-            bioType = "None"
-        }
-#endif
     }
     
     func getInternalDeviceName() -> String? {

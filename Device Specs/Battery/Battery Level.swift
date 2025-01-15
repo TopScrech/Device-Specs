@@ -11,7 +11,7 @@ struct BatteryLevel: View {
             
             VStack {
                 Text(vm.batteryLevel)
-                    .foregroundStyle(.secondary)
+                    .secondary()
                 
                 Image(systemName: vm.icon)
                     .title()

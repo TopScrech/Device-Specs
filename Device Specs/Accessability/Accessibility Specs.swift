@@ -19,7 +19,7 @@ struct AccessibilitySpecs: View {
                     }
                 }
             }
-                        
+            
             ForEach(vm.filteredParams) { param in
                 AccessibilityItem(param)
             }

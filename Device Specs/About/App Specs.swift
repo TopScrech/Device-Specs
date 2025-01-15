@@ -3,6 +3,9 @@ import ScrechKit
 struct AppSpecs: View {
     @Environment(AppVM.self) private var vm
     
+    @State private var sheetPrivacy = false
+    @State private var sheetBh = false
+    
     var body: some View {
         List {
             Section {
@@ -18,18 +21,16 @@ struct AppSpecs: View {
                 vm.trigger.toggle()
             }
             
-            ListParam("App version", param: vm.version)
+            ListParam("App version", param: vm.versionAndBuild)
             
-            ListParam("Build", param: vm.build)
-            
-            if let date = vm.getAppInstallationDate?.formatted() {
+            if let date = vm.getAppInstallationDate {
                 ListParam("Installation date", param: date)
             }
             
             VStack(alignment: .leading, spacing: 5) {
-                Text("Bundle identifier")
+                Text("Bundle id")
                 
-                Text(vm.bundleIdentifier)
+                Text(vm.bundleId)
                     .secondary()
             }
             
@@ -37,16 +38,23 @@ struct AppSpecs: View {
             MailFeedback()
             
             Section {
+                Button("Powered by Bisquit.Host") {
+                    sheetBh = true
+                }
+                .safariCover($sheetBh, url: "https://bisquit.host")
+                
                 if let url = URL(string: "https://apps.apple.com/au/developer/sergei-saliukov/id1639409936") {
                     Link("More apps", destination: url)
                 }
                 
-                if let url = URL(string: "https://topscrech.dev/bisquit.host/privacy.pdf") {
-                    Link("Privacy Policy", destination: url)
+                Button("Privacy Policy") {
+                    sheetPrivacy = true
                 }
+                .safariCover($sheetPrivacy, url: "https://topscrech.dev/bisquit.host/privacy.pdf")
             }
 #endif
         }
+        .navigationTitle("About")
 #if !os(visionOS)
         .sensoryFeedback(.impact, trigger: vm.trigger)
 #endif

@@ -10,8 +10,11 @@ struct NetworkSpecs: View {
             
             ListParam("Network interface", param: network.networkinterface)
             
-#warning("Router differs from settings")
-            ListParam("Router", param: network.router)
+            ListParam("Router", param: network.destinationIpAddress)
+            
+            if let router = RouterVM().fetch() {
+                ListParam("Router", param: router)
+            }
             
             ListParam("Subnet mask", param: network.subnetMask)
             

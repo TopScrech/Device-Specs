@@ -5,13 +5,16 @@ struct NetworkSpecs: View {
     @Environment(ConnectivityVM.self) private var connectivity
     
     var body: some View {
-#warning("Router differs from settings")
         List {
             ListParam("Public IP address", param: network.publicIp)
             
             ListParam("Network interface", param: network.networkinterface)
             
-            ListParam("Router", param: network.router)
+            ListParam("Destination IP address", param: network.destinationIpAddress)
+            
+            if let router = RouterVM().fetch() {
+                ListParam("Router", param: router)
+            }
             
             ListParam("Subnet mask", param: network.subnetMask)
             

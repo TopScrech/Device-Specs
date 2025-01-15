@@ -17,7 +17,7 @@ struct AuthTest: View {
                     .foregroundStyle(vm.isAuthenticated ? .green : .secondary)
                 
                 Text(vm.type)
-                    .foregroundStyle(.secondary)
+                    .secondary()
             }
         }
         .disabled(vm.type == "None")

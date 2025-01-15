@@ -8,7 +8,9 @@ struct ListLink <Destination: View>: View {
     init(
         _ title: LocalizedStringKey,
         icon: String,
-        @ViewBuilder destination: () -> Destination = { EmptyView() }
+        @ViewBuilder destination: () -> Destination = {
+            EmptyView()
+        }
     ) {
         self.title = title
         self.icon = icon

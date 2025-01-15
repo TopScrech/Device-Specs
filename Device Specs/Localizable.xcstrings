@@ -279,7 +279,7 @@
     "BSSID" : {
       "shouldTranslate" : false
     },
-    "Bundle identifier" : {
+    "Bundle id" : {
 
     },
     "Button Shapes" : {
@@ -370,17 +370,6 @@
     },
     "Charging" : {
 
-    },
-    "Clinical records" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Клинические записи"
-          }
-        }
-      }
     },
     "Closed Captioning" : {
 
@@ -806,17 +795,6 @@
     "Heading accuracy" : {
 
     },
-    "Health" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Здоровье"
-          }
-        }
-      }
-    },
     "Health Information" : {
 
     },
@@ -886,7 +864,7 @@
       "localizations" : {
         "ru" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Инверсия Цветов"
           }
         }
@@ -1243,6 +1221,9 @@
       }
     },
     "Position" : {
+
+    },
+    "Powered by Bisquit.Host" : {
 
     },
     "PPI" : {

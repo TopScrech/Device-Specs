@@ -18,7 +18,7 @@ struct LocaleList: View {
                             Text(lan)
                         }
                     }
-                    .foregroundStyle(.secondary)
+                    .secondary()
                 }
             }
             

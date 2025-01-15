@@ -4,11 +4,11 @@ import Foundation
 final class AppVM {
     private let info = ProcessInfo()
     
-    var version: String {
+    private var version: String {
         Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "-"
     }
     
-    var build: String {
+    private var build: String {
         Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "-"
     }
     
@@ -20,7 +20,7 @@ final class AppVM {
         Bundle.main.object(forInfoDictionaryKey: "MinimumOSVersion") as? String ?? "Unknown"
     }
     
-    let bundleIdentifier = Bundle.main.bundleIdentifier?.description ?? "-"
+    let bundleId = Bundle.main.bundleIdentifier?.description ?? "-"
     
     var trigger = false
     
@@ -32,7 +32,7 @@ final class AppVM {
         info.isiOSAppOnMac ? "Yes" : "No"
     }
     
-    var getAppInstallationDate: Date? {
+    var getAppInstallationDate: String? {
         guard
             let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first,
             let attributes = try? FileManager.default.attributesOfItem(atPath: documentsURL.path),
@@ -41,6 +41,6 @@ final class AppVM {
             return nil
         }
         
-        return creationDate
+        return creationDate.formatted()
     }
 }

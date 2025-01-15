@@ -1,7 +1,6 @@
 import ScrechKit
 
 struct SensorsSpecs: View {
-    @State private var location = LocationVM()
     @State private var orientation = OrientationVM()
     @State private var altitude = AltitudeVM()
     @State private var pressure = PressureVM()
@@ -12,44 +11,7 @@ struct SensorsSpecs: View {
         List {
             ListParam("Proximity sensor triggered", param: proximity.isDeviceCloseToUser ? "Yes" : "No")
             
-            Section("Location") {
-                ListParam("Latitude", param: String(location.latitude))
-                ListParam("Longitude", param: String(location.longitude))
-                
-                HStack {
-                    Text("True heading")
-                    
-                    Spacer()
-                    
-                    let trueHeading = location.trueHeading
-                    
-                    Image(systemName: "arrow.up.circle")
-                        .title3(.semibold)
-                        .foregroundColor((trueHeading >= 355 || trueHeading <= 5) ? .green : .primary)
-                        .rotationEffect(.degrees(trueHeading))
-                    
-                    Text(String(format: "%.1f", trueHeading) + "°")
-                        .foregroundStyle(.secondary)
-                }
-                
-                HStack {
-                    Text("Magnetic heading")
-                    
-                    Spacer()
-                    
-                    let magneticHeading = location.magneticHeading
-                    
-                    Image(systemName: "arrow.up.circle")
-                        .title3(.semibold)
-                        .foregroundColor((magneticHeading >= 355 || magneticHeading <= 5) ? .green : .primary)
-                        .rotationEffect(.degrees(magneticHeading))
-                    
-                    Text(String(format: "%.1f", magneticHeading) + "°")
-                        .foregroundStyle(.secondary)
-                }
-                
-                ListParam("Heading accuracy", param: String(location.headingAccuracy) + "°")
-            }
+            LocationSensors()
             
             Section("Rotation") {
                 ListParam("Roll", param: orientation.roll)
@@ -65,14 +27,15 @@ struct SensorsSpecs: View {
             }
             
             Section("Altimeter") {
-                ListParam("Pressure", param: pressure.pressureKilo)
+                if let pressure = pressure.pressureKilo {
+                    ListParam("Pressure", param: pressure)
+                }
+                
                 ListParam("Relative altitude", param: altitude.relativeAltitude)
                 ListParam("Absolute altitude", param: altitude.absoluteAltitude)
             }
             
-            Section("Magnetic field") {
-                MagneticFieldData()
-            }
+            MagneticFieldData()
             
             Section("Motion coprocessor") {
                 ListParam("Activity", param: activity.activity)
@@ -80,7 +43,7 @@ struct SensorsSpecs: View {
             }
         }
         .navigationTitle("Sensors")
-        .numericTransition()
+        .monospacedDigit()
         .scrollIndicators(.never)
     }
 }

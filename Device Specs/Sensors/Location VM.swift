@@ -23,19 +23,15 @@ final class LocationVM: NSObject, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
-            withAnimation {
-                latitude = location.coordinate.latitude
-                longitude = location.coordinate.longitude
-            }
+            latitude = location.coordinate.latitude
+            longitude = location.coordinate.longitude
         }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
-        withAnimation {
-            trueHeading = newHeading.trueHeading
-            magneticHeading = newHeading.magneticHeading
-            headingAccuracy = newHeading.headingAccuracy
-        }
+        trueHeading = newHeading.trueHeading
+        magneticHeading = newHeading.magneticHeading
+        headingAccuracy = newHeading.headingAccuracy
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {

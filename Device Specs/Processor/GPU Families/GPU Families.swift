@@ -5,7 +5,7 @@ struct GPUFamilies: View {
     
     var body: some View {
         List {
-            Section("Supported") {
+            Section {
                 ForEach(vm.supportedFamilies) { family in
                     Text(family.name)
                 }

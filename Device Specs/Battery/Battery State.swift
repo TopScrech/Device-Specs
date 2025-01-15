@@ -10,7 +10,7 @@ struct BatteryState: View {
             Spacer()
             
             Text(vm.batteryState)
-                .foregroundStyle(.secondary)
+                .secondary()
             
             if vm.batteryState == "Charging" {
                 Image(systemName: "bolt.fill")

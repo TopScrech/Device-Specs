@@ -1,9 +1,10 @@
 import DeviceKit
 
 // MagSafe battery pack: 1460mAh / 11.13W
-// Source: https://app.clickdimensions.com/blob/chemtreccom-ajrb1/files/apis_bpisreportupdated20220909.pdf?1662765043983
 
-// Source 2: https://www.macworld.com/article/678413/iphone-battery-capacities-compared-all-iphones-battery-life-in-mah-and-wh.html
+// Sources:
+// https://app.clickdimensions.com/blob/chemtreccom-ajrb1/files/apis_bpisreportupdated20220909.pdf?1662765043983
+// https://www.macworld.com/article/678413/iphone-battery-capacities-compared-all-iphones-battery-life-in-mah-and-wh.html
 
 extension Device {
     var power: String {
@@ -82,7 +83,7 @@ extension Device {
         case .iPadPro12Inch6: "40.88 Wh"
         case .iPadPro11M4: "31.29 Wh"
         case .iPadPro13M4: "38.99 Wh"
-        case .homePod: "-" //
+        case .homePod: "-"
 #elseif os(tvOS)
         case .appleTVHD: "410 Wh"
         case .appleTV4K: "-"
