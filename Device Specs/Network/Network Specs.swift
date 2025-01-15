@@ -1,5 +1,4 @@
 import ScrechKit
-import SystemConfiguration
 
 struct NetworkSpecs: View {
     @State private var network = NetworkVM()
