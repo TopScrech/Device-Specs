@@ -9,10 +9,12 @@ struct MagneticFieldData: View {
             let y = String(format: "%.2f µT", raw.y)
             let z = String(format: "%.2f µT", raw.z)
             
-            ListParam("Raw X", param: x)
-            ListParam("Raw Y", param: y)
-            ListParam("Raw Z", param: z)
-        }        
+            Section("Magnetic field") {
+                ListParam("Raw X", param: x)
+                ListParam("Raw Y", param: y)
+                ListParam("Raw Z", param: z)
+            }
+        }
     }
 }
 

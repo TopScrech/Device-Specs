@@ -5,28 +5,30 @@ import CoreMotion
 final class PressureVM {
     private var altimeter = CMAltimeter()
     
-    var pressureKilo = ""
+    var pressureKilo: String?
     var pressureHecto = ""
     
     init() {
         fetchPressureData()
     }
     
-    func fetchPressureData() {
-        if CMAltimeter.isRelativeAltitudeAvailable() {
-            altimeter.startRelativeAltitudeUpdates(to: .main) { [weak self] data, error in
-                if let data {
-                    let pressureInKilopascals = data.pressure.doubleValue
-                    
-                    withAnimation {
-                        self?.pressureKilo = String(format: "%.2f kPa", pressureInKilopascals)
-                    }
-                }
-            }
-        }
-    }
-    
     deinit {
         altimeter.stopRelativeAltitudeUpdates()
+    }
+    
+    func fetchPressureData() {
+        guard CMAltimeter.isRelativeAltitudeAvailable() else {
+            return
+        }
+        
+        altimeter.startRelativeAltitudeUpdates(to: .main) { [weak self] data, error in
+            guard let data else {
+                return
+            }
+            
+            let pressureInKilopascals = data.pressure.doubleValue
+            
+            self?.pressureKilo = String(format: "%.2f kPa", pressureInKilopascals)
+        }
     }
 }

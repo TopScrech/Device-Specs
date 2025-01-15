@@ -67,14 +67,15 @@ struct SensorsSpecs: View {
             }
             
             Section("Altimeter") {
-                ListParam("Pressure", param: pressure.pressureKilo)
+                if let pressure = pressure.pressureKilo {
+                    ListParam("Pressure", param: pressure)
+                }
+                
                 ListParam("Relative altitude", param: altitude.relativeAltitude)
                 ListParam("Absolute altitude", param: altitude.absoluteAltitude)
             }
             
-            Section("Magnetic field") {
-                MagneticFieldData()
-            }
+            MagneticFieldData()
             
             Section("Motion coprocessor") {
                 ListParam("Activity", param: activity.activity)
