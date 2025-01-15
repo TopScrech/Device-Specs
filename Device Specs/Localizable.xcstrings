@@ -279,7 +279,7 @@
     "BSSID" : {
       "shouldTranslate" : false
     },
-    "Bundle identifier" : {
+    "Bundle id" : {
 
     },
     "Button Shapes" : {

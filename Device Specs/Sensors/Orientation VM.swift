@@ -25,27 +25,27 @@ final class OrientationVM {
     }
     
     private func startFetchingMotionData() {
-        if motionManager.isDeviceMotionAvailable {
-            motionManager.deviceMotionUpdateInterval = 1
-            
-            motionManager.startDeviceMotionUpdates(to: .main) { motion, error in
-                guard let motion else {
-                    return
-                }
-                
-                withAnimation {
-                    let attitude = motion.attitude
-                    let acceleration = motion.userAcceleration
-                    
-                    self.roll = String(format: "%.2fg", attitude.roll)
-                    self.pitch = String(format: "%.2fg", attitude.pitch)
-                    self.yaw = String(format: "%.2fg", attitude.yaw)
-                    
-                    self.x = String(format: "%.2fg", acceleration.x)
-                    self.y = String(format: "%.2fg", acceleration.y)
-                    self.z = String(format: "%.2fg", acceleration.z)
-                }
+        guard motionManager.isDeviceMotionAvailable else {
+            return
+        }
+        
+        motionManager.deviceMotionUpdateInterval = 1
+        
+        motionManager.startDeviceMotionUpdates(to: .main) { motion, error in
+            guard let motion else {
+                return
             }
+            
+            let attitude = motion.attitude
+            let acceleration = motion.userAcceleration
+            
+            self.roll = String(format: "%.2fg", attitude.roll)
+            self.pitch = String(format: "%.2fg", attitude.pitch)
+            self.yaw = String(format: "%.2fg", attitude.yaw)
+            
+            self.x = String(format: "%.2fg", acceleration.x)
+            self.y = String(format: "%.2fg", acceleration.y)
+            self.z = String(format: "%.2fg", acceleration.z)
         }
     }
     
@@ -62,29 +62,27 @@ final class OrientationVM {
     }
     
     private func updateOrientation(_ deviceOrientation: UIDeviceOrientation) {
-        withAnimation {
-            switch deviceOrientation {
-            case .portrait:
-                orientation = "Portrait"
-                
-            case .portraitUpsideDown:
-                orientation = "Portrait Upside Down"
-                
-            case .landscapeLeft:
-                orientation = "Landscape Left"
-                
-            case .landscapeRight:
-                orientation = "Landscape Right"
-                
-            case .faceUp:
-                orientation = "Face Up"
-                
-            case .faceDown:
-                orientation = "Face Down"
-                
-            default:
-                orientation = "Unknown"
-            }
+        switch deviceOrientation {
+        case .portrait:
+            orientation = "Portrait"
+            
+        case .portraitUpsideDown:
+            orientation = "Portrait Upside Down"
+            
+        case .landscapeLeft:
+            orientation = "Landscape Left"
+            
+        case .landscapeRight:
+            orientation = "Landscape Right"
+            
+        case .faceUp:
+            orientation = "Face Up"
+            
+        case .faceDown:
+            orientation = "Face Down"
+            
+        default:
+            orientation = "Unknown"
         }
     }
     

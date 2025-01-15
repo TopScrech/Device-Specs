@@ -14,50 +14,52 @@ final class ActivityVM {
     }
     
     private func initialize() {
-        if CMMotionActivityManager.isActivityAvailable() {
-            motionActivityManager.startActivityUpdates(to: .main) { [weak self] activity in
-                self?.updateActivity(activity)
-            }
+        guard CMMotionActivityManager.isActivityAvailable() else {
+            return
+        }
+        
+        motionActivityManager.startActivityUpdates(to: .main) { [weak self] activity in
+            self?.updateActivity(activity)
         }
     }
     
     private func updateActivity(_ activityData: CMMotionActivity?) {
-        guard let activityData = activityData else { return }
+        guard let activityData else {
+            return
+        }
         
-        withAnimation {
-            switch true {
-            case activityData.walking:
-                activity = "Walking"
-                
-            case activityData.running:
-                activity = "Running"
-                
-            case activityData.automotive:
-                activity = "Automotive"
-                
-            case activityData.cycling:
-                activity = "Cycling"
-                
-            case activityData.stationary:
-                activity = "Stationary"
-                
-            default:
-                activity = "Unknown"
-            }
+        switch true {
+        case activityData.walking:
+            activity = "Walking"
             
-            switch activityData.confidence {
-            case .low:
-                confidence = "Low"
-                
-            case .medium:
-                confidence = "Medium"
-                
-            case .high:
-                confidence = "High"
-                
-            @unknown default:
-                confidence = "Unknown"
-            }
+        case activityData.running:
+            activity = "Running"
+            
+        case activityData.automotive:
+            activity = "Automotive"
+            
+        case activityData.cycling:
+            activity = "Cycling"
+            
+        case activityData.stationary:
+            activity = "Stationary"
+            
+        default:
+            activity = "Unknown"
+        }
+        
+        switch activityData.confidence {
+        case .low:
+            confidence = "Low"
+            
+        case .medium:
+            confidence = "Medium"
+            
+        case .high:
+            confidence = "High"
+            
+        @unknown default:
+            confidence = "Unknown"
         }
     }
     

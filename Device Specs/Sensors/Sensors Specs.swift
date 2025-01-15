@@ -82,7 +82,7 @@ struct SensorsSpecs: View {
             }
         }
         .navigationTitle("Sensors")
-        .numericTransition()
+        .monospacedDigit()
         .scrollIndicators(.never)
     }
 }
