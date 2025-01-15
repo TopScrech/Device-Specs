@@ -42,7 +42,7 @@ struct LocationSensors: View {
                     .secondary()
             }
             
-            ListParam("Heading accuracy", param: String(location.headingAccuracy) + "°")
+            ListParam("Heading accuracy", param: String(format: "%.2f", location.headingAccuracy) + "°")
         }
     }
 }
