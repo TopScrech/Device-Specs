@@ -4,6 +4,7 @@ struct AppSpecs: View {
     @Environment(AppVM.self) private var vm
     
     @State private var sheetPrivacy = false
+    @State private var sheetBh = false
     
     var body: some View {
         List {
@@ -37,6 +38,11 @@ struct AppSpecs: View {
             MailFeedback()
             
             Section {
+                Button("Powered by Bisquit.Host") {
+                    sheetBh = true
+                }
+                .safariCover($sheetBh, url: "https://bisquit.host")
+                
                 if let url = URL(string: "https://apps.apple.com/au/developer/sergei-saliukov/id1639409936") {
                     Link("More apps", destination: url)
                 }
