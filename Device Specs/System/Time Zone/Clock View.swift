@@ -11,6 +11,7 @@ struct ClockView: View {
                     Text(context.date, format: .dateTime.hour().minute().second())
                         .title3()
                 }
+                .numericTransition()
             }
         }
     }
