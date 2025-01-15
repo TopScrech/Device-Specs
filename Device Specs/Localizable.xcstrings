@@ -886,7 +886,7 @@
       "localizations" : {
         "ru" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Инверсия Цветов"
           }
         }
