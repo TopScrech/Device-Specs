@@ -69,7 +69,7 @@ struct HomeView: View {
                 AccessibilitySpecs()
             }
             
-#warning("To be released in v2.1")
+#warning("To be released in v2.2")
             //            SpecsLink("Health", icon: "facemask") {
             //                HealthSpecs()
             //            }
