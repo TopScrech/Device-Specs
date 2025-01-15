@@ -977,6 +977,7 @@
 			isa = PBXGroup;
 			children = (
 				F389A6D72CA368C600FF670F /* Warnings Section.swift */,
+				F3D1E7982C9C8444000C81FF /* Specs Link.swift */,
 				F389A6DA2CA36AAF00FF670F /* Warning Card.swift */,
 			);
 			path = Warnings;
@@ -1178,7 +1179,6 @@
 				F3E7EC432C676A14008CD17B /* Device Specs.entitlements */,
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
 				F389A6D92CA36AA600FF670F /* Warnings */,
-				F3D1E7982C9C8444000C81FF /* Specs Link.swift */,
 				F3D1E7AF2C9D5D96000C81FF /* Specs Button.swift */,
 				F3E7EC4F2C67B985008CD17B /* List Link.swift */,
 				F3E7EC4D2C67B985008CD17B /* Device Info.swift */,

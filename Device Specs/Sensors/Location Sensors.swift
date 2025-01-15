@@ -5,8 +5,8 @@ struct LocationSensors: View {
     
     var body: some View {
         Section("Location") {
-            ListParam("Latitude", param: String(location.latitude))
-            ListParam("Longitude", param: String(location.longitude))
+            ListParam("Latitude", param: String(format: "%.6f", location.latitude))
+            ListParam("Longitude", param: String(format: "%.6f", location.longitude))
             
             HStack {
                 Text("True heading")
