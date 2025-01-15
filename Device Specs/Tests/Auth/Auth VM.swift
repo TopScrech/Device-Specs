@@ -16,8 +16,7 @@ final class AuthVM {
         getBiometryType()
     }
     
-#warning("Reused func")
-    func getBiometryType() {
+    private func getBiometryType() {
         if #available(watchOS 11, *) {
             switch context.biometryType {
             case .faceID:
