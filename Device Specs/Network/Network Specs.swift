@@ -4,8 +4,8 @@ struct NetworkSpecs: View {
     @State private var network = NetworkVM()
     @Environment(ConnectivityVM.self) private var connectivity
     
-    var body: some View {
 #warning("Router differs from settings")
+    var body: some View {
         List {
             ListParam("Public IP address", param: network.publicIp)
             
