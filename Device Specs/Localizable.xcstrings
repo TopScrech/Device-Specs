@@ -806,17 +806,6 @@
     "Heading accuracy" : {
 
     },
-    "Health" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Здоровье"
-          }
-        }
-      }
-    },
     "Health Information" : {
 
     },
