@@ -3,6 +3,8 @@ import ScrechKit
 struct AppSpecs: View {
     @Environment(AppVM.self) private var vm
     
+    @State private var sheetPrivacy = false
+    
     var body: some View {
         List {
             Section {
@@ -25,9 +27,9 @@ struct AppSpecs: View {
             }
             
             VStack(alignment: .leading, spacing: 5) {
-                Text("Bundle identifier")
+                Text("Bundle id")
                 
-                Text(vm.bundleIdentifier)
+                Text(vm.bundleId)
                     .secondary()
             }
             
@@ -39,9 +41,10 @@ struct AppSpecs: View {
                     Link("More apps", destination: url)
                 }
                 
-                if let url = URL(string: "https://topscrech.dev/bisquit.host/privacy.pdf") {
-                    Link("Privacy Policy", destination: url)
+                Button("Privacy Policy") {
+                    sheetPrivacy = true
                 }
+                .safariCover($sheetPrivacy, url: "https://topscrech.dev/bisquit.host/privacy.pdf")
             }
 #endif
         }

@@ -20,7 +20,7 @@ final class AppVM {
         Bundle.main.object(forInfoDictionaryKey: "MinimumOSVersion") as? String ?? "Unknown"
     }
     
-    let bundleIdentifier = Bundle.main.bundleIdentifier?.description ?? "-"
+    let bundleId = Bundle.main.bundleIdentifier?.description ?? "-"
     
     var trigger = false
     
