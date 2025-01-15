@@ -185,6 +185,9 @@
 		F36FBCD42C944DA200F5E174 /* Accessibility VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */; };
 		F389A6D82CA368C600FF670F /* Warnings Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A6D72CA368C600FF670F /* Warnings Section.swift */; };
 		F389A6DB2CA36AAF00FF670F /* Warning Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A6DA2CA36AAF00FF670F /* Warning Card.swift */; };
+		F39404182D37D155000B9221 /* Location Sensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39404172D37D155000B9221 /* Location Sensors.swift */; };
+		F39404192D37D155000B9221 /* Location Sensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39404172D37D155000B9221 /* Location Sensors.swift */; };
+		F394041A2D37D155000B9221 /* Location Sensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39404172D37D155000B9221 /* Location Sensors.swift */; };
 		F3B7098B2CA1DD4F006ECAD1 /* Version View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B7098A2CA1DD4F006ECAD1 /* Version View.swift */; };
 		F3B709A12CA22E09006ECAD1 /* Locale List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A02CA22E09006ECAD1 /* Locale List.swift */; };
 		F3B709A22CA22E09006ECAD1 /* Locale List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A02CA22E09006ECAD1 /* Locale List.swift */; };
@@ -624,6 +627,7 @@
 		F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility VM.swift"; sourceTree = "<group>"; };
 		F389A6D72CA368C600FF670F /* Warnings Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Warnings Section.swift"; sourceTree = "<group>"; };
 		F389A6DA2CA36AAF00FF670F /* Warning Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Warning Card.swift"; sourceTree = "<group>"; };
+		F39404172D37D155000B9221 /* Location Sensors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location Sensors.swift"; sourceTree = "<group>"; };
 		F3B7098A2CA1DD4F006ECAD1 /* Version View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Version View.swift"; sourceTree = "<group>"; };
 		F3B709A02CA22E09006ECAD1 /* Locale List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale List.swift"; sourceTree = "<group>"; };
 		F3B709A62CA2BCE4006ECAD1 /* Health Kit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Health Kit.swift"; sourceTree = "<group>"; };
@@ -1265,6 +1269,7 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC652C67B985008CD17B /* Sensors Specs.swift */,
+				F39404172D37D155000B9221 /* Location Sensors.swift */,
 				F3D1E7C42C9D6B80000C81FF /* Magnetic Field */,
 				F3E7EC662C67B985008CD17B /* Location VM.swift */,
 				F3E7EC672C67B985008CD17B /* Orientation VM.swift */,
@@ -1795,6 +1800,7 @@
 				F36F7FF02CA0D4370007F120 /* Battery Level.swift in Sources */,
 				F3ECFE362CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
 				F36F80002CA0D4B90007F120 /* Processor Specs.swift in Sources */,
+				F39404192D37D155000B9221 /* Location Sensors.swift in Sources */,
 				F36F80012CA0D4B90007F120 /* Current Process.swift in Sources */,
 				F3ECFDFA2CA4B53200E72D41 /* L3 Cache.swift in Sources */,
 				F3B709E72CA2F1DC006ECAD1 /* Tech Node.swift in Sources */,
@@ -1879,6 +1885,7 @@
 				F3EA43B12C998787009820F6 /* Color Test List.swift in Sources */,
 				F3D1E77F2C9C0CD3000C81FF /* Battery Level.swift in Sources */,
 				F3291C592CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */,
+				F394041A2D37D155000B9221 /* Location Sensors.swift in Sources */,
 				F3291C532CAA02F200A15CAE /* Bluetooth Version.swift in Sources */,
 				F3B709BD2CA2C31E006ECAD1 /* Timezone VM.swift in Sources */,
 				F3F85EA32C94873000AE0A1D /* CPU Usage Chart.swift in Sources */,
@@ -2096,6 +2103,7 @@
 				F3C68B0C2CB123010021B6F3 /* Health Records Link.swift in Sources */,
 				F3ECFE392CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
 				F3CCB1E52CAF4518000F8207 /* Auth VM.swift in Sources */,
+				F39404182D37D155000B9221 /* Location Sensors.swift in Sources */,
 				F3E7EC8E2C67B985008CD17B /* Camera VM.swift in Sources */,
 				F3291C352CA9BC0F00A15CAE /* Font Row.swift in Sources */,
 				F3B709F72CA30470006ECAD1 /* Advertising Identifier.swift in Sources */,
