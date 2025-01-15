@@ -4,7 +4,7 @@ import Network
 @Observable
 final class NetworkVM {
     var networkinterface = ""
-    var router = ""
+    var destinationIpAddress = ""
     var subnetMask = ""
     var publicIp = ""
     
@@ -83,7 +83,7 @@ final class NetworkVM {
                             &dstHostname, socklen_t(dstHostname.count),
                             nil, socklen_t(0), NI_NUMERICHOST)
                 
-                router = String(cString: dstHostname)
+                destinationIpAddress = String(cString: dstHostname)
             }
             
             ptr = interface.ifa_next

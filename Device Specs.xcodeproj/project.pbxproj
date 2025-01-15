@@ -188,6 +188,10 @@
 		F39404182D37D155000B9221 /* Location Sensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39404172D37D155000B9221 /* Location Sensors.swift */; };
 		F39404192D37D155000B9221 /* Location Sensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39404172D37D155000B9221 /* Location Sensors.swift */; };
 		F394041A2D37D155000B9221 /* Location Sensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39404172D37D155000B9221 /* Location Sensors.swift */; };
+		F394041E2D37DD42000B9221 /* Router VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394041D2D37DD42000B9221 /* Router VM.swift */; };
+		F394041F2D37DD42000B9221 /* Router VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394041D2D37DD42000B9221 /* Router VM.swift */; };
+		F39404202D37DD42000B9221 /* Router VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394041D2D37DD42000B9221 /* Router VM.swift */; };
+		F39404212D37DE17000B9221 /* Router VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394041D2D37DD42000B9221 /* Router VM.swift */; };
 		F3B7098B2CA1DD4F006ECAD1 /* Version View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B7098A2CA1DD4F006ECAD1 /* Version View.swift */; };
 		F3B709A12CA22E09006ECAD1 /* Locale List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A02CA22E09006ECAD1 /* Locale List.swift */; };
 		F3B709A22CA22E09006ECAD1 /* Locale List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709A02CA22E09006ECAD1 /* Locale List.swift */; };
@@ -605,6 +609,7 @@
 		F389A6D72CA368C600FF670F /* Warnings Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Warnings Section.swift"; sourceTree = "<group>"; };
 		F389A6DA2CA36AAF00FF670F /* Warning Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Warning Card.swift"; sourceTree = "<group>"; };
 		F39404172D37D155000B9221 /* Location Sensors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location Sensors.swift"; sourceTree = "<group>"; };
+		F394041D2D37DD42000B9221 /* Router VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Router VM.swift"; sourceTree = "<group>"; };
 		F3B7098A2CA1DD4F006ECAD1 /* Version View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Version View.swift"; sourceTree = "<group>"; };
 		F3B709A02CA22E09006ECAD1 /* Locale List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale List.swift"; sourceTree = "<group>"; };
 		F3B709AD2CA2BE84006ECAD1 /* Timezone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timezone.swift; sourceTree = "<group>"; };
@@ -1191,6 +1196,7 @@
 			children = (
 				F3E7EC612C67B985008CD17B /* Network Specs.swift */,
 				F3E7EC632C67B985008CD17B /* Network VM.swift */,
+				F394041D2D37DD42000B9221 /* Router VM.swift */,
 				F3E7EC622C67B985008CD17B /* Connectivity VM.swift */,
 			);
 			path = Network;
@@ -1683,6 +1689,7 @@
 				F36F802D2CA0D6090007F120 /* Fake Home View.swift in Sources */,
 				F36F80092CA0D4D70007F120 /* Sensors Specs.swift in Sources */,
 				F36F80062CA0D4D00007F120 /* Accessibility Specs.swift in Sources */,
+				F394041E2D37DD42000B9221 /* Router VM.swift in Sources */,
 				F36F80072CA0D4D00007F120 /* Accessibility Param.swift in Sources */,
 				F36F80082CA0D4D00007F120 /* Accessibility Item.swift in Sources */,
 				F36F80262CA0D5A60007F120 /* Specs Button.swift in Sources */,
@@ -1775,6 +1782,7 @@
 				F3F85EB92C948D4300AE0A1D /* Sensors View.swift in Sources */,
 				F3291C3A2CA9BCE200A15CAE /* Font VM.swift in Sources */,
 				F3B709E32CA2F1DC006ECAD1 /* Tech Node.swift in Sources */,
+				F39404212D37DE17000B9221 /* Router VM.swift in Sources */,
 				F3CCB1EC2CAFBB57000F8207 /* Auth Test.swift in Sources */,
 				F3F85EB62C948D0200AE0A1D /* Orientation VM.swift in Sources */,
 				F3B709B72CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
@@ -1863,6 +1871,7 @@
 				F36FBC4D2C9319D600F5E174 /* Connectivity VM.swift in Sources */,
 				F3D1E7842C9C0D14000C81FF /* Battery State.swift in Sources */,
 				F3D1E7A82C9CD453000C81FF /* Current Process.swift in Sources */,
+				F39404202D37DD42000B9221 /* Router VM.swift in Sources */,
 				F3C3BDE22C92DB9D00BF91EE /* Memory Specs.swift in Sources */,
 				F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */,
 				F36FBC6C2C9413E100F5E174 /* CPU Usage Chart.swift in Sources */,
@@ -1953,6 +1962,7 @@
 				F3CCB1E32CAF44E9000F8207 /* Auth Test.swift in Sources */,
 				F3E7EC7C2C67B985008CD17B /* Altitude VM.swift in Sources */,
 				F3E7EC9E2C680561008CD17B /* Torch VM.swift in Sources */,
+				F394041F2D37DD42000B9221 /* Router VM.swift in Sources */,
 				F3ECFE3F2CA53AED00E72D41 /* Voltage.swift in Sources */,
 				F3D1E7BF2C9D6AC8000C81FF /* Magnetic VM.swift in Sources */,
 				F3D1E7832C9C0D14000C81FF /* Battery State.swift in Sources */,
