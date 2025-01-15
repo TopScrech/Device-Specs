@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct UWBTestView: View {
     @State private var vm = NearbyVM()
@@ -60,9 +60,7 @@ struct UWBTestView: View {
         .padding()
         .alert(vm.alertTitle, isPresented: $binding.showAlert) {
             Button("Go to Settings") {
-                if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
-                    UIApplication.shared.open(settingsURL, options: [:], completionHandler: nil)
-                }
+                openSettings()
             }
             
             Button("Cancel") {}

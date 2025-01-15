@@ -62,17 +62,6 @@ final class DeviceVM {
     }
 #endif
     
-#warning("Finish")
-    //    var deviceIcon: String {
-    //        switch Device.current.name {
-    //        case "iPhone":
-    //            ""
-    //
-    //        default:
-    //            ""
-    //        }
-    //    }
-    
     // Capabilities
     var isNfcAvailable: String {
 #if canImport(CoreNFC)
