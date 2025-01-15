@@ -75,7 +75,8 @@ struct HomeView: View {
                     Spacer()
                     
                     Image(systemName: "chevron.forward")
-                        .footnote(.bold)
+                        .bold()
+                        .footnote()
                         .foregroundStyle(.tertiary)
                 }
             }

@@ -1,11 +1,3 @@
-//
-//  UWBTestView.swift
-//  Device Specs
-//
-//  Created by Sergei Saliukov on 23/9/24.
-//
-
-
 import SwiftUI
 
 struct UWBTestView: View {
@@ -20,7 +12,8 @@ struct UWBTestView: View {
             }
             
             Text(vm.distance)
-                .title(.bold)
+                .bold()
+                .title()
                 .animation(.easeIn, value: vm.distance)
                 .numericTransition()
             
@@ -66,12 +59,12 @@ struct UWBTestView: View {
         }
         .padding()
         .alert(vm.alertTitle, isPresented: $binding.showAlert) {
-            #warning("Replace")
-//            Button("Go to Settings") {
-//                if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
-//                    UIApplication.shared.open(settingsURL, options: [:], completionHandler: nil)
-//                }
-//            }
+#warning("Replace")
+            //            Button("Go to Settings") {
+            //                if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
+            //                    UIApplication.shared.open(settingsURL, options: [:], completionHandler: nil)
+            //                }
+            //            }
             
             Button("Cancel") {}
         } message: {

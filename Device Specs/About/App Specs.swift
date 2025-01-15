@@ -18,11 +18,9 @@ struct AppSpecs: View {
                 vm.trigger.toggle()
             }
             
-            ListParam("App version", param: vm.version)
+            ListParam("App version", param: vm.versionAndBuild)
             
-            ListParam("Build", param: vm.build)
-            
-            if let date = vm.getAppInstallationDate?.formatted() {
+            if let date = vm.getAppInstallationDate {
                 ListParam("Installation date", param: date)
             }
             
@@ -47,6 +45,7 @@ struct AppSpecs: View {
             }
 #endif
         }
+        .navigationTitle("About")
 #if !os(visionOS)
         .sensoryFeedback(.impact, trigger: vm.trigger)
 #endif

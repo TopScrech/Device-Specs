@@ -21,12 +21,13 @@ struct SensorsView: View {
                     let trueHeading = location.trueHeading
                     
                     Image(systemName: "arrow.up.circle")
-                        .title3(.semibold)
+                        .semibold()
+                        .title3()
                         .foregroundColor((trueHeading >= 355 || trueHeading <= 5) ? .green : .primary)
                         .rotationEffect(.degrees(trueHeading))
                     
                     Text(String(format: "%.1f", trueHeading) + "°")
-                        .foregroundStyle(.secondary)
+                        .secondary()
                 }
                 
                 HStack {
@@ -37,12 +38,13 @@ struct SensorsView: View {
                     let magneticHeading = location.magneticHeading
                     
                     Image(systemName: "arrow.up.circle")
-                        .title3(.semibold)
+                        .semibold()
+                        .title3()
                         .foregroundColor((magneticHeading >= 355 || magneticHeading <= 5) ? .green : .primary)
                         .rotationEffect(.degrees(magneticHeading))
                     
                     Text(String(format: "%.1f", magneticHeading) + "°")
-                        .foregroundStyle(.secondary)
+                        .secondary()
                 }
                 
                 ListParam("Heading accuracy", param: String(location.headingAccuracy) + "°")

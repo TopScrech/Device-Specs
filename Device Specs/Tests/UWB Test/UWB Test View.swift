@@ -12,7 +12,8 @@ struct UWBTestView: View {
             }
             
             Text(vm.distance)
-                .title(.bold)
+                .bold()
+                .title()
                 .animation(.easeIn, value: vm.distance)
                 .numericTransition()
             

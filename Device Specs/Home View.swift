@@ -100,7 +100,8 @@ struct HomeView: View {
                     Spacer()
                     
                     Image(systemName: "chevron.forward")
-                        .caption(.semibold)
+                        .semibold()
+                        .caption()
                         .foregroundStyle(.tertiary)
                 }
                 .foregroundStyle(.foreground)
