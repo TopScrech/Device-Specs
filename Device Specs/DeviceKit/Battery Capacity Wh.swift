@@ -83,7 +83,7 @@ extension Device {
         case .iPadPro12Inch6: "40.88 Wh"
         case .iPadPro11M4: "31.29 Wh"
         case .iPadPro13M4: "38.99 Wh"
-        case .homePod: "-" //
+        case .homePod: "-"
 #elseif os(tvOS)
         case .appleTVHD: "410 Wh"
         case .appleTV4K: "-"
