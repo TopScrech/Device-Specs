@@ -371,17 +371,6 @@
     "Charging" : {
 
     },
-    "Clinical records" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Клинические записи"
-          }
-        }
-      }
-    },
     "Closed Captioning" : {
 
     },
