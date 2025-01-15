@@ -1,8 +1,9 @@
 import DeviceKit
 
-// Source: https://www.coolblue.nl/en/advice/which-iphones-are-waterproof.html
-// Source 2: https://support.apple.com/en-gb/109522#:~:text=Apple%20Watch%20Series%202%20and,are%20rated%20IP6X%20dust%20resistant.
-// Source 3: https://support.apple.com/en-us/108039
+// Sources:
+// https://www.coolblue.nl/en/advice/which-iphones-are-waterproof.html
+// https://support.apple.com/en-gb/109522#:~:text=Apple%20Watch%20Series%202%20and,are%20rated%20IP6X%20dust%20resistant.
+// https://support.apple.com/en-us/108039
 
 extension Device {
     var waterResistance: String {
