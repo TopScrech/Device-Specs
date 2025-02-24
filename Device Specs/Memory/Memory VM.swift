@@ -124,8 +124,6 @@ final class MemoryVM {
         let percentage = Double(value) / Double(total) * 100
         let percentageString = String(format: " (%.1f%%)", percentage)
         
-        let formattedValue = formatBytes(value)
-        
-        return formattedValue + percentageString
+        return formatBytes(value) + percentageString
     }
 }
