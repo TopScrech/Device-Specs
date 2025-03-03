@@ -2232,7 +2232,7 @@
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iMessage/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
+				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
@@ -2342,7 +2342,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2576,7 +2576,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Device Specs/Device Specs Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
+				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "This permission is required in order to test biometric authentication";
@@ -2624,7 +2624,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = tvOS/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
@@ -2689,7 +2689,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
