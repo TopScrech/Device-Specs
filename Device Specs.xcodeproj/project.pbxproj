@@ -444,7 +444,7 @@
 		F3ECFE3E2CA53AED00E72D41 /* Voltage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */; };
 		F3ECFE3F2CA53AED00E72D41 /* Voltage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */; };
 		F3ECFE402CA53AED00E72D41 /* Voltage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */; };
-		F3F85E8B2C94529A00AE0A1D /* Device Specs Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3F85E8A2C94529A00AE0A1D /* Device Specs Info.plist */; };
+		F3F85E8B2C94529A00AE0A1D /* iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3F85E8A2C94529A00AE0A1D /* iOS.plist */; };
 		F3F85E8E2C9452CB00AE0A1D /* Accessibility Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */; };
 		F3F85E912C9453AE00AE0A1D /* Accessibility Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6E2C941F6200F5E174 /* Accessibility Specs.swift */; };
 		F3F85E922C9453AE00AE0A1D /* Accessibility Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */; };
@@ -657,7 +657,7 @@
 		F3D1E7BB2C9D6A9C000C81FF /* Magnetic Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Magnetic Model.swift"; sourceTree = "<group>"; };
 		F3D1E7BE2C9D6AC8000C81FF /* Magnetic VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Magnetic VM.swift"; sourceTree = "<group>"; };
 		F3D1E7C12C9D6B13000C81FF /* Magnetic Field Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Magnetic Field Data.swift"; sourceTree = "<group>"; };
-		F3E7EC3A2C676A13008CD17B /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3E7EC3A2C676A13008CD17B /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs App.swift"; sourceTree = "<group>"; };
 		F3E7EC412C676A14008CD17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3E7EC432C676A14008CD17B /* Device Specs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Device Specs.entitlements"; sourceTree = "<group>"; };
@@ -706,7 +706,7 @@
 		F3ECFE2C2CA53AE200E72D41 /* Battery Capacity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Capacity.swift"; sourceTree = "<group>"; };
 		F3ECFE332CA53AE900E72D41 /* Battery Capacity Wh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Capacity Wh.swift"; sourceTree = "<group>"; };
 		F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voltage.swift; sourceTree = "<group>"; };
-		F3F85E8A2C94529A00AE0A1D /* Device Specs Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Device Specs Info.plist"; sourceTree = "<group>"; };
+		F3F85E8A2C94529A00AE0A1D /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.plist; sourceTree = "<group>"; };
 		F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility Param.swift"; sourceTree = "<group>"; };
 		F3F85E962C94858F00AE0A1D /* watchOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = watchOS.entitlements; sourceTree = "<group>"; };
 		F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wifi VM.swift"; sourceTree = "<group>"; };
@@ -1099,7 +1099,7 @@
 		F3E7EC3B2C676A13008CD17B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F3E7EC3A2C676A13008CD17B /* Device Specs.app */,
+				F3E7EC3A2C676A13008CD17B /* iOS.app */,
 				F3C3BDBD2C92D87C00BF91EE /* visionOS.app */,
 				F36FBCB12C9449A200F5E174 /* watchOS.app */,
 				F3F85ECD2C94AF5A00AE0A1D /* tvOS.app */,
@@ -1117,7 +1117,7 @@
 				F3187A512C898B40008FB911 /* Nav */,
 				F3E7EC412C676A14008CD17B /* Assets.xcassets */,
 				F36F803A2CA170870007F120 /* Localizable.xcstrings */,
-				F3F85E8A2C94529A00AE0A1D /* Device Specs Info.plist */,
+				F3F85E8A2C94529A00AE0A1D /* iOS.plist */,
 				F3E7EC432C676A14008CD17B /* Device Specs.entitlements */,
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
 				F389A6D92CA36AA600FF670F /* Warnings */,
@@ -1439,9 +1439,9 @@
 			productReference = F3C3BDBD2C92D87C00BF91EE /* visionOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F3E7EC392C676A13008CD17B /* Device Specs */ = {
+		F3E7EC392C676A13008CD17B /* iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F3E7EC492C676A14008CD17B /* Build configuration list for PBXNativeTarget "Device Specs" */;
+			buildConfigurationList = F3E7EC492C676A14008CD17B /* Build configuration list for PBXNativeTarget "iOS" */;
 			buildPhases = (
 				F3E7EC362C676A13008CD17B /* Sources */,
 				F3E7EC372C676A13008CD17B /* Frameworks */,
@@ -1455,7 +1455,7 @@
 				F36FBCBD2C9449A300F5E174 /* PBXTargetDependency */,
 				F36F7FD82CA0CFE00007F120 /* PBXTargetDependency */,
 			);
-			name = "Device Specs";
+			name = iOS;
 			packageProductDependencies = (
 				F3E7EC952C67B99E008CD17B /* ScrechKit */,
 				F3E7EC982C67B9A8008CD17B /* DeviceKit */,
@@ -1465,7 +1465,7 @@
 				F329E1832D37CA7D007BA9D1 /* SafariCover */,
 			);
 			productName = "Device Specs";
-			productReference = F3E7EC3A2C676A13008CD17B /* Device Specs.app */;
+			productReference = F3E7EC3A2C676A13008CD17B /* iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F3F85ECC2C94AF5A00AE0A1D /* tvOS */ = {
@@ -1589,7 +1589,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F3E7EC392C676A13008CD17B /* Device Specs */,
+				F3E7EC392C676A13008CD17B /* iOS */,
 				F36FBCB02C9449A200F5E174 /* watchOS */,
 				F3C3BDBC2C92D87C00BF91EE /* visionOS */,
 				F3F85ECC2C94AF5A00AE0A1D /* tvOS */,
@@ -1615,7 +1615,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F35279552C98DCB600AF581C /* Assets.xcassets in Resources */,
-				F3F85E8B2C94529A00AE0A1D /* Device Specs Info.plist in Resources */,
+				F3F85E8B2C94529A00AE0A1D /* iOS.plist in Resources */,
 				F36F803C2CA170870007F120 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2529,7 +2529,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Device Specs/Device Specs Info.plist";
+				INFOPLIST_FILE = "Device Specs/iOS.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
@@ -2579,7 +2579,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Device Specs/Device Specs Info.plist";
+				INFOPLIST_FILE = "Device Specs/iOS.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
@@ -2815,7 +2815,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F3E7EC492C676A14008CD17B /* Build configuration list for PBXNativeTarget "Device Specs" */ = {
+		F3E7EC492C676A14008CD17B /* Build configuration list for PBXNativeTarget "iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F3E7EC4A2C676A14008CD17B /* Debug */,

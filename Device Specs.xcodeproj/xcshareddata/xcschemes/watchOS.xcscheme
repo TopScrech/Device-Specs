@@ -30,8 +30,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F3E7EC392C676A13008CD17B"
-               BuildableName = "Device Specs.app"
-               BlueprintName = "Device Specs"
+               BuildableName = "iOS.app"
+               BlueprintName = "iOS"
                ReferencedContainer = "container:Device Specs.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
