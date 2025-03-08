@@ -248,6 +248,26 @@
         }
       }
     },
+    "Black" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Черный"
+          }
+        }
+      }
+    },
+    "Blue" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Синий"
+          }
+        }
+      }
+    },
     "Bluetooth" : {
       "shouldTranslate" : false
     },
@@ -758,6 +778,16 @@
     },
     "Grayscale" : {
 
+    },
+    "Green" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зеленый"
+          }
+        }
+      }
     },
     "Grouping separator" : {
       "localizations" : {
@@ -1386,6 +1416,16 @@
         }
       }
     },
+    "Red" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Красный"
+          }
+        }
+      }
+    },
     "Reduce Motion" : {
       "localizations" : {
         "ru" : {
@@ -1925,6 +1965,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Водонепроницаемость"
+          }
+        }
+      }
+    },
+    "White" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Белый"
           }
         }
       }
