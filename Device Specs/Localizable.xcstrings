@@ -183,6 +183,12 @@
     "Autoupdating current" : {
 
     },
+    "Available for important usage" : {
+
+    },
+    "Available for opportunistic usage" : {
+
+    },
     "Available numbering systems" : {
       "localizations" : {
         "ru" : {
@@ -278,6 +284,16 @@
     },
     "BSSID" : {
       "shouldTranslate" : false
+    },
+    "Build" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сборка"
+          }
+        }
+      }
     },
     "Bundle id" : {
 
@@ -563,6 +579,9 @@
           }
         }
       }
+    },
+    "Destination IP address" : {
+
     },
     "Device" : {
       "localizations" : {
@@ -1124,6 +1143,9 @@
     },
     "Neural Engine" : {
       "shouldTranslate" : false
+    },
+    "Next transition" : {
+
     },
     "No" : {
 
@@ -1739,6 +1761,9 @@
           }
         }
       }
+    },
+    "Time offset" : {
+
     },
     "Time zone" : {
       "localizations" : {
