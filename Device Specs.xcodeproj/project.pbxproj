@@ -372,6 +372,7 @@
 		F3EA43B12C998787009820F6 /* Color Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43B02C998787009820F6 /* Color Test List.swift */; };
 		F3EA43B22C998787009820F6 /* Color Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43B02C998787009820F6 /* Color Test List.swift */; };
 		F3EA43B32C998787009820F6 /* Color Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43B02C998787009820F6 /* Color Test List.swift */; };
+		F3EA491F2D7D821000887109 /* MetricKit Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA491E2D7D821000887109 /* MetricKit Manager.swift */; };
 		F3ECFDDE2CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFDDD2CA4B0D000E72D41 /* Max Clock Speed.swift */; };
 		F3ECFDDF2CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFDDD2CA4B0D000E72D41 /* Max Clock Speed.swift */; };
 		F3ECFDE02CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFDDD2CA4B0D000E72D41 /* Max Clock Speed.swift */; };
@@ -694,6 +695,7 @@
 		F3E7EC9D2C680561008CD17B /* Torch VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Torch VM.swift"; sourceTree = "<group>"; };
 		F3EA43AE2C998759009820F6 /* Torch Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Torch Test.swift"; sourceTree = "<group>"; };
 		F3EA43B02C998787009820F6 /* Color Test List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Test List.swift"; sourceTree = "<group>"; };
+		F3EA491E2D7D821000887109 /* MetricKit Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MetricKit Manager.swift"; sourceTree = "<group>"; };
 		F3ECFDDD2CA4B0D000E72D41 /* Max Clock Speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Max Clock Speed.swift"; sourceTree = "<group>"; };
 		F3ECFDE42CA4B3A700E72D41 /* L1 Instruction Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "L1 Instruction Cache.swift"; sourceTree = "<group>"; };
 		F3ECFDEB2CA4B3E500E72D41 /* L1 Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "L1 Cache.swift"; sourceTree = "<group>"; };
@@ -1114,6 +1116,7 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */,
+				F3EA491E2D7D821000887109 /* MetricKit Manager.swift */,
 				F3187A512C898B40008FB911 /* Nav */,
 				F3E7EC412C676A14008CD17B /* Assets.xcassets */,
 				F36F803A2CA170870007F120 /* Localizable.xcstrings */,
@@ -2049,6 +2052,7 @@
 				F3E7EC3E2C676A13008CD17B /* Device Specs App.swift in Sources */,
 				F3D1E78F2C9C12D6000C81FF /* System VM.swift in Sources */,
 				F3D1E7AE2C9D5BF8000C81FF /* App VM.swift in Sources */,
+				F3EA491F2D7D821000887109 /* MetricKit Manager.swift in Sources */,
 				F3C68AC62CAFCB020021B6F3 /* Apple Intelligence Support.swift in Sources */,
 				F36FBC6F2C941F6200F5E174 /* Accessibility Specs.swift in Sources */,
 				F36FBC642C9353FF00F5E174 /* Processor Specs.swift in Sources */,
