@@ -183,6 +183,12 @@
     "Autoupdating current" : {
 
     },
+    "Available for important usage" : {
+
+    },
+    "Available for opportunistic usage" : {
+
+    },
     "Available numbering systems" : {
       "localizations" : {
         "ru" : {
@@ -242,6 +248,26 @@
         }
       }
     },
+    "Black" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Черный"
+          }
+        }
+      }
+    },
+    "Blue" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Синий"
+          }
+        }
+      }
+    },
     "Bluetooth" : {
       "shouldTranslate" : false
     },
@@ -278,6 +304,16 @@
     },
     "BSSID" : {
       "shouldTranslate" : false
+    },
+    "Build" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сборка"
+          }
+        }
+      }
     },
     "Bundle id" : {
 
@@ -564,6 +600,9 @@
         }
       }
     },
+    "Destination IP address" : {
+
+    },
     "Device" : {
       "localizations" : {
         "ru" : {
@@ -739,6 +778,16 @@
     },
     "Grayscale" : {
 
+    },
+    "Green" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зеленый"
+          }
+        }
+      }
     },
     "Grouping separator" : {
       "localizations" : {
@@ -1125,6 +1174,9 @@
     "Neural Engine" : {
       "shouldTranslate" : false
     },
+    "Next transition" : {
+
+    },
     "No" : {
 
     },
@@ -1360,6 +1412,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Трассировка лучей"
+          }
+        }
+      }
+    },
+    "Red" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Красный"
           }
         }
       }
@@ -1740,6 +1802,9 @@
         }
       }
     },
+    "Time offset" : {
+
+    },
     "Time zone" : {
       "localizations" : {
         "ru" : {
@@ -1900,6 +1965,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Водонепроницаемость"
+          }
+        }
+      }
+    },
+    "White" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Белый"
           }
         }
       }

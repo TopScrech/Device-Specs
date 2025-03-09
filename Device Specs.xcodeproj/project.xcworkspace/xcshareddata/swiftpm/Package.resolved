@@ -1,5 +1,5 @@
 {
-  "originHash" : "a7946fb256f96408ad56cc7e42838f8e8f22c184c72c69b054ffd182e63876ce",
+  "originHash" : "3711d69d92ff700ee340aadd506ad37308cbffbc08b6fb556df8abb68e8af794",
   "pins" : [
     {
       "identity" : "devicekit",
@@ -61,7 +61,7 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "0ef7decabddc8b5bb0f8bb7fe494b4b07b2f807a"
+        "revision" : "52b6d52d1f3e0ab63d9fee40c7c3a40ff173cf02"
       }
     }
   ],

@@ -68,6 +68,10 @@
 		F329E1842D37CA7D007BA9D1 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F329E1832D37CA7D007BA9D1 /* SafariCover */; };
 		F329E1862D37CB1E007BA9D1 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F329E1852D37CB1E007BA9D1 /* SafariCover */; };
 		F329E18A2D37CC60007BA9D1 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F329E1892D37CC60007BA9D1 /* SafariCover */; };
+		F3329CA22D7D0E97003B4E68 /* Color Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3329CA12D7D0E97003B4E68 /* Color Test.swift */; };
+		F3329CA32D7D0E97003B4E68 /* Color Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3329CA12D7D0E97003B4E68 /* Color Test.swift */; };
+		F3329CA42D7D0E97003B4E68 /* Color Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3329CA12D7D0E97003B4E68 /* Color Test.swift */; };
+		F3329CA52D7D0E97003B4E68 /* Color Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3329CA12D7D0E97003B4E68 /* Color Test.swift */; };
 		F33FEE532C982A1800214288 /* Unit Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE522C982A1800214288 /* Unit Tests.swift */; };
 		F33FEE582C982EC200214288 /* Nav Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE572C982EC200214288 /* Nav Links.swift */; };
 		F33FEE5A2C982FF000214288 /* System Report VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE592C982FF000214288 /* System Report VM.swift */; };
@@ -440,7 +444,7 @@
 		F3ECFE3E2CA53AED00E72D41 /* Voltage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */; };
 		F3ECFE3F2CA53AED00E72D41 /* Voltage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */; };
 		F3ECFE402CA53AED00E72D41 /* Voltage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */; };
-		F3F85E8B2C94529A00AE0A1D /* Device Specs Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3F85E8A2C94529A00AE0A1D /* Device Specs Info.plist */; };
+		F3F85E8B2C94529A00AE0A1D /* iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3F85E8A2C94529A00AE0A1D /* iOS.plist */; };
 		F3F85E8E2C9452CB00AE0A1D /* Accessibility Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */; };
 		F3F85E912C9453AE00AE0A1D /* Accessibility Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6E2C941F6200F5E174 /* Accessibility Specs.swift */; };
 		F3F85E922C9453AE00AE0A1D /* Accessibility Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */; };
@@ -570,6 +574,7 @@
 		F3291C572CAA0C0300A15CAE /* Water Resistance Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Water Resistance Rating.swift"; sourceTree = "<group>"; };
 		F3291C5E2CAA0CFB00A15CAE /* Water Resistance Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Water Resistance Description.swift"; sourceTree = "<group>"; };
 		F3291C6C2CAA9A3B00A15CAE /* Neural Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Neural Engine.swift"; sourceTree = "<group>"; };
+		F3329CA12D7D0E97003B4E68 /* Color Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Test.swift"; sourceTree = "<group>"; };
 		F33FEE522C982A1800214288 /* Unit Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit Tests.swift"; sourceTree = "<group>"; };
 		F33FEE572C982EC200214288 /* Nav Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Links.swift"; sourceTree = "<group>"; };
 		F33FEE592C982FF000214288 /* System Report VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System Report VM.swift"; sourceTree = "<group>"; };
@@ -652,7 +657,7 @@
 		F3D1E7BB2C9D6A9C000C81FF /* Magnetic Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Magnetic Model.swift"; sourceTree = "<group>"; };
 		F3D1E7BE2C9D6AC8000C81FF /* Magnetic VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Magnetic VM.swift"; sourceTree = "<group>"; };
 		F3D1E7C12C9D6B13000C81FF /* Magnetic Field Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Magnetic Field Data.swift"; sourceTree = "<group>"; };
-		F3E7EC3A2C676A13008CD17B /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3E7EC3A2C676A13008CD17B /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs App.swift"; sourceTree = "<group>"; };
 		F3E7EC412C676A14008CD17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3E7EC432C676A14008CD17B /* Device Specs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Device Specs.entitlements"; sourceTree = "<group>"; };
@@ -701,7 +706,7 @@
 		F3ECFE2C2CA53AE200E72D41 /* Battery Capacity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Capacity.swift"; sourceTree = "<group>"; };
 		F3ECFE332CA53AE900E72D41 /* Battery Capacity Wh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Capacity Wh.swift"; sourceTree = "<group>"; };
 		F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voltage.swift; sourceTree = "<group>"; };
-		F3F85E8A2C94529A00AE0A1D /* Device Specs Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Device Specs Info.plist"; sourceTree = "<group>"; };
+		F3F85E8A2C94529A00AE0A1D /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.plist; sourceTree = "<group>"; };
 		F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility Param.swift"; sourceTree = "<group>"; };
 		F3F85E962C94858F00AE0A1D /* watchOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = watchOS.entitlements; sourceTree = "<group>"; };
 		F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wifi VM.swift"; sourceTree = "<group>"; };
@@ -1094,7 +1099,7 @@
 		F3E7EC3B2C676A13008CD17B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F3E7EC3A2C676A13008CD17B /* Device Specs.app */,
+				F3E7EC3A2C676A13008CD17B /* iOS.app */,
 				F3C3BDBD2C92D87C00BF91EE /* visionOS.app */,
 				F36FBCB12C9449A200F5E174 /* watchOS.app */,
 				F3F85ECD2C94AF5A00AE0A1D /* tvOS.app */,
@@ -1112,7 +1117,7 @@
 				F3187A512C898B40008FB911 /* Nav */,
 				F3E7EC412C676A14008CD17B /* Assets.xcassets */,
 				F36F803A2CA170870007F120 /* Localizable.xcstrings */,
-				F3F85E8A2C94529A00AE0A1D /* Device Specs Info.plist */,
+				F3F85E8A2C94529A00AE0A1D /* iOS.plist */,
 				F3E7EC432C676A14008CD17B /* Device Specs.entitlements */,
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
 				F389A6D92CA36AA600FF670F /* Warnings */,
@@ -1223,6 +1228,7 @@
 			children = (
 				F3EA43B02C998787009820F6 /* Color Test List.swift */,
 				F3E7EC6D2C67B985008CD17B /* Color View.swift */,
+				F3329CA12D7D0E97003B4E68 /* Color Test.swift */,
 			);
 			path = "Color Tests";
 			sourceTree = "<group>";
@@ -1433,9 +1439,9 @@
 			productReference = F3C3BDBD2C92D87C00BF91EE /* visionOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F3E7EC392C676A13008CD17B /* Device Specs */ = {
+		F3E7EC392C676A13008CD17B /* iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F3E7EC492C676A14008CD17B /* Build configuration list for PBXNativeTarget "Device Specs" */;
+			buildConfigurationList = F3E7EC492C676A14008CD17B /* Build configuration list for PBXNativeTarget "iOS" */;
 			buildPhases = (
 				F3E7EC362C676A13008CD17B /* Sources */,
 				F3E7EC372C676A13008CD17B /* Frameworks */,
@@ -1449,7 +1455,7 @@
 				F36FBCBD2C9449A300F5E174 /* PBXTargetDependency */,
 				F36F7FD82CA0CFE00007F120 /* PBXTargetDependency */,
 			);
-			name = "Device Specs";
+			name = iOS;
 			packageProductDependencies = (
 				F3E7EC952C67B99E008CD17B /* ScrechKit */,
 				F3E7EC982C67B9A8008CD17B /* DeviceKit */,
@@ -1459,7 +1465,7 @@
 				F329E1832D37CA7D007BA9D1 /* SafariCover */,
 			);
 			productName = "Device Specs";
-			productReference = F3E7EC3A2C676A13008CD17B /* Device Specs.app */;
+			productReference = F3E7EC3A2C676A13008CD17B /* iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F3F85ECC2C94AF5A00AE0A1D /* tvOS */ = {
@@ -1533,7 +1539,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					F36F7FCA2CA0CFDF0007F120 = {
 						CreatedOnToolsVersion = 16.0;
@@ -1583,7 +1589,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F3E7EC392C676A13008CD17B /* Device Specs */,
+				F3E7EC392C676A13008CD17B /* iOS */,
 				F36FBCB02C9449A200F5E174 /* watchOS */,
 				F3C3BDBC2C92D87C00BF91EE /* visionOS */,
 				F3F85ECC2C94AF5A00AE0A1D /* tvOS */,
@@ -1609,7 +1615,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F35279552C98DCB600AF581C /* Assets.xcassets in Resources */,
-				F3F85E8B2C94529A00AE0A1D /* Device Specs Info.plist in Resources */,
+				F3F85E8B2C94529A00AE0A1D /* iOS.plist in Resources */,
 				F36F803C2CA170870007F120 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1761,6 +1767,7 @@
 				F3B709A52CA22E09006ECAD1 /* Locale List.swift in Sources */,
 				F3ECFDDF2CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */,
 				F3B709EF2CA2FCAB006ECAD1 /* Proximity VM.swift in Sources */,
+				F3329CA22D7D0E97003B4E68 /* Color Test.swift in Sources */,
 				F36F7FF12CA0D4370007F120 /* Battery State.swift in Sources */,
 				F36F7FE62CA0D0CF0007F120 /* Home View.swift in Sources */,
 				F36F7FE92CA0D2190007F120 /* App VM.swift in Sources */,
@@ -1821,6 +1828,7 @@
 				F3D1E78D2C9C12D6000C81FF /* System VM.swift in Sources */,
 				F3ECFDE62CA4B3A700E72D41 /* L1 Instruction Cache.swift in Sources */,
 				F3F85EA42C94873000AE0A1D /* Processor VM.swift in Sources */,
+				F3329CA32D7D0E97003B4E68 /* Color Test.swift in Sources */,
 				F3B709B02CA2BE84006ECAD1 /* Timezone.swift in Sources */,
 				F31F08C22D2A79B500B156EC /* Apple Intelligence Support.swift in Sources */,
 				F3B709DD2CA2CF39006ECAD1 /* Haptic Button.swift in Sources */,
@@ -1970,6 +1978,7 @@
 				F3B709C72CA2C5E3006ECAD1 /* Locale VM.swift in Sources */,
 				F389A6DB2CA36AAF00FF670F /* Warning Card.swift in Sources */,
 				F36FBC6B2C9413E100F5E174 /* CPU Usage Chart.swift in Sources */,
+				F3329CA42D7D0E97003B4E68 /* Color Test.swift in Sources */,
 				F3E7EC7E2C67B985008CD17B /* Nearby VM.swift in Sources */,
 				F3E7EC7F2C67B985008CD17B /* Memory VM.swift in Sources */,
 				F3B709B92CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
@@ -2067,6 +2076,7 @@
 				F3F85EFE2C95875C00AE0A1D /* Memory Specs.swift in Sources */,
 				F3291C582CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */,
 				F3F85EFF2C95875C00AE0A1D /* Memory VM.swift in Sources */,
+				F3329CA52D7D0E97003B4E68 /* Color Test.swift in Sources */,
 				F3D1E78B2C9C12C2000C81FF /* System Specs.swift in Sources */,
 				F3D1E7902C9C12D6000C81FF /* System VM.swift in Sources */,
 				F3B709C32CA2C5E3006ECAD1 /* Locale VM.swift in Sources */,
@@ -2195,7 +2205,6 @@
 				CODE_SIGN_ENTITLEMENTS = iMessage/iMessage.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iMessage/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
@@ -2210,7 +2219,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.3;
+				MARKETING_VERSION = 2.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.debug.iMessage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -2229,10 +2238,9 @@
 				CODE_SIGN_ENTITLEMENTS = iMessage/iMessage.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iMessage/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
+				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
@@ -2244,7 +2252,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.3;
+				MARKETING_VERSION = 2.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.iMessage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -2265,7 +2273,6 @@
 				CODE_SIGN_ENTITLEMENTS = watchOS/watchOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = watchOS/Info.plist;
@@ -2281,7 +2288,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.3;
+				MARKETING_VERSION = 2.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.debug.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -2301,7 +2308,6 @@
 				CODE_SIGN_ENTITLEMENTS = watchOS/watchOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = watchOS/Info.plist;
@@ -2317,7 +2323,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.3;
+				MARKETING_VERSION = 2.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -2338,17 +2344,16 @@
 				CODE_SIGN_ENTITLEMENTS = visionOS/visionOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.3;
+				MARKETING_VERSION = 2.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = xros;
@@ -2368,7 +2373,6 @@
 				CODE_SIGN_ENTITLEMENTS = visionOS/visionOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
@@ -2378,7 +2382,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.3;
+				MARKETING_VERSION = 2.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = xros;
@@ -2428,6 +2432,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -2492,6 +2497,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -2520,11 +2526,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Device Specs/Device Specs Info.plist";
+				INFOPLIST_FILE = "Device Specs/iOS.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
@@ -2549,7 +2554,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 2.1.3;
+				MARKETING_VERSION = 2.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.debug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -2571,12 +2576,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Device Specs/Device Specs Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
+				INFOPLIST_FILE = "Device Specs/iOS.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "This permission is required in order to test biometric authentication";
@@ -2600,7 +2604,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 2.1.3;
+				MARKETING_VERSION = 2.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -2620,11 +2624,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = tvOS/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
@@ -2632,7 +2635,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.3;
+				MARKETING_VERSION = 2.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -2650,7 +2653,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = tvOS/Info.plist;
@@ -2662,7 +2664,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.3;
+				MARKETING_VERSION = 2.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -2684,12 +2686,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2697,7 +2698,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 2.1.3;
+				MARKETING_VERSION = 2.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "Device Specs";
 				SDKROOT = macosx;
@@ -2716,7 +2717,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2729,7 +2729,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 2.1.3;
+				MARKETING_VERSION = 2.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "Device Specs";
 				SDKROOT = macosx;
@@ -2745,7 +2745,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
@@ -2765,7 +2764,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
@@ -2817,7 +2815,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F3E7EC492C676A14008CD17B /* Build configuration list for PBXNativeTarget "Device Specs" */ = {
+		F3E7EC492C676A14008CD17B /* Build configuration list for PBXNativeTarget "iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F3E7EC4A2C676A14008CD17B /* Debug */,
