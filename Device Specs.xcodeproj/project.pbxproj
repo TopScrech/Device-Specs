@@ -83,7 +83,6 @@
 		F351EB312CC197CF001F424F /* Clock View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* Clock View.swift */; };
 		F351EB322CC197CF001F424F /* Clock View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* Clock View.swift */; };
 		F351EB332CC197CF001F424F /* Clock View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* Clock View.swift */; };
-		F35279552C98DCB600AF581C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35279542C98DCB600AF581C /* Assets.xcassets */; };
 		F357214D2C98584100967ACA /* ScrechCam in Frameworks */ = {isa = PBXBuildFile; productRef = F357214C2C98584100967ACA /* ScrechCam */; };
 		F357214F2C985FFB00967ACA /* Camera Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357214E2C985FFB00967ACA /* Camera Test.swift */; };
 		F358F0232D2C185800BCC07B /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = F358F0222D2C185800BCC07B /* LaunchAtLogin */; };
@@ -274,6 +273,8 @@
 		F3C68AD42CAFCE750021B6F3 /* MailCover in Frameworks */ = {isa = PBXBuildFile; productRef = F3C68AD32CAFCE750021B6F3 /* MailCover */; };
 		F3C68AE72CAFD7C80021B6F3 /* HealthyKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3C68AE62CAFD7C80021B6F3 /* HealthyKit */; };
 		F3C68B092CB091F40021B6F3 /* HealthyKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3C68B082CB091F40021B6F3 /* HealthyKit */; };
+		F3C8E5542D7E2EF000644E47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
+		F3C8E5552D7E318E00644E47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
 		F3CCB1E32CAF44E9000F8207 /* Auth Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E12CAF44E9000F8207 /* Auth Test.swift */; };
 		F3CCB1E52CAF4518000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
 		F3CCB1E92CAF4992000F8207 /* Auth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB1E42CAF4518000F8207 /* Auth VM.swift */; };
@@ -499,7 +500,6 @@
 		F3F85F042C95880600AE0A1D /* Wifi VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */; };
 		F3F85F062C9588BE00AE0A1D /* Network Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F052C9588BE00AE0A1D /* Network Specs.swift */; };
 		F3F85F112C962C4600AE0A1D /* macOS App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F102C962C4600AE0A1D /* macOS App.swift */; };
-		F3F85F152C962C4700AE0A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F85F142C962C4700AE0A1D /* Assets.xcassets */; };
 		F3F85F212C962CBD00AE0A1D /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F202C962CBD00AE0A1D /* App Container.swift */; };
 		F3F85F232C962CE600AE0A1D /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F222C962CE600AE0A1D /* Battery Specs.swift */; };
 		F3F85F252C962E7200AE0A1D /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F242C962E7200AE0A1D /* Battery VM.swift */; };
@@ -581,7 +581,6 @@
 		F33FEE5C2C98386E00214288 /* Param.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Param.swift; sourceTree = "<group>"; };
 		F33FEE5E2C9838AE00214288 /* Spec Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spec Item.swift"; sourceTree = "<group>"; };
 		F351EB2E2CC197CF001F424F /* Clock View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Clock View.swift"; sourceTree = "<group>"; };
-		F35279542C98DCB600AF581C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F357214E2C985FFB00967ACA /* Camera Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera Test.swift"; sourceTree = "<group>"; };
 		F358F0242D2C187000BCC07B /* Settings View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings View.swift"; sourceTree = "<group>"; };
 		F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iMessage.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -727,7 +726,6 @@
 		F3F85F092C959DE300AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3F85F0E2C962C4600AE0A1D /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F85F102C962C4600AE0A1D /* macOS App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "macOS App.swift"; sourceTree = "<group>"; };
-		F3F85F142C962C4700AE0A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3F85F192C962C4700AE0A1D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F3F85F1D2C962C6600AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3F85F202C962CBD00AE0A1D /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
@@ -938,7 +936,6 @@
 				F36FBCCF2C944B5000F5E174 /* App Container.swift */,
 				F3F85EC82C94AED800AE0A1D /* Info.plist */,
 				F3F85E962C94858F00AE0A1D /* watchOS.entitlements */,
-				F35279542C98DCB600AF581C /* Assets.xcassets */,
 				F36FBCB52C9449A300F5E174 /* Home View.swift */,
 				F3F85EC02C948F9D00AE0A1D /* Test List.swift */,
 				F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */,
@@ -1354,7 +1351,6 @@
 				F3F85F102C962C4600AE0A1D /* macOS App.swift */,
 				F35721502C98637100967ACA /* Navigation */,
 				F3F85F1D2C962C6600AE0A1D /* Info.plist */,
-				F3F85F142C962C4700AE0A1D /* Assets.xcassets */,
 				F3F85F192C962C4700AE0A1D /* macOS.entitlements */,
 				F33FEE5C2C98386E00214288 /* Param.swift */,
 				F33FEE5E2C9838AE00214288 /* Spec Item.swift */,
@@ -1614,8 +1610,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F35279552C98DCB600AF581C /* Assets.xcassets in Resources */,
 				F3F85E8B2C94529A00AE0A1D /* iOS.plist in Resources */,
+				F3C8E5542D7E2EF000644E47 /* Assets.xcassets in Resources */,
 				F36F803C2CA170870007F120 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1651,8 +1647,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3C8E5552D7E318E00644E47 /* Assets.xcassets in Resources */,
 				F36F803F2CA170870007F120 /* Localizable.xcstrings in Resources */,
-				F3F85F152C962C4700AE0A1D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
