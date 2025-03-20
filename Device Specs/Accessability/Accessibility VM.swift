@@ -6,12 +6,10 @@ final class AccessibilityVM {
     
     var filteredParams: [AccessibilityParam] {
         if filter.isEmpty {
-            return accessibilityParams
+            accessibilityParams
         } else {
-            let prompt = filter.lowercased()
-            
-            return accessibilityParams.filter {
-                "\($0.name)".lowercased().contains(prompt)
+            accessibilityParams.filter {
+                "\($0.name)".localizedStandardContains(filter)
             }
         }
     }

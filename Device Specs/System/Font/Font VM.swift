@@ -15,7 +15,7 @@ final class FontVM {
             fontFamilies
         } else {
             fontFamilies.filter {
-                $0.lowercased().contains(searchText.lowercased())
+                $0.localizedStandardContains(searchText)
             }
         }
     }
