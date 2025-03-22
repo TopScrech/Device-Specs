@@ -4,7 +4,7 @@ import SwiftUI
 import ImagePlayground
 #endif
 
-@available(iOS 18, visionOS 2.4, *)
+@available(iOS 18.1, visionOS 2.4, *)
 struct AppleIntelligenceSupport: View {
     
 #if canImport(ImagePlayground)
@@ -32,7 +32,7 @@ struct AppleIntelligenceSupport: View {
     }
 }
 
-@available(iOS 18, visionOS 2.4, *)
+@available(iOS 18.1, visionOS 2.4, *)
 #Preview {
     AppleIntelligenceSupport()
 }
