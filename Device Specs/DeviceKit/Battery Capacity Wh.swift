@@ -83,12 +83,8 @@ extension Device {
         case .iPadPro12Inch6: "40.88 Wh"
         case .iPadPro11M4: "31.29 Wh"
         case .iPadPro13M4: "38.99 Wh"
-        case .homePod: "-"
 #elseif os(tvOS)
         case .appleTVHD: "410 Wh"
-        case .appleTV4K: "-"
-        case .appleTV4K2: "-"
-        case .appleTV4K3: "-"
 #elseif os(watchOS)
         case .appleWatchSeries0_38mm, .appleWatchSeries1_38mm: "0.78 Wh"
         case .appleWatchSeries0_42mm, .appleWatchSeries1_42mm: "0.93 Wh"
@@ -104,19 +100,9 @@ extension Device {
         case .appleWatchSeries6_44mm: "1.17 Wh"
         case .appleWatchSeries7_41mm: "1.094 Wh"
         case .appleWatchSeries7_45mm: "1.189 Wh"
-        case .appleWatchSeries8_41mm: "-"
-        case .appleWatchSeries8_45mm: "-"
-        case .appleWatchSE2_40mm: "-"
-        case .appleWatchSE2_44mm: "-"
-        case .appleWatchUltra: "-"
-        case .appleWatchSeries9_41mm: "-"
-        case .appleWatchSeries9_45mm: "-"
-        case .appleWatchUltra2: "-"
-        case .appleWatchSeries10_42mm: "-"
-        case .appleWatchSeries10_46mm: "-"
 #endif
-        case .simulator: "-"
         case .unknown(let device): "Unknown device \(device.description)"
+        default: "-"
         }
     }
 }

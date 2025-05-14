@@ -26,7 +26,6 @@ extension Device {
         case .iPhone13, .iPhone13Mini, .iPhone13ProMax: "-"
         case .iPhone13Pro: "3.87 V"
         case .iPhoneSE3: "3.88 V"
-            
         case .iPhone14, .iPhone14Pro: "3.87 V"
         case .iPhone14Plus, .iPhone14ProMax: "3.86 V"
         case .iPhone15, .iPhone15Plus, .iPhone15Pro, .iPhone15ProMax: "-"
@@ -54,16 +53,10 @@ extension Device {
         case .iPadPro12Inch4: "3.78 V"
         case .iPadPro11Inch3: "3.81 V"
         case .iPadPro12Inch5: "3.82 V"
-        case .iPadPro11Inch4: "-"
-        case .iPadPro12Inch6: "-"
-        case .iPadPro11M4: "-"
         case .iPadPro13M4: "3.819 V"
-        case .homePod: "-"
 #elseif os(tvOS)
         case .appleTVHD: "12 V"
         case .appleTV4K: "12 V"
-        case .appleTV4K2: "-"
-        case .appleTV4K3: "-"
 #elseif os(watchOS)
         case .appleWatchSeries0_38mm: "3.8 V"
         case .appleWatchSeries0_42mm: "3.78 V"
@@ -81,19 +74,9 @@ extension Device {
         case .appleWatchSE_40mm: "3.85 V"
         case .appleWatchSE_44mm: "3.184 V"
         case .appleWatchSeries7_41mm, .appleWatchSeries7_45mm: "3.85 V"
-        case .appleWatchSeries8_41mm: ""
-        case .appleWatchSeries8_45mm: ""
-        case .appleWatchSE2_40mm: ""
-        case .appleWatchSE2_44mm: ""
-        case .appleWatchUltra: ""
-        case .appleWatchSeries9_41mm: ""
-        case .appleWatchSeries9_45mm: ""
-        case .appleWatchUltra2: ""
-        case .appleWatchSeries10_42mm: ""
-        case .appleWatchSeries10_46mm: ""
 #endif
-        case .simulator: "-"
         case .unknown(let device): "Unknown device \(device.description)"
+        default: "-"
         }
     }
 }
