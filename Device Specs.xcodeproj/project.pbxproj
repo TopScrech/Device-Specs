@@ -725,7 +725,7 @@
 		F3F85F0E2C962C4600AE0A1D /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F85F102C962C4600AE0A1D /* macOS App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "macOS App.swift"; sourceTree = "<group>"; };
 		F3F85F192C962C4700AE0A1D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		F3F85F1D2C962C6600AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3F85F1D2C962C6600AE0A1D /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		F3F85F202C962CBD00AE0A1D /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F3F85F222C962CE600AE0A1D /* Battery Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Specs.swift"; sourceTree = "<group>"; };
 		F3F85F242C962E7200AE0A1D /* Battery VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery VM.swift"; sourceTree = "<group>"; };
@@ -1335,7 +1335,7 @@
 			children = (
 				F3F85F102C962C4600AE0A1D /* macOS App.swift */,
 				F35721502C98637100967ACA /* Navigation */,
-				F3F85F1D2C962C6600AE0A1D /* Info.plist */,
+				F3F85F1D2C962C6600AE0A1D /* macOS.plist */,
 				F3F85F192C962C4700AE0A1D /* macOS.entitlements */,
 				F33FEE5C2C98386E00214288 /* Param.swift */,
 				F33FEE5E2C9838AE00214288 /* Spec Item.swift */,
@@ -2631,7 +2631,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
+				INFOPLIST_FILE = macOS/macOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -2662,7 +2662,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
+				INFOPLIST_FILE = macOS/macOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
