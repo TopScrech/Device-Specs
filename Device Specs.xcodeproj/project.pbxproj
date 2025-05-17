@@ -72,6 +72,11 @@
 		F3329CA32D7D0E97003B4E68 /* Color Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3329CA12D7D0E97003B4E68 /* Color Test.swift */; };
 		F3329CA42D7D0E97003B4E68 /* Color Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3329CA12D7D0E97003B4E68 /* Color Test.swift */; };
 		F3329CA52D7D0E97003B4E68 /* Color Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3329CA12D7D0E97003B4E68 /* Color Test.swift */; };
+		F337086D2DD92A47006834F8 /* ScrechKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F3E7EC952C67B99E008CD17B /* ScrechKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F337086F2DD92A4B006834F8 /* ScrechKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F36FBCCB2C944B1300F5E174 /* ScrechKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F33708712DD92A4E006834F8 /* ScrechKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F3C3BDDE2C92DAB000BF91EE /* ScrechKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F33708732DD92A51006834F8 /* ScrechKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F3F85EE02C957CF500AE0A1D /* ScrechKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F33708752DD92A54006834F8 /* ScrechKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F3F85F262C962EC600AE0A1D /* ScrechKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F33FEE532C982A1800214288 /* Unit Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE522C982A1800214288 /* Unit Tests.swift */; };
 		F33FEE582C982EC200214288 /* Nav Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE572C982EC200214288 /* Nav Links.swift */; };
 		F33FEE5A2C982FF000214288 /* System Report VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE592C982FF000214288 /* System Report VM.swift */; };
@@ -536,6 +541,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		F337086E2DD92A47006834F8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+				F337086D2DD92A47006834F8 /* ScrechKit in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+		};
+		F33708702DD92A4B006834F8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+				F337086F2DD92A4B006834F8 /* ScrechKit in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+		};
+		F33708722DD92A4E006834F8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+				F33708712DD92A4E006834F8 /* ScrechKit in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+		};
+		F33708742DD92A51006834F8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+				F33708732DD92A51006834F8 /* ScrechKit in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+		};
+		F33708762DD92A54006834F8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+				F33708752DD92A54006834F8 /* ScrechKit in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+		};
 		F36F7FDE2CA0CFE00007F120 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			dstPath = "";
@@ -1381,6 +1431,7 @@
 				F36FBCAD2C9449A200F5E174 /* Sources */,
 				F36FBCAE2C9449A200F5E174 /* Frameworks */,
 				F36FBCAF2C9449A200F5E174 /* Resources */,
+				F33708702DD92A4B006834F8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1400,6 +1451,7 @@
 				F3C3BDB92C92D87C00BF91EE /* Sources */,
 				F3C3BDBA2C92D87C00BF91EE /* Frameworks */,
 				F3C3BDBB2C92D87C00BF91EE /* Resources */,
+				F33708722DD92A4E006834F8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1423,6 +1475,7 @@
 				F3E7EC382C676A13008CD17B /* Resources */,
 				F36FBCBF2C9449A300F5E174 /* Embed Watch Content */,
 				F36F7FDE2CA0CFE00007F120 /* Embed Foundation Extensions */,
+				F337086E2DD92A47006834F8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1450,6 +1503,7 @@
 				F3F85EC92C94AF5A00AE0A1D /* Sources */,
 				F3F85ECA2C94AF5A00AE0A1D /* Frameworks */,
 				F3F85ECB2C94AF5A00AE0A1D /* Resources */,
+				F33708742DD92A51006834F8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1469,6 +1523,7 @@
 				F3F85F0A2C962C4600AE0A1D /* Sources */,
 				F3F85F0B2C962C4600AE0A1D /* Frameworks */,
 				F3F85F0C2C962C4600AE0A1D /* Resources */,
+				F33708762DD92A54006834F8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
