@@ -17,6 +17,12 @@
 		F3187A502C898B37008FB911 /* Nav State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A4F2C898B37008FB911 /* Nav State.swift */; };
 		F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A522C898B62008FB911 /* Nav Destinations.swift */; };
 		F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A542C898B7E008FB911 /* Nav Extension.swift */; };
+		F31D32052DDC8CCB00E7B121 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D32042DDC8CCB00E7B121 /* ScrechKit */; };
+		F31D32072DDC8CD300E7B121 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D32062DDC8CD300E7B121 /* ScrechKit */; };
+		F31D32092DDC8CDA00E7B121 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D32082DDC8CDA00E7B121 /* ScrechKit */; };
+		F31D320B2DDC8CDE00E7B121 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D320A2DDC8CDE00E7B121 /* ScrechKit */; };
+		F31D320D2DDC8CE400E7B121 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D320C2DDC8CE400E7B121 /* ScrechKit */; };
+		F31D320F2DDC8CEA00E7B121 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D320E2DDC8CEA00E7B121 /* ScrechKit */; };
 		F31F08C22D2A79B500B156EC /* Apple Intelligence Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */; };
 		F31F08C32D2A79B500B156EC /* Apple Intelligence Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */; };
 		F31F08C42D2A79B500B156EC /* Apple Intelligence Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */; };
@@ -72,11 +78,6 @@
 		F3329CA32D7D0E97003B4E68 /* Color Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3329CA12D7D0E97003B4E68 /* Color Test.swift */; };
 		F3329CA42D7D0E97003B4E68 /* Color Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3329CA12D7D0E97003B4E68 /* Color Test.swift */; };
 		F3329CA52D7D0E97003B4E68 /* Color Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3329CA12D7D0E97003B4E68 /* Color Test.swift */; };
-		F337086D2DD92A47006834F8 /* ScrechKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F3E7EC952C67B99E008CD17B /* ScrechKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		F337086F2DD92A4B006834F8 /* ScrechKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F36FBCCB2C944B1300F5E174 /* ScrechKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		F33708712DD92A4E006834F8 /* ScrechKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F3C3BDDE2C92DAB000BF91EE /* ScrechKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		F33708732DD92A51006834F8 /* ScrechKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F3F85EE02C957CF500AE0A1D /* ScrechKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		F33708752DD92A54006834F8 /* ScrechKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F3F85F262C962EC600AE0A1D /* ScrechKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F33FEE532C982A1800214288 /* Unit Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE522C982A1800214288 /* Unit Tests.swift */; };
 		F33FEE582C982EC200214288 /* Nav Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE572C982EC200214288 /* Nav Links.swift */; };
 		F33FEE5A2C982FF000214288 /* System Report VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE592C982FF000214288 /* System Report VM.swift */; };
@@ -104,7 +105,6 @@
 		F36F7FE72CA0D1FA0007F120 /* Specs Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7982C9C8444000C81FF /* Specs Link.swift */; };
 		F36F7FE82CA0D2030007F120 /* App Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AA2C9D4BFA000C81FF /* App Specs.swift */; };
 		F36F7FE92CA0D2190007F120 /* App VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AD2C9D5BF8000C81FF /* App VM.swift */; };
-		F36F7FEB2CA0D23D0007F120 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36F7FEA2CA0D23D0007F120 /* ScrechKit */; };
 		F36F7FED2CA0D2400007F120 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36F7FEC2CA0D2400007F120 /* DeviceKit */; };
 		F36F7FEE2CA0D4370007F120 /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5A2C67B985008CD17B /* Battery Specs.swift */; };
 		F36F7FEF2CA0D4370007F120 /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5B2C67B985008CD17B /* Battery VM.swift */; };
@@ -187,7 +187,6 @@
 		F36FBCB62C9449A300F5E174 /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCB52C9449A300F5E174 /* Home View.swift */; };
 		F36FBCBE2C9449A300F5E174 /* watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F36FBCB12C9449A200F5E174 /* watchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F36FBCCA2C944B0300F5E174 /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5A2C67B985008CD17B /* Battery Specs.swift */; };
-		F36FBCCC2C944B1300F5E174 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36FBCCB2C944B1300F5E174 /* ScrechKit */; };
 		F36FBCCE2C944B1700F5E174 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36FBCCD2C944B1700F5E174 /* DeviceKit */; };
 		F36FBCD02C944B5000F5E174 /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCCF2C944B5000F5E174 /* App Container.swift */; };
 		F36FBCD42C944DA200F5E174 /* Accessibility VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */; };
@@ -262,7 +261,6 @@
 		F3C3BDD92C92D99300BF91EE /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC512C67B985008CD17B /* Device Specs.swift */; };
 		F3C3BDDA2C92D99900BF91EE /* Device VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC522C67B985008CD17B /* Device VM.swift */; };
 		F3C3BDDD2C92DAAA00BF91EE /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3C3BDDC2C92DAAA00BF91EE /* DeviceKit */; };
-		F3C3BDDF2C92DAB000BF91EE /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3C3BDDE2C92DAB000BF91EE /* ScrechKit */; };
 		F3C3BDE12C92DB9800BF91EE /* Memory VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5E2C67B985008CD17B /* Memory VM.swift */; };
 		F3C3BDE22C92DB9D00BF91EE /* Memory Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5D2C67B985008CD17B /* Memory Specs.swift */; };
 		F3C3BDE32C92DBF700BF91EE /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5A2C67B985008CD17B /* Battery Specs.swift */; };
@@ -370,7 +368,6 @@
 		F3E7EC912C67B985008CD17B /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4E2C67B985008CD17B /* Home View.swift */; };
 		F3E7EC922C67B985008CD17B /* Connectivity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Connectivity VM.swift */; };
 		F3E7EC932C67B985008CD17B /* Pressure VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC682C67B985008CD17B /* Pressure VM.swift */; };
-		F3E7EC962C67B99E008CD17B /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E7EC952C67B99E008CD17B /* ScrechKit */; };
 		F3E7EC992C67B9A8008CD17B /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E7EC982C67B9A8008CD17B /* DeviceKit */; };
 		F3E7EC9B2C67B9CF008CD17B /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC9A2C67B9CF008CD17B /* App Container.swift */; };
 		F3E7EC9E2C680561008CD17B /* Torch VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC9D2C680561008CD17B /* Torch VM.swift */; };
@@ -480,7 +477,6 @@
 		F3F85ED42C94AF5B00AE0A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */; };
 		F3F85EDD2C94DD6800AE0A1D /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EDC2C94DD6800AE0A1D /* App Container.swift */; };
 		F3F85EDF2C94DD7900AE0A1D /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EDE2C94DD7900AE0A1D /* Home View.swift */; };
-		F3F85EE12C957CF500AE0A1D /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85EE02C957CF500AE0A1D /* ScrechKit */; };
 		F3F85EE32C957CF700AE0A1D /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85EE22C957CF700AE0A1D /* DeviceKit */; };
 		F3F85EE42C957D4F00AE0A1D /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EC02C948F9D00AE0A1D /* Test List.swift */; };
 		F3F85EE52C957D5900AE0A1D /* Color View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6D2C67B985008CD17B /* Color View.swift */; };
@@ -509,7 +505,6 @@
 		F3F85F212C962CBD00AE0A1D /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F202C962CBD00AE0A1D /* App Container.swift */; };
 		F3F85F232C962CE600AE0A1D /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F222C962CE600AE0A1D /* Battery Specs.swift */; };
 		F3F85F252C962E7200AE0A1D /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F242C962E7200AE0A1D /* Battery VM.swift */; };
-		F3F85F272C962EC600AE0A1D /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85F262C962EC600AE0A1D /* ScrechKit */; };
 		F3F85F292C962EC900AE0A1D /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85F282C962EC900AE0A1D /* DeviceKit */; };
 		F3F85F2B2C96448E00AE0A1D /* System Report View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F2A2C96448E00AE0A1D /* System Report View.swift */; };
 		F3F85F2D2C96455300AE0A1D /* Hardware Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F2C2C96455300AE0A1D /* Hardware Specs.swift */; };
@@ -546,7 +541,6 @@
 			dstPath = "";
 			dstSubfolder = Frameworks;
 			files = (
-				F337086D2DD92A47006834F8 /* ScrechKit in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 		};
@@ -555,7 +549,6 @@
 			dstPath = "";
 			dstSubfolder = Frameworks;
 			files = (
-				F337086F2DD92A4B006834F8 /* ScrechKit in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 		};
@@ -564,7 +557,6 @@
 			dstPath = "";
 			dstSubfolder = Frameworks;
 			files = (
-				F33708712DD92A4E006834F8 /* ScrechKit in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 		};
@@ -573,7 +565,6 @@
 			dstPath = "";
 			dstSubfolder = Frameworks;
 			files = (
-				F33708732DD92A51006834F8 /* ScrechKit in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 		};
@@ -582,7 +573,6 @@
 			dstPath = "";
 			dstSubfolder = Frameworks;
 			files = (
-				F33708752DD92A54006834F8 /* ScrechKit in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 		};
@@ -790,7 +780,7 @@
 			isa = PBXFrameworksBuildPhase;
 			files = (
 				F36F7FCD2CA0CFDF0007F120 /* Messages.framework in Frameworks */,
-				F36F7FEB2CA0D23D0007F120 /* ScrechKit in Frameworks */,
+				F31D320F2DDC8CEA00E7B121 /* ScrechKit in Frameworks */,
 				F329E1862D37CB1E007BA9D1 /* SafariCover in Frameworks */,
 				F36F802B2CA0D5E90007F120 /* ScrechCam in Frameworks */,
 				F3C68AD42CAFCE750021B6F3 /* MailCover in Frameworks */,
@@ -801,17 +791,17 @@
 		F36FBCAE2C9449A200F5E174 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
-				F36FBCCC2C944B1300F5E174 /* ScrechKit in Frameworks */,
 				F36FBCCE2C944B1700F5E174 /* DeviceKit in Frameworks */,
+				F31D32072DDC8CD300E7B121 /* ScrechKit in Frameworks */,
 			);
 		};
 		F3C3BDBA2C92D87C00BF91EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
 				F329E18A2D37CC60007BA9D1 /* SafariCover in Frameworks */,
+				F31D32092DDC8CDA00E7B121 /* ScrechKit in Frameworks */,
 				F3C3BDDD2C92DAAA00BF91EE /* DeviceKit in Frameworks */,
 				F3C68AD22CAFCDD20021B6F3 /* MailCover in Frameworks */,
-				F3C3BDDF2C92DAB000BF91EE /* ScrechKit in Frameworks */,
 			);
 		};
 		F3E7EC372C676A13008CD17B /* Frameworks */ = {
@@ -819,8 +809,8 @@
 			files = (
 				F357214D2C98584100967ACA /* ScrechCam in Frameworks */,
 				F3C68AE72CAFD7C80021B6F3 /* HealthyKit in Frameworks */,
-				F3E7EC962C67B99E008CD17B /* ScrechKit in Frameworks */,
 				F3E7EC992C67B9A8008CD17B /* DeviceKit in Frameworks */,
+				F31D32052DDC8CCB00E7B121 /* ScrechKit in Frameworks */,
 				F329E1842D37CA7D007BA9D1 /* SafariCover in Frameworks */,
 				F3C68ACA2CAFCD3E0021B6F3 /* MailCover in Frameworks */,
 			);
@@ -828,15 +818,15 @@
 		F3F85ECA2C94AF5A00AE0A1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
-				F3F85EE12C957CF500AE0A1D /* ScrechKit in Frameworks */,
 				F3F85EE32C957CF700AE0A1D /* DeviceKit in Frameworks */,
+				F31D320B2DDC8CDE00E7B121 /* ScrechKit in Frameworks */,
 			);
 		};
 		F3F85F0B2C962C4600AE0A1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				F31D320D2DDC8CE400E7B121 /* ScrechKit in Frameworks */,
 				F358F0232D2C185800BCC07B /* LaunchAtLogin in Frameworks */,
-				F3F85F272C962EC600AE0A1D /* ScrechKit in Frameworks */,
 				F3F85F292C962EC900AE0A1D /* DeviceKit in Frameworks */,
 			);
 		};
@@ -1413,12 +1403,12 @@
 			);
 			name = iMessage;
 			packageProductDependencies = (
-				F36F7FEA2CA0D23D0007F120 /* ScrechKit */,
 				F36F7FEC2CA0D2400007F120 /* DeviceKit */,
 				F36F802A2CA0D5E90007F120 /* ScrechCam */,
 				F3C68AD32CAFCE750021B6F3 /* MailCover */,
 				F3C68B082CB091F40021B6F3 /* HealthyKit */,
 				F329E1852D37CB1E007BA9D1 /* SafariCover */,
+				F31D320E2DDC8CEA00E7B121 /* ScrechKit */,
 			);
 			productName = iMessage;
 			productReference = F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */;
@@ -1437,8 +1427,8 @@
 			);
 			name = watchOS;
 			packageProductDependencies = (
-				F36FBCCB2C944B1300F5E174 /* ScrechKit */,
 				F36FBCCD2C944B1700F5E174 /* DeviceKit */,
+				F31D32062DDC8CD300E7B121 /* ScrechKit */,
 			);
 			productName = "watchOS Watch App";
 			productReference = F36FBCB12C9449A200F5E174 /* watchOS.app */;
@@ -1458,9 +1448,9 @@
 			name = visionOS;
 			packageProductDependencies = (
 				F3C3BDDC2C92DAAA00BF91EE /* DeviceKit */,
-				F3C3BDDE2C92DAB000BF91EE /* ScrechKit */,
 				F3C68AD12CAFCDD20021B6F3 /* MailCover */,
 				F329E1892D37CC60007BA9D1 /* SafariCover */,
+				F31D32082DDC8CDA00E7B121 /* ScrechKit */,
 			);
 			productName = visionOS;
 			productReference = F3C3BDBD2C92D87C00BF91EE /* visionOS.app */;
@@ -1485,12 +1475,12 @@
 			);
 			name = iOS;
 			packageProductDependencies = (
-				F3E7EC952C67B99E008CD17B /* ScrechKit */,
 				F3E7EC982C67B9A8008CD17B /* DeviceKit */,
 				F357214C2C98584100967ACA /* ScrechCam */,
 				F3C68AC92CAFCD3E0021B6F3 /* MailCover */,
 				F3C68AE62CAFD7C80021B6F3 /* HealthyKit */,
 				F329E1832D37CA7D007BA9D1 /* SafariCover */,
+				F31D32042DDC8CCB00E7B121 /* ScrechKit */,
 			);
 			productName = "Device Specs";
 			productReference = F3E7EC3A2C676A13008CD17B /* iOS.app */;
@@ -1509,8 +1499,8 @@
 			);
 			name = tvOS;
 			packageProductDependencies = (
-				F3F85EE02C957CF500AE0A1D /* ScrechKit */,
 				F3F85EE22C957CF700AE0A1D /* DeviceKit */,
+				F31D320A2DDC8CDE00E7B121 /* ScrechKit */,
 			);
 			productName = tvOS;
 			productReference = F3F85ECD2C94AF5A00AE0A1D /* tvOS.app */;
@@ -1529,9 +1519,9 @@
 			);
 			name = macOS;
 			packageProductDependencies = (
-				F3F85F262C962EC600AE0A1D /* ScrechKit */,
 				F3F85F282C962EC900AE0A1D /* DeviceKit */,
 				F358F0222D2C185800BCC07B /* LaunchAtLogin */,
+				F31D320C2DDC8CE400E7B121 /* ScrechKit */,
 			);
 			productName = macOS;
 			productReference = F3F85F0E2C962C4600AE0A1D /* Device Specs.app */;
@@ -2902,6 +2892,36 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F31D32042DDC8CCB00E7B121 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F31D32062DDC8CD300E7B121 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F31D32082DDC8CDA00E7B121 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F31D320A2DDC8CDE00E7B121 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F31D320C2DDC8CE400E7B121 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F31D320E2DDC8CEA00E7B121 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
 		F329E1832D37CA7D007BA9D1 /* SafariCover */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F329E1822D37CA7D007BA9D1 /* XCRemoteSwiftPackageReference "SafariCover" */;
@@ -2927,11 +2947,6 @@
 			package = F358F0212D2C185800BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
 			productName = LaunchAtLogin;
 		};
-		F36F7FEA2CA0D23D0007F120 /* ScrechKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
-			productName = ScrechKit;
-		};
 		F36F7FEC2CA0D2400007F120 /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
@@ -2942,11 +2957,6 @@
 			package = F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */;
 			productName = ScrechCam;
 		};
-		F36FBCCB2C944B1300F5E174 /* ScrechKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
-			productName = ScrechKit;
-		};
 		F36FBCCD2C944B1700F5E174 /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
@@ -2956,11 +2966,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
-		};
-		F3C3BDDE2C92DAB000BF91EE /* ScrechKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
-			productName = ScrechKit;
 		};
 		F3C68AC92CAFCD3E0021B6F3 /* MailCover */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -2987,30 +2992,15 @@
 			package = F3C68AE52CAFD7C80021B6F3 /* XCRemoteSwiftPackageReference "HealthyKit" */;
 			productName = HealthyKit;
 		};
-		F3E7EC952C67B99E008CD17B /* ScrechKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
-			productName = ScrechKit;
-		};
 		F3E7EC982C67B9A8008CD17B /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
 		};
-		F3F85EE02C957CF500AE0A1D /* ScrechKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
-			productName = ScrechKit;
-		};
 		F3F85EE22C957CF700AE0A1D /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
-		};
-		F3F85F262C962EC600AE0A1D /* ScrechKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
-			productName = ScrechKit;
 		};
 		F3F85F282C962EC900AE0A1D /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;
