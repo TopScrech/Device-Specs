@@ -76,6 +76,7 @@ extension Device {
 #endif
         case .simulator: "N/a"
         case .unknown(let device): "Unknown device \(device.description)"
+        default: "N/a"
         }
     }
 }
