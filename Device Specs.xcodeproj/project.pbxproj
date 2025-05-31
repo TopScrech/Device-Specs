@@ -897,7 +897,7 @@
 			path = "System Report";
 			sourceTree = "<group>";
 		};
-		F35721502C98637100967ACA /* Navigation */ = {
+		F35721502C98637100967ACA /* Nav */ = {
 			isa = PBXGroup;
 			children = (
 				F3F85F202C962CBD00AE0A1D /* App Container.swift */,
@@ -905,7 +905,7 @@
 				F3B7098A2CA1DD4F006ECAD1 /* Version View.swift */,
 				F317334D2CA1D61B00CFA041 /* Nav Link.swift */,
 			);
-			path = Navigation;
+			path = Nav;
 			sourceTree = "<group>";
 		};
 		F358F0262D2C187500BCC07B /* Settings */ = {
@@ -1086,12 +1086,12 @@
 			path = About;
 			sourceTree = "<group>";
 		};
-		F3D1E7B12C9D6053000C81FF /* Navigation */ = {
+		F3D1E7B12C9D6053000C81FF /* Nav */ = {
 			isa = PBXGroup;
 			children = (
 				F3F85EDC2C94DD6800AE0A1D /* App Container.swift */,
 			);
-			path = Navigation;
+			path = Nav;
 			sourceTree = "<group>";
 		};
 		F3D1E7C42C9D6B80000C81FF /* Magnetic Field */ = {
@@ -1353,7 +1353,7 @@
 		F3F85EDB2C94AF8000AE0A1D /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				F3D1E7B12C9D6053000C81FF /* Navigation */,
+				F3D1E7B12C9D6053000C81FF /* Nav */,
 				F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */,
 				F3F85F092C959DE300AE0A1D /* Info.plist */,
 				F3F85EDE2C94DD7900AE0A1D /* Home View.swift */,
@@ -1368,7 +1368,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F85F102C962C4600AE0A1D /* macOS App.swift */,
-				F35721502C98637100967ACA /* Navigation */,
+				F35721502C98637100967ACA /* Nav */,
 				F3F85F1D2C962C6600AE0A1D /* macOS.plist */,
 				F3F85F192C962C4700AE0A1D /* macOS.entitlements */,
 				F33FEE5C2C98386E00214288 /* Param.swift */,
