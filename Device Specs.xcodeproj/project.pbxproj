@@ -424,12 +424,6 @@
 		F3ECFE212CA536FD00E72D41 /* Release Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE1D2CA536FD00E72D41 /* Release Date.swift */; };
 		F3ECFE222CA536FD00E72D41 /* Release Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE1D2CA536FD00E72D41 /* Release Date.swift */; };
 		F3ECFE232CA536FD00E72D41 /* Release Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE1D2CA536FD00E72D41 /* Release Date.swift */; };
-		F3ECFE252CA53A4B00E72D41 /* Device Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE242CA53A4B00E72D41 /* Device Extension.swift */; };
-		F3ECFE262CA53A4B00E72D41 /* Device Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE242CA53A4B00E72D41 /* Device Extension.swift */; };
-		F3ECFE272CA53A4B00E72D41 /* Device Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE242CA53A4B00E72D41 /* Device Extension.swift */; };
-		F3ECFE282CA53A4B00E72D41 /* Device Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE242CA53A4B00E72D41 /* Device Extension.swift */; };
-		F3ECFE292CA53A4B00E72D41 /* Device Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE242CA53A4B00E72D41 /* Device Extension.swift */; };
-		F3ECFE2A2CA53A4B00E72D41 /* Device Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE242CA53A4B00E72D41 /* Device Extension.swift */; };
 		F3ECFE2D2CA53AE200E72D41 /* Battery Capacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE2C2CA53AE200E72D41 /* Battery Capacity.swift */; };
 		F3ECFE2E2CA53AE200E72D41 /* Battery Capacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE2C2CA53AE200E72D41 /* Battery Capacity.swift */; };
 		F3ECFE2F2CA53AE200E72D41 /* Battery Capacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE2C2CA53AE200E72D41 /* Battery Capacity.swift */; };
@@ -612,6 +606,7 @@
 		F3291C5E2CAA0CFB00A15CAE /* Water Resistance Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Water Resistance Description.swift"; sourceTree = "<group>"; };
 		F3291C6C2CAA9A3B00A15CAE /* Neural Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Neural Engine.swift"; sourceTree = "<group>"; };
 		F3329CA12D7D0E97003B4E68 /* Color Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Test.swift"; sourceTree = "<group>"; };
+		F33C4BA12DEB3B650070F213 /* Device Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Extension.swift"; sourceTree = "<group>"; };
 		F33FEE522C982A1800214288 /* Unit Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit Tests.swift"; sourceTree = "<group>"; };
 		F33FEE572C982EC200214288 /* Nav Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Links.swift"; sourceTree = "<group>"; };
 		F33FEE592C982FF000214288 /* System Report VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System Report VM.swift"; sourceTree = "<group>"; };
@@ -739,7 +734,6 @@
 		F3ECFE002CA4BD9B00E72D41 /* Memory Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Memory Type.swift"; sourceTree = "<group>"; };
 		F3ECFE072CA4C09200E72D41 /* Instruction Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instruction Set.swift"; sourceTree = "<group>"; };
 		F3ECFE1D2CA536FD00E72D41 /* Release Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Release Date.swift"; sourceTree = "<group>"; };
-		F3ECFE242CA53A4B00E72D41 /* Device Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Extension.swift"; sourceTree = "<group>"; };
 		F3ECFE2C2CA53AE200E72D41 /* Battery Capacity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Capacity.swift"; sourceTree = "<group>"; };
 		F3ECFE332CA53AE900E72D41 /* Battery Capacity Wh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Capacity Wh.swift"; sourceTree = "<group>"; };
 		F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voltage.swift; sourceTree = "<group>"; };
@@ -858,6 +852,14 @@
 				F3291C322CA9BC0F00A15CAE /* Font Row.swift */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		F33C4BA22DEB3B650070F213 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				F33C4BA12DEB3B650070F213 /* Device Extension.swift */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 		F33FEE542C982A2800214288 /* Unit Tests */ = {
@@ -1312,7 +1314,7 @@
 				F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */,
 				F3ECFE2C2CA53AE200E72D41 /* Battery Capacity.swift */,
 				F3ECFE332CA53AE900E72D41 /* Battery Capacity Wh.swift */,
-				F3ECFE2B2CA53A6700E72D41 /* Examples */,
+				F33C4BA22DEB3B650070F213 /* Example */,
 				F3ECFE0E2CA5343C00E72D41 /* Disabled */,
 			);
 			path = DeviceKit;
@@ -1327,14 +1329,6 @@
 				F3ECFDF92CA4B53200E72D41 /* L3 Cache.swift */,
 			);
 			path = Disabled;
-			sourceTree = "<group>";
-		};
-		F3ECFE2B2CA53A6700E72D41 /* Examples */ = {
-			isa = PBXGroup;
-			children = (
-				F3ECFE242CA53A4B00E72D41 /* Device Extension.swift */,
-			);
-			path = Examples;
 			sourceTree = "<group>";
 		};
 		F3F85EC62C94A7AF00AE0A1D /* Display */ = {
@@ -1715,7 +1709,6 @@
 				F36F80202CA0D5330007F120 /* MCP Session.swift in Sources */,
 				F36F7FF92CA0D4830007F120 /* Camera VM.swift in Sources */,
 				F36F7FFA2CA0D4830007F120 /* Camera Model.swift in Sources */,
-				F3ECFE272CA53A4B00E72D41 /* Device Extension.swift in Sources */,
 				F3ECFE082CA4C09200E72D41 /* Instruction Set.swift in Sources */,
 				F3B709D22CA2C912006ECAD1 /* Volume Slider.swift in Sources */,
 				F3ECFDE82CA4B3A700E72D41 /* L1 Instruction Cache.swift in Sources */,
@@ -1790,7 +1783,6 @@
 				F3CCB1EC2CAFBB57000F8207 /* Auth Test.swift in Sources */,
 				F3F85EB62C948D0200AE0A1D /* Orientation VM.swift in Sources */,
 				F3B709B72CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
-				F3ECFE262CA53A4B00E72D41 /* Device Extension.swift in Sources */,
 				F3D1E7892C9C12C2000C81FF /* System Specs.swift in Sources */,
 				F3CCB1EB2CAFBB54000F8207 /* Auth VM.swift in Sources */,
 				F3F85E9F2C94865900AE0A1D /* Network VM.swift in Sources */,
@@ -1927,7 +1919,6 @@
 				F36FBC672C93542700F5E174 /* Processor VM.swift in Sources */,
 				F3C3BDD42C92D8E000BF91EE /* Device Specs App.swift in Sources */,
 				F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */,
-				F3ECFE292CA53A4B00E72D41 /* Device Extension.swift in Sources */,
 				F3291C362CA9BC0F00A15CAE /* Font Row.swift in Sources */,
 				F3CCB1F82CAFC228000F8207 /* GPU Family Model.swift in Sources */,
 				F3ECFE312CA53AE200E72D41 /* Battery Capacity.swift in Sources */,
@@ -1975,7 +1966,6 @@
 				F3E7EC7E2C67B985008CD17B /* Nearby VM.swift in Sources */,
 				F3E7EC7F2C67B985008CD17B /* Memory VM.swift in Sources */,
 				F3B709B92CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
-				F3ECFE252CA53A4B00E72D41 /* Device Extension.swift in Sources */,
 				F3D1E7812C9C0CD3000C81FF /* Battery Level.swift in Sources */,
 				F3291C5B2CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */,
 				F3E7EC802C67B985008CD17B /* Display VM.swift in Sources */,
@@ -2102,7 +2092,6 @@
 				F3F85F062C9588BE00AE0A1D /* Network Specs.swift in Sources */,
 				F3F85EEF2C95801D00AE0A1D /* Accessibility Item.swift in Sources */,
 				F3B709B82CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
-				F3ECFE282CA53A4B00E72D41 /* Device Extension.swift in Sources */,
 				F3ECFE212CA536FD00E72D41 /* Release Date.swift in Sources */,
 				F3D1E7B92C9D611A000C81FF /* App VM.swift in Sources */,
 				F3B709E52CA2F1DC006ECAD1 /* Tech Node.swift in Sources */,
@@ -2123,7 +2112,6 @@
 		F3F85F0A2C962C4600AE0A1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				F3ECFE2A2CA53A4B00E72D41 /* Device Extension.swift in Sources */,
 				F3F85F2B2C96448E00AE0A1D /* System Report View.swift in Sources */,
 				F33FEE5D2C98386E00214288 /* Param.swift in Sources */,
 				F3B709E62CA2F1DC006ECAD1 /* Tech Node.swift in Sources */,
