@@ -30,7 +30,7 @@ struct TestList: View {
                 Button {
                     navState.navigate(.toUwbTest)
                 } label: {
-                    Label("Ultra Wideband Test", systemImage: "location.viewfinder")
+                    Label("Ultra Wideband", systemImage: "location.viewfinder")
                 }
                 .foregroundStyle(.foreground)
                 .disabled(!DeviceInfo.isUltraWidebandAvailable)
