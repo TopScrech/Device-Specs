@@ -44,6 +44,7 @@ struct AppSpecs: View {
                 Button("Powered by Bisquit.Host") {
                     sheetBh = true
                 }
+                .safariCover($sheetBh, url: "https://bisquit.host")
                 
                 if let url = URL(string: moreAppsUrl) {
                     Link("More apps", destination: url)
@@ -52,12 +53,11 @@ struct AppSpecs: View {
                 Button("Privacy Policy") {
                     sheetPrivacy = true
                 }
+                .safariCover($sheetPrivacy, url: privacyUrl)
             }
 #endif
         }
         .navigationTitle("About")
-        .safariCover($sheetBh, url: "https://bisquit.host")
-        .safariCover($sheetPrivacy, url: privacyUrl)
 #if !os(visionOS)
         .sensoryFeedback(.impact, trigger: vm.trigger)
 #endif
