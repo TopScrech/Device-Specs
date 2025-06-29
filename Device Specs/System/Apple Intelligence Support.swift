@@ -24,7 +24,7 @@ struct AppleIntelligenceSupport: View {
             } icon: {
                 Image(.appleIntelligence)
                     .resizable()
-                    .frame(width: 32, height: 32)
+                    .frame(32)
             }
             .opacity(supportsAppleIntelligence ? 1 : 0.1)
             .padding(.vertical, 5)
