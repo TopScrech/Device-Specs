@@ -13,6 +13,10 @@ struct HomeView: View {
     @State private var connectivity = ConnectivityVM()
     @State private var camera = CameraVM()
     
+    private var version: String {
+        "v" + app.version
+    }
+    
     var body: some View {
         List {
             WarningsSection()
@@ -72,7 +76,7 @@ struct HomeView: View {
             testLink
             
             Section {
-                SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
+                SpecsLink("About", icon: "questionmark.square.dashed", spec: version) {
                     AppSpecs()
                         .environment(app)
                 }
@@ -95,9 +99,8 @@ struct HomeView: View {
                     Spacer()
                     
                     Image(systemName: "chevron.forward")
-                        .semibold()
-                        .caption()
-                        .foregroundStyle(.tertiary)
+                        .caption(.semibold)
+                        .tertiary()
                 }
                 .foregroundStyle(.foreground)
             }
