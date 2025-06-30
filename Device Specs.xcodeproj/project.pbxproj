@@ -976,7 +976,6 @@
 			isa = PBXGroup;
 			children = (
 				F389A6D72CA368C600FF670F /* Warnings Section.swift */,
-				F3D1E7982C9C8444000C81FF /* Specs Link.swift */,
 				F389A6DA2CA36AAF00FF670F /* Warning Card.swift */,
 			);
 			path = Warnings;
@@ -1146,6 +1145,7 @@
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
 				F389A6D92CA36AA600FF670F /* Warnings */,
 				F3D1E7AF2C9D5D96000C81FF /* Specs Button.swift */,
+				F3D1E7982C9C8444000C81FF /* Specs Link.swift */,
 				F3E7EC4F2C67B985008CD17B /* List Link.swift */,
 				F3E7EC4D2C67B985008CD17B /* Device Info.swift */,
 				F3ECFDDC2CA4B05700E72D41 /* DeviceKit */,
@@ -2525,7 +2525,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -2575,7 +2575,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
