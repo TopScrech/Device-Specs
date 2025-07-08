@@ -21,14 +21,19 @@ struct NetworkSpecs: View {
             Section {
                 ListParam("Network type", param: connectivity.type)
                 
-                ListParam("SSID", param: connectivity.ssid)
+                if let ssid = connectivity.ssid {
+                    ListParam("SSID", param: ssid)
+                }
                 
-                ListParam("BSSID", param: connectivity.bssid)
+                if let bssid = connectivity.bssid {
+                    ListParam("BSSID", param: bssid)
+                }
             }
         }
         .navigationTitle("Network")
         .refreshableTask {
             network.getIPAddresses()
+            connectivity.getWiFiInfo()
         }
     }
 }
