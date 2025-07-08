@@ -11,6 +11,10 @@ struct AppleIntelligenceSupport: View {
     private var supportsAppleIntelligence = false
 #endif
     
+    private var icon: String {
+        supportsAppleIntelligence ? "apple.intelligence" : "apple.intelligence.badge.xmark"
+    }
+    
     var body: some View {
         Section {
             Label {
@@ -20,11 +24,10 @@ struct AppleIntelligenceSupport: View {
                     : "Your device does not support Apple Intelligence"
                 )
             } icon: {
-                Image(.appleIntelligence)
-                    .resizable()
-                    .frame(32)
+                Image(systemName: icon)
+                    .foregroundStyle(.primary)
+                    .symbolRenderingMode(.multicolor)
             }
-            .opacity(supportsAppleIntelligence ? 1 : 0.1)
             .padding(.vertical, 5)
 #if os(tvOS)
             .labelReservedIconWidth(64)
@@ -34,5 +37,8 @@ struct AppleIntelligenceSupport: View {
 }
 
 #Preview {
-    AppleIntelligenceSupport()
+    List {
+        AppleIntelligenceSupport()
+    }
+    .darkSchemePreferred()
 }

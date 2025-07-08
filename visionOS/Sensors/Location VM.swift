@@ -3,8 +3,8 @@ import CoreLocation
 
 @Observable
 final class LocationVM: NSObject, CLLocationManagerDelegate {
-    var latitude = 0.0
-    var longitude = 0.0
+    private(set) var latitude = 0.0
+    private(set) var longitude = 0.0
     
     private var locationManager: CLLocationManager
     

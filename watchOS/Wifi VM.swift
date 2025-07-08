@@ -5,7 +5,7 @@ import Network
 final class ConnectivityVM {
     private let monitor = NWPathMonitor()
     
-    var type = ""
+    private(set) var type = ""
     
     init() {
         monitorNetworkStatus()
