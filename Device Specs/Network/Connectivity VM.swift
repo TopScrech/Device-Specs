@@ -1,4 +1,4 @@
-import ScrechKit
+import Foundation
 import NetworkExtension
 
 @Observable
@@ -8,6 +8,12 @@ final class ConnectivityVM {
     var type = ""
     var ssid: String? = nil
     var bssid: String? = nil
+    var signalStrength: Double? // for Wi-Fi
+    var isSecure: Bool?
+    var didAutoJoin: Bool?
+    var didJustJoin: Bool?
+    var isChosenHelper: Bool? // Indicates whether the calling Hotspot Helper is the chosen helper for this network
+    var securityType: String? // for Wi-Fi
     
     init() {
         getWiFiInfo()
@@ -51,6 +57,27 @@ final class ConnectivityVM {
         NEHotspotNetwork.fetchCurrent { network in
             self.ssid = network?.ssid
             self.bssid = network?.bssid
+            self.signalStrength = network?.signalStrength
+            self.isSecure = network?.isSecure
+            self.didAutoJoin = network?.didAutoJoin
+            self.didJustJoin = network?.didJustJoin
+            self.isChosenHelper = network?.isChosenHelper
+            self.securityType = self.securityTypeString(network?.securityType)
+        }
+    }
+    
+    private func securityTypeString(
+        _ type: NEHotspotNetworkSecurityType?
+    ) -> String? {
+        
+        switch type {
+        case .WEP: "WEP"
+        case .enterprise: "Enterprise"
+        case .open: "Open"
+        case .personal: "Personal"
+        case .unknown: "Unknown"
+        case .none: "None"
+        @unknown default: nil
         }
     }
 }

@@ -28,6 +28,30 @@ struct NetworkSpecs: View {
                 if let bssid = connectivity.bssid {
                     ListParam("BSSID", param: bssid)
                 }
+                
+                if let signalStrength = connectivity.signalStrength {
+                    ListParam("Signal strength", param: String(format: "%.0f%%", signalStrength * 100))
+                }
+                
+                if let isSecure = connectivity.isSecure {
+                    ListParam("Secure network", param: isSecure ? "Yes" : "No")
+                }
+                
+                if let didAutoJoin = connectivity.didAutoJoin {
+                    ListParam("Auto-joined", param: didAutoJoin ? "Yes" : "No")
+                }
+                
+                if let didJustJoin = connectivity.didJustJoin {
+                    ListParam("Just joined", param: didJustJoin ? "Yes" : "No")
+                }
+                
+                if let isChosenHelper = connectivity.isChosenHelper {
+                    ListParam("Hotspot Helper", param: isChosenHelper ? "Yes" : "No")
+                }
+                
+                if let securityType = connectivity.securityType {
+                    ListParam("Security type", param: securityType)
+                }
             }
         }
         .navigationTitle("Network")

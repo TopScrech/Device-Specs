@@ -180,6 +180,9 @@
     "Assistive Touch" : {
       "shouldTranslate" : false
     },
+    "Auto-joined" : {
+
+    },
     "Autoupdating current" : {
 
     },
@@ -863,6 +866,9 @@
     "Host name" : {
 
     },
+    "Hotspot Helper" : {
+
+    },
     "Hour cycle" : {
       "localizations" : {
         "ru" : {
@@ -948,6 +954,9 @@
           }
         }
       }
+    },
+    "Just joined" : {
+
     },
     "Known time zones" : {
       "localizations" : {
@@ -1538,6 +1547,12 @@
     "Seconds from GMT" : {
 
     },
+    "Secure network" : {
+
+    },
+    "Security type" : {
+
+    },
     "Sensors" : {
       "localizations" : {
         "ru" : {
@@ -1599,6 +1614,9 @@
       }
     },
     "Should Differentiate Without Color" : {
+
+    },
+    "Signal strength" : {
 
     },
     "Speak Screen" : {
