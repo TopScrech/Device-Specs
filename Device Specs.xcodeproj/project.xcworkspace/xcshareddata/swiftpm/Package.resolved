@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/devicekit/DeviceKit",
       "state" : {
-        "revision" : "7ff5331960151aec74fb422e1d45f54ef6cc086d",
-        "version" : "5.5.0"
+        "revision" : "513b9d7e7a1bd46504a1009bbab943b75ce2f195",
+        "version" : "5.6.0"
       }
     },
     {
@@ -16,7 +16,7 @@
       "location" : "https://github.com/TopScrech/HealthyKit",
       "state" : {
         "branch" : "main",
-        "revision" : "b52ddf6463c5b01b013a2c7f50218faa4a62a274"
+        "revision" : "9ddd124401dc1c1426924cfb119feebd1e8a24f6"
       }
     },
     {
@@ -61,7 +61,7 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "52b6d52d1f3e0ab63d9fee40c7c3a40ff173cf02"
+        "revision" : "6fb0d3db11605d175261a14fa03d57a8feb8f8fa"
       }
     }
   ],

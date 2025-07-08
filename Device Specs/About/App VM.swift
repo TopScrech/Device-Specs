@@ -3,8 +3,9 @@ import Foundation
 @Observable
 final class AppVM {
     private let info = ProcessInfo()
+    let bundleId = Bundle.main.bundleIdentifier?.description ?? "-"
     
-    private var version: String {
+    var version: String {
         Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "-"
     }
     
@@ -19,8 +20,6 @@ final class AppVM {
     var minimumOSVersion: String {
         Bundle.main.object(forInfoDictionaryKey: "MinimumOSVersion") as? String ?? "Unknown"
     }
-    
-    let bundleId = Bundle.main.bundleIdentifier?.description ?? "-"
     
     var trigger = false
     

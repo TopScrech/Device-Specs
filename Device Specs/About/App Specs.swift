@@ -6,12 +6,15 @@ struct AppSpecs: View {
     @State private var sheetPrivacy = false
     @State private var sheetBh = false
     
+    private let privacyUrl = "https://topscrech.dev/privacy.pdf"
+    private let moreAppsUrl = "https://apps.apple.com/au/developer/sergei-saliukov/id1639409936"
+    
     var body: some View {
         List {
             Section {
                 Image(.icon)
                     .resizable()
-                    .frame(width: 200, height: 200)
+                    .frame(200)
                     .clipShape(.rect(cornerRadius: 16))
                     .shadow(color: .black, radius: 5)
                     .frame(maxWidth: .infinity)
@@ -43,14 +46,14 @@ struct AppSpecs: View {
                 }
                 .safariCover($sheetBh, url: "https://bisquit.host")
                 
-                if let url = URL(string: "https://apps.apple.com/au/developer/sergei-saliukov/id1639409936") {
+                if let url = URL(string: moreAppsUrl) {
                     Link("More apps", destination: url)
                 }
                 
                 Button("Privacy Policy") {
                     sheetPrivacy = true
                 }
-                .safariCover($sheetPrivacy, url: "https://topscrech.dev/bisquit.host/privacy.pdf")
+                .safariCover($sheetPrivacy, url: privacyUrl)
             }
 #endif
         }

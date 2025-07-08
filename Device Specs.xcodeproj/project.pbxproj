@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,12 @@
 		F3187A502C898B37008FB911 /* Nav State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A4F2C898B37008FB911 /* Nav State.swift */; };
 		F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A522C898B62008FB911 /* Nav Destinations.swift */; };
 		F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A542C898B7E008FB911 /* Nav Extension.swift */; };
+		F31D32052DDC8CCB00E7B121 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D32042DDC8CCB00E7B121 /* ScrechKit */; };
+		F31D32072DDC8CD300E7B121 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D32062DDC8CD300E7B121 /* ScrechKit */; };
+		F31D32092DDC8CDA00E7B121 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D32082DDC8CDA00E7B121 /* ScrechKit */; };
+		F31D320B2DDC8CDE00E7B121 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D320A2DDC8CDE00E7B121 /* ScrechKit */; };
+		F31D320D2DDC8CE400E7B121 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D320C2DDC8CE400E7B121 /* ScrechKit */; };
+		F31D320F2DDC8CEA00E7B121 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D320E2DDC8CEA00E7B121 /* ScrechKit */; };
 		F31F08C22D2A79B500B156EC /* Apple Intelligence Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */; };
 		F31F08C32D2A79B500B156EC /* Apple Intelligence Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */; };
 		F31F08C42D2A79B500B156EC /* Apple Intelligence Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */; };
@@ -99,7 +105,6 @@
 		F36F7FE72CA0D1FA0007F120 /* Specs Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7982C9C8444000C81FF /* Specs Link.swift */; };
 		F36F7FE82CA0D2030007F120 /* App Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AA2C9D4BFA000C81FF /* App Specs.swift */; };
 		F36F7FE92CA0D2190007F120 /* App VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7AD2C9D5BF8000C81FF /* App VM.swift */; };
-		F36F7FEB2CA0D23D0007F120 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36F7FEA2CA0D23D0007F120 /* ScrechKit */; };
 		F36F7FED2CA0D2400007F120 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36F7FEC2CA0D2400007F120 /* DeviceKit */; };
 		F36F7FEE2CA0D4370007F120 /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5A2C67B985008CD17B /* Battery Specs.swift */; };
 		F36F7FEF2CA0D4370007F120 /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5B2C67B985008CD17B /* Battery VM.swift */; };
@@ -182,7 +187,6 @@
 		F36FBCB62C9449A300F5E174 /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCB52C9449A300F5E174 /* Home View.swift */; };
 		F36FBCBE2C9449A300F5E174 /* watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F36FBCB12C9449A200F5E174 /* watchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F36FBCCA2C944B0300F5E174 /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5A2C67B985008CD17B /* Battery Specs.swift */; };
-		F36FBCCC2C944B1300F5E174 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36FBCCB2C944B1300F5E174 /* ScrechKit */; };
 		F36FBCCE2C944B1700F5E174 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36FBCCD2C944B1700F5E174 /* DeviceKit */; };
 		F36FBCD02C944B5000F5E174 /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCCF2C944B5000F5E174 /* App Container.swift */; };
 		F36FBCD42C944DA200F5E174 /* Accessibility VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */; };
@@ -257,7 +261,6 @@
 		F3C3BDD92C92D99300BF91EE /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC512C67B985008CD17B /* Device Specs.swift */; };
 		F3C3BDDA2C92D99900BF91EE /* Device VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC522C67B985008CD17B /* Device VM.swift */; };
 		F3C3BDDD2C92DAAA00BF91EE /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3C3BDDC2C92DAAA00BF91EE /* DeviceKit */; };
-		F3C3BDDF2C92DAB000BF91EE /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3C3BDDE2C92DAB000BF91EE /* ScrechKit */; };
 		F3C3BDE12C92DB9800BF91EE /* Memory VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5E2C67B985008CD17B /* Memory VM.swift */; };
 		F3C3BDE22C92DB9D00BF91EE /* Memory Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5D2C67B985008CD17B /* Memory Specs.swift */; };
 		F3C3BDE32C92DBF700BF91EE /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5A2C67B985008CD17B /* Battery Specs.swift */; };
@@ -365,7 +368,6 @@
 		F3E7EC912C67B985008CD17B /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4E2C67B985008CD17B /* Home View.swift */; };
 		F3E7EC922C67B985008CD17B /* Connectivity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC622C67B985008CD17B /* Connectivity VM.swift */; };
 		F3E7EC932C67B985008CD17B /* Pressure VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC682C67B985008CD17B /* Pressure VM.swift */; };
-		F3E7EC962C67B99E008CD17B /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E7EC952C67B99E008CD17B /* ScrechKit */; };
 		F3E7EC992C67B9A8008CD17B /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E7EC982C67B9A8008CD17B /* DeviceKit */; };
 		F3E7EC9B2C67B9CF008CD17B /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC9A2C67B9CF008CD17B /* App Container.swift */; };
 		F3E7EC9E2C680561008CD17B /* Torch VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC9D2C680561008CD17B /* Torch VM.swift */; };
@@ -373,6 +375,7 @@
 		F3EA43B12C998787009820F6 /* Color Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43B02C998787009820F6 /* Color Test List.swift */; };
 		F3EA43B22C998787009820F6 /* Color Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43B02C998787009820F6 /* Color Test List.swift */; };
 		F3EA43B32C998787009820F6 /* Color Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA43B02C998787009820F6 /* Color Test List.swift */; };
+		F3EA491F2D7D821000887109 /* MetricKit Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA491E2D7D821000887109 /* MetricKit Manager.swift */; };
 		F3ECFDDE2CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFDDD2CA4B0D000E72D41 /* Max Clock Speed.swift */; };
 		F3ECFDDF2CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFDDD2CA4B0D000E72D41 /* Max Clock Speed.swift */; };
 		F3ECFDE02CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFDDD2CA4B0D000E72D41 /* Max Clock Speed.swift */; };
@@ -421,12 +424,6 @@
 		F3ECFE212CA536FD00E72D41 /* Release Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE1D2CA536FD00E72D41 /* Release Date.swift */; };
 		F3ECFE222CA536FD00E72D41 /* Release Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE1D2CA536FD00E72D41 /* Release Date.swift */; };
 		F3ECFE232CA536FD00E72D41 /* Release Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE1D2CA536FD00E72D41 /* Release Date.swift */; };
-		F3ECFE252CA53A4B00E72D41 /* Device Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE242CA53A4B00E72D41 /* Device Extension.swift */; };
-		F3ECFE262CA53A4B00E72D41 /* Device Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE242CA53A4B00E72D41 /* Device Extension.swift */; };
-		F3ECFE272CA53A4B00E72D41 /* Device Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE242CA53A4B00E72D41 /* Device Extension.swift */; };
-		F3ECFE282CA53A4B00E72D41 /* Device Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE242CA53A4B00E72D41 /* Device Extension.swift */; };
-		F3ECFE292CA53A4B00E72D41 /* Device Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE242CA53A4B00E72D41 /* Device Extension.swift */; };
-		F3ECFE2A2CA53A4B00E72D41 /* Device Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE242CA53A4B00E72D41 /* Device Extension.swift */; };
 		F3ECFE2D2CA53AE200E72D41 /* Battery Capacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE2C2CA53AE200E72D41 /* Battery Capacity.swift */; };
 		F3ECFE2E2CA53AE200E72D41 /* Battery Capacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE2C2CA53AE200E72D41 /* Battery Capacity.swift */; };
 		F3ECFE2F2CA53AE200E72D41 /* Battery Capacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE2C2CA53AE200E72D41 /* Battery Capacity.swift */; };
@@ -474,7 +471,6 @@
 		F3F85ED42C94AF5B00AE0A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */; };
 		F3F85EDD2C94DD6800AE0A1D /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EDC2C94DD6800AE0A1D /* App Container.swift */; };
 		F3F85EDF2C94DD7900AE0A1D /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EDE2C94DD7900AE0A1D /* Home View.swift */; };
-		F3F85EE12C957CF500AE0A1D /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85EE02C957CF500AE0A1D /* ScrechKit */; };
 		F3F85EE32C957CF700AE0A1D /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85EE22C957CF700AE0A1D /* DeviceKit */; };
 		F3F85EE42C957D4F00AE0A1D /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EC02C948F9D00AE0A1D /* Test List.swift */; };
 		F3F85EE52C957D5900AE0A1D /* Color View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6D2C67B985008CD17B /* Color View.swift */; };
@@ -503,7 +499,6 @@
 		F3F85F212C962CBD00AE0A1D /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F202C962CBD00AE0A1D /* App Container.swift */; };
 		F3F85F232C962CE600AE0A1D /* Battery Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F222C962CE600AE0A1D /* Battery Specs.swift */; };
 		F3F85F252C962E7200AE0A1D /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F242C962E7200AE0A1D /* Battery VM.swift */; };
-		F3F85F272C962EC600AE0A1D /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85F262C962EC600AE0A1D /* ScrechKit */; };
 		F3F85F292C962EC900AE0A1D /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85F282C962EC900AE0A1D /* DeviceKit */; };
 		F3F85F2B2C96448E00AE0A1D /* System Report View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F2A2C96448E00AE0A1D /* System Report View.swift */; };
 		F3F85F2D2C96455300AE0A1D /* Hardware Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85F2C2C96455300AE0A1D /* Hardware Specs.swift */; };
@@ -535,27 +530,63 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		F337086E2DD92A47006834F8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+			);
+			name = "Embed Frameworks";
+		};
+		F33708702DD92A4B006834F8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+			);
+			name = "Embed Frameworks";
+		};
+		F33708722DD92A4E006834F8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+			);
+			name = "Embed Frameworks";
+		};
+		F33708742DD92A51006834F8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+			);
+			name = "Embed Frameworks";
+		};
+		F33708762DD92A54006834F8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+			);
+			name = "Embed Frameworks";
+		};
 		F36F7FDE2CA0CFE00007F120 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 13;
+			dstSubfolder = PlugIns;
 			files = (
 				F36F7FD92CA0CFE00007F120 /* iMessage.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F36FBCBF2C9449A300F5E174 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
+			dstSubfolder = Product;
 			files = (
 				F36FBCBE2C9449A300F5E174 /* watchOS.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -575,6 +606,7 @@
 		F3291C5E2CAA0CFB00A15CAE /* Water Resistance Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Water Resistance Description.swift"; sourceTree = "<group>"; };
 		F3291C6C2CAA9A3B00A15CAE /* Neural Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Neural Engine.swift"; sourceTree = "<group>"; };
 		F3329CA12D7D0E97003B4E68 /* Color Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Test.swift"; sourceTree = "<group>"; };
+		F33C4BA12DEB3B650070F213 /* Device Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Extension.swift"; sourceTree = "<group>"; };
 		F33FEE522C982A1800214288 /* Unit Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit Tests.swift"; sourceTree = "<group>"; };
 		F33FEE572C982EC200214288 /* Nav Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Links.swift"; sourceTree = "<group>"; };
 		F33FEE592C982FF000214288 /* System Report VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System Report VM.swift"; sourceTree = "<group>"; };
@@ -693,6 +725,7 @@
 		F3E7EC9D2C680561008CD17B /* Torch VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Torch VM.swift"; sourceTree = "<group>"; };
 		F3EA43AE2C998759009820F6 /* Torch Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Torch Test.swift"; sourceTree = "<group>"; };
 		F3EA43B02C998787009820F6 /* Color Test List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Test List.swift"; sourceTree = "<group>"; };
+		F3EA491E2D7D821000887109 /* MetricKit Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MetricKit Manager.swift"; sourceTree = "<group>"; };
 		F3ECFDDD2CA4B0D000E72D41 /* Max Clock Speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Max Clock Speed.swift"; sourceTree = "<group>"; };
 		F3ECFDE42CA4B3A700E72D41 /* L1 Instruction Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "L1 Instruction Cache.swift"; sourceTree = "<group>"; };
 		F3ECFDEB2CA4B3E500E72D41 /* L1 Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "L1 Cache.swift"; sourceTree = "<group>"; };
@@ -701,7 +734,6 @@
 		F3ECFE002CA4BD9B00E72D41 /* Memory Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Memory Type.swift"; sourceTree = "<group>"; };
 		F3ECFE072CA4C09200E72D41 /* Instruction Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instruction Set.swift"; sourceTree = "<group>"; };
 		F3ECFE1D2CA536FD00E72D41 /* Release Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Release Date.swift"; sourceTree = "<group>"; };
-		F3ECFE242CA53A4B00E72D41 /* Device Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Extension.swift"; sourceTree = "<group>"; };
 		F3ECFE2C2CA53AE200E72D41 /* Battery Capacity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Capacity.swift"; sourceTree = "<group>"; };
 		F3ECFE332CA53AE900E72D41 /* Battery Capacity Wh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Capacity Wh.swift"; sourceTree = "<group>"; };
 		F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voltage.swift; sourceTree = "<group>"; };
@@ -727,7 +759,7 @@
 		F3F85F0E2C962C4600AE0A1D /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F85F102C962C4600AE0A1D /* macOS App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "macOS App.swift"; sourceTree = "<group>"; };
 		F3F85F192C962C4700AE0A1D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		F3F85F1D2C962C6600AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3F85F1D2C962C6600AE0A1D /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		F3F85F202C962CBD00AE0A1D /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F3F85F222C962CE600AE0A1D /* Battery Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Specs.swift"; sourceTree = "<group>"; };
 		F3F85F242C962E7200AE0A1D /* Battery VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery VM.swift"; sourceTree = "<group>"; };
@@ -740,76 +772,62 @@
 /* Begin PBXFrameworksBuildPhase section */
 		F36F7FC82CA0CFDF0007F120 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F36F7FCD2CA0CFDF0007F120 /* Messages.framework in Frameworks */,
-				F36F7FEB2CA0D23D0007F120 /* ScrechKit in Frameworks */,
+				F31D320F2DDC8CEA00E7B121 /* ScrechKit in Frameworks */,
 				F329E1862D37CB1E007BA9D1 /* SafariCover in Frameworks */,
 				F36F802B2CA0D5E90007F120 /* ScrechCam in Frameworks */,
 				F3C68AD42CAFCE750021B6F3 /* MailCover in Frameworks */,
 				F36F7FED2CA0D2400007F120 /* DeviceKit in Frameworks */,
 				F3C68B092CB091F40021B6F3 /* HealthyKit in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F36FBCAE2C9449A200F5E174 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
-				F36FBCCC2C944B1300F5E174 /* ScrechKit in Frameworks */,
 				F36FBCCE2C944B1700F5E174 /* DeviceKit in Frameworks */,
+				F31D32072DDC8CD300E7B121 /* ScrechKit in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3C3BDBA2C92D87C00BF91EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F329E18A2D37CC60007BA9D1 /* SafariCover in Frameworks */,
+				F31D32092DDC8CDA00E7B121 /* ScrechKit in Frameworks */,
 				F3C3BDDD2C92DAAA00BF91EE /* DeviceKit in Frameworks */,
 				F3C68AD22CAFCDD20021B6F3 /* MailCover in Frameworks */,
-				F3C3BDDF2C92DAB000BF91EE /* ScrechKit in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3E7EC372C676A13008CD17B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F357214D2C98584100967ACA /* ScrechCam in Frameworks */,
 				F3C68AE72CAFD7C80021B6F3 /* HealthyKit in Frameworks */,
-				F3E7EC962C67B99E008CD17B /* ScrechKit in Frameworks */,
 				F3E7EC992C67B9A8008CD17B /* DeviceKit in Frameworks */,
+				F31D32052DDC8CCB00E7B121 /* ScrechKit in Frameworks */,
 				F329E1842D37CA7D007BA9D1 /* SafariCover in Frameworks */,
 				F3C68ACA2CAFCD3E0021B6F3 /* MailCover in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3F85ECA2C94AF5A00AE0A1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
-				F3F85EE12C957CF500AE0A1D /* ScrechKit in Frameworks */,
 				F3F85EE32C957CF700AE0A1D /* DeviceKit in Frameworks */,
+				F31D320B2DDC8CDE00E7B121 /* ScrechKit in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3F85F0B2C962C4600AE0A1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
+				F31D320D2DDC8CE400E7B121 /* ScrechKit in Frameworks */,
 				F358F0232D2C185800BCC07B /* LaunchAtLogin in Frameworks */,
-				F3F85F272C962EC600AE0A1D /* ScrechKit in Frameworks */,
 				F3F85F292C962EC900AE0A1D /* DeviceKit in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3F85F312C96491700AE0A1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -834,6 +852,14 @@
 				F3291C322CA9BC0F00A15CAE /* Font Row.swift */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		F33C4BA22DEB3B650070F213 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				F33C4BA12DEB3B650070F213 /* Device Extension.swift */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 		F33FEE542C982A2800214288 /* Unit Tests */ = {
@@ -871,7 +897,7 @@
 			path = "System Report";
 			sourceTree = "<group>";
 		};
-		F35721502C98637100967ACA /* Navigation */ = {
+		F35721502C98637100967ACA /* Nav */ = {
 			isa = PBXGroup;
 			children = (
 				F3F85F202C962CBD00AE0A1D /* App Container.swift */,
@@ -879,7 +905,7 @@
 				F3B7098A2CA1DD4F006ECAD1 /* Version View.swift */,
 				F317334D2CA1D61B00CFA041 /* Nav Link.swift */,
 			);
-			path = Navigation;
+			path = Nav;
 			sourceTree = "<group>";
 		};
 		F358F0262D2C187500BCC07B /* Settings */ = {
@@ -950,7 +976,6 @@
 			isa = PBXGroup;
 			children = (
 				F389A6D72CA368C600FF670F /* Warnings Section.swift */,
-				F3D1E7982C9C8444000C81FF /* Specs Link.swift */,
 				F389A6DA2CA36AAF00FF670F /* Warning Card.swift */,
 			);
 			path = Warnings;
@@ -1060,12 +1085,12 @@
 			path = About;
 			sourceTree = "<group>";
 		};
-		F3D1E7B12C9D6053000C81FF /* Navigation */ = {
+		F3D1E7B12C9D6053000C81FF /* Nav */ = {
 			isa = PBXGroup;
 			children = (
 				F3F85EDC2C94DD6800AE0A1D /* App Container.swift */,
 			);
-			path = Navigation;
+			path = Nav;
 			sourceTree = "<group>";
 		};
 		F3D1E7C42C9D6B80000C81FF /* Magnetic Field */ = {
@@ -1111,6 +1136,7 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */,
+				F3EA491E2D7D821000887109 /* MetricKit Manager.swift */,
 				F3187A512C898B40008FB911 /* Nav */,
 				F3E7EC412C676A14008CD17B /* Assets.xcassets */,
 				F36F803A2CA170870007F120 /* Localizable.xcstrings */,
@@ -1119,6 +1145,7 @@
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
 				F389A6D92CA36AA600FF670F /* Warnings */,
 				F3D1E7AF2C9D5D96000C81FF /* Specs Button.swift */,
+				F3D1E7982C9C8444000C81FF /* Specs Link.swift */,
 				F3E7EC4F2C67B985008CD17B /* List Link.swift */,
 				F3E7EC4D2C67B985008CD17B /* Device Info.swift */,
 				F3ECFDDC2CA4B05700E72D41 /* DeviceKit */,
@@ -1287,7 +1314,7 @@
 				F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */,
 				F3ECFE2C2CA53AE200E72D41 /* Battery Capacity.swift */,
 				F3ECFE332CA53AE900E72D41 /* Battery Capacity Wh.swift */,
-				F3ECFE2B2CA53A6700E72D41 /* Examples */,
+				F33C4BA22DEB3B650070F213 /* Example */,
 				F3ECFE0E2CA5343C00E72D41 /* Disabled */,
 			);
 			path = DeviceKit;
@@ -1302,14 +1329,6 @@
 				F3ECFDF92CA4B53200E72D41 /* L3 Cache.swift */,
 			);
 			path = Disabled;
-			sourceTree = "<group>";
-		};
-		F3ECFE2B2CA53A6700E72D41 /* Examples */ = {
-			isa = PBXGroup;
-			children = (
-				F3ECFE242CA53A4B00E72D41 /* Device Extension.swift */,
-			);
-			path = Examples;
 			sourceTree = "<group>";
 		};
 		F3F85EC62C94A7AF00AE0A1D /* Display */ = {
@@ -1334,7 +1353,7 @@
 		F3F85EDB2C94AF8000AE0A1D /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				F3D1E7B12C9D6053000C81FF /* Navigation */,
+				F3D1E7B12C9D6053000C81FF /* Nav */,
 				F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */,
 				F3F85F092C959DE300AE0A1D /* Info.plist */,
 				F3F85EDE2C94DD7900AE0A1D /* Home View.swift */,
@@ -1349,8 +1368,8 @@
 			isa = PBXGroup;
 			children = (
 				F3F85F102C962C4600AE0A1D /* macOS App.swift */,
-				F35721502C98637100967ACA /* Navigation */,
-				F3F85F1D2C962C6600AE0A1D /* Info.plist */,
+				F35721502C98637100967ACA /* Nav */,
+				F3F85F1D2C962C6600AE0A1D /* macOS.plist */,
 				F3F85F192C962C4700AE0A1D /* macOS.entitlements */,
 				F33FEE5C2C98386E00214288 /* Param.swift */,
 				F33FEE5E2C9838AE00214288 /* Spec Item.swift */,
@@ -1376,16 +1395,14 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = iMessage;
 			packageProductDependencies = (
-				F36F7FEA2CA0D23D0007F120 /* ScrechKit */,
 				F36F7FEC2CA0D2400007F120 /* DeviceKit */,
 				F36F802A2CA0D5E90007F120 /* ScrechCam */,
 				F3C68AD32CAFCE750021B6F3 /* MailCover */,
 				F3C68B082CB091F40021B6F3 /* HealthyKit */,
 				F329E1852D37CB1E007BA9D1 /* SafariCover */,
+				F31D320E2DDC8CEA00E7B121 /* ScrechKit */,
 			);
 			productName = iMessage;
 			productReference = F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */;
@@ -1398,15 +1415,14 @@
 				F36FBCAD2C9449A200F5E174 /* Sources */,
 				F36FBCAE2C9449A200F5E174 /* Frameworks */,
 				F36FBCAF2C9449A200F5E174 /* Resources */,
+				F33708702DD92A4B006834F8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = watchOS;
 			packageProductDependencies = (
-				F36FBCCB2C944B1300F5E174 /* ScrechKit */,
 				F36FBCCD2C944B1700F5E174 /* DeviceKit */,
+				F31D32062DDC8CD300E7B121 /* ScrechKit */,
 			);
 			productName = "watchOS Watch App";
 			productReference = F36FBCB12C9449A200F5E174 /* watchOS.app */;
@@ -1419,17 +1435,16 @@
 				F3C3BDB92C92D87C00BF91EE /* Sources */,
 				F3C3BDBA2C92D87C00BF91EE /* Frameworks */,
 				F3C3BDBB2C92D87C00BF91EE /* Resources */,
+				F33708722DD92A4E006834F8 /* Embed Frameworks */,
 			);
 			buildRules = (
-			);
-			dependencies = (
 			);
 			name = visionOS;
 			packageProductDependencies = (
 				F3C3BDDC2C92DAAA00BF91EE /* DeviceKit */,
-				F3C3BDDE2C92DAB000BF91EE /* ScrechKit */,
 				F3C68AD12CAFCDD20021B6F3 /* MailCover */,
 				F329E1892D37CC60007BA9D1 /* SafariCover */,
+				F31D32082DDC8CDA00E7B121 /* ScrechKit */,
 			);
 			productName = visionOS;
 			productReference = F3C3BDBD2C92D87C00BF91EE /* visionOS.app */;
@@ -1444,6 +1459,7 @@
 				F3E7EC382C676A13008CD17B /* Resources */,
 				F36FBCBF2C9449A300F5E174 /* Embed Watch Content */,
 				F36F7FDE2CA0CFE00007F120 /* Embed Foundation Extensions */,
+				F337086E2DD92A47006834F8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1453,12 +1469,12 @@
 			);
 			name = iOS;
 			packageProductDependencies = (
-				F3E7EC952C67B99E008CD17B /* ScrechKit */,
 				F3E7EC982C67B9A8008CD17B /* DeviceKit */,
 				F357214C2C98584100967ACA /* ScrechCam */,
 				F3C68AC92CAFCD3E0021B6F3 /* MailCover */,
 				F3C68AE62CAFD7C80021B6F3 /* HealthyKit */,
 				F329E1832D37CA7D007BA9D1 /* SafariCover */,
+				F31D32042DDC8CCB00E7B121 /* ScrechKit */,
 			);
 			productName = "Device Specs";
 			productReference = F3E7EC3A2C676A13008CD17B /* iOS.app */;
@@ -1471,15 +1487,14 @@
 				F3F85EC92C94AF5A00AE0A1D /* Sources */,
 				F3F85ECA2C94AF5A00AE0A1D /* Frameworks */,
 				F3F85ECB2C94AF5A00AE0A1D /* Resources */,
+				F33708742DD92A51006834F8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = tvOS;
 			packageProductDependencies = (
-				F3F85EE02C957CF500AE0A1D /* ScrechKit */,
 				F3F85EE22C957CF700AE0A1D /* DeviceKit */,
+				F31D320A2DDC8CDE00E7B121 /* ScrechKit */,
 			);
 			productName = tvOS;
 			productReference = F3F85ECD2C94AF5A00AE0A1D /* tvOS.app */;
@@ -1492,16 +1507,15 @@
 				F3F85F0A2C962C4600AE0A1D /* Sources */,
 				F3F85F0B2C962C4600AE0A1D /* Frameworks */,
 				F3F85F0C2C962C4600AE0A1D /* Resources */,
+				F33708762DD92A54006834F8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = macOS;
 			packageProductDependencies = (
-				F3F85F262C962EC600AE0A1D /* ScrechKit */,
 				F3F85F282C962EC900AE0A1D /* DeviceKit */,
 				F358F0222D2C185800BCC07B /* LaunchAtLogin */,
+				F31D320C2DDC8CE400E7B121 /* ScrechKit */,
 			);
 			productName = macOS;
 			productReference = F3F85F0E2C962C4600AE0A1D /* Device Specs.app */;
@@ -1521,8 +1535,6 @@
 				F3F85F392C96491700AE0A1D /* PBXTargetDependency */,
 			);
 			name = "Unit Tests";
-			packageProductDependencies = (
-			);
 			productName = "Unit Tests";
 			productReference = F3F85F342C96491700AE0A1D /* Unit Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -1535,7 +1547,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1630;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					F36F7FCA2CA0CFDF0007F120 = {
 						CreatedOnToolsVersion = 16.0;
@@ -1580,7 +1592,7 @@
 				F358F0212D2C185800BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
 				F329E1822D37CA7D007BA9D1 /* XCRemoteSwiftPackageReference "SafariCover" */,
 			);
-			preferredProjectObjectVersion = 77;
+			preferredProjectObjectVersion = 90;
 			productRefGroup = F3E7EC3B2C676A13008CD17B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1599,72 +1611,57 @@
 /* Begin PBXResourcesBuildPhase section */
 		F36F7FC92CA0CFDF0007F120 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F36F80402CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F36F7FD52CA0CFE00007F120 /* Assets.xcassets in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F36FBCAF2C9449A200F5E174 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3F85E8B2C94529A00AE0A1D /* iOS.plist in Resources */,
 				F3C8E5542D7E2EF000644E47 /* Assets.xcassets in Resources */,
 				F36F803C2CA170870007F120 /* Localizable.xcstrings in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3C3BDBB2C92D87C00BF91EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F36F803D2CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F36FBC732C942F7600F5E174 /* Assets.xcassets in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3E7EC382C676A13008CD17B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F36F803B2CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3F85ECB2C94AF5A00AE0A1D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F36F803E2CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F3F85ED42C94AF5B00AE0A1D /* Assets.xcassets in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3F85F0C2C962C4600AE0A1D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3C8E5552D7E318E00644E47 /* Assets.xcassets in Resources */,
 				F36F803F2CA170870007F120 /* Localizable.xcstrings in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3F85F322C96491700AE0A1D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F36F7FC72CA0CFDF0007F120 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F36F7FD02CA0CFDF0007F120 /* Messages VC.swift in Sources */,
 				F36F801A2CA0D52B0007F120 /* Torch VM.swift in Sources */,
@@ -1712,7 +1709,6 @@
 				F36F80202CA0D5330007F120 /* MCP Session.swift in Sources */,
 				F36F7FF92CA0D4830007F120 /* Camera VM.swift in Sources */,
 				F36F7FFA2CA0D4830007F120 /* Camera Model.swift in Sources */,
-				F3ECFE272CA53A4B00E72D41 /* Device Extension.swift in Sources */,
 				F3ECFE082CA4C09200E72D41 /* Instruction Set.swift in Sources */,
 				F3B709D22CA2C912006ECAD1 /* Volume Slider.swift in Sources */,
 				F3ECFDE82CA4B3A700E72D41 /* L1 Instruction Cache.swift in Sources */,
@@ -1773,11 +1769,9 @@
 				F36F7FF32CA0D4420007F120 /* Display VM.swift in Sources */,
 				F36F7FE72CA0D1FA0007F120 /* Specs Link.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F36FBCAD2C9449A200F5E174 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3F85EB72C948D3100AE0A1D /* Location VM.swift in Sources */,
 				F351EB322CC197CF001F424F /* Clock View.swift in Sources */,
@@ -1789,7 +1783,6 @@
 				F3CCB1EC2CAFBB57000F8207 /* Auth Test.swift in Sources */,
 				F3F85EB62C948D0200AE0A1D /* Orientation VM.swift in Sources */,
 				F3B709B72CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
-				F3ECFE262CA53A4B00E72D41 /* Device Extension.swift in Sources */,
 				F3D1E7892C9C12C2000C81FF /* System Specs.swift in Sources */,
 				F3CCB1EB2CAFBB54000F8207 /* Auth VM.swift in Sources */,
 				F3F85E9F2C94865900AE0A1D /* Network VM.swift in Sources */,
@@ -1856,11 +1849,9 @@
 				F3ECFE1F2CA536FD00E72D41 /* Release Date.swift in Sources */,
 				F36FBCCA2C944B0300F5E174 /* Battery Specs.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3C3BDB92C92D87C00BF91EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3B709B12CA2BE84006ECAD1 /* Timezone.swift in Sources */,
 				F3D1E78E2C9C12D6000C81FF /* System VM.swift in Sources */,
@@ -1928,18 +1919,15 @@
 				F36FBC672C93542700F5E174 /* Processor VM.swift in Sources */,
 				F3C3BDD42C92D8E000BF91EE /* Device Specs App.swift in Sources */,
 				F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */,
-				F3ECFE292CA53A4B00E72D41 /* Device Extension.swift in Sources */,
 				F3291C362CA9BC0F00A15CAE /* Font Row.swift in Sources */,
 				F3CCB1F82CAFC228000F8207 /* GPU Family Model.swift in Sources */,
 				F3ECFE312CA53AE200E72D41 /* Battery Capacity.swift in Sources */,
 				F3B709EC2CA2F683006ECAD1 /* Font List.swift in Sources */,
 				F3C3BDD92C92D99300BF91EE /* Device Specs.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3E7EC362C676A13008CD17B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3F85E8E2C9452CB00AE0A1D /* Accessibility Param.swift in Sources */,
 				F3E7EC762C67B985008CD17B /* Test List.swift in Sources */,
@@ -1978,7 +1966,6 @@
 				F3E7EC7E2C67B985008CD17B /* Nearby VM.swift in Sources */,
 				F3E7EC7F2C67B985008CD17B /* Memory VM.swift in Sources */,
 				F3B709B92CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
-				F3ECFE252CA53A4B00E72D41 /* Device Extension.swift in Sources */,
 				F3D1E7812C9C0CD3000C81FF /* Battery Level.swift in Sources */,
 				F3291C5B2CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */,
 				F3E7EC802C67B985008CD17B /* Display VM.swift in Sources */,
@@ -2045,15 +2032,14 @@
 				F3E7EC3E2C676A13008CD17B /* Device Specs App.swift in Sources */,
 				F3D1E78F2C9C12D6000C81FF /* System VM.swift in Sources */,
 				F3D1E7AE2C9D5BF8000C81FF /* App VM.swift in Sources */,
+				F3EA491F2D7D821000887109 /* MetricKit Manager.swift in Sources */,
 				F3C68AC62CAFCB020021B6F3 /* Apple Intelligence Support.swift in Sources */,
 				F36FBC6F2C941F6200F5E174 /* Accessibility Specs.swift in Sources */,
 				F36FBC642C9353FF00F5E174 /* Processor Specs.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3F85EC92C94AF5A00AE0A1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3F85EE72C957EDA00AE0A1D /* Accessibility Param.swift in Sources */,
 				F3EA43B32C998787009820F6 /* Color Test List.swift in Sources */,
@@ -2106,7 +2092,6 @@
 				F3F85F062C9588BE00AE0A1D /* Network Specs.swift in Sources */,
 				F3F85EEF2C95801D00AE0A1D /* Accessibility Item.swift in Sources */,
 				F3B709B82CA2C187006ECAD1 /* Known Time Zones.swift in Sources */,
-				F3ECFE282CA53A4B00E72D41 /* Device Extension.swift in Sources */,
 				F3ECFE212CA536FD00E72D41 /* Release Date.swift in Sources */,
 				F3D1E7B92C9D611A000C81FF /* App VM.swift in Sources */,
 				F3B709E52CA2F1DC006ECAD1 /* Tech Node.swift in Sources */,
@@ -2123,13 +2108,10 @@
 				F3F85EDD2C94DD6800AE0A1D /* App Container.swift in Sources */,
 				F3B709F62CA30470006ECAD1 /* Advertising Identifier.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3F85F0A2C962C4600AE0A1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
-				F3ECFE2A2CA53A4B00E72D41 /* Device Extension.swift in Sources */,
 				F3F85F2B2C96448E00AE0A1D /* System Report View.swift in Sources */,
 				F33FEE5D2C98386E00214288 /* Param.swift in Sources */,
 				F3B709E62CA2F1DC006ECAD1 /* Tech Node.swift in Sources */,
@@ -2163,15 +2145,12 @@
 				F3ECFDF12CA4B3E500E72D41 /* L1 Cache.swift in Sources */,
 				F3F85F2F2C9645AF00AE0A1D /* Hardware VM.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3F85F302C96491700AE0A1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F33FEE532C982A1800214288 /* Unit Tests.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -2194,7 +2173,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		F36F7FDC2CA0CFE00007F120 /* Debug */ = {
+		F36F7FDC2CA0CFE00007F120 /* Debug configuration for PBXNativeTarget "iMessage" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
@@ -2215,7 +2194,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.4;
+				MARKETING_VERSION = 2.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.debug.iMessage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -2227,7 +2206,7 @@
 			};
 			name = Debug;
 		};
-		F36F7FDD2CA0CFE00007F120 /* Release */ = {
+		F36F7FDD2CA0CFE00007F120 /* Release configuration for PBXNativeTarget "iMessage" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
@@ -2248,7 +2227,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.4;
+				MARKETING_VERSION = 2.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.iMessage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -2261,7 +2240,7 @@
 			};
 			name = Release;
 		};
-		F36FBCC02C9449A300F5E174 /* Debug */ = {
+		F36FBCC02C9449A300F5E174 /* Debug configuration for PBXNativeTarget "watchOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2284,7 +2263,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.4;
+				MARKETING_VERSION = 2.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.debug.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -2296,7 +2275,7 @@
 			};
 			name = Debug;
 		};
-		F36FBCC12C9449A300F5E174 /* Release */ = {
+		F36FBCC12C9449A300F5E174 /* Release configuration for PBXNativeTarget "watchOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2319,7 +2298,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.4;
+				MARKETING_VERSION = 2.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -2332,7 +2311,7 @@
 			};
 			name = Release;
 		};
-		F3C3BDCF2C92D87C00BF91EE /* Debug */ = {
+		F3C3BDCF2C92D87C00BF91EE /* Debug configuration for PBXNativeTarget "visionOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2349,7 +2328,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.4;
+				MARKETING_VERSION = 2.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = xros;
@@ -2357,11 +2336,11 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 7;
-				XROS_DEPLOYMENT_TARGET = 1.0;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		F3C3BDD02C92D87C00BF91EE /* Release */ = {
+		F3C3BDD02C92D87C00BF91EE /* Release configuration for PBXNativeTarget "visionOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2378,7 +2357,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.4;
+				MARKETING_VERSION = 2.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = xros;
@@ -2387,11 +2366,11 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 7;
 				VALIDATE_PRODUCT = YES;
-				XROS_DEPLOYMENT_TARGET = 1.0;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
-		F3E7EC472C676A14008CD17B /* Debug */ = {
+		F3E7EC472C676A14008CD17B /* Debug configuration for PBXProject "Device Specs" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2450,13 +2429,14 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		F3E7EC482C676A14008CD17B /* Release */ = {
+		F3E7EC482C676A14008CD17B /* Release configuration for PBXProject "Device Specs" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2508,12 +2488,13 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
-		F3E7EC4A2C676A14008CD17B /* Debug */ = {
+		F3E7EC4A2C676A14008CD17B /* Debug configuration for PBXNativeTarget "iOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2522,8 +2503,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Device Specs/iOS.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
@@ -2546,11 +2529,11 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 2.1.4;
+				MARKETING_VERSION = 2.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.debug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -2563,7 +2546,7 @@
 			};
 			name = Debug;
 		};
-		F3E7EC4B2C676A14008CD17B /* Release */ = {
+		F3E7EC4B2C676A14008CD17B /* Release configuration for PBXNativeTarget "iOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2572,8 +2555,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Device Specs/iOS.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
@@ -2596,11 +2581,11 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 2.1.4;
+				MARKETING_VERSION = 2.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -2613,7 +2598,7 @@
 			};
 			name = Release;
 		};
-		F3F85ED92C94AF5B00AE0A1D /* Debug */ = {
+		F3F85ED92C94AF5B00AE0A1D /* Debug configuration for PBXNativeTarget "tvOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
@@ -2631,18 +2616,18 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.4;
+				MARKETING_VERSION = 2.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 17.0;
+				TVOS_DEPLOYMENT_TARGET = 18.0;
 			};
 			name = Debug;
 		};
-		F3F85EDA2C94AF5B00AE0A1D /* Release */ = {
+		F3F85EDA2C94AF5B00AE0A1D /* Release configuration for PBXNativeTarget "tvOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
@@ -2660,19 +2645,19 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.4;
+				MARKETING_VERSION = 2.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 17.0;
+				TVOS_DEPLOYMENT_TARGET = 18.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		F3F85F1B2C962C4700AE0A1D /* Debug */ = {
+		F3F85F1B2C962C4700AE0A1D /* Debug configuration for PBXNativeTarget "macOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2682,10 +2667,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
+				INFOPLIST_FILE = macOS/macOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -2694,7 +2682,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 2.1.4;
+				MARKETING_VERSION = 2.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "Device Specs";
 				SDKROOT = macosx;
@@ -2703,7 +2691,7 @@
 			};
 			name = Debug;
 		};
-		F3F85F1C2C962C4700AE0A1D /* Release */ = {
+		F3F85F1C2C962C4700AE0A1D /* Release configuration for PBXNativeTarget "macOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2713,10 +2701,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
+				INFOPLIST_FILE = macOS/macOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -2725,7 +2716,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 2.1.4;
+				MARKETING_VERSION = 2.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "Device Specs";
 				SDKROOT = macosx;
@@ -2734,7 +2725,7 @@
 			};
 			name = Release;
 		};
-		F3F85F3B2C96491700AE0A1D /* Debug */ = {
+		F3F85F3B2C96491700AE0A1D /* Debug configuration for PBXNativeTarget "Unit Tests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2753,7 +2744,7 @@
 			};
 			name = Debug;
 		};
-		F3F85F3C2C96491700AE0A1D /* Release */ = {
+		F3F85F3C2C96491700AE0A1D /* Release configuration for PBXNativeTarget "Unit Tests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2778,73 +2769,65 @@
 		F36F7FDB2CA0CFE00007F120 /* Build configuration list for PBXNativeTarget "iMessage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F36F7FDC2CA0CFE00007F120 /* Debug */,
-				F36F7FDD2CA0CFE00007F120 /* Release */,
+				F36F7FDC2CA0CFE00007F120 /* Debug configuration for PBXNativeTarget "iMessage" */,
+				F36F7FDD2CA0CFE00007F120 /* Release configuration for PBXNativeTarget "iMessage" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F36FBCC22C9449A300F5E174 /* Build configuration list for PBXNativeTarget "watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F36FBCC02C9449A300F5E174 /* Debug */,
-				F36FBCC12C9449A300F5E174 /* Release */,
+				F36FBCC02C9449A300F5E174 /* Debug configuration for PBXNativeTarget "watchOS" */,
+				F36FBCC12C9449A300F5E174 /* Release configuration for PBXNativeTarget "watchOS" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3C3BDCE2C92D87C00BF91EE /* Build configuration list for PBXNativeTarget "visionOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3C3BDCF2C92D87C00BF91EE /* Debug */,
-				F3C3BDD02C92D87C00BF91EE /* Release */,
+				F3C3BDCF2C92D87C00BF91EE /* Debug configuration for PBXNativeTarget "visionOS" */,
+				F3C3BDD02C92D87C00BF91EE /* Release configuration for PBXNativeTarget "visionOS" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3E7EC352C676A13008CD17B /* Build configuration list for PBXProject "Device Specs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3E7EC472C676A14008CD17B /* Debug */,
-				F3E7EC482C676A14008CD17B /* Release */,
+				F3E7EC472C676A14008CD17B /* Debug configuration for PBXProject "Device Specs" */,
+				F3E7EC482C676A14008CD17B /* Release configuration for PBXProject "Device Specs" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3E7EC492C676A14008CD17B /* Build configuration list for PBXNativeTarget "iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3E7EC4A2C676A14008CD17B /* Debug */,
-				F3E7EC4B2C676A14008CD17B /* Release */,
+				F3E7EC4A2C676A14008CD17B /* Debug configuration for PBXNativeTarget "iOS" */,
+				F3E7EC4B2C676A14008CD17B /* Release configuration for PBXNativeTarget "iOS" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3F85ED82C94AF5B00AE0A1D /* Build configuration list for PBXNativeTarget "tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3F85ED92C94AF5B00AE0A1D /* Debug */,
-				F3F85EDA2C94AF5B00AE0A1D /* Release */,
+				F3F85ED92C94AF5B00AE0A1D /* Debug configuration for PBXNativeTarget "tvOS" */,
+				F3F85EDA2C94AF5B00AE0A1D /* Release configuration for PBXNativeTarget "tvOS" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3F85F1A2C962C4700AE0A1D /* Build configuration list for PBXNativeTarget "macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3F85F1B2C962C4700AE0A1D /* Debug */,
-				F3F85F1C2C962C4700AE0A1D /* Release */,
+				F3F85F1B2C962C4700AE0A1D /* Debug configuration for PBXNativeTarget "macOS" */,
+				F3F85F1C2C962C4700AE0A1D /* Release configuration for PBXNativeTarget "macOS" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3F85F3A2C96491700AE0A1D /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3F85F3B2C96491700AE0A1D /* Debug */,
-				F3F85F3C2C96491700AE0A1D /* Release */,
+				F3F85F3B2C96491700AE0A1D /* Debug configuration for PBXNativeTarget "Unit Tests" */,
+				F3F85F3C2C96491700AE0A1D /* Release configuration for PBXNativeTarget "Unit Tests" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
@@ -2909,6 +2892,36 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F31D32042DDC8CCB00E7B121 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F31D32062DDC8CD300E7B121 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F31D32082DDC8CDA00E7B121 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F31D320A2DDC8CDE00E7B121 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F31D320C2DDC8CE400E7B121 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F31D320E2DDC8CEA00E7B121 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
 		F329E1832D37CA7D007BA9D1 /* SafariCover */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F329E1822D37CA7D007BA9D1 /* XCRemoteSwiftPackageReference "SafariCover" */;
@@ -2934,11 +2947,6 @@
 			package = F358F0212D2C185800BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
 			productName = LaunchAtLogin;
 		};
-		F36F7FEA2CA0D23D0007F120 /* ScrechKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
-			productName = ScrechKit;
-		};
 		F36F7FEC2CA0D2400007F120 /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
@@ -2949,11 +2957,6 @@
 			package = F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */;
 			productName = ScrechCam;
 		};
-		F36FBCCB2C944B1300F5E174 /* ScrechKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
-			productName = ScrechKit;
-		};
 		F36FBCCD2C944B1700F5E174 /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
@@ -2963,11 +2966,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
-		};
-		F3C3BDDE2C92DAB000BF91EE /* ScrechKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
-			productName = ScrechKit;
 		};
 		F3C68AC92CAFCD3E0021B6F3 /* MailCover */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -2994,30 +2992,15 @@
 			package = F3C68AE52CAFD7C80021B6F3 /* XCRemoteSwiftPackageReference "HealthyKit" */;
 			productName = HealthyKit;
 		};
-		F3E7EC952C67B99E008CD17B /* ScrechKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
-			productName = ScrechKit;
-		};
 		F3E7EC982C67B9A8008CD17B /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
 		};
-		F3F85EE02C957CF500AE0A1D /* ScrechKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
-			productName = ScrechKit;
-		};
 		F3F85EE22C957CF700AE0A1D /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
-		};
-		F3F85F262C962EC600AE0A1D /* ScrechKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
-			productName = ScrechKit;
 		};
 		F3F85F282C962EC900AE0A1D /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;

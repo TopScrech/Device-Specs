@@ -4,7 +4,7 @@ import SwiftUI
 import ImagePlayground
 #endif
 
-@available(iOS 18, *)
+@available(iOS 18.1, visionOS 2.4, *)
 struct AppleIntelligenceSupport: View {
     
 #if canImport(ImagePlayground)
@@ -24,7 +24,7 @@ struct AppleIntelligenceSupport: View {
             } icon: {
                 Image(.appleIntelligence)
                     .resizable()
-                    .frame(width: 32, height: 32)
+                    .frame(32)
             }
             .opacity(supportsAppleIntelligence ? 1 : 0.1)
             .padding(.vertical, 5)
@@ -32,7 +32,7 @@ struct AppleIntelligenceSupport: View {
     }
 }
 
-@available(iOS 18, *)
+@available(iOS 18.1, visionOS 2.4, *)
 #Preview {
     AppleIntelligenceSupport()
 }

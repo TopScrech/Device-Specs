@@ -21,7 +21,7 @@ struct AppContainer: View {
                                 Text("Hide status bar and this menu")
                             }
                         } label: {
-                            Image(systemName: "ellipsis.circle")
+                            Image(systemName: "ellipsis")
                         }
                     }
                 }

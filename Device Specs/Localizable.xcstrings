@@ -1861,16 +1861,6 @@
         }
       }
     },
-    "Ultra Wideband Test" : {
-      "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Тест Ультраширокополосного подключения"
-          }
-        }
-      }
-    },
     "Underline" : {
       "localizations" : {
         "ru" : {

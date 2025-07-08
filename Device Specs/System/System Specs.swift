@@ -12,7 +12,7 @@ struct SystemSpecs: View {
                 ListParam("Build", param: vm.buildNumber)
             }
             
-            if #available(iOS 18, visionOS 2, *) {
+            if #available(iOS 18.1, visionOS 2.4, *) {
                 AppleIntelligenceSupport()
             }
             

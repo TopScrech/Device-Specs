@@ -17,8 +17,9 @@ struct WarningCard: View {
                 Text(title)
             } icon: {
                 Image(systemName: icon)
-                    .foregroundStyle(color.gradient)
                     .bold()
+                    .foregroundStyle(color.gradient)
+                    .symbolEffect(.breathe.pulse.byLayer, options: .repeat(.continuous))
             }
         }
     }

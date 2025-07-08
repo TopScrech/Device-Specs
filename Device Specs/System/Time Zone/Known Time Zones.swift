@@ -11,7 +11,7 @@ struct KnownTimeZones: View {
     
     private var foundZones: [String] {
         searchText.isEmpty ? zones : zones.filter {
-            $0.lowercased().contains(searchText.lowercased())
+            $0.localizedStandardContains(searchText)
         }
     }
     
