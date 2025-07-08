@@ -17,6 +17,7 @@
 		F3187A502C898B37008FB911 /* Nav State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A4F2C898B37008FB911 /* Nav State.swift */; };
 		F3187A532C898B62008FB911 /* Nav Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A522C898B62008FB911 /* Nav Destinations.swift */; };
 		F3187A552C898B7E008FB911 /* Nav Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3187A542C898B7E008FB911 /* Nav Extension.swift */; };
+		F31B9DDE2E1DC75D0083F6D4 /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EC02C948F9D00AE0A1D /* Test List.swift */; };
 		F31D32052DDC8CCB00E7B121 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D32042DDC8CCB00E7B121 /* ScrechKit */; };
 		F31D32072DDC8CD300E7B121 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D32062DDC8CD300E7B121 /* ScrechKit */; };
 		F31D32092DDC8CDA00E7B121 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D32082DDC8CDA00E7B121 /* ScrechKit */; };
@@ -28,8 +29,6 @@
 		F31F08C42D2A79B500B156EC /* Apple Intelligence Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */; };
 		F3291C262CA99C7D00A15CAE /* Warning Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A6DA2CA36AAF00FF670F /* Warning Card.swift */; };
 		F3291C282CA99CA000A15CAE /* Warnings Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C272CA99CA000A15CAE /* Warnings Section.swift */; };
-		F3291C292CA9A22D00A15CAE /* Haptic Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709D62CA2CA1F006ECAD1 /* Haptic Tests.swift */; };
-		F3291C2A2CA9A23F00A15CAE /* Haptic Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709DA2CA2CEE0006ECAD1 /* Haptic Button.swift */; };
 		F3291C332CA9BC0F00A15CAE /* Font Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C322CA9BC0F00A15CAE /* Font Row.swift */; };
 		F3291C342CA9BC0F00A15CAE /* Font Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C322CA9BC0F00A15CAE /* Font Row.swift */; };
 		F3291C352CA9BC0F00A15CAE /* Font Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C322CA9BC0F00A15CAE /* Font Row.swift */; };
@@ -472,7 +471,6 @@
 		F3F85EDD2C94DD6800AE0A1D /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EDC2C94DD6800AE0A1D /* App Container.swift */; };
 		F3F85EDF2C94DD7900AE0A1D /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EDE2C94DD7900AE0A1D /* Home View.swift */; };
 		F3F85EE32C957CF700AE0A1D /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85EE22C957CF700AE0A1D /* DeviceKit */; };
-		F3F85EE42C957D4F00AE0A1D /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EC02C948F9D00AE0A1D /* Test List.swift */; };
 		F3F85EE52C957D5900AE0A1D /* Color View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6D2C67B985008CD17B /* Color View.swift */; };
 		F3F85EE62C957ED300AE0A1D /* Accessibility VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCD32C944DA200F5E174 /* Accessibility VM.swift */; };
 		F3F85EE72C957EDA00AE0A1D /* Accessibility Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */; };
@@ -2046,8 +2044,8 @@
 				F3291C4B2CA9BF2B00A15CAE /* Font Customization.swift in Sources */,
 				F3291C722CAA9A3B00A15CAE /* Neural Engine.swift in Sources */,
 				F31F08C42D2A79B500B156EC /* Apple Intelligence Support.swift in Sources */,
-				F3291C2A2CA9A23F00A15CAE /* Haptic Button.swift in Sources */,
 				F3F85EF52C9583EB00AE0A1D /* Device Specs.swift in Sources */,
+				F31B9DDE2E1DC75D0083F6D4 /* Test List.swift in Sources */,
 				F3B709D12CA2C912006ECAD1 /* Volume Slider.swift in Sources */,
 				F3F85EF42C9583E400AE0A1D /* Device VM.swift in Sources */,
 				F3B709EA2CA2F683006ECAD1 /* Font List.swift in Sources */,
@@ -2075,11 +2073,9 @@
 				F3291C282CA99CA000A15CAE /* Warnings Section.swift in Sources */,
 				F3F85EF12C9580AD00AE0A1D /* Display VM.swift in Sources */,
 				F3291C3D2CA9BCE200A15CAE /* Font VM.swift in Sources */,
-				F3291C292CA9A22D00A15CAE /* Haptic Tests.swift in Sources */,
 				F3291C262CA99C7D00A15CAE /* Warning Card.swift in Sources */,
 				F3ECFDFD2CA4B53200E72D41 /* L3 Cache.swift in Sources */,
 				F3ECFE342CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
-				F3F85EE42C957D4F00AE0A1D /* Test List.swift in Sources */,
 				F3B709A22CA22E09006ECAD1 /* Locale List.swift in Sources */,
 				F3CCB1FB2CAFC228000F8207 /* GPU Family Model.swift in Sources */,
 				F3291C632CAA0CFB00A15CAE /* Water Resistance Description.swift in Sources */,
@@ -2188,7 +2184,7 @@
 				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "This permission is required in order to test UWB capabilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2220,7 +2216,7 @@
 				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "This permission is required in order to test UWB capabilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2268,7 +2264,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Debug;
 		};
@@ -2303,7 +2299,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
 		};
@@ -2331,7 +2327,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 7;
-				XROS_DEPLOYMENT_TARGET = 2.0;
+				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Debug;
 		};
@@ -2360,7 +2356,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 7;
 				VALIDATE_PRODUCT = YES;
-				XROS_DEPLOYMENT_TARGET = 2.0;
+				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
 		};
@@ -2525,7 +2521,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -2576,7 +2572,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -2673,7 +2669,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "Device Specs";
 				SDKROOT = macosx;
@@ -2706,7 +2702,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "Device Specs";
 				SDKROOT = macosx;
@@ -2723,7 +2719,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.Unit-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2742,7 +2738,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs.Unit-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
