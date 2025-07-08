@@ -6,20 +6,20 @@ import ImagePlayground
 
 struct AppleIntelligenceSupport: View {
 #if canImport(ImagePlayground)
-    @Environment(\.supportsImagePlayground) private var supportsAppleIntelligence
+    @Environment(\.supportsImagePlayground) private var isSupported
 #else
-    private var supportsAppleIntelligence = false
+    private let isSupported = false
 #endif
     
     private var icon: String {
-        supportsAppleIntelligence ? "apple.intelligence" : "apple.intelligence.badge.xmark"
+        isSupported ? "apple.intelligence" : "apple.intelligence.badge.xmark"
     }
     
     var body: some View {
         Section {
             Label {
                 Text(
-                    supportsAppleIntelligence
+                    isSupported
                     ? "Your device supports Apple Intelligence"
                     : "Your device does not support Apple Intelligence"
                 )
