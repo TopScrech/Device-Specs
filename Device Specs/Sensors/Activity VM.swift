@@ -4,8 +4,8 @@ import CoreMotion
 
 @Observable
 final class ActivityVM {
-    var activity = ""
-    var confidence = ""
+    private(set) var activity = ""
+    private(set) var confidence = ""
     
     private let motionActivityManager = CMMotionActivityManager()
     

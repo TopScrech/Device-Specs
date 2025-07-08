@@ -5,11 +5,11 @@ import LocalAuthentication
 final class AuthVM {
     private let context = LAContext()
     
-    var isAuthenticated = false
-    var type = ""
-    var icon = ""
+    private(set) var isAuthenticated = false
+    private(set) var type = ""
+    private(set) var icon = ""
     
-    var errorMessage = ""
+    private(set) var errorMessage = ""
     var alertError = false
     
     init() {

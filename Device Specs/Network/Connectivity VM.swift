@@ -5,15 +5,15 @@ import NetworkExtension
 final class ConnectivityVM {
     private let monitor = NWPathMonitor()
     
-    var type = ""
-    var ssid: String? = nil
-    var bssid: String? = nil
-    var signalStrength: Double? // for Wi-Fi
-    var isSecure: Bool?
-    var didAutoJoin: Bool?
-    var didJustJoin: Bool?
-    var isChosenHelper: Bool? // Indicates whether the calling Hotspot Helper is the chosen helper for this network
-    var securityType: String? // for Wi-Fi
+    private(set) var type = ""
+    private(set) var ssid: String? = nil
+    private(set) var bssid: String? = nil
+    private(set) var signalStrength: Double? // for Wi-Fi
+    private(set) var isSecure: Bool?
+    private(set) var didAutoJoin: Bool?
+    private(set) var didJustJoin: Bool?
+    private(set) var isChosenHelper: Bool? // Indicates whether the calling Hotspot Helper is the chosen helper for this network
+    private(set) var securityType: String? // for Wi-Fi
     
     init() {
         getWiFiInfo()

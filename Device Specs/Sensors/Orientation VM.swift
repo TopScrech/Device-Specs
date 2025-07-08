@@ -8,16 +8,16 @@ final class OrientationVM {
     private var cancellables = Set<AnyCancellable>()
     
     // Rotation
-    var roll = "0.0g"
-    var pitch = "0.0g"
-    var yaw = "0.0g"
+    private(set) var roll = "0.0g"
+    private(set) var pitch = "0.0g"
+    private(set) var yaw = "0.0g"
     
     // Acceleration
-    var x = "0.0g"
-    var y = "0.0g"
-    var z = "0.0g"
+    private(set) var x = "0.0g"
+    private(set) var y = "0.0g"
+    private(set) var z = "0.0g"
     
-    var orientation = ""
+    private(set) var orientation = ""
     
     init() {
         startFetchingMotionData()

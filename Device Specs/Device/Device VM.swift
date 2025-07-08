@@ -17,8 +17,8 @@ import CoreNFC
 final class DeviceVM {
     private let device = Device.current
     
-    var architecture = ""
-    var isForceTouchAvailable = ""
+    private(set) var architecture = ""
+    private(set) var isForceTouchAvailable = ""
     
     var deviceName: String {
         Device.current.name ?? "-"
@@ -90,11 +90,11 @@ final class DeviceVM {
     
     var thermalState: String {
         switch ProcessInfo.processInfo.thermalState {
-        case .nominal: "Nominal"
-        case .fair: "Fair"
-        case .serious: "Serious"
+        case .nominal:  "Nominal"
+        case .fair:     "Fair"
+        case .serious:  "Serious"
         case .critical: "Critical"
-        default: "Unknown"
+        default:        "Unknown"
         }
     }
     

@@ -7,8 +7,8 @@ class AltitudeVM: NSObject {
     private var altimeter = CMAltimeter()
     private var locationManager = CLLocationManager()
     
-    var relativeAltitude = "0.0 m"
-    var absoluteAltitude = "0.0 m"
+    private(set) var relativeAltitude = "0.0 m"
+    private(set) var absoluteAltitude = "0.0 m"
     
     override init() {
         super.init()

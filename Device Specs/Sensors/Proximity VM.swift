@@ -2,7 +2,7 @@ import SwiftUI
 
 @Observable
 final class ProximityVM {
-    var isDeviceCloseToUser = false
+    private(set) var isDeviceCloseToUser = false
     
     init() {
         UIDevice.current.isProximityMonitoringEnabled = true

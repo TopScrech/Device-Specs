@@ -5,8 +5,8 @@ import DeviceKit
 final class SystemVM {
     private let device = Device.current
     
-    var systemUptime = "N/a"
-    var systemActiveTime = "N/a"
+    private(set) var systemUptime = "N/a"
+    private(set) var systemActiveTime = "N/a"
     
     var multitaskingSupported: String {
 #if os(watchOS)

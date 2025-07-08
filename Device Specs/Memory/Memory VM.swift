@@ -5,15 +5,15 @@ import DeviceKit
 final class MemoryVM {
     private let device = Device.current
     
-    var totalRam = ""
-    var usedRam = ""
-    var freeRam = ""
+    private(set) var totalRam = ""
+    private(set) var usedRam = ""
+    private(set) var freeRam = ""
     
-    var totalDisk = ""
-    var usedDisk = ""
-    var freeDisk = ""
-    var freeDiskForImportantUsage = ""
-    var freeDiskForOpportunisticUsage = ""
+    private(set) var totalDisk = ""
+    private(set) var usedDisk = ""
+    private(set) var freeDisk = ""
+    private(set) var freeDiskForImportantUsage = ""
+    private(set) var freeDiskForOpportunisticUsage = ""
     
     init() {
         getMemoryUsage()

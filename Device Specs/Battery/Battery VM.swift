@@ -6,10 +6,10 @@ import Combine
 final class BatteryVM {
     private let device = Device.current
     
-    var batteryLevel = ""
-    var batteryState = ""
-    var batteryLevelNumber: Int?
-    var lowPowerMode = ""
+    private(set) var batteryLevel = ""
+    private(set) var batteryState = ""
+    private(set) var batteryLevelNumber: Int?
+    private(set) var lowPowerMode = ""
     
     private var cancellables = Set<AnyCancellable>()
     

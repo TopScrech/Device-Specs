@@ -8,7 +8,7 @@ struct NetworkSpecs: View {
         List {
             ListParam("Public IP address", param: network.publicIp)
             
-            ListParam("Network interface", param: network.networkinterface)
+            ListParam("Network interface", param: network.networkInterface)
             
             ListParam("Destination IP address", param: network.destinationIpAddress)
             
@@ -56,7 +56,7 @@ struct NetworkSpecs: View {
         }
         .navigationTitle("Network")
         .refreshableTask {
-            network.getIPAddresses()
+            await network.getIPAddresses()
             connectivity.getWiFiInfo()
         }
     }

@@ -5,20 +5,20 @@ import MultipeerConnectivity
 
 @Observable
 class NearbyVM: NSObject, NISessionDelegate {
-    var monkeyLabel = "🙈"
-    var connectedDeviceName = ""
-    var status = ""
+    private(set) var monkeyLabel = "🙈"
+    private(set) var connectedDeviceName = ""
+    private(set) var status = ""
     
-    var distance = ""
-    var azimuthText = ""
-    var elevationText = ""
-    var monkeyRotationAngle: CGFloat = 0
+    private(set) var distance = ""
+    private(set) var azimuthText = ""
+    private(set) var elevationText = ""
+    private(set) var monkeyRotationAngle: CGFloat = 0
     
-    var leftArrow: CGFloat = 0
-    var rightArrow: CGFloat = 0
-    var upArrow: CGFloat = 0
-    var downArrow: CGFloat = 0
-    var angleInfoView: CGFloat = 0
+    private(set) var leftArrow: CGFloat = 0
+    private(set) var rightArrow: CGFloat = 0
+    private(set) var upArrow: CGFloat = 0
+    private(set) var downArrow: CGFloat = 0
+    private(set) var angleInfoView: CGFloat = 0
     
     let nearbyDistanceThreshold: Float = 0.3
     
