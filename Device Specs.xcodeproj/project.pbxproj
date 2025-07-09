@@ -83,6 +83,17 @@
 		F33FEE5D2C98386E00214288 /* Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE5C2C98386E00214288 /* Param.swift */; };
 		F33FEE5F2C9838AE00214288 /* Spec Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE5E2C9838AE00214288 /* Spec Item.swift */; };
 		F33FEE7B2C9848D000214288 /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC5B2C67B985008CD17B /* Battery VM.swift */; };
+		F346B0002E1DDDDA00E56259 /* Foundation Models Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F346AFFF2E1DDDDA00E56259 /* Foundation Models Support.swift */; };
+		F346B0012E1DDDDA00E56259 /* Foundation Models Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F346AFFF2E1DDDDA00E56259 /* Foundation Models Support.swift */; };
+		F346B0022E1DDDDA00E56259 /* Foundation Models Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F346AFFF2E1DDDDA00E56259 /* Foundation Models Support.swift */; };
+		F346B0032E1DDDDA00E56259 /* Foundation Models Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F346AFFF2E1DDDDA00E56259 /* Foundation Models Support.swift */; };
+		F346B0042E1DDDDA00E56259 /* Foundation Models Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F346AFFF2E1DDDDA00E56259 /* Foundation Models Support.swift */; };
+		F346B0062E1DE30C00E56259 /* Foundation Models.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */; };
+		F346B0072E1DE31D00E56259 /* Foundation Models.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */; };
+		F346B0082E1DE31D00E56259 /* Foundation Models.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */; };
+		F346B0092E1DE31D00E56259 /* Foundation Models.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */; };
+		F346B00A2E1DE31D00E56259 /* Foundation Models.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */; };
+		F346B00B2E1DE31D00E56259 /* Foundation Models.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */; };
 		F351EB2F2CC197CF001F424F /* Clock View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* Clock View.swift */; };
 		F351EB302CC197CF001F424F /* Clock View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* Clock View.swift */; };
 		F351EB312CC197CF001F424F /* Clock View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* Clock View.swift */; };
@@ -610,6 +621,8 @@
 		F33FEE592C982FF000214288 /* System Report VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System Report VM.swift"; sourceTree = "<group>"; };
 		F33FEE5C2C98386E00214288 /* Param.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Param.swift; sourceTree = "<group>"; };
 		F33FEE5E2C9838AE00214288 /* Spec Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spec Item.swift"; sourceTree = "<group>"; };
+		F346AFFF2E1DDDDA00E56259 /* Foundation Models Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation Models Support.swift"; sourceTree = "<group>"; };
+		F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Foundation Models.xcassets"; sourceTree = "<group>"; };
 		F351EB2E2CC197CF001F424F /* Clock View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Clock View.swift"; sourceTree = "<group>"; };
 		F357214E2C985FFB00967ACA /* Camera Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera Test.swift"; sourceTree = "<group>"; };
 		F358F0242D2C187000BCC07B /* Settings View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings View.swift"; sourceTree = "<group>"; };
@@ -1066,6 +1079,7 @@
 				F3D1E7872C9C12C2000C81FF /* System Specs.swift */,
 				F3D1E78C2C9C12D6000C81FF /* System VM.swift */,
 				F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */,
+				F346AFFF2E1DDDDA00E56259 /* Foundation Models Support.swift */,
 				F3291C3E2CA9BE4200A15CAE /* Font */,
 				F3B709BB2CA2C2F4006ECAD1 /* Time Zone */,
 				F3B709C82CA2C657006ECAD1 /* Locale */,
@@ -1139,6 +1153,7 @@
 				F3F85E8A2C94529A00AE0A1D /* iOS.plist */,
 				F3E7EC432C676A14008CD17B /* Device Specs.entitlements */,
 				F3E7EC412C676A14008CD17B /* Assets.xcassets */,
+				F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */,
 				F36F803A2CA170870007F120 /* Localizable.xcstrings */,
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
 				F389A6D92CA36AA600FF670F /* Warnings */,
@@ -1611,6 +1626,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F36F80402CA170870007F120 /* Localizable.xcstrings in Resources */,
+				F346B00B2E1DE31D00E56259 /* Foundation Models.xcassets in Resources */,
 				F36F7FD52CA0CFE00007F120 /* Assets.xcassets in Resources */,
 			);
 		};
@@ -1618,6 +1634,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F3F85E8B2C94529A00AE0A1D /* iOS.plist in Resources */,
+				F346B0072E1DE31D00E56259 /* Foundation Models.xcassets in Resources */,
 				F3C8E5542D7E2EF000644E47 /* Assets.xcassets in Resources */,
 				F36F803C2CA170870007F120 /* Localizable.xcstrings in Resources */,
 			);
@@ -1626,6 +1643,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F36F803D2CA170870007F120 /* Localizable.xcstrings in Resources */,
+				F346B0082E1DE31D00E56259 /* Foundation Models.xcassets in Resources */,
 				F36FBC732C942F7600F5E174 /* Assets.xcassets in Resources */,
 			);
 		};
@@ -1633,6 +1651,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F36F803B2CA170870007F120 /* Localizable.xcstrings in Resources */,
+				F346B0062E1DE30C00E56259 /* Foundation Models.xcassets in Resources */,
 				F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */,
 			);
 		};
@@ -1640,6 +1659,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F36F803E2CA170870007F120 /* Localizable.xcstrings in Resources */,
+				F346B0092E1DE31D00E56259 /* Foundation Models.xcassets in Resources */,
 				F3F85ED42C94AF5B00AE0A1D /* Assets.xcassets in Resources */,
 			);
 		};
@@ -1647,6 +1667,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F3C8E5552D7E318E00644E47 /* Assets.xcassets in Resources */,
+				F346B00A2E1DE31D00E56259 /* Foundation Models.xcassets in Resources */,
 				F36F803F2CA170870007F120 /* Localizable.xcstrings in Resources */,
 			);
 		};
@@ -1750,6 +1771,7 @@
 				F36F801B2CA0D52F0007F120 /* Color View.swift in Sources */,
 				F3ECFE3D2CA53AED00E72D41 /* Voltage.swift in Sources */,
 				F36F801C2CA0D52F0007F120 /* Color Test List.swift in Sources */,
+				F346B0042E1DDDDA00E56259 /* Foundation Models Support.swift in Sources */,
 				F36F80102CA0D4DE0007F120 /* Magnetic VM.swift in Sources */,
 				F36F80112CA0D4DE0007F120 /* Magnetic Field Data.swift in Sources */,
 				F36F80032CA0D4B90007F120 /* Processor VM.swift in Sources */,
@@ -1772,6 +1794,7 @@
 			isa = PBXSourcesBuildPhase;
 			files = (
 				F3F85EB72C948D3100AE0A1D /* Location VM.swift in Sources */,
+				F346B0012E1DDDDA00E56259 /* Foundation Models Support.swift in Sources */,
 				F351EB322CC197CF001F424F /* Clock View.swift in Sources */,
 				F3CCB1FA2CAFC228000F8207 /* GPU Family Model.swift in Sources */,
 				F3F85EB92C948D4300AE0A1D /* Sensors View.swift in Sources */,
@@ -1872,6 +1895,7 @@
 				F3C3BDDA2C92D99900BF91EE /* Device VM.swift in Sources */,
 				F3B709D42CA2C912006ECAD1 /* Volume Slider.swift in Sources */,
 				F31549002CAADBBB004CE26E /* Current Process Environment.swift in Sources */,
+				F346B0022E1DDDDA00E56259 /* Foundation Models Support.swift in Sources */,
 				F3C3BDE82C92DCA300BF91EE /* Display Specs.swift in Sources */,
 				F3B709CA2CA2C853006ECAD1 /* Volume.swift in Sources */,
 				F36FBC652C9353FF00F5E174 /* Processor Specs.swift in Sources */,
@@ -1948,6 +1972,7 @@
 				F3E7EC7B2C67B985008CD17B /* Device VM.swift in Sources */,
 				F3EA43AF2C998759009820F6 /* Torch Test.swift in Sources */,
 				F3D1E7C32C9D6B13000C81FF /* Magnetic Field Data.swift in Sources */,
+				F346B0002E1DDDDA00E56259 /* Foundation Models Support.swift in Sources */,
 				F3ECFDE02CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */,
 				F3CCB1E32CAF44E9000F8207 /* Auth Test.swift in Sources */,
 				F3E7EC7C2C67B985008CD17B /* Altitude VM.swift in Sources */,
@@ -2059,6 +2084,7 @@
 				F3329CA52D7D0E97003B4E68 /* Color Test.swift in Sources */,
 				F3D1E78B2C9C12C2000C81FF /* System Specs.swift in Sources */,
 				F3D1E7902C9C12D6000C81FF /* System VM.swift in Sources */,
+				F346B0032E1DDDDA00E56259 /* Foundation Models Support.swift in Sources */,
 				F3B709C32CA2C5E3006ECAD1 /* Locale VM.swift in Sources */,
 				F3B709C12CA2C31E006ECAD1 /* Timezone VM.swift in Sources */,
 				F3D1E7A72C9CD453000C81FF /* Current Process.swift in Sources */,

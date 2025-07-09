@@ -16,23 +16,21 @@ struct AppleIntelligenceSupport: View {
     }
     
     var body: some View {
-        Section {
-            Label {
-                Text(
-                    isSupported
-                    ? "Your device supports Apple Intelligence"
-                    : "Your device does not support Apple Intelligence"
-                )
-            } icon: {
-                Image(systemName: icon)
-                    .foregroundStyle(.primary)
-                    .symbolRenderingMode(.multicolor)
-            }
-            .padding(.vertical, 5)
-#if os(tvOS)
-            .labelReservedIconWidth(64)
-#endif
+        Label {
+            Text(
+                isSupported
+                ? "Your device supports Apple Intelligence"
+                : "Your device does not support Apple Intelligence"
+            )
+        } icon: {
+            Image(systemName: icon)
+                .foregroundStyle(.primary)
+                .symbolRenderingMode(.multicolor)
         }
+        .padding(.vertical, 5)
+#if os(tvOS)
+        .labelReservedIconWidth(64)
+#endif
     }
 }
 

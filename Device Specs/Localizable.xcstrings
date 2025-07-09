@@ -2029,6 +2029,9 @@
         }
       }
     },
+    "Your device does not support Foundation Models" : {
+
+    },
     "Your device supports Apple Intelligence" : {
       "localizations" : {
         "ru" : {
@@ -2038,6 +2041,9 @@
           }
         }
       }
+    },
+    "Your device supports Foundation Models" : {
+
     },
     "Z Axis" : {
 
