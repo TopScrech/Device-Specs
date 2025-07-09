@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F30B51AE2E1E9CDE0041433B /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCCF2C944B5000F5E174 /* App Container.swift */; };
+		F30B51AF2E1E9CE80041433B /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCCF2C944B5000F5E174 /* App Container.swift */; };
 		F31548FF2CAADBBB004CE26E /* Current Process Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31548FE2CAADBBB004CE26E /* Current Process Environment.swift */; };
 		F31549002CAADBBB004CE26E /* Current Process Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31548FE2CAADBBB004CE26E /* Current Process Environment.swift */; };
 		F31549012CAADBBB004CE26E /* Current Process Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31548FE2CAADBBB004CE26E /* Current Process Environment.swift */; };
@@ -95,6 +97,7 @@
 		F346B00A2E1DE31D00E56259 /* Foundation Models.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */; };
 		F346B00B2E1DE31D00E56259 /* Foundation Models.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */; };
 		F346B00D2E1DF3EE00E56259 /* Home View Tests Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = F346B00C2E1DF3EE00E56259 /* Home View Tests Link.swift */; };
+		F346B00F2E1E7D2500E56259 /* Untitled.icon in Resources */ = {isa = PBXBuildFile; fileRef = F346B00E2E1E7D2500E56259 /* Untitled.icon */; };
 		F351EB2F2CC197CF001F424F /* Clock View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* Clock View.swift */; };
 		F351EB302CC197CF001F424F /* Clock View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* Clock View.swift */; };
 		F351EB312CC197CF001F424F /* Clock View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* Clock View.swift */; };
@@ -267,7 +270,6 @@
 		F3B709F72CA30470006ECAD1 /* Advertising Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709F42CA30470006ECAD1 /* Advertising Identifier.swift */; };
 		F3B709F92CA30470006ECAD1 /* Advertising Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B709F42CA30470006ECAD1 /* Advertising Identifier.swift */; };
 		F3C3BDD42C92D8E000BF91EE /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
-		F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD52C92D8F600BF91EE /* App Container.swift */; };
 		F3C3BDD82C92D90700BF91EE /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD72C92D90700BF91EE /* Home View.swift */; };
 		F3C3BDD92C92D99300BF91EE /* Device Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC512C67B985008CD17B /* Device Specs.swift */; };
 		F3C3BDDA2C92D99900BF91EE /* Device VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC522C67B985008CD17B /* Device VM.swift */; };
@@ -480,7 +482,6 @@
 		F3F85EC12C948F9D00AE0A1D /* Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EC02C948F9D00AE0A1D /* Test List.swift */; };
 		F3F85EC52C9492F300AE0A1D /* Device Watch Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EC22C9492F300AE0A1D /* Device Watch Info.swift */; };
 		F3F85ED42C94AF5B00AE0A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */; };
-		F3F85EDD2C94DD6800AE0A1D /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EDC2C94DD6800AE0A1D /* App Container.swift */; };
 		F3F85EDF2C94DD7900AE0A1D /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85EDE2C94DD7900AE0A1D /* Home View.swift */; };
 		F3F85EE32C957CF700AE0A1D /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85EE22C957CF700AE0A1D /* DeviceKit */; };
 		F3F85EE52C957D5900AE0A1D /* Color View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6D2C67B985008CD17B /* Color View.swift */; };
@@ -625,6 +626,7 @@
 		F346AFFF2E1DDDDA00E56259 /* Foundation Models Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation Models Support.swift"; sourceTree = "<group>"; };
 		F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Foundation Models.xcassets"; sourceTree = "<group>"; };
 		F346B00C2E1DF3EE00E56259 /* Home View Tests Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View Tests Link.swift"; sourceTree = "<group>"; };
+		F346B00E2E1E7D2500E56259 /* Untitled.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Untitled.icon; sourceTree = "<group>"; };
 		F351EB2E2CC197CF001F424F /* Clock View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Clock View.swift"; sourceTree = "<group>"; };
 		F357214E2C985FFB00967ACA /* Camera Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera Test.swift"; sourceTree = "<group>"; };
 		F358F0242D2C187000BCC07B /* Settings View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings View.swift"; sourceTree = "<group>"; };
@@ -676,7 +678,6 @@
 		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C3BDCC2C92D87C00BF91EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs App.swift"; sourceTree = "<group>"; };
-		F3C3BDD52C92D8F600BF91EE /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F3C3BDD72C92D90700BF91EE /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F3C3BDE72C92DCA300BF91EE /* Display Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Display Specs.swift"; sourceTree = "<group>"; };
 		F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Apple Intelligence Support.swift"; sourceTree = "<group>"; };
@@ -762,7 +763,6 @@
 		F3F85EC82C94AED800AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3F85ECD2C94AF5A00AE0A1D /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F3F85EDC2C94DD6800AE0A1D /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F3F85EDE2C94DD7900AE0A1D /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F3F85EE92C957F9100AE0A1D /* Accessibility Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility Item.swift"; sourceTree = "<group>"; };
 		F3F85EF22C9582EA00AE0A1D /* Display Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Display Specs.swift"; sourceTree = "<group>"; };
@@ -845,6 +845,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F30B51AA2E1E9C940041433B /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				F3F85EB82C948D4300AE0A1D /* Sensors View.swift */,
+				F3F85EB52C948D0200AE0A1D /* Orientation VM.swift */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		F30B51AB2E1E9C9D0041433B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F3F85EA02C9486C200AE0A1D /* Network Specs.swift */,
+				F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F30B51AC2E1E9CA70041433B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F3F85EC02C948F9D00AE0A1D /* Test List.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F30B51AD2E1E9CB30041433B /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				F36FBCCF2C944B5000F5E174 /* App Container.swift */,
+			);
+			path = Nav;
+			sourceTree = "<group>";
+		};
+		F30B51B02E1E9CF60041433B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F3F85F052C9588BE00AE0A1D /* Network Specs.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F30B51B12E1E9D020041433B /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				F3F85EF22C9582EA00AE0A1D /* Display Specs.swift */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		F30B51B22E1E9D210041433B /* Warnings */ = {
+			isa = PBXGroup;
+			children = (
+				F3291C272CA99CA000A15CAE /* Warnings Section.swift */,
+			);
+			path = Warnings;
+			sourceTree = "<group>";
+		};
+		F30B51B32E1E9DA80041433B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F36F80282CA0D5CD0007F120 /* UWB Test View.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F30B51B42E1E9DB60041433B /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				F36F7FE02CA0D04C0007F120 /* App Container.swift */,
+				F36F80242CA0D5760007F120 /* Secondary Container.swift */,
+			);
+			path = Nav;
+			sourceTree = "<group>";
+		};
 		F3187A512C898B40008FB911 /* Nav */ = {
 			isa = PBXGroup;
 			children = (
@@ -933,15 +1008,14 @@
 			isa = PBXGroup;
 			children = (
 				F36F7FCF2CA0CFDF0007F120 /* Messages VC.swift */,
-				F36F7FE02CA0D04C0007F120 /* App Container.swift */,
-				F36F80242CA0D5760007F120 /* Secondary Container.swift */,
+				F30B51B42E1E9DB60041433B /* Nav */,
 				F36F7FD62CA0CFE00007F120 /* Info.plist */,
 				F36F802E2CA0D9530007F120 /* iMessage.entitlements */,
 				F36F7FD42CA0CFE00007F120 /* Assets.xcassets */,
 				F36F7FE22CA0D0740007F120 /* Messages VM.swift */,
 				F36F802C2CA0D6090007F120 /* Fake Home View.swift */,
 				F36F7FE42CA0D0B50007F120 /* Home View.swift */,
-				F36F80282CA0D5CD0007F120 /* UWB Test View.swift */,
+				F30B51B32E1E9DA80041433B /* Tests */,
 			);
 			path = iMessage;
 			sourceTree = "<group>";
@@ -972,15 +1046,13 @@
 		F36FBCC32C9449AB00F5E174 /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
-				F36FBCCF2C944B5000F5E174 /* App Container.swift */,
+				F30B51AD2E1E9CB30041433B /* Nav */,
 				F3F85EC82C94AED800AE0A1D /* Info.plist */,
 				F3F85E962C94858F00AE0A1D /* watchOS.entitlements */,
 				F36FBCB52C9449A300F5E174 /* Home View.swift */,
-				F3F85EC02C948F9D00AE0A1D /* Test List.swift */,
-				F3F85E9D2C94863100AE0A1D /* Wifi VM.swift */,
-				F3F85EA02C9486C200AE0A1D /* Network Specs.swift */,
-				F3F85EB52C948D0200AE0A1D /* Orientation VM.swift */,
-				F3F85EB82C948D4300AE0A1D /* Sensors View.swift */,
+				F30B51AB2E1E9C9D0041433B /* Network */,
+				F30B51AA2E1E9C940041433B /* Sensors */,
+				F30B51AC2E1E9CA70041433B /* Tests */,
 			);
 			path = watchOS;
 			sourceTree = "<group>";
@@ -1030,7 +1102,6 @@
 				F3C3BDCC2C92D87C00BF91EE /* Info.plist */,
 				F36FBC4A2C93127000F5E174 /* visionOS.entitlements */,
 				F36FBC722C942F7600F5E174 /* Assets.xcassets */,
-				F3C3BDD52C92D8F600BF91EE /* App Container.swift */,
 				F3C3BDD72C92D90700BF91EE /* Home View.swift */,
 				F3F85EC62C94A7AF00AE0A1D /* Display */,
 				F3F85EC72C94A7B800AE0A1D /* Sensors */,
@@ -1099,14 +1170,6 @@
 			path = About;
 			sourceTree = "<group>";
 		};
-		F3D1E7B12C9D6053000C81FF /* Nav */ = {
-			isa = PBXGroup;
-			children = (
-				F3F85EDC2C94DD6800AE0A1D /* App Container.swift */,
-			);
-			path = Nav;
-			sourceTree = "<group>";
-		};
 		F3D1E7C42C9D6B80000C81FF /* Magnetic Field */ = {
 			isa = PBXGroup;
 			children = (
@@ -1156,6 +1219,7 @@
 				F3E7EC432C676A14008CD17B /* Device Specs.entitlements */,
 				F3E7EC412C676A14008CD17B /* Assets.xcassets */,
 				F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */,
+				F346B00E2E1E7D2500E56259 /* Untitled.icon */,
 				F36F803A2CA170870007F120 /* Localizable.xcstrings */,
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
 				F346B00C2E1DF3EE00E56259 /* Home View Tests Link.swift */,
@@ -1369,13 +1433,12 @@
 		F3F85EDB2C94AF8000AE0A1D /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				F3D1E7B12C9D6053000C81FF /* Nav */,
 				F3F85F092C959DE300AE0A1D /* Info.plist */,
 				F3F85ED32C94AF5B00AE0A1D /* Assets.xcassets */,
 				F3F85EDE2C94DD7900AE0A1D /* Home View.swift */,
-				F3F85F052C9588BE00AE0A1D /* Network Specs.swift */,
-				F3F85EF22C9582EA00AE0A1D /* Display Specs.swift */,
-				F3291C272CA99CA000A15CAE /* Warnings Section.swift */,
+				F30B51B22E1E9D210041433B /* Warnings */,
+				F30B51B12E1E9D020041433B /* Display */,
+				F30B51B02E1E9CF60041433B /* Network */,
 			);
 			path = tvOS;
 			sourceTree = "<group>";
@@ -1654,6 +1717,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F36F803B2CA170870007F120 /* Localizable.xcstrings in Resources */,
+				F346B00F2E1E7D2500E56259 /* Untitled.icon in Resources */,
 				F346B0062E1DE30C00E56259 /* Foundation Models.xcassets in Resources */,
 				F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */,
 			);
@@ -1911,6 +1975,7 @@
 				F3ECFDF62CA4B3F800E72D41 /* L2 Cache.swift in Sources */,
 				F3D1E78A2C9C12C2000C81FF /* System Specs.swift in Sources */,
 				F31F08C32D2A79B500B156EC /* Apple Intelligence Support.swift in Sources */,
+				F30B51AE2E1E9CDE0041433B /* App Container.swift in Sources */,
 				F3ECFDDE2CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */,
 				F3ECFE0B2CA4C09200E72D41 /* Instruction Set.swift in Sources */,
 				F3291C3B2CA9BCE200A15CAE /* Font VM.swift in Sources */,
@@ -1943,7 +2008,6 @@
 				F3F85EFB2C95857C00AE0A1D /* GPU Families.swift in Sources */,
 				F36FBC672C93542700F5E174 /* Processor VM.swift in Sources */,
 				F3C3BDD42C92D8E000BF91EE /* Device Specs App.swift in Sources */,
-				F3C3BDD62C92D8F600BF91EE /* App Container.swift in Sources */,
 				F3291C362CA9BC0F00A15CAE /* Font Row.swift in Sources */,
 				F3CCB1F82CAFC228000F8207 /* GPU Family Model.swift in Sources */,
 				F3ECFE312CA53AE200E72D41 /* Battery Capacity.swift in Sources */,
@@ -2113,6 +2177,7 @@
 				F3ECFE012CA4BD9B00E72D41 /* Memory Type.swift in Sources */,
 				F351EB302CC197CF001F424F /* Clock View.swift in Sources */,
 				F3F85EF62C95854E00AE0A1D /* Processor VM.swift in Sources */,
+				F30B51AF2E1E9CE80041433B /* App Container.swift in Sources */,
 				F3F85EF72C95854E00AE0A1D /* Processor Specs.swift in Sources */,
 				F3F85EF82C95854E00AE0A1D /* CPU Usage Chart.swift in Sources */,
 				F3F85F062C9588BE00AE0A1D /* Network Specs.swift in Sources */,
@@ -2131,7 +2196,6 @@
 				F3291C332CA9BC0F00A15CAE /* Font Row.swift in Sources */,
 				F3CCB1F62CAFC1F1000F8207 /* GPU Families VM.swift in Sources */,
 				F3ECFE402CA53AED00E72D41 /* Voltage.swift in Sources */,
-				F3F85EDD2C94DD6800AE0A1D /* App Container.swift in Sources */,
 				F3B709F62CA30470006ECAD1 /* Advertising Identifier.swift in Sources */,
 			);
 		};

@@ -5,7 +5,6 @@ import Combine
 @Observable
 final class OrientationVM {
     private var motionManager = CMMotionManager()
-    private var cancellables = Set<AnyCancellable>()
     
     // Rotation
     private(set) var roll = "0.0g"
