@@ -94,6 +94,7 @@
 		F346B0092E1DE31D00E56259 /* Foundation Models.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */; };
 		F346B00A2E1DE31D00E56259 /* Foundation Models.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */; };
 		F346B00B2E1DE31D00E56259 /* Foundation Models.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */; };
+		F346B00D2E1DF3EE00E56259 /* Home View Tests Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = F346B00C2E1DF3EE00E56259 /* Home View Tests Link.swift */; };
 		F351EB2F2CC197CF001F424F /* Clock View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* Clock View.swift */; };
 		F351EB302CC197CF001F424F /* Clock View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* Clock View.swift */; };
 		F351EB312CC197CF001F424F /* Clock View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F351EB2E2CC197CF001F424F /* Clock View.swift */; };
@@ -623,6 +624,7 @@
 		F33FEE5E2C9838AE00214288 /* Spec Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spec Item.swift"; sourceTree = "<group>"; };
 		F346AFFF2E1DDDDA00E56259 /* Foundation Models Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation Models Support.swift"; sourceTree = "<group>"; };
 		F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Foundation Models.xcassets"; sourceTree = "<group>"; };
+		F346B00C2E1DF3EE00E56259 /* Home View Tests Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View Tests Link.swift"; sourceTree = "<group>"; };
 		F351EB2E2CC197CF001F424F /* Clock View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Clock View.swift"; sourceTree = "<group>"; };
 		F357214E2C985FFB00967ACA /* Camera Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera Test.swift"; sourceTree = "<group>"; };
 		F358F0242D2C187000BCC07B /* Settings View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings View.swift"; sourceTree = "<group>"; };
@@ -1156,6 +1158,7 @@
 				F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */,
 				F36F803A2CA170870007F120 /* Localizable.xcstrings */,
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
+				F346B00C2E1DF3EE00E56259 /* Home View Tests Link.swift */,
 				F389A6D92CA36AA600FF670F /* Warnings */,
 				F3D1E7AF2C9D5D96000C81FF /* Specs Button.swift */,
 				F3D1E7982C9C8444000C81FF /* Specs Link.swift */,
@@ -1983,6 +1986,7 @@
 				F3D1E7832C9C0D14000C81FF /* Battery State.swift in Sources */,
 				F3E7EC7D2C67B985008CD17B /* Cameras Specs.swift in Sources */,
 				F3B709C72CA2C5E3006ECAD1 /* Locale VM.swift in Sources */,
+				F346B00D2E1DF3EE00E56259 /* Home View Tests Link.swift in Sources */,
 				F389A6DB2CA36AAF00FF670F /* Warning Card.swift in Sources */,
 				F36FBC6B2C9413E100F5E174 /* CPU Usage Chart.swift in Sources */,
 				F3329CA42D7D0E97003B4E68 /* Color Test.swift in Sources */,

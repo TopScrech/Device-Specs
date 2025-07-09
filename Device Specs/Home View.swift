@@ -73,7 +73,7 @@ struct HomeView: View {
                 AccessibilitySpecs()
             }
             
-            testLink
+            HomeViewTestsLink()
             
             Section {
                 SpecsLink("About", icon: "questionmark.square.dashed", spec: version) {
@@ -85,25 +85,6 @@ struct HomeView: View {
         .navigationTitle(device.deviceIdentifier)
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
             battery.fetchBatteryInfo()
-        }
-    }
-    
-    private var testLink: some View {
-        Section {
-            Button {
-                navState.navigate(.toTests)
-            } label: {
-                HStack {
-                    Label("Tests", systemImage: "testtube.2")
-                    
-                    Spacer()
-                    
-                    Image(systemName: "chevron.forward")
-                        .caption(.semibold)
-                        .tertiary()
-                }
-                .foregroundStyle(.foreground)
-            }
         }
     }
 }
