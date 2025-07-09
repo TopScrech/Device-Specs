@@ -12,13 +12,13 @@ class NearbyVM: NSObject, NISessionDelegate {
     private(set) var distance = ""
     private(set) var azimuthText = ""
     private(set) var elevationText = ""
-    private(set) var monkeyRotationAngle: CGFloat = 0
+    private(set) var monkeyRotationAngle = 0.0
     
-    private(set) var leftArrow: CGFloat = 0
-    private(set) var rightArrow: CGFloat = 0
-    private(set) var upArrow: CGFloat = 0
-    private(set) var downArrow: CGFloat = 0
-    private(set) var angleInfoView: CGFloat = 0
+    private(set) var leftArrow = 0.0
+    private(set) var rightArrow = 0.0
+    private(set) var upArrow = 0.0
+    private(set) var downArrow = 0.0
+    private(set) var angleInfoView = 0.0
     
     let nearbyDistanceThreshold: Float = 0.3
     
@@ -50,6 +50,7 @@ class NearbyVM: NSObject, NISessionDelegate {
     func startup() {
         session = NISession()
         session?.delegate = self
+        
         // Because the session is new, reset the token-shared flag
         sharedTokenWithPeer = false
         
@@ -81,7 +82,10 @@ class NearbyVM: NSObject, NISessionDelegate {
     }
     
     // MARK: - `NISessionDelegate`
-    func session(_ session: NISession, didUpdate nearbyObjects: [NINearbyObject]) {
+    func session(
+        _ session: NISession,
+        didUpdate nearbyObjects: [NINearbyObject]
+    ) {
         guard let peerToken = peerDiscoveryToken else {
             fatalError("don't have peer token")
         }
@@ -101,7 +105,11 @@ class NearbyVM: NSObject, NISessionDelegate {
         currentDistanceDirectionState = nextState
     }
     
-    func session(_ session: NISession, didRemove nearbyObjects: [NINearbyObject], reason: NINearbyObject.RemovalReason) {
+    func session(
+        _ session: NISession,
+        didRemove nearbyObjects: [NINearbyObject],
+        reason: NINearbyObject.RemovalReason
+    ) {
         guard let peerToken = peerDiscoveryToken else {
             fatalError("don't have peer token")
         }
@@ -165,6 +173,7 @@ class NearbyVM: NSObject, NISessionDelegate {
             showAlert = true
             return
         }
+        
         // If the app lacks user approval for Nearby Interaction, present
         // an option to go to Settings where the user can update the access
         //        if case NIError.userDidNotAllow = error {
@@ -210,7 +219,6 @@ class NearbyVM: NSObject, NISessionDelegate {
 #else
             let identity = "dev.topscrech.Device-Specs"
 #endif
-            
             mpc = MPCSession(service: "specs", identity: identity, maxPeers: 1)
             mpc?.peerConnectedHandler = connectedToPeer
             mpc?.peerDataHandler = dataReceivedHandler
@@ -375,7 +383,11 @@ class NearbyVM: NSObject, NISessionDelegate {
         }
     }
     
-    func updateVisualization(from currentState: DistanceDirectionState, to nextState: DistanceDirectionState, with peer: NINearbyObject) {
+    func updateVisualization(
+        from currentState: DistanceDirectionState,
+        to nextState: DistanceDirectionState,
+        with peer: NINearbyObject
+    ) {
         if currentState == .notCloseUpInFOV && nextState == .closeUpInFOV || currentState == .unknown {
             impactGenerator.impactOccurred()
         }

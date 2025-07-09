@@ -68,13 +68,10 @@ final class DeviceVM {
 #endif
     }
     
+    #warning("Duplicate")
     var isUltraWidebandAvailable: String {
 #if canImport(NearbyInteraction)
-        if #available(iOS 16, watchOS 9, *) {
-            NISession.deviceCapabilities.supportsPreciseDistanceMeasurement ? "Yes" : "No"
-        } else {
-            NISession.isSupported ? "Yes" : "No"
-        }
+        NISession.deviceCapabilities.supportsPreciseDistanceMeasurement ? "Yes" : "No"
 #else
         "No"
 #endif
