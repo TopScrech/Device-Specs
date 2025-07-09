@@ -30,9 +30,11 @@ final class SystemVM {
     
     var operatingSystem: String {
 #if os(watchOS)
-        WKInterfaceDevice.current().systemName + " " + WKInterfaceDevice.current().systemVersion
+        let wkDevice = WKInterfaceDevice.current()
+        return wkDevice.systemName + " " + wkDevice.systemVersion
 #else
-        UIDevice.current.systemName + " " + UIDevice.current.systemVersion
+        let uiDevice = UIDevice.current
+        return uiDevice.systemName + " " + uiDevice.systemVersion
 #endif
     }
     
