@@ -85,8 +85,7 @@ extension Device {
 #endif
         case .simulator: "Simulator"
         case .unknown(let device): "Unknown (\(device))"
-        default: "-"
+        @unknown default: "-"
         }
     }
 }
-#warning("Remove default")
