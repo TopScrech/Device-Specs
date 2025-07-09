@@ -12,7 +12,7 @@ struct NetworkSpecs: View {
         }
         .navigationTitle("Network")
         .refreshableTask {
-            network.getIPAddresses()
+            await network.getIPAddresses()
         }
     }
 }
