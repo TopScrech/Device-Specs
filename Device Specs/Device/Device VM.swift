@@ -68,13 +68,8 @@ final class DeviceVM {
 #endif
     }
     
-    #warning("Duplicate")
     var isUltraWidebandAvailable: String {
-#if canImport(NearbyInteraction)
-        NISession.deviceCapabilities.supportsPreciseDistanceMeasurement ? "Yes" : "No"
-#else
-        "No"
-#endif
+        DeviceInfo.isUltraWidebandAvailable ? "Yes" : "No"
     }
     
     var vandorId: String {

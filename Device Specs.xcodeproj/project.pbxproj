@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		F30B51AE2E1E9CDE0041433B /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCCF2C944B5000F5E174 /* App Container.swift */; };
 		F30B51AF2E1E9CE80041433B /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCCF2C944B5000F5E174 /* App Container.swift */; };
+		F30B51B52E1E9E6D0041433B /* Device Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4D2C67B985008CD17B /* Device Info.swift */; };
+		F30B51B62E1E9E6D0041433B /* Device Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4D2C67B985008CD17B /* Device Info.swift */; };
+		F30B51B72E1E9E6D0041433B /* Device Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4D2C67B985008CD17B /* Device Info.swift */; };
 		F31548FF2CAADBBB004CE26E /* Current Process Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31548FE2CAADBBB004CE26E /* Current Process Environment.swift */; };
 		F31549002CAADBBB004CE26E /* Current Process Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31548FE2CAADBBB004CE26E /* Current Process Environment.swift */; };
 		F31549012CAADBBB004CE26E /* Current Process Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31548FE2CAADBBB004CE26E /* Current Process Environment.swift */; };
@@ -1895,6 +1898,7 @@
 				F3F85EC12C948F9D00AE0A1D /* Test List.swift in Sources */,
 				F3B709EB2CA2F683006ECAD1 /* Font List.swift in Sources */,
 				F3ECFE352CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
+				F30B51B52E1E9E6D0041433B /* Device Info.swift in Sources */,
 				F3EA43B12C998787009820F6 /* Color Test List.swift in Sources */,
 				F3D1E77F2C9C0CD3000C81FF /* Battery Level.swift in Sources */,
 				F3291C592CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */,
@@ -1953,6 +1957,7 @@
 				F36FBC4E2C9319DB00F5E174 /* Network VM.swift in Sources */,
 				F36FBC4D2C9319D600F5E174 /* Connectivity VM.swift in Sources */,
 				F3D1E7842C9C0D14000C81FF /* Battery State.swift in Sources */,
+				F30B51B62E1E9E6D0041433B /* Device Info.swift in Sources */,
 				F3D1E7A82C9CD453000C81FF /* Current Process.swift in Sources */,
 				F39404202D37DD42000B9221 /* Router VM.swift in Sources */,
 				F3C3BDE22C92DB9D00BF91EE /* Memory Specs.swift in Sources */,
@@ -2156,6 +2161,7 @@
 				F3B709C32CA2C5E3006ECAD1 /* Locale VM.swift in Sources */,
 				F3B709C12CA2C31E006ECAD1 /* Timezone VM.swift in Sources */,
 				F3D1E7A72C9CD453000C81FF /* Current Process.swift in Sources */,
+				F30B51B72E1E9E6D0041433B /* Device Info.swift in Sources */,
 				F3D1E79C2C9C8882000C81FF /* Specs Link.swift in Sources */,
 				F3F85F042C95880600AE0A1D /* Wifi VM.swift in Sources */,
 				F3F85EFC2C95857C00AE0A1D /* GPU Families.swift in Sources */,
