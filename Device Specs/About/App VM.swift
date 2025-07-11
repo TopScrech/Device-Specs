@@ -3,14 +3,14 @@ import Foundation
 @Observable
 final class AppVM {
     private let info = ProcessInfo()
-    let bundleId = Bundle.main.bundleIdentifier?.description ?? "-"
+    let bundleId = Bundle.main.bundleIdentifier ?? "-"
     
     var version: String {
-        Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "-"
+        Bundle.version ?? "-"
     }
     
     private var build: String {
-        Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "-"
+        Bundle.build ?? "-"
     }
     
     var versionAndBuild: String {
