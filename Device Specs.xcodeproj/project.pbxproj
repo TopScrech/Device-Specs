@@ -637,7 +637,7 @@
 		F36F7FCC2CA0CFDF0007F120 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = Library/Frameworks/Messages.framework; sourceTree = DEVELOPER_DIR; };
 		F36F7FCF2CA0CFDF0007F120 /* Messages VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Messages VC.swift"; sourceTree = "<group>"; };
 		F36F7FD42CA0CFE00007F120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F36F7FD62CA0CFE00007F120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F36F7FD62CA0CFE00007F120 /* iMessage.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iMessage.plist; sourceTree = "<group>"; };
 		F36F7FE02CA0D04C0007F120 /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F36F7FE22CA0D0740007F120 /* Messages VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Messages VM.swift"; sourceTree = "<group>"; };
 		F36F7FE42CA0D0B50007F120 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
@@ -1012,7 +1012,7 @@
 			children = (
 				F36F7FCF2CA0CFDF0007F120 /* Messages VC.swift */,
 				F30B51B42E1E9DB60041433B /* Nav */,
-				F36F7FD62CA0CFE00007F120 /* Info.plist */,
+				F36F7FD62CA0CFE00007F120 /* iMessage.plist */,
 				F36F802E2CA0D9530007F120 /* iMessage.entitlements */,
 				F36F7FD42CA0CFE00007F120 /* Assets.xcassets */,
 				F36F7FE22CA0D0740007F120 /* Messages VM.swift */,
@@ -2277,7 +2277,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iMessage/Info.plist;
+				INFOPLIST_FILE = iMessage/iMessage.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
@@ -2309,7 +2309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iMessage/Info.plist;
+				INFOPLIST_FILE = iMessage/iMessage.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
