@@ -708,7 +708,7 @@
 		F3E7EC3A2C676A13008CD17B /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Specs App.swift"; sourceTree = "<group>"; };
 		F3E7EC412C676A14008CD17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F3E7EC432C676A14008CD17B /* Device Specs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Device Specs.entitlements"; sourceTree = "<group>"; };
+		F3E7EC432C676A14008CD17B /* iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS.entitlements; sourceTree = "<group>"; };
 		F3E7EC4D2C67B985008CD17B /* Device Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Info.swift"; sourceTree = "<group>"; };
 		F3E7EC4E2C67B985008CD17B /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F3E7EC4F2C67B985008CD17B /* List Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List Link.swift"; sourceTree = "<group>"; };
@@ -1219,7 +1219,7 @@
 				F3EA491E2D7D821000887109 /* MetricKit Manager.swift */,
 				F3187A512C898B40008FB911 /* Nav */,
 				F3F85E8A2C94529A00AE0A1D /* iOS.plist */,
-				F3E7EC432C676A14008CD17B /* Device Specs.entitlements */,
+				F3E7EC432C676A14008CD17B /* iOS.entitlements */,
 				F3E7EC412C676A14008CD17B /* Assets.xcassets */,
 				F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */,
 				F346B00E2E1E7D2500E56259 /* Untitled.icon */,
@@ -2591,7 +2591,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Device Specs/Device SpecsDebug.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Device Specs/iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
@@ -2642,7 +2642,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Device Specs/Device Specs.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Device Specs/iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
