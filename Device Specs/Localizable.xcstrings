@@ -650,6 +650,12 @@
     },
     "Color space" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kleurruimte"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -730,6 +736,12 @@
     },
     "Core count" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aantal cores"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1017,7 +1029,14 @@
       "shouldTranslate" : false
     },
     "Environment variables" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Omgevingsvariabelen"
+          }
+        }
+      }
     },
     "Error" : {
       "localizations" : {
@@ -1222,7 +1241,14 @@
       }
     },
     "Grayscale" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grijstinten"
+          }
+        }
+      }
     },
     "Green" : {
       "localizations" : {
@@ -1463,6 +1489,12 @@
     },
     "Invert Colors" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kleuren omkeren"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1500,6 +1532,12 @@
     },
     "Italic" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cursief"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1548,7 +1586,14 @@
 
     },
     "Location" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Locatie"
+          }
+        }
+      }
     },
     "Longitude" : {
       "localizations" : {
@@ -1707,7 +1752,14 @@
       }
     },
     "Model Information" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modelinformatie"
+          }
+        }
+      }
     },
     "Mono Audio" : {
       "localizations" : {
@@ -1887,6 +1939,12 @@
     },
     "Orientation" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oriëntatie"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1928,7 +1986,14 @@
 
     },
     "Powered by Bisquit.Host" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aangedreven door Bisquit.Host"
+          }
+        }
+      }
     },
     "PPI" : {
       "shouldTranslate" : false
@@ -2027,7 +2092,14 @@
       }
     },
     "Proximity sensor triggered" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nabijheidssensor geactiveerd"
+          }
+        }
+      }
     },
     "Public IP address" : {
       "localizations" : {
@@ -2102,6 +2174,12 @@
     },
     "Raytracing" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raytracing"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2128,6 +2206,12 @@
     },
     "Reduce Motion" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beweging verminderen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2138,6 +2222,12 @@
     },
     "Reduce Transparency" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transparantie verminderen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2158,6 +2248,12 @@
     },
     "Relative altitude" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relatieve hoogte"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2168,6 +2264,12 @@
     },
     "Release date" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Releasedatum"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2180,10 +2282,23 @@
 
     },
     "Rotation" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rotatie"
+          }
+        }
+      }
     },
     "Rounded corners" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afgeronde hoeken"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2260,13 +2375,34 @@
       "shouldTranslate" : false
     },
     "Seconds from GMT" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seconden vanaf GMT"
+          }
+        }
+      }
     },
     "Secure network" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beveiligd netwerk"
+          }
+        }
+      }
     },
     "Security type" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beveiligingstype"
+          }
+        }
+      }
     },
     "Sensors" : {
       "localizations" : {
@@ -2286,6 +2422,12 @@
     },
     "Serial Number" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serienummer"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2296,6 +2438,12 @@
     },
     "Serious thermal state" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ernstige thermische toestand"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2306,6 +2454,12 @@
     },
     "Sertified for iPhone performance gaming" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gecertificeerd voor iPhone-performance gaming"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2341,10 +2495,24 @@
       }
     },
     "Should Differentiate Without Color" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moet zonder kleur onderscheiden"
+          }
+        }
+      }
     },
     "Signal strength" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signaalsterkte"
+          }
+        }
+      }
     },
     "Speak Screen" : {
       "localizations" : {
@@ -2370,10 +2538,23 @@
       "shouldTranslate" : false
     },
     "State of Charge (%)" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laadtoestand (%)"
+          }
+        }
+      }
     },
     "Static colors" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Statische kleuren"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2399,7 +2580,14 @@
       }
     },
     "Strikethrough" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Doorhalen"
+          }
+        }
+      }
     },
     "Subdivision" : {
 
@@ -2431,10 +2619,23 @@
       }
     },
     "Supported" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ondersteund"
+          }
+        }
+      }
     },
     "Supported GPU families" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ondersteunde GPU-families"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2484,6 +2685,12 @@
     },
     "System language" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Systeemtaal"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2504,6 +2711,12 @@
     },
     "System region" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Systeemregio"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2514,6 +2727,12 @@
     },
     "System uptime" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Systeem-uptime"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2550,6 +2769,12 @@
     },
     "Thermal state" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thermische toestand"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2563,6 +2788,12 @@
     },
     "Thread count" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aantal threads"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2628,6 +2859,12 @@
     },
     "Ultra Wideband" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ultra Wideband"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2638,6 +2875,12 @@
     },
     "Underline" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Onderstrepen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2648,6 +2891,12 @@
     },
     "Unified memory" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Centraal geheugen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2657,7 +2906,14 @@
       }
     },
     "Unsupported" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niet ondersteund"
+          }
+        }
+      }
     },
     "Usage" : {
 
@@ -2673,10 +2929,23 @@
       }
     },
     "Variant" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Variant"
+          }
+        }
+      }
     },
     "Very low battery" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeer lege batterij"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2687,6 +2956,12 @@
     },
     "Video Autoplay" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video automatisch afspelen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2736,6 +3011,12 @@
     },
     "White" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wit"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2746,6 +3027,12 @@
     },
     "Wireless Charging" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Draadloos opladen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2756,6 +3043,12 @@
     },
     "Wrist location" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Polslocatie"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2765,10 +3058,24 @@
       }
     },
     "X Axis" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "X-as"
+          }
+        }
+      }
     },
     "Y Axis" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Y-as"
+          }
+        }
+      }
     },
     "Yaw" : {
 
