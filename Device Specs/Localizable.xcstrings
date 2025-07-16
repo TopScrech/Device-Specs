@@ -9,6 +9,12 @@
     },
     "Abbreviation" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afkorting"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -19,6 +25,12 @@
     },
     "About" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Over"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -29,6 +41,12 @@
     },
     "Absolute altitude" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Absolute hoogte"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -39,6 +57,12 @@
     },
     "Acceleration" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versnelling"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -49,6 +73,12 @@
     },
     "Accessibility" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toegankelijkheid"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -59,6 +89,12 @@
     },
     "Active time" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actieve tijd"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -69,6 +105,12 @@
     },
     "Activity" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activiteit"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -99,6 +141,12 @@
     },
     "Altimeter" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoogtemeter"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -109,6 +157,12 @@
     },
     "App version" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App versie"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -156,6 +210,12 @@
     },
     "Architecture" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Architectuur"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -165,10 +225,23 @@
       }
     },
     "Arguments" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argumenten"
+          }
+        }
+      }
     },
     "Aspect ratio" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beeldverhouding"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -187,13 +260,33 @@
 
     },
     "Available for important usage" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beschikbaar voor belangrijk gebruik"
+          }
+        }
+      }
     },
     "Available for opportunistic usage" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beschikbaar voor opportunistisch gebruik"
+          }
+        }
+      }
     },
     "Available numbering systems" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beschikbare telsystemen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -203,10 +296,23 @@
       }
     },
     "Back" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terug"
+          }
+        }
+      }
     },
     "Battery" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batterij"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -216,10 +322,23 @@
       }
     },
     "Battery Info" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batterij Info"
+          }
+        }
+      }
     },
     "Battery level" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batterijniveau"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -230,6 +349,12 @@
     },
     "Battery state" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batterijstatus"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -239,10 +364,23 @@
       }
     },
     "Below Warning Level" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Onder waarschuwingsniveau"
+          }
+        }
+      }
     },
     "Biometric authentication" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biometrische authenticatie"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -253,6 +391,12 @@
     },
     "Black" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zwart"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -263,6 +407,12 @@
     },
     "Blue" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blauw"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -275,8 +425,13 @@
       "shouldTranslate" : false
     },
     "Bold" : {
-      "comment" : "Прикол)))",
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vet"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -287,6 +442,12 @@
     },
     "Bold Text" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vette tekst"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -297,6 +458,12 @@
     },
     "Brightness" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Helderheid"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -310,6 +477,12 @@
     },
     "Build" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Build"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -319,10 +492,16 @@
       }
     },
     "Bundle id" : {
-
+      "shouldTranslate" : false
     },
     "Button Shapes" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Knopvormen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -333,6 +512,12 @@
     },
     "Calendar" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalender"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -343,6 +528,12 @@
     },
     "Camera" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Camera"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -353,6 +544,12 @@
     },
     "Cameras" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Camera's"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -373,6 +570,12 @@
     },
     "Capabilities" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mogelijkheden"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -383,6 +586,12 @@
     },
     "Capacity" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capaciteit"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -393,6 +602,12 @@
     },
     "Capacity in Wh" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capaciteit in Wh"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -405,10 +620,24 @@
 
     },
     "Charge Information" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laadinformatie"
+          }
+        }
+      }
     },
     "Charging" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opladen"
+          }
+        }
+      }
     },
     "Closed Captioning" : {
 
@@ -440,6 +669,12 @@
     },
     "Condition" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conditie"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -463,6 +698,12 @@
     },
     "Continent" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continent"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -473,6 +714,12 @@
     },
     "Core" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kern"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -493,6 +740,12 @@
     },
     "CPU" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CPU"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -502,10 +755,23 @@
       }
     },
     "CPU load" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CPU-belasting"
+          }
+        }
+      }
     },
     "Create a full system report" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maak een volledig systeemrapport"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -516,6 +782,12 @@
     },
     "Critical thermal state" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kritieke thermische toestand"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -536,6 +808,12 @@
     },
     "Currency code" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valutacode"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -546,6 +824,12 @@
     },
     "Currency symbol" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valutasymbool"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -556,6 +840,12 @@
     },
     "Current process" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Huidig proces"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -566,6 +856,12 @@
     },
     "Current session" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Huidige sessie"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -575,16 +871,43 @@
       }
     },
     "Cycle Count" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aantal processen"
+          }
+        }
+      }
     },
     "Darker System Colors" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Donkere systeemkleuren"
+          }
+        }
+      }
     },
     "Daylight saving time" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zomertijd"
+          }
+        }
+      }
     },
     "Decimal separator" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Decimaalteken"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -595,6 +918,12 @@
     },
     "Description" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beschrijving"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -604,10 +933,23 @@
       }
     },
     "Destination IP address" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bestemmings-IP-adres"
+          }
+        }
+      }
     },
     "Device" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apparaat"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -617,16 +959,36 @@
       }
     },
     "Device Name" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apparaatnaam"
+          }
+        }
+      }
     },
     "Device Specs" : {
       "shouldTranslate" : false
     },
     "Dismiss" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sluiten"
+          }
+        }
+      }
     },
     "Display" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scherm"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -637,6 +999,12 @@
     },
     "Dock connector" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock-connector"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -653,6 +1021,12 @@
     },
     "Error" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fout"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -666,6 +1040,12 @@
     },
     "Exposure" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Belichting"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -678,10 +1058,23 @@
       "shouldTranslate" : false
     },
     "Feedback" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feedback"
+          }
+        }
+      }
     },
     "Firmware Version" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Firmwareversie"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -692,6 +1085,12 @@
     },
     "First day of week" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eerste dag van de week"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -702,6 +1101,12 @@
     },
     "Flashlight" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zaklamp"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -728,6 +1133,12 @@
     },
     "Full system report" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volledig systeemrapport"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -737,10 +1148,23 @@
       }
     },
     "Fully Charged" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volledig opgeladen"
+          }
+        }
+      }
     },
     "Globally unique string" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Globaal unieke tekenreeks"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -751,6 +1175,12 @@
     },
     "Go to Settings" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ga naar Instellingen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -761,6 +1191,12 @@
     },
     "GPU" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GPU"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -771,6 +1207,12 @@
     },
     "GPU families" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GPU-families"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -784,6 +1226,12 @@
     },
     "Green" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Groen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -794,6 +1242,12 @@
     },
     "Grouping separator" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Groeperingsteken"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -804,6 +1258,12 @@
     },
     "Guided Access" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begeleide Toegang"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -833,28 +1293,69 @@
       }
     },
     "Hardware" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hardware"
+          }
+        }
+      }
     },
     "Hardware Info" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hardware-informatie"
+          }
+        }
+      }
     },
     "Hardware Overview" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hardware-overzicht"
+          }
+        }
+      }
     },
     "Hardware Revision" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hardware-revisie"
+          }
+        }
+      }
     },
     "Heading accuracy" : {
 
     },
     "Health Information" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gezondheidsinformatie"
+          }
+        }
+      }
     },
     "Hello, World!" : {
       "shouldTranslate" : false
     },
     "Hide status bar and this menu" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Statusbalk en dit menu verbergen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -864,13 +1365,26 @@
       }
     },
     "Host name" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hostnaam"
+          }
+        }
+      }
     },
     "Hotspot Helper" : {
 
     },
     "Hour cycle" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uurcyclus"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -881,6 +1395,12 @@
     },
     "Identifier" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Identifier"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -890,10 +1410,23 @@
       }
     },
     "Identifier for vendor" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Identificatie voor leverancier"
+          }
+        }
+      }
     },
     "Installation date" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Installatiedatum"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -904,6 +1437,12 @@
     },
     "Instruction set" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instructieset"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -913,7 +1452,14 @@
       }
     },
     "Internal name" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Interne naam"
+          }
+        }
+      }
     },
     "Invert Colors" : {
       "localizations" : {
@@ -933,10 +1479,17 @@
             "value" : "ИСО"
           }
         }
-      }
+      },
+      "shouldTranslate" : false
     },
     "ISO region" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ISO-regio"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1045,6 +1598,12 @@
     },
     "Manufacturer" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fabrikant"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1054,7 +1613,14 @@
       }
     },
     "Max" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Max"
+          }
+        }
+      }
     },
     "Max Load" : {
 
@@ -1070,10 +1636,23 @@
       }
     },
     "Maximum Capacity" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maximum capaciteit"
+          }
+        }
+      }
     },
     "Memory" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geheugen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1097,6 +1676,12 @@
     },
     "Metric system" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metrisch systeem"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1107,6 +1692,12 @@
     },
     "Microarchitecture" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Microarchitectuur"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1120,6 +1711,12 @@
     },
     "Mono Audio" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mono Audio"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1130,6 +1727,12 @@
     },
     "More apps" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meer apps"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1152,13 +1755,33 @@
       }
     },
     "Music Haptics" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Music Haptics"
+          }
+        }
+      }
     },
     "Name" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Naam"
+          }
+        }
+      }
     },
     "Network" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Netwerk"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1168,10 +1791,23 @@
       }
     },
     "Network interface" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Netwerkinterface"
+          }
+        }
+      }
     },
     "Network type" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Netwerktype"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1187,7 +1823,14 @@
 
     },
     "No" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nee"
+          }
+        }
+      }
     },
     "Not all platforms will play feedback in response to certain types" : {
       "localizations" : {
@@ -1305,6 +1948,12 @@
     },
     "Pressure" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Druk"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1315,6 +1964,12 @@
     },
     "Privacy Policy" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacybeleid"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1325,6 +1980,12 @@
     },
     "Process identifier" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proces-ID"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1335,6 +1996,12 @@
     },
     "Process name" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Procesnaam"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1345,6 +2012,12 @@
     },
     "Processor" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Processor"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1358,6 +2031,12 @@
     },
     "Public IP address" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Openbaar IP-adres"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1388,6 +2067,12 @@
     },
     "RAM" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RAM"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1427,6 +2112,12 @@
     },
     "Red" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rood"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1503,6 +2194,12 @@
     },
     "Router" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Router"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1513,6 +2210,12 @@
     },
     "Save..." : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opslaan…"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1523,6 +2226,12 @@
     },
     "Screen resolution" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schermresolutie"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1533,6 +2242,12 @@
     },
     "Screen size" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schermgrootte"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1555,6 +2270,12 @@
     },
     "Sensors" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sensoren"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1595,6 +2316,12 @@
     },
     "Settings" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instellingen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1657,6 +2384,12 @@
     },
     "Storage" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opslag"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1673,6 +2406,12 @@
     },
     "Subnet mask" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subnetmasker"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1719,6 +2458,12 @@
     },
     "System" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Systeem"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1789,6 +2534,12 @@
     },
     "Tests" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Testen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1858,6 +2609,12 @@
     },
     "Total" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Totaal"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2017,7 +2774,14 @@
 
     },
     "Yes" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ja"
+          }
+        }
+      }
     },
     "Your device does not support Apple Intelligence" : {
       "localizations" : {
