@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct FontCustomization: View {
     @Environment(FontVM.self) private var vm
@@ -25,33 +25,25 @@ struct FontCustomization: View {
         }
         .foregroundStyle(vm.isStrikethrough ? .primary : .secondary)
 #else
-        Button {
+        SFButton("bold") {
             vm.isBold.toggle()
-        } label: {
-            Image(systemName: "bold")
-                .foregroundStyle(vm.isBold ? .primary : .secondary)
         }
+        .foregroundStyle(vm.isBold ? .primary : .secondary)
         
-        Button {
+        SFButton("italic") {
             vm.isItalic.toggle()
-        } label: {
-            Image(systemName: "italic")
-                .foregroundStyle(vm.isItalic ? .primary : .secondary)
         }
+        .foregroundStyle(vm.isItalic ? .primary : .secondary)
         
-        Button {
+        SFButton("underline") {
             vm.isUnderline.toggle()
-        } label: {
-            Image(systemName: "underline")
-                .foregroundStyle(vm.isUnderline ? .primary : .secondary)
         }
+        .foregroundStyle(vm.isUnderline ? .primary : .secondary)
         
-        Button {
+        SFButton("strikethrough") {
             vm.isStrikethrough.toggle()
-        } label: {
-            Image(systemName: "strikethrough")
-                .foregroundStyle(vm.isStrikethrough ? .primary : .secondary)
         }
+        .foregroundStyle(vm.isStrikethrough ? .primary : .secondary)
 #endif
     }
 }

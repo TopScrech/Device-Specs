@@ -11,10 +11,8 @@ struct TestList: View {
                 AuthTest()
             }
             
-            Button {
+            Button("Camera", systemImage: "camera") {
                 sheetCamera = true
-            } label: {
-                Label("Camera", systemImage: "camera")
             }
             .foregroundStyle(.foreground)
             
@@ -27,10 +25,8 @@ struct TestList: View {
             }
             
             Section {
-                Button {
+                Button("Ultra Wideband", systemImage: "location.viewfinder") {
                     navState.navigate(.toUwbTest)
-                } label: {
-                    Label("Ultra Wideband", systemImage: "location.viewfinder")
                 }
                 .foregroundStyle(.foreground)
                 .disabled(!DeviceInfo.isUltraWidebandAvailable)

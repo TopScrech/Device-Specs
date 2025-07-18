@@ -15,10 +15,8 @@ struct AppContainer: View {
                 .toolbar {
                     if !statusBarHidden {
                         Menu {
-                            Button {
+                            Button("Hide status bar and this menu") {
                                 statusBarHidden = true
-                            } label: {
-                                Text("Hide status bar and this menu")
                             }
                         } label: {
                             Image(systemName: "ellipsis")

@@ -24,10 +24,8 @@ struct SystemReportView: View {
                     ShareLink(item: url)
                 }
                 
-                Button {
+                Button("Save...") {
                     vm.saveFileToLocation("test.txt")
-                } label: {
-                    Text("Save...")
                 }
             }
         }
