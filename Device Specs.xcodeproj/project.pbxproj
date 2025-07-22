@@ -664,6 +664,7 @@
 		F389A6DA2CA36AAF00FF670F /* Warning Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Warning Card.swift"; sourceTree = "<group>"; };
 		F39404172D37D155000B9221 /* Location Sensors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location Sensors.swift"; sourceTree = "<group>"; };
 		F394041D2D37DD42000B9221 /* Router VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Router VM.swift"; sourceTree = "<group>"; };
+		F3AE99E22E2F890A00D70249 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F3B7098A2CA1DD4F006ECAD1 /* Version View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Version View.swift"; sourceTree = "<group>"; };
 		F3B709A02CA22E09006ECAD1 /* Locale List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale List.swift"; sourceTree = "<group>"; };
 		F3B709AD2CA2BE84006ECAD1 /* Timezone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timezone.swift; sourceTree = "<group>"; };
@@ -1186,6 +1187,7 @@
 		F3E7EC312C676A13008CD17B = {
 			isa = PBXGroup;
 			children = (
+				F3AE99E22E2F890A00D70249 /* README.md */,
 				F3E7EC4C2C67B8DA008CD17B /* Device Specs */,
 				F3C3BDD12C92D89600BF91EE /* visionOS */,
 				F36FBCC32C9449AB00F5E174 /* watchOS */,
