@@ -48,7 +48,7 @@ struct SystemSpecs: View {
                     .animation(.default, value: vm.systemUptime)
             }
             .monospacedDigit()
-            .contentTransition(.numericText())
+            .numericTransition()
         }
         .navigationTitle("System")
         .task {

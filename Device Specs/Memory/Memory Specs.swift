@@ -44,7 +44,7 @@ struct MemorySpecs: View {
             }
         }
         .navigationTitle("Memory")
-        .contentTransition(.numericText())
+        .numericTransition()
         .monospacedDigit()
         .onReceive(timer) { _ in
             vm.getMemoryUsage()
