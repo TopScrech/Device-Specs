@@ -56,8 +56,10 @@ struct NetworkSpecs: View {
         }
         .navigationTitle("Network")
         .refreshableTask {
-            await network.getIPAddresses()
-            connectivity.getWiFiInfo()
+            async let getIPAddresses: () = network.getIPAddresses()
+            async let getWiFiInfo: () = connectivity.getWiFiInfo()
+            
+            _ = await (getIPAddresses, getWiFiInfo)
         }
     }
 }

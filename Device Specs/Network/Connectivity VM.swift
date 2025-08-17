@@ -24,51 +24,46 @@ final class ConnectivityVM {
         monitor.start(queue: queue)
         
         monitor.pathUpdateHandler = { [weak self] path in
-            self?.getWiFiInfo()
+            Task { await self?.getWiFiInfo() }
             
-            guard let self else {
-                return
-            }
+            guard let self else { return }
             
             switch true {
             case path.usesInterfaceType(.wifi):
                 self.type = "Wi-Fi"
-                
             case path.usesInterfaceType(.cellular):
                 self.type = "Cellular"
-                
             case path.usesInterfaceType(.wiredEthernet):
                 self.type = "Wired Ethernet"
-                
             case path.usesInterfaceType(.loopback):
                 self.type = "Loopback Interface"
-                
             case path.usesInterfaceType(.other):
                 self.type = "Other Interface"
-                
             default:
                 self.type = "No Interface"
             }
         }
     }
     
-    func getWiFiInfo() {
-        NEHotspotNetwork.fetchCurrent { network in
-            self.ssid = network?.ssid
-            self.bssid = network?.bssid
-            self.signalStrength = network?.signalStrength
-            self.isSecure = network?.isSecure
-            self.didAutoJoin = network?.didAutoJoin
-            self.didJustJoin = network?.didJustJoin
-            self.isChosenHelper = network?.isChosenHelper
-            self.securityType = self.securityTypeString(network?.securityType)
+    @MainActor
+    func getWiFiInfo() async {
+        let network = await withCheckedContinuation { continuation in
+            NEHotspotNetwork.fetchCurrent { network in
+                continuation.resume(returning: network)
+            }
         }
+        
+        self.ssid = network?.ssid
+        self.bssid = network?.bssid
+        self.signalStrength = network?.signalStrength
+        self.isSecure = network?.isSecure
+        self.didAutoJoin = network?.didAutoJoin
+        self.didJustJoin = network?.didJustJoin
+        self.isChosenHelper = network?.isChosenHelper
+        self.securityType = self.securityTypeString(network?.securityType)
     }
     
-    private func securityTypeString(
-        _ type: NEHotspotNetworkSecurityType?
-    ) -> String? {
-        
+    private func securityTypeString(_ type: NEHotspotNetworkSecurityType?) -> String? {
         switch type {
         case .WEP: "WEP"
         case .enterprise: "Enterprise"
