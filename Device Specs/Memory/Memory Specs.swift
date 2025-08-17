@@ -54,6 +54,9 @@ struct MemorySpecs: View {
 }
 
 #Preview {
-    MemorySpecs()
-        .environment(MemoryVM())
+    NavigationStack {
+        MemorySpecs()
+    }
+    .darkSchemePreferred()
+    .environment(MemoryVM())
 }

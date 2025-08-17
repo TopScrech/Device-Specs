@@ -63,6 +63,9 @@ struct SystemSpecs: View {
 }
 
 #Preview {
-    SystemSpecs()
-        .environment(SystemVM())
+    NavigationStack {
+        SystemSpecs()
+    }
+    .darkSchemePreferred()
+    .environment(SystemVM())
 }

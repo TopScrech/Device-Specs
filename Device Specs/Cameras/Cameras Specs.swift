@@ -34,6 +34,9 @@ struct CameraSpecs: View {
 }
 
 #Preview {
-    CameraSpecs()
-        .environment(CameraVM())
+    NavigationStack {
+        CameraSpecs()
+    }
+    .darkSchemePreferred()
+    .environment(CameraVM())
 }

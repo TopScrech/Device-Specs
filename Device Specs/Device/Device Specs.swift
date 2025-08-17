@@ -29,7 +29,6 @@ struct DeviceSpecs: View {
             
             Section("Capabilities") {
                 ListParam("Bluetooth", param: vm.bluetoothVersion)
-                
 #if !os(tvOS)
                 AuthTest()
 #endif
@@ -51,7 +50,6 @@ struct DeviceSpecs: View {
 #endif
                 ListParam("Description", param: vm.waterResistanceDescription)
             }
-            
 #if os(watchOS)
             DeviceWatchInfo()
 #endif
@@ -66,6 +64,9 @@ struct DeviceSpecs: View {
 }
 
 #Preview {
-    DeviceSpecs()
-        .environment(DeviceVM())
+    NavigationStack {
+        DeviceSpecs()
+    }
+    .darkSchemePreferred()
+    .environment(DeviceVM())
 }

@@ -49,5 +49,8 @@ struct SensorsSpecs: View {
 }
 
 #Preview {
-    SensorsSpecs()
+    NavigationStack {
+        SensorsSpecs()
+    }
+    .darkSchemePreferred()
 }

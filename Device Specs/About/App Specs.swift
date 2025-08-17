@@ -65,6 +65,9 @@ struct AppSpecs: View {
 }
 
 #Preview {
-    AppSpecs()
-        .environment(AppVM())
+    NavigationStack {
+        AppSpecs()
+    }
+    .darkSchemePreferred()
+    .environment(AppVM())
 }

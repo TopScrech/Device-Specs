@@ -50,5 +50,6 @@ struct BatterySpecs: View {
     NavigationView {
         BatterySpecs()
     }
+    .darkSchemePreferred()
     .environment(BatteryVM())
 }

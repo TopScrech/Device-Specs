@@ -44,5 +44,9 @@ struct TestList: View {
 }
 
 #Preview {
-    TestList()
+    NavigationStack {
+        TestList()
+    }
+    .darkSchemePreferred()
+    .environment(NavState())
 }

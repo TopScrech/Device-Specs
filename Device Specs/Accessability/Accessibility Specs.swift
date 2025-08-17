@@ -22,13 +22,16 @@ struct AccessibilitySpecs: View {
                 AccessibilityItem(param)
             }
         }
-        .animation(.default, value: vm.filter)
         .navigationTitle("Accessibility")
+        .animation(.default, value: vm.filter)
         .searchable(text: $vm.filter)
         .scrollIndicators(.never)
     }
 }
 
 #Preview {
-    AccessibilitySpecs()
+    NavigationStack {
+        AccessibilitySpecs()
+    }
+    .darkSchemePreferred()
 }
