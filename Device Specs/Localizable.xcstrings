@@ -932,6 +932,12 @@
             "state" : "translated",
             "value" : "Aantal processen"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кол-во циклов"
+          }
         }
       }
     },
@@ -1510,6 +1516,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Identificatie voor leverancier"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Идентификатор для поставщика"
           }
         }
       }
@@ -2158,6 +2170,12 @@
             "state" : "translated",
             "value" : "Positie"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Позиция"
+          }
         }
       }
     },
@@ -2470,6 +2488,12 @@
             "state" : "translated",
             "value" : "Rotatie"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вращение"
+          }
         }
       }
     },
@@ -2563,6 +2587,12 @@
             "state" : "translated",
             "value" : "Seconden vanaf GMT"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Секунды от GMT"
+          }
         }
       }
     },
@@ -2573,6 +2603,12 @@
             "state" : "translated",
             "value" : "Beveiligd netwerk"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Безопасная сеть"
+          }
         }
       }
     },
@@ -2582,6 +2618,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Beveiligingstype"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тип безопасности"
           }
         }
       }
@@ -2699,6 +2741,12 @@
             "state" : "translated",
             "value" : "Signaalsterkte"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уровень сигнала"
+          }
         }
       }
     },
@@ -2731,6 +2779,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Laadtoestand (%)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Состояние заряда (%)"
           }
         }
       }
@@ -3328,6 +3382,12 @@
             "state" : "translated",
             "value" : "X-as"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ось X"
+          }
         }
       }
     },
@@ -3337,6 +3397,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Y-as"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ось Y"
           }
         }
       }
@@ -3350,6 +3416,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ja"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Да"
           }
         }
       }
@@ -3412,6 +3484,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Z-as"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ось Z"
           }
         }
       }
