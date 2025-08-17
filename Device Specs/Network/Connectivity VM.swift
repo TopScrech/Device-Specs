@@ -16,7 +16,6 @@ final class ConnectivityVM {
     private(set) var securityType: String? // for Wi-Fi
     
     init() {
-        getWiFiInfo()
         monitorNetworkStatus()
     }
     
