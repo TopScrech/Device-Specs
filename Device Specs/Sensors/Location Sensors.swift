@@ -48,5 +48,8 @@ struct LocationSensors: View {
 }
 
 #Preview {
-    LocationSensors()
+    List {
+        LocationSensors()
+    }
+    .darkSchemePreferred()
 }

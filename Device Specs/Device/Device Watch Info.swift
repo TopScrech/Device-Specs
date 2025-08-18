@@ -8,7 +8,7 @@ struct DeviceWatchInfo: View {
         default: "Unknown"
         }
     }
-        
+    
     private var wristLocation: String {
         switch WKInterfaceDevice.current().wristLocation {
         case .left: "Left"
@@ -36,5 +36,8 @@ struct DeviceWatchInfo: View {
 }
 
 #Preview {
-    DeviceWatchInfo()
+    List {
+        DeviceWatchInfo()
+    }
+    .darkSchemePreferred()
 }

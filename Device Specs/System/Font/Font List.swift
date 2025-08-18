@@ -30,5 +30,8 @@ struct FontList: View {
 }
 
 #Preview {
-    FontList()
+    NavigationStack {
+        FontList()
+    }
+    .darkSchemePreferred()
 }

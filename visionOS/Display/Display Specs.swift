@@ -8,8 +8,7 @@ struct DisplaySpecs: View {
         _brightness = State(initialValue: Double(Device.current.screenBrightness))
     }
     
-    #warning("Check if works")
-    
+#warning("Check if works")
     var body: some View {
         List {
             if let ppi = Device.current.ppi?.description {
@@ -25,5 +24,8 @@ struct DisplaySpecs: View {
 }
 
 #Preview {
-    DisplaySpecs()
+    NavigationStack {
+        DisplaySpecs()
+    }
+    .darkSchemePreferred()
 }

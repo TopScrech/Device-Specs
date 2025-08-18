@@ -19,6 +19,9 @@ struct CurrentProcessEnvironment: View {
 }
 
 #Preview {
-    CurrentProcessEnvironment()
-        .environment(ProcessorVM())
+    NavigationStack {
+        CurrentProcessEnvironment()
+    }
+    .darkSchemePreferred()
+    .environment(ProcessorVM())
 }

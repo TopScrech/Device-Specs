@@ -23,5 +23,8 @@ struct GPUFamilies: View {
 }
 
 #Preview {
-    GPUFamilies()
+    NavigationStack {
+        GPUFamilies()
+    }
+    .darkSchemePreferred()
 }

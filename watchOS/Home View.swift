@@ -68,12 +68,15 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
-        .environment(BatteryVM())
-        .environment(ProcessorVM())
-        .environment(DisplayVM())
-        .environment(SystemVM())
-        .environment(DeviceVM())
-        .environment(MemoryVM())
-        .environment(AppVM())
+    NavigationStack {
+        HomeView()
+    }
+    .darkSchemePreferred()
+    .environment(BatteryVM())
+    .environment(ProcessorVM())
+    .environment(DisplayVM())
+    .environment(SystemVM())
+    .environment(DeviceVM())
+    .environment(MemoryVM())
+    .environment(AppVM())
 }

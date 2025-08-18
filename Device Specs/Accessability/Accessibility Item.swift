@@ -13,7 +13,10 @@ struct AccessibilityItem: View {
 }
 
 #Preview {
-    AccessibilityItem(
-        .init("Preview", isEnabled: true)
-    )
+    List {
+        AccessibilityItem(
+            .init("Preview", isEnabled: true)
+        )
+    }
+    .darkSchemePreferred()
 }

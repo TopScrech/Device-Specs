@@ -53,7 +53,6 @@ struct UWBTestView: View {
             }
             
             Text(vm.monkeyLabel)
-                .opacity(1)
                 .fontSize(64)
                 .rotationEffect(.degrees(vm.monkeyRotationAngle * 90))
         }
@@ -72,4 +71,5 @@ struct UWBTestView: View {
 
 #Preview {
     UWBTestView()
+        .darkSchemePreferred()
 }

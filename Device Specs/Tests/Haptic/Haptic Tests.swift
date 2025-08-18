@@ -36,5 +36,8 @@ struct HapticTests: View {
 }
 
 #Preview {
-    HapticTests()
+    NavigationStack {
+        HapticTests()
+    }
+    .darkSchemePreferred()
 }

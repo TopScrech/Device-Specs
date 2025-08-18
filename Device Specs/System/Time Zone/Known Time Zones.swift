@@ -23,12 +23,15 @@ struct KnownTimeZones: View {
             Text(zone)
 #endif
         }
+        .navigationTitle("Known Time Zones")
         .animation(.default, value: foundZones)
         .searchable(text: $searchText)
-        .navigationTitle("Known Time Zones")
     }
 }
 
 #Preview {
-    KnownTimeZones(["Preview"])
+    NavigationStack {
+        KnownTimeZones(["Preview"])
+    }
+    .darkSchemePreferred()
 }

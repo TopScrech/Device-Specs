@@ -19,5 +19,8 @@ struct ClockView: View {
 }
 
 #Preview {
-    ClockView()
+    List {
+        ClockView()
+    }
+    .darkSchemePreferred()
 }

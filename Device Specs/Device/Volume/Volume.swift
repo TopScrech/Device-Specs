@@ -14,4 +14,5 @@ struct Volume: View {
     List {
         Volume()
     }
+    .darkSchemePreferred()
 }

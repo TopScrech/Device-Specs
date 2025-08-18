@@ -28,5 +28,8 @@ struct DisplaySpecs: View {
 }
 
 #Preview {
-    DisplaySpecs()
+    NavigationStack {
+        DisplaySpecs()
+    }
+    .darkSchemePreferred()
 }

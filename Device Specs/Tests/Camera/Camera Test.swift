@@ -34,4 +34,5 @@ struct CameraTest: View {
 
 #Preview {
     CameraTest()
+        .darkSchemePreferred()
 }

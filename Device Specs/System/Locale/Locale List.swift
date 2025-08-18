@@ -79,5 +79,8 @@ struct LocaleList: View {
 }
 
 #Preview {
-    LocaleList()
+    NavigationStack {
+        LocaleList()
+    }
+    .darkSchemePreferred()
 }

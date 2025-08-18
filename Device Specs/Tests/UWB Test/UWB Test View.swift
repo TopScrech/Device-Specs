@@ -12,8 +12,7 @@ struct UWBTestView: View {
             }
             
             Text(vm.distance)
-                .bold()
-                .title()
+                .title(.bold)
                 .animation(.easeIn, value: vm.distance)
                 .numericTransition()
             
@@ -53,7 +52,6 @@ struct UWBTestView: View {
             }
             
             Text(vm.monkeyLabel)
-                .opacity(1)
                 .fontSize(64)
                 .rotationEffect(.degrees(vm.monkeyRotationAngle * 90))
         }
@@ -72,4 +70,5 @@ struct UWBTestView: View {
 
 #Preview {
     UWBTestView()
+        .darkSchemePreferred()
 }

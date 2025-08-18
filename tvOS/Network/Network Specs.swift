@@ -18,5 +18,8 @@ struct NetworkSpecs: View {
 }
 
 #Preview {
-    NetworkSpecs()
+    NavigationStack {
+        NetworkSpecs()
+    }
+    .darkSchemePreferred()
 }

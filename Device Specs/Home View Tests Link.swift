@@ -17,13 +17,16 @@ struct HomeViewTestsLink: View {
                         .caption(.semibold)
                         .tertiary()
                 }
-                .foregroundStyle(.foreground)
             }
+            .foregroundStyle(.foreground)
         }
     }
 }
 
 #Preview {
-    HomeViewTestsLink()
-        .environment(NavState())
+    List {
+        HomeViewTestsLink()
+    }
+    .darkSchemePreferred()
+    .environment(NavState())
 }
