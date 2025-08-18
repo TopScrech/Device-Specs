@@ -1,12 +1,12 @@
 import SwiftUI
 
 struct HomeViewTestsLink: View {
-    @Environment(NavState.self) private var navState
+    @Environment(NavState.self) private var nav
     
     var body: some View {
         Section {
             Button {
-                navState.navigate(.toTests)
+                nav.navigate(.toTests)
             } label: {
                 HStack {
                     Label("Tests", systemImage: "testtube.2")

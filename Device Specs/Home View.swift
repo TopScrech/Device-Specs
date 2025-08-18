@@ -1,8 +1,6 @@
 import SwiftUI
 
 struct HomeView: View {
-    @Environment(NavState.self) private var navState
-    
     @State private var battery = BatteryVM()
     @State private var processor = ProcessorVM()
     @State private var display = DisplayVM()
@@ -103,5 +101,4 @@ struct HomeView: View {
     .environment(AppVM())
     .environment(ConnectivityVM())
     .environment(CameraVM())
-    .environment(NavState())
 }

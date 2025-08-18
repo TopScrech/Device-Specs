@@ -1,7 +1,7 @@
 import ScrechKit
 
 struct TestList: View {
-    @Environment(NavState.self) private var navState
+    @Environment(NavState.self) private var nav
     
     @State private var sheetCamera = false
     
@@ -26,7 +26,7 @@ struct TestList: View {
             
             Section {
                 Button("Ultra Wideband", systemImage: "location.viewfinder") {
-                    navState.navigate(.toUwbTest)
+                    nav.navigate(.toUwbTest)
                 }
                 .foregroundStyle(.foreground)
                 .disabled(!DeviceInfo.isUltraWidebandAvailable)

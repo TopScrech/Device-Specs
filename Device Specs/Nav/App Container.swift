@@ -1,14 +1,14 @@
 import SwiftUI
 
 struct AppContainer: View {
-    @Environment(NavState.self) private var navState
+    @Environment(NavState.self) private var nav
     
     @State private var statusBarHidden = false
     
     var body: some View {
-        @Bindable var navState = navState
+        @Bindable var nav = nav
         
-        NavigationStack(path: $navState.path) {
+        NavigationStack(path: $nav.path) {
             HomeView()
                 .withNavDestinations()
 #if DEBUG

@@ -1,12 +1,12 @@
 import SwiftUI
 
 struct SecondaryContainer: View {
-    @Environment(NavState.self) private var navState
+    @Environment(NavState.self) private var nav
     
     var body: some View {
-        @Bindable var binding = navState
+        @Bindable var nav = nav
         
-        NavigationStack(path: $binding.path) {
+        NavigationStack(path: $nav.path) {
             HomeView()
                 .withNavDestinations()
                 .navigationTitle("Device Specs")
