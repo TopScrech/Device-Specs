@@ -17,4 +17,5 @@ struct CameraFormats: View {
 
 //#Preview {
 //    CameraFormats()
+//        .darkSchemePreferred()
 //}

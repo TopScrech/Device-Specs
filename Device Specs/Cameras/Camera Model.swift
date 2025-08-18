@@ -17,8 +17,8 @@ struct Camera: Identifiable {
         
         let sortedFormats = formats.sorted { format1, format2 -> Bool in
             // Retrieve the maximum frame rate for each format
-            let maxFrameRate1 = format1.videoSupportedFrameRateRanges.map { $0.maxFrameRate }.max() ?? 0
-            let maxFrameRate2 = format2.videoSupportedFrameRateRanges.map { $0.maxFrameRate }.max() ?? 0
+            let maxFrameRate1 = format1.videoSupportedFrameRateRanges.map(\.maxFrameRate).max() ?? 0
+            let maxFrameRate2 = format2.videoSupportedFrameRateRanges.map(\.maxFrameRate).max() ?? 0
             
             if maxFrameRate1 != maxFrameRate2 {
                 // Higher frame rate comes first
