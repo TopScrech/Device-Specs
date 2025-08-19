@@ -12,6 +12,18 @@
 		F30B51B52E1E9E6D0041433B /* Device Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4D2C67B985008CD17B /* Device Info.swift */; };
 		F30B51B62E1E9E6D0041433B /* Device Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4D2C67B985008CD17B /* Device Info.swift */; };
 		F30B51B72E1E9E6D0041433B /* Device Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4D2C67B985008CD17B /* Device Info.swift */; };
+		F31212CC2E548CC0004CC672 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212CB2E548CC0004CC672 /* SettingsView.swift */; };
+		F31212D02E548CC0004CC672 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212CB2E548CC0004CC672 /* SettingsView.swift */; };
+		F31212D42E548CEB004CC672 /* AppearanceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212D12E548CEB004CC672 /* AppearanceSettings.swift */; };
+		F31212D52E548CEB004CC672 /* AppearanceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212D12E548CEB004CC672 /* AppearanceSettings.swift */; };
+		F31212D82E548CF3004CC672 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212D72E548CF3004CC672 /* ColorTheme.swift */; };
+		F31212DC2E548CF3004CC672 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212D72E548CF3004CC672 /* ColorTheme.swift */; };
+		F31212DE2E548D00004CC672 /* Value Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212DD2E548D00004CC672 /* Value Store.swift */; };
+		F31212DF2E548D33004CC672 /* Value Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212DD2E548D00004CC672 /* Value Store.swift */; };
+		F31212E02E548D33004CC672 /* Value Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212DD2E548D00004CC672 /* Value Store.swift */; };
+		F31212E12E548D33004CC672 /* Value Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212DD2E548D00004CC672 /* Value Store.swift */; };
+		F31212E22E548D33004CC672 /* Value Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212DD2E548D00004CC672 /* Value Store.swift */; };
+		F31212E32E548D33004CC672 /* Value Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212DD2E548D00004CC672 /* Value Store.swift */; };
 		F31548FF2CAADBBB004CE26E /* Current Process Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31548FE2CAADBBB004CE26E /* Current Process Environment.swift */; };
 		F31549002CAADBBB004CE26E /* Current Process Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31548FE2CAADBBB004CE26E /* Current Process Environment.swift */; };
 		F31549012CAADBBB004CE26E /* Current Process Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31548FE2CAADBBB004CE26E /* Current Process Environment.swift */; };
@@ -608,6 +620,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F31212CB2E548CC0004CC672 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F31212D12E548CEB004CC672 /* AppearanceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSettings.swift; sourceTree = "<group>"; };
+		F31212D72E548CF3004CC672 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		F31212DD2E548D00004CC672 /* Value Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Value Store.swift"; sourceTree = "<group>"; };
 		F31548FE2CAADBBB004CE26E /* Current Process Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Current Process Environment.swift"; sourceTree = "<group>"; };
 		F317334B2CA1D57800CFA041 /* Background Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Background Blur.swift"; sourceTree = "<group>"; };
 		F317334D2CA1D61B00CFA041 /* Nav Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Link.swift"; sourceTree = "<group>"; };
@@ -927,6 +943,16 @@
 			path = Nav;
 			sourceTree = "<group>";
 		};
+		F31212CA2E548CAC004CC672 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F31212CB2E548CC0004CC672 /* SettingsView.swift */,
+				F31212D12E548CEB004CC672 /* AppearanceSettings.swift */,
+				F31212D72E548CF3004CC672 /* ColorTheme.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		F3187A512C898B40008FB911 /* Nav */ = {
 			isa = PBXGroup;
 			children = (
@@ -1222,6 +1248,7 @@
 			children = (
 				F3E7EC3D2C676A13008CD17B /* Device Specs App.swift */,
 				F3EA491E2D7D821000887109 /* MetricKit Manager.swift */,
+				F31212DD2E548D00004CC672 /* Value Store.swift */,
 				F3187A512C898B40008FB911 /* Nav */,
 				F3F85E8A2C94529A00AE0A1D /* iOS.plist */,
 				F3E7EC432C676A14008CD17B /* iOS.entitlements */,
@@ -1249,6 +1276,7 @@
 				F36FBC6D2C941F5100F5E174 /* Accessability */,
 				F3E7EC742C67B985008CD17B /* Tests */,
 				F3D1E7AC2C9D5BE1000C81FF /* About */,
+				F31212CA2E548CAC004CC672 /* Settings */,
 			);
 			path = "Device Specs";
 			sourceTree = "<group>";
@@ -1781,6 +1809,7 @@
 				F351EB2F2CC197CF001F424F /* Clock View.swift in Sources */,
 				F36F7FE12CA0D04C0007F120 /* App Container.swift in Sources */,
 				F36F7FEE2CA0D4370007F120 /* Battery Specs.swift in Sources */,
+				F31212D52E548CEB004CC672 /* AppearanceSettings.swift in Sources */,
 				F36F7FF42CA0D47C0007F120 /* Network Specs.swift in Sources */,
 				F36F80052CA0D4D00007F120 /* Accessibility VM.swift in Sources */,
 				F36F802D2CA0D6090007F120 /* Fake Home View.swift in Sources */,
@@ -1792,6 +1821,7 @@
 				F36F80262CA0D5A60007F120 /* Specs Button.swift in Sources */,
 				F3CCB1F92CAFC228000F8207 /* GPU Family Model.swift in Sources */,
 				F36F7FF52CA0D47C0007F120 /* Connectivity VM.swift in Sources */,
+				F31212E32E548D33004CC672 /* Value Store.swift in Sources */,
 				F3B709ED2CA2F683006ECAD1 /* Font List.swift in Sources */,
 				F36F7FF72CA0D4830007F120 /* Format Card.swift in Sources */,
 				F3B709DB2CA2CEE0006ECAD1 /* Haptic Button.swift in Sources */,
@@ -1822,6 +1852,7 @@
 				F3B709C52CA2C5E3006ECAD1 /* Locale VM.swift in Sources */,
 				F3B709F92CA30470006ECAD1 /* Advertising Identifier.swift in Sources */,
 				F36F7FF62CA0D47C0007F120 /* Network VM.swift in Sources */,
+				F31212D82E548CF3004CC672 /* ColorTheme.swift in Sources */,
 				F3291C5C2CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */,
 				F36F7FEF2CA0D4370007F120 /* Battery VM.swift in Sources */,
 				F3CCB1EA2CAF499D000F8207 /* Auth Test.swift in Sources */,
@@ -1845,6 +1876,7 @@
 				F36F80182CA0D51B0007F120 /* Test List.swift in Sources */,
 				F3B709B22CA2BE84006ECAD1 /* Timezone.swift in Sources */,
 				F36F800D2CA0D4DE0007F120 /* Activity VM.swift in Sources */,
+				F31212D02E548CC0004CC672 /* SettingsView.swift in Sources */,
 				F36F800E2CA0D4DE0007F120 /* Location VM.swift in Sources */,
 				F36F800F2CA0D4DE0007F120 /* Altitude VM.swift in Sources */,
 				F36F801B2CA0D52F0007F120 /* Color View.swift in Sources */,
@@ -1898,6 +1930,7 @@
 				F3F85EBF2C948F6300AE0A1D /* Color View.swift in Sources */,
 				F3D1E7C02C9D6AC8000C81FF /* Magnetic VM.swift in Sources */,
 				F3291C702CAA9A3B00A15CAE /* Neural Engine.swift in Sources */,
+				F31212DF2E548D33004CC672 /* Value Store.swift in Sources */,
 				F3F85EC52C9492F300AE0A1D /* Device Watch Info.swift in Sources */,
 				F3F85EA92C948A3300AE0A1D /* Memory Specs.swift in Sources */,
 				F3F85EA12C9486C200AE0A1D /* Network Specs.swift in Sources */,
@@ -2005,6 +2038,7 @@
 				F3291C562CAA02F200A15CAE /* Bluetooth Version.swift in Sources */,
 				F3D1E7B72C9D611A000C81FF /* AppVM.swift in Sources */,
 				F351EB312CC197CF001F424F /* Clock View.swift in Sources */,
+				F31212E02E548D33004CC672 /* Value Store.swift in Sources */,
 				F3291C4E2CA9EC0900A15CAE /* Warnings Section.swift in Sources */,
 				F3D1E7B82C9D611A000C81FF /* AboutView.swift in Sources */,
 				F3D1E79A2C9C86AD000C81FF /* Specs Link.swift in Sources */,
@@ -2097,6 +2131,7 @@
 				F3ECFE322CA53AE200E72D41 /* Battery Capacity.swift in Sources */,
 				F3B709DC2CA2CEE0006ECAD1 /* Haptic Button.swift in Sources */,
 				F3E7EC872C67B985008CD17B /* Orientation VM.swift in Sources */,
+				F31212CC2E548CC0004CC672 /* SettingsView.swift in Sources */,
 				F3291C6F2CAA9A3B00A15CAE /* Neural Engine.swift in Sources */,
 				F3ECFDF42CA4B3F800E72D41 /* L2 Cache.swift in Sources */,
 				F3E7EC882C67B985008CD17B /* Math Utilities.swift in Sources */,
@@ -2108,6 +2143,7 @@
 				F3291C3C2CA9BCE200A15CAE /* Font VM.swift in Sources */,
 				F3E7EC8A2C67B985008CD17B /* Battery VM.swift in Sources */,
 				F3E7EC8B2C67B985008CD17B /* Bluetooth VM.swift in Sources */,
+				F31212D42E548CEB004CC672 /* AppearanceSettings.swift in Sources */,
 				F3B709D02CA2C912006ECAD1 /* Volume Slider.swift in Sources */,
 				F351EB332CC197CF001F424F /* Clock View.swift in Sources */,
 				F3B709E92CA2F683006ECAD1 /* Font List.swift in Sources */,
@@ -2120,9 +2156,11 @@
 				F3187A502C898B37008FB911 /* Nav State.swift in Sources */,
 				F3C68ACD2CAFCDB40021B6F3 /* MailFeedback.swift in Sources */,
 				F3ECFE392CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
+				F31212DE2E548D00004CC672 /* Value Store.swift in Sources */,
 				F3CCB1E52CAF4518000F8207 /* Auth VM.swift in Sources */,
 				F39404182D37D155000B9221 /* Location Sensors.swift in Sources */,
 				F3E7EC8E2C67B985008CD17B /* Camera VM.swift in Sources */,
+				F31212DC2E548CF3004CC672 /* ColorTheme.swift in Sources */,
 				F3291C352CA9BC0F00A15CAE /* Font Row.swift in Sources */,
 				F3B709F72CA30470006ECAD1 /* Advertising Identifier.swift in Sources */,
 				F3D1E7A22C9CC304000C81FF /* Format Card.swift in Sources */,
@@ -2158,6 +2196,7 @@
 				F3B709EA2CA2F683006ECAD1 /* Font List.swift in Sources */,
 				F3F85EF32C9582EA00AE0A1D /* Display Specs.swift in Sources */,
 				F3ECFDF82CA4B3F800E72D41 /* L2 Cache.swift in Sources */,
+				F31212E12E548D33004CC672 /* Value Store.swift in Sources */,
 				F3F85EDF2C94DD7900AE0A1D /* Home View.swift in Sources */,
 				F3ECFDE22CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */,
 				F3F85EFE2C95875C00AE0A1D /* Memory Specs.swift in Sources */,
@@ -2238,6 +2277,7 @@
 				F3ECFDE12CA4B0D000E72D41 /* Max Clock Speed.swift in Sources */,
 				F3ECFE382CA53AE900E72D41 /* Battery Capacity Wh.swift in Sources */,
 				F358F0252D2C187000BCC07B /* Settings View.swift in Sources */,
+				F31212E22E548D33004CC672 /* Value Store.swift in Sources */,
 				F33FEE582C982EC200214288 /* Nav Links.swift in Sources */,
 				F3F85F252C962E7200AE0A1D /* Battery VM.swift in Sources */,
 				F3F85F2D2C96455300AE0A1D /* Hardware Specs.swift in Sources */,

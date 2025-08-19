@@ -1,6 +1,7 @@
 import ScrechKit
 import MailCover
 
+#warning("Unused")
 struct MailFeedback: View {
     @State private var showMail = false
     
@@ -10,7 +11,12 @@ struct MailFeedback: View {
                 showMail = true
             }
         }
-        .mailCover($showMail, subject: "Device Specs", recipients: ["topscrech@icloud.com"], alerts: .disabled)
+        .mailCover(
+            $showMail,
+            subject: "Device Specs",
+            recipients: ["topscrech@icloud.com"],
+            alerts: .disabled
+        )
     }
 }
 

@@ -84,6 +84,11 @@ struct HomeView: View {
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
             battery.fetchBatteryInfo()
         }
+        .toolbar {
+            NavigationLink(destination: SettingsView()) {
+                Image(systemName: "gear")
+            }
+        }
     }
 }
 

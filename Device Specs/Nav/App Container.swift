@@ -2,8 +2,7 @@ import SwiftUI
 
 struct AppContainer: View {
     @Environment(NavState.self) private var nav
-    
-    @State private var statusBarHidden = false
+    @EnvironmentObject private var store: ValueStore
     
     var body: some View {
         @Bindable var nav = nav
@@ -11,20 +10,8 @@ struct AppContainer: View {
         NavigationStack(path: $nav.path) {
             HomeView()
                 .withNavDestinations()
-#if DEBUG
-                .toolbar {
-                    if !statusBarHidden {
-                        Menu {
-                            Button("Hide status bar and this menu") {
-                                statusBarHidden = true
-                            }
-                        } label: {
-                            Image(systemName: "ellipsis")
-                        }
-                    }
-                }
-#endif
         }
-        .statusBarHidden(statusBarHidden)
+        .statusBarHidden(store.showStatusBar)
+        .preferredColorScheme(store.appearance.scheme)
     }
 }
