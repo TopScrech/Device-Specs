@@ -58,7 +58,7 @@ struct HomeView: View {
             
             Section {
                 SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
-                    AppSpecs()
+                    AboutView()
                         .environment(app)
                 }
             }
