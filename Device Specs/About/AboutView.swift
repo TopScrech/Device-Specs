@@ -20,7 +20,7 @@ struct AboutView: View {
     private let links: [SocialProfile] = [
         .init("https://t.me/TopScrech", img: .telegram),
         .init("https://github.com/TopScrech", img: .gitHub),
-        .init("https://www.linkedin.com/in/topscrech", img: .linkedIn),
+        .init("https://www.linkedin.com/in/topscrech", img: .linkedIn)
     ]
     
     var body: some View {
