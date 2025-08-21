@@ -22,5 +22,4 @@ struct MagneticFieldData: View {
     List {
         MagneticFieldData()
     }
-    .darkSchemePreferred()
 }

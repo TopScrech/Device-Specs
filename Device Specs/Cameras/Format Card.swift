@@ -17,5 +17,4 @@ struct FormatCard: View {
 
 //#Preview {
 //    FormatCard()
-//        .darkSchemePreferred()
 //}

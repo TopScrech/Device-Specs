@@ -31,5 +31,4 @@ struct HardwareSpecs: View {
     NavigationStack {
         HardwareSpecs()
     }
-    .darkSchemePreferred()
 }

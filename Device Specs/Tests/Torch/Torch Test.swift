@@ -24,5 +24,4 @@ struct TorchTest: View {
     List {
         TorchTest()
     }
-    .darkSchemePreferred()
 }

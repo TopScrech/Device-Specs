@@ -60,10 +60,9 @@ struct FakeHomeView: View {
 }
 
 #Preview {
-    NavigationView {
+    NavigationStack {
         HomeView()
     }
-    .darkSchemePreferred()
     .environment(DeviceVM())
     .environment(SystemVM())
     .environment(DisplayVM())

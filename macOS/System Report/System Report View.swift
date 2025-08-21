@@ -34,5 +34,4 @@ struct SystemReportView: View {
 
 #Preview {
     SystemReportView()
-        .darkSchemePreferred()
 }

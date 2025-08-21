@@ -36,6 +36,5 @@ struct CurrentProcess: View {
     NavigationStack {
         CurrentProcess()
     }
-    .darkSchemePreferred()
     .environment(ProcessorVM())
 }

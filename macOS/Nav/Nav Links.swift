@@ -27,5 +27,4 @@ struct NavLinks: View {
 
 #Preview {
     NavLinks()
-        .darkSchemePreferred()
 }

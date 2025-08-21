@@ -93,10 +93,9 @@ struct HomeView: View {
 }
 
 #Preview {
-    NavigationView {
+    NavigationStack {
         HomeView()
     }
-    .darkSchemePreferred()
     .environment(BatteryVM())
     .environment(ProcessorVM())
     .environment(DisplayVM())

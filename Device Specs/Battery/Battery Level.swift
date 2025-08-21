@@ -26,6 +26,5 @@ struct BatteryLevel: View {
     List {
         BatteryLevel()
     }
-    .darkSchemePreferred()
     .environment(BatteryVM())
 }

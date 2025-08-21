@@ -29,5 +29,4 @@ struct ListLink <Destination: View>: View {
     List {
         ListLink("Preview", icon: "hammer") {}
     }
-    .darkSchemePreferred()
 }

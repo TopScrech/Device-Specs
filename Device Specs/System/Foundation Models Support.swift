@@ -37,5 +37,4 @@ struct FoundationModelsSupport: View {
     List {
         FoundationModelsSupport()
     }
-    .darkSchemePreferred()
 }

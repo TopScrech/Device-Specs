@@ -50,5 +50,4 @@ struct SensorsView: View {
     NavigationStack {
         SensorsView()
     }
-    .darkSchemePreferred()
 }

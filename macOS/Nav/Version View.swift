@@ -1,7 +1,7 @@
 import SwiftUI
 
 #warning("???")
-struct Version_View: View {
+struct VersionView: View {
     var body: some View {
         Text("Hello, World!")
         
@@ -10,6 +10,5 @@ struct Version_View: View {
 }
 
 #Preview {
-    Version_View()
-        .darkSchemePreferred()
+    VersionView()
 }

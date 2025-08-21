@@ -33,5 +33,4 @@ struct ColorTestList: View {
     List {
         ColorTestList()
     }
-    .darkSchemePreferred()
 }

@@ -27,6 +27,5 @@ struct HomeViewTestsLink: View {
     List {
         HomeViewTestsLink()
     }
-    .darkSchemePreferred()
     .environment(NavState())
 }

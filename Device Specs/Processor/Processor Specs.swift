@@ -78,6 +78,5 @@ struct ProcessorSpecs: View {
     NavigationStack {
         ProcessorSpecs()
     }
-    .darkSchemePreferred()
     .environment(ProcessorVM())
 }

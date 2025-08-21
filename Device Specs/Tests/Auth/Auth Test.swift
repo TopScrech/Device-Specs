@@ -34,5 +34,4 @@ struct AuthTest: View {
     List {
         AuthTest()
     }
-    .darkSchemePreferred()
 }

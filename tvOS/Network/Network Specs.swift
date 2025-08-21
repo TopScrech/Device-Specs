@@ -21,5 +21,4 @@ struct NetworkSpecs: View {
     NavigationStack {
         NetworkSpecs()
     }
-    .darkSchemePreferred()
 }

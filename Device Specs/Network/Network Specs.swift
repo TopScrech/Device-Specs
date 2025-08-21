@@ -68,6 +68,5 @@ struct NetworkSpecs: View {
     NavigationStack {
         NetworkSpecs()
     }
-    .darkSchemePreferred()
     .environment(ConnectivityVM())
 }

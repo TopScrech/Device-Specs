@@ -28,8 +28,8 @@ struct SensorsView: View {
                 ListParam("Absolute altitude", param: altitude.absoluteAltitude)
             }
         }
-        .numericTransition()
         .navigationTitle("Sensors")
+        .numericTransition()
     }
 }
 
@@ -37,5 +37,4 @@ struct SensorsView: View {
     NavigationStack {
         SensorsView()
     }
-    .darkSchemePreferred()
 }

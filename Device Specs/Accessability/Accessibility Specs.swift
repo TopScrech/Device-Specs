@@ -33,5 +33,4 @@ struct AccessibilitySpecs: View {
     NavigationStack {
         AccessibilitySpecs()
     }
-    .darkSchemePreferred()
 }

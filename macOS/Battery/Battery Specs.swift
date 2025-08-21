@@ -40,5 +40,4 @@ struct BatterySpecs: View {
     NavigationStack {
         BatterySpecs()
     }
-    .darkSchemePreferred()
 }

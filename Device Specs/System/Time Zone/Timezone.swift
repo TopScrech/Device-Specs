@@ -41,5 +41,4 @@ struct Timezone: View {
     NavigationStack {
         Timezone()
     }
-    .darkSchemePreferred()
 }

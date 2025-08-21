@@ -19,6 +19,5 @@ struct AppearanceSettings: View {
     List {
         AppearanceSettings()
     }
-    .darkSchemePreferred()
     .environmentObject(ValueStore())
 }

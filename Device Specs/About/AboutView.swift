@@ -66,6 +66,5 @@ struct AboutView: View {
 
 #Preview {
     AboutView()
-        .darkSchemePreferred()
         .environment(AppVM())
 }

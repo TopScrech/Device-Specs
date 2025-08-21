@@ -37,6 +37,5 @@ struct CameraSpecs: View {
     NavigationStack {
         CameraSpecs()
     }
-    .darkSchemePreferred()
     .environment(CameraVM())
 }
