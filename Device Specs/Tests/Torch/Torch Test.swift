@@ -8,7 +8,7 @@ struct TorchTest: View {
     }
     
     var body: some View {
-        Section("Flashlight") {
+        Section {
             Button("Flashlight", systemImage: icon) {
                 torch.toggleTorch()
             }
