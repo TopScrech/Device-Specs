@@ -63,10 +63,15 @@ struct AboutView: View {
                 .resizable()
                 .ignoresSafeArea()
         }
+        .toolbar {
+            ShareLink(item: URL(string: "https://apps.apple.com/app/id6624303981")!)
+        }
     }
 }
 
 #Preview {
-    AboutView()
-        .environment(AppVM())
+    NavigationStack {
+        AboutView()
+    }
+    .environment(AppVM())
 }
