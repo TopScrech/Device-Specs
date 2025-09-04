@@ -52,6 +52,8 @@
 		F326A3FB2E69697F0092F514 /* Background.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326A3F92E69697F0092F514 /* Background.xcassets */; };
 		F326A3FD2E69697F0092F514 /* Background.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326A3F92E69697F0092F514 /* Background.xcassets */; };
 		F326A3FE2E69697F0092F514 /* Background.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326A3F92E69697F0092F514 /* Background.xcassets */; };
+		F326A3FF2E6969CB0092F514 /* Social.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326A3F32E6969590092F514 /* Social.xcassets */; };
+		F326A4002E6969D70092F514 /* Background.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326A3F92E69697F0092F514 /* Background.xcassets */; };
 		F3291C262CA99C7D00A15CAE /* Warning Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A6DA2CA36AAF00FF670F /* Warning Card.swift */; };
 		F3291C282CA99CA000A15CAE /* Warnings Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C272CA99CA000A15CAE /* Warnings Section.swift */; };
 		F3291C332CA9BC0F00A15CAE /* Font Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C322CA9BC0F00A15CAE /* Font Row.swift */; };
@@ -1765,6 +1767,8 @@
 			files = (
 				F36F803D2CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F346B0082E1DE31D00E56259 /* Foundation Models.xcassets in Resources */,
+				F326A4002E6969D70092F514 /* Background.xcassets in Resources */,
+				F326A3FF2E6969CB0092F514 /* Social.xcassets in Resources */,
 				F36FBC732C942F7600F5E174 /* Assets.xcassets in Resources */,
 			);
 		};
