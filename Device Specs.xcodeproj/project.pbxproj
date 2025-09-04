@@ -44,6 +44,14 @@
 		F31F08C22D2A79B500B156EC /* Apple Intelligence Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */; };
 		F31F08C32D2A79B500B156EC /* Apple Intelligence Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */; };
 		F31F08C42D2A79B500B156EC /* Apple Intelligence Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C68AC22CAFCB020021B6F3 /* Apple Intelligence Support.swift */; };
+		F326A3F42E6969590092F514 /* Social.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326A3F32E6969590092F514 /* Social.xcassets */; };
+		F326A3F52E6969590092F514 /* Social.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326A3F32E6969590092F514 /* Social.xcassets */; };
+		F326A3F72E6969590092F514 /* Social.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326A3F32E6969590092F514 /* Social.xcassets */; };
+		F326A3F82E6969590092F514 /* Social.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326A3F32E6969590092F514 /* Social.xcassets */; };
+		F326A3FA2E69697F0092F514 /* Background.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326A3F92E69697F0092F514 /* Background.xcassets */; };
+		F326A3FB2E69697F0092F514 /* Background.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326A3F92E69697F0092F514 /* Background.xcassets */; };
+		F326A3FD2E69697F0092F514 /* Background.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326A3F92E69697F0092F514 /* Background.xcassets */; };
+		F326A3FE2E69697F0092F514 /* Background.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326A3F92E69697F0092F514 /* Background.xcassets */; };
 		F3291C262CA99C7D00A15CAE /* Warning Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A6DA2CA36AAF00FF670F /* Warning Card.swift */; };
 		F3291C282CA99CA000A15CAE /* Warnings Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C272CA99CA000A15CAE /* Warnings Section.swift */; };
 		F3291C332CA9BC0F00A15CAE /* Font Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3291C322CA9BC0F00A15CAE /* Font Row.swift */; };
@@ -630,6 +638,8 @@
 		F3187A4F2C898B37008FB911 /* Nav State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav State.swift"; sourceTree = "<group>"; };
 		F3187A522C898B62008FB911 /* Nav Destinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Destinations.swift"; sourceTree = "<group>"; };
 		F3187A542C898B7E008FB911 /* Nav Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Extension.swift"; sourceTree = "<group>"; };
+		F326A3F32E6969590092F514 /* Social.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Social.xcassets; sourceTree = "<group>"; };
+		F326A3F92E69697F0092F514 /* Background.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Background.xcassets; sourceTree = "<group>"; };
 		F3291C272CA99CA000A15CAE /* Warnings Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Warnings Section.swift"; sourceTree = "<group>"; };
 		F3291C322CA9BC0F00A15CAE /* Font Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font Row.swift"; sourceTree = "<group>"; };
 		F3291C382CA9BCE200A15CAE /* Font VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font VM.swift"; sourceTree = "<group>"; };
@@ -1254,6 +1264,8 @@
 				F3E7EC432C676A14008CD17B /* iOS.entitlements */,
 				F3E7EC412C676A14008CD17B /* Assets.xcassets */,
 				F346B0052E1DE30C00E56259 /* Foundation Models.xcassets */,
+				F326A3F32E6969590092F514 /* Social.xcassets */,
+				F326A3F92E69697F0092F514 /* Background.xcassets */,
 				F346B00E2E1E7D2500E56259 /* AppIcon.icon */,
 				F36F803A2CA170870007F120 /* Localizable.xcstrings */,
 				F3E7EC4E2C67B985008CD17B /* Home View.swift */,
@@ -1731,16 +1743,20 @@
 				F36F80402CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F346B00B2E1DE31D00E56259 /* Foundation Models.xcassets in Resources */,
 				F3595A152E5341F000A2AD57 /* Assets.xcassets in Resources */,
+				F326A3F82E6969590092F514 /* Social.xcassets in Resources */,
 				F36F7FD52CA0CFE00007F120 /* Assets.xcassets in Resources */,
+				F326A3FE2E69697F0092F514 /* Background.xcassets in Resources */,
 			);
 		};
 		F36FBCAF2C9449A200F5E174 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				F326A3FB2E69697F0092F514 /* Background.xcassets in Resources */,
 				F3F85E8B2C94529A00AE0A1D /* iOS.plist in Resources */,
 				F346B0072E1DE31D00E56259 /* Foundation Models.xcassets in Resources */,
 				F3C8E5542D7E2EF000644E47 /* Assets.xcassets in Resources */,
 				F36F803C2CA170870007F120 /* Localizable.xcstrings in Resources */,
+				F326A3F52E6969590092F514 /* Social.xcassets in Resources */,
 				F3595A132E53408700A2AD57 /* AppIcon.icon in Resources */,
 			);
 		};
@@ -1758,7 +1774,9 @@
 				F36F803B2CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F346B00F2E1E7D2500E56259 /* AppIcon.icon in Resources */,
 				F346B0062E1DE30C00E56259 /* Foundation Models.xcassets in Resources */,
+				F326A3F42E6969590092F514 /* Social.xcassets in Resources */,
 				F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */,
+				F326A3FA2E69697F0092F514 /* Background.xcassets in Resources */,
 			);
 		};
 		F3F85ECB2C94AF5A00AE0A1D /* Resources */ = {
@@ -1766,6 +1784,8 @@
 			files = (
 				F36F803E2CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F346B0092E1DE31D00E56259 /* Foundation Models.xcassets in Resources */,
+				F326A3FD2E69697F0092F514 /* Background.xcassets in Resources */,
+				F326A3F72E6969590092F514 /* Social.xcassets in Resources */,
 				F3F85ED42C94AF5B00AE0A1D /* Assets.xcassets in Resources */,
 			);
 		};
