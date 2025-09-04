@@ -4,6 +4,7 @@ import SwiftUI
 import FoundationModels
 #endif
 
+@available(iOS 26, *)
 struct FoundationModelsSupport: View {
     private var isSupported: Bool {
 #if canImport(FoundationModels)
@@ -33,6 +34,7 @@ struct FoundationModelsSupport: View {
     }
 }
 
+@available(iOS 26, *)
 #Preview {
     List {
         FoundationModelsSupport()

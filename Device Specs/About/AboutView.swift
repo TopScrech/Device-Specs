@@ -53,7 +53,9 @@ struct AboutView: View {
                 }
             }
             .padding()
-            .glassEffect()
+            .background(.ultraThinMaterial, in: .capsule)
+#warning("glassEffect")
+            //            .glassEffect()
         }
         .padding(.vertical)
         .background {

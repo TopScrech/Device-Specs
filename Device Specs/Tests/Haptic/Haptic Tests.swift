@@ -25,7 +25,9 @@ struct HapticTests: View {
                     HapticButton(key, feedback: feedback)
                 }
                 
-                HapticButton("Path complete", feedback: .pathComplete)
+                if #available(iOS 17.5, *) {
+                    HapticButton("Path complete", feedback: .pathComplete)
+                }
             } footer: {
                 Text("Not all platforms will play feedback in response to certain types")
             }

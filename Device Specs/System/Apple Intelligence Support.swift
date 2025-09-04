@@ -4,6 +4,7 @@ import SwiftUI
 import ImagePlayground
 #endif
 
+@available(iOS 18.1, *)
 struct AppleIntelligenceSupport: View {
 #if canImport(ImagePlayground)
     @Environment(\.supportsImagePlayground) private var isSupported
@@ -34,6 +35,7 @@ struct AppleIntelligenceSupport: View {
     }
 }
 
+@available(iOS 18.1, *)
 #Preview {
     List {
         AppleIntelligenceSupport()

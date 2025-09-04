@@ -12,10 +12,14 @@ struct SystemSpecs: View {
                 ListParam("Build", param: vm.buildNumber)
             }
             
-            Section {
-                AppleIntelligenceSupport()
-                
-                FoundationModelsSupport()
+            if #available(iOS 18.1, *) {
+                Section {
+                    AppleIntelligenceSupport()
+                    
+                    if #available(iOS 26, *) {
+                        FoundationModelsSupport()
+                    }
+                }
             }
             
             Section {
