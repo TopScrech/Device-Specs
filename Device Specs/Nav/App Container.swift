@@ -11,7 +11,7 @@ struct AppContainer: View {
             HomeView()
                 .withNavDestinations()
         }
-        .statusBarHidden(store.showStatusBar)
+        .statusBarHidden(!store.showStatusBar)
         .preferredColorScheme(store.appearance.scheme)
     }
 }
