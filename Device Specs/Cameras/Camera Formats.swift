@@ -9,8 +9,8 @@ struct CameraFormats: View {
     }
     
     var body: some View {
-        ForEach(formats, id: \.self) { format in
-            FormatCard(format)
+        ForEach(formats, id: \.self) {
+            FormatCard($0)
         }
     }
 }

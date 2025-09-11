@@ -46,8 +46,8 @@ struct AboutView: View {
                 .secondary()
             
             HStack(spacing: 16) {
-                ForEach(links) { link in
-                    Image(link.img)
+                ForEach(links) {
+                    Image($0.img)
                         .resizable()
                         .frame(40)
                 }
@@ -63,9 +63,11 @@ struct AboutView: View {
                 .resizable()
                 .ignoresSafeArea()
         }
+#if !os(tvOS)
         .toolbar {
             ShareLink(item: URL(string: "https://apps.apple.com/app/id6624303981")!)
         }
+#endif
     }
 }
 

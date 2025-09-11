@@ -23,8 +23,8 @@ struct CurrentProcess: View {
             }
             
             Section("Arguments") {
-                ForEach(vm.arguments, id: \.self) { argument in
-                    Text(argument)
+                ForEach(vm.arguments, id: \.self) {
+                    Text($0)
                 }
             }
         }

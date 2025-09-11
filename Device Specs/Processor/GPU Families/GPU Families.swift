@@ -6,14 +6,14 @@ struct GPUFamilies: View {
     var body: some View {
         List {
             Section {
-                ForEach(vm.supportedFamilies) { family in
-                    Text(family.name)
+                ForEach(vm.supportedFamilies) {
+                    Text($0.name)
                 }
             }
             
             Section("Unsupported") {
-                ForEach(vm.unsupportedFamilies) { family in
-                    Text(family.name)
+                ForEach(vm.unsupportedFamilies) {
+                    Text($0.name)
                 }
             }
         }

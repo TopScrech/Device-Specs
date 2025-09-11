@@ -14,8 +14,8 @@ struct LocaleList: View {
                     Spacer()
                     
                     VStack {
-                        ForEach(vm.preferredLanguages, id: \.self) { lan in
-                            Text(lan)
+                        ForEach(vm.preferredLanguages, id: \.self) {
+                            Text($0)
                         }
                     }
                     .secondary()
@@ -44,8 +44,8 @@ struct LocaleList: View {
                     Spacer()
                     
                     VStack {
-                        ForEach(vm.availableNumberingSystems, id: \.self) { num in
-                            Text(num.debugDescription)
+                        ForEach(vm.availableNumberingSystems, id: \.self) {
+                            Text($0.debugDescription)
                                 .secondary()
                         }
                     }

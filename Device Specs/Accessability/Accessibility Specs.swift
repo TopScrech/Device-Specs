@@ -18,8 +18,8 @@ struct AccessibilitySpecs: View {
                 }
             }
             
-            ForEach(vm.filteredParams) { param in
-                AccessibilityItem(param)
+            ForEach(vm.filteredParams) {
+                AccessibilityItem($0)
             }
         }
         .navigationTitle("Accessibility")

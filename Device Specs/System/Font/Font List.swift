@@ -11,8 +11,8 @@ struct FontList: View {
             }
             .padding(.vertical, 30)
 #endif
-            ForEach(vm.filteredFonts, id: \.self) { font in
-                FontRow(font)
+            ForEach(vm.filteredFonts, id: \.self) {
+                FontRow($0)
             }
         }
         .environment(vm)

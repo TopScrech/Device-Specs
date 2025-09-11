@@ -24,8 +24,8 @@ struct CameraSpecs: View {
                 }
             }
             
-            ForEach(filteredCameras) { cam in
-                CameraView(cam)
+            ForEach(filteredCameras) {
+                CameraView($0)
             }
         }
         .navigationTitle("Cameras")
