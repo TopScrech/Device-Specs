@@ -22,6 +22,7 @@ extension Device.CPU {
         case .m3: "3 nm (N3)"
         case .a17Pro: "3 nm (N3B)"
         case .a18, .a18Pro, .m4: "3 nm (N3E)"
+        case .a19, .a19Pro: "3 nm (N3P)"
 #elseif os(watchOS)
         case .s1, .s1P: "28 nm"
         case .s2, .s3: "16 nm"
