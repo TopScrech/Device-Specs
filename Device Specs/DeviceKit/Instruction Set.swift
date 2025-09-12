@@ -33,6 +33,7 @@ extension Device.CPU {
         case .m2: "ARMv8.6-A"
         case .m3: "ARMv8.6-A"
         case .m4: "ARMv9.2-A"
+            
 #elseif os(watchOS)
         case .s1: "ARMv7k"
         case .s1P: "ARMv7k"
