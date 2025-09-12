@@ -1,8 +1,6 @@
 import SwiftUI
 
 struct HomeView: View {
-    @Environment(NavState.self) private var navState
-    
     @State private var battery = BatteryVM()
     @State private var processor = ProcessorVM()
     @State private var display = DisplayVM()
@@ -73,11 +71,11 @@ struct HomeView: View {
                 AccessibilitySpecs()
             }
             
-            testLink
+            HomeViewTestsLink()
             
             Section {
                 SpecsLink("About", icon: "questionmark.square.dashed", spec: version) {
-                    AppSpecs()
+                    AboutView()
                         .environment(app)
                 }
             }
@@ -86,30 +84,16 @@ struct HomeView: View {
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
             battery.fetchBatteryInfo()
         }
-    }
-    
-    private var testLink: some View {
-        Section {
-            Button {
-                navState.navigate(.toTests)
-            } label: {
-                HStack {
-                    Label("Tests", systemImage: "testtube.2")
-                    
-                    Spacer()
-                    
-                    Image(systemName: "chevron.forward")
-                        .caption(.semibold)
-                        .tertiary()
-                }
-                .foregroundStyle(.foreground)
+        .toolbar {
+            NavigationLink(destination: SettingsView()) {
+                Image(systemName: "gear")
             }
         }
     }
 }
 
 #Preview {
-    NavigationView {
+    NavigationStack {
         HomeView()
     }
     .environment(BatteryVM())
@@ -121,5 +105,4 @@ struct HomeView: View {
     .environment(AppVM())
     .environment(ConnectivityVM())
     .environment(CameraVM())
-    .environment(NavState())
 }

@@ -28,5 +28,7 @@ struct HardwareSpecs: View {
 }
 
 #Preview {
-    HardwareSpecs()
+    NavigationStack {
+        HardwareSpecs()
+    }
 }

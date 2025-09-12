@@ -21,6 +21,8 @@ struct BatteryState: View {
 }
 
 #Preview {
-    BatteryState()
-        .environment(BatteryVM())
+    List {
+        BatteryState()
+    }
+    .environment(BatteryVM())
 }

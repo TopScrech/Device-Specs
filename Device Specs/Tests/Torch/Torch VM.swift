@@ -2,7 +2,7 @@ import AVFoundation
 
 @Observable
 final class TorchVM {
-    var isTorchOn = false
+    private(set) var isTorchOn = false
     
     init() {
         guard let device = AVCaptureDevice.default(for: .video),

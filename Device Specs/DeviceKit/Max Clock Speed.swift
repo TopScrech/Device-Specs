@@ -30,11 +30,11 @@ extension Device.CPU {
         case .s1, .s1P, .s2: "0.52 GHz"
         case .s3: "0.78 (Estimated)"
         case .s4, .s5: "1.59 GHz"
-        case .s6, .s7, .s8: "1.8 GHz"
-        case .s9: "-"
+        case .s6, .s7, .s8, .s9: "1.8 GHz"
         case .s10: "-"
 #endif
         case .unknown: "Unknown"
+        @unknown default: "-"
         }
     }
 }

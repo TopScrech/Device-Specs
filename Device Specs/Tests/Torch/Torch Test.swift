@@ -3,14 +3,16 @@ import SwiftUI
 struct TorchTest: View {
     @State private var torch = TorchVM()
     
+    private var icon: String {
+        torch.isTorchOn ? "flashlight.on.fill" : "flashlight.off.fill"
+    }
+    
     var body: some View {
-        Section("Flashlight") {
-            Button {
+        Section {
+            Button("Flashlight", systemImage: icon) {
                 torch.toggleTorch()
-            } label: {
-                Label("Flashlight", systemImage: torch.isTorchOn ? "flashlight.on.fill" : "flashlight.off.fill")
-                    .foregroundStyle(.foreground)
             }
+            .foregroundStyle(.foreground)
 #if targetEnvironment(simulator)
             .disabled(true)
 #endif

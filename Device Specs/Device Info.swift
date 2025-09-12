@@ -1,14 +1,13 @@
 #if canImport(NearbyInteraction)
 import NearbyInteraction
+#endif
 
 final class DeviceInfo {
     static var isUltraWidebandAvailable: Bool {
-        if #available(iOS 16, watchOS 9, *) {
-            NISession.deviceCapabilities.supportsPreciseDistanceMeasurement
-        } else {
-            NISession.isSupported
-        }
+#if canImport(NearbyInteraction)
+        NISession.deviceCapabilities.supportsPreciseDistanceMeasurement
+#else
+        false
+#endif
     }
 }
-
-#endif

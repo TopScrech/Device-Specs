@@ -37,5 +37,7 @@ struct NavLink <Destination: View>: View {
 }
 
 #Preview {
-    NavLink("Preview", icon: "hammer")
+    List {
+        NavLink("Preview", icon: "hammer")
+    }
 }

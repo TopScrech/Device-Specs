@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @Environment(NavState.self) private var navState
+    @Environment(NavState.self) private var nav
     @Environment(\.dismiss) private var dismiss
     
     @State private var system = SystemVM()
@@ -66,14 +66,14 @@ struct HomeView: View {
             
             Section {
                 SpecsButton("Tests", icon: "testtube.2") {
-                    navState.navigate(.toTests)
+                    nav.navigate(.toTests)
                 }
             }
             
             Section {
                 SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
-                    NavigationView {
-                        AppSpecs()
+                    NavigationStack {
+                        AboutView()
                             .environment(app)
                     }
                 }
@@ -89,7 +89,7 @@ struct HomeView: View {
 }
 
 #Preview {
-    NavigationView {
+    NavigationStack {
         HomeView()
     }
     .environment(BatteryVM())

@@ -33,6 +33,8 @@ extension Device {
                 .iPhone15, .iPhone15Plus, .iPhone15Pro, .iPhone15ProMax,
                 .iPhone16, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax: "5.3"
             
+        case .iPhone17, .iPhoneAir, .iPhone17Pro, .iPhone17ProMax: "6.0"
+            
         case .iPad2: "2.1"
         case .iPad3, .iPad4: "4.0"
         case .iPad5, .iPad6, .iPad7, .iPad8, .iPad9: "4.2"
@@ -81,12 +83,14 @@ extension Device {
                 .appleWatchUltra,
                 .appleWatchSeries9_41mm, .appleWatchSeries9_45mm,
                 .appleWatchUltra2,
-                .appleWatchSeries10_42mm, .appleWatchSeries10_46mm: "5.3"
+                .appleWatchSeries10_42mm, .appleWatchSeries10_46mm,
+                .appleWatchUltra3,
+                .appleWatchSeries11_42mm, .appleWatchSeries11_46mm: "5.3"
+//                .appleWatchSE3_40, .appleWatchSE3_44 confirmed 5.3
 #endif
         case .simulator: "Simulator"
         case .unknown(let device): "Unknown (\(device))"
-        default: "-"
+        @unknown default: "-"
         }
     }
 }
-#warning("Remove default")

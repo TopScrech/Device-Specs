@@ -3,7 +3,7 @@ import DeviceKit
 
 @Observable
 final class CameraVM {
-    var cameras: [Camera] = []
+    private(set) var cameras: [Camera] = []
     
     let hasLidar = Device.current.hasLidarSensor ? "LiDAR" : ""
     
@@ -140,7 +140,7 @@ final class CameraVM {
         //                maxResolution = dimensions
         //
         //                // Find the maximum frame rate for this resolution
-        //                if let highestFrameRate = format.videoSupportedFrameRateRanges.map({ $0.maxFrameRate }).max() {
+        //                if let highestFrameRate = format.videoSupportedFrameRateRanges.map(\.maxFrameRate).max() {
         //                    maxResolutionFrameRate = highestFrameRate
         //                }
         //            }
@@ -177,10 +177,10 @@ final class CameraVM {
         //        backExposureRange = String(format: "Speed Range: %.5f - %.5f seconds", minExposureSeconds, maxExposureSeconds)
         //
         // Print the collected information
-        //        print("Camera Aperture: \(backAperture)")
-        //        print("Camera Max Video Resolution: \(backMaxVideoResolution)")
-        //        print("Camera Max Frame Rate: \(backMaxFrameRateInfo)")
-        //        print("Camera Optical Stabilization: \(backOpticalStabilization)")
-        //        print("Camera Exposure Range: \(backExposureRange)")
+        //        print("Camera Aperture:", backAperture)
+        //        print("Camera Max Video Resolution:", backMaxVideoResolution)
+        //        print("Camera Max Frame Rate:", backMaxFrameRateInfo)
+        //        print("Camera Optical Stabilization:", backOpticalStabilization)
+        //        print("Camera Exposure Range:", backExposureRange)
     }
 }

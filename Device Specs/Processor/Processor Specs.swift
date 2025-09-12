@@ -75,6 +75,8 @@ struct ProcessorSpecs: View {
 }
 
 #Preview {
-    ProcessorSpecs()
-        .environment(ProcessorVM())
+    NavigationStack {
+        ProcessorSpecs()
+    }
+    .environment(ProcessorVM())
 }

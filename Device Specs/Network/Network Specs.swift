@@ -8,7 +8,7 @@ struct NetworkSpecs: View {
         List {
             ListParam("Public IP address", param: network.publicIp)
             
-            ListParam("Network interface", param: network.networkinterface)
+            ListParam("Network interface", param: network.networkInterface)
             
             ListParam("Destination IP address", param: network.destinationIpAddress)
             
@@ -21,19 +21,52 @@ struct NetworkSpecs: View {
             Section {
                 ListParam("Network type", param: connectivity.type)
                 
-                ListParam("SSID", param: connectivity.ssid)
+                if let ssid = connectivity.ssid {
+                    ListParam("SSID", param: ssid)
+                }
                 
-                ListParam("BSSID", param: connectivity.bssid)
+                if let bssid = connectivity.bssid {
+                    ListParam("BSSID", param: bssid)
+                }
+                
+                if let signalStrength = connectivity.signalStrength {
+                    ListParam("Signal strength", param: String(format: "%.0f%%", signalStrength * 100))
+                }
+                
+                if let isSecure = connectivity.isSecure {
+                    ListParam("Secure network", param: isSecure ? "Yes" : "No")
+                }
+                
+                if let didAutoJoin = connectivity.didAutoJoin {
+                    ListParam("Auto-joined", param: didAutoJoin ? "Yes" : "No")
+                }
+                
+                if let didJustJoin = connectivity.didJustJoin {
+                    ListParam("Just joined", param: didJustJoin ? "Yes" : "No")
+                }
+                
+                if let isChosenHelper = connectivity.isChosenHelper {
+                    ListParam("Hotspot Helper", param: isChosenHelper ? "Yes" : "No")
+                }
+                
+                if let securityType = connectivity.securityType {
+                    ListParam("Security type", param: securityType)
+                }
             }
         }
         .navigationTitle("Network")
         .refreshableTask {
-            network.getIPAddresses()
+            async let getIPAddresses: () = network.getIPAddresses()
+            async let getWiFiInfo: () = connectivity.getWiFiInfo()
+            
+            _ = await (getIPAddresses, getWiFiInfo)
         }
     }
 }
 
 #Preview {
-    NetworkSpecs()
-        .environment(ConnectivityVM())
+    NavigationStack {
+        NetworkSpecs()
+    }
+    .environment(ConnectivityVM())
 }

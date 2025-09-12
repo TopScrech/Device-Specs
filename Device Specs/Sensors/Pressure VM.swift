@@ -5,8 +5,8 @@ import CoreMotion
 final class PressureVM {
     private var altimeter = CMAltimeter()
     
-    var pressureKilo: String?
-    var pressureHecto = ""
+    private(set) var pressureKilo: String?
+    private(set) var pressureHecto = ""
     
     init() {
         fetchPressureData()

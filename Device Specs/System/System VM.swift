@@ -5,8 +5,8 @@ import DeviceKit
 final class SystemVM {
     private let device = Device.current
     
-    var systemUptime = "N/a"
-    var systemActiveTime = "N/a"
+    private(set) var systemUptime = "N/a"
+    private(set) var systemActiveTime = "N/a"
     
     var multitaskingSupported: String {
 #if os(watchOS)
@@ -30,20 +30,26 @@ final class SystemVM {
     
     var operatingSystem: String {
 #if os(watchOS)
-        "\(WKInterfaceDevice.current().systemName) \(WKInterfaceDevice.current().systemVersion)"
+        let wkDevice = WKInterfaceDevice.current()
+        return wkDevice.systemName + " " + wkDevice.systemVersion
 #else
-        "\(UIDevice.current.systemName) \(UIDevice.current.systemVersion)"
+        let uiDevice = UIDevice.current
+        return uiDevice.systemName + " " + uiDevice.systemVersion
 #endif
     }
     
     var buildNumber: String {
+        let regex = "\\((Build )([A-Za-z0-9]+)\\)"
         let build = ProcessInfo.processInfo.operatingSystemVersionString
         
-        guard let range = build.range(of: "\\((Build )([A-Za-z0-9]+)\\)", options: .regularExpression) else {
+        guard
+            let range = build.range(of: regex, options: .regularExpression)
+        else {
             return "-"
         }
         
-        return String(build[range]).replacingOccurrences(of: "(Build ", with: "")
+        return String(build[range])
+            .replacingOccurrences(of: "(Build ", with: "")
             .replacingOccurrences(of: ")", with: "")
     }
     
@@ -57,7 +63,10 @@ final class SystemVM {
         var mib = [CTL_KERN, KERN_BOOTTIME]
         var size = MemoryLayout<timeval>.stride
         
-        let result = sysctl(&mib, UInt32(mib.count), &bootTime, &size, nil, 0)
+        let result = sysctl(
+            &mib, UInt32(mib.count),
+            &bootTime, &size, nil, 0
+        )
         
         if result != 0 {
             perror("sysctl")
@@ -72,6 +81,7 @@ final class SystemVM {
     
     private func timeFormatter(_ seconds: TimeInterval) -> String {
         let formatter = DateComponentsFormatter()
+        
         formatter.allowedUnits = [.day, .hour, .minute, .second]
         formatter.unitsStyle = .abbreviated
         formatter.maximumUnitCount = 4

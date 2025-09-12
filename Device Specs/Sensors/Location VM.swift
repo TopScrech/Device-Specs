@@ -3,11 +3,11 @@ import CoreLocation
 
 @Observable
 final class LocationVM: NSObject, CLLocationManagerDelegate {
-    var latitude = 0.0
-    var longitude = 0.0
-    var trueHeading = 0.0
-    var magneticHeading = 0.0
-    var headingAccuracy = 0.0
+    private(set) var latitude = 0.0
+    private(set) var longitude = 0.0
+    private(set) var trueHeading = 0.0
+    private(set) var magneticHeading = 0.0
+    private(set) var headingAccuracy = 0.0
     
     private var locationManager: CLLocationManager
     
@@ -21,14 +21,22 @@ final class LocationVM: NSObject, CLLocationManagerDelegate {
         locationManager.startUpdatingHeading()
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    func locationManager(
+        _ manager: CLLocationManager,
+        didUpdateLocations locations: [CLLocation]
+    ) {
         if let location = locations.first {
-            latitude = location.coordinate.latitude
-            longitude = location.coordinate.longitude
+            let coordinate = location.coordinate
+            
+            latitude = coordinate.latitude
+            longitude = coordinate.longitude
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
+    func locationManager(
+        _ manager: CLLocationManager,
+        didUpdateHeading newHeading: CLHeading
+    ) {
         trueHeading = newHeading.trueHeading
         magneticHeading = newHeading.magneticHeading
         headingAccuracy = newHeading.headingAccuracy

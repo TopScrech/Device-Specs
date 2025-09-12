@@ -1,7 +1,7 @@
 import ScrechKit
 
 struct TestList: View {
-    @Environment(NavState.self) private var navState
+    @Environment(NavState.self) private var nav
     
     @State private var sheetCamera = false
     
@@ -11,10 +11,8 @@ struct TestList: View {
                 AuthTest()
             }
             
-            Button {
+            Button("Camera", systemImage: "camera") {
                 sheetCamera = true
-            } label: {
-                Label("Camera", systemImage: "camera")
             }
             .foregroundStyle(.foreground)
             
@@ -27,10 +25,8 @@ struct TestList: View {
             }
             
             Section {
-                Button {
-                    navState.navigate(.toUwbTest)
-                } label: {
-                    Label("Ultra Wideband", systemImage: "location.viewfinder")
+                Button("Ultra Wideband", systemImage: "location.viewfinder") {
+                    nav.navigate(.toUwbTest)
                 }
                 .foregroundStyle(.foreground)
                 .disabled(!DeviceInfo.isUltraWidebandAvailable)
@@ -48,5 +44,8 @@ struct TestList: View {
 }
 
 #Preview {
-    TestList()
+    NavigationStack {
+        TestList()
+    }
+    .environment(NavState())
 }

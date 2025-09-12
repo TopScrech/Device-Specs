@@ -4,35 +4,40 @@ import SwiftUI
 import ImagePlayground
 #endif
 
-@available(iOS 18.1, visionOS 2.4, *)
+@available(iOS 18.1, *)
 struct AppleIntelligenceSupport: View {
-    
 #if canImport(ImagePlayground)
-    @Environment(\.supportsImagePlayground) private var supportsAppleIntelligence
+    @Environment(\.supportsImagePlayground) private var isSupported
 #else
-    private var supportsAppleIntelligence = false
+    private let isSupported = false
 #endif
     
+    private var icon: String {
+        isSupported ? "apple.intelligence" : "apple.intelligence.badge.xmark"
+    }
+    
     var body: some View {
-        Section {
-            Label {
-                Text(
-                    supportsAppleIntelligence
-                    ? "Your device supports Apple Intelligence"
-                    : "Your device does not support Apple Intelligence"
-                )
-            } icon: {
-                Image(.appleIntelligence)
-                    .resizable()
-                    .frame(32)
-            }
-            .opacity(supportsAppleIntelligence ? 1 : 0.1)
-            .padding(.vertical, 5)
+        Label {
+            Text(
+                isSupported
+                ? "Your device supports Apple Intelligence"
+                : "Your device does not support Apple Intelligence"
+            )
+        } icon: {
+            Image(systemName: icon)
+                .foregroundStyle(.primary)
+                .symbolRenderingMode(.multicolor)
         }
+        .padding(.vertical, 5)
+#if os(tvOS)
+        .labelReservedIconWidth(64)
+#endif
     }
 }
 
-@available(iOS 18.1, visionOS 2.4, *)
+@available(iOS 18.1, *)
 #Preview {
-    AppleIntelligenceSupport()
+    List {
+        AppleIntelligenceSupport()
+    }
 }

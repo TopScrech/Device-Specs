@@ -23,6 +23,8 @@ struct BatteryLevel: View {
 }
 
 #Preview {
-    BatteryLevel()
-        .environment(BatteryVM())
+    List {
+        BatteryLevel()
+    }
+    .environment(BatteryVM())
 }

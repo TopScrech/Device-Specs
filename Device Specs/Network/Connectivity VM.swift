@@ -1,17 +1,21 @@
-import SwiftUI
-import SystemConfiguration.CaptiveNetwork
-import Network
+import Foundation
+import NetworkExtension
 
 @Observable
 final class ConnectivityVM {
     private let monitor = NWPathMonitor()
     
-    var type = ""
-    var ssid = ""
-    var bssid = ""
+    private(set) var type = ""
+    private(set) var ssid: String? = nil
+    private(set) var bssid: String? = nil
+    private(set) var signalStrength: Double? // for Wi-Fi
+    private(set) var isSecure: Bool?
+    private(set) var didAutoJoin: Bool?
+    private(set) var didJustJoin: Bool?
+    private(set) var isChosenHelper: Bool? // Indicates whether the calling Hotspot Helper is the chosen helper for this network
+    private(set) var securityType: String? // for Wi-Fi
     
     init() {
-        getWiFiInfo()
         monitorNetworkStatus()
     }
     
@@ -20,61 +24,54 @@ final class ConnectivityVM {
         monitor.start(queue: queue)
         
         monitor.pathUpdateHandler = { [weak self] path in
-            guard let self else {
-                return
-            }
+            Task { await self?.getWiFiInfo() }
             
-            DispatchQueue.main.async {
-                switch true {
-                case path.usesInterfaceType(.wifi):
-                    self.type = "Wi-Fi"
-                    self.getWiFiInfo()
-                    
-                case path.usesInterfaceType(.cellular):
-                    self.type = "Cellular"
-                    
-                case path.usesInterfaceType(.wiredEthernet):
-                    self.type = "Wired Ethernet"
-                    
-                case path.usesInterfaceType(.loopback):
-                    self.type = "Loopback Interface"
-                    
-                case path.usesInterfaceType(.other):
-                    self.type = "Other Interface"
-                    
-                default:
-                    self.type = "No Interface"
-                }
+            guard let self else { return }
+            
+            switch true {
+            case path.usesInterfaceType(.wifi):
+                self.type = "Wi-Fi"
+            case path.usesInterfaceType(.cellular):
+                self.type = "Cellular"
+            case path.usesInterfaceType(.wiredEthernet):
+                self.type = "Wired Ethernet"
+            case path.usesInterfaceType(.loopback):
+                self.type = "Loopback Interface"
+            case path.usesInterfaceType(.other):
+                self.type = "Other Interface"
+            default:
+                self.type = "No Interface"
             }
         }
     }
     
-    private func getWiFiInfo() {
-        guard let interfaces = CNCopySupportedInterfaces() as? [String] else {
-            print("Failed to fetch interfaces")
-            return
+    @MainActor
+    func getWiFiInfo() async {
+        let network = await withCheckedContinuation { continuation in
+            NEHotspotNetwork.fetchCurrent { network in
+                continuation.resume(returning: network)
+            }
         }
         
-        guard let interface = interfaces.first else {
-            print("Failed to fetch interface")
-            return
-        }
-        
-        guard let info = CNCopyCurrentNetworkInfo(interface as CFString) as? [String: Any] else {
-            print("Failed to fetch network info")
-            return
-        }
-        
-        if let ssid = info[kCNNetworkInfoKeySSID as String] as? String {
-            self.ssid = ssid
-        } else {
-            print("Failed to fetch SSID")
-        }
-        
-        if let bssid = info[kCNNetworkInfoKeyBSSID as String] as? String {
-            self.bssid = bssid
-        } else {
-            print("Failed to fetch BSSID")
+        self.ssid = network?.ssid
+        self.bssid = network?.bssid
+        self.signalStrength = network?.signalStrength
+        self.isSecure = network?.isSecure
+        self.didAutoJoin = network?.didAutoJoin
+        self.didJustJoin = network?.didJustJoin
+        self.isChosenHelper = network?.isChosenHelper
+        self.securityType = self.securityTypeString(network?.securityType)
+    }
+    
+    private func securityTypeString(_ type: NEHotspotNetworkSecurityType?) -> String? {
+        switch type {
+        case .WEP: "WEP"
+        case .enterprise: "Enterprise"
+        case .open: "Open"
+        case .personal: "Personal"
+        case .unknown: "Unknown"
+        case .none: "None"
+        @unknown default: nil
         }
     }
 }

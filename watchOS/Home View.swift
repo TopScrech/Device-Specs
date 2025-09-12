@@ -58,7 +58,7 @@ struct HomeView: View {
             
             Section {
                 SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
-                    AppSpecs()
+                    AboutView()
                         .environment(app)
                 }
             }
@@ -68,12 +68,14 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
-        .environment(BatteryVM())
-        .environment(ProcessorVM())
-        .environment(DisplayVM())
-        .environment(SystemVM())
-        .environment(DeviceVM())
-        .environment(MemoryVM())
-        .environment(AppVM())
+    NavigationStack {
+        HomeView()
+    }
+    .environment(BatteryVM())
+    .environment(ProcessorVM())
+    .environment(DisplayVM())
+    .environment(SystemVM())
+    .environment(DeviceVM())
+    .environment(MemoryVM())
+    .environment(AppVM())
 }

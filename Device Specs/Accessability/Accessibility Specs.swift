@@ -7,30 +7,30 @@ struct AccessibilitySpecs: View {
     
     var body: some View {
         List {
-            if #available(iOS 18, macCatalyst 18, visionOS 2, macOS 15, tvOS 18, *) {
-                let name: LocalizedStringKey = "Music Haptics"
-                
-                if "\(name)".contains(vm.filter) || vm.filter.isEmpty {
-                    Section {
-                        let isEnabled = MAMusicHapticsManager.shared.isActive
-                        let param = AccessibilityParam(name, isEnabled: isEnabled)
-                        
-                        AccessibilityItem(param)
-                    }
+            let name: LocalizedStringKey = "Music Haptics"
+            
+            if "\(name)".contains(vm.filter) || vm.filter.isEmpty {
+                Section {
+                    let isEnabled = MAMusicHapticsManager.shared.isActive
+                    let param = AccessibilityParam(name, isEnabled: isEnabled)
+                    
+                    AccessibilityItem(param)
                 }
             }
             
-            ForEach(vm.filteredParams) { param in
-                AccessibilityItem(param)
+            ForEach(vm.filteredParams) {
+                AccessibilityItem($0)
             }
         }
-        .animation(.default, value: vm.filter)
         .navigationTitle("Accessibility")
+        .animation(.default, value: vm.filter)
         .searchable(text: $vm.filter)
         .scrollIndicators(.never)
     }
 }
 
 #Preview {
-    AccessibilitySpecs()
+    NavigationStack {
+        AccessibilitySpecs()
+    }
 }

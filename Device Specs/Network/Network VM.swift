@@ -3,31 +3,30 @@ import Network
 
 @Observable
 final class NetworkVM {
-    var networkinterface = ""
-    var destinationIpAddress = ""
-    var subnetMask = ""
-    var publicIp = ""
+    private(set) var publicIp = ""
+    private(set) var networkInterface = ""
+    private(set) var destinationIpAddress = ""
+    private(set) var subnetMask = ""
     
-    var hostname = [CChar](repeating: 0, count: Int(NI_MAXHOST))
+    private(set) var hostname = [CChar](repeating: 0, count: Int(NI_MAXHOST))
     
-    func getIPAddresses() {
-        let url = URL(string: "https://www.bluewindsolution.com/tools/getpublicip.php")!
+    func getIPAddresses() async {
+        let path = "https://bluewindsolution.com/tools/getpublicip.php"
         
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            if let error {
-                print("Error: \(error)")
-                return
-            }
-            
-            if let data, let ipString = String(data: data, encoding: .utf8) {
-                let publicIp = ipString.trimmingCharacters(in: .whitespacesAndNewlines)
-                
-                main {
-                    self.publicIp = publicIp
-                }
-            }
+        guard let url = URL(string: path) else {
+            return
         }
-        .resume()
+        
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+            
+            if let ipString = String(data: data, encoding: .utf8) {
+                let publicIp = ipString.trimmingCharacters(in: .whitespacesAndNewlines)
+                self.publicIp = publicIp
+            }
+        } catch {
+            print("Error:", error)
+        }
         
         var ifaddr: UnsafeMutablePointer<ifaddrs>?
         
@@ -40,7 +39,9 @@ final class NetworkVM {
         while ptr != nil {
             let interface = ptr!.pointee
             
-            guard interface.ifa_addr.pointee.sa_family == UInt8(AF_INET) else {
+            guard
+                interface.ifa_addr.pointee.sa_family == UInt8(AF_INET)
+            else {
                 ptr = interface.ifa_next
                 continue
             }
@@ -56,20 +57,24 @@ final class NetworkVM {
             var addr = interface.ifa_addr.pointee
             var hostname = [CChar](repeating: 0, count: Int(NI_MAXHOST))
             
-            getnameinfo(&addr, socklen_t(interface.ifa_addr.pointee.sa_len),
-                        &hostname, socklen_t(hostname.count),
-                        nil, socklen_t(0), NI_NUMERICHOST)
+            getnameinfo(
+                &addr, socklen_t(interface.ifa_addr.pointee.sa_len),
+                &hostname, socklen_t(hostname.count),
+                nil, socklen_t(0), NI_NUMERICHOST
+            )
             
-            networkinterface = String(cString: hostname)
+            networkInterface = String(cString: hostname)
             
             // Subnet mask
             if let netmask = interface.ifa_netmask {
                 var netmaskAddr = netmask.pointee
                 var netmaskHost = [CChar](repeating: 0, count: Int(NI_MAXHOST))
                 
-                getnameinfo(&netmaskAddr, socklen_t(netmaskAddr.sa_len),
-                            &netmaskHost, socklen_t(netmaskHost.count),
-                            nil, socklen_t(0), NI_NUMERICHOST)
+                getnameinfo(
+                    &netmaskAddr, socklen_t(netmaskAddr.sa_len),
+                    &netmaskHost, socklen_t(netmaskHost.count),
+                    nil, socklen_t(0), NI_NUMERICHOST
+                )
                 
                 subnetMask = String(cString: netmaskHost)
             }
@@ -79,9 +84,11 @@ final class NetworkVM {
                 var dstAddr = dstAddr.pointee
                 var dstHostname = [CChar](repeating: 0, count: Int(NI_MAXHOST))
                 
-                getnameinfo(&dstAddr, socklen_t(dstAddr.sa_len),
-                            &dstHostname, socklen_t(dstHostname.count),
-                            nil, socklen_t(0), NI_NUMERICHOST)
+                getnameinfo(
+                    &dstAddr, socklen_t(dstAddr.sa_len),
+                    &dstHostname, socklen_t(dstHostname.count),
+                    nil, socklen_t(0), NI_NUMERICHOST
+                )
                 
                 destinationIpAddress = String(cString: dstHostname)
             }

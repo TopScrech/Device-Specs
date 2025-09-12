@@ -5,22 +5,22 @@ import MultipeerConnectivity
 
 @Observable
 class NearbyVM: NSObject, NISessionDelegate {
-    var monkeyLabel = "🙈"
-    var connectedDeviceName = ""
-    var status = ""
+    private(set) var monkeyLabel = "🙈"
+    private(set) var connectedDeviceName = ""
+    private(set) var status = ""
     
-    var distance = ""
-    var azimuthText = ""
-    var elevationText = ""
-    var monkeyRotationAngle: CGFloat = 0
+    private(set) var distance = ""
+    private(set) var azimuthText = ""
+    private(set) var elevationText = ""
+    private(set) var monkeyRotationAngle = 0.0
     
-    var leftArrow: CGFloat = 0
-    var rightArrow: CGFloat = 0
-    var upArrow: CGFloat = 0
-    var downArrow: CGFloat = 0
-    var angleInfoView: CGFloat = 0
+    private(set) var leftArrow = 0.0
+    private(set) var rightArrow = 0.0
+    private(set) var upArrow = 0.0
+    private(set) var downArrow = 0.0
+    private(set) var angleInfoView = 0.0
     
-    let nearbyDistanceThreshold: Float = 0.3
+    private let nearbyDistanceThreshold: Float = 0.3
     
     enum DistanceDirectionState {
         case closeUpInFOV, notCloseUpInFOV, outOfFOV, unknown
@@ -47,9 +47,10 @@ class NearbyVM: NSObject, NISessionDelegate {
         print("UWB Init")
     }
     
-    func startup() {
+    private func startup() {
         session = NISession()
         session?.delegate = self
+        
         // Because the session is new, reset the token-shared flag
         sharedTokenWithPeer = false
         
@@ -59,7 +60,7 @@ class NearbyVM: NSObject, NISessionDelegate {
                 updateInformationLabel("Initializing ...")
                 
                 if !sharedTokenWithPeer {
-                    shareMyDiscoveryToken(token: myToken)
+                    shareMyDiscoveryToken(myToken)
                 }
                 
                 guard let peerToken = peerDiscoveryToken else {
@@ -81,7 +82,10 @@ class NearbyVM: NSObject, NISessionDelegate {
     }
     
     // MARK: - `NISessionDelegate`
-    func session(_ session: NISession, didUpdate nearbyObjects: [NINearbyObject]) {
+    func session(
+        _ session: NISession,
+        didUpdate nearbyObjects: [NINearbyObject]
+    ) {
         guard let peerToken = peerDiscoveryToken else {
             fatalError("don't have peer token")
         }
@@ -101,7 +105,11 @@ class NearbyVM: NSObject, NISessionDelegate {
         currentDistanceDirectionState = nextState
     }
     
-    func session(_ session: NISession, didRemove nearbyObjects: [NINearbyObject], reason: NINearbyObject.RemovalReason) {
+    func session(
+        _ session: NISession,
+        didRemove nearbyObjects: [NINearbyObject],
+        reason: NINearbyObject.RemovalReason
+    ) {
         guard let peerToken = peerDiscoveryToken else {
             fatalError("don't have peer token")
         }
@@ -165,6 +173,7 @@ class NearbyVM: NSObject, NISessionDelegate {
             showAlert = true
             return
         }
+        
         // If the app lacks user approval for Nearby Interaction, present
         // an option to go to Settings where the user can update the access
         //        if case NIError.userDidNotAllow = error {
@@ -202,7 +211,7 @@ class NearbyVM: NSObject, NISessionDelegate {
     }
     
     // MARK: - Discovery token sharing and receiving using MPC
-    func startupMPC() {
+    private func startupMPC() {
         if mpc == nil {
             // Prevent Simulator from finding devices
 #if targetEnvironment(simulator)
@@ -210,7 +219,6 @@ class NearbyVM: NSObject, NISessionDelegate {
 #else
             let identity = "dev.topscrech.Device-Specs"
 #endif
-            
             mpc = MPCSession(service: "specs", identity: identity, maxPeers: 1)
             mpc?.peerConnectedHandler = connectedToPeer
             mpc?.peerDataHandler = dataReceivedHandler
@@ -221,7 +229,7 @@ class NearbyVM: NSObject, NISessionDelegate {
         mpc?.start()
     }
     
-    func connectedToPeer(peer: MCPeerID) {
+    private func connectedToPeer(peer: MCPeerID) {
         guard let myToken = session?.discoveryToken else {
             fatalError("Unexpectedly failed to initialize nearby interaction session")
         }
@@ -231,7 +239,7 @@ class NearbyVM: NSObject, NISessionDelegate {
         }
         
         if !sharedTokenWithPeer {
-            shareMyDiscoveryToken(token: myToken)
+            shareMyDiscoveryToken(myToken)
         }
         
         connectedPeer = peer
@@ -240,14 +248,14 @@ class NearbyVM: NSObject, NISessionDelegate {
         connectedDeviceName = peerDisplayName ?? ""
     }
     
-    func disconnectedFromPeer(_ peer: MCPeerID) {
+    private func disconnectedFromPeer(_ peer: MCPeerID) {
         if connectedPeer == peer {
             connectedPeer = nil
             sharedTokenWithPeer = false
         }
     }
     
-    func dataReceivedHandler(data: Data, peer: MCPeerID) {
+    private func dataReceivedHandler(data: Data, peer: MCPeerID) {
         guard let discoveryToken = try? NSKeyedUnarchiver.unarchivedObject(ofClass: NIDiscoveryToken.self, from: data) else {
             fatalError("Unexpectedly failed to decode discovery token.")
         }
@@ -255,7 +263,7 @@ class NearbyVM: NSObject, NISessionDelegate {
         peerDidShareDiscoveryToken(peer: peer, token: discoveryToken)
     }
     
-    func shareMyDiscoveryToken(token: NIDiscoveryToken) {
+    private func shareMyDiscoveryToken(_ token: NIDiscoveryToken) {
         guard let encodedData = try?  NSKeyedArchiver.archivedData(withRootObject: token, requiringSecureCoding: true) else {
             fatalError("Unexpectedly failed to encode discovery token.")
         }
@@ -264,7 +272,7 @@ class NearbyVM: NSObject, NISessionDelegate {
         sharedTokenWithPeer = true
     }
     
-    func peerDidShareDiscoveryToken(peer: MCPeerID, token: NIDiscoveryToken) {
+    private func peerDidShareDiscoveryToken(peer: MCPeerID, token: NIDiscoveryToken) {
         if connectedPeer != peer {
             fatalError("Received token from unexpected peer.")
         }
@@ -277,16 +285,16 @@ class NearbyVM: NSObject, NISessionDelegate {
     }
     
     // MARK: - Visualizations
-    func isNearby(_ distance: Float) -> Bool {
+    private func isNearby(_ distance: Float) -> Bool {
         distance < nearbyDistanceThreshold
     }
     
-    func isPointingAt(_ angleRad: Float) -> Bool {
+    private func isPointingAt(_ angleRad: Float) -> Bool {
         // Consider the range -15 to +15 to be "pointing at"
         abs(angleRad.radiansToDegrees) <= 15
     }
     
-    func getDistanceDirectionState(from nearbyObject: NINearbyObject) -> DistanceDirectionState {
+    private func getDistanceDirectionState(from nearbyObject: NINearbyObject) -> DistanceDirectionState {
         if nearbyObject.distance == nil && nearbyObject.direction == nil {
             return .unknown
         }
@@ -375,7 +383,11 @@ class NearbyVM: NSObject, NISessionDelegate {
         }
     }
     
-    func updateVisualization(from currentState: DistanceDirectionState, to nextState: DistanceDirectionState, with peer: NINearbyObject) {
+    private func updateVisualization(
+        from currentState: DistanceDirectionState,
+        to nextState: DistanceDirectionState,
+        with peer: NINearbyObject
+    ) {
         if currentState == .notCloseUpInFOV && nextState == .closeUpInFOV || currentState == .unknown {
             impactGenerator.impactOccurred()
         }
@@ -385,7 +397,7 @@ class NearbyVM: NSObject, NISessionDelegate {
         }
     }
     
-    func updateInformationLabel(_ description: String) {
+    private func updateInformationLabel(_ description: String) {
         withAnimation(.easeOut(duration: 0.3)) {
             status = description
         }

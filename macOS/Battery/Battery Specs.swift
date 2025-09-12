@@ -37,5 +37,7 @@ struct BatterySpecs: View {
 }
 
 #Preview {
-    BatterySpecs()
+    NavigationStack {
+        BatterySpecs()
+    }
 }

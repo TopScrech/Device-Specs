@@ -5,11 +5,11 @@ import LocalAuthentication
 final class AuthVM {
     private let context = LAContext()
     
-    var isAuthenticated = false
-    var type = ""
-    var icon = ""
+    private(set) var isAuthenticated = false
+    private(set) var type = ""
+    private(set) var icon = ""
     
-    var errorMessage = ""
+    private(set) var errorMessage = ""
     var alertError = false
     
     init() {
@@ -17,31 +17,26 @@ final class AuthVM {
     }
     
     private func getBiometryType() {
-        if #available(watchOS 11, *) {
-            switch context.biometryType {
-            case .faceID:
-                icon = "faceid"
-                type = "Face ID"
-                
-            case .touchID:
-                icon = "touchid"
-                type = "Touch ID"
-                
-            case .opticID:
-                icon = "opticid"
-                type = "Optic ID"
-                
-            case .none:
-                icon = ""
-                type = "None"
-                
-            default:
-                icon = ""
-                type = "Unknown"
-            }
-        } else {
+        switch context.biometryType {
+        case .faceID:
+            icon = "faceid"
+            type = "Face ID"
+            
+        case .touchID:
+            icon = "touchid"
+            type = "Touch ID"
+            
+        case .opticID:
+            icon = "opticid"
+            type = "Optic ID"
+            
+        case .none:
             icon = ""
             type = "None"
+            
+        default:
+            icon = ""
+            type = "Unknown"
         }
     }
     

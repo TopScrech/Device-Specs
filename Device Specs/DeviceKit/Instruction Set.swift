@@ -27,10 +27,13 @@ extension Device.CPU {
         case .a17Pro: "ARMv8.6-A"
         case .a18: "ARMv9.2-A"
         case .a18Pro: "ARMv9.2-A"
+        case .a19, .a19Pro: "ARMv9.2-A"
+            
         case .m1: "ARMv8.4-A"
         case .m2: "ARMv8.6-A"
         case .m3: "ARMv8.6-A"
         case .m4: "ARMv9.2-A"
+            
 #elseif os(watchOS)
         case .s1: "ARMv7k"
         case .s1P: "ARMv7k"
@@ -45,6 +48,7 @@ extension Device.CPU {
         case .s10: "ARMv8-A (arm64_32)"
 #endif
         case .unknown: "Unknown"
+        @unknown default: "-"
         }
     }
 }

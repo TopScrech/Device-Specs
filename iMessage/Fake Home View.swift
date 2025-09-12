@@ -1,7 +1,7 @@
 import ScrechKit
 
 struct FakeHomeView: View {
-    @State private var navState = NavState()
+    @State private var nav = NavState()
     
     @State private var system = SystemVM()
     @State private var device = DeviceVM()
@@ -54,13 +54,13 @@ struct FakeHomeView: View {
         }
         .fullScreenCover(isPresented: $isPresented) {
             SecondaryContainer()
-                .environment(navState)
+                .environment(nav)
         }
     }
 }
 
 #Preview {
-    NavigationView {
+    NavigationStack {
         HomeView()
     }
     .environment(DeviceVM())

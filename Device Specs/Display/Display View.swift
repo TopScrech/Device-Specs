@@ -63,6 +63,8 @@ struct DisplaySpecs: View {
 }
 
 #Preview {
-    DisplaySpecs()
-        .environment(DisplayVM())
+    NavigationStack {
+        DisplaySpecs()
+    }
+    .environment(DisplayVM())
 }

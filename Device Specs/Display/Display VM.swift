@@ -3,9 +3,9 @@ import DeviceKit
 
 @Observable
 final class DisplayVM {
-    var resolution = ""
-    var dencity = ""
-    var diagonalSize = ""
+    private(set) var resolution = ""
+    private(set) var dencity = ""
+    private(set) var diagonalSize = ""
     
     init() {
         fetchScreenResolution()

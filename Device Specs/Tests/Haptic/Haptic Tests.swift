@@ -25,7 +25,7 @@ struct HapticTests: View {
                     HapticButton(key, feedback: feedback)
                 }
                 
-                if #available(iOS 17.5, watchOS 10.5, tvOS 17.5, *) {
+                if #available(iOS 17.5, *) {
                     HapticButton("Path complete", feedback: .pathComplete)
                 }
             } footer: {
@@ -38,5 +38,7 @@ struct HapticTests: View {
 }
 
 #Preview {
-    HapticTests()
+    NavigationStack {
+        HapticTests()
+    }
 }

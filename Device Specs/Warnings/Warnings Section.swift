@@ -13,7 +13,6 @@ struct WarningsSection: View {
                 WarningCard("Critical thermal state", icon: "flame.fill", color: .red)
             }
             
-            
             if let batteryLevel = battery.batteryLevelNumber {
                 if 11...20 ~= batteryLevel {
                     WarningCard("Low battery", icon: "battery.25percent", color: .yellow)

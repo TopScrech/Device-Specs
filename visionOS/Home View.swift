@@ -61,7 +61,7 @@ struct HomeView: View {
             
             Section {
                 SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
-                    AppSpecs()
+                    AboutView()
                         .environment(app)
                 }
             }
@@ -87,7 +87,7 @@ struct HomeView: View {
 }
 
 #Preview {
-    NavigationView {
+    NavigationStack {
         HomeView()
     }
     .environment(BatteryVM())

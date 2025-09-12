@@ -1,6 +1,7 @@
 import SwiftUI
 
-struct Version_View: View {
+#warning("???")
+struct VersionView: View {
     var body: some View {
         Text("Hello, World!")
         
@@ -9,5 +10,5 @@ struct Version_View: View {
 }
 
 #Preview {
-    Version_View()
+    VersionView()
 }

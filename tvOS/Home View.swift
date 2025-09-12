@@ -57,17 +57,18 @@ struct HomeView: View {
             
             Section {
                 SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
-                    AppSpecs()
+                    AboutView()
                         .environment(app)
                 }
             }
         }
         .navigationTitle("Device Specs")
+        .labelReservedIconWidth(64)
     }
 }
 
 #Preview {
-    NavigationView {
+    NavigationStack {
         HomeView()
     }
     .environment(ProcessorVM())

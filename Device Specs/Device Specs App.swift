@@ -3,7 +3,8 @@ import SafariCover
 
 @main
 struct DeviceSpecsApp: App {
-    private var navState = NavState()
+    private var nav = NavState()
+    @StateObject private var store = ValueStore()
     
     init() {
 #if canImport(MetricKit) && !os(tvOS)
@@ -15,6 +16,7 @@ struct DeviceSpecsApp: App {
         WindowGroup {
             AppContainer()
         }
-        .environment(navState)
+        .environment(nav)
+        .environmentObject(store)
     }
 }

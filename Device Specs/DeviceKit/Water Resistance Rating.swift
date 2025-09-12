@@ -38,7 +38,8 @@ extension Device {
                 .iPhone13, .iPhone13Mini, .iPhone13Pro, .iPhone13ProMax,
                 .iPhone14, .iPhone14Plus, .iPhone14Pro, .iPhone14ProMax,
                 .iPhone15, .iPhone15Plus, .iPhone15Pro, .iPhone15ProMax,
-                .iPhone16, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax: "IP68 (IEC 60529)"
+                .iPhone16, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax,
+                .iPhone17, .iPhoneAir, .iPhone17Pro, .iPhone17ProMax: "IP68 (IEC 60529)"
             
         case .iPad2,
                 .iPad3,
@@ -54,8 +55,7 @@ extension Device {
                 .iPad10,
                 .iPadAir4,
                 .iPadAir5,
-                .iPadAir11M2,
-                .iPadAir13M2,
+                .iPadAir11M2, .iPadAir13M2,
                 .iPadMini,
                 .iPadMini2,
                 .iPadMini3,
@@ -74,8 +74,7 @@ extension Device {
                 .iPadPro12Inch5,
                 .iPadPro11Inch4,
                 .iPadPro12Inch6,
-                .iPadPro11M4,
-                .iPadPro13M4: "None"
+                .iPadPro11M4, .iPadPro13M4: "None"
             
         case .homePod: "None"
             
@@ -94,17 +93,19 @@ extension Device {
                 .appleWatchSeries6_40mm, .appleWatchSeries6_44mm,
                 .appleWatchSE_40mm, .appleWatchSE_44mm,
                 .appleWatchSE2_40mm, .appleWatchSE2_44mm: "ISO 22810:2010"
+            //                .appleWatchSE3_40mm, appleWatchSE3_44mm confirmed ISO 22810:2010
             
         case .appleWatchSeries7_41mm, .appleWatchSeries7_45mm,
                 .appleWatchSeries8_41mm, .appleWatchSeries8_45mm,
                 .appleWatchSeries9_41mm, .appleWatchSeries9_45mm,
-                .appleWatchSeries10_42mm, .appleWatchSeries10_46mm: "IP6X"
+                .appleWatchSeries10_42mm, .appleWatchSeries10_46mm,
+                .appleWatchSeries11_42mm, .appleWatchSeries11_46mm: "IP6X"
             
-        case .appleWatchUltra, .appleWatchUltra2: "IP6X, ISO 22810:2010, EN13319"
+        case .appleWatchUltra, .appleWatchUltra2,  .appleWatchUltra3: "IP6X, ISO 22810:2010, EN13319"
 #endif
         case .simulator: "N/a"
         case .unknown(let device): "Unknown (\(device))"
-        default: "N/a"
+        @unknown default: "-"
         }
     }
 }

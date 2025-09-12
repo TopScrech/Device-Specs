@@ -12,8 +12,14 @@ struct SystemSpecs: View {
                 ListParam("Build", param: vm.buildNumber)
             }
             
-            if #available(iOS 18.1, visionOS 2.4, *) {
-                AppleIntelligenceSupport()
+            if #available(iOS 18.1, *) {
+                Section {
+                    AppleIntelligenceSupport()
+                    
+                    if #available(iOS 26, *) {
+                        FoundationModelsSupport()
+                    }
+                }
             }
             
             Section {
@@ -46,7 +52,7 @@ struct SystemSpecs: View {
                     .animation(.default, value: vm.systemUptime)
             }
             .monospacedDigit()
-            .contentTransition(.numericText())
+            .numericTransition()
         }
         .navigationTitle("System")
         .task {
@@ -61,6 +67,8 @@ struct SystemSpecs: View {
 }
 
 #Preview {
-    SystemSpecs()
-        .environment(SystemVM())
+    NavigationStack {
+        SystemSpecs()
+    }
+    .environment(SystemVM())
 }

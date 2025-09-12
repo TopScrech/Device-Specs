@@ -92,25 +92,17 @@ final class ProcessorVM {
     
 #if os(iOS)
     var performanceProfile: String {
-        if #available(iOS 18, *) {
-            if info.hasPerformanceProfile(.sustained) {
-                "Sustained"
-            } else if info.hasPerformanceProfile(.default) {
-                "Default"
-            } else {
-                "-"
-            }
+        if info.hasPerformanceProfile(.sustained) {
+            "Sustained"
+        } else if info.hasPerformanceProfile(.default) {
+            "Default"
         } else {
             "-"
         }
     }
     
     var iphonePerformanceGamingSertified: String {
-        if #available(iOS 18, *) {
-            info.isDeviceCertified(for: .iPhonePerformanceGaming) ? "Yes" : "No"
-        } else {
-            "No"
-        }
+        info.isDeviceCertified(for: .iPhonePerformanceGaming) ? "Yes" : "No"
     }
 #endif
     
