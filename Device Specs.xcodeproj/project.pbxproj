@@ -104,6 +104,8 @@
 		F3329CA32D7D0E97003B4E68 /* Color Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3329CA12D7D0E97003B4E68 /* Color Test.swift */; };
 		F3329CA42D7D0E97003B4E68 /* Color Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3329CA12D7D0E97003B4E68 /* Color Test.swift */; };
 		F3329CA52D7D0E97003B4E68 /* Color Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3329CA12D7D0E97003B4E68 /* Color Test.swift */; };
+		F33661392E740E2E008E73C9 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F33661362E740E2E008E73C9 /* AppIcon.icon */; };
+		F336613D2E740F8D008E73C9 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F346B00E2E1E7D2500E56259 /* AppIcon.icon */; };
 		F33FEE532C982A1800214288 /* Unit Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE522C982A1800214288 /* Unit Tests.swift */; };
 		F33FEE582C982EC200214288 /* Nav Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE572C982EC200214288 /* Nav Links.swift */; };
 		F33FEE5A2C982FF000214288 /* System Report VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE592C982FF000214288 /* System Report VM.swift */; };
@@ -132,8 +134,6 @@
 		F357214F2C985FFB00967ACA /* Camera Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357214E2C985FFB00967ACA /* Camera Test.swift */; };
 		F358F0232D2C185800BCC07B /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = F358F0222D2C185800BCC07B /* LaunchAtLogin */; };
 		F358F0252D2C187000BCC07B /* Settings View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358F0242D2C187000BCC07B /* Settings View.swift */; };
-		F3595A132E53408700A2AD57 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F346B00E2E1E7D2500E56259 /* AppIcon.icon */; };
-		F3595A142E53408700A2AD57 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F346B00E2E1E7D2500E56259 /* AppIcon.icon */; };
 		F3595A152E5341F000A2AD57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
 		F36F7FC52CA0CC110007F120 /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
 		F36F7FC62CA0CC110007F120 /* Device Specs App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3BDD32C92D8E000BF91EE /* Device Specs App.swift */; };
@@ -651,6 +651,8 @@
 		F3291C5E2CAA0CFB00A15CAE /* Water Resistance Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Water Resistance Description.swift"; sourceTree = "<group>"; };
 		F3291C6C2CAA9A3B00A15CAE /* Neural Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Neural Engine.swift"; sourceTree = "<group>"; };
 		F3329CA12D7D0E97003B4E68 /* Color Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Test.swift"; sourceTree = "<group>"; };
+		F33661362E740E2E008E73C9 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		F336613A2E740E8A008E73C9 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		F33C4BA12DEB3B650070F213 /* Device Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Extension.swift"; sourceTree = "<group>"; };
 		F33FEE522C982A1800214288 /* Unit Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit Tests.swift"; sourceTree = "<group>"; };
 		F33FEE572C982EC200214288 /* Nav Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Links.swift"; sourceTree = "<group>"; };
@@ -1094,6 +1096,7 @@
 				F30B51AD2E1E9CB30041433B /* Nav */,
 				F3F85EC82C94AED800AE0A1D /* watchOS.plist */,
 				F3F85E962C94858F00AE0A1D /* watchOS.entitlements */,
+				F336613A2E740E8A008E73C9 /* AppIcon.icon */,
 				F36FBCB52C9449A300F5E174 /* Home View.swift */,
 				F30B51AB2E1E9C9D0041433B /* Network */,
 				F30B51AA2E1E9C940041433B /* Sensors */,
@@ -1500,6 +1503,7 @@
 				F35721502C98637100967ACA /* Nav */,
 				F3F85F1D2C962C6600AE0A1D /* macOS.plist */,
 				F3F85F192C962C4700AE0A1D /* macOS.entitlements */,
+				F33661362E740E2E008E73C9 /* AppIcon.icon */,
 				F33FEE5C2C98386E00214288 /* Param.swift */,
 				F33FEE5E2C9838AE00214288 /* Spec Item.swift */,
 				F317334B2CA1D57800CFA041 /* Background Blur.swift */,
@@ -1753,13 +1757,13 @@
 		F36FBCAF2C9449A200F5E174 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				F336613D2E740F8D008E73C9 /* AppIcon.icon in Resources */,
 				F326A3FB2E69697F0092F514 /* Background.xcassets in Resources */,
 				F3F85E8B2C94529A00AE0A1D /* iOS.plist in Resources */,
 				F346B0072E1DE31D00E56259 /* Foundation Models.xcassets in Resources */,
 				F3C8E5542D7E2EF000644E47 /* Assets.xcassets in Resources */,
 				F36F803C2CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F326A3F52E6969590092F514 /* Social.xcassets in Resources */,
-				F3595A132E53408700A2AD57 /* AppIcon.icon in Resources */,
 			);
 		};
 		F3C3BDBB2C92D87C00BF91EE /* Resources */ = {
@@ -1797,7 +1801,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F3C8E5552D7E318E00644E47 /* Assets.xcassets in Resources */,
-				F3595A142E53408700A2AD57 /* AppIcon.icon in Resources */,
+				F33661392E740E2E008E73C9 /* AppIcon.icon in Resources */,
 				F346B00A2E1DE31D00E56259 /* Foundation Models.xcassets in Resources */,
 				F36F803F2CA170870007F120 /* Localizable.xcstrings in Resources */,
 			);
