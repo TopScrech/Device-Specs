@@ -106,6 +106,7 @@
 		F3329CA52D7D0E97003B4E68 /* Color Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3329CA12D7D0E97003B4E68 /* Color Test.swift */; };
 		F33661392E740E2E008E73C9 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F33661362E740E2E008E73C9 /* AppIcon.icon */; };
 		F336613D2E740F8D008E73C9 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F346B00E2E1E7D2500E56259 /* AppIcon.icon */; };
+		F336613E2E74115D008E73C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
 		F33FEE532C982A1800214288 /* Unit Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE522C982A1800214288 /* Unit Tests.swift */; };
 		F33FEE582C982EC200214288 /* Nav Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE572C982EC200214288 /* Nav Links.swift */; };
 		F33FEE5A2C982FF000214288 /* System Report VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FEE592C982FF000214288 /* System Report VM.swift */; };
@@ -1773,6 +1774,7 @@
 				F346B0082E1DE31D00E56259 /* Foundation Models.xcassets in Resources */,
 				F326A4002E6969D70092F514 /* Background.xcassets in Resources */,
 				F326A3FF2E6969CB0092F514 /* Social.xcassets in Resources */,
+				F336613E2E74115D008E73C9 /* Assets.xcassets in Resources */,
 				F36FBC732C942F7600F5E174 /* Assets.xcassets in Resources */,
 			);
 		};
