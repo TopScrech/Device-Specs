@@ -31,6 +31,7 @@ extension Device.CPU {
         case .s10: "-"
 #endif
         case .unknown: "Unknown"
+        @unknown default: "-"
         }
     }
 }

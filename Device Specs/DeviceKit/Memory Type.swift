@@ -27,9 +27,10 @@ extension Device.CPU {
         case .a15Bionic: "LPDDR4X-4266"
         case .a16Bionic: "LPDDR5-6400"
         case .a17Pro: "LPDDR5-6400"
-        case .a18: "-"
-        case .a18Pro: "-"
-        case .m1: "LPDDR4X-4266 (2133 MHz)" // Pro, Max, Ultra - LPDDR4X-6400 (3200 MHz)
+        case .a18: "LPDDR5X"
+        case .a18Pro: "LPDDR5T"
+        case .a19Pro: "LPDDR5X"
+        case .m1: "LPDDR4X-4266 2133 MHz (Pro, Max, Ultra - LPDDR4X-6400 (3200 MHz))"
         case .m2: "LPDDR5-6400"
         case .m3: "LPDDR5-6400"
         case .m4: "LPDDR5-7500" // Pro, Max, Ultra - ???
@@ -47,6 +48,7 @@ extension Device.CPU {
         case .s10: "LPDDR4X (Probably)"
 #endif
         case .unknown: "Unknown"
+        @unknown default: "-"
         }
     }
 }
