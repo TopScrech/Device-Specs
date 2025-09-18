@@ -41,21 +41,27 @@ struct AboutView: View {
             
             Spacer()
             
+#if !os(tvOS) || !os(watchOS)
             Text("Get in touch")
                 .title3(.semibold, design: .rounded)
                 .secondary()
             
             HStack(spacing: 16) {
-                ForEach(links) {
-                    Image($0.img)
-                        .resizable()
-                        .frame(40)
+                ForEach(links) { link in
+                    if let url = URL(string: link.link) {
+                        Link(destination: url) {
+                            Image(link.img)
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                        }
+                    }
                 }
             }
             .padding()
             .background(.ultraThinMaterial, in: .capsule)
 #warning("glassEffect")
             //            .glassEffect()
+#endif
         }
         .padding(.vertical)
         .background {

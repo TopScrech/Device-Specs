@@ -38,7 +38,7 @@ struct FakeHomeView: View {
             
             ListParam("Network", icon: "network", param: connectivity.type)
             
-            ListParam("Cameras", icon: "camera", param: camera.hasLidar)
+            ListParam("Camera", icon: "camera", param: camera.hasLidar)
             
             ListParam("Sensors", icon: "barometer")
             
