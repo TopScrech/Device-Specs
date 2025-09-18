@@ -4,13 +4,8 @@ import Foundation
 final class AppVM {
     var trigger = false
     
-    var version: String {
-        Bundle.version ?? "-"
-    }
-    
-    private var build: String {
-        Bundle.build ?? "-"
-    }
+    let version = Bundle.version ?? "-"
+    private let build = Bundle.build ?? "-"
     
     var versionAndBuild: String {
         "v\(version) (B\(build))"

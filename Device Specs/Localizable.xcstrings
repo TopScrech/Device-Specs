@@ -570,6 +570,7 @@
       }
     },
     "Cameras" : {
+      "extractionState" : "stale",
       "localizations" : {
         "nl" : {
           "stringUnit" : {
