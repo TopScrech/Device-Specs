@@ -100,7 +100,6 @@
 		F329E1842D37CA7D007BA9D1 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F329E1832D37CA7D007BA9D1 /* SafariCover */; };
 		F329E1862D37CB1E007BA9D1 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F329E1852D37CB1E007BA9D1 /* SafariCover */; };
 		F329E18A2D37CC60007BA9D1 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F329E1892D37CC60007BA9D1 /* SafariCover */; };
-		F32E749C2E7BDEB300F3EB36 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F346B00E2E1E7D2500E56259 /* AppIcon.icon */; };
 		F3329CA22D7D0E97003B4E68 /* Color Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3329CA12D7D0E97003B4E68 /* Color Test.swift */; };
 		F3329CA32D7D0E97003B4E68 /* Color Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3329CA12D7D0E97003B4E68 /* Color Test.swift */; };
 		F3329CA42D7D0E97003B4E68 /* Color Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3329CA12D7D0E97003B4E68 /* Color Test.swift */; };
@@ -1751,7 +1750,6 @@
 				F36F80402CA170870007F120 /* Localizable.xcstrings in Resources */,
 				F346B00B2E1DE31D00E56259 /* Foundation Models.xcassets in Resources */,
 				F3595A152E5341F000A2AD57 /* Assets.xcassets in Resources */,
-				F32E749C2E7BDEB300F3EB36 /* AppIcon.icon in Resources */,
 				F326A3F82E6969590092F514 /* Social.xcassets in Resources */,
 				F36F7FD52CA0CFE00007F120 /* Assets.xcassets in Resources */,
 				F326A3FE2E69697F0092F514 /* Background.xcassets in Resources */,
