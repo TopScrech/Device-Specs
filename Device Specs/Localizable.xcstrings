@@ -1423,23 +1423,6 @@
     "Hello, World!" : {
       "shouldTranslate" : false
     },
-    "Hide status bar and this menu" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Statusbalk en dit menu verbergen"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Скрыть строку состояния и это меню"
-          }
-        }
-      }
-    },
     "Host name" : {
       "localizations" : {
         "nl" : {
@@ -1504,23 +1487,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Идентификатор для поставщика"
-          }
-        }
-      }
-    },
-    "Installation date" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Installatiedatum"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Дата установки"
           }
         }
       }
@@ -1901,23 +1867,6 @@
         }
       }
     },
-    "More apps" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Meer apps"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Больше приложений"
-          }
-        }
-      }
-    },
     "Motion coprocessor" : {
       "localizations" : {
         "nl" : {
@@ -2153,17 +2102,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Позиция"
-          }
-        }
-      }
-    },
-    "Powered by Bisquit.Host" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aangedreven door Bisquit.Host"
           }
         }
       }
