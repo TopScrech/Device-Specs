@@ -28,7 +28,7 @@ struct CameraSpecs: View {
                 CameraView($0)
             }
         }
-        .navigationTitle("Cameras")
+        .navigationTitle("Camera")
         .scrollIndicators(.never)
     }
 }

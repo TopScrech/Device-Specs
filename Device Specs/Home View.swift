@@ -58,7 +58,7 @@ struct HomeView: View {
                     .environment(connectivity)
             }
             
-            SpecsLink("Cameras", icon: "camera", spec: camera.hasLidar) {
+            SpecsLink("Camera", icon: "camera", spec: camera.hasLidar) {
                 CameraSpecs()
                     .environment(camera)
             }
