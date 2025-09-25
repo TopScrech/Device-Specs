@@ -69,4 +69,5 @@ struct NetworkSpecs: View {
         NetworkSpecs()
     }
     .environment(ConnectivityVM())
+    .darkSchemePreferred()
 }

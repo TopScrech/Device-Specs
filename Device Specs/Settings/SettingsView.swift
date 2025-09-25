@@ -24,4 +24,5 @@ struct SettingsView: View {
         SettingsView()
     }
     .environmentObject(ValueStore())
+    .darkSchemePreferred()
 }

@@ -11,4 +11,5 @@ struct VersionView: View {
 
 #Preview {
     VersionView()
+        .darkSchemePreferred()
 }

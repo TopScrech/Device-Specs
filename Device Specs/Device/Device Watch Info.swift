@@ -39,4 +39,5 @@ struct DeviceWatchInfo: View {
     List {
         DeviceWatchInfo()
     }
+    .darkSchemePreferred()
 }

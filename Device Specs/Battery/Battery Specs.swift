@@ -51,4 +51,5 @@ struct BatterySpecs: View {
         BatterySpecs()
     }
     .environment(BatteryVM())
+    .darkSchemePreferred()
 }

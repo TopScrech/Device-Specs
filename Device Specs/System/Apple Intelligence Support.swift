@@ -40,4 +40,5 @@ struct AppleIntelligenceSupport: View {
     List {
         AppleIntelligenceSupport()
     }
+    .darkSchemePreferred()
 }

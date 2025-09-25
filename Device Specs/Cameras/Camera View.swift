@@ -32,4 +32,5 @@ struct CameraView: View {
 //    List {
 //        CameraView()
 //    }
+//    .darkSchemePreferred()
 //}

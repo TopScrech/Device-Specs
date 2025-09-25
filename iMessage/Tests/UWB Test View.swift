@@ -71,4 +71,5 @@ struct UWBTestView: View {
 
 #Preview {
     UWBTestView()
+        .darkSchemePreferred()
 }

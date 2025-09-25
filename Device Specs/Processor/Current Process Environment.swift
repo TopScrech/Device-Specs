@@ -23,4 +23,5 @@ struct CurrentProcessEnvironment: View {
         CurrentProcessEnvironment()
     }
     .environment(ProcessorVM())
+    .darkSchemePreferred()
 }

@@ -16,4 +16,5 @@ struct TestList: View {
 
 #Preview {
     TestList()
+        .darkSchemePreferred()
 }

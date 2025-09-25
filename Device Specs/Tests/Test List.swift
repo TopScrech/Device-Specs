@@ -48,4 +48,5 @@ struct TestList: View {
         TestList()
     }
     .environment(NavState())
+    .darkSchemePreferred()
 }

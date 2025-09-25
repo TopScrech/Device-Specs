@@ -18,4 +18,5 @@ struct AccessibilityItem: View {
             .init("Preview", isEnabled: true)
         )
     }
+    .darkSchemePreferred()
 }

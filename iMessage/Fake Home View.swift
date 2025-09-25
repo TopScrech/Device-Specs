@@ -63,6 +63,7 @@ struct FakeHomeView: View {
     NavigationStack {
         HomeView()
     }
+    .darkSchemePreferred()
     .environment(DeviceVM())
     .environment(SystemVM())
     .environment(DisplayVM())
