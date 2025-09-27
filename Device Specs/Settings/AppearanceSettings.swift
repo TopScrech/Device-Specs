@@ -1,8 +1,5 @@
 import SwiftUI
-
-#if canImport(Appearance)
 import Appearance
-#endif
 
 struct AppearanceSettings: View {
     @EnvironmentObject private var store: ValueStore
