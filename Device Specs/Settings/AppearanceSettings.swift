@@ -1,16 +1,12 @@
 import SwiftUI
+import Appearance
 
 struct AppearanceSettings: View {
     @EnvironmentObject private var store: ValueStore
     
     var body: some View {
         Section {
-            Picker("Appearance", selection: $store.appearance) {
-                ForEach(ColorTheme.allCases) {
-                    Text($0.loc)
-                        .tag($0)
-                }
-            }
+            AppearancePicker($store.appearance)
         }
     }
 }
@@ -19,5 +15,6 @@ struct AppearanceSettings: View {
     List {
         AppearanceSettings()
     }
+    .darkSchemePreferred()
     .environmentObject(ValueStore())
 }

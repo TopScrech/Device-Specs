@@ -51,4 +51,5 @@ struct FontCustomization: View {
 #Preview {
     FontCustomization()
         .environment(FontVM())
+        .darkSchemePreferred()
 }

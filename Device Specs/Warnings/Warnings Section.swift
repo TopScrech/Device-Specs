@@ -39,5 +39,6 @@ struct WarningsSection: View {
         WarningCard("Very low battery", icon: "battery.0percent", color: .red)
         WarningCard("Low power mode", icon: "leaf.fill", color: .green)
     }
+    .darkSchemePreferred()
     .environment(BatteryVM())
 }

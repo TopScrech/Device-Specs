@@ -18,4 +18,5 @@ struct ColorView: View {
 
 #Preview {
     ColorView(.red)
+        .darkSchemePreferred()
 }

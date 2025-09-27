@@ -27,4 +27,5 @@ struct WarningCard: View {
 
 #Preview {
     WarningCard("Preview", icon: "exclamationmark.triangle", color: .yellow)
+        .darkSchemePreferred()
 }

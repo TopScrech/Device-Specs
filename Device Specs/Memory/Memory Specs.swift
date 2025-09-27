@@ -58,4 +58,5 @@ struct MemorySpecs: View {
         MemorySpecs()
     }
     .environment(MemoryVM())
+    .darkSchemePreferred()
 }

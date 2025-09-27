@@ -22,4 +22,5 @@ struct ClockView: View {
     List {
         ClockView()
     }
+    .darkSchemePreferred()
 }

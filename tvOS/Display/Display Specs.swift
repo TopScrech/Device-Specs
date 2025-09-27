@@ -31,4 +31,5 @@ struct DisplaySpecs: View {
     NavigationStack {
         DisplaySpecs()
     }
+    .darkSchemePreferred()
 }

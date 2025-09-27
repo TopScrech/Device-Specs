@@ -82,4 +82,5 @@ struct LocaleList: View {
     NavigationStack {
         LocaleList()
     }
+    .darkSchemePreferred()
 }

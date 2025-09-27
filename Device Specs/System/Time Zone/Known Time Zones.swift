@@ -33,4 +33,5 @@ struct KnownTimeZones: View {
     NavigationStack {
         KnownTimeZones(["Preview"])
     }
+    .darkSchemePreferred()
 }

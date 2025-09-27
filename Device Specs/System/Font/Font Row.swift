@@ -48,4 +48,5 @@ struct FontRow: View {
         FontRow("Zapfino")
     }
     .environment(FontVM())
+    .darkSchemePreferred()
 }

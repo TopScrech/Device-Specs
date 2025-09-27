@@ -5,7 +5,7 @@ struct SettingsView: View {
     
     var body: some View {
         List {
-#if os(iOS)
+#if canImport(Appearance)
             AppearanceSettings()
 #endif
             
@@ -24,4 +24,5 @@ struct SettingsView: View {
         SettingsView()
     }
     .environmentObject(ValueStore())
+    .darkSchemePreferred()
 }

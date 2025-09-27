@@ -24,4 +24,5 @@ struct MailFeedback: View {
     List {
         MailFeedback()
     }
+    .darkSchemePreferred()
 }

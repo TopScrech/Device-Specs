@@ -40,4 +40,5 @@ struct NavLink <Destination: View>: View {
     List {
         NavLink("Preview", icon: "hammer")
     }
+    .darkSchemePreferred()
 }

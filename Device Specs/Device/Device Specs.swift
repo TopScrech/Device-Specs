@@ -67,5 +67,6 @@ struct DeviceSpecs: View {
     NavigationStack {
         DeviceSpecs()
     }
+    .darkSchemePreferred()
     .environment(DeviceVM())
 }

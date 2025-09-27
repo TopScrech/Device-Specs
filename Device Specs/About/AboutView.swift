@@ -82,4 +82,5 @@ struct AboutView: View {
         AboutView()
     }
     .environment(AppVM())
+    .darkSchemePreferred()
 }

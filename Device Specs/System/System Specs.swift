@@ -71,4 +71,5 @@ struct SystemSpecs: View {
         SystemSpecs()
     }
     .environment(SystemVM())
+    .darkSchemePreferred()
 }

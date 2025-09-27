@@ -25,4 +25,5 @@ struct BatteryState: View {
         BatteryState()
     }
     .environment(BatteryVM())
+    .darkSchemePreferred()
 }
