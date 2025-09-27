@@ -1,16 +1,15 @@
 import SwiftUI
 
+#if canImport(Appearance)
+import Appearance
+#endif
+
 struct AppearanceSettings: View {
     @EnvironmentObject private var store: ValueStore
     
     var body: some View {
         Section {
-            Picker("Appearance", selection: $store.appearance) {
-                ForEach(ColorTheme.allCases) {
-                    Text($0.loc)
-                        .tag($0)
-                }
-            }
+            AppearancePicker($store.appearance)
         }
     }
 }

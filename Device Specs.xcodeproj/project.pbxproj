@@ -16,8 +16,6 @@
 		F31212D02E548CC0004CC672 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212CB2E548CC0004CC672 /* SettingsView.swift */; };
 		F31212D42E548CEB004CC672 /* AppearanceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212D12E548CEB004CC672 /* AppearanceSettings.swift */; };
 		F31212D52E548CEB004CC672 /* AppearanceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212D12E548CEB004CC672 /* AppearanceSettings.swift */; };
-		F31212D82E548CF3004CC672 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212D72E548CF3004CC672 /* ColorTheme.swift */; };
-		F31212DC2E548CF3004CC672 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212D72E548CF3004CC672 /* ColorTheme.swift */; };
 		F31212DE2E548D00004CC672 /* Value Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212DD2E548D00004CC672 /* Value Store.swift */; };
 		F31212DF2E548D33004CC672 /* Value Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212DD2E548D00004CC672 /* Value Store.swift */; };
 		F31212E02E548D33004CC672 /* Value Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31212DD2E548D00004CC672 /* Value Store.swift */; };
@@ -484,6 +482,9 @@
 		F3ECFE3E2CA53AED00E72D41 /* Voltage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */; };
 		F3ECFE3F2CA53AED00E72D41 /* Voltage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */; };
 		F3ECFE402CA53AED00E72D41 /* Voltage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */; };
+		F3F5AD622E880F05007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD612E880F05007AD97D /* Appearance */; };
+		F3F5AD642E885D96007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD632E885D96007AD97D /* Appearance */; };
+		F3F5AD782E886162007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD772E886162007AD97D /* Appearance */; };
 		F3F85E8B2C94529A00AE0A1D /* iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3F85E8A2C94529A00AE0A1D /* iOS.plist */; };
 		F3F85E8E2C9452CB00AE0A1D /* Accessibility Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* Accessibility Param.swift */; };
 		F3F85E912C9453AE00AE0A1D /* Accessibility Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6E2C941F6200F5E174 /* Accessibility Specs.swift */; };
@@ -633,7 +634,6 @@
 /* Begin PBXFileReference section */
 		F31212CB2E548CC0004CC672 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F31212D12E548CEB004CC672 /* AppearanceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSettings.swift; sourceTree = "<group>"; };
-		F31212D72E548CF3004CC672 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 		F31212DD2E548D00004CC672 /* Value Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Value Store.swift"; sourceTree = "<group>"; };
 		F31548FE2CAADBBB004CE26E /* Current Process Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Current Process Environment.swift"; sourceTree = "<group>"; };
 		F317334B2CA1D57800CFA041 /* Background Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Background Blur.swift"; sourceTree = "<group>"; };
@@ -826,6 +826,7 @@
 			files = (
 				F36F7FCD2CA0CFDF0007F120 /* Messages.framework in Frameworks */,
 				F31D320F2DDC8CEA00E7B121 /* ScrechKit in Frameworks */,
+				F3F5AD642E885D96007AD97D /* Appearance in Frameworks */,
 				F329E1862D37CB1E007BA9D1 /* SafariCover in Frameworks */,
 				F36F802B2CA0D5E90007F120 /* ScrechCam in Frameworks */,
 				F3C68AD42CAFCE750021B6F3 /* MailCover in Frameworks */,
@@ -854,6 +855,7 @@
 			files = (
 				F357214D2C98584100967ACA /* ScrechCam in Frameworks */,
 				F3C68AE72CAFD7C80021B6F3 /* HealthyKit in Frameworks */,
+				F3F5AD622E880F05007AD97D /* Appearance in Frameworks */,
 				F3E7EC992C67B9A8008CD17B /* DeviceKit in Frameworks */,
 				F31D32052DDC8CCB00E7B121 /* ScrechKit in Frameworks */,
 				F329E1842D37CA7D007BA9D1 /* SafariCover in Frameworks */,
@@ -872,6 +874,7 @@
 			files = (
 				F31D320D2DDC8CE400E7B121 /* ScrechKit in Frameworks */,
 				F358F0232D2C185800BCC07B /* LaunchAtLogin in Frameworks */,
+				F3F5AD782E886162007AD97D /* Appearance in Frameworks */,
 				F3F85F292C962EC900AE0A1D /* DeviceKit in Frameworks */,
 			);
 		};
@@ -963,7 +966,6 @@
 			children = (
 				F31212CB2E548CC0004CC672 /* SettingsView.swift */,
 				F31212D12E548CEB004CC672 /* AppearanceSettings.swift */,
-				F31212D72E548CF3004CC672 /* ColorTheme.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -1537,6 +1539,7 @@
 				F3C68B082CB091F40021B6F3 /* HealthyKit */,
 				F329E1852D37CB1E007BA9D1 /* SafariCover */,
 				F31D320E2DDC8CEA00E7B121 /* ScrechKit */,
+				F3F5AD632E885D96007AD97D /* Appearance */,
 			);
 			productName = iMessage;
 			productReference = F36F7FCB2CA0CFDF0007F120 /* iMessage.appex */;
@@ -1609,6 +1612,7 @@
 				F3C68AE62CAFD7C80021B6F3 /* HealthyKit */,
 				F329E1832D37CA7D007BA9D1 /* SafariCover */,
 				F31D32042DDC8CCB00E7B121 /* ScrechKit */,
+				F3F5AD612E880F05007AD97D /* Appearance */,
 			);
 			productName = "Device Specs";
 			productReference = F3E7EC3A2C676A13008CD17B /* iOS.app */;
@@ -1650,6 +1654,7 @@
 				F3F85F282C962EC900AE0A1D /* DeviceKit */,
 				F358F0222D2C185800BCC07B /* LaunchAtLogin */,
 				F31D320C2DDC8CE400E7B121 /* ScrechKit */,
+				F3F5AD772E886162007AD97D /* Appearance */,
 			);
 			productName = macOS;
 			productReference = F3F85F0E2C962C4600AE0A1D /* Device Specs.app */;
@@ -1726,6 +1731,7 @@
 				F3C68AE52CAFD7C80021B6F3 /* XCRemoteSwiftPackageReference "HealthyKit" */,
 				F358F0212D2C185800BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
 				F329E1822D37CA7D007BA9D1 /* XCRemoteSwiftPackageReference "SafariCover" */,
+				F3F5AD602E880F05007AD97D /* XCRemoteSwiftPackageReference "Appearance" */,
 			);
 			preferredProjectObjectVersion = 90;
 			productRefGroup = F3E7EC3B2C676A13008CD17B /* Products */;
@@ -1882,7 +1888,6 @@
 				F3B709C52CA2C5E3006ECAD1 /* Locale VM.swift in Sources */,
 				F3B709F92CA30470006ECAD1 /* Advertising Identifier.swift in Sources */,
 				F36F7FF62CA0D47C0007F120 /* Network VM.swift in Sources */,
-				F31212D82E548CF3004CC672 /* ColorTheme.swift in Sources */,
 				F3291C5C2CAA0C0300A15CAE /* Water Resistance Rating.swift in Sources */,
 				F36F7FEF2CA0D4370007F120 /* Battery VM.swift in Sources */,
 				F3CCB1EA2CAF499D000F8207 /* Auth Test.swift in Sources */,
@@ -2190,7 +2195,6 @@
 				F3CCB1E52CAF4518000F8207 /* Auth VM.swift in Sources */,
 				F39404182D37D155000B9221 /* Location Sensors.swift in Sources */,
 				F3E7EC8E2C67B985008CD17B /* Camera VM.swift in Sources */,
-				F31212DC2E548CF3004CC672 /* ColorTheme.swift in Sources */,
 				F3291C352CA9BC0F00A15CAE /* Font Row.swift in Sources */,
 				F3B709F72CA30470006ECAD1 /* Advertising Identifier.swift in Sources */,
 				F3D1E7A22C9CC304000C81FF /* Format Card.swift in Sources */,
@@ -3054,6 +3058,14 @@
 				minimumVersion = 5.4.0;
 			};
 		};
+		F3F5AD602E880F05007AD97D /* XCRemoteSwiftPackageReference "Appearance" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/Appearance";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -3161,6 +3173,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
+		};
+		F3F5AD612E880F05007AD97D /* Appearance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F5AD602E880F05007AD97D /* XCRemoteSwiftPackageReference "Appearance" */;
+			productName = Appearance;
+		};
+		F3F5AD632E885D96007AD97D /* Appearance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F5AD602E880F05007AD97D /* XCRemoteSwiftPackageReference "Appearance" */;
+			productName = Appearance;
+		};
+		F3F5AD772E886162007AD97D /* Appearance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F5AD602E880F05007AD97D /* XCRemoteSwiftPackageReference "Appearance" */;
+			productName = Appearance;
 		};
 		F3F85EE22C957CF700AE0A1D /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;

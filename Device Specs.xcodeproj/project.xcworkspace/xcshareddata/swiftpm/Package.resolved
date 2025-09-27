@@ -1,6 +1,15 @@
 {
-  "originHash" : "3711d69d92ff700ee340aadd506ad37308cbffbc08b6fb556df8abb68e8af794",
+  "originHash" : "4eba6e1599a2ada6da033116e079035bc459f1bb939ed59883e62b2606c373a0",
   "pins" : [
+    {
+      "identity" : "appearance",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TopScrech/Appearance",
+      "state" : {
+        "branch" : "main",
+        "revision" : "737ef13cbcd497a84b4093e2827163c4fe001e9d"
+      }
+    },
     {
       "identity" : "devicekit",
       "kind" : "remoteSourceControl",
