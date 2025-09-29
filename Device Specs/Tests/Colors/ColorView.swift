@@ -10,8 +10,8 @@ struct ColorView: View {
     var body: some View {
         color
             .ignoresSafeArea()
-#if !os(watchOS) && !os(tvOS)
-            .statusBar(hidden: true)
+#if os(iOS) || os(visionOS)
+            .statusBarHidden(true)
 #endif
     }
 }
