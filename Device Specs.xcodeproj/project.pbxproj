@@ -1240,7 +1240,7 @@
 			isa = PBXGroup;
 			children = (
 				F3AE99E22E2F890A00D70249 /* README.md */,
-				F3E7EC4C2C67B8DA008CD17B /* Device Specs */,
+				F3E7EC4C2C67B8DA008CD17B /* iOS */,
 				F3C3BDD12C92D89600BF91EE /* visionOS */,
 				F36FBCC32C9449AB00F5E174 /* watchOS */,
 				F3F85EDB2C94AF8000AE0A1D /* tvOS */,
@@ -1266,7 +1266,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F3E7EC4C2C67B8DA008CD17B /* Device Specs */ = {
+		F3E7EC4C2C67B8DA008CD17B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				F3E7EC3D2C676A13008CD17B /* DeviceSpecsApp.swift */,
@@ -1303,7 +1303,7 @@
 				F3D1E7AC2C9D5BE1000C81FF /* About */,
 				F31212CA2E548CAC004CC672 /* Settings */,
 			);
-			path = "Device Specs";
+			path = iOS;
 			sourceTree = "<group>";
 		};
 		F3E7EC532C67B985008CD17B /* Device */ = {
@@ -2684,7 +2684,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Device Specs/iOS.entitlements";
+				CODE_SIGN_ENTITLEMENTS = iOS/iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
@@ -2693,7 +2693,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Device Specs/iOS.plist";
+				INFOPLIST_FILE = iOS/iOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
@@ -2735,7 +2735,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Device Specs/iOS.entitlements";
+				CODE_SIGN_ENTITLEMENTS = iOS/iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
@@ -2744,7 +2744,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Device Specs/iOS.plist";
+				INFOPLIST_FILE = iOS/iOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
