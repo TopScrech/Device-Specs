@@ -11,10 +11,6 @@ struct HomeView: View {
     @State private var connectivity = ConnectivityVM()
     @State private var camera = CameraVM()
     
-    private var version: String {
-        "v" + app.version
-    }
-    
     var body: some View {
         List {
             WarningSection()
@@ -74,7 +70,7 @@ struct HomeView: View {
             HomeViewTestLink()
             
             Section {
-                SpecsLink("About", icon: "questionmark.square.dashed", spec: version) {
+                SpecsLink("About", icon: "questionmark.square.dashed", spec: "v" + app.version) {
                     AboutView()
                         .environment(app)
                 }
