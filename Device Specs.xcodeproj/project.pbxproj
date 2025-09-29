@@ -1383,14 +1383,14 @@
 			path = Sensors;
 			sourceTree = "<group>";
 		};
-		F3E7EC6E2C67B985008CD17B /* Color Tests */ = {
+		F3E7EC6E2C67B985008CD17B /* Colors */ = {
 			isa = PBXGroup;
 			children = (
 				F3EA43B02C998787009820F6 /* ColorTestList.swift */,
 				F3E7EC6D2C67B985008CD17B /* ColorView.swift */,
 				F3329CA12D7D0E97003B4E68 /* ColorTest.swift */,
 			);
-			path = "Color Tests";
+			path = Colors;
 			sourceTree = "<group>";
 		};
 		F3E7EC732C67B985008CD17B /* UWB Test */ = {
@@ -1412,7 +1412,7 @@
 				F3CCB1DE2CAF44BC000F8207 /* Haptic */,
 				F3EA43AD2C998712009820F6 /* Camera */,
 				F3EA43AC2C998707009820F6 /* Torch */,
-				F3E7EC6E2C67B985008CD17B /* Color Tests */,
+				F3E7EC6E2C67B985008CD17B /* Colors */,
 				F3E7EC732C67B985008CD17B /* UWB Test */,
 			);
 			path = Tests;
