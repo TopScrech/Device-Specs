@@ -485,6 +485,10 @@
 		F3F5AD622E880F05007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD612E880F05007AD97D /* Appearance */; };
 		F3F5AD642E885D96007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD632E885D96007AD97D /* Appearance */; };
 		F3F5AD782E886162007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD772E886162007AD97D /* Appearance */; };
+		F3F5AD942E8A8674007AD97D /* ColorTestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F5AD932E8A8674007AD97D /* ColorTestCard.swift */; };
+		F3F5AD952E8A8674007AD97D /* ColorTestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F5AD932E8A8674007AD97D /* ColorTestCard.swift */; };
+		F3F5AD962E8A8674007AD97D /* ColorTestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F5AD932E8A8674007AD97D /* ColorTestCard.swift */; };
+		F3F5AD972E8A8674007AD97D /* ColorTestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F5AD932E8A8674007AD97D /* ColorTestCard.swift */; };
 		F3F85E8B2C94529A00AE0A1D /* iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3F85E8A2C94529A00AE0A1D /* iOS.plist */; };
 		F3F85E8E2C9452CB00AE0A1D /* AccessibilityParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F85E8D2C9452CB00AE0A1D /* AccessibilityParam.swift */; };
 		F3F85E912C9453AE00AE0A1D /* AccessibilitySpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBC6E2C941F6200F5E174 /* AccessibilitySpecs.swift */; };
@@ -789,6 +793,7 @@
 		F3ECFE2C2CA53AE200E72D41 /* BatteryCapacity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryCapacity.swift; sourceTree = "<group>"; };
 		F3ECFE332CA53AE900E72D41 /* BatteryCapacityWh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryCapacityWh.swift; sourceTree = "<group>"; };
 		F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voltage.swift; sourceTree = "<group>"; };
+		F3F5AD932E8A8674007AD97D /* ColorTestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTestCard.swift; sourceTree = "<group>"; };
 		F3F85E8A2C94529A00AE0A1D /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.plist; sourceTree = "<group>"; };
 		F3F85E8D2C9452CB00AE0A1D /* AccessibilityParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityParam.swift; sourceTree = "<group>"; };
 		F3F85E962C94858F00AE0A1D /* watchOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = watchOS.entitlements; sourceTree = "<group>"; };
@@ -1387,6 +1392,7 @@
 			isa = PBXGroup;
 			children = (
 				F3EA43B02C998787009820F6 /* ColorTestList.swift */,
+				F3F5AD932E8A8674007AD97D /* ColorTestCard.swift */,
 				F3E7EC6D2C67B985008CD17B /* ColorView.swift */,
 				F3329CA12D7D0E97003B4E68 /* ColorTest.swift */,
 			);
@@ -1924,6 +1930,7 @@
 				F36F80042CA0D4B90007F120 /* GPUFamilies.swift in Sources */,
 				F3B709A52CA22E09006ECAD1 /* LocaleList.swift in Sources */,
 				F3ECFDDF2CA4B0D000E72D41 /* MaxClockSpeed.swift in Sources */,
+				F3F5AD942E8A8674007AD97D /* ColorTestCard.swift in Sources */,
 				F3B709EF2CA2FCAB006ECAD1 /* ProximityVM.swift in Sources */,
 				F3329CA22D7D0E97003B4E68 /* ColorTest.swift in Sources */,
 				F36F7FF12CA0D4370007F120 /* BatteryState.swift in Sources */,
@@ -1966,6 +1973,7 @@
 				F3D1E7C02C9D6AC8000C81FF /* MagneticVM.swift in Sources */,
 				F3291C702CAA9A3B00A15CAE /* NeuralEngine.swift in Sources */,
 				F31212DF2E548D33004CC672 /* ValueStore.swift in Sources */,
+				F3F5AD952E8A8674007AD97D /* ColorTestCard.swift in Sources */,
 				F3F85EC52C9492F300AE0A1D /* DeviceWatchInfo.swift in Sources */,
 				F3F85EA92C948A3300AE0A1D /* MemorySpecs.swift in Sources */,
 				F3F85EA12C9486C200AE0A1D /* NetworkSpecs.swift in Sources */,
@@ -2119,6 +2127,7 @@
 				F3F85EEB2C957F9100AE0A1D /* AccessibilityItem.swift in Sources */,
 				F3D1E7BD2C9D6A9C000C81FF /* MagneticField.swift in Sources */,
 				F3B709E22CA2F1DC006ECAD1 /* TechNode.swift in Sources */,
+				F3F5AD972E8A8674007AD97D /* ColorTestCard.swift in Sources */,
 				F3E7EC7B2C67B985008CD17B /* DeviceVM.swift in Sources */,
 				F3EA43AF2C998759009820F6 /* TorchTest.swift in Sources */,
 				F3D1E7C32C9D6B13000C81FF /* MagneticFieldData.swift in Sources */,
@@ -2253,6 +2262,7 @@
 				F3F85F032C9587C400AE0A1D /* NetworkVM.swift in Sources */,
 				F3ECFE302CA53AE200E72D41 /* BatteryCapacity.swift in Sources */,
 				F3291C282CA99CA000A15CAE /* WarningSection.swift in Sources */,
+				F3F5AD962E8A8674007AD97D /* ColorTestCard.swift in Sources */,
 				F3F85EF12C9580AD00AE0A1D /* DisplayVM.swift in Sources */,
 				F3291C3D2CA9BCE200A15CAE /* FontVM.swift in Sources */,
 				F3291C262CA99C7D00A15CAE /* WarningCard.swift in Sources */,
