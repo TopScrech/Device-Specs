@@ -52,7 +52,7 @@ struct AboutView: View {
                         Link(destination: url) {
                             Image(link.img)
                                 .resizable()
-                                .frame(width: 40, height: 40)
+                                .frame(40)
                         }
                     }
                 }

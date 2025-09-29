@@ -14,8 +14,10 @@ final class CameraVM {
     private func numberToString<T: Numeric>(_ value: T) -> String {
         if let doubleValue = value as? Float {
             String(format: "%g", doubleValue)
+            
         } else if let floatValue = value as? Double {
             String(format: "%g", floatValue)
+            
         } else {
             String(describing: value)
         }

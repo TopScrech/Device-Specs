@@ -44,7 +44,7 @@ class NearbyVM: NSObject, NISessionDelegate {
     override init() {
         super.init()
         startup()
-        print("UWB Init")
+        print("UWB init")
     }
     
     private func startup() {
@@ -55,30 +55,31 @@ class NearbyVM: NSObject, NISessionDelegate {
         sharedTokenWithPeer = false
         
         // If `connectedPeer` exists, share the discovery token, if needed
-        if connectedPeer != nil && mpc != nil {
-            if let myToken = session?.discoveryToken {
-                updateInformationLabel("Initializing ...")
-                
-                if !sharedTokenWithPeer {
-                    shareMyDiscoveryToken(myToken)
-                }
-                
-                guard let peerToken = peerDiscoveryToken else {
-                    return
-                }
-                
-                let config = NINearbyPeerConfiguration(peerToken: peerToken)
-                session?.run(config)
-            } else {
-                fatalError("Unable to get self discovery token, is this session invalidated?")
-            }
-        } else {
+        guard connectedPeer != nil && mpc != nil else {
             updateInformationLabel("Discovering Peer...")
             startupMPC()
             
             // Set the display state
             currentDistanceDirectionState = .unknown
+            return
         }
+        
+        guard let myToken = session?.discoveryToken else {
+            fatalError("Unable to get self discovery token, is this session invalidated?")
+        }
+        
+        updateInformationLabel("Initializing ...")
+        
+        if !sharedTokenWithPeer {
+            shareMyDiscoveryToken(myToken)
+        }
+        
+        guard let peerToken = peerDiscoveryToken else {
+            return
+        }
+        
+        let config = NINearbyPeerConfiguration(peerToken: peerToken)
+        session?.run(config)
     }
     
     // MARK: - `NISessionDelegate`
@@ -256,7 +257,12 @@ class NearbyVM: NSObject, NISessionDelegate {
     }
     
     private func dataReceivedHandler(data: Data, peer: MCPeerID) {
-        guard let discoveryToken = try? NSKeyedUnarchiver.unarchivedObject(ofClass: NIDiscoveryToken.self, from: data) else {
+        guard
+            let discoveryToken = try? NSKeyedUnarchiver.unarchivedObject(
+                ofClass: NIDiscoveryToken.self,
+                from: data
+            )
+        else {
             fatalError("Unexpectedly failed to decode discovery token.")
         }
         
@@ -264,7 +270,12 @@ class NearbyVM: NSObject, NISessionDelegate {
     }
     
     private func shareMyDiscoveryToken(_ token: NIDiscoveryToken) {
-        guard let encodedData = try?  NSKeyedArchiver.archivedData(withRootObject: token, requiringSecureCoding: true) else {
+        guard
+            let encodedData = try? NSKeyedArchiver.archivedData(
+                withRootObject: token,
+                requiringSecureCoding: true
+            )
+        else {
             fatalError("Unexpectedly failed to encode discovery token.")
         }
         
@@ -276,6 +287,7 @@ class NearbyVM: NSObject, NISessionDelegate {
         if connectedPeer != peer {
             fatalError("Received token from unexpected peer.")
         }
+        
         // Create a configuration
         peerDiscoveryToken = token
         
