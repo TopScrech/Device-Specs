@@ -40,6 +40,7 @@ func parseAccessibilityInfo(from input: String) -> [String: String] {
             result[key] = value
         }
     }
+    
     return result
 }
 
