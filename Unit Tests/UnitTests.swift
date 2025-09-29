@@ -1,7 +1,7 @@
 import Testing
 import Foundation
 
-struct Unit_Tests {
+struct UnitTests {
     @Test func example() async throws {
         let accessibilityInfo = parseAccessibilityInfo(from: accessibilityString)
         

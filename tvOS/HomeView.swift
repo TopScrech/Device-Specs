@@ -1,8 +1,8 @@
 import ScrechKit
 
 struct HomeView: View {
-    @State private var battery = BatteryVM()
     @State private var processor = ProcessorVM()
+    @State private var display = DisplayVM()
     @State private var system = SystemVM()
     @State private var device = DeviceVM()
     @State private var memory = MemoryVM()
@@ -11,23 +11,22 @@ struct HomeView: View {
     
     var body: some View {
         List {
-            Section {
-                WarningsSection()
-                    .environment(BatteryVM())
-            }
+            WarningSection()
+                .padding(.vertical, 30)
             
             SpecsLink("Device", icon: "info.circle", spec: device.deviceIdentifier) {
                 DeviceSpecs()
                     .environment(device)
             }
             
-            SpecsLink("System", icon: "apple.terminal", spec: system.operatingSystem) {
+            SpecsLink("System", icon: "apple.terminal", spec: "\(system.operatingSystem) (\(system.buildNumber))") {
                 SystemSpecs()
                     .environment(system)
             }
             
-            SpecsLink("Display", icon: "iphone") {
+            SpecsLink("Display", icon: "iphone", spec: "\(display.resolution) (\(display.refreshRate) Hz)") {
                 DisplaySpecs()
+                    .environment(display)
             }
             
             SpecsLink("Processor", icon: "cpu", spec: processor.cpuNameAndTechnology) {
@@ -40,24 +39,21 @@ struct HomeView: View {
                     .environment(memory)
             }
             
-            SpecsLink("Battery", icon: "battery.100percent.bolt", spec: battery.batteryLevel) {
-                BatterySpecs()
-                    .environment(battery)
-            }
-            .symbolRenderingMode(.multicolor)
-            
             SpecsLink("Network", icon: "network", spec: connectivity.type) {
                 NetworkSpecs()
                     .environment(connectivity)
             }
-#if DEBUG
-            SpecsLink("Sensors", icon: "barometer") {
-                SensorsView()
-            }
-#endif
+            
             SpecsLink("Accessibility", icon: "accessibility") {
                 AccessibilitySpecs()
             }
+            
+            Section {
+                SpecsLink("Tests", icon: "testtube.2") {
+                    TestList()
+                }
+            }
+            .padding(.vertical, 30)
             
             Section {
                 SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
@@ -65,24 +61,9 @@ struct HomeView: View {
                         .environment(app)
                 }
             }
-            
-            NavigationLink {
-                AuthTest()
-            } label: {
-                HStack {
-                    Label("Tests", systemImage: "testtube.2")
-                    
-                    Spacer()
-                    
-                    Image(systemName: "chevron.forward")
-                        .bold()
-                        .footnote()
-                        .foregroundStyle(.tertiary)
-                }
-            }
         }
         .navigationTitle("Device Specs")
-        .foregroundStyle(.foreground)
+        .labelReservedIconWidth(64)
     }
 }
 
@@ -91,8 +72,8 @@ struct HomeView: View {
         HomeView()
     }
     .darkSchemePreferred()
-    .environment(BatteryVM())
     .environment(ProcessorVM())
+    .environment(DisplayVM())
     .environment(SystemVM())
     .environment(DeviceVM())
     .environment(MemoryVM())

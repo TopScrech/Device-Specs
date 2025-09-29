@@ -1,35 +1,43 @@
-import ScrechKit
+import SwiftUI
 
 struct HomeView: View {
+    @State private var battery = BatteryVM()
     @State private var processor = ProcessorVM()
     @State private var display = DisplayVM()
     @State private var system = SystemVM()
     @State private var device = DeviceVM()
     @State private var memory = MemoryVM()
-    @State private var connectivity = ConnectivityVM()
     @State private var app = AppVM()
+    @State private var connectivity = ConnectivityVM()
+    @State private var camera = CameraVM()
+    
+    private var version: String {
+        "v" + app.version
+    }
     
     var body: some View {
         List {
-            WarningsSection()
-                .padding(.vertical, 30)
+            WarningSection()
+                .environment(battery)
             
             SpecsLink("Device", icon: "info.circle", spec: device.deviceIdentifier) {
                 DeviceSpecs()
                     .environment(device)
             }
+            .lineLimit(1)
+            .minimumScaleFactor(0.5)
             
-            SpecsLink("System", icon: "apple.terminal", spec: "\(system.operatingSystem) (\(system.buildNumber))") {
+            SpecsLink("System", icon: "apple.terminal", spec: system.operatingSystem) {
                 SystemSpecs()
                     .environment(system)
             }
             
-            SpecsLink("Display", icon: "iphone", spec: "\(display.resolution) (\(display.refreshRate) Hz)") {
+            SpecsLink("Display", icon: "iphone", spec: display.diagonalSize) {
                 DisplaySpecs()
                     .environment(display)
             }
             
-            SpecsLink("Processor", icon: "cpu", spec: processor.cpuNameAndTechnology) {
+            SpecsLink("Processor", icon: "cpu", spec: processor.cpuName) {
                 ProcessorSpecs()
                     .environment(processor)
             }
@@ -39,31 +47,48 @@ struct HomeView: View {
                     .environment(memory)
             }
             
+            SpecsLink("Battery", icon: "battery.100percent.bolt", spec: battery.batteryLevel) {
+                BatterySpecs()
+                    .environment(battery)
+            }
+            .symbolRenderingMode(.multicolor)
+            
             SpecsLink("Network", icon: "network", spec: connectivity.type) {
                 NetworkSpecs()
                     .environment(connectivity)
+            }
+            
+            SpecsLink("Camera", icon: "camera", spec: camera.hasLidar) {
+                CameraSpecs()
+                    .environment(camera)
+            }
+            
+            SpecsLink("Sensors", icon: "barometer") {
+                SensorsSpecs()
             }
             
             SpecsLink("Accessibility", icon: "accessibility") {
                 AccessibilitySpecs()
             }
             
-            Section {
-                SpecsLink("Tests", icon: "testtube.2") {
-                    TestList()
-                }
-            }
-            .padding(.vertical, 30)
+            HomeViewTestLink()
             
             Section {
-                SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
+                SpecsLink("About", icon: "questionmark.square.dashed", spec: version) {
                     AboutView()
                         .environment(app)
                 }
             }
         }
-        .navigationTitle("Device Specs")
-        .labelReservedIconWidth(64)
+        .navigationTitle(device.deviceIdentifier)
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
+            battery.fetchBatteryInfo()
+        }
+        .toolbar {
+            NavigationLink(destination: SettingsView()) {
+                Image(systemName: "gear")
+            }
+        }
     }
 }
 
@@ -72,11 +97,13 @@ struct HomeView: View {
         HomeView()
     }
     .darkSchemePreferred()
+    .environment(BatteryVM())
     .environment(ProcessorVM())
     .environment(DisplayVM())
     .environment(SystemVM())
     .environment(DeviceVM())
     .environment(MemoryVM())
-    .environment(ConnectivityVM())
     .environment(AppVM())
+    .environment(ConnectivityVM())
+    .environment(CameraVM())
 }

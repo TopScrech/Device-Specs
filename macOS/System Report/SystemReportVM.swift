@@ -21,9 +21,9 @@ final class SystemReportVM {
             if response == .OK, let destinationUrl = savePanel.url {
                 do {
                     try FileManager.default.moveItem(at: url, to: destinationUrl)
-                    print("File moved successfully to: \(destinationUrl.path)")
+                    print("File moved successfully to:", destinationUrl.path)
                 } catch {
-                    print("Failed to move file: \(error)")
+                    print("Failed to move file:", error)
                 }
             }
         }
@@ -107,9 +107,9 @@ final class SystemReportVM {
         do {
             try output.write(to: fileURL, atomically: true, encoding: .utf8)
             reportURL = fileURL
-            print("File saved successfully at: \(fileURL.path)")
+            print("File saved successfully at:", fileURL.path)
         } catch {
-            print("Failed to save file: \(error)")
+            print("Failed to save file:", error)
         }
     }
 }

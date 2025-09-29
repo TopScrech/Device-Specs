@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ListLink <Destination: View>: View {
+struct ListLink<Destination: View>: View {
     private let title: LocalizedStringKey
     private let icon: String
     private let destination: Destination

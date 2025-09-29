@@ -36,7 +36,7 @@ final class MessagesVM {
         
         conversation.insert(message) { error in
             if let error {
-                print("Error sending message: \(error.localizedDescription)")
+                print("Error sending message:", error.localizedDescription)
             }
         }
     }

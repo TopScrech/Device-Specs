@@ -32,7 +32,7 @@ final class MagneticVM: NSObject {
             }
             
             if let error {
-                print("Magnetometer error: \(error.localizedDescription)")
+                print("Magnetometer error:", error.localizedDescription)
                 return
             }
             

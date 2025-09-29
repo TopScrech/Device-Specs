@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HomeViewTestsLink: View {
+struct HomeViewTestLink: View {
     @Environment(NavState.self) private var nav
     
     var body: some View {
@@ -25,7 +25,7 @@ struct HomeViewTestsLink: View {
 
 #Preview {
     List {
-        HomeViewTestsLink()
+        HomeViewTestLink()
     }
     .darkSchemePreferred()
     .environment(NavState())

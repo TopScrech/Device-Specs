@@ -1,43 +1,36 @@
-import SwiftUI
+import ScrechKit
 
 struct HomeView: View {
     @State private var battery = BatteryVM()
     @State private var processor = ProcessorVM()
-    @State private var display = DisplayVM()
     @State private var system = SystemVM()
     @State private var device = DeviceVM()
     @State private var memory = MemoryVM()
-    @State private var app = AppVM()
     @State private var connectivity = ConnectivityVM()
-    @State private var camera = CameraVM()
-    
-    private var version: String {
-        "v" + app.version
-    }
+    @State private var app = AppVM()
     
     var body: some View {
         List {
-            WarningsSection()
-                .environment(battery)
+            Section {
+                WarningSection()
+                    .environment(BatteryVM())
+            }
             
             SpecsLink("Device", icon: "info.circle", spec: device.deviceIdentifier) {
                 DeviceSpecs()
                     .environment(device)
             }
-            .lineLimit(1)
-            .minimumScaleFactor(0.5)
             
             SpecsLink("System", icon: "apple.terminal", spec: system.operatingSystem) {
                 SystemSpecs()
                     .environment(system)
             }
             
-            SpecsLink("Display", icon: "iphone", spec: display.diagonalSize) {
+            SpecsLink("Display", icon: "iphone") {
                 DisplaySpecs()
-                    .environment(display)
             }
             
-            SpecsLink("Processor", icon: "cpu", spec: processor.cpuName) {
+            SpecsLink("Processor", icon: "cpu", spec: processor.cpuNameAndTechnology) {
                 ProcessorSpecs()
                     .environment(processor)
             }
@@ -57,38 +50,40 @@ struct HomeView: View {
                 NetworkSpecs()
                     .environment(connectivity)
             }
-            
-            SpecsLink("Camera", icon: "camera", spec: camera.hasLidar) {
-                CameraSpecs()
-                    .environment(camera)
-            }
-            
+#warning("Test if works")
+#if DEBUG
             SpecsLink("Sensors", icon: "barometer") {
-                SensorsSpecs()
+                SensorsView()
             }
-            
+#endif
             SpecsLink("Accessibility", icon: "accessibility") {
                 AccessibilitySpecs()
             }
             
-            HomeViewTestsLink()
-            
             Section {
-                SpecsLink("About", icon: "questionmark.square.dashed", spec: version) {
+                SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
                     AboutView()
                         .environment(app)
                 }
             }
-        }
-        .navigationTitle(device.deviceIdentifier)
-        .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
-            battery.fetchBatteryInfo()
-        }
-        .toolbar {
-            NavigationLink(destination: SettingsView()) {
-                Image(systemName: "gear")
+            
+            NavigationLink {
+                AuthTest()
+            } label: {
+                HStack {
+                    Label("Tests", systemImage: "testtube.2")
+                    
+                    Spacer()
+                    
+                    Image(systemName: "chevron.forward")
+                        .bold()
+                        .footnote()
+                        .foregroundStyle(.tertiary)
+                }
             }
         }
+        .navigationTitle("Device Specs")
+        .foregroundStyle(.foreground)
     }
 }
 
@@ -99,11 +94,9 @@ struct HomeView: View {
     .darkSchemePreferred()
     .environment(BatteryVM())
     .environment(ProcessorVM())
-    .environment(DisplayVM())
     .environment(SystemVM())
     .environment(DeviceVM())
     .environment(MemoryVM())
-    .environment(AppVM())
     .environment(ConnectivityVM())
-    .environment(CameraVM())
+    .environment(AppVM())
 }

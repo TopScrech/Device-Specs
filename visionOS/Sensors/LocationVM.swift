@@ -5,9 +5,6 @@ import CoreLocation
 final class LocationVM: NSObject, CLLocationManagerDelegate {
     private(set) var latitude = 0.0
     private(set) var longitude = 0.0
-    private(set) var trueHeading = 0.0
-    private(set) var magneticHeading = 0.0
-    private(set) var headingAccuracy = 0.0
     
     private var locationManager: CLLocationManager
     
@@ -18,32 +15,21 @@ final class LocationVM: NSObject, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
-        locationManager.startUpdatingHeading()
     }
     
-    func locationManager(
-        _ manager: CLLocationManager,
-        didUpdateLocations locations: [CLLocation]
-    ) {
-        if let location = locations.first {
-            let coordinate = location.coordinate
-            
-            latitude = coordinate.latitude
-            longitude = coordinate.longitude
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let coordinates = locations.first?.coordinate else {
+            return
+        }
+        
+        withAnimation {
+            latitude = coordinates.latitude
+            longitude = coordinates.longitude
         }
     }
     
-    func locationManager(
-        _ manager: CLLocationManager,
-        didUpdateHeading newHeading: CLHeading
-    ) {
-        trueHeading = newHeading.trueHeading
-        magneticHeading = newHeading.magneticHeading
-        headingAccuracy = newHeading.headingAccuracy
-    }
-    
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("Failed to update location: \(error.localizedDescription)")
+        print("Failed to update location:", error.localizedDescription)
     }
 }
 
