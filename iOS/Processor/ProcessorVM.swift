@@ -37,7 +37,7 @@ final class ProcessorVM {
     }
     
     var maxClockSpeed: String {
-        cpu.maxClockSpeed
+        cpu.clockRate
     }
     
     var instructionSet: String {

@@ -5,7 +5,7 @@ import DeviceKit
 // https://notebookcheck.net
 
 extension Device.CPU {
-    var maxClockSpeed: String {
+    var clockRate: String {
         switch self {
 #if os(iOS) || os(tvOS)
         case .a4: "0.8 - 1 GHz" // https://phonedb.net/index.php?m=processor&id=234&c=samsung-intrinsity_apple_a4_apl0398_s5l8930
