@@ -3,13 +3,19 @@ import DeviceKit
 // Sources
 // https://theapplewiki.com/wiki/Application_Processor
 // https://phonedb.net
+// https://notebookcheck
 
 extension Device.CPU {
     var memoryType: String {
         switch self {
 #if os(iOS) || os(tvOS)
         case .a4: "DDR, LPDDR, LPDDR2" // https://phonedb.net/index.php?m=processor&id=234&c=samsung-intrinsity_apple_a4_apl0398_s5l8930
-        case .a5: "LPDDR2" // https://phonedb.net/index.php?m=processor&id=282&c=apple_a5_apl0498_s5l8940
+            
+            // https://phonedb.net/index.php?m=processor&id=282&c=apple_a5_apl0498_s5l8940
+            // https://phonedb.net/index.php?m=processor&id=357&c=apple_a5r2_apl2498__s5l8942
+            // https://phonedb.net/index.php?m=processor&id=968&c=apple_a5r3_apl7498__s5l8947
+        case .a5: "LPDDR2"
+            
         case .a5X: "LPDDR2" // https://phonedb.net/index.php?m=processor&id=335&c=apple_a5x_apl5498_s5l8945x
         case .a6: "LPDDR2" // https://phonedb.net/index.php?m=processor&id=356&c=apple_a6_apl0598_s5l8950x__bali
         case .a6X: "LPDDR2" // https://phonedb.net/index.php?m=processor&id=366&c=apple_a6x_apl5598_s5l8955x__bali
@@ -20,17 +26,32 @@ extension Device.CPU {
         case .a9X: "LPDDR4" // https://phonedb.net/index.php?m=processor&id=629&c=apple_a9x_apl1021_s8001__elba
         case .a10Fusion: "LPDDR4" // https://phonedb.net/index.php?m=processor&id=677&c=apple_a10_fusion_apl1w24_t8010__cayman
         case .a10XFusion: "LPDDR4" // https://phonedb.net/index.php?m=processor&id=719&c=apple_a10x_fusion_apl1071_t8011__myst
-        case .a11Bionic, .a12Bionic, .a12XBionic, .a12ZBionic, .a13Bionic, .a14Bionic, .a15Bionic: "LPDDR4X-4266"
-        case .a16Bionic: "LPDDR5-6400"
-        case .a17Pro: "LPDDR5-6400"
-        case .a18: "LPDDR5X-8533"
-        case .a18Pro: "LPDDR5X-8533"
-        case .a19Pro: "LPDDR5X"
+        case .a11Bionic: "LPDDR4, LPDDR4X" // https://phonedb.net/index.php?m=processor&id=718&c=apple_a11_bionic_apl1w72_t8015__skye
+        case .a12Bionic: "LPDDR4X" // https://phonedb.net/index.php?m=processor&id=770&c=apple_a12_bionic_apl1w81_t8020__cyprus
+        case .a12XBionic: "LPDDR4X" // https://phonedb.net/index.php?m=processor&id=774&c=apple_a12x_bionic_apl1083_t8027__aruba
+        case .a12ZBionic: "LPDDR4X" // https://phonedb.net/index.php?m=processor&id=820&c=apple_a12z_bionic_apl1083_t8027__aruba#google_vignette
+        case .a13Bionic: "LPDDR4X" // https://phonedb.net/index.php?m=processor&id=795&c=apple_a13_bionic_apl1w85_t8030__cebu
+        case .a14Bionic: "LPDDR4X, LPDDR5" // https://phonedb.net/index.php?m=processor&id=835&c=apple_a14_bionic_apl1w01_t8101__sicily
             
-        case .m1: "LPDDR4X-4266 2133 MHz (Pro, Max, Ultra - LPDDR4X-6400 (3200 MHz))"
-        case .m2: "LPDDR5-6400"
-        case .m3: "LPDDR5-6400"
-        case .m4: "LPDDR5-7500" // Pro, Max, Ultra - ???
+            // https://phonedb.net/index.php?m=processor&id=898&c=apple_a15_bionic_lite_apl1w07_t8110__ellis
+            // https://phonedb.net/index.php?m=processor&id=871&c=apple_a15_bionic_apl1w07_t8110__ellis
+        case .a15Bionic: "LPDDR4X, LPDDR5"
+            
+            // https://phonedb.net/index.php?m=processor&id=1020&c=apple_a16_bionic_lite_apl1010__apl1w10
+            // https://phonedb.net/index.php?m=processor&id=903&c=apple_a16_bionic_apl1w10_t8120__crete
+        case .a16Bionic: "LPDDR4X, LPDDR5"
+            
+        case .a17Pro: "LPDDR4X, LPDDR5" // https://phonedb.net/index.php?m=processor&id=944&c=apple_a17_pro_apl1v02_t8130__coll#google_vignette
+        case .a18: "LPDDR5, LPDDR5X" // https://phonedb.net/index.php?m=processor&id=992&c=apple_a18_apl1v08_t8142__tupai
+        case .a18Pro: "LPDDR5, LPDDR5X" // https://phonedb.net/index.php?m=processor&id=991&c=apple_a18_pro_apl1v07_t8140__tahiti
+        case .a19: "LPDDR5X-8533" // https://notebookcheck.net/Apple-A19-Processor-Benchmarks-and-Specs.1127048.0.html
+        case .a19Pro: "LPDDR5X-9600 (8533 in the iPad Air)" // https://notebookcheck.net/Apple-A19-Pro-Processor-Benchmarks-and-Specs.1126974.0.html
+            
+        case .m1: "LPDDR4X 2133 MHz (Pro, Max, Ultra - LPDDR4X (3200 MHz))"
+        case .m2: "LPDDR5"
+        case .m3: "LPDDR5"
+        case .m4: "LPDDR5" // Pro, Max, Ultra - ???
+            
 #elseif os(watchOS)
         case .s1: "LPDDR3" // https://phonedb.net/index.php?m=processor&id=599&c=apple_s1_apl0778_s7002
         case .s1P: "LPDDR2, LPDDR3" // https://phonedb.net/index.php?m=processor&id=680&c=apple_s1p_t8002

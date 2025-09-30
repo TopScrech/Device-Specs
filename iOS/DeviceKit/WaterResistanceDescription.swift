@@ -1,6 +1,6 @@
 import DeviceKit
 
-// Source: https://www.coolblue.nl/en/advice/which-iphones-are-waterproof.html
+// Source: https://coolblue.nl/en/advice/which-iphones-are-waterproof.html
 
 extension Device {
     var waterResistanceDescription: String {

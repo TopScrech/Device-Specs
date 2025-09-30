@@ -470,12 +470,6 @@
 		F3ECFE302CA53AE200E72D41 /* BatteryCapacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE2C2CA53AE200E72D41 /* BatteryCapacity.swift */; };
 		F3ECFE312CA53AE200E72D41 /* BatteryCapacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE2C2CA53AE200E72D41 /* BatteryCapacity.swift */; };
 		F3ECFE322CA53AE200E72D41 /* BatteryCapacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE2C2CA53AE200E72D41 /* BatteryCapacity.swift */; };
-		F3ECFE342CA53AE900E72D41 /* BatteryCapacityWh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE332CA53AE900E72D41 /* BatteryCapacityWh.swift */; };
-		F3ECFE352CA53AE900E72D41 /* BatteryCapacityWh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE332CA53AE900E72D41 /* BatteryCapacityWh.swift */; };
-		F3ECFE362CA53AE900E72D41 /* BatteryCapacityWh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE332CA53AE900E72D41 /* BatteryCapacityWh.swift */; };
-		F3ECFE372CA53AE900E72D41 /* BatteryCapacityWh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE332CA53AE900E72D41 /* BatteryCapacityWh.swift */; };
-		F3ECFE382CA53AE900E72D41 /* BatteryCapacityWh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE332CA53AE900E72D41 /* BatteryCapacityWh.swift */; };
-		F3ECFE392CA53AE900E72D41 /* BatteryCapacityWh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE332CA53AE900E72D41 /* BatteryCapacityWh.swift */; };
 		F3ECFE3B2CA53AED00E72D41 /* Voltage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */; };
 		F3ECFE3C2CA53AED00E72D41 /* Voltage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */; };
 		F3ECFE3D2CA53AED00E72D41 /* Voltage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */; };
@@ -791,7 +785,6 @@
 		F3ECFE072CA4C09200E72D41 /* InstructionSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionSet.swift; sourceTree = "<group>"; };
 		F3ECFE1D2CA536FD00E72D41 /* ReleaseDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseDate.swift; sourceTree = "<group>"; };
 		F3ECFE2C2CA53AE200E72D41 /* BatteryCapacity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryCapacity.swift; sourceTree = "<group>"; };
-		F3ECFE332CA53AE900E72D41 /* BatteryCapacityWh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryCapacityWh.swift; sourceTree = "<group>"; };
 		F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voltage.swift; sourceTree = "<group>"; };
 		F3F5AD932E8A8674007AD97D /* ColorTestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTestCard.swift; sourceTree = "<group>"; };
 		F3F85E8A2C94529A00AE0A1D /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.plist; sourceTree = "<group>"; };
@@ -1455,7 +1448,6 @@
 				F3ECFE1D2CA536FD00E72D41 /* ReleaseDate.swift */,
 				F3ECFE3A2CA53AED00E72D41 /* Voltage.swift */,
 				F3ECFE2C2CA53AE200E72D41 /* BatteryCapacity.swift */,
-				F3ECFE332CA53AE900E72D41 /* BatteryCapacityWh.swift */,
 				F33C4BA22DEB3B650070F213 /* Example */,
 				F3ECFE0E2CA5343C00E72D41 /* Disabled */,
 			);
@@ -1898,7 +1890,6 @@
 				F36F7FEF2CA0D4370007F120 /* BatteryVM.swift in Sources */,
 				F3CCB1EA2CAF499D000F8207 /* AuthTest.swift in Sources */,
 				F36F7FF02CA0D4370007F120 /* BatteryLevel.swift in Sources */,
-				F3ECFE362CA53AE900E72D41 /* BatteryCapacityWh.swift in Sources */,
 				F36F80002CA0D4B90007F120 /* ProcessorSpecs.swift in Sources */,
 				F39404192D37D155000B9221 /* LocationSensors.swift in Sources */,
 				F36F80012CA0D4B90007F120 /* CurrentProcess.swift in Sources */,
@@ -1982,7 +1973,6 @@
 				F3D1E7A62C9CD453000C81FF /* CurrentProcess.swift in Sources */,
 				F3F85EC12C948F9D00AE0A1D /* TestList.swift in Sources */,
 				F3B709EB2CA2F683006ECAD1 /* FontList.swift in Sources */,
-				F3ECFE352CA53AE900E72D41 /* BatteryCapacityWh.swift in Sources */,
 				F30B51B52E1E9E6D0041433B /* DeviceInfo.swift in Sources */,
 				F3EA43B12C998787009820F6 /* ColorTestList.swift in Sources */,
 				F3D1E77F2C9C0CD3000C81FF /* BatteryLevel.swift in Sources */,
@@ -2093,7 +2083,6 @@
 				F3ECFDFE2CA4B53200E72D41 /* L3 Cache.swift in Sources */,
 				F36FBC602C931CBD00F5E174 /* LocationVM.swift in Sources */,
 				F3C3BDE12C92DB9800BF91EE /* MemoryVM.swift in Sources */,
-				F3ECFE372CA53AE900E72D41 /* BatteryCapacityWh.swift in Sources */,
 				F3CCB1EF2CAFBC3D000F8207 /* AuthTest.swift in Sources */,
 				F3F85EEA2C957F9100AE0A1D /* AccessibilityItem.swift in Sources */,
 				F3F85EFB2C95857C00AE0A1D /* GPUFamilies.swift in Sources */,
@@ -2199,7 +2188,6 @@
 				F3D1E7A92C9CD453000C81FF /* CurrentProcess.swift in Sources */,
 				F3187A502C898B37008FB911 /* NavState.swift in Sources */,
 				F3C68ACD2CAFCDB40021B6F3 /* MailFeedback.swift in Sources */,
-				F3ECFE392CA53AE900E72D41 /* BatteryCapacityWh.swift in Sources */,
 				F31212DE2E548D00004CC672 /* ValueStore.swift in Sources */,
 				F3CCB1E52CAF4518000F8207 /* AuthVM.swift in Sources */,
 				F39404182D37D155000B9221 /* LocationSensors.swift in Sources */,
@@ -2267,7 +2255,6 @@
 				F3291C3D2CA9BCE200A15CAE /* FontVM.swift in Sources */,
 				F3291C262CA99C7D00A15CAE /* WarningCard.swift in Sources */,
 				F3ECFDFD2CA4B53200E72D41 /* L3 Cache.swift in Sources */,
-				F3ECFE342CA53AE900E72D41 /* BatteryCapacityWh.swift in Sources */,
 				F3B709A22CA22E09006ECAD1 /* LocaleList.swift in Sources */,
 				F3CCB1FB2CAFC228000F8207 /* GPUFamilyModel.swift in Sources */,
 				F3291C632CAA0CFB00A15CAE /* WaterResistanceDescription.swift in Sources */,
@@ -2319,7 +2306,6 @@
 				F3F85F212C962CBD00AE0A1D /* AppContainer.swift in Sources */,
 				F3ECFE232CA536FD00E72D41 /* ReleaseDate.swift in Sources */,
 				F3ECFDE12CA4B0D000E72D41 /* MaxClockSpeed.swift in Sources */,
-				F3ECFE382CA53AE900E72D41 /* BatteryCapacityWh.swift in Sources */,
 				F358F0252D2C187000BCC07B /* SettingsView.swift in Sources */,
 				F31212E22E548D33004CC672 /* ValueStore.swift in Sources */,
 				F33FEE582C982EC200214288 /* NavLinks.swift in Sources */,

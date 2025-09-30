@@ -2,7 +2,8 @@ import DeviceKit
 
 // Sources:
 // https://everymac.com/systems/apple/iphone/iphone-faq/iphone-bluetooth-support-by-model.html
-// https://www.lifewire.com/does-ipad-support-bluetooth-1994315
+// https://lifewire.com/does-ipad-support-bluetooth-1994315
+// https://www.apple.com/nl/iphone/compare
 
 extension Device {
     var bluetoothVersion: String {
@@ -31,7 +32,7 @@ extension Device {
             
         case .iPhone14, .iPhone14Plus, .iPhone14Pro, .iPhone14ProMax,
                 .iPhone15, .iPhone15Plus, .iPhone15Pro, .iPhone15ProMax,
-                .iPhone16, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax: "5.3"
+                .iPhone16, .iPhone16e, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax: "5.3"
             
         case .iPhone17, .iPhoneAir, .iPhone17Pro, .iPhone17ProMax: "6.0"
             
@@ -39,14 +40,17 @@ extension Device {
         case .iPad3, .iPad4: "4.0"
         case .iPad5, .iPad6, .iPad7, .iPad8, .iPad9: "4.2"
         case .iPad10: "5.2"
+        case .iPadA16: "5.3"
             
         case .iPadAir: "4.0"
         case .iPadAir2: "4.2"
         case .iPadAir3, .iPadAir4, .iPadAir5, .iPadAir11M2, .iPadAir13M2: "5.0"
+        case .iPadAir11M3, .iPadAir13M3: "5.3"
             
         case .iPadMini, .iPadMini2: "4.0"
         case .iPadMini3, .iPadMini4: "4.2"
         case .iPadMini5, .iPadMini6: "5.0"
+        case .iPadMiniA17Pro: "5.3"
             
         case .iPadPro9Inch, .iPadPro12Inch,
                 .iPadPro12Inch2, .iPadPro10Inch: "4.2"

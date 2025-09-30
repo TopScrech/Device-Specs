@@ -1,7 +1,7 @@
 import DeviceKit
 
 // Sources:
-// https://www.coolblue.nl/en/advice/which-iphones-are-waterproof.html
+// https://coolblue.nl/en/advice/which-iphones-are-waterproof.html
 // https://support.apple.com/en-gb/109522#:~:text=Apple%20Watch%20Series%202%20and,are%20rated%20IP6X%20dust%20resistant.
 // https://support.apple.com/en-us/108039
 
@@ -38,7 +38,7 @@ extension Device {
                 .iPhone13, .iPhone13Mini, .iPhone13Pro, .iPhone13ProMax,
                 .iPhone14, .iPhone14Plus, .iPhone14Pro, .iPhone14ProMax,
                 .iPhone15, .iPhone15Plus, .iPhone15Pro, .iPhone15ProMax,
-                .iPhone16, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax,
+                .iPhone16, .iPhone16e, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax,
                 .iPhone17, .iPhoneAir, .iPhone17Pro, .iPhone17ProMax: "IP68 (IEC 60529)"
             
         case .iPad2,
@@ -53,15 +53,18 @@ extension Device {
                 .iPad8,
                 .iPad9,
                 .iPad10,
+                .iPadA16,
                 .iPadAir4,
                 .iPadAir5,
                 .iPadAir11M2, .iPadAir13M2,
+                .iPadAir11M3, .iPadAir13M3,
                 .iPadMini,
                 .iPadMini2,
                 .iPadMini3,
                 .iPadMini4,
                 .iPadMini5,
                 .iPadMini6,
+                .iPadMiniA17Pro,
                 .iPadPro9Inch,
                 .iPadPro12Inch,
                 .iPadPro12Inch2,

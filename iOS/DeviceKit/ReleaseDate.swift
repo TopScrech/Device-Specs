@@ -52,12 +52,15 @@ extension Device {
         case .iPadAir5: "March 18, 2022"
         case .iPad10, .iPadPro11Inch4, .iPadPro12Inch6: "October 26, 2022"
         case .iPadAir11M2, .iPadAir13M2, .iPadPro11M4, .iPadPro13M4: "May 15, 2024"
+            
         case .homePod: "-"
+            
 #elseif os(tvOS)
         case .appleTVHD: "October 30, 2015"
         case .appleTV4K: "September 12, 2017"
         case .appleTV4K2: "May 21, 2021"
         case .appleTV4K3: "November 4, 2022"
+            
 #elseif os(watchOS)
         case .appleWatchSeries0_38mm, .appleWatchSeries0_42mm: "April 24, 2015"
         case .appleWatchSeries1_38mm, .appleWatchSeries1_42mm,

@@ -45,10 +45,6 @@ final class BatteryVM {
         device.voltage
     }
     
-    var capacityWh: String {
-        device.power
-    }
-    
     var color: Color {
         if lowPowerMode == "Yes" {
             .yellow

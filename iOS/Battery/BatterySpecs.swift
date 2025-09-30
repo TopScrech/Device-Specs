@@ -30,8 +30,6 @@ struct BatterySpecs: View {
             ListParam("Voltage", param: vm.voltage)
             
             ListParam("Capacity", param: vm.capacity)
-            
-            ListParam("Capacity in Wh", param: vm.capacityWh)
         }
         .navigationTitle("Battery")
         .environment(vm)

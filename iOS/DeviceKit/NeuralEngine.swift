@@ -1,5 +1,9 @@
 import DeviceKit
 
+// Sources
+// https://lowendmac.com
+// https://apple.fandom.com
+
 extension Device.CPU {
     var tops: String? {
         switch self {
@@ -11,8 +15,10 @@ extension Device.CPU {
         case .a13Bionic: "6"
         case .a14Bionic: "11"
         case .a15Bionic: "15.8"
-        case .a16Bionic: "17"
+        case .a16Bionic: "17" // https://apple.fandom.com/wiki/Apple_A16
         case .a17Pro, .a18, .a18Pro: "35"
+        case .a19: "35" // https://lowendmac.com/2025/apple-a19-specs
+        case .a19Pro: "35" // https://lowendmac.com/2025/apple-a19-pro-specs
             
         case .m1: "11 (Ultra - 22)"
         case .m2: "15.8 (Ultra - 31.6)"
@@ -35,9 +41,12 @@ extension Device.CPU {
         case .a11Bionic: "2"
         case .a12Bionic, .a12XBionic,
                 .a12ZBionic, .a13Bionic: "8"
-        case .a14Bionic, .a15Bionic,
-                .a17Pro, .a18, .a18Pro,
-                .a19, .a19Pro: "16"
+        case .a14Bionic, .a15Bionic: "16"
+        case .a16Bionic: "16" // https://apple.fandom.com/wiki/Apple_A16
+        case .a17Pro, .a18, .a18Pro: "16"
+            
+        case .a19: "16" // https://lowendmac.com/2025/apple-a19-specs
+        case .a19Pro: "16" // https://lowendmac.com/2025/apple-a19-pro-specs/
             
         case .m1, .m2, .m3: "16 (Ultra - 32)"
         case .m4: "16"
