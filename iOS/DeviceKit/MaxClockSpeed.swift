@@ -49,11 +49,10 @@ extension Device.CPU {
             
             // https://phonedb.net/index.php?m=processor&id=893&c=apple_m1_lite_apl1102_t8103__tonga
             // https://phonedb.net/index.php?m=processor&id=861&c=apple_m1_apl1102_t8103__tonga
-        case .m1: "3.228 GHz"
-            
-        case .m2: "3.5 GHz (Max & Ultra - 3.67 GHz)"
+        case .m1: "0.6 - 3.228 GHz"
+        case .m2: "3.49 GHz (Max & Ultra - 3.67 GHz)"
         case .m3: "4.05 GHz"
-        case .m4: "4.41 GHz"
+        case .m4: "4.4 GHz"
             
 #elseif os(watchOS)
         case .s1: "0.52 GHz" // https://phonedb.net/index.php?m=processor&id=599&c=apple_s1_apl0778_s7002
