@@ -82,7 +82,7 @@ extension Device {
         case .iPadMini: "4440 mAh"
         case .iPadMini2, .iPadMini3: "6471 mAh"
         case .iPadMini4, .iPadMini5, .iPadMini6: "5124 mAh"
-        case .iPadMiniA17Pro: "5078 mAh (19.3 Wh)" // https://www.gsmarena.com/apple_ipad_mini_(2024)-13437.php
+        case .iPadMiniA17Pro: "5078 mAh (19.3 Wh)" // https://gsmarena.com/apple_ipad_mini_(2024)-13437.php
             
         case .iPadPro9Inch: "7,306mAh"
         case .iPadPro12Inch: "10307mAh"

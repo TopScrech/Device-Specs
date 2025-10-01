@@ -2,8 +2,7 @@ import DeviceKit
 
 // Sources:
 // https://everymac.com/systems/apple/iphone/iphone-faq/iphone-bluetooth-support-by-model.html
-// https://lifewire.com/does-ipad-support-bluetooth-1994315
-// https://www.apple.com/nl/iphone/compare
+// https://apple.com/iphone/compare
 
 extension Device {
     var bluetoothVersion: String {

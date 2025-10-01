@@ -18,7 +18,11 @@ extension Device.CPU {
         case .a5X: "45 nm" // https://phonedb.net/index.php?m=processor&id=335&c=apple_a5x_apl5498_s5l8945x
         case .a6: "32 nm" // https://phonedb.net/index.php?m=processor&id=356&c=apple_a6_apl0598_s5l8950x__bali
         case .a6X: "32 nm" // https://phonedb.net/index.php?m=processor&id=366&c=apple_a6x_apl5598_s5l8955x__bali
-        case .a7: "28 nm" // https://phonedb.net/index.php?m=processor&id=433&c=apple_a7_apl5698_s5l8965x__alcatraz https://phonedb.net/index.php?m=processor&id=423&c=apple_a7_apl0698_s5l8960x__alcatraz
+        
+            // https://phonedb.net/index.php?m=processor&id=433&c=apple_a7_apl5698_s5l8965x__alcatraz
+            // https://phonedb.net/index.php?m=processor&id=423&c=apple_a7_apl0698_s5l8960x__alcatraz
+        case .a7: "28 nm"
+        
         case .a8: "20 nm" // https://phonedb.net/index.php?m=processor&id=531&c=apple_a8_apl1011_t7000__fiji
         case .a8X: "20 nm" // https://phonedb.net/index.php?m=processor&id=548&c=apple_a8x_apl1012_t7001__capri
         case .a9: "14/16 nm" // https://phonedb.net/index.php?m=processor&id=626&c=apple_a9_apl0898_s8000__maui
@@ -56,8 +60,13 @@ extension Device.CPU {
         case .m4: "3 nm (N3E)"
 #elseif os(watchOS)
         case .s1: "28 nm" // https://phonedb.net/index.php?m=processor&id=599&c=apple_s1_apl0778_s7002
-        case .s1P: "28 nm" // -
-        case .s2: "16 nm" // -
+            
+            // Apple APL0778 is 28 nm: https://www.iclarified.com/49012/the-apple-watch-s1-sip-has-over-30-individual-components-image
+            // 28: https://en.wikipedia.org/wiki/Apple_S1
+            // 16: https://check-mac.com/en/cpu-apple_s1p
+        case .s1P: "28 nm"
+            
+        case .s2: "16 nm" // https://en.wikipedia.org/wiki/Apple_S2
         case .s3: "16 nm" // -
         case .s4: "7 nm (N7)" // https://phonedb.net/index.php?m=processor&id=771&c=apple_s4_tmjr65_t8006
         case .s5: "7 nm (N7)" // https://phonedb.net/index.php?m=processor&id=810&c=apple_s5_apl1w82_t8006

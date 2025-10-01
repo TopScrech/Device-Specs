@@ -46,7 +46,7 @@ extension Device.CPU {
         case .a17Pro, .a18, .a18Pro: "16"
             
         case .a19: "16" // https://lowendmac.com/2025/apple-a19-specs
-        case .a19Pro: "16" // https://lowendmac.com/2025/apple-a19-pro-specs/
+        case .a19Pro: "16" // https://lowendmac.com/2025/apple-a19-pro-specs
             
         case .m1, .m2, .m3: "16 (Ultra - 32)"
         case .m4: "16"
