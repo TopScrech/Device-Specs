@@ -84,6 +84,7 @@ struct HomeView: View {
             NavigationLink(destination: SettingsView()) {
                 Image(systemName: "gear")
             }
+            .keyboardShortcut("s")
         }
     }
 }
