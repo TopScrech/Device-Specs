@@ -74,7 +74,10 @@ extension Device.CPU {
         case .s7: "7 nm (N7P)" // https://phonedb.net/index.php?m=processor&id=900&c=apple_s7_apl1w86_t8301__turks
         case .s8: "7 nm (N7P)" // https://phonedb.net/index.php?m=processor&id=907&c=apple_s8_t8301
         case .s9: "5 nm (N5P)" // https://phonedb.net/index.php?m=processor&id=996&c=apple_s9_apl1w15_t8310
-        case .s10: "4 nm" // https://phonedb.net/index.php?m=processor&id=997&c=apple_s10_apl1w15_t8310
+        
+            // 4nm: https://phonedb.net/index.php?m=processor&id=997&c=apple_s10_apl1w15_t8310
+            // 4nm N4: https://en.wikipedia.org/wiki/Apple_silicon#Apple_S3
+        case .s10: "4 nm (N4)"
 #endif
         case .unknown: "Unknown"
         @unknown default: "-"
