@@ -30,7 +30,7 @@ final class HardwareVM {
             
             for line in lines {
                 let trimmedLine = line.trimmingCharacters(in: .whitespaces)
-                s
+                
                 switch trimmedLine {
                 case let x where x.starts(with: "Model Name:"):
                     
