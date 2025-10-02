@@ -34,8 +34,11 @@ func parseAccessibilityInfo(from input: String) -> [String: String] {
         
         // Parse key-value pairs within the section
         if isInAccessibilitySection, let colonRange = trimmedLine.range(of: ":") {
-            let key = String(trimmedLine[..<colonRange.lowerBound]).trimmingCharacters(in: .whitespaces)
-            let value = String(trimmedLine[colonRange.upperBound...]).trimmingCharacters(in: .whitespaces)
+            let key = String(trimmedLine[..<colonRange.lowerBound])
+                .trimmingCharacters(in: .whitespaces)
+            
+            let value = String(trimmedLine[colonRange.upperBound...])
+                .trimmingCharacters(in: .whitespaces)
             
             result[key] = value
         }

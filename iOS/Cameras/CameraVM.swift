@@ -118,15 +118,11 @@ final class CameraVM {
             position: .front
         )
         
-        var devices: [Camera] = []
+        let allDevices = discoverySession.devices + discoverySession2.devices
         
-        for device in discoverySession.devices + discoverySession2.devices {
-            if let camera = parseDevice(device) {
-                devices.append(camera)
-            }
+        cameras = allDevices.compactMap {
+            parseDevice($0)
         }
-        
-        cameras = devices
         
         //        var maxResolution = CMVideoDimensions(width: 0, height: 0)
         //        var maxResolutionFrameRate = 0.0

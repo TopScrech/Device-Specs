@@ -16,14 +16,14 @@ final class MetricKitManager: NSObject, MXMetricManagerSubscriber {
     }
     
     func didReceive(_ payloads: [MXMetricPayload]) {
-        for payload in payloads {
-            print("Received metrics:", payload)
+        payloads.forEach {
+            print("Received metrics:", $0)
         }
     }
     
     func didReceive(_ diagnosticPayloads: [MXDiagnosticPayload]) {
-        for payload in diagnosticPayloads {
-            print("Received diagnostics:", payload)
+        diagnosticPayloads.forEach {
+            print("Received diagnostics:", $0)
         }
     }
 }
