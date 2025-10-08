@@ -18,10 +18,6 @@ struct CurrentProcess: View {
                     .environment(vm)
             }
             
-            Section("Globally unique string") {
-                Text(vm.globallyUniqueString)
-            }
-            
             Section("Arguments") {
                 ForEach(vm.arguments, id: \.self) {
                     Text($0)

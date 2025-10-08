@@ -70,10 +70,6 @@ final class ProcessorVM {
         info.processIdentifier.description
     }
     
-    var globallyUniqueString: String {
-        info.globallyUniqueString
-    }
-    
     var arguments: [String] {
         info.arguments
     }
