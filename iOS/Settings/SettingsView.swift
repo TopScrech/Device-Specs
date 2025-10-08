@@ -8,12 +8,9 @@ struct SettingsView: View {
 #if canImport(Appearance)
             AppearanceSettings()
 #endif
-            
-#if DEBUG
             Section("Debug") {
                 Toggle("Status bar", isOn: $store.showStatusBar)
             }
-#endif
         }
         .navigationTitle("Settings")
     }
