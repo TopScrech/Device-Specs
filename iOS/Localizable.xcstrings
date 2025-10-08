@@ -596,23 +596,6 @@
         }
       }
     },
-    "Capacity in Wh" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Capaciteit in Wh"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ёмкость"
-          }
-        }
-      }
-    },
     "Cell Revision" : {
 
     },
