@@ -17,7 +17,7 @@ struct MemorySpecs: View {
                     .animation(.default, value: vm.freeRam)
             }
             
-            ListParam("SDRAM", param: vm.memoryType)
+            ListParam("Supported SDRAM", param: vm.memoryType)
             
             Section("Storage") {
                 ListParam("Total", param: vm.totalDisk)
