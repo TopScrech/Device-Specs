@@ -7,7 +7,7 @@
       "location" : "https://github.com/TopScrech/Appearance",
       "state" : {
         "branch" : "main",
-        "revision" : "ffd455ead37ffdf6809381083b85192a909eb001"
+        "revision" : "1a8f0bc05a667f1079c9f7b3b31840f60abd7db5"
       }
     },
     {
@@ -25,7 +25,7 @@
       "location" : "https://github.com/TopScrech/HealthyKit",
       "state" : {
         "branch" : "main",
-        "revision" : "9ddd124401dc1c1426924cfb119feebd1e8a24f6"
+        "revision" : "60b0b2dedb75ff5b781a479a42ab30741fc45bf7"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/TopScrech/LaunchAtLogin",
       "state" : {
         "branch" : "main",
-        "revision" : "2bf099bd06f8f8de4989cbb7dfd721edd585bb0b"
+        "revision" : "b6d02bbe76f22ce9c722ec263939edd01ea8f670"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/TopScrech/MailCover",
       "state" : {
         "branch" : "main",
-        "revision" : "c33771592360b836f114ebe32ad660590c7afc28"
+        "revision" : "6be9a338e65877e2ecdb87111afc92e6902daf21"
       }
     },
     {
@@ -61,7 +61,7 @@
       "location" : "https://github.com/TopScrech/ScrechCam",
       "state" : {
         "branch" : "main",
-        "revision" : "c9617f3f3712a35575d720f6b68fed17f06196f2"
+        "revision" : "72bf5de826a0a1e50d24779096115c8b98108a31"
       }
     },
     {
@@ -70,7 +70,7 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "28f4be08c8801f324b0c6e107edf5982291296f6"
+        "revision" : "8ac8f70352b4a4b699ea48412e2692e583bb5354"
       }
     }
   ],
