@@ -112,7 +112,7 @@ final class DeviceVM {
             return nil
         }
         
-        let internalName = String(cString: model)
+        let internalName = String.decodeCString(model)
         
         return internalName
     }

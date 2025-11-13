@@ -75,9 +75,11 @@ final class RouterVM {
                     
                     if si.sin_addr.s_addr == INADDR_ANY {
                         return "default"
-                    } else {
-                        return String(cString: inet_ntoa(si.sin_addr), encoding: .ascii)
+                    } else if let pointer = inet_ntoa(si.sin_addr) {
+                        return String.decodeCString(pointer)
                     }
+                    
+                    return nil
                 }
                 
                 let sa = addr.withMemoryRebound(to: sockaddr.self, capacity: 1) {

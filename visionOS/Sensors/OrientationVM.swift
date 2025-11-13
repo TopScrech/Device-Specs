@@ -44,6 +44,7 @@ final class OrientationVM {
         }
     }
     
+    @MainActor
     deinit {
         motionManager.stopDeviceMotionUpdates()
     }

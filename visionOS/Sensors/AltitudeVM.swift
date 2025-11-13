@@ -19,7 +19,8 @@ class AltitudeVM: NSObject {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
     }
-        
+    
+    @MainActor
     deinit {
         locationManager.stopUpdatingLocation()
     }

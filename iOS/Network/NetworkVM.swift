@@ -46,7 +46,7 @@ final class NetworkVM {
                 continue
             }
             
-            let ifaName = String(cString: interface.ifa_name)
+            let ifaName = String.decodeCString(interface.ifa_name)
             
             guard ifaName == "en0" else {
                 ptr = interface.ifa_next
@@ -63,7 +63,7 @@ final class NetworkVM {
                 nil, socklen_t(0), NI_NUMERICHOST
             )
             
-            networkInterface = String(cString: hostname)
+            networkInterface = String.decodeCString(hostname)
             
             // Subnet mask
             if let netmask = interface.ifa_netmask {
@@ -76,7 +76,7 @@ final class NetworkVM {
                     nil, socklen_t(0), NI_NUMERICHOST
                 )
                 
-                subnetMask = String(cString: netmaskHost)
+                subnetMask = String.decodeCString(netmaskHost)
             }
             
             // Router IP (gateway)
@@ -90,7 +90,7 @@ final class NetworkVM {
                     nil, socklen_t(0), NI_NUMERICHOST
                 )
                 
-                destinationIpAddress = String(cString: dstHostname)
+                destinationIpAddress = String.decodeCString(dstHostname)
             }
             
             ptr = interface.ifa_next

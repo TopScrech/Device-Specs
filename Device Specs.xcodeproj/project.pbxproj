@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F304E9122EC6914C0069A73D /* decodeCString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E9112EC6914C0069A73D /* decodeCString.swift */; };
+		F304E9132EC691880069A73D /* decodeCString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E9112EC6914C0069A73D /* decodeCString.swift */; };
+		F304E9142EC691880069A73D /* decodeCString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E9112EC6914C0069A73D /* decodeCString.swift */; };
+		F304E9152EC691880069A73D /* decodeCString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E9112EC6914C0069A73D /* decodeCString.swift */; };
+		F304E9162EC691880069A73D /* decodeCString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304E9112EC6914C0069A73D /* decodeCString.swift */; };
 		F30B51AE2E1E9CDE0041433B /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCCF2C944B5000F5E174 /* AppContainer.swift */; };
 		F30B51AF2E1E9CE80041433B /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FBCCF2C944B5000F5E174 /* AppContainer.swift */; };
 		F30B51B52E1E9E6D0041433B /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC4D2C67B985008CD17B /* DeviceInfo.swift */; };
@@ -630,6 +635,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F304E9112EC6914C0069A73D /* decodeCString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decodeCString.swift; sourceTree = "<group>"; };
 		F31212CB2E548CC0004CC672 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F31212D12E548CEB004CC672 /* AppearanceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSettings.swift; sourceTree = "<group>"; };
 		F31212DD2E548D00004CC672 /* ValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueStore.swift; sourceTree = "<group>"; };
@@ -1276,6 +1282,7 @@
 				F36F803A2CA170870007F120 /* Localizable.xcstrings */,
 				F3E7EC4E2C67B985008CD17B /* HomeView.swift */,
 				F346B00C2E1DF3EE00E56259 /* HomeViewTestLink.swift */,
+				F304E9112EC6914C0069A73D /* decodeCString.swift */,
 				F389A6D92CA36AA600FF670F /* Warnings */,
 				F3D1E7AF2C9D5D96000C81FF /* SpecsButton.swift */,
 				F3D1E7982C9C8444000C81FF /* SpecsLink.swift */,
@@ -1915,6 +1922,7 @@
 				F3ECFE3D2CA53AED00E72D41 /* Voltage.swift in Sources */,
 				F36F801C2CA0D52F0007F120 /* ColorTestList.swift in Sources */,
 				F346B0042E1DDDDA00E56259 /* FoundationModelsSupport.swift in Sources */,
+				F304E9162EC691880069A73D /* decodeCString.swift in Sources */,
 				F36F80102CA0D4DE0007F120 /* MagneticVM.swift in Sources */,
 				F36F80112CA0D4DE0007F120 /* MagneticFieldData.swift in Sources */,
 				F36F80032CA0D4B90007F120 /* ProcessorVM.swift in Sources */,
@@ -1992,6 +2000,7 @@
 				F3F85EAB2C948A5200AE0A1D /* DisplayVM.swift in Sources */,
 				F3B709C62CA2C5E3006ECAD1 /* LocaleVM.swift in Sources */,
 				F3ECFE0C2CA4C09200E72D41 /* InstructionSet.swift in Sources */,
+				F304E9132EC691880069A73D /* decodeCString.swift in Sources */,
 				F3291C642CAA0CFB00A15CAE /* WaterResistanceDescription.swift in Sources */,
 				F33FEE7B2C9848D000214288 /* BatteryVM.swift in Sources */,
 				F3D1E7BC2C9D6A9C000C81FF /* MagneticField.swift in Sources */,
@@ -2056,6 +2065,7 @@
 				F3D1E78A2C9C12C2000C81FF /* SystemSpecs.swift in Sources */,
 				F31F08C32D2A79B500B156EC /* AppleIntelligenceSupport.swift in Sources */,
 				F30B51AE2E1E9CDE0041433B /* AppContainer.swift in Sources */,
+				F304E9142EC691880069A73D /* decodeCString.swift in Sources */,
 				F3ECFDDE2CA4B0D000E72D41 /* MaxClockSpeed.swift in Sources */,
 				F3ECFE0B2CA4C09200E72D41 /* InstructionSet.swift in Sources */,
 				F3291C3B2CA9BCE200A15CAE /* FontVM.swift in Sources */,
@@ -2179,6 +2189,7 @@
 				F31212D42E548CEB004CC672 /* AppearanceSettings.swift in Sources */,
 				F3B709D02CA2C912006ECAD1 /* VolumeSlider.swift in Sources */,
 				F351EB332CC197CF001F424F /* ClockView.swift in Sources */,
+				F304E9122EC6914C0069A73D /* decodeCString.swift in Sources */,
 				F3B709E92CA2F683006ECAD1 /* FontList.swift in Sources */,
 				F3D1E7972C9C5A0E000C81FF /* Camera.swift in Sources */,
 				F3D1E7A02C9CC2AE000C81FF /* CameraFormats.swift in Sources */,
@@ -2247,6 +2258,7 @@
 				F3ECFE092CA4C09200E72D41 /* InstructionSet.swift in Sources */,
 				F3F85EE52C957D5900AE0A1D /* ColorView.swift in Sources */,
 				F3291C552CAA02F200A15CAE /* BluetoothVersion.swift in Sources */,
+				F304E9152EC691880069A73D /* decodeCString.swift in Sources */,
 				F3F85F032C9587C400AE0A1D /* NetworkVM.swift in Sources */,
 				F3ECFE302CA53AE200E72D41 /* BatteryCapacity.swift in Sources */,
 				F3291C282CA99CA000A15CAE /* WarningSection.swift in Sources */,
