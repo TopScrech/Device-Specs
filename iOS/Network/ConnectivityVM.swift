@@ -23,38 +23,33 @@ final class ConnectivityVM {
         let queue = DispatchQueue(label: "Monitor")
         monitor.start(queue: queue)
         
-        monitor.pathUpdateHandler = { [weak self] path in
-            Task {
-                await self?.getWiFiInfo()
-            }
-            
-            guard let self else {
-                return
-            }
-            
-            switch true {
-            case path.usesInterfaceType(.wifi):
-                self.type = "Wi-Fi"
+        monitor.pathUpdateHandler = { path in
+            Task { @MainActor in
+                await self.getWiFiInfo()
                 
-            case path.usesInterfaceType(.cellular):
-                self.type = "Cellular"
-                
-            case path.usesInterfaceType(.wiredEthernet):
-                self.type = "Wired Ethernet"
-                
-            case path.usesInterfaceType(.loopback):
-                self.type = "Loopback Interface"
-                
-            case path.usesInterfaceType(.other):
-                self.type = "Other Interface"
-                
-            default:
-                self.type = "No Interface"
+                switch true {
+                case path.usesInterfaceType(.wifi):
+                    self.type = "Wi-Fi"
+                    
+                case path.usesInterfaceType(.cellular):
+                    self.type = "Cellular"
+                    
+                case path.usesInterfaceType(.wiredEthernet):
+                    self.type = "Wired Ethernet"
+                    
+                case path.usesInterfaceType(.loopback):
+                    self.type = "Loopback Interface"
+                    
+                case path.usesInterfaceType(.other):
+                    self.type = "Other Interface"
+                    
+                default:
+                    self.type = "No Interface"
+                }
             }
         }
     }
     
-    @MainActor
     func getWiFiInfo() async {
         let network = await withCheckedContinuation { continuation in
             NEHotspotNetwork.fetchCurrent { network in
