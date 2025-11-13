@@ -12,6 +12,7 @@ final class PressureVM {
         fetchPressureData()
     }
     
+    @MainActor
     deinit {
         altimeter.stopRelativeAltitudeUpdates()
     }

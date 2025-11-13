@@ -11,6 +11,7 @@ final class MetricKitManager: NSObject, MXMetricManagerSubscriber {
         MXMetricManager.shared.add(self)
     }
     
+    @MainActor
     deinit {
         MXMetricManager.shared.remove(self)
     }

@@ -1,13 +1,29 @@
 import ScrechKit
 import DeviceKit
 
+fileprivate let identifier: String = {
+    var systemInfo = utsname()
+    uname(&systemInfo)
+    let mirror = Mirror(reflecting: systemInfo.machine)
+    
+    let identifier = mirror.children.reduce("") { identifier, element in
+        guard let value = element.value as? Int8, value != 0 else {
+            return identifier
+        }
+        
+        return identifier + String(UnicodeScalar(UInt8(value)))
+    }
+    
+    return identifier
+}()
+
 struct DeviceSpecs: View {
     @Environment(DeviceVM.self) private var vm
     
     var body: some View {
         List {
             ListParam("Device", param: vm.deviceIdentifier)
-            ListParam("Identifier", param: Device.identifier)
+            ListParam("Identifier", param: identifier)
             ListParam("Name", param: vm.deviceName)
             ListParam("Release date", param: vm.releaseDate)
             ListParam("Internal name", param: vm.internalName)
@@ -18,10 +34,6 @@ struct DeviceSpecs: View {
                 Text(vm.vandorId)
                     .secondary()
             }
-            
-            //#if !os(watchOS) && !os(visionOS)
-            //            AdvertisingIdentifier()
-            //#endif
             
             Section {
                 ListParam("Thermal state", param: vm.thermalState)

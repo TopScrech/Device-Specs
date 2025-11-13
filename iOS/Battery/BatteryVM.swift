@@ -29,6 +29,7 @@ final class BatteryVM {
     }
     
     // Disable battery monitoring
+    @MainActor
     deinit {
 #if os(watchOS)
         WKInterfaceDevice.current().isBatteryMonitoringEnabled = false

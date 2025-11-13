@@ -79,3 +79,5 @@ final class ConnectivityVM {
         }
     }
 }
+
+extension NEHotspotNetwork: @unchecked @retroactive Sendable {}

@@ -13,6 +13,7 @@ final class MagneticVM: NSObject {
         startMagnetometerUpdates()
     }
     
+    @MainActor
     deinit {
         stopMagnetometerUpdates()
     }

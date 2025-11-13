@@ -17,6 +17,7 @@ final class ProximityVM {
         )
     }
     
+    @MainActor
     deinit {
         UIDevice.current.isProximityMonitoringEnabled = false
         

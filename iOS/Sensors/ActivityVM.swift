@@ -1,6 +1,6 @@
 #if canImport(CoreMotion)
 import SwiftUI
-import CoreMotion
+@preconcurrency import CoreMotion
 
 @Observable
 final class ActivityVM {

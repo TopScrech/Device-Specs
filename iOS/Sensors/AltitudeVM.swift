@@ -34,6 +34,7 @@ class AltitudeVM: NSObject {
         }
     }
     
+    @MainActor
     deinit {
         altimeter.stopRelativeAltitudeUpdates()
         locationManager.stopUpdatingLocation()

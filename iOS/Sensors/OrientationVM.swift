@@ -86,6 +86,7 @@ final class OrientationVM {
         }
     }
     
+    @MainActor
     deinit {
         motionManager.stopDeviceMotionUpdates()
         UIDevice.current.endGeneratingDeviceOrientationNotifications()

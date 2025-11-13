@@ -60,11 +60,13 @@ final class AuthVM {
             .deviceOwnerAuthenticationWithBiometrics,
             localizedReason: "This is a security check reason."
         ) { success, error in
-            if success {
-                self.isAuthenticated = true
-            } else {
-                self.errorMessage = error?.localizedDescription ?? "Unknown error"
-                self.alertError = true
+            Task { @MainActor in
+                if success {
+                    self.isAuthenticated = true
+                } else {
+                    self.errorMessage = error?.localizedDescription ?? "Unknown error"
+                    self.alertError = true
+                }
             }
         }
 #endif
