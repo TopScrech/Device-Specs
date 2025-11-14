@@ -49,8 +49,8 @@ final class SystemVM {
         }
         
         return String(build[range])
-            .replacingOccurrences(of: "(Build ", with: "")
-            .replacingOccurrences(of: ")", with: "")
+            .replacing("(Build ", with: "")
+            .replacing(")", with: "")
     }
     
     func fetchSystemUptime() {
