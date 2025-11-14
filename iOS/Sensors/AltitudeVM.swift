@@ -4,6 +4,7 @@ import CoreMotion
 
 @Observable
 class AltitudeVM: NSObject {
+    private var altimeter = CMAltimeter()
     private var locationManager = CLLocationManager()
     
     private(set) var relativeAltitude = "0.0 m"
@@ -12,6 +13,7 @@ class AltitudeVM: NSObject {
     override init() {
         super.init()
         setupLocationManager()
+        fetchRelativeAltitude()
     }
     
     private func setupLocationManager() {
@@ -20,8 +22,21 @@ class AltitudeVM: NSObject {
         locationManager.startUpdatingLocation()
     }
     
+    func fetchRelativeAltitude() {
+        if CMAltimeter.isRelativeAltitudeAvailable() {
+            altimeter.startRelativeAltitudeUpdates(to: .main) { [weak self] data, _ in
+                if let data {
+                    let relativeAlt = data.relativeAltitude.doubleValue
+                    
+                    self?.relativeAltitude = String(format: "%.2f m", relativeAlt)
+                }
+            }
+        }
+    }
+    
     @MainActor
     deinit {
+        altimeter.stopRelativeAltitudeUpdates()
         locationManager.stopUpdatingLocation()
     }
 }
