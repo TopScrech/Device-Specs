@@ -14,7 +14,7 @@ struct LocaleList: View {
                     Spacer()
                     
                     VStack {
-                        ForEach(vm.preferredLanguages, id: \.self) {
+                        ForEach(vm.preferredLangs, id: \.self) {
                             Text($0)
                         }
                     }
