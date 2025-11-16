@@ -95,7 +95,9 @@ final class BatteryVM {
     private func setupNotifications() {
 #if os(watchOS)
         batteryTimer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { [weak self] _ in
-            self?.fetchBatteryInfo()
+            Task { @MainActor in
+                self?.fetchBatteryInfo()
+            }
         }
 #else
         // Observe battery level changes
