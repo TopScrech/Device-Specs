@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct AccessibilityItem: View {
     private let param: AccessibilityParam
@@ -8,7 +8,7 @@ struct AccessibilityItem: View {
     }
     
     var body: some View {
-        ListParam(param.name, param: param.text)
+        LabeledContent(param.name, value: param.text)
     }
 }
 

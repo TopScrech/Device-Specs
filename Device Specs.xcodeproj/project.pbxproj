@@ -382,6 +382,11 @@
 		F3D1E7C02C9D6AC8000C81FF /* MagneticVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7BE2C9D6AC8000C81FF /* MagneticVM.swift */; };
 		F3D1E7C32C9D6B13000C81FF /* MagneticFieldData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7C12C9D6B13000C81FF /* MagneticFieldData.swift */; };
 		F3D1E7C52C9D8041000C81FF /* MagneticFieldData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E7C12C9D6B13000C81FF /* MagneticFieldData.swift */; };
+		F3E171062ECF11D50041F842 /* LabeledContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E171052ECF11D50041F842 /* LabeledContent.swift */; };
+		F3E171072ECF11D50041F842 /* LabeledContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E171052ECF11D50041F842 /* LabeledContent.swift */; };
+		F3E171082ECF11D50041F842 /* LabeledContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E171052ECF11D50041F842 /* LabeledContent.swift */; };
+		F3E171092ECF11D50041F842 /* LabeledContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E171052ECF11D50041F842 /* LabeledContent.swift */; };
+		F3E1710A2ECF11D50041F842 /* LabeledContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E171052ECF11D50041F842 /* LabeledContent.swift */; };
 		F3E7EC3E2C676A13008CD17B /* DeviceSpecsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC3D2C676A13008CD17B /* DeviceSpecsApp.swift */; };
 		F3E7EC422C676A14008CD17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E7EC412C676A14008CD17B /* Assets.xcassets */; };
 		F3E7EC762C67B985008CD17B /* TestList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC6C2C67B985008CD17B /* TestList.swift */; };
@@ -744,6 +749,7 @@
 		F3D1E7BB2C9D6A9C000C81FF /* MagneticField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagneticField.swift; sourceTree = "<group>"; };
 		F3D1E7BE2C9D6AC8000C81FF /* MagneticVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagneticVM.swift; sourceTree = "<group>"; };
 		F3D1E7C12C9D6B13000C81FF /* MagneticFieldData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagneticFieldData.swift; sourceTree = "<group>"; };
+		F3E171052ECF11D50041F842 /* LabeledContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledContent.swift; sourceTree = "<group>"; };
 		F3E7EC3A2C676A13008CD17B /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E7EC3D2C676A13008CD17B /* DeviceSpecsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSpecsApp.swift; sourceTree = "<group>"; };
 		F3E7EC412C676A14008CD17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1269,6 +1275,7 @@
 			isa = PBXGroup;
 			children = (
 				F3E7EC3D2C676A13008CD17B /* DeviceSpecsApp.swift */,
+				F3E171052ECF11D50041F842 /* LabeledContent.swift */,
 				F3EA491E2D7D821000887109 /* MetricKitManager.swift */,
 				F31212DD2E548D00004CC672 /* ValueStore.swift */,
 				F3187A512C898B40008FB911 /* Nav */,
@@ -1915,6 +1922,7 @@
 				F36F80182CA0D51B0007F120 /* TestList.swift in Sources */,
 				F3B709B22CA2BE84006ECAD1 /* Timezone.swift in Sources */,
 				F36F800D2CA0D4DE0007F120 /* ActivityVM.swift in Sources */,
+				F3E171092ECF11D50041F842 /* LabeledContent.swift in Sources */,
 				F31212D02E548CC0004CC672 /* SettingsView.swift in Sources */,
 				F36F800E2CA0D4DE0007F120 /* LocationVM.swift in Sources */,
 				F36F800F2CA0D4DE0007F120 /* AltitudeVM.swift in Sources */,
@@ -1950,6 +1958,7 @@
 				F351EB322CC197CF001F424F /* ClockView.swift in Sources */,
 				F3CCB1FA2CAFC228000F8207 /* GPUFamilyModel.swift in Sources */,
 				F3F85EB92C948D4300AE0A1D /* SensorsView.swift in Sources */,
+				F3E171082ECF11D50041F842 /* LabeledContent.swift in Sources */,
 				F3291C3A2CA9BCE200A15CAE /* FontVM.swift in Sources */,
 				F3B709E32CA2F1DC006ECAD1 /* TechNode.swift in Sources */,
 				F39404212D37DE17000B9221 /* RouterVM.swift in Sources */,
@@ -2054,6 +2063,7 @@
 				F346B0022E1DDDDA00E56259 /* FoundationModelsSupport.swift in Sources */,
 				F3C3BDE82C92DCA300BF91EE /* DisplaySpecs.swift in Sources */,
 				F3B709CA2CA2C853006ECAD1 /* Volume.swift in Sources */,
+				F3E171062ECF11D50041F842 /* LabeledContent.swift in Sources */,
 				F36FBC652C9353FF00F5E174 /* ProcessorSpecs.swift in Sources */,
 				F3B709C02CA2C31E006ECAD1 /* TimezoneVM.swift in Sources */,
 				F3C3BDE42C92DBFB00BF91EE /* BatteryVM.swift in Sources */,
@@ -2163,6 +2173,7 @@
 				F3ECFDED2CA4B3E500E72D41 /* L1 Cache.swift in Sources */,
 				F3ECFE0A2CA4C09200E72D41 /* InstructionSet.swift in Sources */,
 				F3E7EC842C67B985008CD17B /* UWBTestView.swift in Sources */,
+				F3E171072ECF11D50041F842 /* LabeledContent.swift in Sources */,
 				F3E7EC852C67B985008CD17B /* SensorsSpecs.swift in Sources */,
 				F31549032CAADBBB004CE26E /* CurrentProcessEnvironment.swift in Sources */,
 				F3291C4A2CA9BF2B00A15CAE /* FontCustomization.swift in Sources */,
@@ -2278,6 +2289,7 @@
 				F3F85EF72C95854E00AE0A1D /* ProcessorSpecs.swift in Sources */,
 				F3F85EF82C95854E00AE0A1D /* CPUUsageChart.swift in Sources */,
 				F3F85F062C9588BE00AE0A1D /* NetworkSpecs.swift in Sources */,
+				F3E1710A2ECF11D50041F842 /* LabeledContent.swift in Sources */,
 				F3F85EEF2C95801D00AE0A1D /* AccessibilityItem.swift in Sources */,
 				F3B709B82CA2C187006ECAD1 /* KnownTimeZones.swift in Sources */,
 				F3ECFE212CA536FD00E72D41 /* ReleaseDate.swift in Sources */,

@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct Timezone: View {
     private var vm = TimezoneVM()
@@ -7,20 +7,20 @@ struct Timezone: View {
         List {
             ClockView()
             
-            ListParam("Time zone", param: vm.timeZone)
-            ListParam("Abbreviation", param: vm.abbreviation)
-            ListParam("Seconds from GMT", param: vm.secondsFromGMT)
+            LabeledContent("Time zone", value: vm.timeZone)
+            LabeledContent("Abbreviation", value: vm.abbreviation)
+            LabeledContent("Seconds from GMT", value: vm.secondsFromGMT)
             
-            ListParam("Time zone data version", param: vm.timeZoneDataVersion)
-            ListParam("Autoupdating current", param: vm.autoupdatingCurrent)
+            LabeledContent("Time zone data version", value: vm.timeZoneDataVersion)
+            LabeledContent("Autoupdating current", value: vm.autoupdatingCurrent)
             
             if vm.isDaylightSavingTime {
                 Section("Daylight saving time") {
                     if let date = vm.nextDaylightSavingTimeTransition?.formatted() {
-                        ListParam("Next transition", param: date)
+                        LabeledContent("Next transition", value: date)
                     }
                     
-                    ListParam("Time offset", param: vm.daylightSavingTimeOffset)
+                    LabeledContent("Time offset", value: vm.daylightSavingTimeOffset)
                 }
             }
             
@@ -28,7 +28,7 @@ struct Timezone: View {
                 NavigationLink {
                     KnownTimeZones(vm.knownTimeZones)
                 } label: {
-                    ListParam("Known time zones", param: vm.knownTimeZones.count.description)
+                    LabeledContent("Known time zones", value: vm.knownTimeZones.count.description)
                 }
             }
         }

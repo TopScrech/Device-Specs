@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct NetworkSpecs: View {
     @State private var network = NetworkVM()
@@ -6,20 +6,20 @@ struct NetworkSpecs: View {
     
     var body: some View {
         List {
-            ListParam("Public IP address", param: network.publicIp)
+            LabeledContent("Public IP address", value: network.publicIp)
             
-            ListParam("Network interface", param: network.networkInterface)
+            LabeledContent("Network interface", value: network.networkInterface)
             
-            ListParam("Router", param: network.destinationIpAddress)
+            LabeledContent("Router", value: network.destinationIpAddress)
             
             if let router = RouterVM().fetch() {
-                ListParam("Router", param: router)
+                LabeledContent("Router", value: router)
             }
             
-            ListParam("Subnet mask", param: network.subnetMask)
+            LabeledContent("Subnet mask", value: network.subnetMask)
             
             Section {
-                ListParam("Network type", param: connectivity.type)
+                LabeledContent("Network type", value: connectivity.type)
             }
         }
         .navigationTitle("Network")

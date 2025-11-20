@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct SensorsView: View {
     private var orientation = OrientationVM()
@@ -11,34 +11,34 @@ struct SensorsView: View {
             LocationSensors()
             
             Section("Rotation") {
-                ListParam("Roll", param: orientation.roll)
-                ListParam("Pitch", param: orientation.pitch)
-                ListParam("Yaw", param: orientation.yaw)
+                LabeledContent("Roll", value: orientation.roll)
+                LabeledContent("Pitch", value: orientation.pitch)
+                LabeledContent("Yaw", value: orientation.yaw)
 #if os(iOS)
-                ListParam("Orientation", param: orientation.orientation)
+                LabeledContent("Orientation", value: orientation.orientation)
 #endif
             }
             
             Section("Acceleration") {
-                ListParam("X Axis", param: orientation.x)
-                ListParam("Y Axis", param: orientation.y)
-                ListParam("Z Axis", param: orientation.z)
+                LabeledContent("X Axis", value: orientation.x)
+                LabeledContent("Y Axis", value: orientation.y)
+                LabeledContent("Z Axis", value: orientation.z)
             }
             
             Section("Altimeter") {
                 if let pressure = pressure.pressureKilo {
-                    ListParam("Pressure", param: pressure)
+                    LabeledContent("Pressure", value: pressure)
                 }
                 
-                ListParam("Relative altitude", param: altitude.relativeAltitude)
-                ListParam("Absolute altitude", param: altitude.absoluteAltitude)
+                LabeledContent("Relative altitude", value: altitude.relativeAltitude)
+                LabeledContent("Absolute altitude", value: altitude.absoluteAltitude)
             }
             
             MagneticFieldData()
             
             Section("Motion coprocessor") {
-                ListParam("Activity", param: activity.activity)
-                ListParam("Confidence", param: activity.confidence)
+                LabeledContent("Activity", value: activity.activity)
+                LabeledContent("Confidence", value: activity.confidence)
             }
         }
         .navigationTitle("Sensors")

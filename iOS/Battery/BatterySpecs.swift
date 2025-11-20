@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 #warning("Add capacity and cycle fetcher")
 //BatteryCycleCount = How many Times your Battery has been charged
@@ -25,11 +25,11 @@ struct BatterySpecs: View {
             
             BatteryState()
             
-            ListParam("Low power mode", param: vm.lowPowerMode)
+            LabeledContent("Low power mode", value: vm.lowPowerMode)
             
-            ListParam("Voltage", param: vm.voltage)
+            LabeledContent("Voltage", value: vm.voltage)
             
-            ListParam("Capacity", param: vm.capacity)
+            LabeledContent("Capacity", value: vm.capacity)
         }
         .navigationTitle("Battery")
         .environment(vm)

@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 import DeviceKit
 
 fileprivate let identifier: String = {
@@ -22,11 +22,11 @@ struct DeviceSpecs: View {
     
     var body: some View {
         List {
-            ListParam("Device", param: vm.deviceIdentifier)
-            ListParam("Identifier", param: identifier)
-            ListParam("Name", param: vm.deviceName)
-            ListParam("Release date", param: vm.releaseDate)
-            ListParam("Internal name", param: vm.internalName)
+            LabeledContent("Device", value: vm.deviceIdentifier)
+            LabeledContent("Identifier", value: identifier)
+            LabeledContent("Name", value: vm.deviceName)
+            LabeledContent("Release date", value: vm.releaseDate)
+            LabeledContent("Internal name", value: vm.internalName)
             
             VStack(alignment: .leading, spacing: 5) {
                 Text("Identifier for vendor")
@@ -36,31 +36,31 @@ struct DeviceSpecs: View {
             }
             
             Section {
-                ListParam("Thermal state", param: vm.thermalState)
+                LabeledContent("Thermal state", value: vm.thermalState)
             }
             
             Section("Capabilities") {
-                ListParam("Bluetooth", param: vm.bluetoothVersion)
+                LabeledContent("Bluetooth", value: vm.bluetoothVersion)
 #if !os(tvOS)
                 AuthTest()
 #endif
                 
 #if os(iOS)
-                ListParam("Wireless Charging", param: Device.current.supportsWirelessCharging ? "Yes" : "No")
-                ListParam("5G", param: Device.current.has5gSupport ? "Yes" : "No")
-                ListParam("Dynamic Island", param: Device.current.hasDynamicIsland ? "Yes" : "No")
-                ListParam("Dock connector", param: Device.current.hasUSBCConnectivity ? "USB-C" : "Lightning")
-                ListParam("Force Touch", param: vm.isForceTouchAvailable)
+                LabeledContent("Wireless Charging", value: Device.current.supportsWirelessCharging ? "Yes" : "No")
+                LabeledContent("5G", value: Device.current.has5gSupport ? "Yes" : "No")
+                LabeledContent("Dynamic Island", value: Device.current.hasDynamicIsland ? "Yes" : "No")
+                LabeledContent("Dock connector", value: Device.current.hasUSBCConnectivity ? "USB-C" : "Lightning")
+                LabeledContent("Force Touch", value: vm.isForceTouchAvailable)
 #endif
-                ListParam("Ultra Wideband", param: vm.isUltraWidebandAvailable)
+                LabeledContent("Ultra Wideband", value: vm.isUltraWidebandAvailable)
             }
             
             Section("Water resistance") {
-                ListParam("Rating", param: vm.waterResistance)
+                LabeledContent("Rating", value: vm.waterResistance)
 #if os(watchOS)
-                ListParam("System rating", param: vm.waterResistanceSystemRating)
+                LabeledContent("System rating", value: vm.waterResistanceSystemRating)
 #endif
-                ListParam("Description", param: vm.waterResistanceDescription)
+                LabeledContent("Description", value: vm.waterResistanceDescription)
             }
 #if os(watchOS)
             DeviceWatchInfo()

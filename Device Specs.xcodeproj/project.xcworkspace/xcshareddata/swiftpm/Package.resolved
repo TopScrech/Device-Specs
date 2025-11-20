@@ -25,7 +25,7 @@
       "location" : "https://github.com/TopScrech/HealthyKit",
       "state" : {
         "branch" : "main",
-        "revision" : "60b0b2dedb75ff5b781a479a42ab30741fc45bf7"
+        "revision" : "e6b19bcd26e8816e279489925f129645dde9c97b"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/TopScrech/MailCover",
       "state" : {
         "branch" : "main",
-        "revision" : "6be9a338e65877e2ecdb87111afc92e6902daf21"
+        "revision" : "1a3afc2b001ddf2118d340f046ac42fba41d05cd"
       }
     },
     {
@@ -70,7 +70,7 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "d4e6479bfe3f17dadb6d5ae55ad2e6cc1cbfc5a1"
+        "revision" : "6cb3d04aa0c7e2686c5356537c1aca0cc2fe6279"
       }
     }
   ],

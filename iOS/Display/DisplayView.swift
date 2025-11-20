@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 import DeviceKit
 
 struct DisplaySpecs: View {
@@ -12,24 +12,24 @@ struct DisplaySpecs: View {
     
     var body: some View {
         List {
-            ListParam("Screen resolution", param: vm.resolution)
+            LabeledContent("Screen resolution", value: vm.resolution)
             
-            ListParam("Screen size", param: vm.diagonalSize)
+            LabeledContent("Screen size", value: vm.diagonalSize)
             
-            ListParam("Aspect ratio", param: vm.aspectRatio)
+            LabeledContent("Aspect ratio", value: vm.aspectRatio)
             
-            ListParam("Pixel density", param: vm.dencity)
+            LabeledContent("Pixel density", value: vm.dencity)
             
 #if !os(watchOS)
-            ListParam("Refresh rate", param: vm.refreshRate)
+            LabeledContent("Refresh rate", value: vm.refreshRate)
 #endif
             
 #if os(iOS)
-            ListParam("Rounded corners", param: vm.isRounded)
+            LabeledContent("Rounded corners", value: vm.isRounded)
 #endif
             
             Section {
-                ListParam("Brightness", param: "\(Int(brightness))%")
+                LabeledContent("Brightness", value: "\(Int(brightness))%")
                 
 #if !os(watchOS) && !EXTENSION
                 Slider(value: $brightness, in: 0...100, step: 1) {

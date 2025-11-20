@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct NetworkSpecs: View {
     @State private var network = NetworkVM()
@@ -6,51 +6,51 @@ struct NetworkSpecs: View {
     
     var body: some View {
         List {
-            ListParam("Public IP address", param: network.publicIp)
+            LabeledContent("Public IP address", value: network.publicIp)
             
-            ListParam("Network interface", param: network.networkInterface)
+            LabeledContent("Network interface", value: network.networkInterface)
             
-            ListParam("Destination IP address", param: network.destinationIpAddress)
+            LabeledContent("Destination IP address", value: network.destinationIpAddress)
             
             if let router = RouterVM().fetch() {
-                ListParam("Router", param: router)
+                LabeledContent("Router", value: router)
             }
             
-            ListParam("Subnet mask", param: network.subnetMask)
+            LabeledContent("Subnet mask", value: network.subnetMask)
             
             Section {
-                ListParam("Network type", param: connectivity.type)
+                LabeledContent("Network type", value: connectivity.type)
                 
                 if let ssid = connectivity.ssid {
-                    ListParam("SSID", param: ssid)
+                    LabeledContent("SSID", value: ssid)
                 }
                 
                 if let bssid = connectivity.bssid {
-                    ListParam("BSSID", param: bssid)
+                    LabeledContent("BSSID", value: bssid)
                 }
                 
                 if let signalStrength = connectivity.signalStrength {
-                    ListParam("Signal strength", param: String(format: "%.0f%%", signalStrength * 100))
+                    LabeledContent("Signal strength", value: String(format: "%.0f%%", signalStrength * 100))
                 }
                 
                 if let isSecure = connectivity.isSecure {
-                    ListParam("Secure network", param: isSecure ? "Yes" : "No")
+                    LabeledContent("Secure network", value: isSecure ? "Yes" : "No")
                 }
                 
                 if let didAutoJoin = connectivity.didAutoJoin {
-                    ListParam("Auto-joined", param: didAutoJoin ? "Yes" : "No")
+                    LabeledContent("Auto-joined", value: didAutoJoin ? "Yes" : "No")
                 }
                 
                 if let didJustJoin = connectivity.didJustJoin {
-                    ListParam("Just joined", param: didJustJoin ? "Yes" : "No")
+                    LabeledContent("Just joined", value: didJustJoin ? "Yes" : "No")
                 }
                 
                 if let isChosenHelper = connectivity.isChosenHelper {
-                    ListParam("Hotspot Helper", param: isChosenHelper ? "Yes" : "No")
+                    LabeledContent("Hotspot Helper", value: isChosenHelper ? "Yes" : "No")
                 }
                 
                 if let securityType = connectivity.securityType {
-                    ListParam("Security type", param: securityType)
+                    LabeledContent("Security type", value: securityType)
                 }
             }
         }

@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct SensorsView: View {
     private var location = LocationVM()
@@ -8,24 +8,24 @@ struct SensorsView: View {
     var body: some View {
         List {
             Section("Location") {
-                ListParam("Latitude", param: String(location.latitude))
-                ListParam("Longitude", param: String(location.longitude))
+                LabeledContent("Latitude", value: String(location.latitude))
+                LabeledContent("Longitude", value: String(location.longitude))
             }
             
             Section("Rotation") {
-                ListParam("Roll", param: orientation.roll)
-                ListParam("Pitch", param: orientation.pitch)
-                ListParam("Yaw", param: orientation.yaw)
+                LabeledContent("Roll", value: orientation.roll)
+                LabeledContent("Pitch", value: orientation.pitch)
+                LabeledContent("Yaw", value: orientation.yaw)
             }
             
             Section("Acceleration") {
-                ListParam("X Axis", param: orientation.x)
-                ListParam("Y Axis", param: orientation.y)
-                ListParam("Z Axis", param: orientation.z)
+                LabeledContent("X Axis", value: orientation.x)
+                LabeledContent("Y Axis", value: orientation.y)
+                LabeledContent("Z Axis", value: orientation.z)
             }
             
             Section("Altimeter") {
-                ListParam("Absolute altitude", param: altitude.absoluteAltitude)
+                LabeledContent("Absolute altitude", value: altitude.absoluteAltitude)
             }
         }
         .navigationTitle("Sensors")
