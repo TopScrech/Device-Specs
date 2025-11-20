@@ -21,7 +21,6 @@ final class MessagesVM {
             return
         }
         
-        let message = MSMessage()
         let layout = MSMessageTemplateLayout()
         layout.caption = "text"
         layout.subcaption = "text"
@@ -30,6 +29,8 @@ final class MessagesVM {
         layout.imageSubtitle = "Flufa"
         layout.trailingCaption = "11"
         layout.trailingSubcaption = "22"
+        
+        let message = MSMessage()
         message.layout = layout
         
         conversation.insert(message)
