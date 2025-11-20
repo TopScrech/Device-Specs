@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct FakeHomeView: View {
     @State private var nav = NavState()
