@@ -25,7 +25,7 @@
       "location" : "https://github.com/TopScrech/HealthyKit",
       "state" : {
         "branch" : "main",
-        "revision" : "e6b19bcd26e8816e279489925f129645dde9c97b"
+        "revision" : "268d1834a7b391051dffd6fac4da7ef286bf44c2"
       }
     },
     {
@@ -70,7 +70,7 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "3849439c0f9ca858d7ae6a90c2ca85fadbe33da9"
+        "revision" : "b035106b4465d6323db859f64008a926024c57aa"
       }
     }
   ],
