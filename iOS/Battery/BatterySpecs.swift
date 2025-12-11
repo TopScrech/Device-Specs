@@ -22,13 +22,10 @@ struct BatterySpecs: View {
     var body: some View {
         List {
             BatteryLevel()
-            
             BatteryState()
             
             LabeledContent("Low power mode", value: vm.lowPowerMode)
-            
             LabeledContent("Voltage", value: vm.voltage)
-            
             LabeledContent("Capacity", value: vm.capacity)
         }
         .navigationTitle("Battery")
