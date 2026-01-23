@@ -55,8 +55,6 @@ extension Device.CPU {
         case .s1P: "ARMv7" // https://phonedb.net/index.php?m=processor&id=680&c=apple_s1p_t8002
         case .s2: "ARMv7" // https://phonedb.net/index.php?m=processor&id=679&c=apple_s2_tmgk97_t8002
         case .s3: "ARMv7" // https://phonedb.net/index.php?m=processor&id=745&c=apple_s3_tmhu50_t8004
-        case .s2: "ARMv7" // https://phonedb.net/index.php?m=processor&id=679&c=apple_s2_tmgk97_t8002
-        case .s3: "ARMv7" // https://phonedb.net/index.php?m=processor&id=745&c=apple_s3_tmhu50_t8004
         case .s4: "ARMv8.3-A (A32, A64)" // https://phonedb.net/index.php?m=processor&id=771&c=apple_s4_tmjr65_t8006
         case .s5: "ARMv8-A (A32, A64)" // https://phonedb.net/index.php?m=processor&id=810&c=apple_s5_apl1w82_t8006
         case .s6: "ARMv8.4-A (A32, A64)" // https://phonedb.net/index.php?m=processor&id=899&c=apple_s6_tmli30_t8301__turks

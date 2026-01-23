@@ -23,33 +23,33 @@ struct FakeHomeView: View {
                 }
             }
             
-            ListParam("Device", icon: "info.circle", param: device.deviceIdentifier)
+            LabeledContent("Device", icon: "info.circle", value: device.deviceIdentifier)
             
-            ListParam("System", icon: "apple.terminal", param: system.operatingSystem)
+            LabeledContent("System", icon: "apple.terminal", value: system.operatingSystem)
             
-            ListParam("Display", icon: "iphone", param: display.diagonalSize)
+            LabeledContent("Display", icon: "iphone", value: display.diagonalSize)
             
-            ListParam("Processor", icon: "cpu", param: processor.cpuNameAndTechnology)
+            LabeledContent("Processor", icon: "cpu", value: processor.cpuNameAndTechnology)
             
-            ListParam("Memory", icon: "memorychip", param: memory.totalRamAndDisk)
+            LabeledContent("Memory", icon: "memorychip", value: memory.totalRamAndDisk)
             
-            ListParam("Battery", icon: "battery.100percent.bolt", param: battery.batteryLevel)
+            LabeledContent("Battery", icon: "battery.100percent.bolt", value: battery.batteryLevel)
                 .symbolRenderingMode(.multicolor)
             
-            ListParam("Network", icon: "network", param: connectivity.type)
+            LabeledContent("Network", icon: "network", value: connectivity.type)
             
-            ListParam("Camera", icon: "camera", param: camera.hasLidar)
+            LabeledContent("Camera", icon: "camera", value: camera.hasLidar)
             
-            ListParam("Sensors", icon: "barometer")
+            Label("Sensors", systemImage: "barometer")
             
-            ListParam("Accessibility", icon: "accessibility")
+            Label("Accessibility", systemImage: "accessibility")
             
             Section {
-                ListParam("Tests", icon: "testtube.2")
+                Label("Tests", systemImage: "testtube.2")
             }
             
             Section {
-                ListParam("About", icon: "questionmark.square.dashed", param: app.versionAndBuild)
+                LabeledContent("About", icon: "questionmark.square.dashed", value: app.versionAndBuild)
             }
         }
         .fullScreenCover(isPresented: $isPresented) {

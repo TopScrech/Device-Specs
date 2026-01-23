@@ -104,7 +104,7 @@ final class LocaleVM {
         loc.calendar.identifier.debugDescription
     }
     
-    var preferredLanguages: [String] {
+    var preferredLangs: [String] {
         Locale.preferredLanguages
     }
 }

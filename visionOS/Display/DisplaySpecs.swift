@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 import DeviceKit
 
 struct DisplaySpecs: View {
@@ -12,11 +12,11 @@ struct DisplaySpecs: View {
     var body: some View {
         List {
             if let ppi = Device.current.ppi?.description {
-                ListParam("PPI", param: ppi)
+                LabeledContent("PPI", value: ppi)
             }
             
             Section {
-                ListParam("Brightness", param: "\(Int(brightness))%")
+                LabeledContent("Brightness", value: "\(Int(brightness))%")
             }
         }
         .navigationTitle("Display")

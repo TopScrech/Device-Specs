@@ -1,12 +1,12 @@
-import ScrechKit
+import SwiftUI
 
 struct LocationSensors: View {
     @State private var location = LocationVM()
     
     var body: some View {
         Section("Location") {
-            ListParam("Latitude", param: String(format: "%.6f", location.latitude))
-            ListParam("Longitude", param: String(format: "%.6f", location.longitude))
+            LabeledContent("Latitude", value: String(format: "%.6f", location.latitude))
+            LabeledContent("Longitude", value: String(format: "%.6f", location.longitude))
             
             HStack {
                 Text("True heading")
@@ -42,7 +42,7 @@ struct LocationSensors: View {
                     .secondary()
             }
             
-            ListParam("Heading accuracy", param: String(format: "%.2f", location.headingAccuracy) + "°")
+            LabeledContent("Heading accuracy", value: String(format: "%.2f", location.headingAccuracy) + "°")
         }
     }
 }

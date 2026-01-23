@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct SystemSpecs: View {
     @Environment(SystemVM.self) private var vm
@@ -8,8 +8,8 @@ struct SystemSpecs: View {
     var body: some View {
         List {
             Section {
-                ListParam("Operating system", param: vm.operatingSystem)
-                ListParam("Build", param: vm.buildNumber)
+                LabeledContent("Operating system", value: vm.operatingSystem)
+                LabeledContent("Build", value: vm.buildNumber)
             }
             
             if #available(iOS 18.1, *) {
@@ -23,32 +23,32 @@ struct SystemSpecs: View {
             }
             
             Section {
-                ListParam("Multitasking", param: vm.multitaskingSupported)
+                LabeledContent("Multitasking", value: vm.multitaskingSupported)
                 
                 NavigationLink {
                     Timezone()
                 } label: {
-                    ListParam("Time zone", param: vm.timeZone)
+                    LabeledContent("Time zone", value: vm.timeZone)
                 }
                 
                 NavigationLink {
                     LocaleList()
                 } label: {
-                    ListParam("Locale", param: vm.lang)
+                    LabeledContent("Locale", value: vm.lang)
                 }
                 
                 NavigationLink {
                     FontList()
                 } label: {
-                    ListParam("System fonts", param: vm.fontCount)
+                    LabeledContent("System fonts", value: vm.fontCount)
                 }
             }
             
             Section("Current session") {
-                ListParam("Active time", param: vm.systemActiveTime)
+                LabeledContent("Active time", value: vm.systemActiveTime)
                     .animation(.default, value: vm.systemActiveTime)
                 
-                ListParam("System uptime", param: vm.systemUptime)
+                LabeledContent("System uptime", value: vm.systemUptime)
                     .animation(.default, value: vm.systemUptime)
             }
             .monospacedDigit()

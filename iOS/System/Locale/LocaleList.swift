@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct LocaleList: View {
     private var vm = LocaleVM()
@@ -6,7 +6,7 @@ struct LocaleList: View {
     var body: some View {
         List {
             Section {
-                ListParam("System language", param: vm.language)
+                LabeledContent("System language", value: vm.language)
                 
                 HStack(alignment: .top) {
                     Text("Preferred languages")
@@ -14,7 +14,7 @@ struct LocaleList: View {
                     Spacer()
                     
                     VStack {
-                        ForEach(vm.preferredLanguages, id: \.self) {
+                        ForEach(vm.preferredLangs, id: \.self) {
                             Text($0)
                         }
                     }
@@ -23,20 +23,20 @@ struct LocaleList: View {
             }
             
             Section {
-                ListParam("Currency code", param: vm.currencyCode)
-                ListParam("Currency symbol", param: vm.currencySymbol)
+                LabeledContent("Currency code", value: vm.currencyCode)
+                LabeledContent("Currency symbol", value: vm.currencySymbol)
             }
             
             Section {
-                ListParam("System region", param: vm.region)
-                ListParam("Containing region", param: vm.containingRegion)
-                ListParam("Subregions", param: vm.subRegions)
-                ListParam("ISO region", param: vm.isISORegion)
-                ListParam("Continent", param: vm.continent)
+                LabeledContent("System region", value: vm.region)
+                LabeledContent("Containing region", value: vm.containingRegion)
+                LabeledContent("Subregions", value: vm.subRegions)
+                LabeledContent("ISO region", value: vm.isISORegion)
+                LabeledContent("Continent", value: vm.continent)
             }
             
             Section {
-                ListParam("Numbering system", param: vm.numberingSystem)
+                LabeledContent("Numbering system", value: vm.numberingSystem)
                                 
                 HStack {
                     Text("Available numbering systems")
@@ -51,26 +51,26 @@ struct LocaleList: View {
                     }
                 }
                 
-                ListParam("Metric system", param: vm.metricSystem)
-                ListParam("Calendar", param: vm.calendar)
-                ListParam("Hour cycle", param: vm.hourCycle)
-                ListParam("First day of week", param: vm.firstDayOfWeek)
+                LabeledContent("Metric system", value: vm.metricSystem)
+                LabeledContent("Calendar", value: vm.calendar)
+                LabeledContent("Hour cycle", value: vm.hourCycle)
+                LabeledContent("First day of week", value: vm.firstDayOfWeek)
             }
             
             Section {
-                ListParam("Collation", param: vm.collation)
-                ListParam("Collator identifier", param: vm.collatorIdentifier)
+                LabeledContent("Collation", value: vm.collation)
+                LabeledContent("Collator identifier", value: vm.collatorIdentifier)
             }
             
             Section {
-                ListParam("Decimal separator", param: vm.decimalSeparator)
-                ListParam("Grouping separator", param: vm.groupingSeparator)
-                ListParam("Variant", param: vm.variant)
-                ListParam("Subdivision", param: vm.subdivision)
-                ListParam("Quotation begin delimiter", param: vm.quotationBeginDelimiter)
-                ListParam("Quotation end delimiter", param: vm.quotationEndDelimiter)
-                ListParam("Alternate quotation begin delimiter", param: vm.alternateQuotationBeginDelimiter)
-                ListParam("Alternate quotation end delimiter", param: vm.alternateQuotationEndDelimiter)
+                LabeledContent("Decimal separator", value: vm.decimalSeparator)
+                LabeledContent("Grouping separator", value: vm.groupingSeparator)
+                LabeledContent("Variant", value: vm.variant)
+                LabeledContent("Subdivision", value: vm.subdivision)
+                LabeledContent("Quotation begin delimiter", value: vm.quotationBeginDelimiter)
+                LabeledContent("Quotation end delimiter", value: vm.quotationEndDelimiter)
+                LabeledContent("Alternate quotation begin delimiter", value: vm.alternateQuotationBeginDelimiter)
+                LabeledContent("Alternate quotation end delimiter", value: vm.alternateQuotationEndDelimiter)
             }
         }
         .navigationTitle("Locale")

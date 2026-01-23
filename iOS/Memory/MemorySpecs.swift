@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct MemorySpecs: View {
     @Environment(MemoryVM.self) private var vm
@@ -8,35 +8,35 @@ struct MemorySpecs: View {
     var body: some View {
         List {
             Section("RAM") {
-                ListParam("Total", param: vm.totalRam)
+                LabeledContent("Total", value: vm.totalRam)
                 
-                ListParam("Used", param: vm.usedRam)
+                LabeledContent("Used", value: vm.usedRam)
                     .animation(.default, value: vm.usedRam)
                 
-                ListParam("Free", param: vm.freeRam)
+                LabeledContent("Free", value: vm.freeRam)
                     .animation(.default, value: vm.freeRam)
             }
             
-            ListParam("Supported SDRAM", param: vm.memoryType)
+            LabeledContent("Supported SDRAM", value: vm.memoryType)
             
             Section("Storage") {
-                ListParam("Total", param: vm.totalDisk)
+                LabeledContent("Total", value: vm.totalDisk)
                 
-                ListParam("Used", param: vm.usedDisk)
+                LabeledContent("Used", value: vm.usedDisk)
                     .animation(.default, value: vm.usedDisk)
                 
 #if os(watchOS) || os(tvOS)
-                ListParam("Free", param: vm.freeDisk)
+                LabeledContent("Free", value: vm.freeDisk)
                     .animation(.default, value: vm.freeDisk)
 #else
                 DisclosureGroup {
-                    ListParam("Available for important usage", param: vm.freeDiskForImportantUsage)
+                    LabeledContent("Available for important usage", value: vm.freeDiskForImportantUsage)
                         .animation(.default, value: vm.freeDiskForImportantUsage)
                     
-                    ListParam("Available for opportunistic usage", param: vm.freeDiskForOpportunisticUsage)
+                    LabeledContent("Available for opportunistic usage", value: vm.freeDiskForOpportunisticUsage)
                         .animation(.default, value: vm.freeDiskForOpportunisticUsage)
                 } label: {
-                    ListParam("Free", param: vm.freeDisk)
+                    LabeledContent("Free", value: vm.freeDisk)
                         .animation(.default, value: vm.freeDisk)
                 }
                 .tint(.secondary)

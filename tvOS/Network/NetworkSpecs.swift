@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct NetworkSpecs: View {
     @State private var network = NetworkVM()
@@ -6,9 +6,9 @@ struct NetworkSpecs: View {
     
     var body: some View {
         List {
-            ListParam("Public IP address", param: network.publicIp)
+            LabeledContent("Public IP address", value: network.publicIp)
             
-            ListParam("Network type", param: connectivity.type)
+            LabeledContent("Network type", value: connectivity.type)
         }
         .navigationTitle("Network")
         .refreshableTask {

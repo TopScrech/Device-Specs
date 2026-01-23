@@ -1,5 +1,3 @@
 enum NavDestinations: Hashable {
-    case toUwbTest,
-         toTests
-    //        toHealth
+    case toUwbTest, toTests
 }

@@ -1,4 +1,4 @@
-//import ScrechKit
+//import SwiftUI
 //import AdSupport
 //import AppTrackingTransparency
 //
@@ -50,7 +50,7 @@
 //    
 //    var body: some View {
 //        Section {
-//            ListParam("Advertising Identifier (IDFA)", param: idfa)
+//            LabeledContent("Advertising Identifier (IDFA)", value: idfa)
 //        } footer: {
 //            if idfa == "N/a" {
 //                Button("Request IDFA") {

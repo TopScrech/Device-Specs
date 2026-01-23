@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct CameraView: View {
     private let camera: Camera
@@ -9,15 +9,15 @@ struct CameraView: View {
     
     var body: some View {
         Section(camera.name) {
-            ListParam("Apperture", param: camera.lensApperture)
+            LabeledContent("Apperture", value: camera.lensApperture)
             
-            ListParam("Exposure", param: camera.exposure)
+            LabeledContent("Exposure", value: camera.exposure)
             
-            ListParam("Color space", param: camera.colorSpace)
+            LabeledContent("Color space", value: camera.colorSpace)
             
-            ListParam("ISO", param: camera.iso)
+            LabeledContent("ISO", value: camera.iso)
             
-            ListParam("Manufacturer", param: camera.manufacturer)
+            LabeledContent("Manufacturer", value: camera.manufacturer)
             
             //            NavigationLink("Supported formats") {
             //                CameraFormats(camera.formats)

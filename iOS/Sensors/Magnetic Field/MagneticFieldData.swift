@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct MagneticFieldData: View {
     @State private var vm = MagneticVM()
@@ -10,9 +10,9 @@ struct MagneticFieldData: View {
             let z = String(format: "%.2f µT", raw.z)
             
             Section("Magnetic field") {
-                ListParam("Raw X", param: x)
-                ListParam("Raw Y", param: y)
-                ListParam("Raw Z", param: z)
+                LabeledContent("Raw X", value: x)
+                LabeledContent("Raw Y", value: y)
+                LabeledContent("Raw Z", value: z)
             }
         }
     }

@@ -1,17 +1,17 @@
-import ScrechKit
+import SwiftUI
 
 struct CurrentProcess: View {
     @Environment(ProcessorVM.self) private var vm
     
     var body: some View {
         List {
-            ListParam("Process name", param: vm.processName)
+            LabeledContent("Process name", value: vm.processName)
             
-            ListParam("Process identifier", param: vm.processIdentifier)
+            LabeledContent("Process identifier", value: vm.processIdentifier)
 #if os(iOS)
-            ListParam("Performance profile", param: vm.performanceProfile)
+            LabeledContent("Performance profile", value: vm.performanceProfile)
             
-            ListParam("Sertified for iPhone performance gaming", param: vm.iphonePerformanceGamingSertified)
+            LabeledContent("Sertified for iPhone performance gaming", value: vm.iphonePerformanceGamingSertified)
 #endif
             NavigationLink("Environment variables") {
                 CurrentProcessEnvironment()

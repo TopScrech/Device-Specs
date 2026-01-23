@@ -95,7 +95,9 @@ final class BatteryVM {
     private func setupNotifications() {
 #if os(watchOS)
         batteryTimer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { [weak self] _ in
-            self?.fetchBatteryInfo()
+            Task { @MainActor in
+                self?.fetchBatteryInfo()
+            }
         }
 #else
         // Observe battery level changes
@@ -119,26 +121,15 @@ final class BatteryVM {
     func fetchBatteryInfo() {
 #if os(watchOS)
         let device = WKInterfaceDevice.current()
-        let batteryLvlNumber = String(format: "%.0f", device.batteryLevel * 100)
-        let batteryStateEnum = device.batteryState
 #else
         let device = UIDevice.current
-        
-        
-        let batteryLvlNumber = String(format: "%.0f", device.batteryLevel * 100)
-        let batteryStateEnum = device.batteryState
 #endif
         withAnimation {
             batteryLevelNumber = Int(device.batteryLevel * 100)
-            
-            // Update battery level
-            batteryLevel = "\(batteryLvlNumber) %"
-            
-            // Update Low Power Mode status
+            batteryLevel = device.batteryLevel.formatted(.percentRounded)
             lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled ? "Yes" : "No"
             
-            // Update battery state
-            switch batteryStateEnum {
+            switch device.batteryState {
             case .unknown:
                 batteryState = "Unknown"
                 

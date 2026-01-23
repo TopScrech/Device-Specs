@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct DeviceWatchInfo: View {
     private var crownOrientation: String {
@@ -27,10 +27,10 @@ struct DeviceWatchInfo: View {
     
     var body: some View {
         Section("Watch Specific") {
-            ListParam("Crown orientation", param: crownOrientation)
-            ListParam("Water lock", param: WKInterfaceDevice.current().isWaterLockEnabled ? "Yes" : "No")
-            ListParam("Layout direction", param: layoutDirection)
-            ListParam("Wrist location", param: wristLocation)
+            LabeledContent("Crown orientation", value: crownOrientation)
+            LabeledContent("Water lock", value: WKInterfaceDevice.current().isWaterLockEnabled ? "Yes" : "No")
+            LabeledContent("Layout direction", value: layoutDirection)
+            LabeledContent("Wrist location", value: wristLocation)
         }
     }
 }

@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 import DeviceKit
 
 struct DisplaySpecs: View {
@@ -12,12 +12,12 @@ struct DisplaySpecs: View {
     
     var body: some View {
         List {
-            ListParam("Screen resolution", param: vm.resolution)
+            LabeledContent("Screen resolution", value: vm.resolution)
             
-            ListParam("Refresh rate", param: vm.refreshRate)
+            LabeledContent("Refresh rate", value: vm.refreshRate)
             
             Section {
-                ListParam("Brightness", param: "\(Int(brightness))%")
+                LabeledContent("Brightness", value: "\(Int(brightness))%")
             }
         }
         .navigationTitle("Display")

@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct ProcessorSpecs: View {
     @Environment(ProcessorVM.self) private var vm
@@ -6,23 +6,23 @@ struct ProcessorSpecs: View {
     var body: some View {
         List {
             Section("CPU") {
-                ListParam("CPU", param: vm.cpuName)
+                LabeledContent("CPU", value: vm.cpuName)
                 
-                ListParam("Microarchitecture", param: vm.microArch)
+                LabeledContent("Microarchitecture", value: vm.microArch)
                 
-                ListParam("Technology node", param: vm.techNode)
+                LabeledContent("Technology node", value: vm.techNode)
                 
-                ListParam("Architecture", param: vm.arch)
+                LabeledContent("Architecture", value: vm.arch)
                 
-                ListParam("Core count", param: "\(vm.cores) (\(vm.activeCores) active)")
+                LabeledContent("Core count", value: "\(vm.cores) (\(vm.activeCores) active)")
                 
-                ListParam("Max. clock speed", param: vm.maxClockSpeed)
+                LabeledContent("Max. clock speed", value: vm.maxClockSpeed)
                 
-                ListParam("Instruction set", param: vm.instructionSet)
+                LabeledContent("Instruction set", value: vm.instructionSet)
                 
-                ListParam("Host name", param: vm.hostName)
+                LabeledContent("Host name", value: vm.hostName)
                 
-                ListParam("Thread count", param: vm.threadCount)
+                LabeledContent("Thread count", value: vm.threadCount)
                 
                 NavigationLink("Current process") {
                     CurrentProcess()
@@ -31,20 +31,20 @@ struct ProcessorSpecs: View {
             }
             
             Section("Neural Engine") {
-                ListParam("Core count", param: vm.neuralEngineCores)
-                ListParam("TOPS", param: vm.neuralEngineTOPS)
+                LabeledContent("Core count", value: vm.neuralEngineCores)
+                LabeledContent("TOPS", value: vm.neuralEngineTOPS)
             }
             
 #if !os(watchOS)
             Section("GPU") {
                 if let device = MTLCreateSystemDefaultDevice() {
-                    ListParam("GPU", param: device.name)
+                    LabeledContent("GPU", value: device.name)
                     
-                    ListParam("Architecture", param: device.architecture.name)
+                    LabeledContent("Architecture", value: device.architecture.name)
                     
-                    ListParam("Unified memory", param: device.hasUnifiedMemory ? "Yes" : "No")
+                    LabeledContent("Unified memory", value: device.hasUnifiedMemory ? "Yes" : "No")
                     
-                    ListParam("Raytracing", param: device.supportsRaytracing ? "Supported" : "Unsupported")
+                    LabeledContent("Raytracing", value: device.supportsRaytracing ? "Supported" : "Unsupported")
                     
                     NavigationLink("Supported GPU families") {
                         GPUFamilies()
