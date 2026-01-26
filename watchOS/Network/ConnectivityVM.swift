@@ -16,9 +16,7 @@ final class ConnectivityVM {
         monitor.start(queue: queue)
         
         monitor.pathUpdateHandler = { [weak self] path in
-            guard let self else {
-                return
-            }
+            guard let self else { return }
             
             DispatchQueue.main.async {
                 switch true {

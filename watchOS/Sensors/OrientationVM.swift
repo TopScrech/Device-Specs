@@ -25,9 +25,7 @@ final class OrientationVM {
             motionManager.deviceMotionUpdateInterval = 1
             
             motionManager.startDeviceMotionUpdates(to: .main) { motion, _ in
-                guard let motion else {
-                    return
-                }
+                guard let motion else { return }
                 
                 withAnimation {
                     let attitude = motion.attitude

@@ -1,16 +1,16 @@
 import SwiftUI
+import OSLog
 
 @Observable
 final class SystemReportVM {
+    private let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "DeviceSpecs", category: "SystemReportVM")
     var output = ""
     var progress = 0.0
     var isFetching = false
     var reportURL: URL?
     
     func saveFileToLocation(_ name: String) {
-        guard let url = reportURL else {
-            return
-        }
+        guard let url = reportURL else { return }
         
         let savePanel = NSSavePanel()
         savePanel.title = "Choose save location"
@@ -21,9 +21,9 @@ final class SystemReportVM {
             if response == .OK, let destinationUrl = savePanel.url {
                 do {
                     try FileManager.default.moveItem(at: url, to: destinationUrl)
-                    print("File moved successfully to:", destinationUrl.path)
+                    self.logger.info("File moved successfully to: \(destinationUrl.path)")
                 } catch {
-                    print("Failed to move file:", error)
+                    self.logger.error("Failed to move file: \(error)")
                 }
             }
         }
@@ -107,9 +107,9 @@ final class SystemReportVM {
         do {
             try output.write(to: fileURL, atomically: true, encoding: .utf8)
             reportURL = fileURL
-            print("File saved successfully at:", fileURL.path)
+            logger.info("File saved successfully at: \(fileURL.path)")
         } catch {
-            print("Failed to save file:", error)
+            logger.error("Failed to save file: \(error)")
         }
     }
 }

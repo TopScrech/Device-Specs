@@ -1,13 +1,13 @@
 import AVFoundation
+import OSLog
 
 @Observable
 final class TorchVM {
+    private let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "DeviceSpecs", category: "TorchVM")
     private(set) var isTorchOn = false
     
     init() {
-        guard let device = AVCaptureDevice.default(for: .video),
-              device.hasTorch
-        else {
+        guard let device = AVCaptureDevice.default(for: .video), device.hasTorch else {
             return
         }
         
@@ -35,7 +35,7 @@ final class TorchVM {
             
             isTorchOn.toggle()
         } catch {
-            print("Torch could not be used")
+            logger.error("Torch could not be used")
         }
     }
 }

@@ -1,7 +1,9 @@
 import Foundation
+import OSLog
 
 @Observable
 final class HardwareVM {
+    private let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "DeviceSpecs", category: "HardwareVM")
     var modelName = "Unknown"
     var modelIdentifier = "Unknown"
     var modelNumber = "Unknown"
@@ -22,7 +24,7 @@ final class HardwareVM {
     func fetchHardwareInfo() {
         DispatchQueue.global(qos: .background).async {
             guard let output = self.runSystemProfiler() else {
-                print("Failed to fetch system information.")
+                self.logger.error("Failed to fetch system information")
                 return
             }
             
@@ -87,7 +89,7 @@ final class HardwareVM {
         do {
             try task.run()
         } catch {
-            print("Error running system_profiler: \(error)")
+            logger.error("Error running system_profiler: \(error)")
             return nil
         }
         
