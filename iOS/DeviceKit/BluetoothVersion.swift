@@ -61,6 +61,8 @@ extension Device {
         case .iPadPro11Inch4, .iPadPro12Inch6,
                 .iPadPro11M4, .iPadPro13M4: "5.3"
             
+        case .iPadPro11M5, .iPadPro13M5: "6.0"
+            
         case .homePod: "5.0" // HomePod 1, 2, mini
             
 #elseif os(tvOS)
@@ -89,7 +91,7 @@ extension Device {
                 .appleWatchSeries10_42mm, .appleWatchSeries10_46mm,
                 .appleWatchUltra3,
                 .appleWatchSeries11_42mm, .appleWatchSeries11_46mm: "5.3"
-//                .appleWatchSE3_40, .appleWatchSE3_44 confirmed 5.3
+            //                .appleWatchSE3_40, .appleWatchSE3_44 confirmed 5.3
 #endif
         case .simulator: "Simulator"
         case .unknown(let device): "Unknown (\(device))"
