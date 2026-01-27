@@ -6,7 +6,6 @@ import OSLog
 @Observable
 final class MetricKitManager: NSObject, MXMetricManagerSubscriber {
     static let shared = MetricKitManager()
-    private let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "DeviceSpecs", category: "MetricKitManager")
     
     override init() {
         super.init()
@@ -18,13 +17,15 @@ final class MetricKitManager: NSObject, MXMetricManagerSubscriber {
         MXMetricManager.shared.remove(self)
     }
     
-    func didReceive(_ payloads: [MXMetricPayload]) {
+    nonisolated func didReceive(_ payloads: [MXMetricPayload]) {
+        let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "DeviceSpecs", category: "MetricKitManager")
         payloads.forEach {
             logger.info("Received metrics: \(String(describing: $0))")
         }
     }
     
-    func didReceive(_ diagnosticPayloads: [MXDiagnosticPayload]) {
+    nonisolated func didReceive(_ diagnosticPayloads: [MXDiagnosticPayload]) {
+        let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "DeviceSpecs", category: "MetricKitManager")
         diagnosticPayloads.forEach {
             logger.info("Received diagnostics: \(String(describing: $0))")
         }
