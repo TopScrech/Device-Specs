@@ -1,8 +1,10 @@
 import SwiftUI
 import CoreLocation
+import OSLog
 
 @Observable
 final class LocationVM: NSObject, CLLocationManagerDelegate {
+    private let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "DeviceSpecs", category: "LocationVM")
     private(set) var latitude = 0.0
     private(set) var longitude = 0.0
     
@@ -29,7 +31,7 @@ final class LocationVM: NSObject, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("Failed to update location:", error.localizedDescription)
+        logger.error("Failed to update location: \(error)")
     }
 }
 

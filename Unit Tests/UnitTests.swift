@@ -1,12 +1,15 @@
 import Testing
 import Foundation
+import OSLog
+
+private let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "DeviceSpecs", category: "UnitTests")
 
 struct UnitTests {
     @Test func example() async throws {
         let accessibilityInfo = parseAccessibilityInfo(from: accessibilityString)
         
         for (key, value) in accessibilityInfo {
-            print("\(key): \(value)")
+            logger.info("\(key): \(value)")
         }
         
         // Write your test here and use APIs like `#expect(...)` to check expected conditions.

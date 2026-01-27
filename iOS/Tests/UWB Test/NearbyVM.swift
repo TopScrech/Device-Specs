@@ -2,9 +2,11 @@
 import SwiftUI
 import NearbyInteraction
 import MultipeerConnectivity
+import OSLog
 
 @Observable
 class NearbyVM: NSObject, NISessionDelegate {
+    private let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "DeviceSpecs", category: "NearbyVM")
     private(set) var monkeyLabel = "🙈"
     private(set) var connectedDeviceName = ""
     private(set) var status = ""
@@ -44,7 +46,7 @@ class NearbyVM: NSObject, NISessionDelegate {
     override init() {
         super.init()
         startup()
-        print("UWB init")
+        logger.info("UWB init")
     }
     
     private func startup() {
@@ -271,10 +273,7 @@ class NearbyVM: NSObject, NISessionDelegate {
     
     private func shareMyDiscoveryToken(_ token: NIDiscoveryToken) {
         guard
-            let encodedData = try? NSKeyedArchiver.archivedData(
-                withRootObject: token,
-                requiringSecureCoding: true
-            )
+            let encodedData = try? NSKeyedArchiver.archivedData(withRootObject: token, requiringSecureCoding: true)
         else {
             fatalError("Unexpectedly failed to encode discovery token.")
         }

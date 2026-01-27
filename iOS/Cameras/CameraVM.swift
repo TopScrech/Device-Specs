@@ -175,10 +175,10 @@ final class CameraVM {
         //        backExposureRange = String(format: "Speed Range: %.5f - %.5f seconds", minExposureSeconds, maxExposureSeconds)
         //
         // Print the collected information
-        //        print("Camera Aperture:", backAperture)
-        //        print("Camera Max Video Resolution:", backMaxVideoResolution)
-        //        print("Camera Max Frame Rate:", backMaxFrameRateInfo)
-        //        print("Camera Optical Stabilization:", backOpticalStabilization)
-        //        print("Camera Exposure Range:", backExposureRange)
+        //        logger.info("Camera Aperture: \(backAperture)")
+        //        logger.info("Camera Max Video Resolution: \(backMaxVideoResolution)")
+        //        logger.info("Camera Max Frame Rate: \(backMaxFrameRateInfo)")
+        //        logger.info("Camera Optical Stabilization: \(backOpticalStabilization)")
+        //        logger.info("Camera Exposure Range: \(backExposureRange)")
     }
 }

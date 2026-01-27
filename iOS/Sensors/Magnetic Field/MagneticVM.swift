@@ -1,8 +1,10 @@
 import SwiftUI
 import CoreMotion
+import OSLog
 
 @Observable
 final class MagneticVM: NSObject {
+    private let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "DeviceSpecs", category: "MagneticVM")
     var rawMagneticField: MagneticField? = nil
     
     private var motionManager: CMMotionManager
@@ -20,25 +22,23 @@ final class MagneticVM: NSObject {
     
     private func startMagnetometerUpdates() {
         guard motionManager.isMagnetometerAvailable else {
-            print("Magnetometer is not available on this device")
+            logger.warning("Magnetometer is not available on this device")
             return
         }
         
-        print("Starting Magnetometer Updates...")
+        logger.info("Starting Magnetometer Updates")
         motionManager.magnetometerUpdateInterval = 1
         
         motionManager.startMagnetometerUpdates(to: .main) { [weak self] data, error in
-            guard let self else {
-                return
-            }
+            guard let self else { return }
             
             if let error {
-                print("Magnetometer error:", error.localizedDescription)
+                logger.error("Magnetometer error: \(error)")
                 return
             }
             
             guard let data else {
-                print("No magnetometer data available")
+                logger.warning("No magnetometer data available")
                 return
             }
             
@@ -53,6 +53,6 @@ final class MagneticVM: NSObject {
     
     private func stopMagnetometerUpdates() {
         motionManager.stopMagnetometerUpdates()
-        print("Stopped Magnetometer Updates")
+        logger.info("Stopped Magnetometer Updates")
     }
 }

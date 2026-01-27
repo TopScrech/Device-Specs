@@ -17,20 +17,20 @@
 //        ATTrackingManager.requestTrackingAuthorization { status in
 //            switch status {
 //            case .notDetermined:
-//                print("Not Determined")
+//                logger.info("Not determined")
 //                
 //            case .restricted:
-//                print("Restricted")
+//                logger.warning("Restricted")
 //                
 //            case .denied:
-//                print("Denied")
+//                logger.warning("Denied")
 //                openSettings()
 //                
 //            case .authorized:
-//                print("Authorized")
+//                logger.info("Authorized")
 //                
 //            default:
-//                print("Unknown")
+//                logger.warning("Unknown")
 //            }
 //        }
 //    }

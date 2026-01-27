@@ -47,7 +47,7 @@ final class AuthVM {
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
             authenticate()
         } else {
-            errorMessage = error?.localizedDescription ?? "Unknown error"
+            errorMessage = error.map { "\($0)" } ?? "Unknown error"
             alertError = true
             return
         }
@@ -64,7 +64,7 @@ final class AuthVM {
                 if success {
                     self.isAuthenticated = true
                 } else {
-                    self.errorMessage = error?.localizedDescription ?? "Unknown error"
+                    self.errorMessage = error.map { "\($0)" } ?? "Unknown error"
                     self.alertError = true
                 }
             }

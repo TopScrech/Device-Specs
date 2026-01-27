@@ -1,8 +1,10 @@
 import ScrechKit
 import Network
+import OSLog
 
 @Observable
 final class NetworkVM {
+    private let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "DeviceSpecs", category: "NetworkVM")
     private(set) var publicIp = ""
     private(set) var networkInterface = ""
     private(set) var destinationIpAddress = ""
@@ -25,7 +27,7 @@ final class NetworkVM {
                 self.publicIp = publicIp
             }
         } catch {
-            print("Error:", error)
+            logger.error("Failed to fetch public IP: \(error)")
         }
         
         var ifaddr: UnsafeMutablePointer<ifaddrs>?

@@ -1,8 +1,10 @@
 import ScrechKit
 import DeviceKit
+import OSLog
 
 @Observable
 final class MemoryVM {
+    private let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "DeviceSpecs", category: "MemoryVM")
     private let device = Device.current
     
     private(set) var totalRam = ""
@@ -119,7 +121,7 @@ final class MemoryVM {
             totalDisk = "Error"
             usedDisk = "Error"
             
-            print(error.localizedDescription)
+            logger.error("Failed to read disk info: \(error)")
         }
     }
     

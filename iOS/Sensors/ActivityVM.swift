@@ -24,9 +24,7 @@ final class ActivityVM {
     }
     
     private func updateActivity(_ activityData: CMMotionActivity?) {
-        guard let activityData else {
-            return
-        }
+        guard let activityData else { return }
         
         switch true {
         case activityData.walking:
