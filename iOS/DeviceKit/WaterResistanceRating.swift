@@ -77,7 +77,8 @@ extension Device {
                 .iPadPro12Inch5,
                 .iPadPro11Inch4,
                 .iPadPro12Inch6,
-                .iPadPro11M4, .iPadPro13M4: "None"
+                .iPadPro11M4, .iPadPro13M4,
+                .iPadPro11M5, .iPadPro13M5: "None"
             
         case .homePod: "None"
             

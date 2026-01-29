@@ -63,7 +63,6 @@ struct HomeView: View {
             }
         }
         .navigationTitle("Device Specs")
-        .labelReservedIconWidth(64)
     }
 }
 

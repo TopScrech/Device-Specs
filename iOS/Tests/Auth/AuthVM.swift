@@ -56,10 +56,7 @@ final class AuthVM {
     
     private func authenticate() {
 #if !os(watchOS)
-        context.evaluatePolicy(
-            .deviceOwnerAuthenticationWithBiometrics,
-            localizedReason: "This is a security check reason."
-        ) { success, error in
+        context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "This is a security check reason") { success, error in
             Task { @MainActor in
                 if success {
                     self.isAuthenticated = true

@@ -6,6 +6,45 @@ extension Device {
     var waterResistanceDescription: String {
         switch self {
 #if os(iOS)
+        case .iPad2,
+                .iPad3,
+                .iPad4,
+                .iPadAir,
+                .iPadAir2,
+                .iPad5,
+                .iPad6,
+                .iPadAir3,
+                .iPad7,
+                .iPad8,
+                .iPad9,
+                .iPad10,
+                .iPadA16,
+                .iPadAir4,
+                .iPadAir5,
+                .iPadAir11M2, .iPadAir13M2,
+                .iPadAir11M3, .iPadAir13M3,
+                .iPadMini,
+                .iPadMini2,
+                .iPadMini3,
+                .iPadMini4,
+                .iPadMini5,
+                .iPadMini6,
+                .iPadMiniA17Pro,
+                .iPadPro9Inch,
+                .iPadPro12Inch,
+                .iPadPro12Inch2,
+                .iPadPro10Inch,
+                .iPadPro11Inch,
+                .iPadPro12Inch3,
+                .iPadPro11Inch2,
+                .iPadPro12Inch4,
+                .iPadPro11Inch3,
+                .iPadPro12Inch5,
+                .iPadPro11Inch4,
+                .iPadPro12Inch6,
+                .iPadPro11M4, .iPadPro13M4,
+                .iPadPro11M5, .iPadPro13M5: "None"
+            
         case .iPhone7, .iPhone7Plus,
                 .iPhone8, .iPhone8Plus,
                 .iPhoneX,
@@ -22,7 +61,8 @@ extension Device {
                 .iPhone13, .iPhone13Mini, .iPhone13Pro, .iPhone13ProMax,
                 .iPhone14, .iPhone14Plus, .iPhone14Pro, .iPhone14ProMax,
                 .iPhone15, .iPhone15Plus, .iPhone15Pro, .iPhone15ProMax,
-                .iPhone16, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax: "Up to 30 minutes and 6m deep"
+                .iPhone16, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax,
+                .iPhone17, .iPhoneAir, .iPhone17Pro, .iPhone17ProMax: "Up to 30 minutes and 6m deep"
             
 #elseif os(watchOS)
         case .appleWatchSeries0_38mm, .appleWatchSeries0_42mm,
@@ -34,18 +74,20 @@ extension Device {
                 .appleWatchSeries5_40mm, .appleWatchSeries5_44mm,
                 .appleWatchSeries6_40mm, .appleWatchSeries6_44mm,
                 .appleWatchSE_40mm, .appleWatchSE_44mm,
-                .appleWatchSE2_40mm, .appleWatchSE2_44mm: "Up to 50m deep"
+                .appleWatchSE2_40mm, .appleWatchSE2_44mm,
+                .appleWatchSE3_40mm, .appleWatchSE3_44mm: "Up to 50m deep"
             
         case .appleWatchSeries7_41mm, .appleWatchSeries7_45mm,
                 .appleWatchSeries8_41mm, .appleWatchSeries8_45mm,
                 .appleWatchSeries9_41mm, .appleWatchSeries9_45mm,
-                .appleWatchSeries10_42mm, .appleWatchSeries10_46mm: "Up to 50m deep"
+                .appleWatchSeries10_42mm, .appleWatchSeries10_46mm,
+                .appleWatchSeries11_42mm, .appleWatchSeries11_46mm: "Up to 50m deep"
             
-        case .appleWatchUltra, .appleWatchUltra2: "Up to 100m deep"
+        case .appleWatchUltra, .appleWatchUltra2, .appleWatchUltra3: "Up to 100m deep"
 #endif
         case .simulator: "N/a"
         case .unknown(let device): "Unknown (\(device))"
-        default: "-"
+        @unknown default: "-"
         }
     }
 }

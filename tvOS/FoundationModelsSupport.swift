@@ -4,7 +4,7 @@ import SwiftUI
 import FoundationModels
 #endif
 
-@available(iOS 26, visionOS 26, *)
+@available(iOS 26, *)
 struct FoundationModelsSupport: View {
     private var isSupported: Bool {
 #if canImport(FoundationModels)
@@ -15,19 +15,19 @@ struct FoundationModelsSupport: View {
     }
     
     var body: some View {
-        Label {
-            Text(isSupported ? "Your device supports Foundation Models" : "Your device does not support Foundation Models")
-        } icon: {
+        HStack(spacing: 25) {
             Image(.foundationModels)
                 .resizable()
                 .frame(32)
+            
+            Text(isSupported ? "Your device supports Foundation Models" : "Your device does not support Foundation Models")
         }
         .padding(.vertical, 5)
         .opacity(isSupported ? 1 : 0.5)
     }
 }
 
-@available(iOS 26, visionOS 26, *)
+@available(iOS 26, *)
 #Preview {
     List {
         FoundationModelsSupport()

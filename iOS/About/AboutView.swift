@@ -1,19 +1,5 @@
 import ScrechKit
 
-struct SocialProfile: Identifiable {
-    let link: String
-    let img: ImageResource
-    
-    var id: String {
-        link
-    }
-    
-    init(_ link: String, img: ImageResource) {
-        self.link = link
-        self.img = img
-    }
-}
-
 struct AboutView: View {
     @Environment(AppVM.self) private var vm
     
@@ -25,16 +11,22 @@ struct AboutView: View {
     
     var body: some View {
         VStack {
-            Image(.icon)
+            let image = Image(.icon)
                 .resizable()
                 .frame(200)
                 .clipShape(.rect(cornerRadius: 16))
                 .shadow(color: .black, radius: 5)
                 .frame(maxWidth: .infinity)
-                .sensoryFeedback(.impact, trigger: vm.trigger)
                 .onTapGesture {
                     vm.trigger.toggle()
                 }
+            
+            if #available(visionOS 26, *) {
+                image
+                    .hapticOn(vm.trigger, as: .impact)
+            } else {
+                image
+            }
             
             Text(vm.versionAndBuild)
                 .title2(.bold, design: .rounded)

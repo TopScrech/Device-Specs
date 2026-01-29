@@ -1380,9 +1380,6 @@
         }
       }
     },
-    "Hello, World!" : {
-      "shouldTranslate" : false
-    },
     "Host name" : {
       "localizations" : {
         "nl" : {

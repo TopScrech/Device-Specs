@@ -4,7 +4,7 @@ import SwiftUI
 import ImagePlayground
 #endif
 
-@available(iOS 18.1, visionOS 2.4, *)
+@available(iOS 18.1, *)
 struct AppleIntelligenceSupport: View {
 #if canImport(ImagePlayground)
     @Environment(\.supportsImagePlayground) private var isSupported
@@ -17,18 +17,18 @@ struct AppleIntelligenceSupport: View {
     }
     
     var body: some View {
-        Label {
-            Text(isSupported ? "Your device supports Apple Intelligence" : "Your device does not support Apple Intelligence")
-        } icon: {
+        HStack(spacing: 25) {
             Image(systemName: icon)
                 .foregroundStyle(.primary)
                 .symbolRenderingMode(.multicolor)
+            
+            Text(isSupported ? "Your device supports Apple Intelligence" : "Your device does not support Apple Intelligence")
         }
         .padding(.vertical, 5)
     }
 }
 
-@available(iOS 18.1, visionOS 2.4, *)
+@available(iOS 18.1, *)
 #Preview {
     List {
         AppleIntelligenceSupport()
