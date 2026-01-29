@@ -258,6 +258,7 @@
 				"Tests/UWB Test/UWBTestView.swift",
 				Utils/ListLink.swift,
 				Utils/MetricKitManager.swift,
+				Utils/SpecsLink.swift,
 				Warnings/WarningCard.swift,
 				Warnings/WarningSection.swift,
 			);

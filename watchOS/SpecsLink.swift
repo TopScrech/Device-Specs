@@ -20,23 +20,22 @@ struct SpecsLink<Destination: View>: View {
     
     var body: some View {
         NavigationLink(destination: destination) {
-            HStack(spacing: 0) {
-#if os(tvOS)
+            HStack(spacing: 10) {
                 Image(systemName: icon)
-                    .frame(width: 64)
+                    .semibold()
+                    .title3()
                 
-                Text(name)
-                    .foregroundStyle(.foreground)
-#else
-                Label(name, systemImage: icon)
-#endif
-                Spacer()
-                
-                if !spec.isEmpty {
-                    Text(spec)
-                        .fontWeight(.medium)
-                        .secondary()
+                VStack(alignment: .leading, spacing: 0) {
+                    Text(name)
+                    
+                    if !spec.isEmpty {
+                        Text(spec)
+                            .semibold()
+                            .footnote()
+                            .secondary()
+                    }
                 }
+                .foregroundStyle(.foreground)
             }
         }
     }
