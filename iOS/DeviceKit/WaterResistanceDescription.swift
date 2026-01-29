@@ -85,7 +85,6 @@ extension Device {
             
         case .appleWatchUltra, .appleWatchUltra2, .appleWatchUltra3: "Up to 100m deep"
 #endif
-        case .homePod: "None"
         case .simulator: "N/a"
         case .unknown(let device): "Unknown (\(device))"
         @unknown default: "-"

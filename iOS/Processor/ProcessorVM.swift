@@ -87,6 +87,7 @@ final class ProcessorVM {
     }
     
 #if os(iOS)
+    @available(iOS 18, *)
     var performanceProfile: String {
         if info.hasPerformanceProfile(.sustained) {
             "Sustained"
@@ -97,6 +98,7 @@ final class ProcessorVM {
         }
     }
     
+    @available(iOS 18, *)
     var iphonePerformanceGamingSertified: String {
         info.isDeviceCertified(for: .iPhonePerformanceGaming) ? "Yes" : "No"
     }

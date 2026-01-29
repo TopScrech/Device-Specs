@@ -16,10 +16,16 @@ struct WarningCard: View {
             Label {
                 Text(title)
             } icon: {
-                Image(systemName: icon)
-                    .bold()
-                    .foregroundStyle(color.gradient)
-                    .symbolEffect(.breathe.pulse.byLayer, options: .repeat(.continuous))
+                if #available(iOS 18, tvOS 18, visionOS 2, *) {
+                    Image(systemName: icon)
+                        .bold()
+                        .foregroundStyle(color.gradient)
+                        .symbolEffect(.breathe.pulse.byLayer, options: .repeat(.continuous))
+                } else {
+                    Image(systemName: icon)
+                        .bold()
+                        .foregroundStyle(color.gradient)
+                }
             }
         }
     }

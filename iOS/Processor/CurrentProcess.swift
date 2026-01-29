@@ -6,12 +6,12 @@ struct CurrentProcess: View {
     var body: some View {
         List {
             LabeledContent("Process name", value: vm.processName)
-            
             LabeledContent("Process identifier", value: vm.processIdentifier)
 #if os(iOS)
-            LabeledContent("Performance profile", value: vm.performanceProfile)
-            
-            LabeledContent("Sertified for iPhone performance gaming", value: vm.iphonePerformanceGamingSertified)
+            if #available(iOS 18, *) {
+                LabeledContent("Performance profile", value: vm.performanceProfile)
+                LabeledContent("Sertified for iPhone performance gaming", value: vm.iphonePerformanceGamingSertified)
+            }
 #endif
             NavigationLink("Environment variables") {
                 CurrentProcessEnvironment()
