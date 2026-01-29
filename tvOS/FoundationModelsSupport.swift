@@ -15,12 +15,12 @@ struct FoundationModelsSupport: View {
     }
     
     var body: some View {
-        Label {
-            Text(isSupported ? "Your device supports Foundation Models" : "Your device does not support Foundation Models")
-        } icon: {
+        HStack(spacing: 25) {
             Image(.foundationModels)
                 .resizable()
                 .frame(32)
+            
+            Text(isSupported ? "Your device supports Foundation Models" : "Your device does not support Foundation Models")
         }
         .padding(.vertical, 5)
         .opacity(isSupported ? 1 : 0.5)

@@ -17,12 +17,12 @@ struct AppleIntelligenceSupport: View {
     }
     
     var body: some View {
-        Label {
-            Text(isSupported ? "Your device supports Apple Intelligence" : "Your device does not support Apple Intelligence")
-        } icon: {
+        HStack(spacing: 25) {
             Image(systemName: icon)
                 .foregroundStyle(.primary)
                 .symbolRenderingMode(.multicolor)
+            
+            Text(isSupported ? "Your device supports Apple Intelligence" : "Your device does not support Apple Intelligence")
         }
         .padding(.vertical, 5)
     }
