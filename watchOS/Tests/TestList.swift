@@ -10,7 +10,6 @@ struct TestList: View {
             }
 #endif
         }
-        .labelReservedIconWidth(64)
     }
 }
 

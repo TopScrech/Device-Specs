@@ -246,6 +246,8 @@
 				Sensors/SensorsSpecs.swift,
 				Settings/AppearanceSettings.swift,
 				Settings/SettingsView.swift,
+				Tests/Auth/AuthTest.swift,
+				Tests/Auth/AuthVM.swift,
 				Tests/Camera/CameraTest.swift,
 				Tests/TestList.swift,
 				Tests/Torch/TorchTest.swift,
@@ -1048,7 +1050,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -1084,7 +1086,7 @@
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};

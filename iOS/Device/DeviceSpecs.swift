@@ -41,7 +41,7 @@ struct DeviceSpecs: View {
             
             Section("Capabilities") {
                 LabeledContent("Bluetooth", value: vm.bluetoothVersion)
-#if !os(tvOS)
+#if !os(tvOS) && !os(watchOS)
                 AuthTest()
 #endif
                 
