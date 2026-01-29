@@ -4,7 +4,7 @@ import SwiftUI
 import FoundationModels
 #endif
 
-@available(iOS 26, *)
+@available(iOS 26, visionOS 26, *)
 struct FoundationModelsSupport: View {
     private var isSupported: Bool {
 #if canImport(FoundationModels)
@@ -27,7 +27,7 @@ struct FoundationModelsSupport: View {
     }
 }
 
-@available(iOS 26, *)
+@available(iOS 26, visionOS 26, *)
 #Preview {
     List {
         FoundationModelsSupport()
