@@ -3,5 +3,8 @@
 Device Specs explorer
 
 ## Supported platforms
-- iOS, iPadOS 18+
-- watchOS, visionOS, tvOS, macOS 26+
+- iOS, iPadOS 17+
+- macOS 14+
+- watchOS 10+
+- visionOS 1+
+- tvOS 17+
