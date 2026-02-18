@@ -129,6 +129,7 @@
 		F36FBCB12C9449A200F5E174 /* watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3AE99E22E2F890A00D70249 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3E063EF2F467E79001B77CD /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		F3E7EC3A2C676A13008CD17B /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F85ECD2C94AF5A00AE0A1D /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F85F0E2C962C4600AE0A1D /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -578,6 +579,7 @@
 			isa = PBXGroup;
 			children = (
 				F3AE99E22E2F890A00D70249 /* README.md */,
+				F3E063EF2F467E79001B77CD /* LICENSE.txt */,
 				F383A0B82ECF2DF700350A0F /* iOS */,
 				F3839F8C2ECF2D9000350A0F /* visionOS */,
 				F3839FA92ECF2D9900350A0F /* watchOS */,
