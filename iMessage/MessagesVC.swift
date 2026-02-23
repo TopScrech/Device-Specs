@@ -1,6 +1,5 @@
 import SwiftUI
 import Messages
-import SafariCover
 
 @objc(MessagesViewController)
 class MessagesViewController: MSMessagesAppViewController {
