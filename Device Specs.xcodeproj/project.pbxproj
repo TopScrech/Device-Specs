@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 90;
+	objectVersion = 100;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -846,7 +846,7 @@
 				F329E1822D37CA7D007BA9D1 /* XCRemoteSwiftPackageReference "SafariCover" */,
 				F3F5AD602E880F05007AD97D /* XCRemoteSwiftPackageReference "Appearance" */,
 			);
-			preferredProjectObjectVersion = 90;
+			preferredProjectObjectVersion = 100;
 			productRefGroup = F3E7EC3B2C676A13008CD17B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
