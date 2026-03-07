@@ -16,7 +16,7 @@
       "location" : "https://github.com/devicekit/DeviceKit",
       "state" : {
         "branch" : "master",
-        "revision" : "373e974077f366a76f5add214ee4ba216ef1c740"
+        "revision" : "56b997e8a61707218f9af09f32b2a1d1806fd792"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/TopScrech/LaunchAtLogin",
       "state" : {
         "branch" : "main",
-        "revision" : "b6d02bbe76f22ce9c722ec263939edd01ea8f670"
+        "revision" : "de46c95b812441c47eb2754c8bd10fc0ee2afa2e"
       }
     },
     {
