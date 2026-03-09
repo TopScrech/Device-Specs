@@ -6,8 +6,8 @@ struct FakeHomeView: View {
     @State private var system = SystemVM()
     @State private var device = DeviceVM()
     @State private var display = DisplayVM()
-    @State private var processor = ProcessorVM()
-    @State private var memory = MemoryVM()
+    @State private var cpu = ProcessorVM()
+    @State private var ram = MemoryVM()
     @State private var battery = BatteryVM()
     @State private var connectivity = ConnectivityVM()
     @State private var camera = CameraVM()
@@ -24,24 +24,17 @@ struct FakeHomeView: View {
             }
             
             LabeledContent("Device", icon: "info.circle", value: device.deviceIdentifier)
-            
             LabeledContent("System", icon: "apple.terminal", value: system.operatingSystem)
-            
             LabeledContent("Display", icon: "iphone", value: display.diagonalSize)
-            
-            LabeledContent("Processor", icon: "cpu", value: processor.cpuNameAndTechnology)
-            
-            LabeledContent("Memory", icon: "memorychip", value: memory.totalRamAndDisk)
+            LabeledContent("Processor", icon: "cpu", value: cpu.cpuNameAndTechnology)
+            LabeledContent("Memory", icon: "memorychip", value: ram.totalRamAndDisk)
             
             LabeledContent("Battery", icon: "battery.100percent.bolt", value: battery.batteryLevel)
                 .symbolRenderingMode(.multicolor)
             
             LabeledContent("Network", icon: "network", value: connectivity.type)
-            
             LabeledContent("Camera", icon: "camera", value: camera.hasLidar)
-            
             Label("Sensors", systemImage: "barometer")
-            
             Label("Accessibility", systemImage: "accessibility")
             
             Section {

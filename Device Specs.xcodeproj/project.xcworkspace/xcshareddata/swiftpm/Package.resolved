@@ -7,7 +7,7 @@
       "location" : "https://github.com/TopScrech/Appearance",
       "state" : {
         "branch" : "main",
-        "revision" : "1a8f0bc05a667f1079c9f7b3b31840f60abd7db5"
+        "revision" : "88fc26ebed3e28d5f549fa76770dd464a3df852d"
       }
     },
     {
@@ -16,7 +16,7 @@
       "location" : "https://github.com/devicekit/DeviceKit",
       "state" : {
         "branch" : "master",
-        "revision" : "373e974077f366a76f5add214ee4ba216ef1c740"
+        "revision" : "56b997e8a61707218f9af09f32b2a1d1806fd792"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/TopScrech/LaunchAtLogin",
       "state" : {
         "branch" : "main",
-        "revision" : "b6d02bbe76f22ce9c722ec263939edd01ea8f670"
+        "revision" : "de46c95b812441c47eb2754c8bd10fc0ee2afa2e"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/TopScrech/MailCover",
       "state" : {
         "branch" : "main",
-        "revision" : "1a3afc2b001ddf2118d340f046ac42fba41d05cd"
+        "revision" : "21b254531c219d73dc551a9a1c4d89dc1013416e"
       }
     },
     {
@@ -70,7 +70,7 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "9f75c2ff29e84720218686750e5b33d0d7208223"
+        "revision" : "98aa4363c5fe1e0617894a41baa9f297083fb5ac"
       }
     }
   ],

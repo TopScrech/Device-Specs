@@ -103,7 +103,7 @@ final class DeviceVM {
             return nil
         }
         
-        // Allocate the appropriate amount of memory
+        // Allocate the appropriate amount of ram
         var model = [CChar](repeating: 0, count: size)
         
         // Retrieve the hardware model

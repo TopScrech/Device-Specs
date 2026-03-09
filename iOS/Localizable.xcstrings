@@ -233,6 +233,12 @@
             "state" : "translated",
             "value" : "Argumenten"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Аргументы"
+          }
         }
       }
     },
@@ -262,11 +268,30 @@
             "state" : "translated",
             "value" : "Automatisch verbonden"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подключено автоматически"
+          }
         }
       }
     },
     "Autoupdating current" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatisch bijgewerkte huidige"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Текущая с автообновлением"
+          }
+        }
+      }
     },
     "Available for important usage" : {
       "localizations" : {
@@ -274,6 +299,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Beschikbaar voor belangrijk gebruik"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Доступно для важного использования"
           }
         }
       }
@@ -284,6 +315,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Beschikbaar voor opportunistisch gebruik"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Доступно для второстепенного использования"
           }
         }
       }
@@ -309,7 +346,13 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Terug"
+            "value" : "Achter"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Задняя"
           }
         }
       }
@@ -336,6 +379,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Batterij Info"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Информация об аккумуляторе"
           }
         }
       }
@@ -378,6 +427,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Onder waarschuwingsniveau"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ниже уровня предупреждения"
           }
         }
       }
@@ -597,7 +652,20 @@
       }
     },
     "Cell Revision" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Celrevisie"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ревизия ячейки"
+          }
+        }
+      }
     },
     "Charge Information" : {
       "localizations" : {
@@ -605,6 +673,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Laadinformatie"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Информация о зарядке"
           }
         }
       }
@@ -616,17 +690,62 @@
             "state" : "translated",
             "value" : "Opladen"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Заряжается"
+          }
         }
       }
     },
     "Closed Captioning" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ondertiteling voor doven en slechthorenden"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скрытые субтитры"
+          }
+        }
+      }
     },
     "Collation" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sortering"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сортировка"
+          }
+        }
+      }
     },
     "Collator identifier" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sorteer-ID"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Идентификатор сортировки"
+          }
+        }
+      }
     },
     "Color space" : {
       "localizations" : {
@@ -686,7 +805,20 @@
       }
     },
     "Containing region" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bevattende regio"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Содержащий регион"
+          }
+        }
+      }
     },
     "Continent" : {
       "localizations" : {
@@ -758,6 +890,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "CPU-belasting"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Загрузка ЦП"
           }
         }
       }
@@ -897,6 +1035,12 @@
             "state" : "translated",
             "value" : "Donkere systeemkleuren"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Более тёмные системные цвета"
+          }
         }
       }
     },
@@ -905,14 +1049,34 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Zomertijd"
+            "value" : "Zomertijdregeling"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Переход на летнее время"
           }
         }
       }
     },
     "Debug" : {
       "comment" : "A section header in the settings view for debugging purposes.",
-      "isCommentAutoGenerated" : true
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debug"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отладка"
+          }
+        }
+      }
     },
     "Decimal separator" : {
       "localizations" : {
@@ -953,6 +1117,12 @@
             "state" : "translated",
             "value" : "Bestemmings-IP-adres"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IP-адрес назначения"
+          }
         }
       }
     },
@@ -979,6 +1149,12 @@
             "state" : "translated",
             "value" : "Apparaatnaam"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Имя устройства"
+          }
         }
       }
     },
@@ -991,6 +1167,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sluiten"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрыть"
           }
         }
       }
@@ -1036,6 +1218,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Omgevingsvariabelen"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Переменные окружения"
           }
         }
       }
@@ -1084,6 +1272,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Feedback"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обратная связь"
           }
         }
       }
@@ -1146,11 +1340,30 @@
             "state" : "translated",
             "value" : "Свободно"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vrij"
+          }
         }
       }
     },
     "Front" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voor"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Передняя"
+          }
+        }
+      }
     },
     "Full system report" : {
       "localizations" : {
@@ -1175,12 +1388,32 @@
             "state" : "translated",
             "value" : "Volledig opgeladen"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Полностью заряжено"
+          }
         }
       }
     },
     "Get in touch" : {
       "comment" : "A title displayed above a section with contact information.",
-      "isCommentAutoGenerated" : true
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neem contact op"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Связаться"
+          }
+        }
+      }
     },
     "Go to Settings" : {
       "localizations" : {
@@ -1236,6 +1469,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Grijstinten"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оттенки серого"
           }
         }
       }
@@ -1327,6 +1566,12 @@
             "state" : "translated",
             "value" : "Hardware"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оборудование"
+          }
         }
       }
     },
@@ -1336,6 +1581,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hardware-informatie"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Информация об оборудовании"
           }
         }
       }
@@ -1347,6 +1598,12 @@
             "state" : "translated",
             "value" : "Hardware-overzicht"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обзор оборудования"
+          }
         }
       }
     },
@@ -1356,6 +1613,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hardware-revisie"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ревизия оборудования"
           }
         }
       }
@@ -1367,6 +1630,12 @@
             "state" : "translated",
             "value" : "Koersnauwkeurigheid"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Точность курса"
+          }
         }
       }
     },
@@ -1376,6 +1645,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gezondheidsinformatie"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Информация о состоянии"
           }
         }
       }
@@ -1387,6 +1662,12 @@
             "state" : "translated",
             "value" : "Hostnaam"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Имя хоста"
+          }
         }
       }
     },
@@ -1396,6 +1677,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hotspot Helper"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Помощник точки доступа"
           }
         }
       }
@@ -1471,6 +1758,12 @@
             "state" : "translated",
             "value" : "Interne naam"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Внутреннее имя"
+          }
         }
       }
     },
@@ -1534,7 +1827,20 @@
       }
     },
     "Just joined" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zojuist verbonden"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Только что подключено"
+          }
+        }
+      }
     },
     "Known time zones" : {
       "localizations" : {
@@ -1591,11 +1897,30 @@
             "state" : "translated",
             "value" : "Layoutrichting"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Направление макета"
+          }
         }
       }
     },
     "Locale" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Locale"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Локализация"
+          }
+        }
+      }
     },
     "Location" : {
       "localizations" : {
@@ -1603,6 +1928,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Locatie"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Местоположение"
           }
         }
       }
@@ -1681,6 +2012,30 @@
             "state" : "translated",
             "value" : "Magnetische koers"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Магнитный курс"
+          }
+        }
+      }
+    },
+    "MagSafe" : {
+      "comment" : "A label describing whether a device has a MagSafe port.",
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MagSafe"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MagSafe"
+          }
         }
       }
     },
@@ -1707,11 +2062,30 @@
             "state" : "translated",
             "value" : "Max"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Макс."
+          }
         }
       }
     },
     "Max Load" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Max. belasting"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Макс. нагрузка"
+          }
+        }
+      }
     },
     "Max. clock speed" : {
       "localizations" : {
@@ -1719,6 +2093,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Макс. тактовая чистота"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Max. kloksnelheid"
           }
         }
       }
@@ -1729,6 +2109,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Maximum capaciteit"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Максимальная ёмкость"
           }
         }
       }
@@ -1758,6 +2144,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Metal не поддерживается на этом устройстве"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metal wordt niet ondersteund op dit apparaat"
           }
         }
       }
@@ -1801,6 +2193,12 @@
             "state" : "translated",
             "value" : "Modelinformatie"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Информация о модели"
+          }
         }
       }
     },
@@ -1826,6 +2224,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bewegingscoprocessor"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сопроцессор движения"
           }
         }
       }
@@ -1853,6 +2257,12 @@
             "state" : "translated",
             "value" : "Naam"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Имя"
+          }
         }
       }
     },
@@ -1879,6 +2289,12 @@
             "state" : "translated",
             "value" : "Netwerkinterface"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сетевой интерфейс"
+          }
         }
       }
     },
@@ -1902,7 +2318,20 @@
       "shouldTranslate" : false
     },
     "Next transition" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volgende overgang"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Следующий переход"
+          }
+        }
+      }
     },
     "No" : {
       "localizations" : {
@@ -1910,6 +2339,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nee"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нет"
           }
         }
       }
@@ -1920,6 +2355,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не все платформы будут воспроизводить вибрацию в ответ на определенные типы обратной связи"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niet alle platforms geven feedback bij bepaalde typen"
           }
         }
       }
@@ -1947,11 +2388,30 @@
             "state" : "translated",
             "value" : "Этикетки Вкл./Выкл."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aan/uit-schakelaarlabels"
+          }
         }
       }
     },
     "Open in full screen to view all specs" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open op volledig scherm om alle specs te bekijken"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Откройте в полноэкранном режиме, чтобы увидеть все характеристики"
+          }
+        }
+      }
     },
     "Open this app section on another UWB-capable device" : {
       "localizations" : {
@@ -1959,6 +2419,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Откройте этот раздел приложения на другом устройстве с поддержкой UWB"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open dit appgedeelte op een ander apparaat met UWB"
           }
         }
       }
@@ -1996,7 +2462,20 @@
       }
     },
     "Pack Lot Code" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pack-lotcode"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Код партии блока"
+          }
+        }
+      }
     },
     "PCB Lot Code" : {
       "localizations" : {
@@ -2004,6 +2483,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "PCB Lot Code"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Код партии платы"
           }
         }
       }
@@ -2025,7 +2510,20 @@
       }
     },
     "Pitch" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kanteling"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тангаж"
+          }
+        }
+      }
     },
     "Pixel density" : {
       "localizations" : {
@@ -2079,7 +2577,20 @@
       }
     },
     "Prefers Cross Fade Transitions" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geeft de voorkeur aan crossfade-overgangen"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Предпочитает переходы с плавным затуханием"
+          }
+        }
+      }
     },
     "Pressure" : {
       "localizations" : {
@@ -2152,6 +2663,12 @@
             "state" : "translated",
             "value" : "Nabijheidssensor geactiveerd"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Датчик приближения сработал"
+          }
         }
       }
     },
@@ -2178,6 +2695,12 @@
             "state" : "translated",
             "value" : "Разделитель начала цитаты"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scheidingsteken begin citaat"
+          }
         }
       }
     },
@@ -2187,6 +2710,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Разделитель конца цитаты"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scheidingsteken einde citaat"
           }
         }
       }
@@ -2214,17 +2743,62 @@
             "state" : "translated",
             "value" : "Рейтинг"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Classificatie"
+          }
         }
       }
     },
     "Raw X" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ruwe X"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сырой X"
+          }
+        }
+      }
     },
     "Raw Y" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ruwe Y"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сырой Y"
+          }
+        }
+      }
     },
     "Raw Z" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ruwe Z"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сырой Z"
+          }
+        }
+      }
     },
     "Raytracing" : {
       "localizations" : {
@@ -2297,6 +2871,12 @@
             "state" : "translated",
             "value" : "Частота обновления"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verversingssnelheid"
+          }
         }
       }
     },
@@ -2333,7 +2913,20 @@
       }
     },
     "Roll" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rol"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Крен"
+          }
+        }
+      }
     },
     "Rotation" : {
       "localizations" : {
@@ -2582,6 +3175,12 @@
             "state" : "translated",
             "value" : "Moet zonder kleur onderscheiden"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Различать без цвета"
+          }
         }
       }
     },
@@ -2608,6 +3207,12 @@
             "state" : "translated",
             "value" : "Экран вслух"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spreek scherm uit"
+          }
         }
       }
     },
@@ -2617,6 +3222,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Проговаривание"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spreek selectie uit"
           }
         }
       }
@@ -2658,7 +3269,21 @@
     },
     "Status bar" : {
       "comment" : "A toggle switch that controls whether the status bar is shown or hidden.",
-      "isCommentAutoGenerated" : true
+      "isCommentAutoGenerated" : true,
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Statusbalk"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Строка состояния"
+          }
+        }
+      }
     },
     "Storage" : {
       "localizations" : {
@@ -2683,11 +3308,30 @@
             "state" : "translated",
             "value" : "Doorhalen"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зачёркивание"
+          }
         }
       }
     },
     "Subdivision" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Onderverdeling"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подразделение"
+          }
+        }
+      }
     },
     "Subnet mask" : {
       "localizations" : {
@@ -2727,6 +3371,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ondersteund"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поддерживается"
           }
         }
       }
@@ -2772,6 +3422,12 @@
             "state" : "translated",
             "value" : "Wissel camera"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сменить камеру"
+          }
         }
       }
     },
@@ -2781,6 +3437,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Виртуальный контроллер"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schakelaarbediening"
           }
         }
       }
@@ -2839,6 +3501,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Системный рейтинг"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Systeemclassificatie"
           }
         }
       }
@@ -2930,6 +3598,12 @@
             "state" : "translated",
             "value" : "Dit apparaat is niet UWB-geschikt"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это устройство не поддерживает UWB"
+          }
         }
       }
     },
@@ -2955,6 +3629,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tijdverschuiving"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Смещение времени"
           }
         }
       }
@@ -2998,6 +3678,12 @@
             "state" : "translated",
             "value" : "Версия данных часового пояса"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versie van tijdzonegegevens"
+          }
         }
       }
     },
@@ -3021,7 +3707,20 @@
       }
     },
     "True heading" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ware koers"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Истинный курс"
+          }
+        }
+      }
     },
     "Ultra Wideband" : {
       "localizations" : {
@@ -3078,11 +3777,30 @@
             "state" : "translated",
             "value" : "Niet ondersteund"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не поддерживается"
+          }
         }
       }
     },
     "Usage" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gebruik"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Использование"
+          }
+        }
+      }
     },
     "Used" : {
       "localizations" : {
@@ -3090,6 +3808,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Использовано"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gebruikt"
           }
         }
       }
@@ -3100,6 +3824,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Variant"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вариант"
           }
         }
       }
@@ -3172,7 +3902,20 @@
       }
     },
     "Watch Specific" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Watch-specifiek"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Для Watch"
+          }
+        }
+      }
     },
     "Water lock" : {
       "localizations" : {
@@ -3180,6 +3923,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Watervergrendeling"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Блокировка воды"
           }
         }
       }
@@ -3281,7 +4030,20 @@
       }
     },
     "Yaw" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gier"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рыскание"
+          }
+        }
+      }
     },
     "Yes" : {
       "localizations" : {
@@ -3322,6 +4084,12 @@
             "state" : "translated",
             "value" : "Uw apparaat ondersteunt Foundation Models niet"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваше устройство не поддерживает Foundation Models"
+          }
         }
       }
     },
@@ -3347,6 +4115,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uw apparaat ondersteunt Foundation Models"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваше устройство поддерживает Foundation Models"
           }
         }
       }
