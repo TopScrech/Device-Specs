@@ -62,6 +62,7 @@ extension Device {
         case .iPhone17Pro: "3998 mAh (eSIM-only: 4252 mAh)" // https://gsmarena.com/apple_iphone_17_pro-14049.php
         case .iPhone17ProMax: "4832 mAh (eSIM-only: 5088 mAh)" // https://gsmarena.com/apple_iphone_17_pro_max-13964.php
         case .iPhoneAir: "3149 mAh" // https://gsmarena.com/apple_iphone_17_air-13502.php
+        case .iPhone17e: "4005 mAh" // https://www.gsmarena.com/apple_iphone_17e-14487.php
             
         case .iPad2: "6930 mAh (25 Wh)"
         case .iPad3: "11560 mAh (42.5 Wh)"
