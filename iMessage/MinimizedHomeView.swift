@@ -1,6 +1,6 @@
 import ScrechKit
 
-struct FakeHomeView: View {
+struct MinimizedHomeView: View {
     @State private var nav = NavState()
     
     @State private var system = SystemVM()
