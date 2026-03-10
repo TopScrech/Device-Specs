@@ -27,7 +27,9 @@ extension Device {
         case .iPhone14, .iPhone14Plus, .iPhone14Pro, .iPhone14ProMax: "September 16, 2022"
         case .iPhone15, .iPhone15Plus, .iPhone15Pro, .iPhone15ProMax: "September 22, 2023"
         case .iPhone16, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax: "September 20, 2024"
-        case .iPhone17, .iPhoneAir, .iPhone17Pro, .iPhone17ProMax: "September 9, 2025"
+        case .iPhone17, .iPhoneAir, .iPhone17Pro, .iPhone17ProMax: "September 19, 2025"
+        case .iPhone16e: "28 February, 2026"
+        case .iPhone17e: "March 11, 2026"
             
         case .iPad2: "March 11, 2011"
         case .iPad3: "March 16, 2012"
@@ -52,6 +54,10 @@ extension Device {
         case .iPadAir5: "March 18, 2022"
         case .iPad10, .iPadPro11Inch4, .iPadPro12Inch6: "October 26, 2022"
         case .iPadAir11M2, .iPadAir13M2, .iPadPro11M4, .iPadPro13M4: "May 15, 2024"
+        case .iPadA16, .iPadAir11M3, .iPadAir13M3: "March 12, 2025"
+        case .iPadAir11M4, .iPadAir13M4: "11 March, 2026"
+        case .iPadMiniA17Pro: "October 23, 2024"
+        case .iPadPro11M5, .iPadPro13M5: "October 22, 2025"
             
         case .homePod: "-"
             
