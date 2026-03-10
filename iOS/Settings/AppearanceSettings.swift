@@ -7,6 +7,7 @@ struct AppearanceSettings: View {
     var body: some View {
         Section {
             AppearancePicker($store.appearance)
+                .foregroundStyle(.primary)
         }
     }
 }
