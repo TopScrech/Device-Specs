@@ -31,7 +31,7 @@ extension Device {
             
         case .iPhone14, .iPhone14Plus, .iPhone14Pro, .iPhone14ProMax,
                 .iPhone15, .iPhone15Plus, .iPhone15Pro, .iPhone15ProMax,
-                .iPhone16, .iPhone16e, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax: "5.3"
+                .iPhone16, .iPhone16e, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax, .iPhone17e: "5.3"
             
         case .iPhone17, .iPhoneAir, .iPhone17Pro, .iPhone17ProMax: "6.0"
             
