@@ -29,6 +29,7 @@ struct SpecsLink<Destination: View>: View {
                     .foregroundStyle(.foreground)
 #else
                 Label(name, systemImage: icon)
+                    .foregroundStyle(.primary)
 #endif
                 Spacer()
                 
