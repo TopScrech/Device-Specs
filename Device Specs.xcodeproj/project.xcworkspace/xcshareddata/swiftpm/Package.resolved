@@ -51,8 +51,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TopScrech/SafariCover",
       "state" : {
-        "revision" : "99332a5bad7b3e2ba5bda6584e51f7c921083f7b",
-        "version" : "1.2.0"
+        "revision" : "31d054a86fa244ba080634d27b7a79bdc8c1ebd8",
+        "version" : "1.3.0"
       }
     },
     {
