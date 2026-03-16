@@ -97,8 +97,8 @@ extension Device {
                 .appleWatchSeries5_40mm, .appleWatchSeries5_44mm,
                 .appleWatchSeries6_40mm, .appleWatchSeries6_44mm,
                 .appleWatchSE_40mm, .appleWatchSE_44mm,
-                .appleWatchSE2_40mm, .appleWatchSE2_44mm: "ISO 22810:2010"
-            //                .appleWatchSE3_40mm, appleWatchSE3_44mm confirmed ISO 22810:2010
+                .appleWatchSE2_40mm, .appleWatchSE2_44mm,
+                .appleWatchSE3_40mm, .appleWatchSE3_44mm: "ISO 22810:2010"
             
         case .appleWatchSeries7_41mm, .appleWatchSeries7_45mm,
                 .appleWatchSeries8_41mm, .appleWatchSeries8_45mm,

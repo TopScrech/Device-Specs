@@ -91,8 +91,8 @@ extension Device {
                 .appleWatchUltra2,
                 .appleWatchSeries10_42mm, .appleWatchSeries10_46mm,
                 .appleWatchUltra3,
-                .appleWatchSeries11_42mm, .appleWatchSeries11_46mm: "5.3"
-            //                .appleWatchSE3_40, .appleWatchSE3_44 confirmed 5.3
+                .appleWatchSeries11_42mm, .appleWatchSeries11_46mm,
+                .appleWatchSE3_40mm, .appleWatchSE3_44mm: "5.3"
 #endif
         case .simulator: "Simulator"
         case .unknown(let device): "Unknown (\(device))"
