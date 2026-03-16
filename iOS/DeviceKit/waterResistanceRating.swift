@@ -39,7 +39,7 @@ extension Device {
                 .iPhone14, .iPhone14Plus, .iPhone14Pro, .iPhone14ProMax,
                 .iPhone15, .iPhone15Plus, .iPhone15Pro, .iPhone15ProMax,
                 .iPhone16, .iPhone16e, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax,
-                .iPhone17, .iPhoneAir, .iPhone17Pro, .iPhone17ProMax: "IP68 (IEC 60529)"
+                .iPhone17, .iPhoneAir, .iPhone17Pro, .iPhone17ProMax, .iPhone17e: "IP68 (IEC 60529)"
             
         case .iPad2,
                 .iPad3,
@@ -58,6 +58,7 @@ extension Device {
                 .iPadAir5,
                 .iPadAir11M2, .iPadAir13M2,
                 .iPadAir11M3, .iPadAir13M3,
+                .iPadAir11M4, .iPadAir13M4,
                 .iPadMini,
                 .iPadMini2,
                 .iPadMini3,
