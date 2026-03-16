@@ -44,7 +44,20 @@ extension Device {
                 .iPadPro11Inch4,
                 .iPadPro12Inch6,
                 .iPadPro11M4, .iPadPro13M4,
-                .iPadPro11M5, .iPadPro13M5: "None"
+                .iPadPro11M5, .iPadPro13M5,
+                .iPodTouch5, .iPodTouch6, .iPodTouch7,
+                .homePod,
+                .iPhone4,
+                .iPhone4s,
+                .iPhone5,
+                .iPhone5c,
+                .iPhone5s,
+                .iPhone6,
+                .iPhone6Plus,
+                .iPhone6s,
+                .iPhone6sPlus,
+                .iPhoneSE,
+                .iPhone16e: "None"
             
         case .iPhone7, .iPhone7Plus,
                 .iPhone8, .iPhone8Plus,
