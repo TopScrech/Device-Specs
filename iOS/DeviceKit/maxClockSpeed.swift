@@ -53,6 +53,7 @@ extension Device.CPU {
         case .m2: "3.49 GHz (Max & Ultra - 3.67 GHz)"
         case .m3: "4.05 GHz"
         case .m4: "4.4 GHz"
+        case .m5: "3.05 - 4.61 GHz" // https://www.notebookcheck.net/Apple-M5-Max-Processor-Benchmarks-and-Specs.1244918.0.html
             
 #elseif os(watchOS)
         case .s1: "0.52 GHz" // https://phonedb.net/index.php?m=processor&id=599&c=apple_s1_apl0778_s7002
