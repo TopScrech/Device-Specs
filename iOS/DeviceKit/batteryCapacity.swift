@@ -80,10 +80,16 @@ extension Device {
         case .iPadAir3: "8134 mAh (30.8 Wh)"
         case .iPadAir4: "7606 mAh (28.6 Wh)" // https://gsmarena.com/apple_ipad_air_(2020)-10444.php
         case .iPadAir5: "7600 mAh (28.6 Wh)" // https://gsmarena.com/apple_ipad_air_(2022)-11411.php
-        case .iPadAir11M2: "7606 mAh (28.93 Wh)" // https://gsmarena.com/apple_ipad_air_11_(2024)-12984.php
-        case .iPadAir13M2: "9705 mAh (36.59 Wh)" // https://gsmarena.com/apple_ipad_air_13_(2024)-12985.php
-        case .iPadAir11M3: "7606 mAh (28.93 Wh)" // https://gsmarena.com/apple_ipad_air_11_(2025)-13703.php
-        case .iPadAir13M3: "9705 mAh (36.59 Wh)" // https://gsmarena.com/apple_ipad_air_13_(2025)-13704.php
+            
+            // https://gsmarena.com/apple_ipad_air_13_(2024)-12985.php
+            // https://gsmarena.com/apple_ipad_air_13_(2025)-13704.php
+            // https://www.gsmarena.com/apple_ipad_air_13_5g_(2026)-14521.php
+        case .iPadAir13M2, .iPadAir13M3, .iPadAir13M4: "9705 mAh (36.59 Wh)"
+            
+            // https://gsmarena.com/apple_ipad_air_11_(2024)-12984.php
+            // https://gsmarena.com/apple_ipad_air_11_(2025)-13703.php
+            // https://www.gsmarena.com/apple_ipad_air_11_5g_(2026)-14520.php
+        case .iPadAir11M2, .iPadAir11M3, .iPadAir11M4: "7606 mAh (28.93 Wh)"
             
         case .iPadMini: "4440 mAh (16.5 Wh)"
         case .iPadMini2, .iPadMini3: "6471 mAh (24.3 Wh)"
@@ -103,8 +109,14 @@ extension Device {
         case .iPadPro12Inch5: "10566 mAh (40.33 Wh)"
         case .iPadPro11Inch4: "7538 mAh (28.65 Wh)"
         case .iPadPro12Inch6: "10758 mAh (40.88 Wh)"
-        case .iPadPro11M4: "8160 mAh (31.29 Wh)" // https://gsmarena.com/apple_ipad_pro_11_(2024)-12986.php
-        case .iPadPro13M4: "10290 mAh (38.99 Wh)" // https://gsmarena.com/apple_ipad_pro_13_(2024)-12987.php
+            
+            // https://gsmarena.com/apple_ipad_pro_11_(2024)-12986.php
+            // https://www.gsmarena.com/apple_ipad_pro_11_5g_(2025)-14234.php
+        case .iPadPro11M4, .iPadPro11M5: "8160 mAh (31.29 Wh)"
+            
+            // https://gsmarena.com/apple_ipad_pro_13_(2024)-12987.php
+            // https://www.gsmarena.com/apple_ipad_pro_13_5g_(2025)-14233.php
+        case .iPadPro13M4, .iPadPro13M5: "10290 mAh (38.99 Wh)"
             
         case .homePod: "N/a"
             
