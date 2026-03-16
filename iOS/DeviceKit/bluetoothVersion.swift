@@ -45,6 +45,7 @@ extension Device {
         case .iPadAir2: "4.2"
         case .iPadAir3, .iPadAir4, .iPadAir5, .iPadAir11M2, .iPadAir13M2: "5.0"
         case .iPadAir11M3, .iPadAir13M3: "5.3"
+        case .iPadAir11M4, .iPadAir13M4: "6.0"
             
         case .iPadMini, .iPadMini2: "4.0"
         case .iPadMini3, .iPadMini4: "4.2"
