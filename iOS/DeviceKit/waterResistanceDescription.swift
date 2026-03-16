@@ -23,6 +23,7 @@ extension Device {
                 .iPadAir5,
                 .iPadAir11M2, .iPadAir13M2,
                 .iPadAir11M3, .iPadAir13M3,
+                .iPadAir11M4, .iPadAir13M4,
                 .iPadMini,
                 .iPadMini2,
                 .iPadMini3,
@@ -62,7 +63,7 @@ extension Device {
                 .iPhone14, .iPhone14Plus, .iPhone14Pro, .iPhone14ProMax,
                 .iPhone15, .iPhone15Plus, .iPhone15Pro, .iPhone15ProMax,
                 .iPhone16, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax,
-                .iPhone17, .iPhoneAir, .iPhone17Pro, .iPhone17ProMax: "Up to 30 minutes and 6m deep"
+                .iPhone17, .iPhoneAir, .iPhone17Pro, .iPhone17ProMax, .iPhone17e: "Up to 30 minutes and 6m deep"
             
 #elseif os(watchOS)
         case .appleWatchSeries0_38mm, .appleWatchSeries0_42mm,
