@@ -84,8 +84,8 @@ extension Device {
                 .appleWatchUltra2: "September 22, 2023"
         case .appleWatchSeries10_42mm, .appleWatchSeries10_46mm: "September 20, 2024"
         case .appleWatchUltra3,
-                .appleWatchSeries11_42mm, .appleWatchSeries11_46mm: "September 9, 2024"
-            //                .appleWatchSE3_40mm, .appleWatchSE3_44mm confirmed September 9, 2024
+                .appleWatchSeries11_42mm, .appleWatchSeries11_46mm,
+                .appleWatchSE3_40mm, .appleWatchSE3_44mm: "September 9, 2024"
 #endif
         case .simulator: "N/a"
         case .unknown(let device): "Unknown device \(device.description)"
