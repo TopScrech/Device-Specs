@@ -58,6 +58,7 @@ extension Device.CPU {
         case .m2: "5 nm (N5P)"
         case .m3: "3 nm (N3)"
         case .m4: "3 nm (N3E)"
+        case .m5: "3 nm (N3P)"
 #elseif os(watchOS)
         case .s1: "28 nm" // https://phonedb.net/index.php?m=processor&id=599&c=apple_s1_apl0778_s7002
             
