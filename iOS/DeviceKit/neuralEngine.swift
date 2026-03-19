@@ -50,6 +50,7 @@ extension Device.CPU {
             
         case .m1, .m2, .m3: "16 (Ultra - 32)"
         case .m4: "16"
+        case .m5: "16"
             
 #elseif os(watchOS)
         case .s1, .s1P, .s2, .s3, .s4, .s5, .s6, .s7, .s8: "Unknown"
