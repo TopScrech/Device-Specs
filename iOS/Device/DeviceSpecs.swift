@@ -4,6 +4,7 @@ import DeviceKit
 fileprivate let identifier: String = {
     var systemInfo = utsname()
     uname(&systemInfo)
+    
     let mirror = Mirror(reflecting: systemInfo.machine)
     
     let identifier = mirror.children.reduce("") { identifier, element in
