@@ -12,8 +12,7 @@ extension Device {
         switch self {
 #if os(iOS)
         case .iPodTouch5: "1030 mAh (3.8 Wh)"
-        case .iPodTouch6: "1043 mAh (3.99 Wh)"
-        case .iPodTouch7: "1043 mAh (3.99 Wh)"
+        case .iPodTouch6, .iPodTouch7: "1043 mAh (3.99 Wh)"
         case .iPhone4: "1420 mAh (0.525 Wh)" // https://gsmarena.com/apple_iphone_4-3275.php
         case .iPhone4s: "1432 mAh (5.291 Wh)" // https://gsmarena.com/apple_iphone_4s-4212.php
         case .iPhone5: "1440 mAh (5.45 Wh)" // https://gsmarena.com/apple_iphone_5-4910.php
@@ -26,9 +25,8 @@ extension Device {
         case .iPhoneSE: "1624 mAh (6.21 Wh)"
         case .iPhone7: "1960 mAh (7.45 Wh)"
         case .iPhone7Plus: "2900 mAh (11.1 Wh)"
-        case .iPhone8: "1821 mAh (6.96 Wh)"
+        case .iPhone8, .iPhoneSE2: "1821 mAh (6.96 Wh)"
         case .iPhone8Plus: "2691 mAh (10.28 Wh)"
-        case .iPhoneSE2: "1821 mAh (6.96 Wh)"
         case .iPhoneX: "2716 mAh (10.35 Wh)"
         case .iPhoneXS: "2658 mAh (10.13 Wh)"
         case .iPhoneXSMax: "3174 mAh (12.08 Wh)"
@@ -67,9 +65,7 @@ extension Device {
         case .iPad2: "6930 mAh (25 Wh)"
         case .iPad3: "11560 mAh (42.5 Wh)"
         case .iPad4: "11560 mAh (42.5 Wh)"
-        case .iPad5: "8820 mAh (32.9 Wh)"
-        case .iPad6: "8820 mAh (32.9 Wh)"
-        case .iPad7: "8820 mAh (32.9 Wh)"
+        case .iPad5, .iPad6, .iPad7: "8820 mAh (32.9 Wh)"
         case .iPad8: "8827 mAh (32.4 Wh)"
         case .iPad9: "8557 mAh (32.4 Wh)" // https://gsmarena.com/apple_ipad_10_2_(2021)-11106.php
         case .iPad10: "7606 mAh (28.6 Wh)" // https://gsmarena.com/apple_ipad_(2022)-11941.php
@@ -102,12 +98,10 @@ extension Device {
         case .iPadPro12Inch2: "10994mAh (41.4 Wh)"
         case .iPadPro10Inch: "8134mAh (30.8 Wh)"
         case .iPadPro11Inch: "7812mAh (29.45 Wh)"
-        case .iPadPro12Inch3: "9720mAh (36.71 Wh)"
+        case .iPadPro12Inch3, .iPadPro12Inch4: "9720mAh (36.71 Wh)"
         case .iPadPro11Inch2: "7540mAh (28.79 Wh)"
-        case .iPadPro12Inch4: "9720mAh (36.71 Wh)"
-        case .iPadPro11Inch3: "7538 mAh (28.65 Wh)"
+        case .iPadPro11Inch3, .iPadPro11Inch4: "7538 mAh (28.65 Wh)"
         case .iPadPro12Inch5: "10566 mAh (40.33 Wh)"
-        case .iPadPro11Inch4: "7538 mAh (28.65 Wh)"
         case .iPadPro12Inch6: "10758 mAh (40.88 Wh)"
             
             // https://gsmarena.com/apple_ipad_pro_11_(2024)-12986.php
@@ -127,10 +121,8 @@ extension Device {
         case .appleTV4K3: "N/a"
             
 #elseif os(watchOS)
-        case .appleWatchSeries0_38mm: "205 mAh (0.78 Wh)"
-        case .appleWatchSeries0_42mm: "246 mAh (0.93 Wh)"
-        case .appleWatchSeries1_38mm: "205 mAh (0.78 Wh)"
-        case .appleWatchSeries1_42mm: "246 mAh (0.93 Wh)"
+        case .appleWatchSeries0_38mm, .appleWatchSeries1_38mm: "205 mAh (0.78 Wh)"
+        case .appleWatchSeries0_42mm, .appleWatchSeries1_42mm: "246 mAh (0.93 Wh)"
         case .appleWatchSeries2_38mm: "273 mAh (1.03 Wh)"
         case .appleWatchSeries2_42mm: "334 mAh (1.27 Wh)"
         case .appleWatchSeries3_38mm: "262 mAh (1 Wh), Cellular: 279 mAh (1.07 Wh)"
