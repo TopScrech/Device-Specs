@@ -1266,22 +1266,6 @@
     "Face ID" : {
       "shouldTranslate" : false
     },
-    "Feedback" : {
-      "localizations" : {
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Feedback"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Обратная связь"
-          }
-        }
-      }
-    },
     "Firmware Version" : {
       "localizations" : {
         "nl" : {

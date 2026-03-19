@@ -49,6 +49,7 @@ extension Device.CPU {
         case .m2: "ARMv8.6-A"
         case .m3: "ARMv8.6-A"
         case .m4: "ARMv9.2-A"
+        case .m5: "ARMv9.2-A"
             
 #elseif os(watchOS)
         case .s1: "ARMv7k" // https://phonedb.net/index.php?m=processor&id=599&c=apple_s1_apl0778_s7002
