@@ -33,7 +33,7 @@ struct AboutView: View {
             
             Spacer()
             
-#if !os(tvOS) || !os(watchOS)
+#if !os(tvOS) && !os(watchOS)
             Text("Get in touch")
                 .title3(.semibold, design: .rounded)
                 .secondary()
@@ -50,9 +50,7 @@ struct AboutView: View {
                 }
             }
             .padding()
-            .background(.ultraThinMaterial, in: .capsule)
-#warning("glassEffect")
-            //            .glassEffect()
+            .glassyBackground()
 #endif
         }
         .padding(.vertical)
