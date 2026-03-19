@@ -2,7 +2,7 @@ import ScrechKit
 @preconcurrency import MultipeerConnectivity
 
 struct MPCSessionConstants {
-    nonisolated(unsafe) static let kKeyIdentity = "identity"
+    nonisolated static let kKeyIdentity = "identity"
 }
 
 class MPCSession: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, MCNearbyServiceAdvertiserDelegate {
