@@ -170,7 +170,7 @@ extension Device {
         case .appleWatchSE3_44mm: "1.276 Wh"
             
             // https://www.macworld.com/article/2910975
-        case .appleWatchSeries11_46mm: "1.245 Wh"
+        case .appleWatchSeries11_42mm: "1.245 Wh"
             
             // https://www.macworld.com/article/2910975
         case .appleWatchSeries11_46mm: "1.403 Wh"
