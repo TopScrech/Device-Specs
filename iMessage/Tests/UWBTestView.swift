@@ -69,6 +69,9 @@ struct UWBTestView: View {
         } message: {
             Text(vm.alertMessage)
         }
+        .onDisappear {
+            vm.stop()
+        }
     }
 }
 

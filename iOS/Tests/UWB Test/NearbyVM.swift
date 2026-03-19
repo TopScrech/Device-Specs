@@ -52,6 +52,7 @@ class NearbyVM: NSObject, NISessionDelegate {
     var sharedTokenWithPeer = false
     var peerDisplayName: String?
     var pendingPeerToken: (peer: MCPeerID, token: NIDiscoveryToken)?
+    private var isStopping = false
     
     override init() {
         super.init()
@@ -60,6 +61,7 @@ class NearbyVM: NSObject, NISessionDelegate {
     }
     
     private func startup() {
+        isStopping = false
         session = NISession()
         session?.delegate = self
         
@@ -77,7 +79,9 @@ class NearbyVM: NSObject, NISessionDelegate {
         }
         
         guard let myToken = session?.discoveryToken else {
-            fatalError("Unable to get self discovery token, is this session invalidated?")
+            logger.error("Unable to get local discovery token")
+            updateInformationLabel("Unable to start UWB session")
+            return
         }
         
         updateInformationLabel("Initializing")
@@ -108,7 +112,7 @@ class NearbyVM: NSObject, NISessionDelegate {
     
     private func handleSessionUpdate(_ nearbyObjects: [NINearbyObject]) {
         guard let peerToken = peerDiscoveryToken else {
-            fatalError("don't have peer token")
+            return
         }
         
         // Find the right peer
@@ -149,7 +153,7 @@ class NearbyVM: NSObject, NISessionDelegate {
         reason: NINearbyObject.RemovalReason
     ) {
         guard let peerToken = peerDiscoveryToken else {
-            fatalError("don't have peer token")
+            return
         }
         
         // Find the right peer
@@ -181,8 +185,9 @@ class NearbyVM: NSObject, NISessionDelegate {
             
             updateInformationLabel("Peer Timeout")
             
-        default:
-            fatalError("Unknown and unhandled NINearbyObject.RemovalReason")
+        @unknown default:
+            logger.error("Unhandled nearby object removal reason")
+            updateInformationLabel("Peer unavailable")
         }
     }
     
@@ -222,6 +227,10 @@ class NearbyVM: NSObject, NISessionDelegate {
     
     private func handleSessionInvalidation(_ error: Error) {
         currentDistanceDirectionState = .unknown
+        
+        if isStopping {
+            return
+        }
         
         if case NIError.userDidNotAllow = error {
             updateInformationLabel("Nearby Interactions access required in Settings")
@@ -289,11 +298,14 @@ class NearbyVM: NSObject, NISessionDelegate {
     
     private func connectedToPeer(peer: MCPeerID) {
         guard let myToken = session?.discoveryToken else {
-            fatalError("Unexpectedly failed to initialize nearby interaction session")
+            logger.error("Missing discovery token while connecting to peer")
+            updateInformationLabel("Unable to initialize UWB session")
+            return
         }
         
         if connectedPeer != nil {
-            fatalError("Already connected to a peer")
+            logger.error("Ignoring duplicate peer connection for \(peer.displayName, privacy: .public)")
+            return
         }
         
         connectedPeer = peer
@@ -331,7 +343,8 @@ class NearbyVM: NSObject, NISessionDelegate {
                 from: data
             )
         else {
-            fatalError("Unexpectedly failed to decode discovery token.")
+            logger.error("Failed to decode discovery token from peer")
+            return
         }
         
         updateInformationLabel("Received peer token")
@@ -342,7 +355,8 @@ class NearbyVM: NSObject, NISessionDelegate {
         guard
             let encodedData = try? NSKeyedArchiver.archivedData(withRootObject: token, requiringSecureCoding: true)
         else {
-            fatalError("Unexpectedly failed to encode discovery token.")
+            logger.error("Failed to encode local discovery token")
+            return
         }
         
         mpc?.sendDataToAllPeers(data: encodedData)
@@ -500,6 +514,43 @@ class NearbyVM: NSObject, NISessionDelegate {
         withAnimation(.easeOut(duration: 0.3)) {
             status = description
         }
+    }
+    
+    func stop() {
+        guard !isStopping else {
+            return
+        }
+        
+        isStopping = true
+        session?.delegate = nil
+        session?.invalidate()
+        session = nil
+        
+        mpc?.peerConnectedHandler = nil
+        mpc?.peerDataHandler = nil
+        mpc?.peerDisconnectedHandler = nil
+        mpc?.failureHandler = nil
+        mpc?.invalidate()
+        mpc = nil
+        
+        peerDiscoveryToken = nil
+        connectedPeer = nil
+        peerDisplayName = nil
+        pendingPeerToken = nil
+        sharedTokenWithPeer = false
+        currentDistanceDirectionState = .unknown
+        connectedDeviceName = ""
+        status = ""
+        distance = ""
+        azimuthText = ""
+        elevationText = ""
+        monkeyLabel = "🙈"
+        monkeyRotationAngle = 0
+        leftArrow = 0
+        rightArrow = 0
+        upArrow = 0
+        downArrow = 0
+        angleInfoView = 0
     }
 }
 
