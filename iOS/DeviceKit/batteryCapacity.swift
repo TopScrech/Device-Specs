@@ -153,8 +153,7 @@ extension Device {
         case .appleWatchSeries9_41mm: "282 mAh" // https://www.macrumors.com/2023/09/15/apple-watch-series-9-ultra-2-battery-capacities/
         case .appleWatchSeries9_45mm: "308 mAh" // https://www.macrumors.com/2023/09/15/apple-watch-series-9-ultra-2-battery-capacities/
         case .appleWatchUltra2: "564 mAh" // https://www.macrumors.com/2023/09/15/apple-watch-series-9-ultra-2-battery-capacities/
-        case .appleWatchSeries10_42mm: "-"
-        case .appleWatchSeries10_46mm: "327 mAh" // https://www.gsmarena.com/apple_watch_series_10-13318.php
+        case .appleWatchSeries10_42mm, .appleWatchSeries10_46mm: "327 mAh" // https://www.gsmarena.com/apple_watch_series_10-13318.php
 #endif
         case .simulator: "-"
         case .unknown(let device): "Unknown device \(device.description)"
