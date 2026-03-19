@@ -51,6 +51,7 @@ extension Device.CPU {
         case .m2: "LPDDR5"
         case .m3: "LPDDR5"
         case .m4: "LPDDR5" // Pro, Max, Ultra - ???
+        case .m5: "LPDDR5X"
             
 #elseif os(watchOS)
         case .s1: "LPDDR3" // https://phonedb.net/index.php?m=processor&id=599&c=apple_s1_apl0778_s7002
