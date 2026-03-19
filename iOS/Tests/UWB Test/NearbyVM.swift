@@ -440,8 +440,9 @@ class NearbyVM: NSObject, NISessionDelegate {
             monkeyLabel = ""
         }
         
-        if peer.distance != nil {
-            distance = String(format: "%0.2f m", peer.distance!)
+        if let peerDistance = peer.distance {
+            let clampedDistance = max(peerDistance, 0)
+            distance = clampedDistance.formatted(.number.precision(.fractionLength(2))) + " m"
         }
         
         monkeyRotationAngle = CGFloat(azimuth ?? 0)
