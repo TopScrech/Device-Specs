@@ -166,6 +166,9 @@ extension Device {
             // https://www.gsmarena.com/apple_watch_series_10-13318.php
         case .appleWatchSeries10_42mm, .appleWatchSeries10_46mm: "327 mAh"
             
+            // https://chemtrec.blob.core.windows.net/criterion/APIS_BPIS_Current.pdf
+        case .appleWatchSE3_44mm: "1.017 Wh"
+            
             // https://www.macworld.com/article/2910975
         case .appleWatchSE3_44mm: "1.276 Wh"
             
