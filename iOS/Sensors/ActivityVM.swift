@@ -6,15 +6,43 @@ import SwiftUI
 final class ActivityVM {
     private(set) var activity = ""
     private(set) var confidence = ""
+    private(set) var status = ""
     
     private let motionActivityManager = CMMotionActivityManager()
+    private var isMonitoring = false
     
-    init() {
+    func onAppear() {
+        guard !isMonitoring else {
+            return
+        }
+        
+        isMonitoring = true
         initialize()
     }
     
     private func initialize() {
         guard CMMotionActivityManager.isActivityAvailable() else {
+            status = "Motion activity unavailable"
+            return
+        }
+        
+        switch CMMotionActivityManager.authorizationStatus() {
+        case .authorized:
+            status = "Motion access granted"
+            
+        case .notDetermined:
+            status = "Requesting Motion access"
+            
+        case .denied:
+            status = "Motion access denied"
+            return
+            
+        case .restricted:
+            status = "Motion access restricted"
+            return
+            
+        @unknown default:
+            status = "Motion access unavailable"
             return
         }
         
@@ -25,6 +53,8 @@ final class ActivityVM {
     
     private func updateActivity(_ activityData: CMMotionActivity?) {
         guard let activityData else { return }
+        
+        status = "Motion access granted"
         
         switch true {
         case activityData.walking:

@@ -6,6 +6,7 @@ import Combine
 final class OrientationVM {
     private var motionManager = CMMotionManager()
     private var cancellables = Set<AnyCancellable>()
+    private var isMonitoring = false
     
     // Rotation
     private(set) var roll = "0.0g"
@@ -19,7 +20,12 @@ final class OrientationVM {
     
     private(set) var orientation = ""
     
-    init() {
+    func onAppear() {
+        guard !isMonitoring else {
+            return
+        }
+        
+        isMonitoring = true
         startFetchingMotionData()
         listenToDeviceOrientation()
     }

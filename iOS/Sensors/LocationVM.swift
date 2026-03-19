@@ -12,12 +12,21 @@ final class LocationVM: NSObject, CLLocationManagerDelegate {
     private(set) var headingAccuracy = 0.0
     
     private var locationManager: CLLocationManager
+    private var isMonitoring = false
     
     override init() {
         locationManager = CLLocationManager()
         super.init()
         
         locationManager.delegate = self
+    }
+    
+    func onAppear() {
+        guard !isMonitoring else {
+            return
+        }
+        
+        isMonitoring = true
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         locationManager.startUpdatingHeading()
@@ -46,6 +55,12 @@ final class LocationVM: NSObject, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         logger.error("Failed to update location: \(error)")
+    }
+    
+    @MainActor
+    deinit {
+        locationManager.stopUpdatingHeading()
+        locationManager.stopUpdatingLocation()
     }
 }
 

@@ -1,3 +1,3 @@
 enum NavDestinations: Hashable {
-    case toUwbTest, toTests
+    case toSensors, toUwbTest, toTests
 }

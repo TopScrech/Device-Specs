@@ -10,6 +10,9 @@ struct SensorsSpecs: View {
     var body: some View {
         List {
             LabeledContent("Proximity sensor triggered", value: proximity.isDeviceCloseToUser ? "Yes" : "No")
+                .onAppear {
+                    proximity.onAppear()
+                }
             
             LocationSensors()
             
@@ -18,6 +21,9 @@ struct SensorsSpecs: View {
                 LabeledContent("Pitch", value: orientation.pitch)
                 LabeledContent("Yaw", value: orientation.yaw)
                 LabeledContent("Orientation", value: orientation.orientation)
+            }
+            .onAppear {
+                orientation.onAppear()
             }
             
             Section("Acceleration") {
@@ -34,12 +40,23 @@ struct SensorsSpecs: View {
                 LabeledContent("Relative altitude", value: altitude.relativeAltitude)
                 LabeledContent("Absolute altitude", value: altitude.absoluteAltitude)
             }
+            .onAppear {
+                altitude.onAppear()
+                pressure.onAppear()
+            }
             
             MagneticFieldData()
             
             Section("Motion coprocessor") {
+                if !activity.status.isEmpty {
+                    LabeledContent("Status", value: activity.status)
+                }
+                
                 LabeledContent("Activity", value: activity.activity)
                 LabeledContent("Confidence", value: activity.confidence)
+            }
+            .onAppear {
+                activity.onAppear()
             }
         }
         .navigationTitle("Sensors")

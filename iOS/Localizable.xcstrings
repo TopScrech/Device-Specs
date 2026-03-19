@@ -1335,16 +1335,16 @@
     },
     "Free" : {
       "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Свободно"
-          }
-        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vrij"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Свободно"
           }
         }
       }
@@ -2089,16 +2089,16 @@
     },
     "Max. clock speed" : {
       "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Макс. тактовая чистота"
-          }
-        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Max. kloksnelheid"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Макс. тактовая чистота"
           }
         }
       }
@@ -2140,16 +2140,16 @@
     },
     "Metal is not supported on this device" : {
       "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Metal не поддерживается на этом устройстве"
-          }
-        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Metal wordt niet ondersteund op dit apparaat"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metal не поддерживается на этом устройстве"
           }
         }
       }
@@ -2351,16 +2351,16 @@
     },
     "Not all platforms will play feedback in response to certain types" : {
       "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Не все платформы будут воспроизводить вибрацию в ответ на определенные типы обратной связи"
-          }
-        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Niet alle platforms geven feedback bij bepaalde typen"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не все платформы будут воспроизводить вибрацию в ответ на определенные типы обратной связи"
           }
         }
       }
@@ -2383,16 +2383,16 @@
     },
     "On/Off Switch Labels" : {
       "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Этикетки Вкл./Выкл."
-          }
-        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aan/uit-schakelaarlabels"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Этикетки Вкл./Выкл."
           }
         }
       }
@@ -2415,16 +2415,16 @@
     },
     "Open this app section on another UWB-capable device" : {
       "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Откройте этот раздел приложения на другом устройстве с поддержкой UWB"
-          }
-        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Open dit appgedeelte op een ander apparaat met UWB"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Откройте этот раздел приложения на другом устройстве с поддержкой UWB"
           }
         }
       }
@@ -2690,32 +2690,32 @@
     },
     "Quotation begin delimiter" : {
       "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Разделитель начала цитаты"
-          }
-        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scheidingsteken begin citaat"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разделитель начала цитаты"
           }
         }
       }
     },
     "Quotation end delimiter" : {
       "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Разделитель конца цитаты"
-          }
-        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scheidingsteken einde citaat"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разделитель конца цитаты"
           }
         }
       }
@@ -2738,16 +2738,16 @@
     },
     "Rating" : {
       "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Рейтинг"
-          }
-        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Classificatie"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рейтинг"
           }
         }
       }
@@ -2866,16 +2866,16 @@
     },
     "Refresh rate" : {
       "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Частота обновления"
-          }
-        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Verversingssnelheid"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Частота обновления"
           }
         }
       }
@@ -3202,32 +3202,32 @@
     },
     "Speak Screen" : {
       "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Экран вслух"
-          }
-        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spreek scherm uit"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Экран вслух"
           }
         }
       }
     },
     "Speak Selection" : {
       "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Проговаривание"
-          }
-        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spreek selectie uit"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проговаривание"
           }
         }
       }
@@ -3266,6 +3266,10 @@
           }
         }
       }
+    },
+    "Status" : {
+      "comment" : "A label for the status of the motion coprocessor.",
+      "isCommentAutoGenerated" : true
     },
     "Status bar" : {
       "comment" : "A toggle switch that controls whether the status bar is shown or hidden.",
@@ -3433,16 +3437,16 @@
     },
     "Switch Control" : {
       "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Виртуальный контроллер"
-          }
-        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schakelaarbediening"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Виртуальный контроллер"
           }
         }
       }
@@ -3497,16 +3501,16 @@
     },
     "System rating" : {
       "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Системный рейтинг"
-          }
-        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Systeemclassificatie"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Системный рейтинг"
           }
         }
       }
@@ -3673,16 +3677,16 @@
     },
     "Time zone data version" : {
       "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Версия данных часового пояса"
-          }
-        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Versie van tijdzonegegevens"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Версия данных часового пояса"
           }
         }
       }
@@ -3804,16 +3808,16 @@
     },
     "Used" : {
       "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Использовано"
-          }
-        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gebruikt"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Использовано"
           }
         }
       }

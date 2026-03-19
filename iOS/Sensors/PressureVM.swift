@@ -4,11 +4,17 @@ import CoreMotion
 @Observable
 final class PressureVM {
     private var altimeter = CMAltimeter()
+    private var isMonitoring = false
     
     private(set) var pressureKilo: String?
     private(set) var pressureHecto = ""
     
-    init() {
+    func onAppear() {
+        guard !isMonitoring else {
+            return
+        }
+        
+        isMonitoring = true
         fetchPressureData()
     }
     

@@ -8,10 +8,19 @@ final class MagneticVM: NSObject {
     var rawMagneticField: MagneticField? = nil
     
     private var motionManager: CMMotionManager
+    private var isMonitoring = false
     
     override init() {
         motionManager = CMMotionManager()
         super.init()
+    }
+    
+    func onAppear() {
+        guard !isMonitoring else {
+            return
+        }
+        
+        isMonitoring = true
         startMagnetometerUpdates()
     }
     

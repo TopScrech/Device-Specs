@@ -6,12 +6,21 @@ import CoreMotion
 class AltitudeVM: NSObject {
     private var altimeter = CMAltimeter()
     private var locationManager = CLLocationManager()
+    private var isMonitoring = false
     
     private(set) var relativeAltitude = "0.0 m"
     private(set) var absoluteAltitude = "0.0 m"
     
     override init() {
         super.init()
+    }
+    
+    func onAppear() {
+        guard !isMonitoring else {
+            return
+        }
+        
+        isMonitoring = true
         setupLocationManager()
         fetchRelativeAltitude()
     }
@@ -44,8 +53,8 @@ class AltitudeVM: NSObject {
 extension AltitudeVM: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let latestLocation = locations.last {
-            DispatchQueue.main.async {
-                self.absoluteAltitude = String(format: "%.2f m", latestLocation.altitude)
+            Task { @MainActor [weak self] in
+                self?.absoluteAltitude = String(format: "%.2f m", latestLocation.altitude)
             }
         }
     }

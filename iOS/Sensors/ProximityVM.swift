@@ -4,7 +4,14 @@ import SwiftUI
 final class ProximityVM {
     private(set) var isDeviceCloseToUser = false
     
-    init() {
+    private var isMonitoring = false
+    
+    func onAppear() {
+        guard !isMonitoring else {
+            return
+        }
+        
+        isMonitoring = true
         UIDevice.current.isProximityMonitoringEnabled = true
         
         isDeviceCloseToUser = UIDevice.current.proximityState
