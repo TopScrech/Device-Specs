@@ -6,6 +6,7 @@ import DeviceKit
 // https://macworld.com/article/678413/iphone-battery-capacities-compared-all-iphones-battery-life-in-mah-and-wh.html
 
 // MagSafe battery pack: 1460mAh (11.13 Wh)
+// Air MagSafe battery pack: same capcity as Air
 
 extension Device {
     var batteryCapacity: String {
@@ -137,15 +138,45 @@ extension Device {
         case .appleWatchSE_44mm: "296 mAh (1.129 Wh)"
         case .appleWatchSeries7_41mm: "284 mAh (1.094 Wh)"
         case .appleWatchSeries7_45mm: "309 mAh (1.189 Wh)"
-        case .appleWatchSeries8_41mm: "282 mAh" // https://www.macrumors.com/2023/09/15/apple-watch-series-9-ultra-2-battery-capacities/
-        case .appleWatchSeries8_45mm: "308 mAh" // https://www.macrumors.com/2023/09/15/apple-watch-series-9-ultra-2-battery-capacities/
-        case .appleWatchSE2_40mm: "245 mAh"
-        case .appleWatchSE2_44mm: "296 mAh"
-        case .appleWatchUltra: "542 mAh" // https://www.macrumors.com/2023/09/15/apple-watch-series-9-ultra-2-battery-capacities/
-        case .appleWatchSeries9_41mm: "282 mAh" // https://www.macrumors.com/2023/09/15/apple-watch-series-9-ultra-2-battery-capacities/
-        case .appleWatchSeries9_45mm: "308 mAh" // https://www.macrumors.com/2023/09/15/apple-watch-series-9-ultra-2-battery-capacities/
-        case .appleWatchUltra2: "564 mAh" // https://www.macrumors.com/2023/09/15/apple-watch-series-9-ultra-2-battery-capacities/
-        case .appleWatchSeries10_42mm, .appleWatchSeries10_46mm: "327 mAh" // https://www.gsmarena.com/apple_watch_series_10-13318.php
+            
+            // https://www.macrumors.com/2023/09/15/apple-watch-series-9-ultra-2-battery-capacities/
+        case .appleWatchSeries8_41mm: "282 mAh"
+            
+            // https://www.macrumors.com/2023/09/15/apple-watch-series-9-ultra-2-battery-capacities/
+        case .appleWatchSeries8_45mm: "308 mAh"
+            
+            // https://www.macworld.com/article/2910975
+        case .appleWatchSE2_40mm: "0.807 Wh (Cellular - 0.944 Wh)"
+            
+            // https://www.macworld.com/article/2910975
+        case .appleWatchSE2_44mm: "1.13Wh"
+            
+            // https://www.macrumors.com/2023/09/15/apple-watch-series-9-ultra-2-battery-capacities/
+        case .appleWatchUltra: "542 mAh"
+            
+            // https://www.macrumors.com/2023/09/15/apple-watch-series-9-ultra-2-battery-capacities/
+        case .appleWatchSeries9_41mm: "282 mAh"
+            
+            // https://www.macrumors.com/2023/09/15/apple-watch-series-9-ultra-2-battery-capacities/
+        case .appleWatchSeries9_45mm: "308 mAh"
+            
+            // https://www.macrumors.com/2023/09/15/apple-watch-series-9-ultra-2-battery-capacities/
+        case .appleWatchUltra2: "564 mAh"
+            
+            // https://www.gsmarena.com/apple_watch_series_10-13318.php
+        case .appleWatchSeries10_42mm, .appleWatchSeries10_46mm: "327 mAh"
+            
+            // https://www.macworld.com/article/2910975
+        case .appleWatchSE3_44mm: "1.276 Wh"
+            
+            // https://www.macworld.com/article/2910975
+        case .appleWatchSeries11_46mm: "1.245 Wh"
+            
+            // https://www.macworld.com/article/2910975
+        case .appleWatchSeries11_46mm: "1.403 Wh"
+            
+            // https://www.macworld.com/article/2910975
+        case .appleWatchUltra3: "2.313 Wh"
 #endif
         case .simulator: "-"
         case .unknown(let device): "Unknown device \(device.description)"
