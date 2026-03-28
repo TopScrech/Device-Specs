@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @Environment(NavState.self) private var nav
+    
     @State private var battery = BatteryVM()
     @State private var processor = ProcessorVM()
     @State private var display = DisplayVM()
@@ -59,9 +61,10 @@ struct HomeView: View {
                     .environment(camera)
             }
             
-            SpecsLink("Sensors", icon: "barometer") {
-                SensorsSpecs()
+            Button("Sensors", systemImage: "barometer") {
+                nav.navigate(.toSensors)
             }
+            .foregroundStyle(.foreground)
             
             SpecsLink("Accessibility", icon: "accessibility") {
                 AccessibilitySpecs()

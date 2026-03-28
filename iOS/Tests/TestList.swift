@@ -37,6 +37,7 @@ struct TestList: View {
             }
         }
         .navigationTitle("Tests")
+        .scrollIndicators(.never)
         .sheet($sheetCamera) {
             CameraTest()
         }

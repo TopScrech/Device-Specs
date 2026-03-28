@@ -6,6 +6,8 @@
 	<array>
 		<string>_specs._tcp</string>
 	</array>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>This permission is required to discover nearby UWB test devices</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionPointIdentifier</key>

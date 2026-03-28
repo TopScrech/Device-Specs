@@ -24,6 +24,7 @@ extension Device.CPU {
         case .m2: "15.8 (Ultra - 31.6)"
         case .m3: "18 (Ultra - 36)"
         case .m4: "38"
+        case .m5: "Unknown, not far from M4's 38"
             
 #elseif os(watchOS)
         case .s1, .s1P, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9, .s10: "Unknown"
@@ -50,6 +51,7 @@ extension Device.CPU {
             
         case .m1, .m2, .m3: "16 (Ultra - 32)"
         case .m4: "16"
+        case .m5: "16"
             
 #elseif os(watchOS)
         case .s1, .s1P, .s2, .s3, .s4, .s5, .s6, .s7, .s8: "Unknown"

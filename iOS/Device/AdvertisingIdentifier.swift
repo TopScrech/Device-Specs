@@ -36,16 +36,7 @@
 //    }
 //    
 //    private func isTrackingAccessAvailable() -> Bool {
-//        switch ATTrackingManager.trackingAuthorizationStatus {
-//        case .authorized:
-//            true
-//            
-//        case .notDetermined, .restricted, .denied:
-//            false
-//            
-//        default:
-//            false
-//        }
+//        ATTrackingManager.trackingAuthorizationStatus == .authorized
 //    }
 //    
 //    var body: some View {

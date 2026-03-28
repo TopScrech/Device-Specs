@@ -13,7 +13,7 @@ struct AppContainer: View {
     
     var body: some View {
         NavigationStack {
-            FakeHomeView()
+            MinimizedHomeView()
 //            .toolbarBackgroundVisibility(.visible)
         }
     }

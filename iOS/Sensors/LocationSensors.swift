@@ -44,6 +44,9 @@ struct LocationSensors: View {
             
             LabeledContent("Heading accuracy", value: String(format: "%.2f", location.headingAccuracy) + "°")
         }
+        .onAppear {
+            location.onAppear()
+        }
     }
 }
 

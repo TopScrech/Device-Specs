@@ -19,7 +19,9 @@ struct SpecsLink<Destination: View>: View {
     }
     
     var body: some View {
-        NavigationLink(destination: destination) {
+        NavigationLink {
+            destination()
+        } label: {
             HStack(spacing: 0) {
 #if os(tvOS)
                 Image(systemName: icon)
@@ -29,6 +31,7 @@ struct SpecsLink<Destination: View>: View {
                     .foregroundStyle(.foreground)
 #else
                 Label(name, systemImage: icon)
+                    .foregroundStyle(.primary)
 #endif
                 Spacer()
                 

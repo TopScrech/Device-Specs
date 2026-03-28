@@ -31,7 +31,7 @@ extension Device {
             
         case .iPhone14, .iPhone14Plus, .iPhone14Pro, .iPhone14ProMax,
                 .iPhone15, .iPhone15Plus, .iPhone15Pro, .iPhone15ProMax,
-                .iPhone16, .iPhone16e, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax: "5.3"
+                .iPhone16, .iPhone16e, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax, .iPhone17e: "5.3"
             
         case .iPhone17, .iPhoneAir, .iPhone17Pro, .iPhone17ProMax: "6.0"
             
@@ -45,6 +45,7 @@ extension Device {
         case .iPadAir2: "4.2"
         case .iPadAir3, .iPadAir4, .iPadAir5, .iPadAir11M2, .iPadAir13M2: "5.0"
         case .iPadAir11M3, .iPadAir13M3: "5.3"
+        case .iPadAir11M4, .iPadAir13M4: "6.0"
             
         case .iPadMini, .iPadMini2: "4.0"
         case .iPadMini3, .iPadMini4: "4.2"
@@ -90,8 +91,8 @@ extension Device {
                 .appleWatchUltra2,
                 .appleWatchSeries10_42mm, .appleWatchSeries10_46mm,
                 .appleWatchUltra3,
-                .appleWatchSeries11_42mm, .appleWatchSeries11_46mm: "5.3"
-            //                .appleWatchSE3_40, .appleWatchSE3_44 confirmed 5.3
+                .appleWatchSeries11_42mm, .appleWatchSeries11_46mm,
+                .appleWatchSE3_40mm, .appleWatchSE3_44mm: "5.3"
 #endif
         case .simulator: "Simulator"
         case .unknown(let device): "Unknown (\(device))"

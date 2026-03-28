@@ -19,7 +19,10 @@ struct UWBTestView: View {
             
             Text(vm.connectedDeviceName)
             
-            //            Text(model.status)
+            if !vm.status.isEmpty {
+                Text(vm.status)
+                    .foregroundStyle(.secondary) 
+            }
             
             HStack {
                 Image(systemName: "arrow.turn.up.left")
@@ -65,6 +68,9 @@ struct UWBTestView: View {
             Button("Cancel") {}
         } message: {
             Text(vm.alertMessage)
+        }
+        .onDisappear {
+            vm.stop()
         }
     }
 }
