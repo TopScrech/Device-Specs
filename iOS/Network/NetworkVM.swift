@@ -41,8 +41,13 @@ final class NetworkVM {
         while ptr != nil {
             let interface = ptr!.pointee
             
+            guard let address = interface.ifa_addr else {
+                ptr = interface.ifa_next
+                continue
+            }
+            
             guard
-                interface.ifa_addr.pointee.sa_family == UInt8(AF_INET)
+                address.pointee.sa_family == UInt8(AF_INET)
             else {
                 ptr = interface.ifa_next
                 continue
@@ -56,7 +61,7 @@ final class NetworkVM {
             }
             
             // Network interface
-            var addr = interface.ifa_addr.pointee
+            var addr = address.pointee
             var hostname = [CChar](repeating: 0, count: Int(NI_MAXHOST))
             
             getnameinfo(

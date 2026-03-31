@@ -19,11 +19,18 @@ final class MemoryVM {
     
     init() {
         getMemoryUsage()
-        getDiskInfo()
     }
     
     var totalRamAndDisk: String {
-        "\(totalRam) & \(totalDisk)"
+        if totalRam.isEmpty {
+            return totalDisk
+        }
+        
+        if totalDisk.isEmpty {
+            return totalRam
+        }
+        
+        return "\(totalRam) & \(totalDisk)"
     }
     
     var memoryType: String {
@@ -101,17 +108,29 @@ final class MemoryVM {
                 return
             }
             
+            guard totalCapacity > 0 else {
+                freeDisk = "N/a"
+                usedDisk = "N/a"
+                totalDisk = "N/a"
+                
+                return
+            }
+            
 #if os(watchOS) || os(tvOS)
-            let usedCapacity = totalCapacity - availableCapacity
+            let clampedAvailableCapacity = max(0, min(availableCapacity, totalCapacity))
+            let usedCapacity = max(0, totalCapacity - clampedAvailableCapacity)
             
-            freeDisk = format(totalCapacity, availableCapacity)
+            freeDisk = format(totalCapacity, clampedAvailableCapacity)
 #else
-            freeDiskForOpportunisticUsage = format(totalCapacity, Int(availableCapacityForOpportunisticUsage))
-            freeDiskForImportantUsage = format(totalCapacity, Int(availableCapacityForImportantUsage))
+            let clampedAvailableCapacityForOpportunisticUsage = max(0, min(Int(availableCapacityForOpportunisticUsage), totalCapacity))
+            let clampedAvailableCapacityForImportantUsage = max(0, min(Int(availableCapacityForImportantUsage), totalCapacity))
             
-            let usedCapacity = totalCapacity - Int(availableCapacityForImportantUsage)
+            freeDiskForOpportunisticUsage = format(totalCapacity, clampedAvailableCapacityForOpportunisticUsage)
+            freeDiskForImportantUsage = format(totalCapacity, clampedAvailableCapacityForImportantUsage)
             
-            freeDisk = format(totalCapacity, Int(availableCapacityForImportantUsage))
+            let usedCapacity = max(0, totalCapacity - clampedAvailableCapacityForImportantUsage)
+            
+            freeDisk = format(totalCapacity, clampedAvailableCapacityForImportantUsage)
 #endif
             
             totalDisk = formatBytes(totalCapacity)

@@ -1,16 +1,10 @@
-#if os(visionOS)
 import SwiftUI
 
-#if canImport(SafariCover)
-import SafariCover
-#endif
-
 @main
-struct DeviceSpecsApp: App {
+struct DeviceSpecsWatchApp: App {
     var body: some Scene {
         WindowGroup {
             AppContainer()
         }
     }
 }
-#endif

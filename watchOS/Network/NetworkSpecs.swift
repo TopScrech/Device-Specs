@@ -12,10 +12,6 @@ struct NetworkSpecs: View {
             
             LabeledContent("Router", value: network.destinationIpAddress)
             
-            if let router = RouterVM().fetch() {
-                LabeledContent("Router", value: router)
-            }
-            
             LabeledContent("Subnet mask", value: network.subnetMask)
             
             Section {
@@ -23,7 +19,7 @@ struct NetworkSpecs: View {
             }
         }
         .navigationTitle("Network")
-        .refreshableTask {
+        .refreshable {
             await network.getIPAddresses()
         }
     }

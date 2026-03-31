@@ -46,6 +46,10 @@ struct MemorySpecs: View {
         .navigationTitle("Memory")
         .numericTransition()
         .monospacedDigit()
+        .task {
+            vm.getMemoryUsage()
+            vm.getDiskInfo()
+        }
         .onReceive(timer) { _ in
             vm.getMemoryUsage()
             vm.getDiskInfo()
