@@ -33,7 +33,7 @@ final class ChatVM {
     private let logger = Logger()
     
     private let tools: [any Tool] = [
-        GetCPUInfo(), GetSystemInfo(), GetCameraInfo()
+        GetCPUInfo(), GetSystemInfo(), GetDisplayInfo(), GetCameraInfo()
     ]
     
     //    func processPromptAsReport() async {

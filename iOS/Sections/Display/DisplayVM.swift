@@ -12,14 +12,14 @@ final class DisplayVM {
     }
     
 #if !os(watchOS)
-    var refreshRate = String(UIScreen.main.maximumFramesPerSecond)
+    static var refreshRate = String(UIScreen.main.maximumFramesPerSecond)
 #endif
     
 #if os(iOS)
     let isRounded = Device.current.hasRoundedDisplayCorners ? "Yes" : "No"
 #endif
     
-    var aspectRatio: String {
+    static var aspectRatio: String {
         let screenRatio = Device.current.screenRatio
         return screenRatio.height.description + " : " + screenRatio.width.description
     }
