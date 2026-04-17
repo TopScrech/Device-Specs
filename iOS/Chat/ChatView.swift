@@ -6,9 +6,7 @@ struct ChatView: View {
     
     var body: some View {
         VStack {
-            if let answer = vm.answer {
-                Text(answer.content)
-            }
+            Text(vm.streamedText)
             
             TextField("Type here...", text: $vm.prompt)
             

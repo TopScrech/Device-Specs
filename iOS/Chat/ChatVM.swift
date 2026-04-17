@@ -1,78 +1,106 @@
 import Foundation
 import OSLog
-@preconcurrency import DeviceKit
 
 #if canImport(FoundationModels)
 import FoundationModels
 #endif
 
-@Generable
-@available(iOS 26, *)
-struct CPUInfo {
-    @Guide(description: "Name of the CPU on this device")
-    let name: String
-    
-    @Guide(description: "Technode of the CPU on this device represented in namometers (nm)")
-    let technode: String
-}
-
-@available(iOS 26, *)
-struct GetCPUInfo: Tool {
-    let name = "getCPUInfo"
-    let description = "Gets information about the CPU of this device"
-    
-    @Generable
-    struct Arguments {}
-    
-    func call(arguments: Arguments) async throws -> CPUInfo {
-        await CPUInfo(
-            name: Device.current.cpu.description,
-            technode: Device.current.cpu.techNode
-        )
-    }
-}
-
 @Observable
 @available(iOS 26, *)
 final class ChatVM {
     var prompt = ""
-    var answer: LanguageModelSession.Response<String>? = nil
+    
+    var answer: LanguageModelSession.Response<String>?
+    var streamedText = ""
+    
+    var report: LanguageModelSession.Response<StreamResponse>?
+    var partialReport: StreamResponse.PartiallyGenerated?
+    
+    private let logger = Logger()
     
     func processPrompt() async {
+        await processPromptAsText()
+    }
+    
+    func processPromptAsReport() async {
         let model = SystemLanguageModel.default
         
         switch model.availability {
         case .available:
-            let tools = [GetCPUInfo()]
-            
-            let session = LanguageModelSession(tools: tools) {
-                "You are a helpful assistant. Provide concise answers. Answer only in the same language as the prompt"
+            let session = LanguageModelSession(
+                model: model,
+                tools: [GetCPUInfo()]
+            ) {
+                """
+                You are a helpful assistant.
+                Provide concise answers.
+                Answer only in the same language as the prompt.
+                """
             }
             
             do {
-                answer = try await session.respond(to: prompt)
-                print(answer?.content ?? "No answer")
+                streamedText = ""
+                answer = nil
+                partialReport = nil
+                report = nil
+                
+                let stream = session.streamResponse(
+                    generating: StreamResponse.self,
+                    includeSchemaInPrompt: true,
+                    options: GenerationOptions()
+                ) {
+                    prompt
+                }
+                
+                for try await snapshot in stream {
+                    partialReport = snapshot.content
+                }
+                
+                report = try await stream.collect()
             } catch {
-                Logger().error("\(error)")
+                logger.error("\(error.localizedDescription)")
             }
             
-            ///            Stream response
+        case .unavailable(let reason):
+            logger.error("\(String(describing: reason))")
+        }
+    }
+    
+    func processPromptAsText() async {
+        let model = SystemLanguageModel.default
+        
+        switch model.availability {
+        case .available:
+            let session = LanguageModelSession(
+                model: model,
+                tools: [GetCPUInfo()]
+            ) {
+                """
+                You are a helpful assistant.
+                Provide concise answers.
+                Answer only in the same language as the prompt.
+                """
+            }
             
-            //            let stream = try await session.streamResponse(
-            //                generating: MyStruct.self,
-            //                options: GenerationOptions(),
-            //                includeSchemaInPrompt: false
-            //            ) {
-            //                "Please generate a report about SwiftUI views."
-            //            }
-            //
-            //            for try await partial in stream {
-            //                // `partial` is a MyStruct.PartiallyGenerated
-            //                updateUI(with: partial)
-            //            }
+            do {
+                partialReport = nil
+                report = nil
+                
+                let stream = session.streamResponse(to: prompt)
+                
+                streamedText = ""
+                
+                for try await snapshot in stream {
+                    streamedText = snapshot.content
+                }
+                
+                answer = try await stream.collect()
+            } catch {
+                logger.error("\(error.localizedDescription)")
+            }
             
         case .unavailable(let reason):
-            print(reason)
+            logger.error("\(String(describing: reason))")
         }
     }
 }
