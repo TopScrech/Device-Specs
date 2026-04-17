@@ -22,15 +22,16 @@ final class ChatVM {
         await processPromptAsText()
     }
     
+    private let tools = [
+        GetCPUInfo()
+    ]
+    
     func processPromptAsReport() async {
         let model = SystemLanguageModel.default
         
         switch model.availability {
         case .available:
-            let session = LanguageModelSession(
-                model: model,
-                tools: [GetCPUInfo()]
-            ) {
+            let session = LanguageModelSession(model: model, tools: tools) {
                 """
                 You are a helpful assistant.
                 Provide concise answers.
@@ -71,10 +72,7 @@ final class ChatVM {
         
         switch model.availability {
         case .available:
-            let session = LanguageModelSession(
-                model: model,
-                tools: [GetCPUInfo()]
-            ) {
+            let session = LanguageModelSession(model: model, tools: tools) {
                 """
                 You are a helpful assistant.
                 Provide concise answers.
