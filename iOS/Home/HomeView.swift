@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct HomeView: View {
     @Environment(NavState.self) private var nav
@@ -12,6 +12,8 @@ struct HomeView: View {
     @State private var app = AppVM()
     @State private var connectivity = ConnectivityVM()
     @State private var camera = CameraVM()
+    
+    @State private var sheetChat = false
     
     var body: some View {
         List {
@@ -83,11 +85,27 @@ struct HomeView: View {
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
             battery.fetchBatteryInfo()
         }
-        .toolbar {
-            NavigationLink(destination: SettingsView()) {
-                Image(systemName: "gear")
+        .sheet($sheetChat) {
+            NavigationStack {
+                ChatView()
             }
-            .keyboardShortcut("s")
+        }
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                NavigationLink(destination: SettingsView()) {
+                    Image(systemName: "gear")
+                }
+                .keyboardShortcut("s")
+            }
+            
+            if #available(iOS 26, *) {
+                ToolbarItem(placement: .topBarTrailing) {
+                    SFButton("apple.intelligence") {
+                        sheetChat = true
+                    }
+                    .symbolRenderingMode(.multicolor)
+                }
+            }
         }
     }
 }
