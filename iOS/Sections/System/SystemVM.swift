@@ -28,7 +28,7 @@ final class SystemVM {
         UIFont.familyNames.count.description
     }
     
-    var operatingSystem: String {
+    static var operatingSystem: String {
 #if os(watchOS)
         let wkDevice = WKInterfaceDevice.current()
         return wkDevice.systemName + " " + wkDevice.systemVersion

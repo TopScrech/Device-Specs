@@ -8,7 +8,7 @@ struct SystemSpecs: View {
     var body: some View {
         List {
             Section {
-                LabeledContent("Operating system", value: vm.operatingSystem)
+                LabeledContent("Operating system", value: SystemVM.operatingSystem)
                 LabeledContent("Build", value: vm.buildNumber)
             }
             

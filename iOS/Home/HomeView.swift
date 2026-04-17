@@ -27,7 +27,7 @@ struct HomeView: View {
             .lineLimit(1)
             .minimumScaleFactor(0.5)
             
-            SpecsLink("System", icon: "apple.terminal", spec: system.operatingSystem) {
+            SpecsLink("System", icon: "apple.terminal", spec: SystemVM.operatingSystem) {
                 SystemSpecs()
                     .environment(system)
             }

@@ -22,8 +22,8 @@ final class ChatVM {
         await processPromptAsText()
     }
     
-    private let tools = [
-        GetCPUInfo()
+    private let tools: [any Tool] = [
+        GetCPUInfo(), GetSystemInfo()
     ]
     
     //    func processPromptAsReport() async {
