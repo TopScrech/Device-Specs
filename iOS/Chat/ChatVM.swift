@@ -19,7 +19,7 @@ final class ChatVM {
             let tools: [any Tool] = []
             
             let session = LanguageModelSession(tools: tools) {
-                "You are a helpful assistant. Provide concise answers"
+                "You are a helpful assistant. Provide concise answers. Answer only in the same language as the prompt"
             }
             
             do {
@@ -28,6 +28,21 @@ final class ChatVM {
             } catch {
                 Logger().error("\(error)")
             }
+            
+///            Stream response
+
+//            let stream = try await session.streamResponse(
+//                generating: MyStruct.self,
+//                options: GenerationOptions(),
+//                includeSchemaInPrompt: false
+//            ) {
+//                "Please generate a report about SwiftUI views."
+//            }
+//            
+//            for try await partial in stream {
+//                // `partial` is a MyStruct.PartiallyGenerated
+//                updateUI(with: partial)
+//            }
             
         case .unavailable(let reason):
             print(reason)
