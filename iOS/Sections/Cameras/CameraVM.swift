@@ -5,7 +5,8 @@ import DeviceKit
 final class CameraVM {
     private(set) var cameras: [Camera] = []
     
-    let hasLidar = Device.current.hasLidarSensor ? "LiDAR" : ""
+    static let hasLidar = Device.current.hasLidarSensor
+    let hasLidarText = hasLidar ? "LiDAR" : ""
     
     init() {
         test()

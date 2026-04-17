@@ -23,7 +23,7 @@ final class ChatVM {
     }
     
     private let tools: [any Tool] = [
-        GetCPUInfo(), GetSystemInfo()
+        GetCPUInfo(), GetSystemInfo(), GetCameraInfo()
     ]
     
     //    func processPromptAsReport() async {

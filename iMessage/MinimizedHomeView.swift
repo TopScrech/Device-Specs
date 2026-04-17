@@ -33,7 +33,7 @@ struct MinimizedHomeView: View {
                 .symbolRenderingMode(.multicolor)
             
             LabeledContent("Network", icon: "network", value: connectivity.type)
-            LabeledContent("Camera", icon: "camera", value: camera.hasLidar)
+            LabeledContent("Camera", icon: "camera", value: camera.hasLidarText)
             Label("Sensors", systemImage: "barometer")
             Label("Accessibility", systemImage: "accessibility")
             
