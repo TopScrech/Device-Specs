@@ -40,7 +40,7 @@ struct ChatView: View {
     
     private func sendPrompt() {
         Task {
-            await vm.processPrompt()
+            await vm.processPromptAsText()
         }
     }
 }

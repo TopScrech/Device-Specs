@@ -32,10 +32,6 @@ final class ChatVM {
     
     private let logger = Logger()
     
-    func processPrompt() async {
-        await processPromptAsText()
-    }
-    
     private let tools: [any Tool] = [
         GetCPUInfo(), GetSystemInfo(), GetCameraInfo()
     ]
