@@ -7,14 +7,18 @@ struct ChatView: View {
     @FocusState private var isFocused
     
     var body: some View {
-        VStack {
+        ScrollView {
             // Add a warning
             // Works best in the following languages:
             // English, Chinese (Simplified/Traditional), Danish, Dutch, French, German, Italian, Japanese, Korean, Norwegian, Portuguese, Spanish, Swedish, Turkish, and Vietnamese
             
             Text(vm.renderedText)
+                .frame(maxWidth: .infinity, alignment: .leading)
         }
+        .navigationTitle("Assistant")
+        .toolbarTitleDisplayMode(.inline)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .scenePadding()
         .task {
             isFocused = true
         }

@@ -9,6 +9,6 @@ struct CPUInfo {
     @Guide(description: "Technode of the CPU on this device, represented in nanometers (nm)")
     let technode: String
     
-    @Guide(description: "Max clock speed of the CPU on this device")
-    let maxClockSpeed: String
+    @Guide(description: "Clock speed of the CPU on this device")
+    let clockSpeed: String
 }

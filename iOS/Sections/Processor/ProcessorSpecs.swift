@@ -16,7 +16,7 @@ struct ProcessorSpecs: View {
                 
                 LabeledContent("Core count", value: "\(vm.cores) (\(vm.activeCores) active)")
                 
-                LabeledContent("Max. clock speed", value: ProcessorVM.maxClockSpeed)
+                LabeledContent("Max. clock speed", value: ProcessorVM.clockSpeed)
                 
                 LabeledContent("Instruction set", value: vm.instructionSet)
                 

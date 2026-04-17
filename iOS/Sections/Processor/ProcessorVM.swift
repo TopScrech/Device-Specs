@@ -36,7 +36,7 @@ final class ProcessorVM {
         ProcessorVM.cpu.techNode
     }
     
-    static var maxClockSpeed: String {
+    static var clockSpeed: String {
         ProcessorVM.cpu.clockRate
     }
     
