@@ -1,5 +1,4 @@
 import SwiftUI
-import SafariCover
 
 @main
 struct DeviceSpecsApp: App {

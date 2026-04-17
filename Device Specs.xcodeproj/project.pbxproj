@@ -215,11 +215,13 @@
 		F383A3352ECF2DF700350A0F /* Exceptions for "iOS" folder in "watchOS" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Chat/ChatView.swift,
+				Chat/ChatVM.swift,
 				DeviceKit/Example/DeviceExtension.swift,
-				DeviceSpecsApp.swift,
 				Home/HomeView.swift,
 				Home/HomeViewTestLink.swift,
 				Nav/AppContainer.swift,
+				Nav/DeviceSpecsApp.swift,
 				Nav/NavDestinations.swift,
 				Nav/NavExtension.swift,
 				Nav/NavState.swift,
@@ -268,12 +270,14 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				AppIcon.icon,
+				Chat/ChatView.swift,
+				Chat/ChatVM.swift,
 				DeviceKit/Example/DeviceExtension.swift,
-				DeviceSpecsApp.swift,
 				Home/HomeView.swift,
 				Home/HomeViewTestLink.swift,
 				iOS.plist,
 				Nav/AppContainer.swift,
+				Nav/DeviceSpecsApp.swift,
 				Nav/NavDestinations.swift,
 				Nav/NavExtension.swift,
 				Nav/NavState.swift,
@@ -326,12 +330,14 @@
 			membershipExceptions = (
 				AppIcon.icon,
 				Assets.xcassets,
+				Chat/ChatView.swift,
+				Chat/ChatVM.swift,
 				DeviceKit/Example/DeviceExtension.swift,
-				DeviceSpecsApp.swift,
 				Home/HomeView.swift,
 				Home/HomeViewTestLink.swift,
 				iOS.plist,
 				Nav/AppContainer.swift,
+				Nav/DeviceSpecsApp.swift,
 				Nav/NavDestinations.swift,
 				Nav/NavExtension.swift,
 				Nav/NavState.swift,
@@ -417,12 +423,14 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				AppIcon.icon,
+				Chat/ChatView.swift,
+				Chat/ChatVM.swift,
 				DeviceKit/Example/DeviceExtension.swift,
-				DeviceSpecsApp.swift,
 				Home/HomeView.swift,
 				Home/HomeViewTestLink.swift,
 				iOS.plist,
 				Nav/AppContainer.swift,
+				Nav/DeviceSpecsApp.swift,
 				Sections/Device/BluetoothVM.swift,
 				Sections/Device/DeviceWatchInfo.swift,
 				Sections/Tests/UWB/UWBTestView.swift,
