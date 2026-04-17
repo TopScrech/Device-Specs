@@ -5,11 +5,17 @@ struct ChatView: View {
     @State private var vm = ChatVM()
     
     var body: some View {
-        TextField("Type here...", text: $vm.prompt)
-        
-        Button("Send") {
-            Task {
-                await vm.processPrompt()
+        VStack {
+            if let answer = vm.answer {
+                Text(answer.content)
+            }
+            
+            TextField("Type here...", text: $vm.prompt)
+            
+            Button("Send") {
+                Task {
+                    await vm.processPrompt()
+                }
             }
         }
     }

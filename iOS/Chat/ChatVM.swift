@@ -9,6 +9,7 @@ import FoundationModels
 @available(iOS 26, *)
 final class ChatVM {
     var prompt = ""
+    var answer: LanguageModelSession.Response<String>? = nil
     
     func processPrompt() async {
         let model = SystemLanguageModel.default
@@ -22,8 +23,8 @@ final class ChatVM {
             }
             
             do {
-                let answer = try await session.respond(to: prompt)
-                print(answer.content)
+                answer = try await session.respond(to: prompt)
+                print(answer?.content ?? "No answer")
             } catch {
                 Logger().error("\(error)")
             }
