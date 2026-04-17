@@ -86,8 +86,10 @@ struct HomeView: View {
             battery.fetchBatteryInfo()
         }
         .sheet($sheetChat) {
-            NavigationStack {
-                ChatView()
+            if #available(iOS 26, *) {
+                NavigationStack {
+                    ChatView()
+                }
             }
         }
         .toolbar {
