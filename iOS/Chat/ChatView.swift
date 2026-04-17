@@ -4,6 +4,8 @@ import ScrechKit
 struct ChatView: View {
     @State private var vm = ChatVM()
     
+    @FocusState private var isFocused
+    
     var body: some View {
         VStack {
             // Add a warning
@@ -13,6 +15,9 @@ struct ChatView: View {
             Text(vm.streamedText)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .task {
+            isFocused = true
+        }
         .overlay(alignment: .bottom) {
             HStack {
                 TextField("Type here...", text: $vm.prompt)
@@ -21,6 +26,7 @@ struct ChatView: View {
                     .glassEffect()
                     .onSubmit(sendPrompt)
                     .submitLabel(.send)
+                    .focused($isFocused)
                 
                 SFButton("paperplane", action: sendPrompt)
                     .foregroundStyle(.foreground)
@@ -28,7 +34,7 @@ struct ChatView: View {
                     .glassEffect()
                     .fontSize(16)
             }
-            .padding(.horizontal)
+            .padding()
         }
     }
     
