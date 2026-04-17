@@ -1,9 +1,29 @@
 import Foundation
 import OSLog
+import DeviceKit
 
 #if canImport(FoundationModels)
 import FoundationModels
 #endif
+
+@available(iOS 26, *)
+struct GetCPUInfo: Tool {
+    let name = "getCPUInfo"
+    let description = "Gets information about the CPU of this device"
+    
+    @Generable
+    struct Arguments {}
+    
+    @Generable
+    struct CPUInfo {
+        @Guide(description: "Name of CPU on this device")
+        let name: String
+    }
+    
+    func call(arguments: Arguments) async throws -> CPUInfo {
+        CPUInfo(name: Device.current.cpu.description)
+    }
+}
 
 @Observable
 @available(iOS 26, *)
@@ -16,7 +36,7 @@ final class ChatVM {
         
         switch model.availability {
         case .available:
-            let tools: [any Tool] = []
+            let tools = [GetCPUInfo()]
             
             let session = LanguageModelSession(tools: tools) {
                 "You are a helpful assistant. Provide concise answers. Answer only in the same language as the prompt"
@@ -29,20 +49,20 @@ final class ChatVM {
                 Logger().error("\(error)")
             }
             
-///            Stream response
-
-//            let stream = try await session.streamResponse(
-//                generating: MyStruct.self,
-//                options: GenerationOptions(),
-//                includeSchemaInPrompt: false
-//            ) {
-//                "Please generate a report about SwiftUI views."
-//            }
-//            
-//            for try await partial in stream {
-//                // `partial` is a MyStruct.PartiallyGenerated
-//                updateUI(with: partial)
-//            }
+            ///            Stream response
+            
+            //            let stream = try await session.streamResponse(
+            //                generating: MyStruct.self,
+            //                options: GenerationOptions(),
+            //                includeSchemaInPrompt: false
+            //            ) {
+            //                "Please generate a report about SwiftUI views."
+            //            }
+            //
+            //            for try await partial in stream {
+            //                // `partial` is a MyStruct.PartiallyGenerated
+            //                updateUI(with: partial)
+            //            }
             
         case .unavailable(let reason):
             print(reason)
