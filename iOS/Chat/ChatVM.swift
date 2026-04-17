@@ -1,10 +1,20 @@
 import Foundation
 import OSLog
-import DeviceKit
+@preconcurrency import DeviceKit
 
 #if canImport(FoundationModels)
 import FoundationModels
 #endif
+
+@Generable
+@available(iOS 26, *)
+struct CPUInfo {
+    @Guide(description: "Name of the CPU on this device")
+    let name: String
+    
+    @Guide(description: "Technode of the CPU on this device represented in namometers (nm)")
+    let technode: String
+}
 
 @available(iOS 26, *)
 struct GetCPUInfo: Tool {
@@ -14,14 +24,11 @@ struct GetCPUInfo: Tool {
     @Generable
     struct Arguments {}
     
-    @Generable
-    struct CPUInfo {
-        @Guide(description: "Name of CPU on this device")
-        let name: String
-    }
-    
     func call(arguments: Arguments) async throws -> CPUInfo {
-        CPUInfo(name: Device.current.cpu.description)
+        await CPUInfo(
+            name: Device.current.cpu.description,
+            technode: Device.current.cpu.techNode
+        )
     }
 }
 
