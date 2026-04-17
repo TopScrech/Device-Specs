@@ -13,6 +13,20 @@ final class ChatVM {
     var answer: LanguageModelSession.Response<String>?
     var streamedText = ""
     
+    var renderedText: AttributedString {
+        do {
+            return try AttributedString(
+                markdown: streamedText,
+                options: AttributedString.MarkdownParsingOptions(
+                    interpretedSyntax: .inlineOnlyPreservingWhitespace,
+                    failurePolicy: .returnPartiallyParsedIfPossible
+                )
+            )
+        } catch {
+            return AttributedString(streamedText)
+        }
+    }
+    
     var report: LanguageModelSession.Response<StreamResponse>?
     var partialReport: StreamResponse.PartiallyGenerated?
     

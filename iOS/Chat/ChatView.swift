@@ -12,7 +12,7 @@ struct ChatView: View {
             // Works best in the following languages:
             // English, Chinese (Simplified/Traditional), Danish, Dutch, French, German, Italian, Japanese, Korean, Norwegian, Portuguese, Spanish, Swedish, Turkish, and Vietnamese
             
-            Text(vm.streamedText)
+            Text(vm.renderedText)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .task {
