@@ -4,16 +4,16 @@ import DeviceKit
 @Observable
 final class ProcessorVM {
     private let info = ProcessInfo.processInfo
-    private let cpu = Device.current.cpu
+    private static let cpu = Device.current.cpu
     
     var cpuNameAndTechnology: String {
-        "\(cpuName) (\(techNode))"
+        "\(ProcessorVM.cpuName) (\(ProcessorVM.techNode))"
     }
     
     var microArch: String {
-        if cpuName.contains("Fusion") {
+        if ProcessorVM.cpuName.contains("Fusion") {
             "Fusion"
-        } else if cpuName.contains("Bionic") {
+        } else if ProcessorVM.cpuName.contains("Bionic") {
             "Bionic"
         } else {
             "-"
@@ -21,27 +21,27 @@ final class ProcessorVM {
     }
     
     var neuralEngineTOPS: String {
-        cpu.tops ?? "-"
+        ProcessorVM.cpu.tops ?? "-"
     }
     
     var neuralEngineCores: String {
-        cpu.neuralEngineCores ?? "-"
+        ProcessorVM.cpu.neuralEngineCores ?? "-"
     }
     
-    var cpuName: String {
-        cpu.description
+    static var cpuName: String {
+        ProcessorVM.cpu.description
     }
     
-    var techNode: String {
-        cpu.techNode
+    static var techNode: String {
+        ProcessorVM.cpu.techNode
     }
     
-    var maxClockSpeed: String {
-        cpu.clockRate
+    static var maxClockSpeed: String {
+        ProcessorVM.cpu.clockRate
     }
     
     var instructionSet: String {
-        cpu.instructionSet
+        ProcessorVM.cpu.instructionSet
     }
     
     var cpuUsage: [Double] = []

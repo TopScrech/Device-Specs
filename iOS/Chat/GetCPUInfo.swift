@@ -1,5 +1,4 @@
 import FoundationModels
-@preconcurrency import DeviceKit
 
 @available(iOS 26, *)
 struct GetCPUInfo: Tool {
@@ -11,8 +10,9 @@ struct GetCPUInfo: Tool {
     
     func call(arguments: Arguments) async throws -> CPUInfo {
         await CPUInfo(
-            name: Device.current.cpu.description,
-            technode: Device.current.cpu.techNode
+            name: ProcessorVM.cpuName,
+            technode: ProcessorVM.techNode,
+            maxClockSpeed: ProcessorVM.maxClockSpeed
         )
     }
 }

@@ -6,17 +6,17 @@ struct ProcessorSpecs: View {
     var body: some View {
         List {
             Section("CPU") {
-                LabeledContent("CPU", value: vm.cpuName)
+                LabeledContent("CPU", value: ProcessorVM.cpuName)
                 
                 LabeledContent("Microarchitecture", value: vm.microArch)
                 
-                LabeledContent("Technology node", value: vm.techNode)
+                LabeledContent("Technology node", value: ProcessorVM.techNode)
                 
                 LabeledContent("Architecture", value: vm.arch)
                 
                 LabeledContent("Core count", value: "\(vm.cores) (\(vm.activeCores) active)")
                 
-                LabeledContent("Max. clock speed", value: vm.maxClockSpeed)
+                LabeledContent("Max. clock speed", value: ProcessorVM.maxClockSpeed)
                 
                 LabeledContent("Instruction set", value: vm.instructionSet)
                 
