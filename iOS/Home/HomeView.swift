@@ -32,7 +32,7 @@ struct HomeView: View {
                     .environment(system)
             }
             
-            SpecsLink("Display", icon: "iphone", spec: display.diagonalSize) {
+            SpecsLink("Display", icon: "iphone", spec: DisplayVM.diagonalSize) {
                 DisplaySpecs()
                     .environment(display)
             }

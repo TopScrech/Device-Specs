@@ -6,27 +6,27 @@ struct DeviceInfo {
     @Guide(description: "Name of this device")
     let name: String
     
-    @Guide(description: "Bluetooth version of this device")
+    @Guide(description: "Bluetooth version")
     let bluetoothVersion: String
     
-    @Guide(description: "Thermal state of this device")
+    @Guide(description: "Thermal state")
     let thermalState: String
     
-    @Guide(description: "Ultra Wide Band (UWB) availability on this device")
+    @Guide(description: "Ultra Wide Band (UWB) availability")
     let is_UWB_available: String
     
-    @Guide(description: "MagSafe capability on this device")
+    @Guide(description: "MagSafe capability")
     let isMagSafeAvailable: String
     
-    @Guide(description: "Charging port on this device")
+    @Guide(description: "Charging port")
     let dockConnector: String
     
-    @Guide(description: "Dynamic Island support on this device")
+    @Guide(description: "Dynamic Island support")
     let hasDymanicIsland: String
     
-    @Guide(description: "5G support on this device")
+    @Guide(description: "5G support")
     let support5G: String
     
-    @Guide(description: "Wireless charging support on this device")
+    @Guide(description: "Wireless charging support")
     let supportWirelessCharging: String
 }

@@ -12,10 +12,13 @@ struct DisplaySpecs: View {
     
     var body: some View {
         List {
-            LabeledContent("Screen resolution", value: vm.resolution)
-            LabeledContent("Screen size", value: vm.diagonalSize)
+            LabeledContent("Screen resolution", value: DisplayVM.resolution)
+            LabeledContent("Screen size", value: DisplayVM.diagonalSize)
             LabeledContent("Aspect ratio", value: DisplayVM.aspectRatio)
-            LabeledContent("Pixel density", value: vm.dencity)
+            
+            if let pixelDencity = DisplayVM.pixelDencity {
+                LabeledContent("Pixel density", value: pixelDencity)
+            }
 #if !os(watchOS)
             LabeledContent("Refresh rate", value: DisplayVM.refreshRate)
 #endif
@@ -37,9 +40,6 @@ struct DisplaySpecs: View {
         .onChange(of: brightness) { _, newValue in
             let value = CGFloat(newValue / 100)
             setDeviceBrightness(value)
-        }
-        .refreshableTask {
-            vm.fetchScreenResolution()
         }
 #if !os(watchOS)
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in

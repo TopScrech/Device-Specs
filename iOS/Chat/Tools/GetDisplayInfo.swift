@@ -11,7 +11,10 @@ struct GetDisplayInfo: Tool {
     func call(arguments: Arguments) async throws -> DisplayInfo {
         await DisplayInfo(
             aspectRatio: DisplayVM.aspectRatio,
-            refreshRate: DisplayVM.refreshRate
+            refreshRate: DisplayVM.refreshRate,
+            diagonalSize: DisplayVM.diagonalSize,
+            pixelDencity: DisplayVM.pixelDencity,
+            resolution: DisplayVM.resolution
         )
     }
 }

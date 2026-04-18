@@ -3,9 +3,18 @@ import FoundationModels
 @Generable
 @available(iOS 26, *)
 struct DisplayInfo {
-    @Guide(description: "Aspect ratio of the display of this device")
+    @Guide(description: "Display aspect ratio")
     let aspectRatio: String
     
-    @Guide(description: "Refresh rate of the display of this device")
+    @Guide(description: "Display refresh rate")
     let refreshRate: String
+    
+    @Guide(description: "Display diagonal size, represented in inches")
+    let diagonalSize: String
+    
+    @Guide(description: "Display pixel density, represented in PPI (pixels per inch)")
+    let pixelDencity: String?
+    
+    @Guide(description: "Display resolution, represented in pixels")
+    let resolution: String?
 }
