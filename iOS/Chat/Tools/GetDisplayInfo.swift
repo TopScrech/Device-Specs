@@ -14,7 +14,8 @@ struct GetDisplayInfo: Tool {
             refreshRate: DisplayVM.refreshRate,
             diagonalSize: DisplayVM.diagonalSize,
             pixelDencity: DisplayVM.pixelDencity,
-            resolution: DisplayVM.resolution
+            resolution: DisplayVM.resolution,
+            roundedCorners: DisplayVM.roundedCorners
         )
     }
 }

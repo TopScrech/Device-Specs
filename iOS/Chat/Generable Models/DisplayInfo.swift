@@ -16,5 +16,8 @@ struct DisplayInfo {
     let pixelDencity: String?
     
     @Guide(description: "Display resolution, represented in pixels")
-    let resolution: String?
+    let resolution: String
+    
+    @Guide(description: "Display with rounded or sharp corners")
+    let roundedCorners: String
 }
