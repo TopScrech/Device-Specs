@@ -26,7 +26,7 @@ struct DeviceSpecs: View {
             LabeledContent("Device", value: DeviceVM.deviceIdentifier)
             LabeledContent("Identifier", value: identifier)
             LabeledContent("Name", value: DeviceVM.deviceName)
-            LabeledContent("Release date", value: vm.releaseDate)
+            LabeledContent("Release date", value: DeviceVM.releaseDate)
             LabeledContent("Internal name", value: vm.internalName)
             
             VStack(alignment: .leading, spacing: 5) {
@@ -48,7 +48,7 @@ struct DeviceSpecs: View {
                 
 #if os(iOS)
                 LabeledContent("Wireless Charging", value: Device.current.supportsWirelessCharging ? "Yes" : "No")
-                LabeledContent("MagSafe", value: Device.current.hasMagsafe ? "Yes" : "No")
+                LabeledContent("MagSafe", value: DeviceVM.isMagsafeSupported)
                 LabeledContent("5G", value: Device.current.has5gSupport ? "Yes" : "No")
                 LabeledContent("Dynamic Island", value: Device.current.hasDynamicIsland ? "Yes" : "No")
                 LabeledContent("Dock connector", value: Device.current.hasUSBCConnectivity ? "USB-C" : "Lightning")
@@ -58,11 +58,11 @@ struct DeviceSpecs: View {
             }
             
             Section("Water resistance") {
-                LabeledContent("Rating", value: vm.waterResistance)
+                LabeledContent("Rating", value: DeviceVM.waterResistance)
 #if os(watchOS)
                 LabeledContent("System rating", value: vm.waterResistanceSystemRating)
 #endif
-                LabeledContent("Description", value: vm.waterResistanceDescription)
+                LabeledContent("Description", value: DeviceVM.waterResistanceDescription)
             }
 #if os(watchOS)
             DeviceWatchInfo()

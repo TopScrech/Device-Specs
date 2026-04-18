@@ -907,7 +907,6 @@
       }
     },
     "Assistive Touch" : {
-      "shouldTranslate" : false,
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -915,7 +914,8 @@
             "value" : "辅助触控"
           }
         }
-      }
+      },
+      "shouldTranslate" : false
     },
     "Auto-joined" : {
       "localizations" : {

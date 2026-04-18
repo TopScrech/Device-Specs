@@ -20,32 +20,16 @@ final class DeviceVM {
     private(set) var architecture = ""
     private(set) var isForceTouchAvailable = ""
     
-    static var deviceName: String {
-        Device.current.name ?? "-"
-    }
-    
-    static var deviceIdentifier: String {
-        Device.current.description
-    }
+    static let isMagsafeSupported = Device.current.hasMagsafe ? "Yes" : "No"
+    static let deviceName = Device.current.name ?? "-"
+    static let deviceIdentifier = Device.current.description
+    static let releaseDate = Device.current.releaseDate
+    static let bluetoothVersion = Device.current.bluetoothVersion
+    static let waterResistance = Device.current.waterResistance
+    static let waterResistanceDescription = Device.current.waterResistanceDescription
     
     var internalName: String {
         getInternalDeviceName() ?? "-"
-    }
-    
-    var releaseDate: String {
-        device.releaseDate
-    }
-    
-    static var bluetoothVersion: String {
-        Device.current.bluetoothVersion
-    }
-    
-    var waterResistance: String {
-        device.waterResistance
-    }
-    
-    var waterResistanceDescription: String {
-        device.waterResistanceDescription
     }
     
 #if os(watchOS)
