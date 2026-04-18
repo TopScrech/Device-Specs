@@ -14,17 +14,17 @@ struct HomeView: View {
             WarningSection()
                 .padding(.vertical, 30)
             
-            SpecsLink("Device", icon: "info.circle", spec: device.deviceIdentifier) {
+            SpecsLink("Device", icon: "info.circle", spec: DeviceVM.deviceIdentifier) {
                 DeviceSpecs()
                     .environment(device)
             }
             
-            SpecsLink("System", icon: "apple.terminal", spec: "\(system.operatingSystem) (\(system.buildNumber))") {
+            SpecsLink("System", icon: "apple.terminal", spec: "\(SystemVM.operatingSystem) (\(system.buildNumber))") {
                 SystemSpecs()
                     .environment(system)
             }
             
-            SpecsLink("Display", icon: "iphone", spec: "\(display.resolution) (\(display.refreshRate) Hz)") {
+            SpecsLink("Display", icon: "iphone", spec: "\(display.resolution) (\(DisplayVM.refreshRate) Hz)") {
                 DisplaySpecs()
                     .environment(display)
             }
