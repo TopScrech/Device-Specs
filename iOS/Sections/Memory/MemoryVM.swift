@@ -7,9 +7,9 @@ final class MemoryVM {
     private let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "DeviceSpecs", category: "MemoryVM")
     private let device = Device.current
     
-    private(set) var totalRam = ""
-    private(set) var usedRam = ""
-    private(set) var freeRam = ""
+    private(set) var totalRAM = ""
+    private(set) var usedRAM = ""
+    private(set) var freeRAM = ""
     
     private(set) var totalDisk = ""
     private(set) var usedDisk = ""
@@ -22,15 +22,15 @@ final class MemoryVM {
     }
     
     var totalRamAndDisk: String {
-        if totalRam.isEmpty {
+        if totalRAM.isEmpty {
             return totalDisk
         }
         
         if totalDisk.isEmpty {
-            return totalRam
+            return totalRAM
         }
         
-        return "\(totalRam) & \(totalDisk)"
+        return "\(totalRAM) & \(totalDisk)"
     }
     
     var memoryType: String {
@@ -60,10 +60,10 @@ final class MemoryVM {
         let usedMemory = (UInt64(stats.active_count) + UInt64(stats.wire_count)) * UInt64(pageSize)
         let freeMemory = totalMemory - usedMemory
         
-        totalRam = formatBytes(totalMemory)
+        totalRAM = formatBytes(totalMemory)
         
-        usedRam = format(Int(totalMemory), Int(usedMemory))
-        freeRam = format(Int(totalMemory), Int(freeMemory))
+        usedRAM = format(Int(totalMemory), Int(usedMemory))
+        freeRAM = format(Int(totalMemory), Int(freeMemory))
     }
     
     // Storage

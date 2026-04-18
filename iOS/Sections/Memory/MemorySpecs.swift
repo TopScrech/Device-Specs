@@ -8,13 +8,13 @@ struct MemorySpecs: View {
     var body: some View {
         List {
             Section("RAM") {
-                LabeledContent("Total", value: vm.totalRam)
+                LabeledContent("Total", value: vm.totalRAM)
                 
-                LabeledContent("Used", value: vm.usedRam)
-                    .animation(.default, value: vm.usedRam)
+                LabeledContent("Used", value: vm.usedRAM)
+                    .animation(.default, value: vm.usedRAM)
                 
-                LabeledContent("Free", value: vm.freeRam)
-                    .animation(.default, value: vm.freeRam)
+                LabeledContent("Free", value: vm.freeRAM)
+                    .animation(.default, value: vm.freeRAM)
             }
             
             LabeledContent("Supported SDRAM", value: vm.memoryType)
