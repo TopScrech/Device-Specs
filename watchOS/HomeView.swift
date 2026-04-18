@@ -11,7 +11,7 @@ struct HomeView: View {
     
     var body: some View {
         List {
-            SpecsLink("Device", icon: "info.circle", spec: device.deviceIdentifier) {
+            SpecsLink("Device", icon: "info.circle", spec: DeviceVM.deviceIdentifier) {
                 DeviceSpecs()
                     .environment(device)
             }

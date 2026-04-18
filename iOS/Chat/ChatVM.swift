@@ -33,6 +33,7 @@ final class ChatVM {
     private let logger = Logger()
     
     private let tools: [any Tool] = [
+        GetDeviceInfo(),
         GetSystemInfo(),
         GetDisplayInfo(),
         GetCPUInfo(),

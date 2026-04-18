@@ -23,9 +23,9 @@ struct DeviceSpecs: View {
     
     var body: some View {
         List {
-            LabeledContent("Device", value: vm.deviceIdentifier)
+            LabeledContent("Device", value: DeviceVM.deviceIdentifier)
             LabeledContent("Identifier", value: identifier)
-            LabeledContent("Name", value: vm.deviceName)
+            LabeledContent("Name", value: DeviceVM.deviceName)
             LabeledContent("Release date", value: vm.releaseDate)
             LabeledContent("Internal name", value: vm.internalName)
             
@@ -41,7 +41,7 @@ struct DeviceSpecs: View {
             }
             
             Section("Capabilities") {
-                LabeledContent("Bluetooth", value: vm.bluetoothVersion)
+                LabeledContent("Bluetooth", value: DeviceVM.bluetoothVersion)
 #if !os(tvOS) && !os(watchOS)
                 AuthTest()
 #endif

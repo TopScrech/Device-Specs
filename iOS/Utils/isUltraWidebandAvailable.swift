@@ -2,7 +2,7 @@
 import NearbyInteraction
 #endif
 
-final class DeviceInfo {
+final class DeviceCapabilities {
     static var isUltraWidebandAvailable: Bool {
 #if canImport(NearbyInteraction)
         NISession.deviceCapabilities.supportsPreciseDistanceMeasurement

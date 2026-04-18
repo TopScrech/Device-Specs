@@ -20,7 +20,7 @@ struct HomeView: View {
             WarningSection()
                 .environment(battery)
             
-            SpecsLink("Device", icon: "info.circle", spec: device.deviceIdentifier) {
+            SpecsLink("Device", icon: "info.circle", spec: DeviceVM.deviceIdentifier) {
                 DeviceSpecs()
                     .environment(device)
             }
@@ -81,7 +81,7 @@ struct HomeView: View {
                 }
             }
         }
-        .navigationTitle(device.deviceIdentifier)
+        .navigationTitle(DeviceVM.deviceIdentifier)
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
             battery.fetchBatteryInfo()
         }

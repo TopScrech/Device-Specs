@@ -20,12 +20,12 @@ final class DeviceVM {
     private(set) var architecture = ""
     private(set) var isForceTouchAvailable = ""
     
-    var deviceName: String {
+    static var deviceName: String {
         Device.current.name ?? "-"
     }
     
-    var deviceIdentifier: String {
-        device.description
+    static var deviceIdentifier: String {
+        Device.current.description
     }
     
     var internalName: String {
@@ -36,8 +36,8 @@ final class DeviceVM {
         device.releaseDate
     }
     
-    var bluetoothVersion: String {
-        device.bluetoothVersion
+    static var bluetoothVersion: String {
+        Device.current.bluetoothVersion
     }
     
     var waterResistance: String {
@@ -69,7 +69,7 @@ final class DeviceVM {
     }
     
     var isUltraWidebandAvailable: String {
-        DeviceInfo.isUltraWidebandAvailable ? "Yes" : "No"
+        DeviceCapabilities.isUltraWidebandAvailable ? "Yes" : "No"
     }
     
     var vandorId: String {

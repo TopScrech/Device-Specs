@@ -23,7 +23,7 @@ struct MinimizedHomeView: View {
                 }
             }
             
-            LabeledContent("Device", icon: "info.circle", value: device.deviceIdentifier)
+            LabeledContent("Device", icon: "info.circle", value: DeviceVM.deviceIdentifier)
             LabeledContent("System", icon: "apple.terminal", value: SystemVM.operatingSystem)
             LabeledContent("Display", icon: "iphone", value: display.diagonalSize)
             LabeledContent("Processor", icon: "cpu", value: cpu.cpuNameAndTechnology)

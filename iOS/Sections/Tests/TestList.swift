@@ -29,9 +29,9 @@ struct TestList: View {
                     nav.navigate(.toUwbTest)
                 }
                 .foregroundStyle(.foreground)
-                .disabled(!DeviceInfo.isUltraWidebandAvailable)
+                .disabled(!DeviceCapabilities.isUltraWidebandAvailable)
             } footer: {
-                if !DeviceInfo.isUltraWidebandAvailable {
+                if !DeviceCapabilities.isUltraWidebandAvailable {
                     Text("This device is not UWB-capable")
                 }
             }
