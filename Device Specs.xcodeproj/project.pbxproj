@@ -904,6 +904,7 @@
 				hi,
 				uk,
 				da,
+				"zh-Hans",
 			);
 			mainGroup = F3E7EC312C676A13008CD17B;
 			minimizedProjectReferenceProxies = 1;

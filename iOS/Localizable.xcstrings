@@ -56,6 +56,12 @@
             "state" : "translated",
             "value" : "Абревіатура"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "缩写"
+          }
         }
       }
     },
@@ -107,6 +113,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Про"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于"
           }
         }
       }
@@ -160,6 +172,12 @@
             "state" : "translated",
             "value" : "Абсолютна висота"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "绝对海拔高度"
+          }
         }
       }
     },
@@ -211,6 +229,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Прискорення"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加速度"
           }
         }
       }
@@ -264,6 +288,12 @@
             "state" : "translated",
             "value" : "Доступність"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "辅助功能"
+          }
         }
       }
     },
@@ -315,6 +345,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Активний час"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "活跃时间"
           }
         }
       }
@@ -368,6 +404,12 @@
             "state" : "translated",
             "value" : "Активність"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "活动"
+          }
         }
       }
     },
@@ -419,6 +461,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Альтернативний роздільник початку цитати"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "备用引号开始分隔符"
           }
         }
       }
@@ -472,6 +520,12 @@
             "state" : "translated",
             "value" : "Альтернативний роздільник кінця цитати"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "备用引号结束分隔符"
+          }
         }
       }
     },
@@ -524,6 +578,12 @@
             "state" : "translated",
             "value" : "Висотомір"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高度表"
+          }
         }
       }
     },
@@ -575,6 +635,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Апертура"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "光圈"
           }
         }
       }
@@ -655,6 +721,12 @@
             "state" : "translated",
             "value" : "Архітектура"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "架构"
+          }
         }
       }
     },
@@ -707,6 +779,12 @@
             "state" : "translated",
             "value" : "Аргументи"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "参数"
+          }
         }
       }
     },
@@ -758,6 +836,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Співвідношення сторін"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "纵横比"
           }
         }
       }
@@ -813,11 +897,25 @@
             "state" : "translated",
             "value" : "Помічник"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "助手"
+          }
         }
       }
     },
     "Assistive Touch" : {
-      "shouldTranslate" : false
+      "shouldTranslate" : false,
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "辅助触控"
+          }
+        }
+      }
     },
     "Auto-joined" : {
       "localizations" : {
@@ -867,6 +965,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Автоматичне приєднання"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自动加入"
           }
         }
       }
@@ -920,6 +1024,12 @@
             "state" : "translated",
             "value" : "Поточний автооновлення"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自动更新当前"
+          }
         }
       }
     },
@@ -971,6 +1081,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Доступно для важливих потреб"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可用于重要用途"
           }
         }
       }
@@ -1024,6 +1140,12 @@
             "state" : "translated",
             "value" : "Доступно для епізодичного використання"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可供机会主义使用"
+          }
         }
       }
     },
@@ -1075,6 +1197,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Доступні системи нумерації"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可用的编号系统"
           }
         }
       }
@@ -1128,6 +1256,12 @@
             "state" : "translated",
             "value" : "Задня"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "后退"
+          }
         }
       }
     },
@@ -1179,6 +1313,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Акумулятор"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电池"
           }
         }
       }
@@ -1232,6 +1372,12 @@
             "state" : "translated",
             "value" : "Інформація про акумулятор"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电池信息"
+          }
         }
       }
     },
@@ -1283,6 +1429,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Рівень заряду батареї"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电池电量"
           }
         }
       }
@@ -1336,6 +1488,12 @@
             "state" : "translated",
             "value" : "Стан батареї"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电池状态"
+          }
         }
       }
     },
@@ -1387,6 +1545,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Нижче рівня попередження"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "低于警告水平"
           }
         }
       }
@@ -1440,6 +1604,12 @@
             "state" : "translated",
             "value" : "Біометрична аутентифікація"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "生物识别认证"
+          }
         }
       }
     },
@@ -1492,6 +1662,12 @@
             "state" : "translated",
             "value" : "Чорний"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "黑色"
+          }
         }
       }
     },
@@ -1543,6 +1719,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Синій"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "蓝色"
           }
         }
       }
@@ -1599,6 +1781,12 @@
             "state" : "translated",
             "value" : "Жирний"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "粗体"
+          }
         }
       }
     },
@@ -1651,6 +1839,12 @@
             "state" : "translated",
             "value" : "Жирний текст"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "粗体文本"
+          }
         }
       }
     },
@@ -1702,6 +1896,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Яскравість"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "亮度"
           }
         }
       }
@@ -1758,6 +1958,12 @@
             "state" : "translated",
             "value" : "Збірка"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "构建版本"
+          }
         }
       }
     },
@@ -1809,6 +2015,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Фігури кнопок"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "按钮形状"
           }
         }
       }
@@ -1862,6 +2074,12 @@
             "state" : "translated",
             "value" : "Календар"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日历"
+          }
         }
       }
     },
@@ -1913,6 +2131,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Камера"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "相机"
           }
         }
       }
@@ -1966,6 +2190,12 @@
             "state" : "translated",
             "value" : "Скасувати"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
         }
       }
     },
@@ -2017,6 +2247,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Можливості"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "能力"
           }
         }
       }
@@ -2070,6 +2306,12 @@
             "state" : "translated",
             "value" : "Ємність"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "容量"
+          }
         }
       }
     },
@@ -2121,6 +2363,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ревізія комірки"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "蜂窝版本"
           }
         }
       }
@@ -2174,6 +2422,12 @@
             "state" : "translated",
             "value" : "Інформація про плату"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "充电信息"
+          }
         }
       }
     },
@@ -2225,6 +2479,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Заряджання"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "充电中"
           }
         }
       }
@@ -2278,6 +2538,12 @@
             "state" : "translated",
             "value" : "Субтитри"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隐藏式字幕"
+          }
         }
       }
     },
@@ -2329,6 +2595,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Зіставлення"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "整理"
           }
         }
       }
@@ -2382,6 +2654,12 @@
             "state" : "translated",
             "value" : "Ідентифікатор сортувальника"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "排序器标识符"
+          }
         }
       }
     },
@@ -2433,6 +2711,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Колірний простір"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "色彩空间"
           }
         }
       }
@@ -2495,6 +2779,12 @@
             "state" : "translated",
             "value" : "Стан"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "状况"
+          }
         }
       }
     },
@@ -2546,6 +2836,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Впевненість"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "置信度"
           }
         }
       }
@@ -2599,6 +2895,12 @@
             "state" : "translated",
             "value" : "Містить область"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "包含区域"
+          }
         }
       }
     },
@@ -2650,6 +2952,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Континент"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大陆"
           }
         }
       }
@@ -2703,6 +3011,12 @@
             "state" : "translated",
             "value" : "Ядро"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "核"
+          }
         }
       }
     },
@@ -2754,6 +3068,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Підрахунок ядер"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "核心数"
           }
         }
       }
@@ -2807,6 +3127,12 @@
             "state" : "translated",
             "value" : "ЦП"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "中央处理器"
+          }
         }
       }
     },
@@ -2858,6 +3184,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Навантаження процесора"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CPU负载"
           }
         }
       }
@@ -2911,6 +3243,12 @@
             "state" : "translated",
             "value" : "Створіть повний системний звіт"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "创建完整的系统报告"
+          }
         }
       }
     },
@@ -2962,6 +3300,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Критичний тепловий стан"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "临界热状态"
           }
         }
       }
@@ -3015,6 +3359,12 @@
             "state" : "translated",
             "value" : "Орієнтація Digital Crown"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "数码表冠方向"
+          }
         }
       }
     },
@@ -3066,6 +3416,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Код валюти"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "货币代码"
           }
         }
       }
@@ -3119,6 +3475,12 @@
             "state" : "translated",
             "value" : "Символ валюти"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "货币符号"
+          }
         }
       }
     },
@@ -3170,6 +3532,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Поточний процес"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当前进程"
           }
         }
       }
@@ -3223,6 +3591,12 @@
             "state" : "translated",
             "value" : "Поточна сесія"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当前会话"
+          }
         }
       }
     },
@@ -3274,6 +3648,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Підрахунок циклу"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "循环计数"
           }
         }
       }
@@ -3327,6 +3707,12 @@
             "state" : "translated",
             "value" : "Темніші кольори системи"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "深色系统颜色"
+          }
         }
       }
     },
@@ -3378,6 +3764,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Літній час"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "夏令时"
           }
         }
       }
@@ -3433,6 +3825,12 @@
             "state" : "translated",
             "value" : "Налагодження"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "调试"
+          }
         }
       }
     },
@@ -3484,6 +3882,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Десятковий роздільник"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "小数点分隔符"
           }
         }
       }
@@ -3537,6 +3941,12 @@
             "state" : "translated",
             "value" : "Опис"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "描述"
+          }
         }
       }
     },
@@ -3588,6 +3998,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "IP-адреса призначення"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目标 IP 地址"
           }
         }
       }
@@ -3641,6 +4057,12 @@
             "state" : "translated",
             "value" : "Пристрій"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设备"
+          }
         }
       }
     },
@@ -3692,6 +4114,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Назва пристрою"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设备名称"
           }
         }
       }
@@ -3748,6 +4176,12 @@
             "state" : "translated",
             "value" : "Відхилити"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭"
+          }
         }
       }
     },
@@ -3800,6 +4234,12 @@
             "state" : "translated",
             "value" : "Дисплей"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示"
+          }
         }
       }
     },
@@ -3851,6 +4291,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Роз'єм док-станції"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "底座连接器"
           }
         }
       }
@@ -3907,6 +4353,12 @@
             "state" : "translated",
             "value" : "Змінні середовища"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "环境变量"
+          }
         }
       }
     },
@@ -3958,6 +4410,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Помилка"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "错误"
           }
         }
       }
@@ -4014,6 +4472,12 @@
             "state" : "translated",
             "value" : "Контакт"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "曝光"
+          }
         }
       }
     },
@@ -4069,6 +4533,12 @@
             "state" : "translated",
             "value" : "Версія мікропрограми"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "固件版本"
+          }
         }
       }
     },
@@ -4121,6 +4591,12 @@
             "state" : "translated",
             "value" : "Перший день тижня"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一周的第一天"
+          }
         }
       }
     },
@@ -4172,6 +4648,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ліхтарик"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "手电筒"
           }
         }
       }
@@ -4228,6 +4710,12 @@
             "state" : "translated",
             "value" : "Вільно"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可用"
+          }
         }
       }
     },
@@ -4279,6 +4767,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Фронт"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前置"
           }
         }
       }
@@ -4332,6 +4826,12 @@
             "state" : "translated",
             "value" : "Повний системний звіт"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完整的系统报告"
+          }
         }
       }
     },
@@ -4383,6 +4883,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Повністю заряджений"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "充满电"
           }
         }
       }
@@ -4438,6 +4944,12 @@
             "state" : "translated",
             "value" : "Зв'язатися"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "联系我们"
+          }
         }
       }
     },
@@ -4489,6 +5001,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Перейдіть до Налаштувань"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前往设置"
           }
         }
       }
@@ -4542,6 +5060,12 @@
             "state" : "translated",
             "value" : "GPU"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "图形处理器"
+          }
         }
       }
     },
@@ -4593,6 +5117,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сімейства GPU"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GPU系列"
           }
         }
       }
@@ -4646,6 +5176,12 @@
             "state" : "translated",
             "value" : "Відтінки сірого"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "灰度"
+          }
         }
       }
     },
@@ -4697,6 +5233,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Зелений"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "绿色"
           }
         }
       }
@@ -4750,6 +5292,12 @@
             "state" : "translated",
             "value" : "Роздільник групування"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分组分隔符"
+          }
         }
       }
     },
@@ -4801,6 +5349,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Керований доступ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "引导式访问"
           }
         }
       }
@@ -4854,6 +5408,12 @@
             "state" : "translated",
             "value" : "Тактильний зворотний зв'язок"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "触觉反馈"
+          }
         }
       }
     },
@@ -4905,6 +5465,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Тактильний зворотний зв'язок"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "触觉反馈"
           }
         }
       }
@@ -4958,6 +5524,12 @@
             "state" : "translated",
             "value" : "Обладнання"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "硬件"
+          }
         }
       }
     },
@@ -5009,6 +5581,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Інформація про обладнання"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "硬件信息"
           }
         }
       }
@@ -5062,6 +5640,12 @@
             "state" : "translated",
             "value" : "Огляд обладнання"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "硬件概述"
+          }
         }
       }
     },
@@ -5113,6 +5697,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ревізія обладнання"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "硬件版本"
           }
         }
       }
@@ -5166,6 +5756,12 @@
             "state" : "translated",
             "value" : "Точність курсу"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "航向精度"
+          }
         }
       }
     },
@@ -5217,6 +5813,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Інформація про здоров'я"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "健康信息"
           }
         }
       }
@@ -5270,6 +5872,12 @@
             "state" : "translated",
             "value" : "Ім'я хоста"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "主机名"
+          }
         }
       }
     },
@@ -5321,6 +5929,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hotspot Helper"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "热点助手"
           }
         }
       }
@@ -5374,6 +5988,12 @@
             "state" : "translated",
             "value" : "Годинний цикл"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "小时周期"
+          }
         }
       }
     },
@@ -5425,6 +6045,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ідентифікатор"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "标识符"
           }
         }
       }
@@ -5478,6 +6104,12 @@
             "state" : "translated",
             "value" : "Ідентифікатор постачальника"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "供应商标识符"
+          }
         }
       }
     },
@@ -5529,6 +6161,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Набір інструкцій"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "指令集"
           }
         }
       }
@@ -5582,6 +6220,12 @@
             "state" : "translated",
             "value" : "Внутрішнє ім'я"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "内部名称"
+          }
         }
       }
     },
@@ -5633,6 +6277,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Інвертувати кольори"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "反转颜色"
           }
         }
       }
@@ -5697,6 +6347,12 @@
             "state" : "translated",
             "value" : "Регіон ISO"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ISO区域"
+          }
         }
       }
     },
@@ -5748,6 +6404,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Курсив"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "斜体"
           }
         }
       }
@@ -5801,6 +6463,12 @@
             "state" : "translated",
             "value" : "Щойно приєднався"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刚刚加入"
+          }
         }
       }
     },
@@ -5852,6 +6520,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Відомі часові пояси"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已知时区"
           }
         }
       }
@@ -5905,6 +6579,12 @@
             "state" : "translated",
             "value" : "Відомі часові пояси"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已知时区"
+          }
         }
       }
     },
@@ -5956,6 +6636,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Широта"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "纬度"
           }
         }
       }
@@ -6009,6 +6695,12 @@
             "state" : "translated",
             "value" : "Напрямок макета"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "布局方向"
+          }
         }
       }
     },
@@ -6060,6 +6752,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Локаль"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "语言环境"
           }
         }
       }
@@ -6113,6 +6811,12 @@
             "state" : "translated",
             "value" : "Розташування"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "地点"
+          }
         }
       }
     },
@@ -6164,6 +6868,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Довгота"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "经度"
           }
         }
       }
@@ -6217,6 +6927,12 @@
             "state" : "translated",
             "value" : "Низький заряд батареї"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电池电量低"
+          }
         }
       }
     },
@@ -6268,6 +6984,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Режим енергозбереження"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "低功耗模式"
           }
         }
       }
@@ -6324,6 +7046,12 @@
             "state" : "translated",
             "value" : "Магнітне поле"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "磁场"
+          }
         }
       }
     },
@@ -6376,6 +7104,12 @@
             "state" : "translated",
             "value" : "Магнітний курс"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "磁航向"
+          }
         }
       }
     },
@@ -6426,6 +7160,12 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MagSafe"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "MagSafe"
@@ -6482,6 +7222,12 @@
             "state" : "translated",
             "value" : "Виробник"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "制造商"
+          }
         }
       }
     },
@@ -6533,6 +7279,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Макс"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最大"
           }
         }
       }
@@ -6586,6 +7338,12 @@
             "state" : "translated",
             "value" : "Максимальне навантаження"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最大负载"
+          }
         }
       }
     },
@@ -6637,6 +7395,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Макс. тактова частота"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最高时钟速度"
           }
         }
       }
@@ -6690,6 +7454,12 @@
             "state" : "translated",
             "value" : "Максимальна місткість"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最大容量"
+          }
         }
       }
     },
@@ -6741,6 +7511,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пам'ять"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "内存"
           }
         }
       }
@@ -6797,6 +7573,12 @@
             "state" : "translated",
             "value" : "Метал не підтримується цим пристроєм"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此设备不支持 Metal"
+          }
         }
       }
     },
@@ -6848,6 +7630,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Метрична система"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公制"
           }
         }
       }
@@ -6901,6 +7689,12 @@
             "state" : "translated",
             "value" : "Мікроархітектура"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "微架构"
+          }
         }
       }
     },
@@ -6952,6 +7746,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Інформація про модель"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "型号信息"
           }
         }
       }
@@ -7005,6 +7805,12 @@
             "state" : "translated",
             "value" : "Моно аудіо"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "单声道音频"
+          }
         }
       }
     },
@@ -7056,6 +7862,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Співпроцесор руху"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "运动协处理器"
           }
         }
       }
@@ -7109,6 +7921,12 @@
             "state" : "translated",
             "value" : "Багатозадачність"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "多任务处理"
+          }
         }
       }
     },
@@ -7160,6 +7978,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ім'я"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名称"
           }
         }
       }
@@ -7213,6 +8037,12 @@
             "state" : "translated",
             "value" : "Мережа"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "网络"
+          }
         }
       }
     },
@@ -7265,6 +8095,12 @@
             "state" : "translated",
             "value" : "Мережевий інтерфейс"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "网络接口"
+          }
         }
       }
     },
@@ -7316,6 +8152,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Тип мережі"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "网络类型"
           }
         }
       }
@@ -7372,6 +8214,12 @@
             "state" : "translated",
             "value" : "Наступний перехід"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下一个过渡"
+          }
         }
       }
     },
@@ -7423,6 +8271,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Немає"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不"
           }
         }
       }
@@ -7476,6 +8330,12 @@
             "state" : "translated",
             "value" : "Не всі платформи відтворюватимуть відгук у відповідь на певні типи"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "并非所有平台都会针对某些类型播放反馈"
+          }
         }
       }
     },
@@ -7527,6 +8387,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Система нумерації"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编号系统"
           }
         }
       }
@@ -7580,6 +8446,12 @@
             "state" : "translated",
             "value" : "Етикетки перемикачів увімкнення/вимкнення"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开关标签"
+          }
         }
       }
     },
@@ -7631,6 +8503,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Відкрийте на весь екран, щоб переглянути всі характеристики"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全屏打开以查看所有规格"
           }
         }
       }
@@ -7684,6 +8562,12 @@
             "state" : "translated",
             "value" : "Відкрийте цей розділ програми на іншому пристрої з підтримкою UWB"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在另一台支持 UWB 的设备上打开此应用程序部分"
+          }
         }
       }
     },
@@ -7735,6 +8619,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Операційна система"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "操作系统"
           }
         }
       }
@@ -7788,6 +8678,12 @@
             "state" : "translated",
             "value" : "Орієнтація"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "方向"
+          }
         }
       }
     },
@@ -7839,6 +8735,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Код партії упаковки"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "包装批号"
           }
         }
       }
@@ -7892,6 +8794,12 @@
             "state" : "translated",
             "value" : "Код партії PCB"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PCB 批次代码"
+          }
         }
       }
     },
@@ -7943,6 +8851,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Профіль продуктивності"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "性能简介"
           }
         }
       }
@@ -7996,6 +8910,12 @@
             "state" : "translated",
             "value" : "Крок"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "俯仰"
+          }
         }
       }
     },
@@ -8048,6 +8968,12 @@
             "state" : "translated",
             "value" : "Щільність пікселів"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "像素密度"
+          }
         }
       }
     },
@@ -8099,6 +9025,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Положення"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "位置"
           }
         }
       }
@@ -8155,6 +9087,12 @@
             "state" : "translated",
             "value" : "Бажані мови"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "首选语言"
+          }
         }
       }
     },
@@ -8206,6 +9144,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Віддає перевагу перехідним переходам"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "喜欢交叉淡入淡出过渡"
           }
         }
       }
@@ -8259,6 +9203,12 @@
             "state" : "translated",
             "value" : "Тиск"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "压力"
+          }
         }
       }
     },
@@ -8310,6 +9260,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ідентифікатор процесу"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "进程标识符"
           }
         }
       }
@@ -8363,6 +9319,12 @@
             "state" : "translated",
             "value" : "Назва процесу"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "进程名称"
+          }
         }
       }
     },
@@ -8414,6 +9376,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Процесор"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "处理器"
           }
         }
       }
@@ -8467,6 +9435,12 @@
             "state" : "translated",
             "value" : "Спрацював датчик наближення"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "接近传感器已触发"
+          }
         }
       }
     },
@@ -8518,6 +9492,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Публічна IP-адреса"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "公网 IP 地址"
           }
         }
       }
@@ -8571,6 +9551,12 @@
             "state" : "translated",
             "value" : "Роздільник початку цитати"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "引用开始分隔符"
+          }
         }
       }
     },
@@ -8622,6 +9608,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Кінцевий роздільник цитати"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "引用结束分隔符"
           }
         }
       }
@@ -8675,6 +9667,12 @@
             "state" : "translated",
             "value" : "ОЗП"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "内存"
+          }
         }
       }
     },
@@ -8726,6 +9724,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Рейтинг"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "等级"
           }
         }
       }
@@ -8779,6 +9783,12 @@
             "state" : "translated",
             "value" : "Необроблений X"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "原始X"
+          }
         }
       }
     },
@@ -8830,6 +9840,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сирий Ю"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "原始Y"
           }
         }
       }
@@ -8883,6 +9899,12 @@
             "state" : "translated",
             "value" : "Сирий Z"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "原始Z"
+          }
         }
       }
     },
@@ -8934,6 +9956,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Трасування променів"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "光线追踪"
           }
         }
       }
@@ -8987,6 +10015,12 @@
             "state" : "translated",
             "value" : "Червоний"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "红色"
+          }
         }
       }
     },
@@ -9038,6 +10072,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Зменшити рух"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "减少动态效果"
           }
         }
       }
@@ -9091,6 +10131,12 @@
             "state" : "translated",
             "value" : "Зменшити прозорість"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "降低透明度"
+          }
         }
       }
     },
@@ -9142,6 +10188,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Частота оновлення"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刷新率"
           }
         }
       }
@@ -9195,6 +10247,12 @@
             "state" : "translated",
             "value" : "Відносна висота"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "相对高度"
+          }
         }
       }
     },
@@ -9246,6 +10304,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Дата випуску"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "发售日期"
           }
         }
       }
@@ -9299,6 +10363,12 @@
             "state" : "translated",
             "value" : "Рулет"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "卷"
+          }
         }
       }
     },
@@ -9350,6 +10420,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Обертання"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "旋转"
           }
         }
       }
@@ -9403,6 +10479,12 @@
             "state" : "translated",
             "value" : "Заокруглені кути"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "圆角"
+          }
         }
       }
     },
@@ -9454,6 +10536,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Маршрутизатор"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "路由器"
           }
         }
       }
@@ -9507,6 +10595,12 @@
             "state" : "translated",
             "value" : "Зберегти..."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存..."
+          }
         }
       }
     },
@@ -9558,6 +10652,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Роздільна здатність екрану"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "屏幕分辨率"
           }
         }
       }
@@ -9611,6 +10711,12 @@
             "state" : "translated",
             "value" : "Розмір екрану"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "屏幕尺寸"
+          }
         }
       }
     },
@@ -9662,6 +10768,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Секунди від GMT"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "距离格林尼治标准时间 (GMT) 秒数"
           }
         }
       }
@@ -9715,6 +10827,12 @@
             "state" : "translated",
             "value" : "Безпечна мережа"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安全网络"
+          }
         }
       }
     },
@@ -9766,6 +10884,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Тип безпеки"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安全类型"
           }
         }
       }
@@ -9819,6 +10943,12 @@
             "state" : "translated",
             "value" : "Датчики"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "传感器"
+          }
         }
       }
     },
@@ -9870,6 +11000,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Серійний номер"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "序列号"
           }
         }
       }
@@ -9923,6 +11059,12 @@
             "state" : "translated",
             "value" : "Важкий термічний стан"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "热状态严重"
+          }
         }
       }
     },
@@ -9974,6 +11116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сертифіковано для продуктивних ігор на iPhone"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已通过 iPhone 高性能游戏认证"
           }
         }
       }
@@ -10027,6 +11175,12 @@
             "state" : "translated",
             "value" : "Налаштування"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置"
+          }
         }
       }
     },
@@ -10078,6 +11232,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Струсіть, щоб скасувати"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "摇动即可撤消"
           }
         }
       }
@@ -10131,6 +11291,12 @@
             "state" : "translated",
             "value" : "Розрізняти без кольору"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无需颜色区分"
+          }
         }
       }
     },
@@ -10182,6 +11348,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сила сигналу"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "信号强度"
           }
         }
       }
@@ -10235,6 +11407,12 @@
             "state" : "translated",
             "value" : "Промовити екран"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "朗读屏幕"
+          }
         }
       }
     },
@@ -10286,6 +11464,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Промовити вибір"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "朗读所选内容"
           }
         }
       }
@@ -10342,6 +11526,12 @@
             "state" : "translated",
             "value" : "Стан заряду (%)"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "充电状态 (%)"
+          }
         }
       }
     },
@@ -10393,6 +11583,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Статичні кольори"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "静态颜色"
           }
         }
       }
@@ -10448,6 +11644,12 @@
             "state" : "translated",
             "value" : "Статус"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "状态"
+          }
         }
       }
     },
@@ -10502,6 +11704,12 @@
             "state" : "translated",
             "value" : "Рядок стану"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "状态栏"
+          }
         }
       }
     },
@@ -10553,6 +11761,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Зберігання"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "存储"
           }
         }
       }
@@ -10606,6 +11820,12 @@
             "state" : "translated",
             "value" : "Закреслення"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除线"
+          }
         }
       }
     },
@@ -10657,6 +11877,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Підрозділ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "细分"
           }
         }
       }
@@ -10710,6 +11936,12 @@
             "state" : "translated",
             "value" : "Маска підмережі"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "子网掩码"
+          }
         }
       }
     },
@@ -10761,6 +11993,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Субрегіони"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "次区域"
           }
         }
       }
@@ -10814,6 +12052,12 @@
             "state" : "translated",
             "value" : "Підтримується"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支持"
+          }
         }
       }
     },
@@ -10865,6 +12109,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Підтримувані сімейства GPU"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支持的 GPU 系列"
           }
         }
       }
@@ -10920,6 +12170,12 @@
             "state" : "translated",
             "value" : "Підтримується SDRAM"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支持的SDRAM"
+          }
         }
       }
     },
@@ -10971,6 +12227,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Переключити камеру"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切换相机"
           }
         }
       }
@@ -11024,6 +12286,12 @@
             "state" : "translated",
             "value" : "Перемикач керування"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开关控制"
+          }
         }
       }
     },
@@ -11075,6 +12343,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Система"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "系统"
           }
         }
       }
@@ -11128,6 +12402,12 @@
             "state" : "translated",
             "value" : "Системні шрифти"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "系统字体"
+          }
         }
       }
     },
@@ -11179,6 +12459,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Системна мова"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "系统语言"
           }
         }
       }
@@ -11232,6 +12518,12 @@
             "state" : "translated",
             "value" : "Рейтинг системи"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "系统评级"
+          }
         }
       }
     },
@@ -11283,6 +12575,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Системний регіон"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "系统区域"
           }
         }
       }
@@ -11336,6 +12634,12 @@
             "state" : "translated",
             "value" : "Час роботи системи"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "系统正常运行时间"
+          }
         }
       }
     },
@@ -11387,6 +12691,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Технологічний вузол"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "技术节点"
           }
         }
       }
@@ -11440,6 +12750,12 @@
             "state" : "translated",
             "value" : "Тести"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "测试"
+          }
         }
       }
     },
@@ -11491,6 +12807,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Термічний стан"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "热状态"
           }
         }
       }
@@ -11544,6 +12866,12 @@
             "state" : "translated",
             "value" : "Цей пристрій не підтримує UWB"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "该设备不支持 UWB"
+          }
         }
       }
     },
@@ -11595,6 +12923,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Кількість ниток"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "线程数"
           }
         }
       }
@@ -11648,6 +12982,12 @@
             "state" : "translated",
             "value" : "Часовий зсув"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "时间偏移"
+          }
         }
       }
     },
@@ -11699,6 +13039,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Часовий пояс"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "时区"
           }
         }
       }
@@ -11752,6 +13098,12 @@
             "state" : "translated",
             "value" : "Часовий пояс"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "时区"
+          }
         }
       }
     },
@@ -11803,6 +13155,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Версія даних часового поясу"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "时区数据版本"
           }
         }
       }
@@ -11859,6 +13217,12 @@
             "state" : "translated",
             "value" : "Всього"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "总计"
+          }
         }
       }
     },
@@ -11910,6 +13274,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Істинний курс"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "真实航向"
           }
         }
       }
@@ -11965,6 +13335,12 @@
             "state" : "translated",
             "value" : "Введіть тут..."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在此输入..."
+          }
         }
       }
     },
@@ -12016,6 +13392,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Надширокосмуговий"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "超宽带"
           }
         }
       }
@@ -12069,6 +13451,12 @@
             "state" : "translated",
             "value" : "Підкреслити"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "强调"
+          }
         }
       }
     },
@@ -12120,6 +13508,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Уніфікована пам'ять"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "统一内存"
           }
         }
       }
@@ -12173,6 +13567,12 @@
             "state" : "translated",
             "value" : "Не підтримується"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不支持"
+          }
         }
       }
     },
@@ -12224,6 +13624,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Використання"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用法"
           }
         }
       }
@@ -12277,6 +13683,12 @@
             "state" : "translated",
             "value" : "Б/в"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已用"
+          }
         }
       }
     },
@@ -12328,6 +13740,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Варіант"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "变体"
           }
         }
       }
@@ -12381,6 +13799,12 @@
             "state" : "translated",
             "value" : "Дуже низький заряд батареї"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电池电量极低"
+          }
         }
       }
     },
@@ -12432,6 +13856,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Автоматичне відтворення відео"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "视频自动播放"
           }
         }
       }
@@ -12488,6 +13918,12 @@
             "state" : "translated",
             "value" : "Напруга"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电压"
+          }
         }
       }
     },
@@ -12539,6 +13975,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Обсяг"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "音量"
           }
         }
       }
@@ -12592,6 +14034,12 @@
             "state" : "translated",
             "value" : "Дивитися Конкретно"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Watch 专属"
+          }
         }
       }
     },
@@ -12643,6 +14091,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Водяний замок"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "入水锁定"
           }
         }
       }
@@ -12696,6 +14150,12 @@
             "state" : "translated",
             "value" : "Водостійкість"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "耐水性"
+          }
         }
       }
     },
@@ -12747,6 +14207,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Білий"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "白色"
           }
         }
       }
@@ -12800,6 +14266,12 @@
             "state" : "translated",
             "value" : "Бездротова зарядка"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无线充电"
+          }
         }
       }
     },
@@ -12851,6 +14323,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Розташування зап'ястя"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "手腕位置"
           }
         }
       }
@@ -12904,6 +14382,12 @@
             "state" : "translated",
             "value" : "Вісь X"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "X轴"
+          }
         }
       }
     },
@@ -12955,6 +14439,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вісь Y"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Y轴"
           }
         }
       }
@@ -13008,6 +14498,12 @@
             "state" : "translated",
             "value" : "Поворот"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "偏航"
+          }
         }
       }
     },
@@ -13059,6 +14555,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Так"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是的"
           }
         }
       }
@@ -13112,6 +14614,12 @@
             "state" : "translated",
             "value" : "Ваш пристрій не підтримує Apple Intelligence"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您的设备不支持 Apple Intelligence"
+          }
         }
       }
     },
@@ -13163,6 +14671,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ваш пристрій не підтримує моделі Foundation"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您的设备不支持 Foundation Models"
           }
         }
       }
@@ -13216,6 +14730,12 @@
             "state" : "translated",
             "value" : "Ваш пристрій підтримує Apple Intelligence"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您的设备支持 Apple Intelligence"
+          }
         }
       }
     },
@@ -13268,6 +14788,12 @@
             "state" : "translated",
             "value" : "Ваш пристрій підтримує моделі Foundation"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您的设备支持 Foundation Models"
+          }
         }
       }
     },
@@ -13319,6 +14845,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вісь Z"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Z轴"
           }
         }
       }
