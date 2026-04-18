@@ -38,6 +38,12 @@
             "state" : "translated",
             "value" : "Kısaltma"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "संक्षेपाक्षर"
+          }
         }
       }
     },
@@ -71,6 +77,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hakkında"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "के बारे में"
           }
         }
       }
@@ -106,6 +118,12 @@
             "state" : "translated",
             "value" : "Mutlak yükseklik"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पूर्ण ऊंचाई"
+          }
         }
       }
     },
@@ -139,6 +157,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hızlanma"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "त्वरण"
           }
         }
       }
@@ -174,6 +198,12 @@
             "state" : "translated",
             "value" : "Erişilebilirlik"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सुगम्यता"
+          }
         }
       }
     },
@@ -207,6 +237,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aktif süre"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सक्रिय समय"
           }
         }
       }
@@ -242,6 +278,12 @@
             "state" : "translated",
             "value" : "Etkinlik"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "गतिविधि"
+          }
         }
       }
     },
@@ -275,6 +317,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alternatif tırnak açma ayracı"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "वैकल्पिक उद्धरण सीमांकक प्रारंभ करता है"
           }
         }
       }
@@ -310,6 +358,12 @@
             "state" : "translated",
             "value" : "Alternatif tırnak kapama ayracı"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "वैकल्पिक उद्धरण अंत सीमांकक"
+          }
         }
       }
     },
@@ -344,6 +398,12 @@
             "state" : "translated",
             "value" : "Altimetre"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अल्टीमीटर"
+          }
         }
       }
     },
@@ -377,6 +437,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Açıklık"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "एपर्चर"
           }
         }
       }
@@ -439,6 +505,12 @@
             "state" : "translated",
             "value" : "Mimarlık"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "वास्तुकला"
+          }
         }
       }
     },
@@ -473,6 +545,12 @@
             "state" : "translated",
             "value" : "Argümanlar"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आर्ग्युमेंट्स"
+          }
         }
       }
     },
@@ -506,6 +584,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "En boy oranı"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आस्पेक्ट अनुपात"
           }
         }
       }
@@ -542,6 +626,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Asistan"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सहायक"
           }
         }
       }
@@ -580,6 +670,12 @@
             "state" : "translated",
             "value" : "Otomatik olarak katıldı"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अपने आप जुड़ा"
+          }
         }
       }
     },
@@ -613,6 +709,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Akım otomatik olarak güncelleniyor"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्वत: अद्यतनीकरण वर्तमान"
           }
         }
       }
@@ -648,6 +750,12 @@
             "state" : "translated",
             "value" : "Önemli kullanım için mevcut"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "महत्वपूर्ण उपयोग के लिए उपलब्ध है"
+          }
         }
       }
     },
@@ -681,6 +789,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fırsatçı kullanıma açık"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अवसरवादी उपयोग के लिए उपलब्ध है"
           }
         }
       }
@@ -716,6 +830,12 @@
             "state" : "translated",
             "value" : "Mevcut numaralandırma sistemleri"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "उपलब्ध नंबरिंग सिस्टम"
+          }
         }
       }
     },
@@ -749,6 +869,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Arka"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पीछे"
           }
         }
       }
@@ -784,6 +910,12 @@
             "state" : "translated",
             "value" : "Pil"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बैटरी"
+          }
         }
       }
     },
@@ -817,6 +949,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pil bilgisi"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बैटरी की जानकारी"
           }
         }
       }
@@ -852,6 +990,12 @@
             "state" : "translated",
             "value" : "Pil seviyesi"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बैटरी स्तर"
+          }
         }
       }
     },
@@ -885,6 +1029,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pil durumu"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बैटरी स्थिति"
           }
         }
       }
@@ -920,6 +1070,12 @@
             "state" : "translated",
             "value" : "Uyarı seviyesinin altında"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "चेतावनी स्तर से नीचे"
+          }
         }
       }
     },
@@ -953,6 +1109,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Biyometrik kimlik doğrulama"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बॉयोमीट्रिक प्रमाणीकरण"
           }
         }
       }
@@ -988,6 +1150,12 @@
             "state" : "translated",
             "value" : "Siyah"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "काला"
+          }
         }
       }
     },
@@ -1021,6 +1189,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mavi"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "नीला"
           }
         }
       }
@@ -1059,6 +1233,12 @@
             "state" : "translated",
             "value" : "Kalın"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बोल्ड"
+          }
         }
       }
     },
@@ -1093,6 +1273,12 @@
             "state" : "translated",
             "value" : "Kalın metin"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मोटा पाठ्यांश"
+          }
         }
       }
     },
@@ -1126,6 +1312,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parlaklık"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "चमक"
           }
         }
       }
@@ -1164,6 +1356,12 @@
             "state" : "translated",
             "value" : "Derleme"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "निर्माण"
+          }
         }
       }
     },
@@ -1197,6 +1395,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Düğme şekilleri"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बटन आकार"
           }
         }
       }
@@ -1232,6 +1436,12 @@
             "state" : "translated",
             "value" : "Takvim"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कैलेंडर"
+          }
         }
       }
     },
@@ -1265,6 +1475,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kamera"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कैमरा"
           }
         }
       }
@@ -1300,6 +1516,12 @@
             "state" : "translated",
             "value" : "İptal"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रद्द करना"
+          }
         }
       }
     },
@@ -1333,6 +1555,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yetenekler"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "क्षमताओं"
           }
         }
       }
@@ -1368,6 +1596,12 @@
             "state" : "translated",
             "value" : "Kapasite"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "क्षमता"
+          }
         }
       }
     },
@@ -1401,6 +1635,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hücre revizyonu"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सेल संशोधन"
           }
         }
       }
@@ -1436,6 +1676,12 @@
             "state" : "translated",
             "value" : "Ücret bilgileri"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "चार्ज की जानकारी"
+          }
         }
       }
     },
@@ -1469,6 +1715,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Şarj etme"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "चार्ज"
           }
         }
       }
@@ -1504,6 +1756,12 @@
             "state" : "translated",
             "value" : "Kapalı altyazı"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बंद अनुशीर्षक"
+          }
         }
       }
     },
@@ -1537,6 +1795,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Harmanlama"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मिलान"
           }
         }
       }
@@ -1572,6 +1836,12 @@
             "state" : "translated",
             "value" : "Harmanlayıcı tanımlayıcı"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कोलेटर पहचानकर्ता"
+          }
         }
       }
     },
@@ -1605,6 +1875,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Renk alanı"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रंग स्थान"
           }
         }
       }
@@ -1649,6 +1925,12 @@
             "state" : "translated",
             "value" : "Durum"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्थिति"
+          }
         }
       }
     },
@@ -1682,6 +1964,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kendinden emin"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आत्मविश्वास"
           }
         }
       }
@@ -1717,6 +2005,12 @@
             "state" : "translated",
             "value" : "Kapsayan bölge"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "युक्त क्षेत्र"
+          }
         }
       }
     },
@@ -1750,6 +2044,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kıta"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "महाद्वीप"
           }
         }
       }
@@ -1785,6 +2085,12 @@
             "state" : "translated",
             "value" : "Çekirdek"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मुख्य"
+          }
         }
       }
     },
@@ -1819,6 +2125,12 @@
             "state" : "translated",
             "value" : "Çekirdek sayısı"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कोर गिनती"
+          }
         }
       }
     },
@@ -1849,6 +2161,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CPU"
+          }
+        },
+        "hi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "CPU"
@@ -1887,6 +2205,12 @@
             "state" : "translated",
             "value" : "CPU yükü"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सीपीयू लोड"
+          }
         }
       }
     },
@@ -1920,6 +2244,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tam sistem raporu oluştur"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "एक संपूर्ण सिस्टम रिपोर्ट बनाएं"
           }
         }
       }
@@ -1955,6 +2285,12 @@
             "state" : "translated",
             "value" : "Kritik termal durum"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "गंभीर तापीय अवस्था"
+          }
         }
       }
     },
@@ -1988,6 +2324,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Taç yönelimi"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "क्राउन ओरिएंटेशन"
           }
         }
       }
@@ -2023,6 +2365,12 @@
             "state" : "translated",
             "value" : "Para birimi kodu"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मुद्रा कोड"
+          }
         }
       }
     },
@@ -2056,6 +2404,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Para birimi simgesi"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मुद्रा चिन्ह"
           }
         }
       }
@@ -2091,6 +2445,12 @@
             "state" : "translated",
             "value" : "Geçerli işlem"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "वर्तमान प्रक्रिया"
+          }
         }
       }
     },
@@ -2124,6 +2484,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geçerli oturum"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "वर्तमान सत्र"
           }
         }
       }
@@ -2159,6 +2525,12 @@
             "state" : "translated",
             "value" : "Döngü sayısı"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "चक्र गणना"
+          }
         }
       }
     },
@@ -2193,6 +2565,12 @@
             "state" : "translated",
             "value" : "Daha koyu sistem renkleri"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "गहरे सिस्टम रंग"
+          }
         }
       }
     },
@@ -2226,6 +2604,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yaz saati"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "दिन के समय को बचाना"
           }
         }
       }
@@ -2263,6 +2647,12 @@
             "state" : "translated",
             "value" : "Hata ayıklama"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डिबग"
+          }
         }
       }
     },
@@ -2296,6 +2686,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ondalık ayırıcı"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "दशमलव विभाजक"
           }
         }
       }
@@ -2331,6 +2727,12 @@
             "state" : "translated",
             "value" : "Açıklama"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "विवरण"
+          }
         }
       }
     },
@@ -2364,6 +2766,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hedef ip adresi"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "गंतव्य आईपी पता"
           }
         }
       }
@@ -2399,6 +2807,12 @@
             "state" : "translated",
             "value" : "Cihaz"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "उपकरण"
+          }
         }
       }
     },
@@ -2432,6 +2846,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cihaz adı"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डिवाइस का नाम"
           }
         }
       }
@@ -2470,6 +2890,12 @@
             "state" : "translated",
             "value" : "Kapat"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "नकार देना"
+          }
         }
       }
     },
@@ -2504,6 +2930,12 @@
             "state" : "translated",
             "value" : "Ekran"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रदर्शन"
+          }
         }
       }
     },
@@ -2537,6 +2969,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bağlantı istasyonu konektörü"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डॉक कनेक्टर"
           }
         }
       }
@@ -2575,6 +3013,12 @@
             "state" : "translated",
             "value" : "Ortam değişkenleri"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पर्यावरण चर"
+          }
         }
       }
     },
@@ -2608,6 +3052,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hata"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "गलती"
           }
         }
       }
@@ -2646,6 +3096,12 @@
             "state" : "translated",
             "value" : "Maruziyet"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "खुलासा"
+          }
         }
       }
     },
@@ -2683,6 +3139,12 @@
             "state" : "translated",
             "value" : "Donanım yazılımı sürümü"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रक्रिया यंत्र सामग्री संस्करण"
+          }
         }
       }
     },
@@ -2717,6 +3179,12 @@
             "state" : "translated",
             "value" : "Haftanın ilk günü"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सप्ताह का पहला दिन"
+          }
         }
       }
     },
@@ -2750,6 +3218,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "El feneri"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "टॉर्च"
           }
         }
       }
@@ -2788,6 +3262,12 @@
             "state" : "translated",
             "value" : "Özgür"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मुक्त"
+          }
         }
       }
     },
@@ -2821,6 +3301,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ön"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सामने"
           }
         }
       }
@@ -2856,6 +3342,12 @@
             "state" : "translated",
             "value" : "Tam sistem raporu"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पूर्ण सिस्टम रिपोर्ट"
+          }
         }
       }
     },
@@ -2889,6 +3381,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tamamen şarj edildi"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पूर्णतःउर्जित"
           }
         }
       }
@@ -2926,6 +3424,12 @@
             "state" : "translated",
             "value" : "İletişime geç"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "संपर्क में रहो"
+          }
         }
       }
     },
@@ -2959,6 +3463,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ayarlar'a gidin"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सेटिंग्स पर जाएं"
           }
         }
       }
@@ -2994,6 +3504,12 @@
             "state" : "translated",
             "value" : "GPU"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "जीपीयू"
+          }
         }
       }
     },
@@ -3027,6 +3543,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "GPU aileleri"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "जीपीयू परिवार"
           }
         }
       }
@@ -3062,6 +3584,12 @@
             "state" : "translated",
             "value" : "Gri tonlama"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्केल"
+          }
         }
       }
     },
@@ -3095,6 +3623,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yeşil"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "हरा"
           }
         }
       }
@@ -3130,6 +3664,12 @@
             "state" : "translated",
             "value" : "Gruplandırma ayırıcı"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "समूह विभाजक"
+          }
         }
       }
     },
@@ -3163,6 +3703,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rehberli erişim"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "निर्देशित पहुंच"
           }
         }
       }
@@ -3198,6 +3744,12 @@
             "state" : "translated",
             "value" : "Dokunsal geribildirim"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "हैप्टिक राय"
+          }
         }
       }
     },
@@ -3231,6 +3783,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dokunsal geribildirim"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "हैप्टिक राय"
           }
         }
       }
@@ -3266,6 +3824,12 @@
             "state" : "translated",
             "value" : "Donanım"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "हार्डवेयर"
+          }
         }
       }
     },
@@ -3299,6 +3863,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Donanım bilgisi"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "हार्डवेयर जानकारी"
           }
         }
       }
@@ -3334,6 +3904,12 @@
             "state" : "translated",
             "value" : "Donanıma genel bakış"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "हार्डवेयर अवलोकन"
+          }
         }
       }
     },
@@ -3367,6 +3943,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Donanım revizyonu"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "हार्डवेयर संशोधन"
           }
         }
       }
@@ -3402,6 +3984,12 @@
             "state" : "translated",
             "value" : "Yön doğruluğu"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बिल्कुल सही जा रहे"
+          }
         }
       }
     },
@@ -3435,6 +4023,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sağlık bilgileri"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्वास्थ्य सूचना"
           }
         }
       }
@@ -3470,6 +4064,12 @@
             "state" : "translated",
             "value" : "Ana bilgisayar adı"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "होस्ट का नाम"
+          }
         }
       }
     },
@@ -3503,6 +4103,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hotspot yardımcısı"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "हॉटस्पॉट हेल्पर"
           }
         }
       }
@@ -3538,6 +4144,12 @@
             "state" : "translated",
             "value" : "Saat döngüsü"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "घंटा चक्र"
+          }
         }
       }
     },
@@ -3571,6 +4183,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tanımlayıcı"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पहचानकर्ता"
           }
         }
       }
@@ -3606,6 +4224,12 @@
             "state" : "translated",
             "value" : "Satıcı tanımlayıcısı"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "विक्रेता के लिए पहचानकर्ता"
+          }
         }
       }
     },
@@ -3639,6 +4263,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Talimat seti"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अनुदेश सेट"
           }
         }
       }
@@ -3674,6 +4304,12 @@
             "state" : "translated",
             "value" : "Dahili ad"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आंतरिक नाम"
+          }
         }
       }
     },
@@ -3707,6 +4343,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Renkleri ters çevir"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रंगों को उलटा करें"
           }
         }
       }
@@ -3753,6 +4395,12 @@
             "state" : "translated",
             "value" : "ISO bölgesi"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आईएसओ क्षेत्र"
+          }
         }
       }
     },
@@ -3786,6 +4434,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İtalik"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "तिरछा"
           }
         }
       }
@@ -3821,6 +4475,12 @@
             "state" : "translated",
             "value" : "Yeni katıldım"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अभी जुड़े हैं"
+          }
         }
       }
     },
@@ -3854,6 +4514,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bilinen saat dilimleri"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ज्ञात समय क्षेत्र"
           }
         }
       }
@@ -3889,6 +4555,12 @@
             "state" : "translated",
             "value" : "Bilinen saat dilimleri"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ज्ञात समय क्षेत्र"
+          }
         }
       }
     },
@@ -3922,6 +4594,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Enlem"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अक्षांश"
           }
         }
       }
@@ -3957,6 +4635,12 @@
             "state" : "translated",
             "value" : "Düzen yönü"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "लेआउट दिशा"
+          }
         }
       }
     },
@@ -3990,6 +4674,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yerel ayar"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "लोकेल"
           }
         }
       }
@@ -4025,6 +4715,12 @@
             "state" : "translated",
             "value" : "Konum"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "जगह"
+          }
         }
       }
     },
@@ -4058,6 +4754,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Boylam"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "देशान्तर"
           }
         }
       }
@@ -4093,6 +4795,12 @@
             "state" : "translated",
             "value" : "Düşük pil"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "लो बैटरी"
+          }
         }
       }
     },
@@ -4126,6 +4834,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Düşük güç modu"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कम पावर मोड"
           }
         }
       }
@@ -4164,6 +4878,12 @@
             "state" : "translated",
             "value" : "Manyetik alan"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "चुंबकीय क्षेत्र"
+          }
         }
       }
     },
@@ -4197,6 +4917,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Manyetik yön"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "चुंबकीय शीर्ष"
           }
         }
       }
@@ -4234,6 +4960,12 @@
             "state" : "translated",
             "value" : "MagSafe"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मैगसेफ"
+          }
         }
       }
     },
@@ -4267,6 +4999,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Üretici"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "उत्पादक"
           }
         }
       }
@@ -4302,6 +5040,12 @@
             "state" : "translated",
             "value" : "Maksimum"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अधिकतम"
+          }
         }
       }
     },
@@ -4335,6 +5079,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Maksimum yük"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अधिकतम भार"
           }
         }
       }
@@ -4370,6 +5120,12 @@
             "state" : "translated",
             "value" : "Maks. saat hızı"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अधिकतम. घडी की गति"
+          }
         }
       }
     },
@@ -4404,6 +5160,12 @@
             "state" : "translated",
             "value" : "Maksimum kapasite"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अधिकतम योग्यता"
+          }
         }
       }
     },
@@ -4437,6 +5199,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hafıza"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "याद"
           }
         }
       }
@@ -4475,6 +5243,12 @@
             "state" : "translated",
             "value" : "Metal bu cihazda desteklenmiyor"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "इस डिवाइस पर मेटल समर्थित नहीं है"
+          }
         }
       }
     },
@@ -4508,6 +5282,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Metrik sistem"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मीट्रिक प्रणाली"
           }
         }
       }
@@ -4543,6 +5323,12 @@
             "state" : "translated",
             "value" : "Mikro mimari"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सूक्ष्मवास्तुकला"
+          }
         }
       }
     },
@@ -4576,6 +5362,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Model bilgileri"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मॉडल सूचना"
           }
         }
       }
@@ -4611,6 +5403,12 @@
             "state" : "translated",
             "value" : "Mono ses"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मोनो ऑडियो"
+          }
         }
       }
     },
@@ -4644,6 +5442,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hareket yardımcı işlemcisi"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मोशन कोप्रोसेसर"
           }
         }
       }
@@ -4679,6 +5483,12 @@
             "state" : "translated",
             "value" : "Çoklu görev"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बहु कार्यण"
+          }
         }
       }
     },
@@ -4712,6 +5522,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ad"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "नाम"
           }
         }
       }
@@ -4747,6 +5563,12 @@
             "state" : "translated",
             "value" : "Ağ"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "नेटवर्क"
+          }
         }
       }
     },
@@ -4781,6 +5603,12 @@
             "state" : "translated",
             "value" : "Ağ arayüzü"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "नेटवर्क इंटरफेस"
+          }
         }
       }
     },
@@ -4814,6 +5642,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ağ türü"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "नेटवर्क प्रकार"
           }
         }
       }
@@ -4852,6 +5686,12 @@
             "state" : "translated",
             "value" : "Sonraki geçiş"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अगला परिवर्तन"
+          }
         }
       }
     },
@@ -4885,6 +5725,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hayır"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "नहीं"
           }
         }
       }
@@ -4920,6 +5766,12 @@
             "state" : "translated",
             "value" : "Belirli türlere yanıt olarak tüm platformlar geri bildirim oynatmaz"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सभी प्लेटफ़ॉर्म कुछ खास प्रकारों के जवाब में फीडबैक नहीं चलाएंगे"
+          }
         }
       }
     },
@@ -4953,6 +5805,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Numaralandırma sistemi"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "क्रमांकन प्रणाली"
           }
         }
       }
@@ -4988,6 +5846,12 @@
             "state" : "translated",
             "value" : "Açık/Kapalı anahtar etiketleri"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "चालू/बंद स्विच लेबल"
+          }
         }
       }
     },
@@ -5021,6 +5885,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tüm özellikleri görüntülemek için tam ekranda aç"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सभी विशिष्टताओं को देखने के लिए पूर्ण स्क्रीन में खोलें"
           }
         }
       }
@@ -5056,6 +5926,12 @@
             "state" : "translated",
             "value" : "Bu uygulama bölümünü UWB destekli başka bir cihazda aç"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "किसी अन्य UWB-सक्षम डिवाइस पर इस ऐप अनुभाग को खोलें"
+          }
         }
       }
     },
@@ -5089,6 +5965,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İşletim sistemi"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ऑपरेटिंग सिस्टम"
           }
         }
       }
@@ -5124,6 +6006,12 @@
             "state" : "translated",
             "value" : "Yönelim"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अभिविन्यास"
+          }
         }
       }
     },
@@ -5157,6 +6045,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Paket lot kodu"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पैक लॉट कोड"
           }
         }
       }
@@ -5192,6 +6086,12 @@
             "state" : "translated",
             "value" : "PCB lot kodu"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पीसीबी लॉट कोड"
+          }
         }
       }
     },
@@ -5225,6 +6125,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Performans profili"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रदर्शन प्रोफ़ाइल"
           }
         }
       }
@@ -5260,6 +6166,12 @@
             "state" : "translated",
             "value" : "Eğim"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आवाज़ का उतार-चढ़ाव"
+          }
         }
       }
     },
@@ -5294,6 +6206,12 @@
             "state" : "translated",
             "value" : "Piksel yoğunluğu"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पिक्सेल घनत्व"
+          }
         }
       }
     },
@@ -5327,6 +6245,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Konum"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पद"
           }
         }
       }
@@ -5365,6 +6289,12 @@
             "state" : "translated",
             "value" : "Tercih edilen diller"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पसंदीदा भाषाएँ"
+          }
         }
       }
     },
@@ -5398,6 +6328,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Çapraz solma geçişlerini tercih et"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "क्रॉस फ़ेड ट्रांज़िशन को प्राथमिकता देता है"
           }
         }
       }
@@ -5433,6 +6369,12 @@
             "state" : "translated",
             "value" : "Basınç"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "दबाव"
+          }
         }
       }
     },
@@ -5466,6 +6408,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İşlem tanımlayıcısı"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रक्रिया पहचानकर्ता"
           }
         }
       }
@@ -5501,6 +6449,12 @@
             "state" : "translated",
             "value" : "İşlem adı"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रक्रिया नाम"
+          }
         }
       }
     },
@@ -5535,6 +6489,12 @@
             "state" : "translated",
             "value" : "İşlemci"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रोसेसर"
+          }
         }
       }
     },
@@ -5568,6 +6528,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yakınlık sensörü tetiklendi"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "निकटता सेंसर चालू हो गया"
           }
         }
       }
@@ -5604,6 +6570,12 @@
             "state" : "translated",
             "value" : "Genel ip adresi"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सार्वजनिक आईपी पता"
+          }
         }
       }
     },
@@ -5637,6 +6609,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tırnak açma ayracı"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कोटेशन प्रारंभ सीमांकक"
           }
         }
       }
@@ -5672,6 +6650,12 @@
             "state" : "translated",
             "value" : "Tırnak kapama ayracı"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कोटेशन अंत सीमांकक"
+          }
         }
       }
     },
@@ -5705,6 +6689,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Veri deposu"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "टक्कर मारना"
           }
         }
       }
@@ -5740,6 +6730,12 @@
             "state" : "translated",
             "value" : "Derecelendirme"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रेटिंग"
+          }
         }
       }
     },
@@ -5773,6 +6769,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ham x"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कच्चा एक्स"
           }
         }
       }
@@ -5808,6 +6810,12 @@
             "state" : "translated",
             "value" : "Ham y"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रॉ वाई"
+          }
         }
       }
     },
@@ -5841,6 +6849,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ham z"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कच्चा ज़ेड"
           }
         }
       }
@@ -5876,6 +6890,12 @@
             "state" : "translated",
             "value" : "Işın izleme"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "किरण पर करीबी नजर रखना"
+          }
         }
       }
     },
@@ -5909,6 +6929,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kırmızı"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "लाल"
           }
         }
       }
@@ -5944,6 +6970,12 @@
             "state" : "translated",
             "value" : "Hareketi azalt"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मोशन घटाएं"
+          }
         }
       }
     },
@@ -5977,6 +7009,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Şeffaflığı azaltın"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पारदर्शिता कम करें"
           }
         }
       }
@@ -6012,6 +7050,12 @@
             "state" : "translated",
             "value" : "Yenileme hızı"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ताज़ा दर"
+          }
         }
       }
     },
@@ -6045,6 +7089,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bağıl yükseklik"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सापेक्ष ऊंचाई"
           }
         }
       }
@@ -6080,6 +7130,12 @@
             "state" : "translated",
             "value" : "Yayın tarihi"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रिलीज़ की तारीख"
+          }
         }
       }
     },
@@ -6113,6 +7169,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yalpa"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रोल"
           }
         }
       }
@@ -6148,6 +7210,12 @@
             "state" : "translated",
             "value" : "Döndürme"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रोटेशन"
+          }
         }
       }
     },
@@ -6181,6 +7249,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yuvarlatılmış köşeler"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "गोल कोनें"
           }
         }
       }
@@ -6216,6 +7290,12 @@
             "state" : "translated",
             "value" : "Yönlendirici"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रूटर"
+          }
         }
       }
     },
@@ -6249,6 +7329,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kaydet..."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बचाना..."
           }
         }
       }
@@ -6284,6 +7370,12 @@
             "state" : "translated",
             "value" : "Ekran çözünürlüğü"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्क्रीन संकल्प"
+          }
         }
       }
     },
@@ -6317,6 +7409,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ekran boyutu"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्क्रीन का साईज़"
           }
         }
       }
@@ -6352,6 +7450,12 @@
             "state" : "translated",
             "value" : "GMT'den saniye farkı"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "जीएमटी से सेकंड"
+          }
         }
       }
     },
@@ -6385,6 +7489,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Güvenli ağ"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सुरक्षित नेटवर्क"
           }
         }
       }
@@ -6420,6 +7530,12 @@
             "state" : "translated",
             "value" : "Güvenlik türü"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सुरक्षा प्रकार"
+          }
         }
       }
     },
@@ -6453,6 +7569,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sensörler"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सेंसर"
           }
         }
       }
@@ -6488,6 +7610,12 @@
             "state" : "translated",
             "value" : "Seri numarası"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "क्रम संख्या"
+          }
         }
       }
     },
@@ -6521,6 +7649,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ciddi termal durum"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "गंभीर तापीय अवस्था"
           }
         }
       }
@@ -6556,6 +7690,12 @@
             "state" : "translated",
             "value" : "iPhone performans oyunculuğu için sertifikalı"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPhone प्रदर्शन गेमिंग के लिए प्रमाणित"
+          }
         }
       }
     },
@@ -6589,6 +7729,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ayarlar"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सेटिंग्स"
           }
         }
       }
@@ -6624,6 +7770,12 @@
             "state" : "translated",
             "value" : "Geri almak için sallayın"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पूर्ववत करने के लिए हिलाएँ"
+          }
         }
       }
     },
@@ -6657,6 +7809,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Renk olmadan ayırt et"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बिना रंग के फर्क करना चाहिए"
           }
         }
       }
@@ -6692,6 +7850,12 @@
             "state" : "translated",
             "value" : "Sinyal gücü"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सिग्नल क्षमता"
+          }
         }
       }
     },
@@ -6726,6 +7890,12 @@
             "state" : "translated",
             "value" : "Ekranı seslendir"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्क्रीन बोलो"
+          }
         }
       }
     },
@@ -6759,6 +7929,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seçimi seslendir"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "चयन बोलें"
           }
         }
       }
@@ -6797,6 +7973,12 @@
             "state" : "translated",
             "value" : "Şarj durumu (%)"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रभार का राज्य (%)"
+          }
         }
       }
     },
@@ -6830,6 +8012,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Statik renkler"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्थैतिक रंग"
           }
         }
       }
@@ -6867,6 +8055,12 @@
             "state" : "translated",
             "value" : "Durum"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्थिति"
+          }
         }
       }
     },
@@ -6903,6 +8097,12 @@
             "state" : "translated",
             "value" : "Durum çubuğu"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्टेटस बार"
+          }
         }
       }
     },
@@ -6936,6 +8136,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Depolama"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "भंडारण"
           }
         }
       }
@@ -6971,6 +8177,12 @@
             "state" : "translated",
             "value" : "Üstü çizili"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्ट्राइकथ्रू"
+          }
         }
       }
     },
@@ -7004,6 +8216,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alt bölüm"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "उपखंड"
           }
         }
       }
@@ -7039,6 +8257,12 @@
             "state" : "translated",
             "value" : "Alt ağ maskesi"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सबनेट मास्क"
+          }
         }
       }
     },
@@ -7072,6 +8296,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alt bölgeler"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "उपक्षेत्र"
           }
         }
       }
@@ -7107,6 +8337,12 @@
             "state" : "translated",
             "value" : "Destekleniyor"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "का समर्थन किया"
+          }
         }
       }
     },
@@ -7140,6 +8376,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Desteklenen GPU aileleri"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "समर्थित जीपीयू परिवार"
           }
         }
       }
@@ -7177,6 +8419,12 @@
             "state" : "translated",
             "value" : "Desteklenen sdRAM"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "समर्थित एसडीआरएएम"
+          }
         }
       }
     },
@@ -7210,6 +8458,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kamerayı değiştir"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कैमरा स्विच करें"
           }
         }
       }
@@ -7245,6 +8499,12 @@
             "state" : "translated",
             "value" : "Anahtar kontrolü"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "नियंत्रण स्विच करें"
+          }
         }
       }
     },
@@ -7278,6 +8538,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sistem"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रणाली"
           }
         }
       }
@@ -7313,6 +8579,12 @@
             "state" : "translated",
             "value" : "Sistem yazı tipleri"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सिस्टम फ़ॉन्ट्स"
+          }
         }
       }
     },
@@ -7346,6 +8618,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sistem dili"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सिस्टम भाषा"
           }
         }
       }
@@ -7381,6 +8659,12 @@
             "state" : "translated",
             "value" : "Sistem derecelendirmesi"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सिस्टम रेटिंग"
+          }
         }
       }
     },
@@ -7414,6 +8698,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sistem bölgesi"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सिस्टम क्षेत्र"
           }
         }
       }
@@ -7449,6 +8739,12 @@
             "state" : "translated",
             "value" : "Sistem çalışma süresi"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सिस्टम अपटाइम"
+          }
         }
       }
     },
@@ -7482,6 +8778,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Teknoloji düğümü"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रौद्योगिकी नोड"
           }
         }
       }
@@ -7517,6 +8819,12 @@
             "state" : "translated",
             "value" : "Testler"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "परीक्षण"
+          }
         }
       }
     },
@@ -7550,6 +8858,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Termal durum"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "तापीय अवस्था"
           }
         }
       }
@@ -7585,6 +8899,12 @@
             "state" : "translated",
             "value" : "Bu cihaz UWB desteklemiyor"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "यह डिवाइस UWB-सक्षम नहीं है"
+          }
         }
       }
     },
@@ -7618,6 +8938,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İş parçacığı sayısı"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रति वर्ग इकाई धागों की संख्या"
           }
         }
       }
@@ -7653,6 +8979,12 @@
             "state" : "translated",
             "value" : "Zaman farkı"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "समय ऑफसेट"
+          }
         }
       }
     },
@@ -7686,6 +9018,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Saat dilimi"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "समय क्षेत्र"
           }
         }
       }
@@ -7721,6 +9059,12 @@
             "state" : "translated",
             "value" : "Saat dilimi"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "समय क्षेत्र"
+          }
         }
       }
     },
@@ -7754,6 +9098,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Saat dilimi veri sürümü"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "समय क्षेत्र डेटा संस्करण"
           }
         }
       }
@@ -7792,6 +9142,12 @@
             "state" : "translated",
             "value" : "Toplam"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कुल"
+          }
         }
       }
     },
@@ -7825,6 +9181,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gerçek yön"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सच्चा शीर्षक"
           }
         }
       }
@@ -7862,6 +9224,12 @@
             "state" : "translated",
             "value" : "Buraya yazın..."
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "यहाँ टाइप करें..."
+          }
         }
       }
     },
@@ -7895,6 +9263,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ultra geniş bant"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अल्ट्रा वाइड बैंड"
           }
         }
       }
@@ -7930,6 +9304,12 @@
             "state" : "translated",
             "value" : "Altı çizili"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रेखांकन"
+          }
         }
       }
     },
@@ -7963,6 +9343,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Birleşik bellek"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "एकीकृत स्मृति"
           }
         }
       }
@@ -7998,6 +9384,12 @@
             "state" : "translated",
             "value" : "Desteklenmiyor"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "असमर्थित"
+          }
         }
       }
     },
@@ -8031,6 +9423,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kullanım"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रयोग"
           }
         }
       }
@@ -8066,6 +9464,12 @@
             "state" : "translated",
             "value" : "Kullanılmış"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "इस्तेमाल किया गया"
+          }
         }
       }
     },
@@ -8099,6 +9503,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Varyant"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रकार"
           }
         }
       }
@@ -8134,6 +9544,12 @@
             "state" : "translated",
             "value" : "Çok düşük pil"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बहुत कम बैटरी"
+          }
         }
       }
     },
@@ -8167,6 +9583,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Video otomatik oynatma"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "वीडियो ऑटोप्ले"
           }
         }
       }
@@ -8205,6 +9627,12 @@
             "state" : "translated",
             "value" : "Gerilim"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "वोल्टेज"
+          }
         }
       }
     },
@@ -8238,6 +9666,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ses seviyesi"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आयतन"
           }
         }
       }
@@ -8273,6 +9707,12 @@
             "state" : "translated",
             "value" : "Watch'e özel"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "विशिष्ट देखें"
+          }
         }
       }
     },
@@ -8306,6 +9746,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Su kilidi"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पानी का ताला"
           }
         }
       }
@@ -8341,6 +9787,12 @@
             "state" : "translated",
             "value" : "Suya dayanıklılık"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पानी प्रतिरोध"
+          }
         }
       }
     },
@@ -8374,6 +9826,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Beyaz"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सफ़ेद"
           }
         }
       }
@@ -8409,6 +9867,12 @@
             "state" : "translated",
             "value" : "Kablosuz şarj"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "वायरलेस चार्जिंग"
+          }
         }
       }
     },
@@ -8442,6 +9906,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bilek konumu"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कलाई का स्थान"
           }
         }
       }
@@ -8477,6 +9947,12 @@
             "state" : "translated",
             "value" : "X ekseni"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "एक्स अक्ष"
+          }
         }
       }
     },
@@ -8510,6 +9986,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Y ekseni"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "वाई अक्ष"
           }
         }
       }
@@ -8545,6 +10027,12 @@
             "state" : "translated",
             "value" : "Sapma"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रास्ते से हटना"
+          }
         }
       }
     },
@@ -8578,6 +10066,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Evet"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "हाँ"
           }
         }
       }
@@ -8613,6 +10107,12 @@
             "state" : "translated",
             "value" : "Cihazınız Apple Intelligence desteklemiyor"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आपका डिवाइस Apple इंटेलिजेंस का समर्थन नहीं करता है"
+          }
         }
       }
     },
@@ -8646,6 +10146,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cihazınız Foundation Models desteklemiyor"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आपका डिवाइस फ़ाउंडेशन मॉडल का समर्थन नहीं करता है"
           }
         }
       }
@@ -8681,6 +10187,12 @@
             "state" : "translated",
             "value" : "Cihazınız Apple Intelligence destekliyor"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आपका डिवाइस Apple इंटेलिजेंस को सपोर्ट करता है"
+          }
         }
       }
     },
@@ -8715,6 +10227,12 @@
             "state" : "translated",
             "value" : "Cihazınız Foundation Models destekliyor"
           }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आपका डिवाइस फाउंडेशन मॉडल का समर्थन करता है"
+          }
         }
       }
     },
@@ -8748,6 +10266,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Z ekseni"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Z अक्ष"
           }
         }
       }
