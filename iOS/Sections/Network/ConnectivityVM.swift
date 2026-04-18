@@ -52,8 +52,8 @@ final class ConnectivityVM {
     
     func getWiFiInfo() async {
         let network = await withCheckedContinuation { continuation in
-            NEHotspotNetwork.fetchCurrent { network in
-                continuation.resume(returning: network)
+            NEHotspotNetwork.fetchCurrent {
+                continuation.resume(returning: $0)
             }
         }
         
