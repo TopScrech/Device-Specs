@@ -9,14 +9,20 @@ import FoundationModels
 @available(iOS 26, *)
 final class ChatVM {
     var prompt = ""
-    
-    var answer: LanguageModelSession.Response<String>?
     var streamedText = ""
+    var transcriptTokens = 0.0
+    var contextWindow = 0.0
+    var answer: LanguageModelSession.Response<String>?
     
     var report: LanguageModelSession.Response<StreamResponse>?
     var partialReport: StreamResponse.PartiallyGenerated?
     
     private let logger = Logger()
+    
+    /// Range: 0.0...1.0
+    var tokenUsage: Double {
+        transcriptTokens / contextWindow
+    }
     
     var renderedText: AttributedString {
         do {
@@ -45,6 +51,8 @@ final class ChatVM {
     func printContextSize() {
         let contextSize = SystemLanguageModel.default.contextSize
         logger.info("Context size: \(contextSize)")
+        
+        contextWindow = Double(contextSize)
     }
     
     //    func processPromptAsReport() async {
@@ -135,6 +143,8 @@ final class ChatVM {
                 if #available(iOS 26.4, *) {
                     let transcriptTokenUsage = try await model.tokenCount(for: session.transcript)
                     print("Transcript tokens: \(transcriptTokenUsage)")
+                    
+                    transcriptTokens = Double(transcriptTokenUsage)
                 }
             } catch {
                 logger.error("\(error.localizedDescription)")

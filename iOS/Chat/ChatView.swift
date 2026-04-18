@@ -22,14 +22,17 @@ struct ChatView: View {
         .scenePadding()
         .task {
             isFocused = true
+            vm.printContextSize()
         }
         .toolbar {
-            if store.debugMode {
-                Menu {
-                    Button(String("Print context size"), action: vm.printContextSize)
-                } label: {
-                    Image(systemName: "ellipsis")
-                }
+            ToolbarItem(placement: .topBarLeading) {
+                Gauge(value: vm.tokenUsage) {}
+                    .gaugeStyle(.accessoryCircularCapacity)
+                    .scaleEffect(0.5)
+                    .buttonBorderShape(.circle)
+                    .frame(30)
+                    .tint(.green)
+                    .animation(.default, value: vm.tokenUsage)
             }
         }
         .overlay(alignment: .bottom) {
