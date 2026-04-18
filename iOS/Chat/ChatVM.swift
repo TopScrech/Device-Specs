@@ -108,6 +108,8 @@ final class ChatVM {
                 When asked for all device information, provide the output of all available GET tools.
                 """)
             
+            let session = LanguageModelSession(model: model, tools: tools, instructions: instructions)
+            
             if #available(iOS 26.4, *) {
                 do {
                     let promptTokenUsage = try await model.tokenCount(for: prompt)
@@ -118,12 +120,15 @@ final class ChatVM {
                     
                     let toolsTokenUsage = try await model.tokenCount(for: tools)
                     logger.info("Tools tokens: \(toolsTokenUsage)")
+                    
+                    let transcriptTokenUsage = try await model.tokenCount(for: session.transcript)
+                    print("Transcript tokens: \(transcriptTokenUsage)")
+                    
+                    transcriptTokens = Double(transcriptTokenUsage)
                 } catch {
                     logger.error("\(error)")
                 }
             }
-            
-            let session = LanguageModelSession(model: model, tools: tools, instructions: instructions)
             
             do {
                 partialReport = nil
