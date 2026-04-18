@@ -14,4 +14,7 @@ struct DeviceInfo {
     
     @Guide(description: "Ultra Wide Band (UWB) availability on this device")
     let is_UWB_available: String
+    
+    @Guide(description: "MagSafe capability on this device")
+    let isMagSafeAvailable: String
 }
