@@ -33,7 +33,12 @@ final class ChatVM {
     private let logger = Logger()
     
     private let tools: [any Tool] = [
-        GetCPUInfo(), GetSystemInfo(), GetDisplayInfo(), GetCameraInfo()
+        GetSystemInfo(),
+        GetDisplayInfo(),
+        GetCPUInfo(),
+        GetStorageInfo(),
+        GetMemoryInfo(),
+        GetCameraInfo()
     ]
     
     //    func processPromptAsReport() async {
@@ -87,6 +92,7 @@ final class ChatVM {
                 You are a helpful assistant.
                 Provide concise answers.
                 Answer only in the same language as the prompt.
+                When asked for all device information, provide the output of all available GET tools.
                 """
             }
             

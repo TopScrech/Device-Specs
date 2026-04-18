@@ -14,6 +14,7 @@ final class MemoryVM {
     private(set) var totalDisk = ""
     private(set) var usedDisk = ""
     private(set) var freeDisk = ""
+    
     private(set) var freeDiskForImportantUsage = ""
     private(set) var freeDiskForOpportunisticUsage = ""
     
