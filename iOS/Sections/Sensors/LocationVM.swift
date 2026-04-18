@@ -32,10 +32,7 @@ final class LocationVM: NSObject, CLLocationManagerDelegate {
         locationManager.startUpdatingHeading()
     }
     
-    func locationManager(
-        _ manager: CLLocationManager,
-        didUpdateLocations locations: [CLLocation]
-    ) {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             let coordinate = location.coordinate
             
@@ -44,10 +41,7 @@ final class LocationVM: NSObject, CLLocationManagerDelegate {
         }
     }
     
-    func locationManager(
-        _ manager: CLLocationManager,
-        didUpdateHeading newHeading: CLHeading
-    ) {
+    func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
         trueHeading = newHeading.trueHeading
         magneticHeading = newHeading.magneticHeading
         headingAccuracy = newHeading.headingAccuracy

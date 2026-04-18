@@ -57,7 +57,6 @@ final class OrientationVM {
     
     private func listenToDeviceOrientation() {
         UIDevice.current.beginGeneratingDeviceOrientationNotifications()
-        
         updateOrientation(UIDevice.current.orientation)
         
         NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)
