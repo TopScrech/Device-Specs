@@ -25,14 +25,16 @@ struct ChatView: View {
             vm.printContextSize()
         }
         .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                Gauge(value: vm.tokenUsage) {}
-                    .gaugeStyle(.accessoryCircularCapacity)
-                    .scaleEffect(0.5)
-                    .buttonBorderShape(.circle)
-                    .frame(30)
-                    .tint(.green)
-                    .animation(.default, value: vm.tokenUsage)
+            if #available(iOS 26.4, *) {
+                ToolbarItem(placement: .topBarLeading) {
+                    Gauge(value: vm.tokenUsage) {}
+                        .gaugeStyle(.accessoryCircularCapacity)
+                        .scaleEffect(0.5)
+                        .buttonBorderShape(.circle)
+                        .frame(30)
+                        .tint(.green)
+                        .animation(.default, value: vm.tokenUsage)
+                }
             }
         }
         .overlay(alignment: .bottom) {
