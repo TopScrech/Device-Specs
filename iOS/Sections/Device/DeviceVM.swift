@@ -28,6 +28,7 @@ final class DeviceVM {
     static let waterResistance = Device.current.waterResistance
     static let waterResistanceDescription = Device.current.waterResistanceDescription
     static let dockConnector = Device.current.hasUSBCConnectivity ? "USB-C" : "Lightning"
+    static let hasDynamicIsland = Device.current.hasDynamicIsland ? "Yes" : "No"
     
     var internalName: String {
         getInternalDeviceName() ?? "-"

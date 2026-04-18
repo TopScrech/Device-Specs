@@ -20,4 +20,7 @@ struct DeviceInfo {
     
     @Guide(description: "Charging port on this device")
     let dockConnector: String
+    
+    @Guide(description: "Dynamic Island support on this device")
+    let hasDymanicIsland: String
 }

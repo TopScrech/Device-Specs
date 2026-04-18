@@ -50,7 +50,7 @@ struct DeviceSpecs: View {
                 LabeledContent("Wireless Charging", value: Device.current.supportsWirelessCharging ? "Yes" : "No")
                 LabeledContent("MagSafe", value: DeviceVM.isMagsafeSupported)
                 LabeledContent("5G", value: Device.current.has5gSupport ? "Yes" : "No")
-                LabeledContent("Dynamic Island", value: Device.current.hasDynamicIsland ? "Yes" : "No")
+                LabeledContent("Dynamic Island", value: DeviceVM.hasDynamicIsland)
                 LabeledContent("Dock connector", value: DeviceVM.dockConnector)
                 LabeledContent("Force Touch", value: vm.isForceTouchAvailable)
 #endif
