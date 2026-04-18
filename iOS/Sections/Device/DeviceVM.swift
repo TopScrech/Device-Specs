@@ -59,7 +59,7 @@ final class DeviceVM {
     }
 #endif
     
-    static var isUltraWidebandAvailable: String {
+    static var isUWBAvailable: String {
         DeviceCapabilities.isUltraWidebandAvailable ? "Yes" : "No"
     }
     

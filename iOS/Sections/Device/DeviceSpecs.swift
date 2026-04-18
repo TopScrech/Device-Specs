@@ -54,7 +54,7 @@ struct DeviceSpecs: View {
                 LabeledContent("Dock connector", value: Device.current.hasUSBCConnectivity ? "USB-C" : "Lightning")
                 LabeledContent("Force Touch", value: vm.isForceTouchAvailable)
 #endif
-                LabeledContent("Ultra Wideband", value: DeviceVM.isUltraWidebandAvailable)
+                LabeledContent("Ultra Wideband", value: DeviceVM.isUWBAvailable)
             }
             
             Section("Water resistance") {

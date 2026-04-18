@@ -13,7 +13,7 @@ struct GetDeviceInfo: Tool {
             name: DeviceVM.deviceIdentifier,
             bluetoothVersion: DeviceVM.bluetoothVersion,
             thermalState: DeviceVM.thermalState,
-            is_UWB_available: DeviceVM.isUltraWidebandAvailable
+            is_UWB_available: DeviceVM.isUWBAvailable
         )
     }
 }
