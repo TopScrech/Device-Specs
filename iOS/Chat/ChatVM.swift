@@ -13,6 +13,11 @@ final class ChatVM {
     var answer: LanguageModelSession.Response<String>?
     var streamedText = ""
     
+    var report: LanguageModelSession.Response<StreamResponse>?
+    var partialReport: StreamResponse.PartiallyGenerated?
+    
+    private let logger = Logger()
+    
     var renderedText: AttributedString {
         do {
             return try AttributedString(
@@ -27,11 +32,6 @@ final class ChatVM {
         }
     }
     
-    var report: LanguageModelSession.Response<StreamResponse>?
-    var partialReport: StreamResponse.PartiallyGenerated?
-    
-    private let logger = Logger()
-    
     private let tools: [any Tool] = [
         GetDeviceInfo(),
         GetSystemInfo(),
@@ -41,6 +41,11 @@ final class ChatVM {
         GetMemoryInfo(),
         GetCameraInfo()
     ]
+    
+    func printContextSize() {
+        let contextSize = SystemLanguageModel.default.contextSize
+        logger.info("Context size: \(contextSize)")
+    }
     
     //    func processPromptAsReport() async {
     //        let model = SystemLanguageModel.default

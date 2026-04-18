@@ -3,6 +3,7 @@ import ScrechKit
 @available(iOS 26, *)
 struct ChatView: View {
     @State private var vm = ChatVM()
+    @EnvironmentObject private var store: ValueStore
     
     @FocusState private var isFocused
     
@@ -21,6 +22,15 @@ struct ChatView: View {
         .scenePadding()
         .task {
             isFocused = true
+        }
+        .toolbar {
+            if store.debugMode {
+                Menu {
+                    Button(String("Print context size"), action: vm.printContextSize)
+                } label: {
+                    Image(systemName: "ellipsis")
+                }
+            }
         }
         .overlay(alignment: .bottom) {
             HStack {
@@ -52,4 +62,5 @@ struct ChatView: View {
 @available(iOS 26, *)
 #Preview {
     ChatView()
+        .environmentObject(ValueStore())
 }
