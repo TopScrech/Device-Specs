@@ -5,6 +5,8 @@ import Appearance
 #endif
 
 final class ValueStore: ObservableObject {
+    @AppStorage("debug_mode") var debugMode = false
+    
 #if os(iOS)
     @AppStorage("show_status_bar") var showStatusBar = true
 #endif

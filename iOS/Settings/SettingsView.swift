@@ -10,6 +10,7 @@ struct SettingsView: View {
 #endif
             Section("Debug") {
                 Toggle("Status bar", isOn: $store.showStatusBar)
+                Toggle("Debug mode", isOn: $store.debugMode)
             }
         }
         .navigationTitle("Settings")
