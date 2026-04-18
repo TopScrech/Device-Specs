@@ -15,7 +15,8 @@ struct GetDeviceInfo: Tool {
             thermalState: DeviceVM.thermalState,
             is_UWB_available: DeviceVM.isUWBAvailable,
             isMagSafeAvailable: DeviceVM.isMagsafeSupported,
-            dockConnector: DeviceVM.dockConnector
+            dockConnector: DeviceVM.dockConnector,
+            hasDymanicIsland: DeviceVM.hasDynamicIsland
         )
     }
 }
