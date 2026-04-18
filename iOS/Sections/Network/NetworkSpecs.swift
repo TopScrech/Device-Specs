@@ -7,9 +7,7 @@ struct NetworkSpecs: View {
     var body: some View {
         List {
             LabeledContent("Public IP address", value: network.publicIP)
-            
             LabeledContent("Network interface", value: network.networkInterface)
-            
             LabeledContent("Destination IP address", value: network.destinationIpAddress)
             
             if let router = RouterVM().fetch() {

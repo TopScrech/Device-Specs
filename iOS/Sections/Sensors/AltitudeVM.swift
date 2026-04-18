@@ -3,7 +3,7 @@ import CoreLocation
 import CoreMotion
 
 @Observable
-class AltitudeVM: NSObject {
+final class AltitudeVM: NSObject {
     private var altimeter = CMAltimeter()
     private var locationManager = CLLocationManager()
     private var isMonitoring = false

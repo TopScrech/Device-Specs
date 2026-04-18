@@ -46,9 +46,7 @@ final class NetworkVM {
                 continue
             }
             
-            guard
-                address.pointee.sa_family == UInt8(AF_INET)
-            else {
+            guard address.pointee.sa_family == UInt8(AF_INET) else {
                 ptr = interface.ifa_next
                 continue
             }

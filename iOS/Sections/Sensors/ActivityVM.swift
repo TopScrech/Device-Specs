@@ -77,17 +77,10 @@ final class ActivityVM {
         }
         
         switch activityData.confidence {
-        case .low:
-            confidence = "Low"
-            
-        case .medium:
-            confidence = "Medium"
-            
-        case .high:
-            confidence = "High"
-            
-        @unknown default:
-            confidence = "Unknown"
+        case .low: confidence = "Low"
+        case .medium: confidence = "Medium"
+        case .high: confidence = "High"
+        @unknown default: confidence = "Unknown"
         }
     }
     
