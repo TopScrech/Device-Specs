@@ -93,14 +93,29 @@ final class ChatVM {
         
         switch model.availability {
         case .available:
-            let session = LanguageModelSession(model: model, tools: tools) {
-                """
+            let instructions = Instructions("""
                 You are a helpful assistant.
                 Provide concise answers.
                 Answer only in the same language as the prompt.
                 When asked for all device information, provide the output of all available GET tools.
-                """
+                """)
+            
+            if #available(iOS 26.4, *) {
+                do {
+                    let promptTokenUsage = try await model.tokenCount(for: prompt)
+                    logger.info("Prompt tokens: \(promptTokenUsage)")
+                    
+                    let instructionsTokenUsage = try await model.tokenCount(for: instructions)
+                    logger.info("Instruction tokens: \(instructionsTokenUsage)")
+                    
+                    let toolsTokenUsage = try await model.tokenCount(for: tools)
+                    logger.info("Tools tokens: \(toolsTokenUsage)")
+                } catch {
+                    logger.error("\(error)")
+                }
             }
+            
+            let session = LanguageModelSession(model: model, tools: tools, instructions: instructions)
             
             do {
                 partialReport = nil
@@ -116,6 +131,11 @@ final class ChatVM {
                 
                 answer = try await stream.collect()
                 prompt = ""
+                
+                if #available(iOS 26.4, *) {
+                    let transcriptTokenUsage = try await model.tokenCount(for: session.transcript)
+                    print("Transcript tokens: \(transcriptTokenUsage)")
+                }
             } catch {
                 logger.error("\(error.localizedDescription)")
             }
