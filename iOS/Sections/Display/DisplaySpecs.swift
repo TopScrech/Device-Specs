@@ -13,13 +13,9 @@ struct DisplaySpecs: View {
     var body: some View {
         List {
             LabeledContent("Screen resolution", value: vm.resolution)
-            
             LabeledContent("Screen size", value: vm.diagonalSize)
-            
             LabeledContent("Aspect ratio", value: DisplayVM.aspectRatio)
-            
             LabeledContent("Pixel density", value: vm.dencity)
-            
 #if !os(watchOS)
             LabeledContent("Refresh rate", value: DisplayVM.refreshRate)
 #endif
@@ -27,7 +23,6 @@ struct DisplaySpecs: View {
 #if os(iOS)
             LabeledContent("Rounded corners", value: vm.isRounded)
 #endif
-            
             Section {
                 LabeledContent("Brightness", value: "\(Int(brightness))%")
                 
