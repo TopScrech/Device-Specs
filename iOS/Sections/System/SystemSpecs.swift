@@ -9,7 +9,7 @@ struct SystemSpecs: View {
         List {
             Section {
                 LabeledContent("Operating system", value: SystemVM.operatingSystem)
-                LabeledContent("Build", value: vm.buildNumber)
+                LabeledContent("Build", value: SystemVM.buildNumber)
             }
             
             if #available(iOS 18.1, visionOS 2.4, *) {

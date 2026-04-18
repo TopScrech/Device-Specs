@@ -12,6 +12,7 @@ struct DeviceInfo {
     @Guide(description: "Thermal state")
     let thermalState: String
     
+    /// isUWBAvailable makes the AI think that UWB is called UWBA
     @Guide(description: "Ultra Wide Band (UWB) availability")
     let is_UWB_available: String
     

@@ -38,7 +38,7 @@ final class SystemVM {
 #endif
     }
     
-    var buildNumber: String {
+    static var buildNumber: String {
         let regex = "\\((Build )([A-Za-z0-9]+)\\)"
         let build = ProcessInfo.processInfo.operatingSystemVersionString
         
