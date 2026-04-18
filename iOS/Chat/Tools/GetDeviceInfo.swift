@@ -11,7 +11,9 @@ struct GetDeviceInfo: Tool {
     func call(arguments: Arguments) async throws -> DeviceInfo {
         await DeviceInfo(
             name: DeviceVM.deviceIdentifier,
-            bluetoothVersion: DeviceVM.bluetoothVersion
+            bluetoothVersion: DeviceVM.bluetoothVersion,
+            thermalState: DeviceVM.thermalState,
+            is_UWB_available: DeviceVM.isUltraWidebandAvailable
         )
     }
 }

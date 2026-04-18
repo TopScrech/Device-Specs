@@ -32,12 +32,12 @@ struct DeviceSpecs: View {
             VStack(alignment: .leading, spacing: 5) {
                 Text("Identifier for vendor")
                 
-                Text(vm.vandorId)
+                Text(vm.vendorId)
                     .secondary()
             }
             
             Section {
-                LabeledContent("Thermal state", value: vm.thermalState)
+                LabeledContent("Thermal state", value: DeviceVM.thermalState)
             }
             
             Section("Capabilities") {
@@ -54,7 +54,7 @@ struct DeviceSpecs: View {
                 LabeledContent("Dock connector", value: Device.current.hasUSBCConnectivity ? "USB-C" : "Lightning")
                 LabeledContent("Force Touch", value: vm.isForceTouchAvailable)
 #endif
-                LabeledContent("Ultra Wideband", value: vm.isUltraWidebandAvailable)
+                LabeledContent("Ultra Wideband", value: DeviceVM.isUltraWidebandAvailable)
             }
             
             Section("Water resistance") {

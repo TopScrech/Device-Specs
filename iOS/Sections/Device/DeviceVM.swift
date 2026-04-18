@@ -59,20 +59,11 @@ final class DeviceVM {
     }
 #endif
     
-    // Capabilities
-    var isNfcAvailable: String {
-#if canImport(CoreNFC)
-        NFCNDEFReaderSession.readingAvailable ? "Yes" : "No"
-#else
-        "No"
-#endif
-    }
-    
-    var isUltraWidebandAvailable: String {
+    static var isUltraWidebandAvailable: String {
         DeviceCapabilities.isUltraWidebandAvailable ? "Yes" : "No"
     }
     
-    var vandorId: String {
+    var vendorId: String {
 #if os(watchOS)
         WKInterfaceDevice.current().identifierForVendor?.uuidString ?? "-"
 #else
@@ -80,7 +71,7 @@ final class DeviceVM {
 #endif
     }
     
-    var thermalState: String {
+    static var thermalState: String {
         switch ProcessInfo.processInfo.thermalState {
         case .nominal:  "Nominal"
         case .fair:     "Fair"
