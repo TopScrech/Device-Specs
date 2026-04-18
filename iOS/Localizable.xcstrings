@@ -44,6 +44,12 @@
             "state" : "translated",
             "value" : "संक्षेपाक्षर"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Абревіатура"
+          }
         }
       }
     },
@@ -83,6 +89,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "के बारे में"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Про"
           }
         }
       }
@@ -124,6 +136,12 @@
             "state" : "translated",
             "value" : "पूर्ण ऊंचाई"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Абсолютна висота"
+          }
         }
       }
     },
@@ -163,6 +181,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "त्वरण"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прискорення"
           }
         }
       }
@@ -204,6 +228,12 @@
             "state" : "translated",
             "value" : "सुगम्यता"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Доступність"
+          }
         }
       }
     },
@@ -243,6 +273,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सक्रिय समय"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Активний час"
           }
         }
       }
@@ -284,6 +320,12 @@
             "state" : "translated",
             "value" : "गतिविधि"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Активність"
+          }
         }
       }
     },
@@ -323,6 +365,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "वैकल्पिक उद्धरण सीमांकक प्रारंभ करता है"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Альтернативний роздільник початку цитати"
           }
         }
       }
@@ -364,6 +412,12 @@
             "state" : "translated",
             "value" : "वैकल्पिक उद्धरण अंत सीमांकक"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Альтернативний роздільник кінця цитати"
+          }
         }
       }
     },
@@ -404,6 +458,12 @@
             "state" : "translated",
             "value" : "अल्टीमीटर"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Висотомір"
+          }
         }
       }
     },
@@ -443,6 +503,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "एपर्चर"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Апертура"
           }
         }
       }
@@ -511,6 +577,12 @@
             "state" : "translated",
             "value" : "वास्तुकला"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Архітектура"
+          }
         }
       }
     },
@@ -551,6 +623,12 @@
             "state" : "translated",
             "value" : "आर्ग्युमेंट्स"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Аргументи"
+          }
         }
       }
     },
@@ -590,6 +668,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "आस्पेक्ट अनुपात"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Співвідношення сторін"
           }
         }
       }
@@ -632,6 +716,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सहायक"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Помічник"
           }
         }
       }
@@ -676,6 +766,12 @@
             "state" : "translated",
             "value" : "अपने आप जुड़ा"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Автоматичне приєднання"
+          }
         }
       }
     },
@@ -715,6 +811,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "स्वत: अद्यतनीकरण वर्तमान"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поточний автооновлення"
           }
         }
       }
@@ -756,6 +858,12 @@
             "state" : "translated",
             "value" : "महत्वपूर्ण उपयोग के लिए उपलब्ध है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Доступно для важливих потреб"
+          }
         }
       }
     },
@@ -795,6 +903,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अवसरवादी उपयोग के लिए उपलब्ध है"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Доступно для епізодичного використання"
           }
         }
       }
@@ -836,6 +950,12 @@
             "state" : "translated",
             "value" : "उपलब्ध नंबरिंग सिस्टम"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Доступні системи нумерації"
+          }
         }
       }
     },
@@ -875,6 +995,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "पीछे"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Задня"
           }
         }
       }
@@ -916,6 +1042,12 @@
             "state" : "translated",
             "value" : "बैटरी"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Акумулятор"
+          }
         }
       }
     },
@@ -955,6 +1087,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "बैटरी की जानकारी"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Інформація про акумулятор"
           }
         }
       }
@@ -996,6 +1134,12 @@
             "state" : "translated",
             "value" : "बैटरी स्तर"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рівень заряду батареї"
+          }
         }
       }
     },
@@ -1035,6 +1179,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "बैटरी स्थिति"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Стан батареї"
           }
         }
       }
@@ -1076,6 +1226,12 @@
             "state" : "translated",
             "value" : "चेतावनी स्तर से नीचे"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нижче рівня попередження"
+          }
         }
       }
     },
@@ -1115,6 +1271,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "बॉयोमीट्रिक प्रमाणीकरण"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Біометрична аутентифікація"
           }
         }
       }
@@ -1156,6 +1318,12 @@
             "state" : "translated",
             "value" : "काला"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чорний"
+          }
         }
       }
     },
@@ -1195,6 +1363,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "नीला"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Синій"
           }
         }
       }
@@ -1239,6 +1413,12 @@
             "state" : "translated",
             "value" : "बोल्ड"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жирний"
+          }
         }
       }
     },
@@ -1279,6 +1459,12 @@
             "state" : "translated",
             "value" : "मोटा पाठ्यांश"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жирний текст"
+          }
         }
       }
     },
@@ -1318,6 +1504,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "चमक"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Яскравість"
           }
         }
       }
@@ -1362,6 +1554,12 @@
             "state" : "translated",
             "value" : "निर्माण"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Збірка"
+          }
         }
       }
     },
@@ -1401,6 +1599,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "बटन आकार"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Фігури кнопок"
           }
         }
       }
@@ -1442,6 +1646,12 @@
             "state" : "translated",
             "value" : "कैलेंडर"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Календар"
+          }
         }
       }
     },
@@ -1481,6 +1691,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "कैमरा"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Камера"
           }
         }
       }
@@ -1522,6 +1738,12 @@
             "state" : "translated",
             "value" : "रद्द करना"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скасувати"
+          }
         }
       }
     },
@@ -1561,6 +1783,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "क्षमताओं"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Можливості"
           }
         }
       }
@@ -1602,6 +1830,12 @@
             "state" : "translated",
             "value" : "क्षमता"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ємність"
+          }
         }
       }
     },
@@ -1641,6 +1875,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सेल संशोधन"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ревізія комірки"
           }
         }
       }
@@ -1682,6 +1922,12 @@
             "state" : "translated",
             "value" : "चार्ज की जानकारी"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Інформація про плату"
+          }
         }
       }
     },
@@ -1721,6 +1967,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "चार्ज"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Заряджання"
           }
         }
       }
@@ -1762,6 +2014,12 @@
             "state" : "translated",
             "value" : "बंद अनुशीर्षक"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Субтитри"
+          }
         }
       }
     },
@@ -1801,6 +2059,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "मिलान"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зіставлення"
           }
         }
       }
@@ -1842,6 +2106,12 @@
             "state" : "translated",
             "value" : "कोलेटर पहचानकर्ता"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ідентифікатор сортувальника"
+          }
         }
       }
     },
@@ -1881,6 +2151,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "रंग स्थान"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Колірний простір"
           }
         }
       }
@@ -1931,6 +2207,12 @@
             "state" : "translated",
             "value" : "स्थिति"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Стан"
+          }
         }
       }
     },
@@ -1970,6 +2252,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "आत्मविश्वास"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Впевненість"
           }
         }
       }
@@ -2011,6 +2299,12 @@
             "state" : "translated",
             "value" : "युक्त क्षेत्र"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Містить область"
+          }
         }
       }
     },
@@ -2050,6 +2344,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "महाद्वीप"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Континент"
           }
         }
       }
@@ -2091,6 +2391,12 @@
             "state" : "translated",
             "value" : "मुख्य"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ядро"
+          }
         }
       }
     },
@@ -2130,6 +2436,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "कोर गिनती"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Підрахунок ядер"
           }
         }
       }
@@ -2171,6 +2483,12 @@
             "state" : "translated",
             "value" : "CPU"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ЦП"
+          }
         }
       }
     },
@@ -2210,6 +2528,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सीपीयू लोड"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Навантаження процесора"
           }
         }
       }
@@ -2251,6 +2575,12 @@
             "state" : "translated",
             "value" : "एक संपूर्ण सिस्टम रिपोर्ट बनाएं"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Створіть повний системний звіт"
+          }
         }
       }
     },
@@ -2290,6 +2620,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "गंभीर तापीय अवस्था"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Критичний тепловий стан"
           }
         }
       }
@@ -2331,6 +2667,12 @@
             "state" : "translated",
             "value" : "क्राउन ओरिएंटेशन"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Орієнтація Digital Crown"
+          }
         }
       }
     },
@@ -2370,6 +2712,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "मुद्रा कोड"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Код валюти"
           }
         }
       }
@@ -2411,6 +2759,12 @@
             "state" : "translated",
             "value" : "मुद्रा चिन्ह"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Символ валюти"
+          }
         }
       }
     },
@@ -2450,6 +2804,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "वर्तमान प्रक्रिया"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поточний процес"
           }
         }
       }
@@ -2491,6 +2851,12 @@
             "state" : "translated",
             "value" : "वर्तमान सत्र"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поточна сесія"
+          }
         }
       }
     },
@@ -2530,6 +2896,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "चक्र गणना"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Підрахунок циклу"
           }
         }
       }
@@ -2571,6 +2943,12 @@
             "state" : "translated",
             "value" : "गहरे सिस्टम रंग"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Темніші кольори системи"
+          }
         }
       }
     },
@@ -2610,6 +2988,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "दिन के समय को बचाना"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Літній час"
           }
         }
       }
@@ -2653,6 +3037,12 @@
             "state" : "translated",
             "value" : "डिबग"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Налагодження"
+          }
         }
       }
     },
@@ -2692,6 +3082,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "दशमलव विभाजक"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Десятковий роздільник"
           }
         }
       }
@@ -2733,6 +3129,12 @@
             "state" : "translated",
             "value" : "विवरण"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Опис"
+          }
         }
       }
     },
@@ -2772,6 +3174,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "गंतव्य आईपी पता"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IP-адреса призначення"
           }
         }
       }
@@ -2813,6 +3221,12 @@
             "state" : "translated",
             "value" : "उपकरण"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пристрій"
+          }
         }
       }
     },
@@ -2852,6 +3266,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "डिवाइस का नाम"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Назва пристрою"
           }
         }
       }
@@ -2896,6 +3316,12 @@
             "state" : "translated",
             "value" : "नकार देना"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Відхилити"
+          }
         }
       }
     },
@@ -2936,6 +3362,12 @@
             "state" : "translated",
             "value" : "प्रदर्शन"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дисплей"
+          }
         }
       }
     },
@@ -2975,6 +3407,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "डॉक कनेक्टर"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Роз'єм док-станції"
           }
         }
       }
@@ -3019,6 +3457,12 @@
             "state" : "translated",
             "value" : "पर्यावरण चर"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Змінні середовища"
+          }
         }
       }
     },
@@ -3058,6 +3502,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "गलती"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Помилка"
           }
         }
       }
@@ -3102,6 +3552,12 @@
             "state" : "translated",
             "value" : "खुलासा"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Контакт"
+          }
         }
       }
     },
@@ -3145,6 +3601,12 @@
             "state" : "translated",
             "value" : "प्रक्रिया यंत्र सामग्री संस्करण"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Версія мікропрограми"
+          }
         }
       }
     },
@@ -3185,6 +3647,12 @@
             "state" : "translated",
             "value" : "सप्ताह का पहला दिन"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перший день тижня"
+          }
         }
       }
     },
@@ -3224,6 +3692,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "टॉर्च"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ліхтарик"
           }
         }
       }
@@ -3268,6 +3742,12 @@
             "state" : "translated",
             "value" : "मुक्त"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вільно"
+          }
         }
       }
     },
@@ -3307,6 +3787,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सामने"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Фронт"
           }
         }
       }
@@ -3348,6 +3834,12 @@
             "state" : "translated",
             "value" : "पूर्ण सिस्टम रिपोर्ट"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Повний системний звіт"
+          }
         }
       }
     },
@@ -3387,6 +3879,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "पूर्णतःउर्जित"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Повністю заряджений"
           }
         }
       }
@@ -3430,6 +3928,12 @@
             "state" : "translated",
             "value" : "संपर्क में रहो"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зв'язатися"
+          }
         }
       }
     },
@@ -3469,6 +3973,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सेटिंग्स पर जाएं"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перейдіть до Налаштувань"
           }
         }
       }
@@ -3510,6 +4020,12 @@
             "state" : "translated",
             "value" : "जीपीयू"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GPU"
+          }
         }
       }
     },
@@ -3549,6 +4065,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "जीपीयू परिवार"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сімейства GPU"
           }
         }
       }
@@ -3590,6 +4112,12 @@
             "state" : "translated",
             "value" : "स्केल"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Відтінки сірого"
+          }
         }
       }
     },
@@ -3629,6 +4157,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "हरा"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зелений"
           }
         }
       }
@@ -3670,6 +4204,12 @@
             "state" : "translated",
             "value" : "समूह विभाजक"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Роздільник групування"
+          }
         }
       }
     },
@@ -3709,6 +4249,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "निर्देशित पहुंच"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Керований доступ"
           }
         }
       }
@@ -3750,6 +4296,12 @@
             "state" : "translated",
             "value" : "हैप्टिक राय"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тактильний зворотний зв'язок"
+          }
         }
       }
     },
@@ -3789,6 +4341,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "हैप्टिक राय"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тактильний зворотний зв'язок"
           }
         }
       }
@@ -3830,6 +4388,12 @@
             "state" : "translated",
             "value" : "हार्डवेयर"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обладнання"
+          }
         }
       }
     },
@@ -3869,6 +4433,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "हार्डवेयर जानकारी"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Інформація про обладнання"
           }
         }
       }
@@ -3910,6 +4480,12 @@
             "state" : "translated",
             "value" : "हार्डवेयर अवलोकन"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Огляд обладнання"
+          }
         }
       }
     },
@@ -3949,6 +4525,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "हार्डवेयर संशोधन"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ревізія обладнання"
           }
         }
       }
@@ -3990,6 +4572,12 @@
             "state" : "translated",
             "value" : "बिल्कुल सही जा रहे"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Точність курсу"
+          }
         }
       }
     },
@@ -4029,6 +4617,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "स्वास्थ्य सूचना"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Інформація про здоров'я"
           }
         }
       }
@@ -4070,6 +4664,12 @@
             "state" : "translated",
             "value" : "होस्ट का नाम"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ім'я хоста"
+          }
         }
       }
     },
@@ -4109,6 +4709,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "हॉटस्पॉट हेल्पर"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hotspot Helper"
           }
         }
       }
@@ -4150,6 +4756,12 @@
             "state" : "translated",
             "value" : "घंटा चक्र"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Годинний цикл"
+          }
         }
       }
     },
@@ -4189,6 +4801,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "पहचानकर्ता"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ідентифікатор"
           }
         }
       }
@@ -4230,6 +4848,12 @@
             "state" : "translated",
             "value" : "विक्रेता के लिए पहचानकर्ता"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ідентифікатор постачальника"
+          }
         }
       }
     },
@@ -4269,6 +4893,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अनुदेश सेट"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Набір інструкцій"
           }
         }
       }
@@ -4310,6 +4940,12 @@
             "state" : "translated",
             "value" : "आंतरिक नाम"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Внутрішнє ім'я"
+          }
         }
       }
     },
@@ -4349,6 +4985,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "रंगों को उलटा करें"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Інвертувати кольори"
           }
         }
       }
@@ -4401,6 +5043,12 @@
             "state" : "translated",
             "value" : "आईएसओ क्षेत्र"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Регіон ISO"
+          }
         }
       }
     },
@@ -4440,6 +5088,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "तिरछा"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Курсив"
           }
         }
       }
@@ -4481,6 +5135,12 @@
             "state" : "translated",
             "value" : "अभी जुड़े हैं"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Щойно приєднався"
+          }
         }
       }
     },
@@ -4520,6 +5180,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ज्ञात समय क्षेत्र"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Відомі часові пояси"
           }
         }
       }
@@ -4561,6 +5227,12 @@
             "state" : "translated",
             "value" : "ज्ञात समय क्षेत्र"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Відомі часові пояси"
+          }
         }
       }
     },
@@ -4600,6 +5272,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अक्षांश"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Широта"
           }
         }
       }
@@ -4641,6 +5319,12 @@
             "state" : "translated",
             "value" : "लेआउट दिशा"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напрямок макета"
+          }
         }
       }
     },
@@ -4680,6 +5364,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "लोकेल"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Локаль"
           }
         }
       }
@@ -4721,6 +5411,12 @@
             "state" : "translated",
             "value" : "जगह"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розташування"
+          }
         }
       }
     },
@@ -4760,6 +5456,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "देशान्तर"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Довгота"
           }
         }
       }
@@ -4801,6 +5503,12 @@
             "state" : "translated",
             "value" : "लो बैटरी"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Низький заряд батареї"
+          }
         }
       }
     },
@@ -4840,6 +5548,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "कम पावर मोड"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Режим енергозбереження"
           }
         }
       }
@@ -4884,6 +5598,12 @@
             "state" : "translated",
             "value" : "चुंबकीय क्षेत्र"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Магнітне поле"
+          }
         }
       }
     },
@@ -4923,6 +5643,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "चुंबकीय शीर्ष"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Магнітний курс"
           }
         }
       }
@@ -4966,6 +5692,12 @@
             "state" : "translated",
             "value" : "मैगसेफ"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MagSafe"
+          }
         }
       }
     },
@@ -5005,6 +5737,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "उत्पादक"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Виробник"
           }
         }
       }
@@ -5046,6 +5784,12 @@
             "state" : "translated",
             "value" : "अधिकतम"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Макс"
+          }
         }
       }
     },
@@ -5085,6 +5829,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अधिकतम भार"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Максимальне навантаження"
           }
         }
       }
@@ -5126,6 +5876,12 @@
             "state" : "translated",
             "value" : "अधिकतम. घडी की गति"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Макс. тактова частота"
+          }
         }
       }
     },
@@ -5166,6 +5922,12 @@
             "state" : "translated",
             "value" : "अधिकतम योग्यता"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Максимальна місткість"
+          }
         }
       }
     },
@@ -5205,6 +5967,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "याद"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пам'ять"
           }
         }
       }
@@ -5249,6 +6017,12 @@
             "state" : "translated",
             "value" : "इस डिवाइस पर मेटल समर्थित नहीं है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Метал не підтримується цим пристроєм"
+          }
         }
       }
     },
@@ -5288,6 +6062,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "मीट्रिक प्रणाली"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Метрична система"
           }
         }
       }
@@ -5329,6 +6109,12 @@
             "state" : "translated",
             "value" : "सूक्ष्मवास्तुकला"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мікроархітектура"
+          }
         }
       }
     },
@@ -5368,6 +6154,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "मॉडल सूचना"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Інформація про модель"
           }
         }
       }
@@ -5409,6 +6201,12 @@
             "state" : "translated",
             "value" : "मोनो ऑडियो"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Моно аудіо"
+          }
         }
       }
     },
@@ -5448,6 +6246,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "मोशन कोप्रोसेसर"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Співпроцесор руху"
           }
         }
       }
@@ -5489,6 +6293,12 @@
             "state" : "translated",
             "value" : "बहु कार्यण"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Багатозадачність"
+          }
         }
       }
     },
@@ -5528,6 +6338,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "नाम"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ім'я"
           }
         }
       }
@@ -5569,6 +6385,12 @@
             "state" : "translated",
             "value" : "नेटवर्क"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мережа"
+          }
         }
       }
     },
@@ -5609,6 +6431,12 @@
             "state" : "translated",
             "value" : "नेटवर्क इंटरफेस"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мережевий інтерфейс"
+          }
         }
       }
     },
@@ -5648,6 +6476,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "नेटवर्क प्रकार"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тип мережі"
           }
         }
       }
@@ -5692,6 +6526,12 @@
             "state" : "translated",
             "value" : "अगला परिवर्तन"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Наступний перехід"
+          }
         }
       }
     },
@@ -5731,6 +6571,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "नहीं"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Немає"
           }
         }
       }
@@ -5772,6 +6618,12 @@
             "state" : "translated",
             "value" : "सभी प्लेटफ़ॉर्म कुछ खास प्रकारों के जवाब में फीडबैक नहीं चलाएंगे"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не всі платформи відтворюватимуть відгук у відповідь на певні типи"
+          }
         }
       }
     },
@@ -5811,6 +6663,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "क्रमांकन प्रणाली"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Система нумерації"
           }
         }
       }
@@ -5852,6 +6710,12 @@
             "state" : "translated",
             "value" : "चालू/बंद स्विच लेबल"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Етикетки перемикачів увімкнення/вимкнення"
+          }
         }
       }
     },
@@ -5891,6 +6755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सभी विशिष्टताओं को देखने के लिए पूर्ण स्क्रीन में खोलें"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Відкрийте на весь екран, щоб переглянути всі характеристики"
           }
         }
       }
@@ -5932,6 +6802,12 @@
             "state" : "translated",
             "value" : "किसी अन्य UWB-सक्षम डिवाइस पर इस ऐप अनुभाग को खोलें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Відкрийте цей розділ програми на іншому пристрої з підтримкою UWB"
+          }
         }
       }
     },
@@ -5971,6 +6847,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ऑपरेटिंग सिस्टम"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Операційна система"
           }
         }
       }
@@ -6012,6 +6894,12 @@
             "state" : "translated",
             "value" : "अभिविन्यास"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Орієнтація"
+          }
         }
       }
     },
@@ -6051,6 +6939,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "पैक लॉट कोड"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Код партії упаковки"
           }
         }
       }
@@ -6092,6 +6986,12 @@
             "state" : "translated",
             "value" : "पीसीबी लॉट कोड"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Код партії PCB"
+          }
         }
       }
     },
@@ -6131,6 +7031,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "प्रदर्शन प्रोफ़ाइल"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Профіль продуктивності"
           }
         }
       }
@@ -6172,6 +7078,12 @@
             "state" : "translated",
             "value" : "आवाज़ का उतार-चढ़ाव"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Крок"
+          }
         }
       }
     },
@@ -6212,6 +7124,12 @@
             "state" : "translated",
             "value" : "पिक्सेल घनत्व"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Щільність пікселів"
+          }
         }
       }
     },
@@ -6251,6 +7169,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "पद"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Положення"
           }
         }
       }
@@ -6295,6 +7219,12 @@
             "state" : "translated",
             "value" : "पसंदीदा भाषाएँ"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бажані мови"
+          }
         }
       }
     },
@@ -6334,6 +7264,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "क्रॉस फ़ेड ट्रांज़िशन को प्राथमिकता देता है"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Віддає перевагу перехідним переходам"
           }
         }
       }
@@ -6375,6 +7311,12 @@
             "state" : "translated",
             "value" : "दबाव"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тиск"
+          }
         }
       }
     },
@@ -6414,6 +7356,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "प्रक्रिया पहचानकर्ता"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ідентифікатор процесу"
           }
         }
       }
@@ -6455,6 +7403,12 @@
             "state" : "translated",
             "value" : "प्रक्रिया नाम"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Назва процесу"
+          }
         }
       }
     },
@@ -6495,6 +7449,12 @@
             "state" : "translated",
             "value" : "प्रोसेसर"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Процесор"
+          }
         }
       }
     },
@@ -6534,6 +7494,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "निकटता सेंसर चालू हो गया"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спрацював датчик наближення"
           }
         }
       }
@@ -6576,6 +7542,12 @@
             "state" : "translated",
             "value" : "सार्वजनिक आईपी पता"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Публічна IP-адреса"
+          }
         }
       }
     },
@@ -6615,6 +7587,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "कोटेशन प्रारंभ सीमांकक"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Роздільник початку цитати"
           }
         }
       }
@@ -6656,6 +7634,12 @@
             "state" : "translated",
             "value" : "कोटेशन अंत सीमांकक"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кінцевий роздільник цитати"
+          }
         }
       }
     },
@@ -6695,6 +7679,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "टक्कर मारना"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ОЗП"
           }
         }
       }
@@ -6736,6 +7726,12 @@
             "state" : "translated",
             "value" : "रेटिंग"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рейтинг"
+          }
         }
       }
     },
@@ -6775,6 +7771,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "कच्चा एक्स"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Необроблений X"
           }
         }
       }
@@ -6816,6 +7818,12 @@
             "state" : "translated",
             "value" : "रॉ वाई"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сирий Ю"
+          }
         }
       }
     },
@@ -6855,6 +7863,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "कच्चा ज़ेड"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сирий Z"
           }
         }
       }
@@ -6896,6 +7910,12 @@
             "state" : "translated",
             "value" : "किरण पर करीबी नजर रखना"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Трасування променів"
+          }
         }
       }
     },
@@ -6935,6 +7955,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "लाल"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Червоний"
           }
         }
       }
@@ -6976,6 +8002,12 @@
             "state" : "translated",
             "value" : "मोशन घटाएं"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зменшити рух"
+          }
         }
       }
     },
@@ -7015,6 +8047,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "पारदर्शिता कम करें"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зменшити прозорість"
           }
         }
       }
@@ -7056,6 +8094,12 @@
             "state" : "translated",
             "value" : "ताज़ा दर"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Частота оновлення"
+          }
         }
       }
     },
@@ -7095,6 +8139,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सापेक्ष ऊंचाई"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Відносна висота"
           }
         }
       }
@@ -7136,6 +8186,12 @@
             "state" : "translated",
             "value" : "रिलीज़ की तारीख"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дата випуску"
+          }
         }
       }
     },
@@ -7175,6 +8231,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "रोल"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рулет"
           }
         }
       }
@@ -7216,6 +8278,12 @@
             "state" : "translated",
             "value" : "रोटेशन"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обертання"
+          }
         }
       }
     },
@@ -7255,6 +8323,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "गोल कोनें"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Заокруглені кути"
           }
         }
       }
@@ -7296,6 +8370,12 @@
             "state" : "translated",
             "value" : "रूटर"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Маршрутизатор"
+          }
         }
       }
     },
@@ -7335,6 +8415,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "बचाना..."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зберегти..."
           }
         }
       }
@@ -7376,6 +8462,12 @@
             "state" : "translated",
             "value" : "स्क्रीन संकल्प"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Роздільна здатність екрану"
+          }
         }
       }
     },
@@ -7415,6 +8507,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "स्क्रीन का साईज़"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розмір екрану"
           }
         }
       }
@@ -7456,6 +8554,12 @@
             "state" : "translated",
             "value" : "जीएमटी से सेकंड"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Секунди від GMT"
+          }
         }
       }
     },
@@ -7495,6 +8599,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सुरक्षित नेटवर्क"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Безпечна мережа"
           }
         }
       }
@@ -7536,6 +8646,12 @@
             "state" : "translated",
             "value" : "सुरक्षा प्रकार"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тип безпеки"
+          }
         }
       }
     },
@@ -7575,6 +8691,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सेंसर"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Датчики"
           }
         }
       }
@@ -7616,6 +8738,12 @@
             "state" : "translated",
             "value" : "क्रम संख्या"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Серійний номер"
+          }
         }
       }
     },
@@ -7655,6 +8783,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "गंभीर तापीय अवस्था"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Важкий термічний стан"
           }
         }
       }
@@ -7696,6 +8830,12 @@
             "state" : "translated",
             "value" : "iPhone प्रदर्शन गेमिंग के लिए प्रमाणित"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сертифіковано для продуктивних ігор на iPhone"
+          }
         }
       }
     },
@@ -7735,6 +8875,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सेटिंग्स"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Налаштування"
           }
         }
       }
@@ -7776,6 +8922,12 @@
             "state" : "translated",
             "value" : "पूर्ववत करने के लिए हिलाएँ"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Струсіть, щоб скасувати"
+          }
         }
       }
     },
@@ -7815,6 +8967,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "बिना रंग के फर्क करना चाहिए"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розрізняти без кольору"
           }
         }
       }
@@ -7856,6 +9014,12 @@
             "state" : "translated",
             "value" : "सिग्नल क्षमता"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сила сигналу"
+          }
         }
       }
     },
@@ -7896,6 +9060,12 @@
             "state" : "translated",
             "value" : "स्क्रीन बोलो"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Промовити екран"
+          }
         }
       }
     },
@@ -7935,6 +9105,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "चयन बोलें"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Промовити вибір"
           }
         }
       }
@@ -7979,6 +9155,12 @@
             "state" : "translated",
             "value" : "प्रभार का राज्य (%)"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Стан заряду (%)"
+          }
         }
       }
     },
@@ -8018,6 +9200,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "स्थैतिक रंग"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Статичні кольори"
           }
         }
       }
@@ -8061,6 +9249,12 @@
             "state" : "translated",
             "value" : "स्थिति"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Статус"
+          }
         }
       }
     },
@@ -8103,6 +9297,12 @@
             "state" : "translated",
             "value" : "स्टेटस बार"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рядок стану"
+          }
         }
       }
     },
@@ -8142,6 +9342,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "भंडारण"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зберігання"
           }
         }
       }
@@ -8183,6 +9389,12 @@
             "state" : "translated",
             "value" : "स्ट्राइकथ्रू"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закреслення"
+          }
         }
       }
     },
@@ -8222,6 +9434,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "उपखंड"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Підрозділ"
           }
         }
       }
@@ -8263,6 +9481,12 @@
             "state" : "translated",
             "value" : "सबनेट मास्क"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Маска підмережі"
+          }
         }
       }
     },
@@ -8302,6 +9526,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "उपक्षेत्र"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Субрегіони"
           }
         }
       }
@@ -8343,6 +9573,12 @@
             "state" : "translated",
             "value" : "का समर्थन किया"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Підтримується"
+          }
         }
       }
     },
@@ -8382,6 +9618,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "समर्थित जीपीयू परिवार"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Підтримувані сімейства GPU"
           }
         }
       }
@@ -8425,6 +9667,12 @@
             "state" : "translated",
             "value" : "समर्थित एसडीआरएएम"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Підтримується SDRAM"
+          }
         }
       }
     },
@@ -8464,6 +9712,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "कैमरा स्विच करें"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Переключити камеру"
           }
         }
       }
@@ -8505,6 +9759,12 @@
             "state" : "translated",
             "value" : "नियंत्रण स्विच करें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перемикач керування"
+          }
         }
       }
     },
@@ -8544,6 +9804,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "प्रणाली"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Система"
           }
         }
       }
@@ -8585,6 +9851,12 @@
             "state" : "translated",
             "value" : "सिस्टम फ़ॉन्ट्स"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Системні шрифти"
+          }
         }
       }
     },
@@ -8624,6 +9896,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सिस्टम भाषा"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Системна мова"
           }
         }
       }
@@ -8665,6 +9943,12 @@
             "state" : "translated",
             "value" : "सिस्टम रेटिंग"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рейтинг системи"
+          }
         }
       }
     },
@@ -8704,6 +9988,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सिस्टम क्षेत्र"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Системний регіон"
           }
         }
       }
@@ -8745,6 +10035,12 @@
             "state" : "translated",
             "value" : "सिस्टम अपटाइम"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Час роботи системи"
+          }
         }
       }
     },
@@ -8784,6 +10080,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "प्रौद्योगिकी नोड"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Технологічний вузол"
           }
         }
       }
@@ -8825,6 +10127,12 @@
             "state" : "translated",
             "value" : "परीक्षण"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тести"
+          }
         }
       }
     },
@@ -8864,6 +10172,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "तापीय अवस्था"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Термічний стан"
           }
         }
       }
@@ -8905,6 +10219,12 @@
             "state" : "translated",
             "value" : "यह डिवाइस UWB-सक्षम नहीं है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Цей пристрій не підтримує UWB"
+          }
         }
       }
     },
@@ -8944,6 +10264,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "प्रति वर्ग इकाई धागों की संख्या"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кількість ниток"
           }
         }
       }
@@ -8985,6 +10311,12 @@
             "state" : "translated",
             "value" : "समय ऑफसेट"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Часовий зсув"
+          }
         }
       }
     },
@@ -9024,6 +10356,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "समय क्षेत्र"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Часовий пояс"
           }
         }
       }
@@ -9065,6 +10403,12 @@
             "state" : "translated",
             "value" : "समय क्षेत्र"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Часовий пояс"
+          }
         }
       }
     },
@@ -9104,6 +10448,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "समय क्षेत्र डेटा संस्करण"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Версія даних часового поясу"
           }
         }
       }
@@ -9148,6 +10498,12 @@
             "state" : "translated",
             "value" : "कुल"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Всього"
+          }
         }
       }
     },
@@ -9187,6 +10543,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सच्चा शीर्षक"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Істинний курс"
           }
         }
       }
@@ -9230,6 +10592,12 @@
             "state" : "translated",
             "value" : "यहाँ टाइप करें..."
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введіть тут..."
+          }
         }
       }
     },
@@ -9269,6 +10637,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अल्ट्रा वाइड बैंड"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Надширокосмуговий"
           }
         }
       }
@@ -9310,6 +10684,12 @@
             "state" : "translated",
             "value" : "रेखांकन"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Підкреслити"
+          }
         }
       }
     },
@@ -9349,6 +10729,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "एकीकृत स्मृति"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уніфікована пам'ять"
           }
         }
       }
@@ -9390,6 +10776,12 @@
             "state" : "translated",
             "value" : "असमर्थित"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не підтримується"
+          }
         }
       }
     },
@@ -9429,6 +10821,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "प्रयोग"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Використання"
           }
         }
       }
@@ -9470,6 +10868,12 @@
             "state" : "translated",
             "value" : "इस्तेमाल किया गया"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Б/в"
+          }
         }
       }
     },
@@ -9509,6 +10913,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "प्रकार"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Варіант"
           }
         }
       }
@@ -9550,6 +10960,12 @@
             "state" : "translated",
             "value" : "बहुत कम बैटरी"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дуже низький заряд батареї"
+          }
         }
       }
     },
@@ -9589,6 +11005,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "वीडियो ऑटोप्ले"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Автоматичне відтворення відео"
           }
         }
       }
@@ -9633,6 +11055,12 @@
             "state" : "translated",
             "value" : "वोल्टेज"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напруга"
+          }
         }
       }
     },
@@ -9672,6 +11100,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "आयतन"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обсяг"
           }
         }
       }
@@ -9713,6 +11147,12 @@
             "state" : "translated",
             "value" : "विशिष्ट देखें"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дивитися Конкретно"
+          }
         }
       }
     },
@@ -9752,6 +11192,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "पानी का ताला"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Водяний замок"
           }
         }
       }
@@ -9793,6 +11239,12 @@
             "state" : "translated",
             "value" : "पानी प्रतिरोध"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Водостійкість"
+          }
         }
       }
     },
@@ -9832,6 +11284,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सफ़ेद"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Білий"
           }
         }
       }
@@ -9873,6 +11331,12 @@
             "state" : "translated",
             "value" : "वायरलेस चार्जिंग"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бездротова зарядка"
+          }
         }
       }
     },
@@ -9912,6 +11376,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "कलाई का स्थान"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розташування зап'ястя"
           }
         }
       }
@@ -9953,6 +11423,12 @@
             "state" : "translated",
             "value" : "एक्स अक्ष"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вісь X"
+          }
         }
       }
     },
@@ -9992,6 +11468,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "वाई अक्ष"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вісь Y"
           }
         }
       }
@@ -10033,6 +11515,12 @@
             "state" : "translated",
             "value" : "रास्ते से हटना"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поворот"
+          }
         }
       }
     },
@@ -10072,6 +11560,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "हाँ"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Так"
           }
         }
       }
@@ -10113,6 +11607,12 @@
             "state" : "translated",
             "value" : "आपका डिवाइस Apple इंटेलिजेंस का समर्थन नहीं करता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваш пристрій не підтримує Apple Intelligence"
+          }
         }
       }
     },
@@ -10152,6 +11652,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "आपका डिवाइस फ़ाउंडेशन मॉडल का समर्थन नहीं करता है"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваш пристрій не підтримує моделі Foundation"
           }
         }
       }
@@ -10193,6 +11699,12 @@
             "state" : "translated",
             "value" : "आपका डिवाइस Apple इंटेलिजेंस को सपोर्ट करता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваш пристрій підтримує Apple Intelligence"
+          }
         }
       }
     },
@@ -10233,6 +11745,12 @@
             "state" : "translated",
             "value" : "आपका डिवाइस फाउंडेशन मॉडल का समर्थन करता है"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваш пристрій підтримує моделі Foundation"
+          }
         }
       }
     },
@@ -10272,6 +11790,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Z अक्ष"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вісь Z"
           }
         }
       }
