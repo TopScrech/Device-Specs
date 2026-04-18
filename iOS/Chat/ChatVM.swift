@@ -1,5 +1,7 @@
+#if os(iOS)
 import Foundation
 import OSLog
+import Observation
 
 #if canImport(FoundationModels)
 import FoundationModels
@@ -9,154 +11,103 @@ import FoundationModels
 @available(iOS 26, *)
 final class ChatVM {
     var prompt = ""
-    var streamedText = ""
+    var messages: [ChatMessage] = []
+    var isResponding = false
     var transcriptTokens = 0.0
     var contextWindow = 0.0
-    var answer: LanguageModelSession.Response<String>?
     
-    var report: LanguageModelSession.Response<StreamResponse>?
-    var partialReport: StreamResponse.PartiallyGenerated?
-    
-    private let logger = Logger()
+    @ObservationIgnored private let logger = Logger()
+    @ObservationIgnored private let model = SystemLanguageModel.default
+    @ObservationIgnored private let instructions = Instructions("""
+        You are a helpful assistant.
+        Provide concise answers.
+        Answer only in the same language as the prompt.
+        When asked for all device information, provide the output of all available GET tools.
+        """)
+    @ObservationIgnored private let tools: [any Tool]
+    @ObservationIgnored private let session: LanguageModelSession
     
     /// Range: 0.0...1.0
     var tokenUsage: Double {
-        transcriptTokens / contextWindow
+        guard contextWindow > 0 else { return 0 }
+        
+        return transcriptTokens / contextWindow
     }
     
-    var renderedText: AttributedString {
-        do {
-            return try AttributedString(
-                markdown: streamedText,
-                options: AttributedString.MarkdownParsingOptions(
-                    interpretedSyntax: .inlineOnlyPreservingWhitespace,
-                    failurePolicy: .returnPartiallyParsedIfPossible
-                )
-            )
-        } catch {
-            return AttributedString(streamedText)
-        }
+    init() {
+        tools = [
+            GetDeviceInfo(),
+            GetSystemInfo(),
+            GetDisplayInfo(),
+            GetCPUInfo(),
+            GetStorageInfo(),
+            GetMemoryInfo(),
+            GetCameraInfo()
+        ]
+        
+        session = LanguageModelSession(
+            model: model,
+            tools: tools,
+            instructions: instructions
+        )
     }
-    
-    private let tools: [any Tool] = [
-        GetDeviceInfo(),
-        GetSystemInfo(),
-        GetDisplayInfo(),
-        GetCPUInfo(),
-        GetStorageInfo(),
-        GetMemoryInfo(),
-        GetCameraInfo()
-    ]
     
     func printContextSize() {
-        let contextSize = SystemLanguageModel.default.contextSize
+        let contextSize = model.contextSize
         logger.info("Context size: \(contextSize)")
         
         contextWindow = Double(contextSize)
     }
     
-    //    func processPromptAsReport() async {
-    //        let model = SystemLanguageModel.default
-    //
-    //        switch model.availability {
-    //        case .available:
-    //            let session = LanguageModelSession(model: model, tools: tools) {
-    //                """
-    //                You are a helpful assistant.
-    //                Provide concise answers.
-    //                Answer only in the same language as the prompt.
-    //                """
-    //            }
-    //
-    //            do {
-    //                streamedText = ""
-    //                answer = nil
-    //                partialReport = nil
-    //                report = nil
-    //
-    //                let stream = session.streamResponse(
-    //                    generating: StreamResponse.self,
-    //                    includeSchemaInPrompt: true,
-    //                    options: GenerationOptions()
-    //                ) {
-    //                    prompt
-    //                }
-    //
-    //                for try await snapshot in stream {
-    //                    partialReport = snapshot.content
-    //                }
-    //
-    //                report = try await stream.collect()
-    //            } catch {
-    //                logger.error("\(error.localizedDescription)")
-    //            }
-    //
-    //        case .unavailable(let reason):
-    //            logger.error("\(String(describing: reason))")
-    //        }
-    //    }
-    
-    func processPromptAsText() async {
-        let model = SystemLanguageModel.default
+    func sendPrompt() async {
+        let userPrompt = prompt.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !userPrompt.isEmpty else { return }
+        guard !isResponding else { return }
         
         switch model.availability {
         case .available:
-            let instructions = Instructions("""
-                You are a helpful assistant.
-                Provide concise answers.
-                Answer only in the same language as the prompt.
-                When asked for all device information, provide the output of all available GET tools.
-                """)
-            
-            let session = LanguageModelSession(model: model, tools: tools, instructions: instructions)
-            
-            if #available(iOS 26.4, *) {
-                do {
-                    let promptTokenUsage = try await model.tokenCount(for: prompt)
-                    logger.info("Prompt tokens: \(promptTokenUsage)")
-                    
-                    let instructionsTokenUsage = try await model.tokenCount(for: instructions)
-                    logger.info("Instruction tokens: \(instructionsTokenUsage)")
-                    
-                    let toolsTokenUsage = try await model.tokenCount(for: tools)
-                    logger.info("Tools tokens: \(toolsTokenUsage)")
-                    
-                    let transcriptTokenUsage = try await model.tokenCount(for: session.transcript)
-                    print("Transcript tokens: \(transcriptTokenUsage)")
-                    
-                    transcriptTokens = Double(transcriptTokenUsage)
-                } catch {
-                    logger.error("\(error)")
-                }
-            }
+            isResponding = true
+            messages.append(ChatMessage(role: .user, text: userPrompt))
+            messages.append(ChatMessage(role: .assistant, text: ""))
+            prompt = ""
             
             do {
-                partialReport = nil
-                report = nil
-                
-                let stream = session.streamResponse(to: prompt)
-                
-                streamedText = ""
+                let stream = session.streamResponse(to: userPrompt)
                 
                 for try await snapshot in stream {
-                    streamedText = snapshot.content
+                    if let messageIndex = messages.indices.last {
+                        messages[messageIndex].text = snapshot.content
+                    }
                 }
                 
-                answer = try await stream.collect()
-                prompt = ""
-                
-                if #available(iOS 26.4, *) {
-                    let transcriptTokenUsage = try await model.tokenCount(for: session.transcript)
-                    print("Transcript tokens: \(transcriptTokenUsage)")
-                    
-                    transcriptTokens = Double(transcriptTokenUsage)
-                }
+                _ = try await stream.collect()
+                await updateTranscriptTokenUsage()
+                isResponding = false
             } catch {
+                if let messageIndex = messages.indices.last {
+                    messages[messageIndex].text = error.localizedDescription
+                }
+                
                 logger.error("\(error.localizedDescription)")
+                isResponding = false
             }
             
         case .unavailable(let reason):
+            messages.append(ChatMessage(role: .assistant, text: "Model unavailable: \(String(describing: reason))"))
             logger.error("\(String(describing: reason))")
         }
     }
+    
+    private func updateTranscriptTokenUsage() async {
+        guard #available(iOS 26.4, *) else { return }
+        
+        do {
+            let transcriptTokenUsage = try await model.tokenCount(for: session.transcript)
+            logger.info("Transcript tokens: \(transcriptTokenUsage)")
+            transcriptTokens = Double(transcriptTokenUsage)
+        } catch {
+            logger.error("\(error.localizedDescription)")
+        }
+    }
 }
+#endif

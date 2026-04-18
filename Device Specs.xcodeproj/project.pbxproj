@@ -215,6 +215,10 @@
 		F383A3352ECF2DF700350A0F /* Exceptions for "iOS" folder in "watchOS" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Chat/ChatComposerView.swift,
+				Chat/ChatMessage.swift,
+				Chat/ChatMessageRole.swift,
+				Chat/ChatMessageRowView.swift,
 				Chat/ChatView.swift,
 				Chat/ChatVM.swift,
 				"Chat/Generable Models/CameraInfo.swift",
@@ -284,6 +288,10 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				AppIcon.icon,
+				Chat/ChatComposerView.swift,
+				Chat/ChatMessage.swift,
+				Chat/ChatMessageRole.swift,
+				Chat/ChatMessageRowView.swift,
 				Chat/ChatView.swift,
 				Chat/ChatVM.swift,
 				"Chat/Generable Models/CameraInfo.swift",
@@ -358,6 +366,10 @@
 			membershipExceptions = (
 				AppIcon.icon,
 				Assets.xcassets,
+				Chat/ChatComposerView.swift,
+				Chat/ChatMessage.swift,
+				Chat/ChatMessageRole.swift,
+				Chat/ChatMessageRowView.swift,
 				Chat/ChatView.swift,
 				Chat/ChatVM.swift,
 				"Chat/Generable Models/CameraInfo.swift",
@@ -466,6 +478,10 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				AppIcon.icon,
+				Chat/ChatComposerView.swift,
+				Chat/ChatMessage.swift,
+				Chat/ChatMessageRole.swift,
+				Chat/ChatMessageRowView.swift,
 				Chat/ChatView.swift,
 				Chat/ChatVM.swift,
 				"Chat/Generable Models/CameraInfo.swift",

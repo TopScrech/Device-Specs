@@ -3,26 +3,30 @@ import ScrechKit
 @available(iOS 26, *)
 struct ChatView: View {
     @State private var vm = ChatVM()
-    @EnvironmentObject private var store: ValueStore
-    
-    @FocusState private var isFocused
     
     var body: some View {
         ScrollView {
-            // Add a warning
-            // Works best in the following languages:
-            // English, Chinese (Simplified/Traditional), Danish, Dutch, French, German, Italian, Japanese, Korean, Norwegian, Portuguese, Spanish, Swedish, Turkish, and Vietnamese
-            
-            Text(vm.renderedText)
-                .frame(maxWidth: .infinity, alignment: .leading)
+            LazyVStack {
+                if vm.messages.isEmpty {
+                    ContentUnavailableView(
+                        "Ask about this device",
+                        systemImage: "apple.intelligence",
+                        description: Text("The assistant can answer follow-up questions and use the built-in device tools")
+                    )
+                } else {
+                    ForEach(vm.messages) {
+                        ChatMessageRowView($0)
+                    }
+                }
+            }
+            .scenePadding()
+            .padding(.bottom, 40)
         }
         .navigationTitle("Assistant")
         .toolbarTitleDisplayMode(.inline)
-        .scrollIndicators(.never)
+        .scrollIndicators(.hidden)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .scenePadding()
         .task {
-            isFocused = true
             vm.printContextSize()
         }
         .toolbar {
@@ -39,28 +43,8 @@ struct ChatView: View {
             }
         }
         .overlay(alignment: .bottom) {
-            HStack {
-                TextField("Type here...", text: $vm.prompt)
-                    .frame(height: 32)
-                    .padding(.horizontal, 10)
-                    .glassEffect()
-                    .onSubmit(sendPrompt)
-                    .submitLabel(.send)
-                    .focused($isFocused)
-                
-                SFButton("paperplane", action: sendPrompt)
-                    .foregroundStyle(.foreground)
-                    .frame(32)
-                    .glassEffect()
-                    .fontSize(16)
-            }
-            .padding()
-        }
-    }
-    
-    private func sendPrompt() {
-        Task {
-            await vm.processPromptAsText()
+            ChatComposerView()
+                .environment(vm)
         }
     }
 }
