@@ -21,7 +21,7 @@ final class DisplayVM {
     
     static var aspectRatio: String {
         let screenRatio = Device.current.screenRatio
-        return screenRatio.height.description + " : " + screenRatio.width.description
+        return "\(screenRatio.height) : \(screenRatio.width)"
     }
     
     func fetchScreenResolution() {
