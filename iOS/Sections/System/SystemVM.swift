@@ -16,9 +16,7 @@ final class SystemVM {
 #endif
     }
     
-    var timeZone: String {
-        TimeZone.current.abbreviation() ?? ""
-    }
+    static let timeZone = TimeZone.current.abbreviation()
     
     var lang: String {
         Locale.current.identifier

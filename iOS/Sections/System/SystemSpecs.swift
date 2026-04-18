@@ -28,7 +28,7 @@ struct SystemSpecs: View {
                 NavigationLink {
                     Timezone()
                 } label: {
-                    LabeledContent("Time zone", value: vm.timeZone)
+                    LabeledContent("Time zone", value: SystemVM.timeZone ?? "-")
                 }
                 
                 NavigationLink {

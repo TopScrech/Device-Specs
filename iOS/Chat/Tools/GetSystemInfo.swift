@@ -11,7 +11,8 @@ struct GetSystemInfo: Tool {
     func call(arguments: Arguments) async throws -> SystemInfo {
         await SystemInfo(
             os: SystemVM.operatingSystem,
-            buildNumber: SystemVM.buildNumber
+            buildNumber: SystemVM.buildNumber,
+            timeZone: SystemVM.timeZone
         )
     }
 }

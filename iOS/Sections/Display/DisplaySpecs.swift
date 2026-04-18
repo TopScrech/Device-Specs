@@ -15,10 +15,7 @@ struct DisplaySpecs: View {
             LabeledContent("Screen resolution", value: DisplayVM.resolution)
             LabeledContent("Screen size", value: DisplayVM.diagonalSize)
             LabeledContent("Aspect ratio", value: DisplayVM.aspectRatio)
-            
-            if let pixelDencity = DisplayVM.pixelDencity {
-                LabeledContent("Pixel density", value: pixelDencity)
-            }
+            LabeledContent("Pixel density", value: DisplayVM.pixelDencity ?? "-")
 #if !os(watchOS)
             LabeledContent("Refresh rate", value: DisplayVM.refreshRate)
 #endif

@@ -8,4 +8,7 @@ struct SystemInfo {
     
     @Guide(description: "Version build number of the operating system")
     let buildNumber: String
+    
+    @Guide(description: "Time zone of the operating system")
+    let timeZone: String?
 }
