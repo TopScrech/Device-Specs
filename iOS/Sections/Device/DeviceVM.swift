@@ -27,6 +27,7 @@ final class DeviceVM {
     static let bluetoothVersion = Device.current.bluetoothVersion
     static let waterResistance = Device.current.waterResistance
     static let waterResistanceDescription = Device.current.waterResistanceDescription
+    static let supportsWirelessCharging = Device.current.supportsWirelessCharging ? "Yes" : "No"
 #if os(iOS)
     static let supports5G = Device.current.has5gSupport ? "Yes" : "No"
     static let dockConnector = Device.current.hasUSBCConnectivity ? "USB-C" : "Lightning"

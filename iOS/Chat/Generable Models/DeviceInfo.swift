@@ -26,4 +26,7 @@ struct DeviceInfo {
     
     @Guide(description: "5G support on this device")
     let support5G: String
+    
+    @Guide(description: "Wireless charging support on this device")
+    let supportWirelessCharging: String
 }

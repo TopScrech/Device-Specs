@@ -17,7 +17,8 @@ struct GetDeviceInfo: Tool {
             isMagSafeAvailable: DeviceVM.isMagsafeSupported,
             dockConnector: DeviceVM.dockConnector,
             hasDymanicIsland: DeviceVM.hasDynamicIsland,
-            support5G: DeviceVM.supports5G
+            support5G: DeviceVM.supports5G,
+            supportWirelessCharging: DeviceVM.supportsWirelessCharging
         )
     }
 }

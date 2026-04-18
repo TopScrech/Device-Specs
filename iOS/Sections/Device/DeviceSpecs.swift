@@ -47,7 +47,7 @@ struct DeviceSpecs: View {
 #endif
                 
 #if os(iOS)
-                LabeledContent("Wireless Charging", value: Device.current.supportsWirelessCharging ? "Yes" : "No")
+                LabeledContent("Wireless Charging", value: DeviceVM.supportsWirelessCharging)
                 LabeledContent("MagSafe", value: DeviceVM.isMagsafeSupported)
                 LabeledContent("5G", value: DeviceVM.supports5G)
                 LabeledContent("Dynamic Island", value: DeviceVM.hasDynamicIsland)
