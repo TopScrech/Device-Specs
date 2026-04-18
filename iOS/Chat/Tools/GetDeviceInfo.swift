@@ -14,7 +14,8 @@ struct GetDeviceInfo: Tool {
             bluetoothVersion: DeviceVM.bluetoothVersion,
             thermalState: DeviceVM.thermalState,
             is_UWB_available: DeviceVM.isUWBAvailable,
-            isMagSafeAvailable: DeviceVM.isMagsafeSupported
+            isMagSafeAvailable: DeviceVM.isMagsafeSupported,
+            dockConnector: DeviceVM.dockConnector
         )
     }
 }

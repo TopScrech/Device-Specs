@@ -17,4 +17,7 @@ struct DeviceInfo {
     
     @Guide(description: "MagSafe capability on this device")
     let isMagSafeAvailable: String
+    
+    @Guide(description: "Charging port on this device")
+    let dockConnector: String
 }

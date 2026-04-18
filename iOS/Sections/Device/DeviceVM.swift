@@ -27,6 +27,7 @@ final class DeviceVM {
     static let bluetoothVersion = Device.current.bluetoothVersion
     static let waterResistance = Device.current.waterResistance
     static let waterResistanceDescription = Device.current.waterResistanceDescription
+    static let dockConnector = Device.current.hasUSBCConnectivity ? "USB-C" : "Lightning"
     
     var internalName: String {
         getInternalDeviceName() ?? "-"

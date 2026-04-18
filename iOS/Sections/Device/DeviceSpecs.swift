@@ -51,7 +51,7 @@ struct DeviceSpecs: View {
                 LabeledContent("MagSafe", value: DeviceVM.isMagsafeSupported)
                 LabeledContent("5G", value: Device.current.has5gSupport ? "Yes" : "No")
                 LabeledContent("Dynamic Island", value: Device.current.hasDynamicIsland ? "Yes" : "No")
-                LabeledContent("Dock connector", value: Device.current.hasUSBCConnectivity ? "USB-C" : "Lightning")
+                LabeledContent("Dock connector", value: )
                 LabeledContent("Force Touch", value: vm.isForceTouchAvailable)
 #endif
                 LabeledContent("Ultra Wideband", value: DeviceVM.isUWBAvailable)
