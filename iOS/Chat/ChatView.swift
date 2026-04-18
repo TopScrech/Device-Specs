@@ -13,6 +13,7 @@ struct ChatView: View {
                         systemImage: "apple.intelligence",
                         description: Text("The assistant can answer follow-up questions and use the built-in device tools")
                     )
+                    .symbolRenderingMode(.multicolor)
                 } else {
                     ForEach(vm.messages) {
                         ChatMessageRowView($0)
@@ -40,6 +41,11 @@ struct ChatView: View {
                         .tint(.green)
                         .animation(.default, value: vm.tokenUsage)
                 }
+            }
+            
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("New Chat", systemImage: "square.and.pencil", action: vm.startNewChat)
+                    .disabled(vm.isResponding || vm.messages.isEmpty)
             }
         }
         .overlay(alignment: .bottom) {

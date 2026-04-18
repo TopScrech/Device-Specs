@@ -25,7 +25,7 @@ final class ChatVM {
         When asked for all device information, provide the output of all available GET tools.
         """)
     @ObservationIgnored private let tools: [any Tool]
-    @ObservationIgnored private let session: LanguageModelSession
+    @ObservationIgnored private var session: LanguageModelSession
     
     /// Range: 0.0...1.0
     var tokenUsage: Double {
@@ -57,6 +57,15 @@ final class ChatVM {
         logger.info("Context size: \(contextSize)")
         
         contextWindow = Double(contextSize)
+    }
+    
+    func startNewChat() {
+        guard !isResponding else { return }
+        
+        prompt = ""
+        messages = []
+        transcriptTokens = 0
+        session = makeSession()
     }
     
     func sendPrompt() async {
@@ -108,6 +117,14 @@ final class ChatVM {
         } catch {
             logger.error("\(error.localizedDescription)")
         }
+    }
+    
+    private func makeSession() -> LanguageModelSession {
+        LanguageModelSession(
+            model: model,
+            tools: tools,
+            instructions: instructions
+        )
     }
 }
 #endif
