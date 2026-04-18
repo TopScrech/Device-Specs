@@ -23,4 +23,7 @@ struct DeviceInfo {
     
     @Guide(description: "Dynamic Island support on this device")
     let hasDymanicIsland: String
+    
+    @Guide(description: "5G support on this device")
+    let support5G: String
 }

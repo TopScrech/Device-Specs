@@ -16,7 +16,8 @@ struct GetDeviceInfo: Tool {
             is_UWB_available: DeviceVM.isUWBAvailable,
             isMagSafeAvailable: DeviceVM.isMagsafeSupported,
             dockConnector: DeviceVM.dockConnector,
-            hasDymanicIsland: DeviceVM.hasDynamicIsland
+            hasDymanicIsland: DeviceVM.hasDynamicIsland,
+            support5G: DeviceVM.supports5G
         )
     }
 }
