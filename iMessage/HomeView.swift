@@ -16,12 +16,12 @@ struct HomeView: View {
     
     var body: some View {
         List {
-            SpecsLink("Device", icon: "info.circle", spec: device.deviceIdentifier) {
+            SpecsLink("Device", icon: "info.circle", spec: DeviceVM.deviceIdentifier) {
                 DeviceSpecs()
                     .environment(device)
             }
             
-            SpecsLink("System", icon: "apple.terminal", spec: system.operatingSystem) {
+            SpecsLink("System", icon: "apple.terminal", spec: SystemVM.operatingSystem) {
                 SystemSpecs()
                     .environment(system)
             }
@@ -52,7 +52,7 @@ struct HomeView: View {
                     .environment(connectivity)
             }
             
-            SpecsLink("Camera", icon: "camera", spec: camera.hasLidar) {
+            SpecsLink("Camera", icon: "camera", spec: camera.hasLidarText) {
                 CameraSpecs()
             }
             

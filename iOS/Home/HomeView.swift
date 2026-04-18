@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct HomeView: View {
     @Environment(NavState.self) private var nav
@@ -13,19 +13,21 @@ struct HomeView: View {
     @State private var connectivity = ConnectivityVM()
     @State private var camera = CameraVM()
     
+    @State private var sheetChat = false
+    
     var body: some View {
         List {
             WarningSection()
                 .environment(battery)
             
-            SpecsLink("Device", icon: "info.circle", spec: device.deviceIdentifier) {
+            SpecsLink("Device", icon: "info.circle", spec: DeviceVM.deviceIdentifier) {
                 DeviceSpecs()
                     .environment(device)
             }
             .lineLimit(1)
             .minimumScaleFactor(0.5)
             
-            SpecsLink("System", icon: "apple.terminal", spec: system.operatingSystem) {
+            SpecsLink("System", icon: "apple.terminal", spec: SystemVM.operatingSystem) {
                 SystemSpecs()
                     .environment(system)
             }
@@ -35,7 +37,7 @@ struct HomeView: View {
                     .environment(display)
             }
             
-            SpecsLink("Processor", icon: "cpu", spec: processor.cpuName) {
+            SpecsLink("Processor", icon: "cpu", spec: ProcessorVM.cpuName) {
                 ProcessorSpecs()
                     .environment(processor)
             }
@@ -56,7 +58,7 @@ struct HomeView: View {
                     .environment(connectivity)
             }
             
-            SpecsLink("Camera", icon: "camera", spec: camera.hasLidar) {
+            SpecsLink("Camera", icon: "camera", spec: camera.hasLidarText) {
                 CameraSpecs()
                     .environment(camera)
             }
@@ -79,15 +81,33 @@ struct HomeView: View {
                 }
             }
         }
-        .navigationTitle(device.deviceIdentifier)
+        .navigationTitle(DeviceVM.deviceIdentifier)
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
             battery.fetchBatteryInfo()
         }
-        .toolbar {
-            NavigationLink(destination: SettingsView()) {
-                Image(systemName: "gear")
+        .sheet($sheetChat) {
+            if #available(iOS 26, *) {
+                NavigationStack {
+                    ChatView()
+                }
             }
-            .keyboardShortcut("s")
+        }
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                NavigationLink(destination: SettingsView()) {
+                    Image(systemName: "gear")
+                }
+                .keyboardShortcut("s")
+            }
+            
+            if #available(iOS 26, *) {
+                ToolbarItem(placement: .topBarTrailing) {
+                    SFButton("apple.intelligence") {
+                        sheetChat = true
+                    }
+                    .symbolRenderingMode(.multicolor)
+                }
+            }
         }
     }
 }

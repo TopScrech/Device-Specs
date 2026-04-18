@@ -23,8 +23,8 @@ struct MinimizedHomeView: View {
                 }
             }
             
-            LabeledContent("Device", icon: "info.circle", value: device.deviceIdentifier)
-            LabeledContent("System", icon: "apple.terminal", value: system.operatingSystem)
+            LabeledContent("Device", icon: "info.circle", value: DeviceVM.deviceIdentifier)
+            LabeledContent("System", icon: "apple.terminal", value: SystemVM.operatingSystem)
             LabeledContent("Display", icon: "iphone", value: display.diagonalSize)
             LabeledContent("Processor", icon: "cpu", value: cpu.cpuNameAndTechnology)
             LabeledContent("Memory", icon: "memorychip", value: ram.totalRamAndDisk)
@@ -33,7 +33,7 @@ struct MinimizedHomeView: View {
                 .symbolRenderingMode(.multicolor)
             
             LabeledContent("Network", icon: "network", value: connectivity.type)
-            LabeledContent("Camera", icon: "camera", value: camera.hasLidar)
+            LabeledContent("Camera", icon: "camera", value: camera.hasLidarText)
             Label("Sensors", systemImage: "barometer")
             Label("Accessibility", systemImage: "accessibility")
             

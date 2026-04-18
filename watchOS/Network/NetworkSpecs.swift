@@ -6,12 +6,9 @@ struct NetworkSpecs: View {
     
     var body: some View {
         List {
-            LabeledContent("Public IP address", value: network.publicIp)
-            
+            LabeledContent("Public IP address", value: network.publicIP)
             LabeledContent("Network interface", value: network.networkInterface)
-            
             LabeledContent("Router", value: network.destinationIpAddress)
-            
             LabeledContent("Subnet mask", value: network.subnetMask)
             
             Section {

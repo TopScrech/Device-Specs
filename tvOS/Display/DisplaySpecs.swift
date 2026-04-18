@@ -13,8 +13,7 @@ struct DisplaySpecs: View {
     var body: some View {
         List {
             LabeledContent("Screen resolution", value: vm.resolution)
-            
-            LabeledContent("Refresh rate", value: vm.refreshRate)
+            LabeledContent("Refresh rate", value: DisplayVM.refreshRate)
             
             Section {
                 LabeledContent("Brightness", value: "\(Int(brightness))%")

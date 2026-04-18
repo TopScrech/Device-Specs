@@ -78,6 +78,9 @@ extension Device {
                 .iPhone16, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax,
                 .iPhone17, .iPhoneAir, .iPhone17Pro, .iPhone17ProMax, .iPhone17e: "Up to 30 minutes and 6m deep"
             
+#elseif os(tvOS)
+        case .appleTVHD, .appleTV4K, .appleTV4K2, .appleTV4K3: "None"
+            
 #elseif os(watchOS)
         case .appleWatchSeries0_38mm, .appleWatchSeries0_42mm,
                 .appleWatchSeries1_38mm, .appleWatchSeries1_42mm: "Splash and water resistant"
