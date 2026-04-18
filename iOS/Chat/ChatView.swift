@@ -50,7 +50,6 @@ struct ChatView: View {
                         Gauge(value: vm.tokenUsage) {}
                             .gaugeStyle(.accessoryCircularCapacity)
                             .scaleEffect(0.5)
-                            .buttonBorderShape(.circle)
                             .frame(30)
                             .tint(.green)
                             .animation(.default, value: vm.tokenUsage)
