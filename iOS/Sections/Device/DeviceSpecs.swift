@@ -1,7 +1,6 @@
 import SwiftUI
-import DeviceKit
 
-fileprivate let identifier: String = {
+let identifier: String = {
     var systemInfo = utsname()
     uname(&systemInfo)
     
