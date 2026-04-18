@@ -16,12 +16,11 @@ struct ChatMessageRowView: View {
 
                 Spacer()
             } else {
-                Spacer()
-                
                 Text(message.text)
-                    .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
                     .background(.tint.opacity(0.15), in: .rect(cornerRadius: 20))
+                    .padding(.vertical, 8)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
             }
         }
     }
