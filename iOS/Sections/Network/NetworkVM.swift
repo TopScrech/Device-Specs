@@ -5,7 +5,7 @@ import OSLog
 @Observable
 final class NetworkVM {
     private let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "DeviceSpecs", category: "NetworkVM")
-    private(set) var publicIp = ""
+    private(set) var publicIP = ""
     private(set) var networkInterface = ""
     private(set) var destinationIpAddress = ""
     private(set) var subnetMask = ""
@@ -24,7 +24,7 @@ final class NetworkVM {
             
             if let ipString = String(data: data, encoding: .utf8) {
                 let publicIp = ipString.trimmingCharacters(in: .whitespacesAndNewlines)
-                self.publicIp = publicIp
+                self.publicIP = publicIp
             }
         } catch {
             logger.error("Failed to fetch public IP: \(error)")

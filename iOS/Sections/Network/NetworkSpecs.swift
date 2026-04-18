@@ -6,7 +6,7 @@ struct NetworkSpecs: View {
     
     var body: some View {
         List {
-            LabeledContent("Public IP address", value: network.publicIp)
+            LabeledContent("Public IP address", value: network.publicIP)
             
             LabeledContent("Network interface", value: network.networkInterface)
             
