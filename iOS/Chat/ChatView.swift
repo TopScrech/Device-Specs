@@ -4,6 +4,8 @@ import ScrechKit
 struct ChatView: View {
     @State private var vm = ChatVM()
     
+    @State private var alertTokenWindowUsage = false
+    
     var body: some View {
         ScrollView {
             LazyVStack {
@@ -30,16 +32,29 @@ struct ChatView: View {
         .task {
             vm.printContextSize()
         }
+        .alert("Token Window Usage", isPresented: $alertTokenWindowUsage) {
+            
+        } message: {
+            Text("This indicator shows the amount of used tokens")
+        }
+        .overlay(alignment: .bottom) {
+            ChatComposerView()
+                .environment(vm)
+        }
         .toolbar {
             if #available(iOS 26.4, *) {
                 ToolbarItem(placement: .topBarLeading) {
-                    Gauge(value: vm.tokenUsage) {}
-                        .gaugeStyle(.accessoryCircularCapacity)
-                        .scaleEffect(0.5)
-                        .buttonBorderShape(.circle)
-                        .frame(30)
-                        .tint(.green)
-                        .animation(.default, value: vm.tokenUsage)
+                    Button {
+                        alertTokenWindowUsage = true
+                    } label: {
+                        Gauge(value: vm.tokenUsage) {}
+                            .gaugeStyle(.accessoryCircularCapacity)
+                            .scaleEffect(0.5)
+                            .buttonBorderShape(.circle)
+                            .frame(30)
+                            .tint(.green)
+                            .animation(.default, value: vm.tokenUsage)
+                    }
                 }
             }
             
@@ -47,10 +62,6 @@ struct ChatView: View {
                 Button("New Chat", systemImage: "square.and.pencil", action: vm.startNewChat)
                     .disabled(vm.isResponding || vm.messages.isEmpty)
             }
-        }
-        .overlay(alignment: .bottom) {
-            ChatComposerView()
-                .environment(vm)
         }
     }
 }
