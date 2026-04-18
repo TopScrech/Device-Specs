@@ -16,12 +16,12 @@ struct HomeView: View {
                     .environment(BatteryVM())
             }
             
-            SpecsLink("Device", icon: "info.circle", spec: device.deviceIdentifier) {
+            SpecsLink("Device", icon: "info.circle", spec: DeviceVM.deviceIdentifier) {
                 DeviceSpecs()
                     .environment(device)
             }
             
-            SpecsLink("System", icon: "apple.terminal", spec: system.operatingSystem) {
+            SpecsLink("System", icon: "apple.terminal", spec: SystemVM.operatingSystem) {
                 SystemSpecs()
                     .environment(system)
             }
