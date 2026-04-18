@@ -32,6 +32,12 @@
             "state" : "translated",
             "value" : "Abréviation"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kısaltma"
+          }
         }
       }
     },
@@ -59,6 +65,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "À propos"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hakkında"
           }
         }
       }
@@ -88,6 +100,12 @@
             "state" : "translated",
             "value" : "Altitude absolue"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mutlak yükseklik"
+          }
         }
       }
     },
@@ -115,6 +133,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Accélération"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hızlanma"
           }
         }
       }
@@ -144,6 +168,12 @@
             "state" : "translated",
             "value" : "Accessibilité"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erişilebilirlik"
+          }
         }
       }
     },
@@ -171,6 +201,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Temps actif"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktif süre"
           }
         }
       }
@@ -200,6 +236,12 @@
             "state" : "translated",
             "value" : "Activité"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etkinlik"
+          }
         }
       }
     },
@@ -227,6 +269,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Autre délimiteur de début de citation"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alternatif tırnak açma ayracı"
           }
         }
       }
@@ -256,6 +304,12 @@
             "state" : "translated",
             "value" : "Autre délimiteur de fin de citation"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alternatif tırnak kapama ayracı"
+          }
         }
       }
     },
@@ -284,6 +338,12 @@
             "state" : "translated",
             "value" : "Altimètre"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Altimetre"
+          }
         }
       }
     },
@@ -311,6 +371,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ouverture"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Açıklık"
           }
         }
       }
@@ -367,6 +433,12 @@
             "state" : "translated",
             "value" : "Architecture"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mimarlık"
+          }
         }
       }
     },
@@ -395,6 +467,12 @@
             "state" : "translated",
             "value" : "Arguments"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argümanlar"
+          }
         }
       }
     },
@@ -422,6 +500,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rapport hauteur/largeur"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En boy oranı"
           }
         }
       }
@@ -452,6 +536,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Assistant"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Asistan"
           }
         }
       }
@@ -484,6 +574,12 @@
             "state" : "translated",
             "value" : "Rejoint automatiquement"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otomatik olarak katıldı"
+          }
         }
       }
     },
@@ -511,6 +607,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Courant de mise à jour automatique"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akım otomatik olarak güncelleniyor"
           }
         }
       }
@@ -540,6 +642,12 @@
             "state" : "translated",
             "value" : "Disponible pour une utilisation importante"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Önemli kullanım için mevcut"
+          }
         }
       }
     },
@@ -567,6 +675,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Disponible pour une utilisation opportuniste"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fırsatçı kullanıma açık"
           }
         }
       }
@@ -596,6 +710,12 @@
             "state" : "translated",
             "value" : "Systèmes de numérotation disponibles"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mevcut numaralandırma sistemleri"
+          }
         }
       }
     },
@@ -623,6 +743,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dos"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arka"
           }
         }
       }
@@ -652,6 +778,12 @@
             "state" : "translated",
             "value" : "Batterie"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pil"
+          }
         }
       }
     },
@@ -679,6 +811,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Informations sur la batterie"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pil bilgisi"
           }
         }
       }
@@ -708,6 +846,12 @@
             "state" : "translated",
             "value" : "Niveau de batterie"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pil seviyesi"
+          }
         }
       }
     },
@@ -735,6 +879,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "État de la batterie"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pil durumu"
           }
         }
       }
@@ -764,6 +914,12 @@
             "state" : "translated",
             "value" : "En dessous du niveau d'avertissement"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyarı seviyesinin altında"
+          }
         }
       }
     },
@@ -791,6 +947,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Authentification biométrique"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biyometrik kimlik doğrulama"
           }
         }
       }
@@ -820,6 +982,12 @@
             "state" : "translated",
             "value" : "Noir"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siyah"
+          }
         }
       }
     },
@@ -847,6 +1015,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bleu"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mavi"
           }
         }
       }
@@ -879,6 +1053,12 @@
             "state" : "translated",
             "value" : "Audacieux"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalın"
+          }
         }
       }
     },
@@ -907,6 +1087,12 @@
             "state" : "translated",
             "value" : "Texte en gras"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalın metin"
+          }
         }
       }
     },
@@ -934,6 +1120,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Luminosité"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parlaklık"
           }
         }
       }
@@ -966,6 +1158,12 @@
             "state" : "translated",
             "value" : "Construire"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Derleme"
+          }
         }
       }
     },
@@ -993,6 +1191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Formes de boutons"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Düğme şekilleri"
           }
         }
       }
@@ -1022,6 +1226,12 @@
             "state" : "translated",
             "value" : "Calendrier"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Takvim"
+          }
         }
       }
     },
@@ -1049,6 +1259,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Caméra"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kamera"
           }
         }
       }
@@ -1078,6 +1294,12 @@
             "state" : "translated",
             "value" : "Annuler"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İptal"
+          }
         }
       }
     },
@@ -1105,6 +1327,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Capacités"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yetenekler"
           }
         }
       }
@@ -1134,6 +1362,12 @@
             "state" : "translated",
             "value" : "Capacité"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapasite"
+          }
         }
       }
     },
@@ -1161,6 +1395,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Révision des cellules"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hücre revizyonu"
           }
         }
       }
@@ -1190,6 +1430,12 @@
             "state" : "translated",
             "value" : "Informations sur les frais"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ücret bilgileri"
+          }
         }
       }
     },
@@ -1217,6 +1463,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chargement"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şarj etme"
           }
         }
       }
@@ -1246,6 +1498,12 @@
             "state" : "translated",
             "value" : "Sous-titrage codé"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı altyazı"
+          }
         }
       }
     },
@@ -1273,6 +1531,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Collation"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Harmanlama"
           }
         }
       }
@@ -1302,6 +1566,12 @@
             "state" : "translated",
             "value" : "Identifiant de l'assembleur"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Harmanlayıcı tanımlayıcı"
+          }
         }
       }
     },
@@ -1329,6 +1599,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Espace colorimétrique"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Renk alanı"
           }
         }
       }
@@ -1367,6 +1643,12 @@
             "state" : "translated",
             "value" : "Condition"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durum"
+          }
         }
       }
     },
@@ -1394,6 +1676,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Confiance"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kendinden emin"
           }
         }
       }
@@ -1423,6 +1711,12 @@
             "state" : "translated",
             "value" : "Région contenante"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapsayan bölge"
+          }
         }
       }
     },
@@ -1450,6 +1744,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Continent"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kıta"
           }
         }
       }
@@ -1479,6 +1779,12 @@
             "state" : "translated",
             "value" : "Cœur"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çekirdek"
+          }
         }
       }
     },
@@ -1506,6 +1812,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nombre de cœurs"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çekirdek sayısı"
           }
         }
       }
@@ -1535,6 +1847,12 @@
             "state" : "translated",
             "value" : "Processeur"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CPU"
+          }
         }
       }
     },
@@ -1562,6 +1880,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Charge du processeur"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CPU yükü"
           }
         }
       }
@@ -1591,6 +1915,12 @@
             "state" : "translated",
             "value" : "Créer un rapport système complet"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tam sistem raporu oluştur"
+          }
         }
       }
     },
@@ -1618,6 +1948,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "État thermique critique"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kritik termal durum"
           }
         }
       }
@@ -1647,6 +1983,12 @@
             "state" : "translated",
             "value" : "Orientation de la couronne"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taç yönelimi"
+          }
         }
       }
     },
@@ -1674,6 +2016,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Code devise"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para birimi kodu"
           }
         }
       }
@@ -1703,6 +2051,12 @@
             "state" : "translated",
             "value" : "Symbole monétaire"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para birimi simgesi"
+          }
         }
       }
     },
@@ -1730,6 +2084,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Processus actuel"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geçerli işlem"
           }
         }
       }
@@ -1759,6 +2119,12 @@
             "state" : "translated",
             "value" : "Session en cours"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geçerli oturum"
+          }
         }
       }
     },
@@ -1786,6 +2152,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nombre de cycles"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Döngü sayısı"
           }
         }
       }
@@ -1815,6 +2187,12 @@
             "state" : "translated",
             "value" : "Couleurs système plus sombres"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daha koyu sistem renkleri"
+          }
         }
       }
     },
@@ -1842,6 +2220,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Heure d'été"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yaz saati"
           }
         }
       }
@@ -1873,6 +2257,12 @@
             "state" : "translated",
             "value" : "Déboguer"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hata ayıklama"
+          }
         }
       }
     },
@@ -1900,6 +2290,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Séparateur décimal"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ondalık ayırıcı"
           }
         }
       }
@@ -1929,6 +2325,12 @@
             "state" : "translated",
             "value" : "Description"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Açıklama"
+          }
         }
       }
     },
@@ -1956,6 +2358,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adresse IP de destination"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hedef ip adresi"
           }
         }
       }
@@ -1985,6 +2393,12 @@
             "state" : "translated",
             "value" : "Appareil"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cihaz"
+          }
         }
       }
     },
@@ -2012,6 +2426,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nom de l'appareil"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cihaz adı"
           }
         }
       }
@@ -2044,6 +2464,12 @@
             "state" : "translated",
             "value" : "Rejeter"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapat"
+          }
         }
       }
     },
@@ -2072,6 +2498,12 @@
             "state" : "translated",
             "value" : "Afficher"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekran"
+          }
         }
       }
     },
@@ -2099,6 +2531,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Connecteur de station d'accueil"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bağlantı istasyonu konektörü"
           }
         }
       }
@@ -2131,6 +2569,12 @@
             "state" : "translated",
             "value" : "Variables d'environnement"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ortam değişkenleri"
+          }
         }
       }
     },
@@ -2158,6 +2602,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Erreur"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hata"
           }
         }
       }
@@ -2190,6 +2640,12 @@
             "state" : "translated",
             "value" : "Exposition"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maruziyet"
+          }
         }
       }
     },
@@ -2221,6 +2677,12 @@
             "state" : "translated",
             "value" : "Version du micrologiciel"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Donanım yazılımı sürümü"
+          }
         }
       }
     },
@@ -2249,6 +2711,12 @@
             "state" : "translated",
             "value" : "Premier jour de la semaine"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haftanın ilk günü"
+          }
         }
       }
     },
@@ -2276,6 +2744,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lampe de poche"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El feneri"
           }
         }
       }
@@ -2308,6 +2782,12 @@
             "state" : "translated",
             "value" : "Gratuit"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Özgür"
+          }
         }
       }
     },
@@ -2335,6 +2815,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Devant"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ön"
           }
         }
       }
@@ -2364,6 +2850,12 @@
             "state" : "translated",
             "value" : "Rapport complet du système"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tam sistem raporu"
+          }
         }
       }
     },
@@ -2391,6 +2883,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Complètement chargé"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamamen şarj edildi"
           }
         }
       }
@@ -2422,6 +2920,12 @@
             "state" : "translated",
             "value" : "Entrer en contact"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İletişime geç"
+          }
         }
       }
     },
@@ -2450,6 +2954,12 @@
             "state" : "translated",
             "value" : "Allez dans Paramètres"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayarlar'a gidin"
+          }
         }
       }
     },
@@ -2474,6 +2984,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GPU"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "GPU"
@@ -2506,6 +3022,12 @@
             "state" : "translated",
             "value" : "Familles de GPU"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GPU aileleri"
+          }
         }
       }
     },
@@ -2533,6 +3055,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Niveaux de gris"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gri tonlama"
           }
         }
       }
@@ -2562,6 +3090,12 @@
             "state" : "translated",
             "value" : "Vert"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeşil"
+          }
         }
       }
     },
@@ -2589,6 +3123,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Séparateur de regroupement"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gruplandırma ayırıcı"
           }
         }
       }
@@ -2618,6 +3158,12 @@
             "state" : "translated",
             "value" : "Accès guidé"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rehberli erişim"
+          }
         }
       }
     },
@@ -2645,6 +3191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Retour haptique"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dokunsal geribildirim"
           }
         }
       }
@@ -2674,6 +3226,12 @@
             "state" : "translated",
             "value" : "Retour haptique"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dokunsal geribildirim"
+          }
         }
       }
     },
@@ -2701,6 +3259,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Matériel"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Donanım"
           }
         }
       }
@@ -2730,6 +3294,12 @@
             "state" : "translated",
             "value" : "Informations sur le matériel"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Donanım bilgisi"
+          }
         }
       }
     },
@@ -2757,6 +3327,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Présentation du matériel"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Donanıma genel bakış"
           }
         }
       }
@@ -2786,6 +3362,12 @@
             "state" : "translated",
             "value" : "Révision du matériel"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Donanım revizyonu"
+          }
         }
       }
     },
@@ -2813,6 +3395,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Précision du cap"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yön doğruluğu"
           }
         }
       }
@@ -2842,6 +3430,12 @@
             "state" : "translated",
             "value" : "Informations sur la santé"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sağlık bilgileri"
+          }
         }
       }
     },
@@ -2869,6 +3463,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nom d'hôte"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ana bilgisayar adı"
           }
         }
       }
@@ -2898,6 +3498,12 @@
             "state" : "translated",
             "value" : "Assistant de point d'accès"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hotspot yardımcısı"
+          }
         }
       }
     },
@@ -2925,6 +3531,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cycle horaire"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat döngüsü"
           }
         }
       }
@@ -2954,6 +3566,12 @@
             "state" : "translated",
             "value" : "Identifiant"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tanımlayıcı"
+          }
         }
       }
     },
@@ -2981,6 +3599,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Identifiant du fournisseur"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Satıcı tanımlayıcısı"
           }
         }
       }
@@ -3010,6 +3634,12 @@
             "state" : "translated",
             "value" : "Jeu d'instructions"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Talimat seti"
+          }
         }
       }
     },
@@ -3038,6 +3668,12 @@
             "state" : "translated",
             "value" : "Nom interne"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dahili ad"
+          }
         }
       }
     },
@@ -3065,6 +3701,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inverser les couleurs"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Renkleri ters çevir"
           }
         }
       }
@@ -3105,6 +3747,12 @@
             "state" : "translated",
             "value" : "Région ISO"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ISO bölgesi"
+          }
         }
       }
     },
@@ -3132,6 +3780,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Italique"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İtalik"
           }
         }
       }
@@ -3161,6 +3815,12 @@
             "state" : "translated",
             "value" : "Je viens de rejoindre"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni katıldım"
+          }
         }
       }
     },
@@ -3188,6 +3848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fuseaux horaires connus"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bilinen saat dilimleri"
           }
         }
       }
@@ -3217,6 +3883,12 @@
             "state" : "translated",
             "value" : "Fuseaux horaires connus"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bilinen saat dilimleri"
+          }
         }
       }
     },
@@ -3244,6 +3916,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Latitude"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enlem"
           }
         }
       }
@@ -3273,6 +3951,12 @@
             "state" : "translated",
             "value" : "Orientation de la mise en page"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Düzen yönü"
+          }
         }
       }
     },
@@ -3300,6 +3984,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lieu"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yerel ayar"
           }
         }
       }
@@ -3329,6 +4019,12 @@
             "state" : "translated",
             "value" : "Emplacement"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konum"
+          }
         }
       }
     },
@@ -3356,6 +4052,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Longitude"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Boylam"
           }
         }
       }
@@ -3385,6 +4087,12 @@
             "state" : "translated",
             "value" : "Batterie faible"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Düşük pil"
+          }
         }
       }
     },
@@ -3412,6 +4120,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mode basse consommation"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Düşük güç modu"
           }
         }
       }
@@ -3444,6 +4158,12 @@
             "state" : "translated",
             "value" : "Champ magnétique"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manyetik alan"
+          }
         }
       }
     },
@@ -3472,6 +4192,12 @@
             "state" : "translated",
             "value" : "Cap magnétique"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manyetik yön"
+          }
         }
       }
     },
@@ -3498,6 +4224,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MagSafe"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "MagSafe"
@@ -3530,6 +4262,12 @@
             "state" : "translated",
             "value" : "Fabricant"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Üretici"
+          }
         }
       }
     },
@@ -3557,6 +4295,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Max."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maksimum"
           }
         }
       }
@@ -3586,6 +4330,12 @@
             "state" : "translated",
             "value" : "Charge maximale"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maksimum yük"
+          }
         }
       }
     },
@@ -3613,6 +4363,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Max. vitesse d'horloge"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maks. saat hızı"
           }
         }
       }
@@ -3642,6 +4398,12 @@
             "state" : "translated",
             "value" : "Capacité maximale"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maksimum kapasite"
+          }
         }
       }
     },
@@ -3669,6 +4431,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mémoire"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hafıza"
           }
         }
       }
@@ -3701,6 +4469,12 @@
             "state" : "translated",
             "value" : "Le métal n'est pas pris en charge sur cet appareil"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metal bu cihazda desteklenmiyor"
+          }
         }
       }
     },
@@ -3728,6 +4502,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Système métrique"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metrik sistem"
           }
         }
       }
@@ -3757,6 +4537,12 @@
             "state" : "translated",
             "value" : "Microarchitecture"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mikro mimari"
+          }
         }
       }
     },
@@ -3784,6 +4570,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Informations sur le modèle"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Model bilgileri"
           }
         }
       }
@@ -3813,6 +4605,12 @@
             "state" : "translated",
             "value" : "Audio mono"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mono ses"
+          }
         }
       }
     },
@@ -3840,6 +4638,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Coprocesseur de mouvement"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hareket yardımcı işlemcisi"
           }
         }
       }
@@ -3869,6 +4673,12 @@
             "state" : "translated",
             "value" : "Multitâche"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çoklu görev"
+          }
         }
       }
     },
@@ -3896,6 +4706,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nom"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ad"
           }
         }
       }
@@ -3925,6 +4741,12 @@
             "state" : "translated",
             "value" : "Réseau"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ağ"
+          }
         }
       }
     },
@@ -3953,6 +4775,12 @@
             "state" : "translated",
             "value" : "Interface réseau"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ağ arayüzü"
+          }
         }
       }
     },
@@ -3980,6 +4808,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Type de réseau"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ağ türü"
           }
         }
       }
@@ -4012,6 +4846,12 @@
             "state" : "translated",
             "value" : "Prochaine transition"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sonraki geçiş"
+          }
         }
       }
     },
@@ -4039,6 +4879,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Non"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hayır"
           }
         }
       }
@@ -4068,6 +4914,12 @@
             "state" : "translated",
             "value" : "Toutes les plateformes ne diffusent pas de commentaires en réponse à certains types"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Belirli türlere yanıt olarak tüm platformlar geri bildirim oynatmaz"
+          }
         }
       }
     },
@@ -4095,6 +4947,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Système de numérotation"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numaralandırma sistemi"
           }
         }
       }
@@ -4124,6 +4982,12 @@
             "state" : "translated",
             "value" : "Étiquettes des interrupteurs marche/arrêt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Açık/Kapalı anahtar etiketleri"
+          }
         }
       }
     },
@@ -4151,6 +5015,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ouvrir en plein écran pour afficher toutes les spécifications"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tüm özellikleri görüntülemek için tam ekranda aç"
           }
         }
       }
@@ -4180,6 +5050,12 @@
             "state" : "translated",
             "value" : "Ouvrez cette section d'application sur un autre appareil compatible UWB"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu uygulama bölümünü UWB destekli başka bir cihazda aç"
+          }
         }
       }
     },
@@ -4207,6 +5083,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Système opérateur"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İşletim sistemi"
           }
         }
       }
@@ -4236,6 +5118,12 @@
             "state" : "translated",
             "value" : "Orientation"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yönelim"
+          }
         }
       }
     },
@@ -4263,6 +5151,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Code de lot du paquet"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paket lot kodu"
           }
         }
       }
@@ -4292,6 +5186,12 @@
             "state" : "translated",
             "value" : "Code de lot de BPC"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PCB lot kodu"
+          }
         }
       }
     },
@@ -4319,6 +5219,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Profil de performances"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Performans profili"
           }
         }
       }
@@ -4348,6 +5254,12 @@
             "state" : "translated",
             "value" : "Pas"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eğim"
+          }
         }
       }
     },
@@ -4376,6 +5288,12 @@
             "state" : "translated",
             "value" : "Densité de pixels"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Piksel yoğunluğu"
+          }
         }
       }
     },
@@ -4403,6 +5321,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Position"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konum"
           }
         }
       }
@@ -4435,6 +5359,12 @@
             "state" : "translated",
             "value" : "Langues préférées"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tercih edilen diller"
+          }
         }
       }
     },
@@ -4462,6 +5392,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Préfère les transitions en fondu croisé"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çapraz solma geçişlerini tercih et"
           }
         }
       }
@@ -4491,6 +5427,12 @@
             "state" : "translated",
             "value" : "Pression"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Basınç"
+          }
         }
       }
     },
@@ -4518,6 +5460,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Identificateur de processus"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İşlem tanımlayıcısı"
           }
         }
       }
@@ -4547,6 +5495,12 @@
             "state" : "translated",
             "value" : "Nom du processus"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İşlem adı"
+          }
         }
       }
     },
@@ -4574,6 +5528,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Processeur"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İşlemci"
           }
         }
       }
@@ -4603,10 +5563,17 @@
             "state" : "translated",
             "value" : "Capteur de proximité déclenché"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yakınlık sensörü tetiklendi"
+          }
         }
       }
     },
     "Public IP address" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -4630,6 +5597,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adresse IP publique"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Genel ip adresi"
           }
         }
       }
@@ -4659,6 +5632,12 @@
             "state" : "translated",
             "value" : "Délimiteur de début de citation"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tırnak açma ayracı"
+          }
         }
       }
     },
@@ -4686,6 +5665,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Délimiteur de fin de citation"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tırnak kapama ayracı"
           }
         }
       }
@@ -4715,6 +5700,12 @@
             "state" : "translated",
             "value" : "BÉLIER"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veri deposu"
+          }
         }
       }
     },
@@ -4742,6 +5733,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notation"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Derecelendirme"
           }
         }
       }
@@ -4771,6 +5768,12 @@
             "state" : "translated",
             "value" : "X brut"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ham x"
+          }
         }
       }
     },
@@ -4798,6 +5801,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Y brut"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ham y"
           }
         }
       }
@@ -4827,6 +5836,12 @@
             "state" : "translated",
             "value" : "Z brut"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ham z"
+          }
         }
       }
     },
@@ -4854,6 +5869,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Traçage de rayons"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Işın izleme"
           }
         }
       }
@@ -4883,6 +5904,12 @@
             "state" : "translated",
             "value" : "Rouge"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kırmızı"
+          }
         }
       }
     },
@@ -4910,6 +5937,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Réduire le mouvement"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hareketi azalt"
           }
         }
       }
@@ -4939,6 +5972,12 @@
             "state" : "translated",
             "value" : "Réduire la transparence"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şeffaflığı azaltın"
+          }
         }
       }
     },
@@ -4966,6 +6005,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Taux de rafraîchissement"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yenileme hızı"
           }
         }
       }
@@ -4995,6 +6040,12 @@
             "state" : "translated",
             "value" : "Altitude relative"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bağıl yükseklik"
+          }
         }
       }
     },
@@ -5022,6 +6073,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Date de sortie"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yayın tarihi"
           }
         }
       }
@@ -5051,6 +6108,12 @@
             "state" : "translated",
             "value" : "Rouler"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yalpa"
+          }
         }
       }
     },
@@ -5078,6 +6141,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rotation"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Döndürme"
           }
         }
       }
@@ -5107,6 +6176,12 @@
             "state" : "translated",
             "value" : "Coins arrondis"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yuvarlatılmış köşeler"
+          }
         }
       }
     },
@@ -5134,6 +6209,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Routeur"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yönlendirici"
           }
         }
       }
@@ -5163,6 +6244,12 @@
             "state" : "translated",
             "value" : "Sauvegarder..."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaydet..."
+          }
         }
       }
     },
@@ -5190,6 +6277,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Résolution d'écran"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekran çözünürlüğü"
           }
         }
       }
@@ -5219,6 +6312,12 @@
             "state" : "translated",
             "value" : "Taille de l'écran"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekran boyutu"
+          }
         }
       }
     },
@@ -5246,6 +6345,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Secondes à partir de GMT"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GMT'den saniye farkı"
           }
         }
       }
@@ -5275,6 +6380,12 @@
             "state" : "translated",
             "value" : "Réseau sécurisé"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Güvenli ağ"
+          }
         }
       }
     },
@@ -5302,6 +6413,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Type de sécurité"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Güvenlik türü"
           }
         }
       }
@@ -5331,6 +6448,12 @@
             "state" : "translated",
             "value" : "Capteurs"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sensörler"
+          }
         }
       }
     },
@@ -5358,6 +6481,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Numéro de série"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seri numarası"
           }
         }
       }
@@ -5387,6 +6516,12 @@
             "state" : "translated",
             "value" : "État thermique grave"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ciddi termal durum"
+          }
         }
       }
     },
@@ -5414,6 +6549,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Certifié pour les jeux de performance sur iPhone"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPhone performans oyunculuğu için sertifikalı"
           }
         }
       }
@@ -5443,6 +6584,12 @@
             "state" : "translated",
             "value" : "Paramètres"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayarlar"
+          }
         }
       }
     },
@@ -5470,6 +6617,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Secouez pour annuler"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geri almak için sallayın"
           }
         }
       }
@@ -5499,6 +6652,12 @@
             "state" : "translated",
             "value" : "Devrait se différencier sans couleur"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Renk olmadan ayırt et"
+          }
         }
       }
     },
@@ -5526,6 +6685,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Force du signal"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sinyal gücü"
           }
         }
       }
@@ -5555,6 +6720,12 @@
             "state" : "translated",
             "value" : "Parler à l'écran"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekranı seslendir"
+          }
         }
       }
     },
@@ -5582,6 +6753,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parler de la sélection"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçimi seslendir"
           }
         }
       }
@@ -5614,6 +6791,12 @@
             "state" : "translated",
             "value" : "État de charge (%)"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şarj durumu (%)"
+          }
         }
       }
     },
@@ -5641,6 +6824,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couleurs statiques"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Statik renkler"
           }
         }
       }
@@ -5672,6 +6861,12 @@
             "state" : "translated",
             "value" : "Statut"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durum"
+          }
         }
       }
     },
@@ -5702,6 +6897,12 @@
             "state" : "translated",
             "value" : "Barre d'état"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durum çubuğu"
+          }
         }
       }
     },
@@ -5729,6 +6930,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stockage"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depolama"
           }
         }
       }
@@ -5758,6 +6965,12 @@
             "state" : "translated",
             "value" : "Barré"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Üstü çizili"
+          }
         }
       }
     },
@@ -5785,6 +6998,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Subdivision"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alt bölüm"
           }
         }
       }
@@ -5814,6 +7033,12 @@
             "state" : "translated",
             "value" : "Masque de sous-réseau"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alt ağ maskesi"
+          }
         }
       }
     },
@@ -5841,6 +7066,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sous-régions"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alt bölgeler"
           }
         }
       }
@@ -5870,6 +7101,12 @@
             "state" : "translated",
             "value" : "Soutenu"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Destekleniyor"
+          }
         }
       }
     },
@@ -5897,6 +7134,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Familles de GPU prises en charge"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desteklenen GPU aileleri"
           }
         }
       }
@@ -5928,6 +7171,12 @@
             "state" : "translated",
             "value" : "SDRAM prise en charge"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desteklenen sdRAM"
+          }
         }
       }
     },
@@ -5955,6 +7204,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Changer de caméra"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kamerayı değiştir"
           }
         }
       }
@@ -5984,6 +7239,12 @@
             "state" : "translated",
             "value" : "Contrôle des commutateurs"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anahtar kontrolü"
+          }
         }
       }
     },
@@ -6011,6 +7272,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Système"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistem"
           }
         }
       }
@@ -6040,6 +7307,12 @@
             "state" : "translated",
             "value" : "Polices système"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistem yazı tipleri"
+          }
         }
       }
     },
@@ -6067,6 +7340,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Langue du système"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistem dili"
           }
         }
       }
@@ -6096,6 +7375,12 @@
             "state" : "translated",
             "value" : "Évaluation du système"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistem derecelendirmesi"
+          }
         }
       }
     },
@@ -6123,6 +7408,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Région système"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistem bölgesi"
           }
         }
       }
@@ -6152,6 +7443,12 @@
             "state" : "translated",
             "value" : "Disponibilité du système"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistem çalışma süresi"
+          }
         }
       }
     },
@@ -6179,6 +7476,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nœud technologique"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teknoloji düğümü"
           }
         }
       }
@@ -6208,6 +7511,12 @@
             "state" : "translated",
             "value" : "Essais"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Testler"
+          }
         }
       }
     },
@@ -6235,6 +7544,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "État thermique"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Termal durum"
           }
         }
       }
@@ -6264,6 +7579,12 @@
             "state" : "translated",
             "value" : "Cet appareil n'est pas compatible UWB"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu cihaz UWB desteklemiyor"
+          }
         }
       }
     },
@@ -6291,6 +7612,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nombre de fils"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İş parçacığı sayısı"
           }
         }
       }
@@ -6320,6 +7647,12 @@
             "state" : "translated",
             "value" : "Décalage horaire"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zaman farkı"
+          }
         }
       }
     },
@@ -6347,6 +7680,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fuseau horaire"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat dilimi"
           }
         }
       }
@@ -6376,6 +7715,12 @@
             "state" : "translated",
             "value" : "Fuseau horaire"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat dilimi"
+          }
         }
       }
     },
@@ -6403,6 +7748,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Version des données de fuseau horaire"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat dilimi veri sürümü"
           }
         }
       }
@@ -6435,6 +7786,12 @@
             "state" : "translated",
             "value" : "Total"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toplam"
+          }
         }
       }
     },
@@ -6462,6 +7819,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cap vrai"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gerçek yön"
           }
         }
       }
@@ -6493,6 +7856,12 @@
             "state" : "translated",
             "value" : "Tapez ici..."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buraya yazın..."
+          }
         }
       }
     },
@@ -6520,6 +7889,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ultra large bande"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ultra geniş bant"
           }
         }
       }
@@ -6549,6 +7924,12 @@
             "state" : "translated",
             "value" : "Souligner"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Altı çizili"
+          }
         }
       }
     },
@@ -6576,6 +7957,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mémoire unifiée"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Birleşik bellek"
           }
         }
       }
@@ -6605,6 +7992,12 @@
             "state" : "translated",
             "value" : "Non pris en charge"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desteklenmiyor"
+          }
         }
       }
     },
@@ -6632,6 +8025,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Usage"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kullanım"
           }
         }
       }
@@ -6661,6 +8060,12 @@
             "state" : "translated",
             "value" : "Utilisé"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kullanılmış"
+          }
         }
       }
     },
@@ -6688,6 +8093,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Variante"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varyant"
           }
         }
       }
@@ -6717,6 +8128,12 @@
             "state" : "translated",
             "value" : "Batterie très faible"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çok düşük pil"
+          }
         }
       }
     },
@@ -6744,6 +8161,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lecture automatique de la vidéo"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video otomatik oynatma"
           }
         }
       }
@@ -6776,6 +8199,12 @@
             "state" : "translated",
             "value" : "Tension"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gerilim"
+          }
         }
       }
     },
@@ -6803,6 +8232,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Volume"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ses seviyesi"
           }
         }
       }
@@ -6832,6 +8267,12 @@
             "state" : "translated",
             "value" : "Regarder spécifiquement"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Watch'e özel"
+          }
         }
       }
     },
@@ -6859,6 +8300,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Serrure à eau"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Su kilidi"
           }
         }
       }
@@ -6888,6 +8335,12 @@
             "state" : "translated",
             "value" : "Résistance à l'eau"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suya dayanıklılık"
+          }
         }
       }
     },
@@ -6915,6 +8368,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Blanc"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beyaz"
           }
         }
       }
@@ -6944,6 +8403,12 @@
             "state" : "translated",
             "value" : "Chargement sans fil"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kablosuz şarj"
+          }
         }
       }
     },
@@ -6971,6 +8436,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emplacement du poignet"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bilek konumu"
           }
         }
       }
@@ -7000,6 +8471,12 @@
             "state" : "translated",
             "value" : "Axe X"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "X ekseni"
+          }
         }
       }
     },
@@ -7027,6 +8504,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Axe Y"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Y ekseni"
           }
         }
       }
@@ -7056,6 +8539,12 @@
             "state" : "translated",
             "value" : "Embardée"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sapma"
+          }
         }
       }
     },
@@ -7083,6 +8572,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oui"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Evet"
           }
         }
       }
@@ -7112,6 +8607,12 @@
             "state" : "translated",
             "value" : "Votre appareil ne prend pas en charge Apple Intelligence"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cihazınız Apple Intelligence desteklemiyor"
+          }
         }
       }
     },
@@ -7139,6 +8640,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Votre appareil ne prend pas en charge les modèles Foundation"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cihazınız Foundation Models desteklemiyor"
           }
         }
       }
@@ -7168,6 +8675,12 @@
             "state" : "translated",
             "value" : "Votre appareil prend en charge Apple Intelligence"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cihazınız Apple Intelligence destekliyor"
+          }
         }
       }
     },
@@ -7196,6 +8709,12 @@
             "state" : "translated",
             "value" : "Votre appareil prend en charge les modèles Foundation"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cihazınız Foundation Models destekliyor"
+          }
         }
       }
     },
@@ -7223,6 +8742,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Axe Z"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Z ekseni"
           }
         }
       }
