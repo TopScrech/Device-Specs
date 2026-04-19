@@ -288,27 +288,12 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				AppIcon.icon,
-				Chat/ChatComposerView.swift,
-				Chat/ChatMessage.swift,
-				Chat/ChatMessageRole.swift,
-				Chat/ChatMessageRowView.swift,
-				Chat/ChatView.swift,
-				Chat/ChatVM.swift,
 				"Chat/Generable Models/CameraInfo.swift",
-				"Chat/Generable Models/CPUInfo.swift",
 				"Chat/Generable Models/DeviceInfo.swift",
 				"Chat/Generable Models/DisplayInfo.swift",
-				"Chat/Generable Models/MemoryInfo.swift",
-				"Chat/Generable Models/StorageInfo.swift",
-				"Chat/Generable Models/SystemInfo.swift",
-				Chat/StreamResponse.swift,
 				Chat/Tools/GetCameraInfo.swift,
-				Chat/Tools/GetCPUInfo.swift,
 				Chat/Tools/GetDeviceInfo.swift,
 				Chat/Tools/GetDisplayInfo.swift,
-				Chat/Tools/GetMemoryInfo.swift,
-				Chat/Tools/GetStorageInfo.swift,
-				Chat/Tools/GetSystemInfo.swift,
 				DeviceKit/Example/DeviceExtension.swift,
 				Home/HomeView.swift,
 				Home/HomeViewTestLink.swift,
@@ -1206,6 +1191,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = xros;
@@ -1235,6 +1221,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Device-Specs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = xros;
@@ -1309,6 +1296,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1370,6 +1358,7 @@
 				MARKETING_VERSION = 64.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
