@@ -22,27 +22,27 @@ final class ActivityVM {
     
     private func initialize() {
         guard CMMotionActivityManager.isActivityAvailable() else {
-            status = "Motion activity unavailable"
+            status = "Unavailable"
             return
         }
         
         switch CMMotionActivityManager.authorizationStatus() {
         case .authorized:
-            status = "Motion access granted"
+            status = "Access granted"
             
         case .notDetermined:
-            status = "Requesting Motion access"
+            status = "Requesting access"
             
         case .denied:
-            status = "Motion access denied"
+            status = "Access denied"
             return
             
         case .restricted:
-            status = "Motion access restricted"
+            status = "Access restricted"
             return
             
         @unknown default:
-            status = "Motion access unavailable"
+            status = "Access unavailable"
             return
         }
         
