@@ -10,7 +10,7 @@ struct ChatComposerView: View {
         @Bindable var vm = vm
         
         HStack {
-            TextField("Type here...", text: $vm.prompt, axis: .vertical)
+            TextField("Type here...", text: $vm.prompt)
                 .onSubmit(sendPrompt)
                 .frame(height: 35)
                 .padding(.horizontal, 10)
