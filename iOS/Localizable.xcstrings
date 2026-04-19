@@ -12330,13 +12330,13 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Поддерживаемая SDRAM"
+            "value" : "Ondersteunde SDRAM"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ondersteunde SDRAM"
+            "value" : "Поддерживаемая SDRAM"
           }
         },
         "tr" : {
