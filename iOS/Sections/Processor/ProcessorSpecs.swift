@@ -14,7 +14,6 @@ struct ProcessorSpecs: View {
                 LabeledContent("Max. clock speed", value: ProcessorVM.clockSpeed)
                 LabeledContent("Instruction set", value: vm.instructionSet)
                 LabeledContent("Host name", value: vm.hostName)
-                LabeledContent("Thread count", value: vm.threadCount)
                 
                 NavigationLink("Current process") {
                     CurrentProcess()
