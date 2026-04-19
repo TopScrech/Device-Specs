@@ -10,12 +10,4 @@ struct AccessibilityParam: Identifiable {
         self.name = name
         self.isEnabled = isEnabled
     }
-    
-    var text: String {
-        if let isEnabled {
-            isEnabled ? "Enabled" : "Disabled"
-        } else {
-            "-"
-        }
-    }
 }

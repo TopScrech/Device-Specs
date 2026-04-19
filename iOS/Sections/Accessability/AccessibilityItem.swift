@@ -8,7 +8,7 @@ struct AccessibilityItem: View {
     }
     
     var body: some View {
-        LabeledContent(param.name, value: param.text)
+        LabeledContent(param.name, value: param.isEnabled.yesOrNo())
     }
 }
 
