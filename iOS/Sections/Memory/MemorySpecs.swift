@@ -17,7 +17,7 @@ struct MemorySpecs: View {
                     .animation(.default, value: vm.freeRAM)
             }
             
-            LabeledContent("Supported SDRAM", value: vm.memoryType)
+            LabeledContent("SDRAM", value: vm.memoryType)
             
             Section("Storage") {
                 LabeledContent("Total", value: vm.totalDisk)
