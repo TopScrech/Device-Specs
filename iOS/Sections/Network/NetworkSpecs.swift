@@ -32,19 +32,19 @@ struct NetworkSpecs: View {
                 }
                 
                 if let isSecure = connectivity.isSecure {
-                    LabeledContent("Secure network", value: isSecure ? "Yes" : "No")
+                    LabeledContent("Secure network", value: isSecure.yesOrNo())
                 }
                 
                 if let didAutoJoin = connectivity.didAutoJoin {
-                    LabeledContent("Auto-joined", value: didAutoJoin ? "Yes" : "No")
+                    LabeledContent("Auto-joined", value: didAutoJoin.yesOrNo())
                 }
                 
                 if let didJustJoin = connectivity.didJustJoin {
-                    LabeledContent("Just joined", value: didJustJoin ? "Yes" : "No")
+                    LabeledContent("Just joined", value: didJustJoin.yesOrNo())
                 }
                 
                 if let isChosenHelper = connectivity.isChosenHelper {
-                    LabeledContent("Hotspot Helper", value: isChosenHelper ? "Yes" : "No")
+                    LabeledContent("Hotspot Helper", value: isChosenHelper.yesOrNo())
                 }
                 
                 if let securityType = connectivity.securityType {

@@ -18,7 +18,7 @@ struct GetDeviceInfo: Tool {
             dockConnector: DeviceVM.dockConnector,
             hasDymanicIsland: DeviceVM.hasDynamicIsland,
             support5G: DeviceVM.supports5G,
-            supportWirelessCharging: DeviceVM.supportsWirelessCharging
+            supportWirelessCharging: DeviceVM.hasWirelessCharging
         )
     }
 }

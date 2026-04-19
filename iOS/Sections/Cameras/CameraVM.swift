@@ -168,7 +168,7 @@ final class CameraVM {
         //        }
         //
         //        // Optical Stabilization Support (Cinematic Stabilization as an example)
-        //        backOpticalStabilization = device.activeFormat.isVideoStabilizationModeSupported(.cinematic) ? "Yes" : "No"
+        //        backOpticalStabilization = device.activeFormat.isVideoStabilizationModeSupported(.cinematic)
         //
         //        // Exposure Duration Range
         //        let minExposureSeconds = CMTimeGetSeconds(device.activeFormat.minExposureDuration)

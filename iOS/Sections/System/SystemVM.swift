@@ -8,11 +8,11 @@ final class SystemVM {
     private(set) var systemUptime = "N/a"
     private(set) var systemActiveTime = "N/a"
     
-    var multitaskingSupported: String {
+    var multitaskingSupported: Bool {
 #if os(watchOS)
-        "No"
+        false
 #else
-        UIDevice.current.isMultitaskingSupported ? "Yes" : "No"
+        UIDevice.current.isMultitaskingSupported
 #endif
     }
     

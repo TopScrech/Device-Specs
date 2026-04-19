@@ -19,5 +19,5 @@ struct DisplayInfo {
     let resolution: String
     
     @Guide(description: "Display with rounded or sharp corners")
-    let roundedCorners: String
+    let roundedCorners: Bool
 }

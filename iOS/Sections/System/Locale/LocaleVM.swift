@@ -20,12 +20,12 @@ final class LocaleVM {
         loc.region?.subRegions.description ?? "-"
     }
     
-    var isISORegion: String {
+    var isISORegion: Bool? {
         guard let isDefined = loc.region?.isISORegion else {
-            return "-"
+            return nil
         }
         
-        return isDefined ? "Yes" : "No"
+        return isDefined
     }
     
     var continent: String {

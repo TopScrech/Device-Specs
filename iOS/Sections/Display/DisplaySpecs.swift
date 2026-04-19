@@ -21,7 +21,7 @@ struct DisplaySpecs: View {
 #endif
             
 #if os(iOS)
-            LabeledContent("Rounded corners", value: DisplayVM.roundedCorners)
+            LabeledContent("Rounded corners", value: DisplayVM.roundedCorners.yesOrNo())
 #endif
             Section {
                 LabeledContent("Brightness", value: "\(Int(brightness))%")

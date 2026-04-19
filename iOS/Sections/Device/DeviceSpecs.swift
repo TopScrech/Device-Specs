@@ -46,14 +46,14 @@ struct DeviceSpecs: View {
 #endif
                 
 #if os(iOS)
-                LabeledContent("Wireless Charging", value: DeviceVM.supportsWirelessCharging)
-                LabeledContent("MagSafe", value: DeviceVM.isMagsafeSupported)
-                LabeledContent("5G", value: DeviceVM.supports5G)
-                LabeledContent("Dynamic Island", value: DeviceVM.hasDynamicIsland)
+                LabeledContent("Wireless Charging", value: DeviceVM.hasWirelessCharging.yesOrNo())
+                LabeledContent("MagSafe", value: DeviceVM.isMagsafeSupported.yesOrNo())
+                LabeledContent("5G", value: DeviceVM.supports5G.yesOrNo())
+                LabeledContent("Dynamic Island", value: DeviceVM.hasDynamicIsland.yesOrNo())
                 LabeledContent("Dock connector", value: DeviceVM.dockConnector)
                 LabeledContent("Force Touch", value: vm.isForceTouchAvailable)
 #endif
-                LabeledContent("Ultra Wideband", value: DeviceVM.isUWBAvailable)
+                LabeledContent("Ultra Wideband", value: DeviceVM.isUWBAvailable.yesOrNo())
             }
             
             Section("Water resistance") {

@@ -14,20 +14,20 @@ struct DeviceInfo {
     
     /// isUWBAvailable makes the AI think that UWB is called UWBA
     @Guide(description: "Ultra Wide Band (UWB) availability")
-    let is_UWB_available: String
+    let is_UWB_available: Bool
     
     @Guide(description: "MagSafe capability")
-    let isMagSafeAvailable: String
+    let isMagSafeAvailable: Bool
     
     @Guide(description: "Charging port")
     let dockConnector: String
     
     @Guide(description: "Dynamic Island support")
-    let hasDymanicIsland: String
+    let hasDymanicIsland: Bool
     
     @Guide(description: "5G support")
-    let support5G: String
+    let support5G: Bool
     
     @Guide(description: "Wireless charging support")
-    let supportWirelessCharging: String
+    let supportWirelessCharging: Bool
 }

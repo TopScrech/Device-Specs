@@ -32,7 +32,7 @@ final class DisplayVM {
 #endif
     
 #if os(iOS)
-    static let roundedCorners = Device.current.hasRoundedDisplayCorners ? "Yes" : "No"
+    static let roundedCorners = Device.current.hasRoundedDisplayCorners
 #endif
     
     static var aspectRatio: String {

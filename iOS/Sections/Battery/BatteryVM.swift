@@ -9,7 +9,7 @@ final class BatteryVM {
     private(set) var batteryLevel = ""
     private(set) var batteryState = ""
     private(set) var batteryLevelNumber: Int?
-    private(set) var lowPowerMode = ""
+    private(set) var lowPowerMode = false
     
     private var cancellables = Set<AnyCancellable>()
     
@@ -47,7 +47,7 @@ final class BatteryVM {
     }
     
     var color: Color {
-        if lowPowerMode == "Yes" {
+        if lowPowerMode {
             .yellow
         } else {
             batteryState == "Charging" ? .green : .primary
@@ -127,7 +127,7 @@ final class BatteryVM {
         withAnimation {
             batteryLevelNumber = Int(device.batteryLevel * 100)
             batteryLevel = device.batteryLevel.formatted(.percentRounded)
-            lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled ? "Yes" : "No"
+            lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled
             
             switch device.batteryState {
             case .unknown:

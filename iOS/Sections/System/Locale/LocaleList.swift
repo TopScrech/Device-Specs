@@ -31,7 +31,7 @@ struct LocaleList: View {
                 LabeledContent("System region", value: vm.region)
                 LabeledContent("Containing region", value: vm.containingRegion)
                 LabeledContent("Subregions", value: vm.subRegions)
-                LabeledContent("ISO region", value: vm.isISORegion)
+                LabeledContent("ISO region", value: vm.isISORegion.yesOrNo())
                 LabeledContent("Continent", value: vm.continent)
             }
             

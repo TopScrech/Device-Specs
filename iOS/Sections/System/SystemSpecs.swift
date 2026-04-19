@@ -23,7 +23,7 @@ struct SystemSpecs: View {
             }
             
             Section {
-                LabeledContent("Multitasking", value: vm.multitaskingSupported)
+                LabeledContent("Multitasking", value: vm.multitaskingSupported.yesOrNo())
                 
                 NavigationLink {
                     Timezone()

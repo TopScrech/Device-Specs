@@ -99,8 +99,8 @@ final class ProcessorVM {
     }
     
     @available(iOS 18, *)
-    var iphonePerformanceGamingSertified: String {
-        info.isDeviceCertified(for: .iPhonePerformanceGaming) ? "Yes" : "No"
+    var iphonePerformanceGamingSertified: Bool {
+        info.isDeviceCertified(for: .iPhonePerformanceGaming)
     }
 #endif
     

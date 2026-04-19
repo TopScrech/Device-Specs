@@ -32,7 +32,7 @@ struct ProcessorSpecs: View {
                 if let device = MTLCreateSystemDefaultDevice() {
                     LabeledContent("GPU", value: device.name)
                     LabeledContent("Architecture", value: device.architecture.name)
-                    LabeledContent("Unified memory", value: device.hasUnifiedMemory ? "Yes" : "No")
+                    LabeledContent("Unified memory", value: device.hasUnifiedMemory.yesOrNo())
                     LabeledContent("Raytracing", value: device.supportsRaytracing ? "Supported" : "Unsupported")
                     
                     NavigationLink("Supported GPU families") {

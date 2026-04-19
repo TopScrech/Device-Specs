@@ -9,7 +9,7 @@ struct SensorsSpecs: View {
     
     var body: some View {
         List {
-            LabeledContent("Proximity sensor triggered", value: proximity.isDeviceCloseToUser ? "Yes" : "No")
+            LabeledContent("Proximity sensor triggered", value: proximity.isDeviceCloseToUser.yesOrNo())
                 .onAppear {
                     proximity.onAppear()
                 }
