@@ -47,21 +47,19 @@ struct SensorsSpecs: View {
             
             MagneticFieldData()
             
-            Section("Motion coprocessor") {
-                if !activity.status.isEmpty {
-                    LabeledContent("Status", value: activity.status)
+            if let status = activity.status, status == .authorized {
+                Section("Motion coprocessor") {
+                    LabeledContent("Activity", value: activity.activity)
+                    LabeledContent("Confidence", value: activity.confidence)
                 }
-                
-                LabeledContent("Activity", value: activity.activity)
-                LabeledContent("Confidence", value: activity.confidence)
-            }
-            .onAppear {
-                activity.onAppear()
             }
         }
         .navigationTitle("Sensors")
         .monospacedDigit()
         .scrollIndicators(.never)
+        .onAppear {
+            activity.onAppear()
+        }
     }
 }
 
