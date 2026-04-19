@@ -20,11 +20,11 @@ final class ProcessorVM {
         }
     }
     
-    var neuralEngineTOPS: String {
+    static var neuralEngineTOPS: String {
         ProcessorVM.cpu.tops ?? "-"
     }
     
-    var neuralEngineCores: String {
+    static var neuralEngineCores: String {
         ProcessorVM.cpu.neuralEngineCores ?? "-"
     }
     

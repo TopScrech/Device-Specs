@@ -11,4 +11,10 @@ struct CPUInfo {
     
     @Guide(description: "Clock speed of the CPU")
     let clockSpeed: String
+    
+    @Guide(description: "Amount of neural engine cores")
+    let neuralEngineCores: String
+    
+    @Guide(description: "Performance of the neural engine, represented in TOPS (trillion operations per second)")
+    let neuralEngineTOPS: String
 }
