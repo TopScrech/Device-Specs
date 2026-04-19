@@ -52,7 +52,6 @@ struct HomeView: View {
                 NetworkSpecs()
                     .environment(connectivity)
             }
-#warning("Test if works")
 #if DEBUG
             SpecsLink("Sensors", icon: "barometer") {
                 SensorsView()
