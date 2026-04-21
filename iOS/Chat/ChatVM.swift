@@ -40,7 +40,8 @@ final class ChatVM {
             GetSystemInfo(),
             GetCPUInfo(),
             GetStorageInfo(),
-            GetMemoryInfo()
+            GetMemoryInfo(),
+            GetBatteryInfo()
         ]
 #else
         tools = [
