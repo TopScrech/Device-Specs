@@ -3,7 +3,9 @@ import DeviceKit
 
 @Observable
 final class DisplayVM {
+#if os(iOS)
     static let diagonalSize = "\(Device.current.diagonal)\""
+#endif
     
     static var pixelDencity: String? {
         guard let ppi = Device.current.ppi else {
