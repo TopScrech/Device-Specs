@@ -1,5 +1,6 @@
 import Foundation
 import OSLog
+import ChitChat
 
 #if canImport(FoundationModels)
 import FoundationModels

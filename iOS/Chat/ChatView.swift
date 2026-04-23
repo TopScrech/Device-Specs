@@ -1,4 +1,5 @@
 import ScrechKit
+import ChitChat
 
 @available(iOS 26, *)
 struct ChatView: View {
@@ -18,7 +19,7 @@ struct ChatView: View {
                     .symbolRenderingMode(.multicolor)
                 } else {
                     ForEach(vm.messages) {
-                        ChatMessageRowView($0)
+                        ChatMessageBubble($0)
                     }
                 }
             }
@@ -58,8 +59,7 @@ struct ChatView: View {
             }
             
             ToolbarItem(placement: .topBarTrailing) {
-                Button("New Chat", systemImage: "square.and.pencil", action: vm.startNewChat)
-                    .disabled(vm.isResponding || vm.messages.isEmpty)
+                NewChatButton(disabled: vm.isResponding || vm.messages.isEmpty, action: vm.startNewChat)
             }
         }
     }
