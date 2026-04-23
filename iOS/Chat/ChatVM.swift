@@ -1,6 +1,5 @@
 import Foundation
 import OSLog
-import Observation
 
 #if canImport(FoundationModels)
 import FoundationModels
