@@ -28,6 +28,7 @@ struct ChatView: View {
         }
         .navigationTitle("Assistant")
         .toolbarTitleDisplayMode(.inline)
+        .animation(.default, value: vm.messages.count)
         .scrollIndicators(.hidden)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .task {
