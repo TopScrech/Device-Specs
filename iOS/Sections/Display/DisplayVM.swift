@@ -4,7 +4,10 @@ import DeviceKit
 @Observable
 final class DisplayVM {
     static var diagonalSize: String {
-#if os(watchOS)
+#if os(iOS)
+        let diagonal = Device.current.diagonal
+        return "\(diagonal)\""
+#else
         guard let ppi = Device.current.ppi else {
             return ""
         }
@@ -15,9 +18,6 @@ final class DisplayVM {
         let diagonal = diagonalPixels / Double(ppi)
         
         return "\(diagonal.formatted(.number.precision(.fractionLength(2))))\""
-#else
-        let diagonal = Device.current.diagonal
-        return "\(diagonal)\""
 #endif
     }
     
