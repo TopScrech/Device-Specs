@@ -1,6 +1,6 @@
 import ScrechKit
 
-@available(iOS 26, visionOS 26, *)
+@available(iOS 26, *)
 struct ChatComposerView: View {
     @Environment(ChatVM.self) private var vm
     
@@ -21,16 +21,15 @@ struct ChatComposerView: View {
                 .submitLabel(.send)
                 .disabled(vm.isResponding)
             
-            Button(action: sendPrompt) {
-                Image(systemName: "paperplane")
-                    .frame(35)
-                    .foregroundStyle(.foreground)
+            Button("Send", systemImage: "paperplane", action: sendPrompt)
+                .frame(35)
+                .labelStyle(.iconOnly)
+                .foregroundStyle(.foreground)
 #if !os(visionOS)
-                    .glassEffect()
+                .glassEffect()
 #endif
-                    .fontSize(16)
-            }
-            .disabled(vm.isResponding || vm.prompt.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+                .fontSize(16)
+                .disabled(vm.isResponding || vm.prompt.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
         }
         .padding()
         .task {
