@@ -14,7 +14,6 @@ struct SettingsView: View {
             .foregroundStyle(.foreground)
             
             Section("Debug") {
-                Toggle(String("Debug mode"), isOn: $store.debugMode)
                 Toggle("Status bar", isOn: $store.showStatusBar)
             }
         }
