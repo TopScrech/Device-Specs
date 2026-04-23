@@ -17,12 +17,14 @@ final class ChatVM {
     
     @ObservationIgnored private let logger = Logger()
     @ObservationIgnored private let model = SystemLanguageModel.default
+    
     @ObservationIgnored private let instructions = Instructions("""
         You are a helpful assistant.
         Provide concise answers.
         Answer only in the same language as the prompt.
         When asked for all device information, provide the output of all available GET tools.
         """)
+    
     @ObservationIgnored private let tools: [any Tool]
     @ObservationIgnored private var session: LanguageModelSession
     
