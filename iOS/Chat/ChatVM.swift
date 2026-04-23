@@ -92,6 +92,8 @@ final class ChatVM {
             prompt = ""
             
             do {
+                await updateTranscriptTokenUsage()
+                
                 let stream = session.streamResponse(to: userPrompt)
                 
                 for try await snapshot in stream {
