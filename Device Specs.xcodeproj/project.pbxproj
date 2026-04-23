@@ -217,7 +217,6 @@
 		F383A3352ECF2DF700350A0F /* Exceptions for "iOS" folder in "watchOS" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Chat/ChatComposerView.swift,
 				Chat/ChatView.swift,
 				Chat/ChatVM.swift,
 				"Chat/Generable Models/BatteryInfo.swift",
@@ -352,7 +351,6 @@
 			membershipExceptions = (
 				AppIcon.icon,
 				Assets.xcassets,
-				Chat/ChatComposerView.swift,
 				Chat/ChatView.swift,
 				Chat/ChatVM.swift,
 				"Chat/Generable Models/BatteryInfo.swift",
@@ -463,7 +461,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				AppIcon.icon,
-				Chat/ChatComposerView.swift,
 				Chat/ChatView.swift,
 				Chat/ChatVM.swift,
 				"Chat/Generable Models/BatteryInfo.swift",
