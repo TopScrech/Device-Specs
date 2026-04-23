@@ -19,12 +19,12 @@ struct HomeView: View {
                     .environment(device)
             }
             
-            SpecsLink("System", icon: "apple.terminal", spec: "\(SystemVM.operatingSystem) (\(system.buildNumber))") {
+            SpecsLink("System", icon: "apple.terminal", spec: "\(SystemVM.operatingSystem) (\(SystemVM.buildNumber))") {
                 SystemSpecs()
                     .environment(system)
             }
             
-            SpecsLink("Display", icon: "iphone", spec: "\(display.resolution) (\(DisplayVM.refreshRate) Hz)") {
+            SpecsLink("Display", icon: "iphone", spec: "\(DisplayVM.resolution) (\(DisplayVM.refreshRate) Hz)") {
                 DisplaySpecs()
                     .environment(display)
             }

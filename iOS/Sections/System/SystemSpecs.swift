@@ -9,7 +9,7 @@ struct SystemSpecs: View {
         List {
             Section {
                 LabeledContent("Operating system", value: SystemVM.operatingSystem)
-                LabeledContent("Build", value: vm.buildNumber)
+                LabeledContent("Build", value: SystemVM.buildNumber)
             }
             
             if #available(iOS 18.1, visionOS 2.4, *) {
@@ -23,12 +23,12 @@ struct SystemSpecs: View {
             }
             
             Section {
-                LabeledContent("Multitasking", value: vm.multitaskingSupported)
+                LabeledContent("Multitasking", value: vm.multitaskingSupported.yesOrNo())
                 
                 NavigationLink {
                     Timezone()
                 } label: {
-                    LabeledContent("Time zone", value: vm.timeZone)
+                    LabeledContent("Time zone", value: SystemVM.timeZone ?? "-")
                 }
                 
                 NavigationLink {

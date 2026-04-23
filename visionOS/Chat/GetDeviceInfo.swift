@@ -13,12 +13,7 @@ struct GetDeviceInfo: Tool {
             name: DeviceVM.deviceIdentifier,
             bluetoothVersion: DeviceVM.bluetoothVersion,
             thermalState: DeviceVM.thermalState,
-            is_UWB_available: DeviceVM.isUWBAvailable,
-            isMagSafeAvailable: DeviceVM.isMagsafeSupported,
-            dockConnector: DeviceVM.dockConnector,
-            hasDymanicIsland: DeviceVM.hasDynamicIsland,
-            support5G: DeviceVM.supports5G,
-            supportWirelessCharging: DeviceVM.hasWirelessCharging
+            is_UWB_available: DeviceVM.isUWBAvailable
         )
     }
 }

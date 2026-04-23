@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct SettingsView: View {
     @EnvironmentObject private var store: ValueStore
@@ -8,6 +8,11 @@ struct SettingsView: View {
 #if canImport(Appearance)
             AppearanceSettings()
 #endif
+            Button("Change language", systemImage: "globe") {
+                openSettings()
+            }
+            .foregroundStyle(.foreground)
+            
             Section("Debug") {
                 Toggle("Status bar", isOn: $store.showStatusBar)
             }

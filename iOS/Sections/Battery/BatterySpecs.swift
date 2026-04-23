@@ -8,7 +8,7 @@ struct BatterySpecs: View {
             BatteryLevel()
             BatteryState()
             
-            LabeledContent("Low power mode", value: vm.lowPowerMode)
+            LabeledContent("Low power mode", value: vm.lowPowerMode.yesOrNo())
             LabeledContent("Voltage", value: vm.voltage)
             LabeledContent("Capacity", value: vm.capacity)
         }

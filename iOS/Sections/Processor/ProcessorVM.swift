@@ -20,11 +20,11 @@ final class ProcessorVM {
         }
     }
     
-    var neuralEngineTOPS: String {
+    static var neuralEngineTOPS: String {
         ProcessorVM.cpu.tops ?? "-"
     }
     
-    var neuralEngineCores: String {
+    static var neuralEngineCores: String {
         ProcessorVM.cpu.neuralEngineCores ?? "-"
     }
     
@@ -74,18 +74,6 @@ final class ProcessorVM {
         info.arguments
     }
     
-    var threadCount: String {
-        var threadCount = mach_msg_type_number_t()
-        var threadList: thread_act_array_t?
-        let kerr = task_threads(mach_task_self_, &threadList, &threadCount)
-        
-        if kerr == KERN_SUCCESS {
-            return String(threadCount)
-        } else {
-            return "-"
-        }
-    }
-    
 #if os(iOS)
     @available(iOS 18, *)
     var performanceProfile: String {
@@ -99,8 +87,8 @@ final class ProcessorVM {
     }
     
     @available(iOS 18, *)
-    var iphonePerformanceGamingSertified: String {
-        info.isDeviceCertified(for: .iPhonePerformanceGaming) ? "Yes" : "No"
+    var iphonePerformanceGamingSertified: Bool {
+        info.isDeviceCertified(for: .iPhonePerformanceGaming)
     }
 #endif
     

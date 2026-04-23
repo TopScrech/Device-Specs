@@ -12,7 +12,9 @@ struct GetCPUInfo: Tool {
         await CPUInfo(
             name: ProcessorVM.cpuName,
             technode: ProcessorVM.techNode,
-            clockSpeed: ProcessorVM.clockSpeed
+            clockSpeed: ProcessorVM.clockSpeed,
+            neuralEngineCores: ProcessorVM.neuralEngineCores,
+            neuralEngineTOPS: ProcessorVM.neuralEngineTOPS
         )
     }
 }

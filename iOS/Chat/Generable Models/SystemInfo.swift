@@ -3,6 +3,12 @@ import FoundationModels
 @Generable
 @available(iOS 26, *)
 struct SystemInfo {
-    @Guide(description: "Name & version of the operating system on this device")
+    @Guide(description: "Name & version of the operating system")
     let os: String
+    
+    @Guide(description: "Version build number of the operating system")
+    let buildNumber: String
+    
+    @Guide(description: "Time zone of the operating system")
+    let timeZone: String?
 }

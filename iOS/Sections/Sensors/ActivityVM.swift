@@ -1,12 +1,13 @@
 #if canImport(CoreMotion)
 import SwiftUI
+import OSLog
 @preconcurrency import CoreMotion
 
 @Observable
 final class ActivityVM {
     private(set) var activity = ""
     private(set) var confidence = ""
-    private(set) var status = ""
+    private(set) var status: CMAuthorizationStatus? = nil
     
     private let motionActivityManager = CMMotionActivityManager()
     private var isMonitoring = false
@@ -22,27 +23,29 @@ final class ActivityVM {
     
     private func initialize() {
         guard CMMotionActivityManager.isActivityAvailable() else {
-            status = "Motion activity unavailable"
+            Logger().info("Unavailable")
             return
         }
         
-        switch CMMotionActivityManager.authorizationStatus() {
+        status = CMMotionActivityManager.authorizationStatus()
+        
+        switch status {
         case .authorized:
-            status = "Motion access granted"
+            Logger().info("Access granted")
             
         case .notDetermined:
-            status = "Requesting Motion access"
+            Logger().info("Requesting access")
             
         case .denied:
-            status = "Motion access denied"
+            Logger().info("Access denied")
             return
             
         case .restricted:
-            status = "Motion access restricted"
+            Logger().info("Access restricted")
             return
             
-        @unknown default:
-            status = "Motion access unavailable"
+        default:
+            Logger().info("Access unavailable")
             return
         }
         
@@ -54,7 +57,7 @@ final class ActivityVM {
     private func updateActivity(_ activityData: CMMotionActivity?) {
         guard let activityData else { return }
         
-        status = "Motion access granted"
+        Logger().info("Motion access granted")
         
         switch true {
         case activityData.walking:

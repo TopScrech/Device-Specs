@@ -12,7 +12,7 @@ struct DisplaySpecs: View {
     
     var body: some View {
         List {
-            LabeledContent("Screen resolution", value: vm.resolution)
+            LabeledContent("Screen resolution", value: DisplayVM.resolution)
             LabeledContent("Refresh rate", value: DisplayVM.refreshRate)
             
             Section {
@@ -20,9 +20,6 @@ struct DisplaySpecs: View {
             }
         }
         .navigationTitle("Display")
-        .refreshableTask {
-            vm.fetchScreenResolution()
-        }
     }
 }
 

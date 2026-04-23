@@ -9,6 +9,8 @@ struct HomeView: View {
     @State private var connectivity = ConnectivityVM()
     @State private var app = AppVM()
     
+    @State private var sheetChat = false
+    
     var body: some View {
         List {
             Section {
@@ -50,7 +52,6 @@ struct HomeView: View {
                 NetworkSpecs()
                     .environment(connectivity)
             }
-#warning("Test if works")
 #if DEBUG
             SpecsLink("Sensors", icon: "barometer") {
                 SensorsView()
@@ -84,6 +85,23 @@ struct HomeView: View {
         }
         .navigationTitle("Device Specs")
         .foregroundStyle(.foreground)
+        .sheet($sheetChat) {
+            if #available(visionOS 26, *) {
+                NavigationStack {
+                    ChatView()
+                }
+            }
+        }
+        .toolbar {
+            if #available(visionOS 26, *) {
+                ToolbarItem(placement: .topBarTrailing) {
+                    SFButton("apple.intelligence") {
+                        sheetChat = true
+                    }
+                    .symbolRenderingMode(.multicolor)
+                }
+            }
+        }
     }
 }
 

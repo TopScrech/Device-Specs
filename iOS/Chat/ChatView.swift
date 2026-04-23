@@ -4,47 +4,63 @@ import ScrechKit
 struct ChatView: View {
     @State private var vm = ChatVM()
     
-    @FocusState private var isFocused
+    @State private var alertTokenWindowUsage = false
     
     var body: some View {
         ScrollView {
-            // Add a warning
-            // Works best in the following languages:
-            // English, Chinese (Simplified/Traditional), Danish, Dutch, French, German, Italian, Japanese, Korean, Norwegian, Portuguese, Spanish, Swedish, Turkish, and Vietnamese
-            
-            Text(vm.renderedText)
-                .frame(maxWidth: .infinity, alignment: .leading)
+            LazyVStack {
+                if vm.messages.isEmpty {
+                    ContentUnavailableView(
+                        "Ask about this device",
+                        systemImage: "apple.intelligence",
+                        description: Text("The assistant can answer follow-up questions and use the built-in device tools")
+                    )
+                    .symbolRenderingMode(.multicolor)
+                } else {
+                    ForEach(vm.messages) {
+                        ChatMessageRowView($0)
+                    }
+                }
+            }
+            .scenePadding()
+            .padding(.bottom, 40)
         }
         .navigationTitle("Assistant")
         .toolbarTitleDisplayMode(.inline)
+        .scrollIndicators(.hidden)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .scenePadding()
         .task {
-            isFocused = true
+            vm.printContextSize()
+        }
+        .alert("Token Window Usage", isPresented: $alertTokenWindowUsage) {
+            
+        } message: {
+            Text("This indicator shows the amount of used tokens")
         }
         .overlay(alignment: .bottom) {
-            HStack {
-                TextField("Type here...", text: $vm.prompt)
-                    .frame(height: 32)
-                    .padding(.horizontal, 10)
-                    .glassEffect()
-                    .onSubmit(sendPrompt)
-                    .submitLabel(.send)
-                    .focused($isFocused)
-                
-                SFButton("paperplane", action: sendPrompt)
-                    .foregroundStyle(.foreground)
-                    .frame(32)
-                    .glassEffect()
-                    .fontSize(16)
-            }
-            .padding()
+            ChatComposerView()
+                .environment(vm)
         }
-    }
-    
-    private func sendPrompt() {
-        Task {
-            await vm.processPromptAsText()
+        .toolbar {
+            if #available(iOS 26.4, visionOS 26.4, *) {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        alertTokenWindowUsage = true
+                    } label: {
+                        Gauge(value: vm.tokenUsage) {}
+                            .gaugeStyle(.accessoryCircularCapacity)
+                            .scaleEffect(0.5)
+                            .frame(30)
+                            .tint(.green)
+                            .animation(.default, value: vm.tokenUsage)
+                    }
+                }
+            }
+            
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("New Chat", systemImage: "square.and.pencil", action: vm.startNewChat)
+                    .disabled(vm.isResponding || vm.messages.isEmpty)
+            }
         }
     }
 }
@@ -52,4 +68,5 @@ struct ChatView: View {
 @available(iOS 26, *)
 #Preview {
     ChatView()
+        .environmentObject(ValueStore())
 }

@@ -8,17 +8,15 @@ final class SystemVM {
     private(set) var systemUptime = "N/a"
     private(set) var systemActiveTime = "N/a"
     
-    var multitaskingSupported: String {
+    var multitaskingSupported: Bool {
 #if os(watchOS)
-        "No"
+        false
 #else
-        UIDevice.current.isMultitaskingSupported ? "Yes" : "No"
+        UIDevice.current.isMultitaskingSupported
 #endif
     }
     
-    var timeZone: String {
-        TimeZone.current.abbreviation() ?? ""
-    }
+    static let timeZone = TimeZone.current.abbreviation()
     
     var lang: String {
         Locale.current.identifier
@@ -38,7 +36,7 @@ final class SystemVM {
 #endif
     }
     
-    var buildNumber: String {
+    static var buildNumber: String {
         let regex = "\\((Build )([A-Za-z0-9]+)\\)"
         let build = ProcessInfo.processInfo.operatingSystemVersionString
         

@@ -20,7 +20,7 @@ final class DeviceVM {
     private(set) var architecture = ""
     private(set) var isForceTouchAvailable = ""
     
-    static let isMagsafeSupported = Device.current.hasMagsafe ? "Yes" : "No"
+    static let isMagsafeSupported = Device.current.hasMagsafe
     static let deviceName = Device.current.name ?? "-"
     static let deviceIdentifier = Device.current.description
     static let releaseDate = Device.current.releaseDate
@@ -28,10 +28,10 @@ final class DeviceVM {
     static let waterResistance = Device.current.waterResistance
     static let waterResistanceDescription = Device.current.waterResistanceDescription
 #if os(iOS)
-    static let supportsWirelessCharging = Device.current.supportsWirelessCharging ? "Yes" : "No"
-    static let supports5G = Device.current.has5gSupport ? "Yes" : "No"
+    static let hasWirelessCharging = Device.current.supportsWirelessCharging
+    static let supports5G = Device.current.has5gSupport
     static let dockConnector = Device.current.hasUSBCConnectivity ? "USB-C" : "Lightning"
-    static let hasDynamicIsland = Device.current.hasDynamicIsland ? "Yes" : "No"
+    static let hasDynamicIsland = Device.current.hasDynamicIsland
 #endif
     
     var internalName: String {
@@ -49,9 +49,7 @@ final class DeviceVM {
     }
 #endif
     
-    static var isUWBAvailable: String {
-        DeviceCapabilities.isUltraWidebandAvailable ? "Yes" : "No"
-    }
+    static let isUWBAvailable = DeviceCapabilities.isUltraWidebandAvailable
     
     var vendorId: String {
 #if os(watchOS)

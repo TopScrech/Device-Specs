@@ -23,7 +23,7 @@ struct WarningSection: View {
                 }
             }
             
-            if battery.lowPowerMode == "Yes" {
+            if battery.lowPowerMode {
                 WarningCard("Low power mode", icon: "leaf.fill", color: .green)
                     .animation(.default, value: battery.lowPowerMode)
             }

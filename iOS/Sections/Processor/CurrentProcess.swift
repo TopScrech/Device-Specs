@@ -10,7 +10,7 @@ struct CurrentProcess: View {
 #if os(iOS)
             if #available(iOS 18, *) {
                 LabeledContent("Performance profile", value: vm.performanceProfile)
-                LabeledContent("Sertified for iPhone performance gaming", value: vm.iphonePerformanceGamingSertified)
+                LabeledContent("Sertified for iPhone performance gaming", value: vm.iphonePerformanceGamingSertified.yesOrNo())
             }
 #endif
             NavigationLink("Environment variables") {

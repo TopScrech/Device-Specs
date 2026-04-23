@@ -25,10 +25,12 @@ struct DeviceWatchInfo: View {
         }
     }
     
+    private let waterLockEnabled = WKInterfaceDevice.current().isWaterLockEnabled
+    
     var body: some View {
         Section("Watch Specific") {
             LabeledContent("Crown orientation", value: crownOrientation)
-            LabeledContent("Water lock", value: WKInterfaceDevice.current().isWaterLockEnabled ? "Yes" : "No")
+            LabeledContent("Water lock", value: waterLockEnabled.yesOrNo())
             LabeledContent("Layout direction", value: layoutDirection)
             LabeledContent("Wrist location", value: wristLocation)
         }

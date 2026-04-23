@@ -3,28 +3,36 @@ import DeviceKit
 
 @Observable
 final class DisplayVM {
-    private(set) var resolution = ""
-    private(set) var dencity = ""
-    private(set) var diagonalSize = ""
-    
-    init() {
-        fetchScreenResolution()
-    }
-    
-#if !os(watchOS)
-    static var refreshRate = String(UIScreen.main.maximumFramesPerSecond)
-#endif
-    
+
+#if !os(tvOS)
+    static var diagonalSize: String {
 #if os(iOS)
-    let isRounded = Device.current.hasRoundedDisplayCorners ? "Yes" : "No"
+        let diagonal = Device.current.diagonal
+        return "\(diagonal)\""
+#else
+        guard let ppi = Device.current.ppi else {
+            return ""
+        }
+        
+        let screen = WKInterfaceDevice.current()
+        let size = screen.screenBounds.size
+        let diagonalPixels = hypot(size.width * screen.screenScale, size.height * screen.screenScale)
+        let diagonal = diagonalPixels / Double(ppi)
+        
+        return "\(diagonal.formatted(.number.precision(.fractionLength(2))))\""
+#endif
+    }
 #endif
     
-    static var aspectRatio: String {
-        let screenRatio = Device.current.screenRatio
-        return screenRatio.height.description + " : " + screenRatio.width.description
+    static var pixelDencity: String? {
+        guard let ppi = Device.current.ppi else {
+            return ""
+        }
+        
+        return "\(ppi) PPI"
     }
     
-    func fetchScreenResolution() {
+    static var resolution: String {
 #if os(watchOS)
         let screenBounds = WKInterfaceDevice.current().screenBounds
         let screenScale = WKInterfaceDevice.current().screenScale
@@ -35,15 +43,19 @@ final class DisplayVM {
         let screenWidth = Int(screenBounds.size.width * screenScale)
         let screenHeight = Int(screenBounds.size.height * screenScale)
         
-        resolution = "\(screenWidth) x \(screenHeight)"
-        
-#if !os(tvOS)
-        diagonalSize = "\(Device.current.diagonal)\""
+        return "\(screenWidth) x \(screenHeight)"
+    }
+    
+#if !os(watchOS)
+    static var refreshRate = String(UIScreen.main.maximumFramesPerSecond)
 #endif
-        guard let ppi = Device.current.ppi else {
-            return
-        }
-        
-        dencity = "\(ppi.description) PPI"
+    
+#if os(iOS)
+    static let roundedCorners = Device.current.hasRoundedDisplayCorners
+#endif
+    
+    static var aspectRatio: String {
+        let screenRatio = Device.current.screenRatio
+        return "\(screenRatio.height) : \(screenRatio.width)"
     }
 }
