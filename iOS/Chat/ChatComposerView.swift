@@ -1,6 +1,6 @@
 import ScrechKit
 
-@available(iOS 26, *)
+@available(iOS 26, visionOS 26, *)
 struct ChatComposerView: View {
     @Environment(ChatVM.self) private var vm
     
