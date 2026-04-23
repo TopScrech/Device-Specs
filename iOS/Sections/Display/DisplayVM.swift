@@ -3,9 +3,23 @@ import DeviceKit
 
 @Observable
 final class DisplayVM {
-#if os(iOS)
-    static let diagonalSize = "\(Device.current.diagonal)\""
+    static var diagonalSize: String {
+#if os(watchOS)
+        guard let ppi = Device.current.ppi else {
+            return ""
+        }
+        
+        let screen = WKInterfaceDevice.current()
+        let size = screen.screenBounds.size
+        let diagonalPixels = hypot(size.width * screen.screenScale, size.height * screen.screenScale)
+        let diagonal = diagonalPixels / Double(ppi)
+        
+        return "\(diagonal.formatted(.number.precision(.fractionLength(2))))\""
+#else
+        let diagonal = Device.current.diagonal
+        return "\(diagonal)\""
 #endif
+    }
     
     static var pixelDencity: String? {
         guard let ppi = Device.current.ppi else {
