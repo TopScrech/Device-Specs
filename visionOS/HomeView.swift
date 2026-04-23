@@ -99,6 +99,7 @@ struct HomeView: View {
                         sheetChat = true
                     }
                     .symbolRenderingMode(.multicolor)
+                    .keyboardShortcut("a")
                 }
             }
         }
