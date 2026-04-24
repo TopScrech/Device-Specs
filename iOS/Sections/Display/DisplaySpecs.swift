@@ -27,7 +27,7 @@ struct DisplaySpecs: View {
                 LabeledContent("Brightness", value: "\(Int(brightness))%")
                 
 #if !os(watchOS) && !EXTENSION
-                Slider(value: $brightness, in: 0...100, step: 1) {
+                Slider(value: $brightness, in: 0...100, step: 5) {
                     Text("Brightness")
                 }
 #endif
