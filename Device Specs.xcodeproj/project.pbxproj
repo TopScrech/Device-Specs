@@ -36,6 +36,8 @@
 		F3F5AD782E886162007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD772E886162007AD97D /* Appearance */; };
 		F3F85EE32C957CF700AE0A1D /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85EE22C957CF700AE0A1D /* DeviceKit */; };
 		F3F85F292C962EC900AE0A1D /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85F282C962EC900AE0A1D /* DeviceKit */; };
+		F4C200012F8A000000000001 /* ChitChat in Frameworks */ = {isa = PBXBuildFile; productRef = F4C200032F8A000000000001 /* ChitChat */; };
+		F4C200022F8A000000000001 /* ChitChat in Frameworks */ = {isa = PBXBuildFile; productRef = F4C200042F8A000000000001 /* ChitChat */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,10 +217,6 @@
 		F383A3352ECF2DF700350A0F /* Exceptions for "iOS" folder in "watchOS" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Chat/ChatComposerView.swift,
-				Chat/ChatMessage.swift,
-				Chat/ChatMessageRole.swift,
-				Chat/ChatMessageRowView.swift,
 				Chat/ChatView.swift,
 				Chat/ChatVM.swift,
 				"Chat/Generable Models/BatteryInfo.swift",
@@ -353,10 +351,6 @@
 			membershipExceptions = (
 				AppIcon.icon,
 				Assets.xcassets,
-				Chat/ChatComposerView.swift,
-				Chat/ChatMessage.swift,
-				Chat/ChatMessageRole.swift,
-				Chat/ChatMessageRowView.swift,
 				Chat/ChatView.swift,
 				Chat/ChatVM.swift,
 				"Chat/Generable Models/BatteryInfo.swift",
@@ -467,10 +461,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				AppIcon.icon,
-				Chat/ChatComposerView.swift,
-				Chat/ChatMessage.swift,
-				Chat/ChatMessageRole.swift,
-				Chat/ChatMessageRowView.swift,
 				Chat/ChatView.swift,
 				Chat/ChatVM.swift,
 				"Chat/Generable Models/BatteryInfo.swift",
@@ -597,6 +587,7 @@
 		F3C3BDBA2C92D87C00BF91EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				F4C200022F8A000000000001 /* ChitChat in Frameworks */,
 				F329E18A2D37CC60007BA9D1 /* SafariCover in Frameworks */,
 				F31D32092DDC8CDA00E7B121 /* ScrechKit in Frameworks */,
 				F3C3BDDD2C92DAAA00BF91EE /* DeviceKit in Frameworks */,
@@ -606,6 +597,7 @@
 		F3E7EC372C676A13008CD17B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				F4C200012F8A000000000001 /* ChitChat in Frameworks */,
 				F357214D2C98584100967ACA /* ScrechCam in Frameworks */,
 				F3C68AE72CAFD7C80021B6F3 /* HealthyKit in Frameworks */,
 				F3F5AD622E880F05007AD97D /* Appearance in Frameworks */,
@@ -751,6 +743,7 @@
 			name = visionOS;
 			packageProductDependencies = (
 				F3C3BDDC2C92DAAA00BF91EE /* DeviceKit */,
+				F4C200042F8A000000000001 /* ChitChat */,
 				F3C68AD12CAFCDD20021B6F3 /* MailCover */,
 				F329E1892D37CC60007BA9D1 /* SafariCover */,
 				F31D32082DDC8CDA00E7B121 /* ScrechKit */,
@@ -782,6 +775,7 @@
 			name = iOS;
 			packageProductDependencies = (
 				F3E7EC982C67B9A8008CD17B /* DeviceKit */,
+				F4C200032F8A000000000001 /* ChitChat */,
 				F357214C2C98584100967ACA /* ScrechCam */,
 				F3C68AC92CAFCD3E0021B6F3 /* MailCover */,
 				F3C68AE62CAFD7C80021B6F3 /* HealthyKit */,
@@ -916,6 +910,7 @@
 			mainGroup = F3E7EC312C676A13008CD17B;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				F4C200052F8A000000000001 /* XCRemoteSwiftPackageReference "Chit-Chat" */,
 				F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */,
 				F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */,
 				F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */,
@@ -1776,6 +1771,14 @@
 				kind = branch;
 			};
 		};
+		F4C200052F8A000000000001 /* XCRemoteSwiftPackageReference "Chit-Chat" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/Chit-Chat";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1908,6 +1911,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
+		};
+		F4C200032F8A000000000001 /* ChitChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4C200052F8A000000000001 /* XCRemoteSwiftPackageReference "Chit-Chat" */;
+			productName = ChitChat;
+		};
+		F4C200042F8A000000000001 /* ChitChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4C200052F8A000000000001 /* XCRemoteSwiftPackageReference "Chit-Chat" */;
+			productName = ChitChat;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

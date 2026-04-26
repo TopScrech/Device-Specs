@@ -22,7 +22,7 @@ struct AppleIntelligenceSupport: View {
                 .foregroundStyle(.primary)
                 .symbolRenderingMode(.multicolor)
             
-            Text(isSupported ? "Your device supports Apple Intelligence" : "Your device does not support Apple Intelligence")
+            Text(isSupported ? "Your device supports Image Playground" : "Your device does not support Image Playground")
         }
         .padding(.vertical, 5)
     }

@@ -1,4 +1,5 @@
 import ScrechKit
+import ChitChat
 
 @available(iOS 26, *)
 struct ChatView: View {
@@ -18,7 +19,7 @@ struct ChatView: View {
                     .symbolRenderingMode(.multicolor)
                 } else {
                     ForEach(vm.messages) {
-                        ChatMessageRowView($0)
+                        ChatMessageBubble($0)
                     }
                 }
             }
@@ -27,6 +28,7 @@ struct ChatView: View {
         }
         .navigationTitle("Assistant")
         .toolbarTitleDisplayMode(.inline)
+        .animation(.default, value: vm.messages.count)
         .scrollIndicators(.hidden)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .task {
@@ -38,28 +40,24 @@ struct ChatView: View {
             Text("This indicator shows the amount of used tokens")
         }
         .overlay(alignment: .bottom) {
-            ChatComposerView()
-                .environment(vm)
+            ChatComposer(prompt: $vm.prompt, isResponding: $vm.isResponding) {
+                Task {
+                    await vm.sendPrompt()
+                }
+            }
+            .environment(vm)
         }
         .toolbar {
             if #available(iOS 26.4, visionOS 26.4, *) {
                 ToolbarItem(placement: .topBarLeading) {
-                    Button {
+                    TokenUsageGauge(value: vm.tokenUsage) {
                         alertTokenWindowUsage = true
-                    } label: {
-                        Gauge(value: vm.tokenUsage) {}
-                            .gaugeStyle(.accessoryCircularCapacity)
-                            .scaleEffect(0.5)
-                            .frame(30)
-                            .tint(.green)
-                            .animation(.default, value: vm.tokenUsage)
                     }
                 }
             }
             
             ToolbarItem(placement: .topBarTrailing) {
-                Button("New Chat", systemImage: "square.and.pencil", action: vm.startNewChat)
-                    .disabled(vm.isResponding || vm.messages.isEmpty)
+                NewChatButton(disabled: vm.isResponding || vm.messages.isEmpty, action: vm.startNewChat)
             }
         }
     }
