@@ -18,7 +18,7 @@ struct AppleIntelligenceSupport: View {
     
     var body: some View {
         Label {
-            Text(isSupported ? "Your device supports Apple Intelligence" : "Your device does not support Apple Intelligence")
+            Text(isSupported ? "Your device supports Image Playground" : "Your device does not support Image Playground")
         } icon: {
             Image(systemName: icon)
                 .foregroundStyle(.primary)
