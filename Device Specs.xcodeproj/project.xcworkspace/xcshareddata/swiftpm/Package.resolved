@@ -7,7 +7,7 @@
       "location" : "https://github.com/TopScrech/Appearance",
       "state" : {
         "branch" : "main",
-        "revision" : "88fc26ebed3e28d5f549fa76770dd464a3df852d"
+        "revision" : "63b3aa005019fd29033e8a588e0f1215b33e8403"
       }
     },
     {
@@ -16,7 +16,7 @@
       "location" : "https://github.com/TopScrech/Chit-Chat",
       "state" : {
         "branch" : "main",
-        "revision" : "84522d2a160aef42afe408bd253b552f04e04a3d"
+        "revision" : "771e3dbd503744f95918d969a4e52e466e61675c"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/TopScrech/HealthyKit",
       "state" : {
         "branch" : "main",
-        "revision" : "268d1834a7b391051dffd6fac4da7ef286bf44c2"
+        "revision" : "35f25c91da58ab6627da7aefde12c97c0a128104"
       }
     },
     {
