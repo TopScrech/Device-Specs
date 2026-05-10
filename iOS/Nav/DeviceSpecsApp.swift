@@ -2,6 +2,10 @@ import SwiftUI
 
 @main
 struct DeviceSpecsApp: App {
+#if os(iOS)
+    @UIApplicationDelegateAdaptor(DeviceSpecsAppDelegate.self) private var appDelegate
+#endif
+    
     private var nav = NavState()
     @StateObject private var store = ValueStore()
     
