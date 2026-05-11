@@ -19,7 +19,7 @@ struct HomeView: View {
     
     var body: some View {
         List {
-            AdView(title: "FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: URL(string: "https://fancontrol.dev")!)
+            AdView(title: "FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: URL(string: "https://fancontrol.dev?source=device-specs")!)
             
             WarningSection()
                 .environment(battery)

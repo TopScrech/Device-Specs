@@ -73,7 +73,7 @@ struct AdView: View {
 
 #Preview {
     List {
-        AdView(title: "FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: URL(string: "https://fancontrol.dev")!)
+        AdView(title: "FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: URL(string: "https://fancontrol.dev?source=device-specs")!)
     }
     .darkSchemePreferred()
 }
