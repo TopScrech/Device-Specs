@@ -3,6 +3,8 @@ import ScrechKit
 struct HomeView: View {
     @Environment(NavState.self) private var nav
     
+    let assistantRequest: Int
+    
     @State private var battery = BatteryVM()
     @State private var processor = ProcessorVM()
     @State private var display = DisplayVM()
@@ -17,6 +19,8 @@ struct HomeView: View {
     
     var body: some View {
         List {
+            AdView(title: "FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: URL(string: "https://fancontrol.dev")!)
+            
             WarningSection()
                 .environment(battery)
             
@@ -82,8 +86,18 @@ struct HomeView: View {
             }
         }
         .navigationTitle(DeviceVM.deviceIdentifier)
+        .scrollIndicators(.never)
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
             battery.fetchBatteryInfo()
+        }
+        .onChange(of: assistantRequest) { oldValue, newValue in
+            guard newValue > oldValue else {
+                return
+            }
+            
+            if #available(iOS 26, *) {
+                sheetChat = true
+            }
         }
         .sheet($sheetChat) {
             if #available(iOS 26, *) {
@@ -115,7 +129,7 @@ struct HomeView: View {
 
 #Preview {
     NavigationStack {
-        HomeView()
+        HomeView(assistantRequest: 0)
     }
     .darkSchemePreferred()
     .environment(BatteryVM())

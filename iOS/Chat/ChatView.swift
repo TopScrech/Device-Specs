@@ -6,6 +6,7 @@ struct ChatView: View {
     @State private var vm = ChatVM()
     
     @State private var alertTokenWindowUsage = false
+    @FocusState private var focus
     
     var body: some View {
         ScrollView {
@@ -40,7 +41,7 @@ struct ChatView: View {
             Text("This indicator shows the amount of used tokens")
         }
         .overlay(alignment: .bottom) {
-            ChatComposer(prompt: $vm.prompt, isResponding: $vm.isResponding) {
+            ChatComposer(prompt: $vm.prompt, isResponding: $vm.isResponding, isFocused: $focus) {
                 Task {
                     await vm.sendPrompt()
                 }

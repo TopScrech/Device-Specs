@@ -6,6 +6,17 @@
 	<false/>
 	<key>MusicHapticsSupported</key>
 	<true/>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconSymbolName</key>
+			<string>apple.intelligence</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Assistant</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).openAssistant</string>
+		</dict>
+	</array>
 	<key>NSBonjourServices</key>
 	<array>
 		<string>_specs._tcp</string>
