@@ -19,6 +19,8 @@ struct HomeView: View {
     
     var body: some View {
         List {
+            AdView(title: "FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: URL(string: "https://fancontrol.dev")!)
+            
             WarningSection()
                 .environment(battery)
             
@@ -84,6 +86,7 @@ struct HomeView: View {
             }
         }
         .navigationTitle(DeviceVM.deviceIdentifier)
+        .scrollIndicators(.never)
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
             battery.fetchBatteryInfo()
         }
