@@ -1,8 +1,6 @@
 import ScrechKit
 
 struct SettingsView: View {
-    @EnvironmentObject private var store: ValueStore
-    
     var body: some View {
         List {
 #if canImport(Appearance)
@@ -12,12 +10,15 @@ struct SettingsView: View {
                 openSettings()
             }
             .foregroundStyle(.foreground)
-            
-            Section("Debug") {
-                Toggle("Status bar", isOn: $store.showStatusBar)
-            }
         }
         .navigationTitle("Settings")
+        .toolbar {
+            NavigationLink {
+                DebugSettings()
+            } label: {
+                Label(String("Debug settings"), systemImage: "hammer")
+            }
+        }
     }
 }
 
