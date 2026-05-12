@@ -43,7 +43,7 @@
       "location" : "https://github.com/TopScrech/LaunchAtLogin",
       "state" : {
         "branch" : "main",
-        "revision" : "de46c95b812441c47eb2754c8bd10fc0ee2afa2e"
+        "revision" : "bfccfc4dfe80eec4b2c0fe0712d8bd954d1a2ce6"
       }
     },
     {
@@ -52,7 +52,7 @@
       "location" : "https://github.com/TopScrech/MailCover",
       "state" : {
         "branch" : "main",
-        "revision" : "21b254531c219d73dc551a9a1c4d89dc1013416e"
+        "revision" : "73113d2dfa79d7cd91798b6cbf8c2252b73bafb7"
       }
     },
     {
@@ -79,7 +79,7 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "fd773c46059dfaa41dbe3e754ba672f1273ea074"
+        "revision" : "a2f1a8b71c3b389cdf9917b14673d747d75ca051"
       }
     }
   ],
