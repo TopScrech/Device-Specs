@@ -17,9 +17,11 @@ struct HomeView: View {
     
     @State private var sheetChat = false
     
+    private let url = URL(string: "https://fancontrol.dev?source=device-specs")!
+    
     var body: some View {
         List {
-            AdView(title: "FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: URL(string: "https://fancontrol.dev?source=device-specs")!)
+            AdView("FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: url)
             
             WarningSection()
                 .environment(battery)

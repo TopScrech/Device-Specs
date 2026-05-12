@@ -3,9 +3,15 @@ import ScrechKit
 struct AdView: View {
     @Environment(\.colorScheme) private var colorScheme
     
-    let title: String
-    let subtitle: String
-    let url: URL
+    private let title: String
+    private let subtitle: String
+    private let url: URL
+    
+    init(_ title: String, subtitle: String, url: URL) {
+        self.title = title
+        self.subtitle = subtitle
+        self.url = url
+    }
     
     private let backgroundRounding = 22.0
     
@@ -72,8 +78,10 @@ struct AdView: View {
 }
 
 #Preview {
+    let url = URL(string: "https://fancontrol.dev?source=device-specs")!
+    
     List {
-        AdView(title: "FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: URL(string: "https://fancontrol.dev?source=device-specs")!)
+        AdView("FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: url)
     }
     .darkSchemePreferred()
 }
