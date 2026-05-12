@@ -22,6 +22,16 @@ struct SystemSpecs: View {
                 }
             }
             
+            Section("Current session") {
+                LabeledContent("Active time", value: vm.systemActiveTime)
+                    .animation(.default, value: vm.systemActiveTime)
+                
+                LabeledContent("System uptime", value: vm.systemUptime)
+                    .animation(.default, value: vm.systemUptime)
+            }
+            .monospacedDigit()
+            .numericTransition()
+            
             Section {
                 LabeledContent("Multitasking", value: vm.multitaskingSupported.yesOrNo())
                 
@@ -43,16 +53,6 @@ struct SystemSpecs: View {
                     LabeledContent("System fonts", value: vm.fontCount)
                 }
             }
-            
-            Section("Current session") {
-                LabeledContent("Active time", value: vm.systemActiveTime)
-                    .animation(.default, value: vm.systemActiveTime)
-                
-                LabeledContent("System uptime", value: vm.systemUptime)
-                    .animation(.default, value: vm.systemUptime)
-            }
-            .monospacedDigit()
-            .numericTransition()
         }
         .navigationTitle("System")
         .task {
