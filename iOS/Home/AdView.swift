@@ -71,7 +71,6 @@ struct AdView: View {
             }
         }
         .buttonStyle(.plain)
-        .accessibilityLabel("Open Fan Control website")
         .listRowBackground(Color.clear)
         .listRowInsets(.init(top: 8, leading: 0, bottom: 8, trailing: 0))
     }
