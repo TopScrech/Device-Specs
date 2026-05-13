@@ -32,6 +32,7 @@ struct ChatView: View {
         .animation(.default, value: vm.messages.count)
         .scrollIndicators(.hidden)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .ornamentDismissButton()
         .task {
             vm.printContextSize()
         }
