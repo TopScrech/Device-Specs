@@ -2,6 +2,7 @@ import ScrechKit
 
 struct AdView: View {
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.openURL) private var openURL
     
     private let title: String
     private let subtitle: String
@@ -13,18 +14,18 @@ struct AdView: View {
         self.url = url
     }
     
-    private let backgroundRounding = 22.0
+    private let backgroundRounding = 20.0
     
     private var backgroundColor: Color {
-        if colorScheme == .dark {
-            Color(red: 0.06, green: 0.09, blue: 0.13)
-        } else {
-            Color(red: 0.97, green: 0.98, blue: 0.98)
-        }
+        colorScheme == .dark
+        ? Color(red: 0.06, green: 0.09, blue: 0.13)
+        : Color(red: 0.97, green: 0.98, blue: 0.98)
     }
     
     var body: some View {
-        Link(destination: url) {
+        Button {
+            openURL(url)
+        } label: {
             HStack {
                 Image(.fanControl)
                     .resizable()
@@ -72,7 +73,7 @@ struct AdView: View {
         }
         .buttonStyle(.plain)
         .listRowBackground(Color.clear)
-        .listRowInsets(.init(top: 8, leading: 0, bottom: 8, trailing: 0))
+        .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
     }
 }
 

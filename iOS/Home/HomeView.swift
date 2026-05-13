@@ -99,6 +99,7 @@ struct HomeView: View {
                 }
             }
         }
+        .listSectionSpacing(16)
         .navigationTitle(DeviceVM.deviceIdentifier)
         .scrollIndicators(.never)
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
