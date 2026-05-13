@@ -12,11 +12,11 @@ struct SystemSpecs: View {
                 LabeledContent("Build", value: SystemVM.buildNumber)
             }
             
-            if #available(iOS 18.1, visionOS 2.4, *) {
+            if #available(iOS 18.1, *) {
                 Section {
                     AppleIntelligenceSupport()
                     
-                    if #available(iOS 26, visionOS 26, *) {
+                    if #available(iOS 26, *) {
                         FoundationModelsSupport()
                     }
                 }

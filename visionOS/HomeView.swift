@@ -87,21 +87,17 @@ struct HomeView: View {
         .navigationTitle("Device Specs")
         .foregroundStyle(.foreground)
         .sheet($sheetChat) {
-            if #available(visionOS 26, *) {
-                NavigationStack {
-                    ChatView()
-                }
+            NavigationStack {
+                ChatView()
             }
         }
         .toolbar {
-            if #available(visionOS 26, *) {
-                ToolbarItem(placement: .topBarTrailing) {
-                    SFButton("apple.intelligence") {
-                        sheetChat = true
-                    }
-                    .symbolRenderingMode(.multicolor)
-                    .keyboardShortcut("a")
+            ToolbarItem(placement: .topBarTrailing) {
+                SFButton("apple.intelligence") {
+                    sheetChat = true
                 }
+                .symbolRenderingMode(.multicolor)
+                .keyboardShortcut("a")
             }
         }
     }

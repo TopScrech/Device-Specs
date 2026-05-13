@@ -50,7 +50,7 @@ struct ChatView: View {
             .environment(vm)
         }
         .toolbar {
-            if #available(iOS 26.4, visionOS 26.4, *) {
+            if #available(iOS 26.4, *) {
                 ToolbarItem(placement: .topBarLeading) {
                     TokenUsageGauge(value: vm.tokenUsage) {
                         alertTokenWindowUsage = true

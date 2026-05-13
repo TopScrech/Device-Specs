@@ -21,12 +21,8 @@ struct AboutView: View {
                     vm.trigger.toggle()
                 }
             
-            if #available(visionOS 26, *) {
-                image
-                    .hapticOn(vm.trigger, as: .impact)
-            } else {
-                image
-            }
+            image
+                .hapticOn(vm.trigger, as: .impact)
             
             Text(vm.versionAndBuild)
                 .title2(.bold, design: .rounded)

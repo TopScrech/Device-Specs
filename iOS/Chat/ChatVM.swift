@@ -7,7 +7,7 @@ import FoundationModels
 #endif
 
 @Observable
-@available(iOS 26, visionOS 26, *)
+@available(iOS 26, *)
 final class ChatVM {
     var prompt = ""
     var messages: [ChatMessage] = []
@@ -121,7 +121,7 @@ final class ChatVM {
     }
     
     private func updateTranscriptTokenUsage() async {
-        guard #available(iOS 26.4, visionOS 26.4, *) else { return }
+        guard #available(iOS 26.4, *) else { return }
         
         do {
             let transcriptTokenUsage = try await model.tokenCount(for: session.transcript)

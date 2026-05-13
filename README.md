@@ -10,5 +10,5 @@ Device Specs explorer
 - iOS / iPadOS 17+
 - macOS 14+
 - watchOS 10+
-- visionOS 1+
 - tvOS 17+
+- visionOS 26.5+
