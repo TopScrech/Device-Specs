@@ -10,7 +10,6 @@ struct HomeView: View {
     @State private var processor = ProcessorVM()
     @State private var memory = MemoryVM()
     @State private var display = DisplayVM()
-    @State private var app = AppVM()
     @State private var camera = CameraVM()
     @State private var connectivity = ConnectivityVM()
     
@@ -71,15 +70,6 @@ struct HomeView: View {
             }
             
             Section {
-                SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
-                    NavigationStack {
-                        AboutView()
-                            .environment(app)
-                    }
-                }
-            }
-            
-            Section {
                 Button("Dismiss", role: .destructive) {
                     dismiss()
                 }
@@ -99,7 +89,6 @@ struct HomeView: View {
     .environment(SystemVM())
     .environment(DeviceVM())
     .environment(MemoryVM())
-    .environment(AppVM())
     .environment(ConnectivityVM())
     .environment(CameraVM())
     .environment(NavState())

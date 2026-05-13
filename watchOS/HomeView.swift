@@ -7,7 +7,6 @@ struct HomeView: View {
     @State private var system = SystemVM()
     @State private var device = DeviceVM()
     @State private var memory = MemoryVM()
-    @State private var app = AppVM()
     
     var body: some View {
         List {
@@ -46,20 +45,13 @@ struct HomeView: View {
                 NetworkSpecs()
             }
             
-            SpecsLink("Sensors", icon: "barometer") {
-                SensorsView()
-            }
-            
             Section {
+                SpecsLink("Sensors", icon: "barometer") {
+                    SensorsView()
+                }
+                
                 SpecsLink("Tests", icon: "testtube.2") {
                     TestList()
-                }
-            }
-            
-            Section {
-                SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
-                    AboutView()
-                        .environment(app)
                 }
             }
         }
@@ -78,5 +70,4 @@ struct HomeView: View {
     .environment(SystemVM())
     .environment(DeviceVM())
     .environment(MemoryVM())
-    .environment(AppVM())
 }

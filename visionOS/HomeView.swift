@@ -7,7 +7,6 @@ struct HomeView: View {
     @State private var device = DeviceVM()
     @State private var memory = MemoryVM()
     @State private var connectivity = ConnectivityVM()
-    @State private var app = AppVM()
     
     @State private var sheetChat = false
     
@@ -52,27 +51,21 @@ struct HomeView: View {
                 NetworkSpecs()
                     .environment(connectivity)
             }
-#if DEBUG
-            SpecsLink("Sensors", icon: "barometer") {
-                SensorsView()
-            }
-#endif
+            
             SpecsLink("Accessibility", icon: "accessibility") {
                 AccessibilitySpecs()
             }
             
             Section {
+#if DEBUG
+                SpecsLink("Sensors", icon: "barometer") {
+                    SensorsView()
+                }
+#endif
                 NavigationLink {
                     AuthTest()
                 } label: {
                     Label("Tests", systemImage: "testtube.2")
-                }
-            }
-            
-            Section {
-                SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
-                    AboutView()
-                        .environment(app)
                 }
             }
         }
@@ -106,5 +99,4 @@ struct HomeView: View {
     .environment(DeviceVM())
     .environment(MemoryVM())
     .environment(ConnectivityVM())
-    .environment(AppVM())
 }

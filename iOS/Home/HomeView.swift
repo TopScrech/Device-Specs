@@ -11,7 +11,6 @@ struct HomeView: View {
     @State private var system = SystemVM()
     @State private var device = DeviceVM()
     @State private var memory = MemoryVM()
-    @State private var app = AppVM()
     @State private var connectivity = ConnectivityVM()
     @State private var camera = CameraVM()
     
@@ -91,13 +90,6 @@ struct HomeView: View {
                 
                 HomeViewTestLink()
             }
-            
-            Section {
-                SpecsLink("About", icon: "questionmark.square.dashed", spec: "v" + app.version) {
-                    AboutView()
-                        .environment(app)
-                }
-            }
         }
         .listSectionSpacing(16)
         .navigationTitle(DeviceVM.deviceIdentifier)
@@ -153,7 +145,6 @@ struct HomeView: View {
     .environment(SystemVM())
     .environment(DeviceVM())
     .environment(MemoryVM())
-    .environment(AppVM())
     .environment(ConnectivityVM())
     .environment(CameraVM())
 }
