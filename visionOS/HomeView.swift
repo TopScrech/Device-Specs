@@ -62,24 +62,25 @@ struct HomeView: View {
             }
             
             Section {
-                SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
-                    AboutView()
-                        .environment(app)
+                NavigationLink {
+                    AuthTest()
+                } label: {
+                    HStack {
+                        Label("Tests", systemImage: "testtube.2")
+                        
+                        Spacer()
+                        
+                        Image(systemName: "chevron.forward")
+                            .footnote(.bold)
+                            .tertiary()
+                    }
                 }
             }
             
-            NavigationLink {
-                AuthTest()
-            } label: {
-                HStack {
-                    Label("Tests", systemImage: "testtube.2")
-                    
-                    Spacer()
-                    
-                    Image(systemName: "chevron.forward")
-                        .bold()
-                        .footnote()
-                        .foregroundStyle(.tertiary)
+            Section {
+                SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
+                    AboutView()
+                        .environment(app)
                 }
             }
         }
