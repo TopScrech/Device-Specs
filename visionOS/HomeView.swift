@@ -65,15 +65,7 @@ struct HomeView: View {
                 NavigationLink {
                     AuthTest()
                 } label: {
-                    HStack {
-                        Label("Tests", systemImage: "testtube.2")
-                        
-                        Spacer()
-                        
-                        Image(systemName: "chevron.forward")
-                            .footnote(.bold)
-                            .tertiary()
-                    }
+                    Label("Tests", systemImage: "testtube.2")
                 }
             }
             
