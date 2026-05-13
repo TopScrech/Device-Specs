@@ -1,9 +1,4 @@
-#if os(visionOS)
 import SwiftUI
-
-#if canImport(SafariCover)
-import SafariCover
-#endif
 
 @main
 struct DeviceSpecsApp: App {
@@ -13,4 +8,3 @@ struct DeviceSpecsApp: App {
         }
     }
 }
-#endif
