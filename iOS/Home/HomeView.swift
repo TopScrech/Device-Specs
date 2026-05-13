@@ -69,16 +69,28 @@ struct HomeView: View {
                     .environment(camera)
             }
             
-            Button("Sensors", systemImage: "barometer") {
-                nav.navigate(.toSensors)
-            }
-            .foregroundStyle(.foreground)
-            
             SpecsLink("Accessibility", icon: "accessibility") {
                 AccessibilitySpecs()
             }
             
-            HomeViewTestLink()
+            Section {
+                Button {
+                    nav.navigate(.toSensors)
+                } label: {
+                    HStack {
+                        Label("Sensors", systemImage: "barometer")
+                        
+                        Spacer()
+                        
+                        Image(systemName: "chevron.forward")
+                            .caption(.semibold)
+                            .tertiary()
+                    }
+                }
+                .foregroundStyle(.foreground)
+                
+                HomeViewTestLink()
+            }
             
             Section {
                 SpecsLink("About", icon: "questionmark.square.dashed", spec: "v" + app.version) {
