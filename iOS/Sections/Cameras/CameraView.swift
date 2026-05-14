@@ -10,13 +10,9 @@ struct CameraView: View {
     var body: some View {
         Section(camera.name) {
             LabeledContent("Apperture", value: camera.lensApperture)
-            
             LabeledContent("Exposure", value: camera.exposure)
-            
             LabeledContent("Color space", value: camera.colorSpace)
-            
             LabeledContent("ISO", value: camera.iso)
-            
             LabeledContent("Manufacturer", value: camera.manufacturer)
             
             //            NavigationLink("Supported formats") {

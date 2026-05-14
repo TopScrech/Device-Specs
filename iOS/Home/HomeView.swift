@@ -1,4 +1,6 @@
 import ScrechKit
+import AutoUpdate
+import OSLog
 
 struct HomeView: View {
     @Environment(NavState.self) private var nav
@@ -15,6 +17,8 @@ struct HomeView: View {
     @State private var camera = CameraVM()
     
     @State private var sheetChat = false
+    @State private var alertUpdate = false
+    @State private var updateChecker = AppStoreUpdateChecker(appID: 6624303981)
     
     private let url = URL(string: "https://fancontrol.dev?source=device-specs")!
     
@@ -94,6 +98,12 @@ struct HomeView: View {
         .listSectionSpacing(16)
         .navigationTitle(DeviceVM.deviceIdentifier)
         .scrollIndicators(.never)
+        .appStoreOverlay($alertUpdate, id: updateChecker.configuration.appID)
+        .task {
+            if await updateChecker.checkForUpdates()?.updateAvailable == true {
+                alertUpdate = true
+            }
+        }
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
             battery.fetchBatteryInfo()
         }

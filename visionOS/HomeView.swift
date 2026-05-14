@@ -1,3 +1,4 @@
+import AutoUpdate
 import ScrechKit
 
 struct HomeView: View {
@@ -9,6 +10,7 @@ struct HomeView: View {
     @State private var connectivity = ConnectivityVM()
     
     @State private var sheetChat = false
+    @State private var updateChecker = AppStoreUpdateChecker(appID: 6624303981)
     
     var body: some View {
         List {
@@ -71,6 +73,14 @@ struct HomeView: View {
         }
         .navigationTitle("Device Specs")
         .foregroundStyle(.foreground)
+        .appStoreOverlay($updateChecker.alertUpdate, id: updateChecker.configuration.appID)
+        .task {
+            guard let currentVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String else {
+                return
+            }
+            
+            await updateChecker.checkForUpdates(currentVersion: currentVersion)
+        }
         .sheet($sheetChat) {
             NavigationStack {
                 ChatView()

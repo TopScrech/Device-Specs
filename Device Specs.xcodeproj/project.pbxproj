@@ -36,6 +36,8 @@
 		F3F5AD782E886162007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD772E886162007AD97D /* Appearance */; };
 		F3F85EE32C957CF700AE0A1D /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85EE22C957CF700AE0A1D /* DeviceKit */; };
 		F3F85F292C962EC900AE0A1D /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F85F282C962EC900AE0A1D /* DeviceKit */; };
+		F4A100012FE0000000000001 /* AutoUpdate in Frameworks */ = {isa = PBXBuildFile; productRef = F4A100032FE0000000000003 /* AutoUpdate */; };
+		F4A100022FE0000000000002 /* AutoUpdate in Frameworks */ = {isa = PBXBuildFile; productRef = F4A100042FE0000000000004 /* AutoUpdate */; };
 		F4C200012F8A000000000001 /* ChitChat in Frameworks */ = {isa = PBXBuildFile; productRef = F4C200032F8A000000000001 /* ChitChat */; };
 		F4C200022F8A000000000001 /* ChitChat in Frameworks */ = {isa = PBXBuildFile; productRef = F4C200042F8A000000000001 /* ChitChat */; };
 /* End PBXBuildFile section */
@@ -594,6 +596,7 @@
 		F3C3BDBA2C92D87C00BF91EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				F4A100022FE0000000000002 /* AutoUpdate in Frameworks */,
 				F4C200022F8A000000000001 /* ChitChat in Frameworks */,
 				F329E18A2D37CC60007BA9D1 /* SafariCover in Frameworks */,
 				F31D32092DDC8CDA00E7B121 /* ScrechKit in Frameworks */,
@@ -604,6 +607,7 @@
 		F3E7EC372C676A13008CD17B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				F4A100012FE0000000000001 /* AutoUpdate in Frameworks */,
 				F4C200012F8A000000000001 /* ChitChat in Frameworks */,
 				F357214D2C98584100967ACA /* ScrechCam in Frameworks */,
 				F3C68AE72CAFD7C80021B6F3 /* HealthyKit in Frameworks */,
@@ -754,6 +758,7 @@
 				F3C68AD12CAFCDD20021B6F3 /* MailCover */,
 				F329E1892D37CC60007BA9D1 /* SafariCover */,
 				F31D32082DDC8CDA00E7B121 /* ScrechKit */,
+				F4A100042FE0000000000004 /* AutoUpdate */,
 			);
 			productName = visionOS;
 			productReference = F3C3BDBD2C92D87C00BF91EE /* visionOS.app */;
@@ -789,6 +794,7 @@
 				F329E1832D37CA7D007BA9D1 /* SafariCover */,
 				F31D32042DDC8CCB00E7B121 /* ScrechKit */,
 				F3F5AD612E880F05007AD97D /* Appearance */,
+				F4A100032FE0000000000003 /* AutoUpdate */,
 			);
 			productName = "Device Specs";
 			productReference = F3E7EC3A2C676A13008CD17B /* iOS.app */;
@@ -926,6 +932,7 @@
 				F358F0212D2C185800BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
 				F329E1822D37CA7D007BA9D1 /* XCRemoteSwiftPackageReference "SafariCover" */,
 				F3F5AD602E880F05007AD97D /* XCRemoteSwiftPackageReference "Appearance" */,
+				F4A100052FE0000000000005 /* XCRemoteSwiftPackageReference "AutoUpdate" */,
 			);
 			preferredProjectObjectVersion = 100;
 			productRefGroup = F3E7EC3B2C676A13008CD17B /* Products */;
@@ -1194,6 +1201,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/visionOS.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
+				INFOPLIST_KEY_CFBundleShortVersionString = "$(MARKETING_VERSION)";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1224,6 +1232,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/visionOS.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_CFBundleShortVersionString = "$(MARKETING_VERSION)";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1389,6 +1398,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS/iOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
+				INFOPLIST_KEY_CFBundleShortVersionString = "$(MARKETING_VERSION)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "This permission is required in order to test biometric authentication";
@@ -1441,6 +1451,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS/iOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_CFBundleShortVersionString = "$(MARKETING_VERSION)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "This permission is required in order to test biometric authentication";
@@ -1778,6 +1789,14 @@
 				kind = branch;
 			};
 		};
+		F4A100052FE0000000000005 /* XCRemoteSwiftPackageReference "AutoUpdate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/AutoUpdate";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		F4C200052F8A000000000001 /* XCRemoteSwiftPackageReference "Chit-Chat" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/Chit-Chat";
@@ -1918,6 +1937,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
+		};
+		F4A100032FE0000000000003 /* AutoUpdate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4A100052FE0000000000005 /* XCRemoteSwiftPackageReference "AutoUpdate" */;
+			productName = AutoUpdate;
+		};
+		F4A100042FE0000000000004 /* AutoUpdate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4A100052FE0000000000005 /* XCRemoteSwiftPackageReference "AutoUpdate" */;
+			productName = AutoUpdate;
 		};
 		F4C200032F8A000000000001 /* ChitChat */ = {
 			isa = XCSwiftPackageProductDependency;
