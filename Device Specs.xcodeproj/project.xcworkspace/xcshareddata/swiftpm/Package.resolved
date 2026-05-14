@@ -1,5 +1,5 @@
 {
-  "originHash" : "2288e17b452beead3df1a81cd37271bf17f94960ad6884491834de2e00dfc6aa",
+  "originHash" : "999920eec8472797d0164628c5e8b7e3f3ef69386631ba0629072d0c6c43bc46",
   "pins" : [
     {
       "identity" : "appearance",
@@ -8,6 +8,15 @@
       "state" : {
         "branch" : "main",
         "revision" : "63b3aa005019fd29033e8a588e0f1215b33e8403"
+      }
+    },
+    {
+      "identity" : "autoupdate",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TopScrech/AutoUpdate",
+      "state" : {
+        "branch" : "main",
+        "revision" : "7e4a8e286304f10ffc771f3c8a23b78229299286"
       }
     },
     {
@@ -43,7 +52,7 @@
       "location" : "https://github.com/TopScrech/LaunchAtLogin",
       "state" : {
         "branch" : "main",
-        "revision" : "de46c95b812441c47eb2754c8bd10fc0ee2afa2e"
+        "revision" : "bfccfc4dfe80eec4b2c0fe0712d8bd954d1a2ce6"
       }
     },
     {
@@ -52,7 +61,7 @@
       "location" : "https://github.com/TopScrech/MailCover",
       "state" : {
         "branch" : "main",
-        "revision" : "21b254531c219d73dc551a9a1c4d89dc1013416e"
+        "revision" : "73113d2dfa79d7cd91798b6cbf8c2252b73bafb7"
       }
     },
     {
@@ -79,7 +88,7 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "fd773c46059dfaa41dbe3e754ba672f1273ea074"
+        "revision" : "a2f1a8b71c3b389cdf9917b14673d747d75ca051"
       }
     }
   ],

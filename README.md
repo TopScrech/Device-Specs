@@ -7,8 +7,8 @@ Device Specs explorer
 <img width="330" height="598" alt="Screenshot 2026-05-09 at 21 24 56" src="https://github.com/user-attachments/assets/07a69946-7873-4efc-9ec7-98f7e618c8aa" />
 
 ## Supported platforms
-- iOS/iPadOS 17+
+- iOS / iPadOS 17+
 - macOS 14+
 - watchOS 10+
-- visionOS 1+
 - tvOS 17+
+- visionOS 26.5+

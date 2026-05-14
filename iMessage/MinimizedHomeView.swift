@@ -11,7 +11,6 @@ struct MinimizedHomeView: View {
     @State private var battery = BatteryVM()
     @State private var connectivity = ConnectivityVM()
     @State private var camera = CameraVM()
-    @State private var app = AppVM()
     
     @State private var isPresented = false
     
@@ -34,18 +33,14 @@ struct MinimizedHomeView: View {
             
             LabeledContent("Network", icon: "network", value: connectivity.type)
             LabeledContent("Camera", icon: "camera", value: camera.hasLidarText)
-            Label("Sensors", systemImage: "barometer")
             Label("Accessibility", systemImage: "accessibility")
             
             Section {
+                Label("Sensors", systemImage: "barometer")
                 Label("Tests", systemImage: "testtube.2")
             }
-            
-            Section {
-                LabeledContent("About", icon: "questionmark.square.dashed", value: app.versionAndBuild)
-            }
         }
-        .fullScreenCover(isPresented: $isPresented) {
+        .fullScreenCover($isPresented) {
             SecondaryContainer()
                 .environment(nav)
         }
@@ -65,5 +60,4 @@ struct MinimizedHomeView: View {
     .environment(MemoryVM())
     .environment(ConnectivityVM())
     .environment(CameraVM())
-    .environment(AppVM())
 }

@@ -1,4 +1,6 @@
 import ScrechKit
+import AutoUpdate
+import OSLog
 
 struct HomeView: View {
     @Environment(NavState.self) private var nav
@@ -11,15 +13,18 @@ struct HomeView: View {
     @State private var system = SystemVM()
     @State private var device = DeviceVM()
     @State private var memory = MemoryVM()
-    @State private var app = AppVM()
     @State private var connectivity = ConnectivityVM()
     @State private var camera = CameraVM()
     
     @State private var sheetChat = false
+    @State private var alertUpdate = false
+    @State private var updateChecker = AppStoreUpdateChecker(appID: 6624303981)
+    
+    private let url = URL(string: "https://fancontrol.dev?source=device-specs")!
     
     var body: some View {
         List {
-            AdView(title: "FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: URL(string: "https://fancontrol.dev?source=device-specs")!)
+            AdView("FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: url)
             
             WarningSection()
                 .environment(battery)
@@ -67,26 +72,38 @@ struct HomeView: View {
                     .environment(camera)
             }
             
-            Button("Sensors", systemImage: "barometer") {
-                nav.navigate(.toSensors)
-            }
-            .foregroundStyle(.foreground)
-            
             SpecsLink("Accessibility", icon: "accessibility") {
                 AccessibilitySpecs()
             }
             
-            HomeViewTestLink()
-            
             Section {
-                SpecsLink("About", icon: "questionmark.square.dashed", spec: "v" + app.version) {
-                    AboutView()
-                        .environment(app)
+                Button {
+                    nav.navigate(.toSensors)
+                } label: {
+                    HStack {
+                        Label("Sensors", systemImage: "barometer")
+                        
+                        Spacer()
+                        
+                        Image(systemName: "chevron.forward")
+                            .caption(.semibold)
+                            .tertiary()
+                    }
                 }
+                .foregroundStyle(.foreground)
+                
+                HomeViewTestLink()
             }
         }
+        .listSectionSpacing(16)
         .navigationTitle(DeviceVM.deviceIdentifier)
         .scrollIndicators(.never)
+        .appStoreOverlay($alertUpdate, id: updateChecker.configuration.appID)
+        .task {
+            if await updateChecker.checkForUpdates()?.updateAvailable == true {
+                alertUpdate = true
+            }
+        }
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
             battery.fetchBatteryInfo()
         }
@@ -138,7 +155,6 @@ struct HomeView: View {
     .environment(SystemVM())
     .environment(DeviceVM())
     .environment(MemoryVM())
-    .environment(AppVM())
     .environment(ConnectivityVM())
     .environment(CameraVM())
 }

@@ -1,3 +1,4 @@
+import AutoUpdate
 import ScrechKit
 
 struct HomeView: View {
@@ -7,9 +8,9 @@ struct HomeView: View {
     @State private var device = DeviceVM()
     @State private var memory = MemoryVM()
     @State private var connectivity = ConnectivityVM()
-    @State private var app = AppVM()
     
     @State private var sheetChat = false
+    @State private var updateChecker = AppStoreUpdateChecker(appID: 6624303981)
     
     var body: some View {
         List {
@@ -52,55 +53,46 @@ struct HomeView: View {
                 NetworkSpecs()
                     .environment(connectivity)
             }
-#if DEBUG
-            SpecsLink("Sensors", icon: "barometer") {
-                SensorsView()
-            }
-#endif
+            
             SpecsLink("Accessibility", icon: "accessibility") {
                 AccessibilitySpecs()
             }
             
             Section {
-                SpecsLink("About", icon: "questionmark.square.dashed", spec: app.versionAndBuild) {
-                    AboutView()
-                        .environment(app)
+#if DEBUG
+                SpecsLink("Sensors", icon: "barometer") {
+                    SensorsView()
                 }
-            }
-            
-            NavigationLink {
-                AuthTest()
-            } label: {
-                HStack {
+#endif
+                NavigationLink {
+                    AuthTest()
+                } label: {
                     Label("Tests", systemImage: "testtube.2")
-                    
-                    Spacer()
-                    
-                    Image(systemName: "chevron.forward")
-                        .bold()
-                        .footnote()
-                        .foregroundStyle(.tertiary)
                 }
             }
         }
         .navigationTitle("Device Specs")
         .foregroundStyle(.foreground)
+        .appStoreOverlay($updateChecker.alertUpdate, id: updateChecker.configuration.appID)
+        .task {
+            guard let currentVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String else {
+                return
+            }
+            
+            await updateChecker.checkForUpdates(currentVersion: currentVersion)
+        }
         .sheet($sheetChat) {
-            if #available(visionOS 26, *) {
-                NavigationStack {
-                    ChatView()
-                }
+            NavigationStack {
+                ChatView()
             }
         }
         .toolbar {
-            if #available(visionOS 26, *) {
-                ToolbarItem(placement: .topBarTrailing) {
-                    SFButton("apple.intelligence") {
-                        sheetChat = true
-                    }
-                    .symbolRenderingMode(.multicolor)
-                    .keyboardShortcut("a")
+            ToolbarItem(placement: .topBarTrailing) {
+                SFButton("apple.intelligence") {
+                    sheetChat = true
                 }
+                .symbolRenderingMode(.multicolor)
+                .keyboardShortcut("a")
             }
         }
     }
@@ -117,5 +109,4 @@ struct HomeView: View {
     .environment(DeviceVM())
     .environment(MemoryVM())
     .environment(ConnectivityVM())
-    .environment(AppVM())
 }

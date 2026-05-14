@@ -16,7 +16,7 @@ struct WarningCard: View {
             Label {
                 Text(title)
             } icon: {
-                if #available(iOS 18, tvOS 18, visionOS 2, *) {
+                if #available(iOS 18, tvOS 18, *) {
                     Image(systemName: icon)
                         .bold()
                         .foregroundStyle(color.gradient)

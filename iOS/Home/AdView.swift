@@ -2,23 +2,30 @@ import ScrechKit
 
 struct AdView: View {
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.openURL) private var openURL
     
-    let title: String
-    let subtitle: String
-    let url: URL
+    private let title: String
+    private let subtitle: String
+    private let url: URL
     
-    private let backgroundRounding = 22.0
+    init(_ title: String, subtitle: String, url: URL) {
+        self.title = title
+        self.subtitle = subtitle
+        self.url = url
+    }
+    
+    private let backgroundRounding = 20.0
     
     private var backgroundColor: Color {
-        if colorScheme == .dark {
-            Color(red: 0.06, green: 0.09, blue: 0.13)
-        } else {
-            Color(red: 0.97, green: 0.98, blue: 0.98)
-        }
+        colorScheme == .dark
+        ? Color(red: 0.06, green: 0.09, blue: 0.13)
+        : Color(red: 0.97, green: 0.98, blue: 0.98)
     }
     
     var body: some View {
-        Link(destination: url) {
+        Button {
+            openURL(url)
+        } label: {
             HStack {
                 Image(.fanControl)
                     .resizable()
@@ -65,15 +72,16 @@ struct AdView: View {
             }
         }
         .buttonStyle(.plain)
-        .accessibilityLabel("Open Fan Control website")
         .listRowBackground(Color.clear)
-        .listRowInsets(.init(top: 8, leading: 0, bottom: 8, trailing: 0))
+        .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
     }
 }
 
 #Preview {
+    let url = URL(string: "https://fancontrol.dev?source=device-specs")!
+    
     List {
-        AdView(title: "FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: URL(string: "https://fancontrol.dev?source=device-specs")!)
+        AdView("FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: url)
     }
     .darkSchemePreferred()
 }

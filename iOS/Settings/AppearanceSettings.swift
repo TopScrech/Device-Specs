@@ -5,10 +5,8 @@ struct AppearanceSettings: View {
     @EnvironmentObject private var store: ValueStore
     
     var body: some View {
-        Section {
-            AppearancePicker($store.appearance)
-                .foregroundStyle(.primary)
-        }
+        AppearancePicker($store.appearance)
+            .foregroundStyle(.primary)
     }
 }
 

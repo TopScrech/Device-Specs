@@ -18,7 +18,7 @@ final class AccessibilityVM {
         .init("VoiceOver",                          isEnabled: UIAccessibility.isVoiceOverRunning),
         .init("Reduce Motion",                      isEnabled: UIAccessibility.isReduceMotionEnabled),
         .init("Reduce Transparency",                isEnabled: UIAccessibility.isReduceTransparencyEnabled),
-        .init("Button Shapes",                      isEnabled: UIAccessibility.buttonShapesEnabled),
+        AccessibilityVM.buttonShapesParam,
         .init("Bold Text",                          isEnabled: UIAccessibility.isBoldTextEnabled),
         .init("Assistive Touch",                    isEnabled: UIAccessibility.isAssistiveTouchRunning),
         .init("Closed Captioning",                  isEnabled: UIAccessibility.isClosedCaptioningEnabled),
@@ -36,4 +36,12 @@ final class AccessibilityVM {
         .init("Prefers Cross Fade Transitions",     isEnabled: UIAccessibility.prefersCrossFadeTransitions),
         .init("Should Differentiate Without Color", isEnabled: UIAccessibility.shouldDifferentiateWithoutColor)
     ]
+    
+    private static var buttonShapesParam: AccessibilityParam {
+#if os(visionOS)
+        .init("Button Shapes", isEnabled: AccessibilitySettings.showBordersEnabled)
+#else
+        .init("Button Shapes", isEnabled: UIAccessibility.buttonShapesEnabled)
+#endif
+    }
 }
