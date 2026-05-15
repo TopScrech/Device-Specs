@@ -1745,16 +1745,16 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/LaunchAtLogin";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		F3C68AC82CAFCD3E0021B6F3 /* XCRemoteSwiftPackageReference "MailCover" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/MailCover";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		F3C68AE52CAFD7C80021B6F3 /* XCRemoteSwiftPackageReference "HealthyKit" */ = {
@@ -1769,8 +1769,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/ScrechKit";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
@@ -1785,16 +1785,16 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/Appearance";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		F4A100052FE0000000000005 /* XCRemoteSwiftPackageReference "AutoUpdate" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/AutoUpdate";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		F4C200052F8A000000000001 /* XCRemoteSwiftPackageReference "Chit-Chat" */ = {
