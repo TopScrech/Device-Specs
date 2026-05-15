@@ -1737,8 +1737,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/ScrechCam";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		F358F0212D2C185800BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
@@ -1761,8 +1761,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/HealthyKit";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */ = {
@@ -1777,8 +1777,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devicekit/DeviceKit";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		F3F5AD602E880F05007AD97D /* XCRemoteSwiftPackageReference "Appearance" */ = {
@@ -1801,8 +1801,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/Chit-Chat";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
