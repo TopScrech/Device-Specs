@@ -1778,7 +1778,7 @@
 			repositoryURL = "https://github.com/devicekit/DeviceKit";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 5.0.0;
 			};
 		};
 		F3F5AD602E880F05007AD97D /* XCRemoteSwiftPackageReference "Appearance" */ = {
