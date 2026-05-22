@@ -24,8 +24,6 @@ struct HomeView: View {
     
     var body: some View {
         List {
-            AdView("FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: url)
-            
             WarningSection()
                 .environment(battery)
             
@@ -94,6 +92,8 @@ struct HomeView: View {
                 
                 HomeViewTestLink()
             }
+            
+            AdView("FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: url)
         }
         .listSectionSpacing(16)
         .navigationTitle(DeviceVM.deviceIdentifier)
