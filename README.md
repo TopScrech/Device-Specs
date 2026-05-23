@@ -10,5 +10,5 @@ Download now on the [App Store](https://apps.apple.com/app/id6624303981)
 - iOS / iPadOS 17+
 - macOS 14+
 - watchOS 10+
-- tvOS 26.5+
-- visionOS 26.5+
+- tvOS 17+
+- visionOS 26.4+
