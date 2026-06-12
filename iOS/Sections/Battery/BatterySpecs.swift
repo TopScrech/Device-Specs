@@ -18,8 +18,10 @@ struct BatterySpecs: View {
             vm.fetchBatteryInfo()
         }
 #if !os(watchOS)
-        .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
-            vm.fetchBatteryInfo()
+        .task {
+            for await _ in NotificationCenter.default.notifications(named: UIApplication.didBecomeActiveNotification) {
+                vm.fetchBatteryInfo()
+            }
         }
 #endif
     }

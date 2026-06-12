@@ -104,8 +104,10 @@ struct HomeView: View {
                 alertUpdate = true
             }
         }
-        .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
-            battery.fetchBatteryInfo()
+        .task {
+            for await _ in NotificationCenter.default.notifications(named: UIApplication.didBecomeActiveNotification) {
+                battery.fetchBatteryInfo()
+            }
         }
         .onChange(of: assistantRequest) { oldValue, newValue in
             guard newValue > oldValue else {

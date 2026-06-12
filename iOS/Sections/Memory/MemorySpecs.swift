@@ -3,8 +3,6 @@ import SwiftUI
 struct MemorySpecs: View {
     @Environment(MemoryVM.self) private var vm
     
-    private let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
-    
     var body: some View {
         List {
             Section("RAM") {
@@ -47,12 +45,16 @@ struct MemorySpecs: View {
         .numericTransition()
         .monospacedDigit()
         .task {
-            vm.getMemoryUsage()
-            vm.getDiskInfo()
-        }
-        .onReceive(timer) { _ in
-            vm.getMemoryUsage()
-            vm.getDiskInfo()
+            while !Task.isCancelled {
+                vm.getMemoryUsage()
+                vm.getDiskInfo()
+                
+                do {
+                    try await Task.sleep(for: .seconds(1))
+                } catch {
+                    break
+                }
+            }
         }
     }
 }

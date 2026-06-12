@@ -3,8 +3,6 @@ import SwiftUI
 struct SystemSpecs: View {
     @Environment(SystemVM.self) private var vm
     
-    private let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
-    
     var body: some View {
         List {
             Section {
@@ -56,12 +54,16 @@ struct SystemSpecs: View {
         }
         .navigationTitle("System")
         .task {
-            vm.fetchSystemActiveTime()
-            vm.fetchSystemUptime()
-        }
-        .onReceive(timer) { _ in
-            vm.fetchSystemActiveTime()
-            vm.fetchSystemUptime()
+            while !Task.isCancelled {
+                vm.fetchSystemActiveTime()
+                vm.fetchSystemUptime()
+                
+                do {
+                    try await Task.sleep(for: .seconds(1))
+                } catch {
+                    break
+                }
+            }
         }
     }
 }
