@@ -19,7 +19,7 @@ struct FoundationModelsSupport: View {
     
     var body: some View {
         Label {
-            Text(isSupported ? "Your device supports Foundation Models" : "Your device does not support Foundation Models")
+            Text(isSupported ? "Foundation Models supported" : "Foundation Models supported")
         } icon: {
             Image(.foundationModels)
                 .resizable()

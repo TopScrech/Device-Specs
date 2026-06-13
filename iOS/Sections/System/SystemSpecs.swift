@@ -13,6 +13,7 @@ struct SystemSpecs: View {
             Section {
                 AppleIntelligenceSupport()
                 FoundationModelsSupport()
+                PrivateCloudComputeSupport()
             }
             
             Section("Current session") {
