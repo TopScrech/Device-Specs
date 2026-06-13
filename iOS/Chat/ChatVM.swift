@@ -53,6 +53,7 @@ final class ChatVM {
             GetCPUInfo(),
             GetStorageInfo(),
             GetMemoryInfo(),
+            GetBatteryInfo(),
             GetCameraInfo()
         ]
 #endif
