@@ -219,6 +219,8 @@
 			membershipExceptions = (
 				Chat/ChatView.swift,
 				Chat/ChatVM.swift,
+				Chat/DeviceChatMessage.swift,
+				Chat/DeviceChatMessageRow.swift,
 				"Chat/Generable Models/BatteryInfo.swift",
 				"Chat/Generable Models/CameraInfo.swift",
 				"Chat/Generable Models/CPUInfo.swift",
@@ -290,6 +292,8 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				AppIcon.icon,
+				Chat/DeviceChatMessage.swift,
+				Chat/DeviceChatMessageRow.swift,
 				"Chat/Generable Models/CameraInfo.swift",
 				"Chat/Generable Models/DeviceInfo.swift",
 				"Chat/Generable Models/DisplayInfo.swift",
@@ -357,6 +361,8 @@
 				Assets.xcassets,
 				Chat/ChatView.swift,
 				Chat/ChatVM.swift,
+				Chat/DeviceChatMessage.swift,
+				Chat/DeviceChatMessageRow.swift,
 				"Chat/Generable Models/BatteryInfo.swift",
 				"Chat/Generable Models/CameraInfo.swift",
 				"Chat/Generable Models/CPUInfo.swift",
@@ -440,6 +446,8 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Assets.xcassets,
+				Chat/DeviceChatMessage.swift,
+				Chat/DeviceChatMessageRow.swift,
 				DeviceKit/batteryCapacity.swift,
 				DeviceKit/bluetoothVersion.swift,
 				"DeviceKit/Disabled/L1 Cache.swift",
@@ -469,6 +477,8 @@
 				AppIcon.icon,
 				Chat/ChatView.swift,
 				Chat/ChatVM.swift,
+				Chat/DeviceChatMessage.swift,
+				Chat/DeviceChatMessageRow.swift,
 				"Chat/Generable Models/BatteryInfo.swift",
 				"Chat/Generable Models/CameraInfo.swift",
 				"Chat/Generable Models/CPUInfo.swift",
