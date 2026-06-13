@@ -11,10 +11,7 @@ struct SystemSpecs: View {
             }
             
             Section {
-                if #available(iOS 18.1, *) {
-                    AppleIntelligenceSupport()
-                }
-                
+                AppleIntelligenceSupport()
                 FoundationModelsSupport()
             }
             
