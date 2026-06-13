@@ -4,11 +4,14 @@ import SwiftUI
 import FoundationModels
 #endif
 
-@available(iOS 26, *)
 struct FoundationModelsSupport: View {
     private var isSupported: Bool {
 #if canImport(FoundationModels) && !os(watchOS)
-        SystemLanguageModel.default.isAvailable
+        if #available(anyAppleOS 26, *) {
+            SystemLanguageModel.default.isAvailable
+        } else {
+            false
+        }
 #else
         false
 #endif

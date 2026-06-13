@@ -10,14 +10,12 @@ struct SystemSpecs: View {
                 LabeledContent("Build", value: SystemVM.buildNumber)
             }
             
-            if #available(iOS 18.1, *) {
-                Section {
+            Section {
+                if #available(iOS 18.1, *) {
                     AppleIntelligenceSupport()
-                    
-                    if #available(iOS 26, *) {
-                        FoundationModelsSupport()
-                    }
                 }
+                
+                FoundationModelsSupport()
             }
             
             Section("Current session") {
