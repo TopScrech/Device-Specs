@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TopScrech/Chit-Chat",
       "state" : {
-        "revision" : "3364222fe76b967e541c688101e93efbf7c989d8",
-        "version" : "1.0.3"
+        "revision" : "34b99365f5cc3b338f430089710caf7384860faf",
+        "version" : "1.0.5"
       }
     },
     {
