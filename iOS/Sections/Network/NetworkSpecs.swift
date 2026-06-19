@@ -28,7 +28,7 @@ struct NetworkSpecs: View {
                 }
                 
                 if let signalStrength = connectivity.signalStrength {
-                    LabeledContent("Signal strength", value: String(format: "%.0f%%", signalStrength * 100))
+                    LabeledContent("Signal strength", value: signalStrength.formatted(.percent.precision(.fractionLength(0))))
                 }
                 
                 if let isSecure = connectivity.isSecure {
@@ -49,6 +49,28 @@ struct NetworkSpecs: View {
                 
                 if let securityType = connectivity.securityType {
                     LabeledContent("Security type", value: securityType)
+                }
+            }
+            
+            Section {
+                if let pathStatus = connectivity.pathStatus {
+                    LabeledContent("Status", value: pathStatus)
+                    
+                    if let pathUnsatisfiedReason = connectivity.pathUnsatisfiedReason {
+                        LabeledContent("Unsatisfied reason", value: pathUnsatisfiedReason)
+                    }
+                    
+                    LabeledContent("IPv4 support", value: connectivity.supportsIPv4.yesOrNo())
+                    LabeledContent("IPv6 support", value: connectivity.supportsIPv6.yesOrNo())
+                    LabeledContent("DNS support", value: connectivity.supportsDNS.yesOrNo())
+                    LabeledContent("Low Data Mode", value: connectivity.lowDataMode.yesOrNo())
+                    
+                    if let linkQuality = connectivity.linkQuality {
+                        LabeledContent("Link quality", value: linkQuality)
+                    }
+                } else {
+                    Text("Waiting for network path")
+                        .secondary()
                 }
             }
         }
