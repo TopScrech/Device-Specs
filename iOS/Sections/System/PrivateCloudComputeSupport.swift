@@ -6,7 +6,7 @@ import FoundationModels
 
 struct PrivateCloudComputeSupport: View {
     private var isSupported: Bool {
-#if canImport(FoundationModels)
+#if canImport(FoundationModels) && !os(tvOS)
         if #available(anyAppleOS 27, *) {
             PrivateCloudComputeLanguageModel().isAvailable
         } else {

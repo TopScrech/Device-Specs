@@ -1,5 +1,5 @@
-import ChitChat
 import Foundation
+import ChitChat
 
 struct DeviceChatMessage: Identifiable {
     let id = UUID()
