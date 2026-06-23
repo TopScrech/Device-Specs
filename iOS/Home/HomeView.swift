@@ -135,7 +135,7 @@ struct HomeView: View {
             
             if #available(iOS 26, *) {
                 ToolbarItem(placement: .topBarTrailing) {
-                    SFButton("apple.intelligence") {
+                    SFButton("siri") {
                         sheetChat = true
                     }
                     .symbolRenderingMode(.multicolor)

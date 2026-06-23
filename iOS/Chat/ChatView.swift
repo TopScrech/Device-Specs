@@ -14,7 +14,7 @@ struct ChatView: View {
                 if vm.messages.isEmpty {
                     ContentUnavailableView(
                         "Ask about this device",
-                        systemImage: "apple.intelligence",
+                        systemImage: "siri",
                         description: Text("The assistant can answer follow-up questions and use the built-in device tools")
                     )
                     .symbolRenderingMode(.multicolor)

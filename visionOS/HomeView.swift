@@ -88,7 +88,7 @@ struct HomeView: View {
         }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                SFButton("apple.intelligence") {
+                SFButton("siri") {
                     sheetChat = true
                 }
                 .symbolRenderingMode(.multicolor)

@@ -10,7 +10,7 @@
 	<array>
 		<dict>
 			<key>UIApplicationShortcutItemIconSymbolName</key>
-			<string>apple.intelligence</string>
+			<string>siri</string>
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>Assistant</string>
 			<key>UIApplicationShortcutItemType</key>
