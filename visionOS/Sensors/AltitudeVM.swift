@@ -1,6 +1,5 @@
 import ScrechKit
 import CoreLocation
-import CoreMotion
 
 @Observable
 class AltitudeVM: NSObject {
