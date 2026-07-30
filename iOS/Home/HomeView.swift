@@ -1,6 +1,5 @@
 import ScrechKit
 import AutoUpdate
-import OSLog
 
 struct HomeView: View {
     @Environment(NavState.self) private var nav

@@ -1,6 +1,4 @@
 import SwiftUI
-import DeviceKit
-import MediaAccessibility
 
 struct AccessibilitySpecs: View {
     @State private var vm = AccessibilityVM()

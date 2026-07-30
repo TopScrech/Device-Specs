@@ -1,16 +1,8 @@
 import ScrechKit
 import DeviceKit
 
-#if canImport(LocalAuthentication)
-import LocalAuthentication
-#endif
-
 #if canImport(NearbyInteraction)
 import NearbyInteraction
-#endif
-
-#if canImport(CoreNFC)
-import CoreNFC
 #endif
 
 @Observable

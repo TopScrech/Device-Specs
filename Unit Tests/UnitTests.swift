@@ -1,5 +1,5 @@
-import Testing
 import Foundation
+import Testing
 import OSLog
 
 private let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "DeviceSpecs", category: "UnitTests")
