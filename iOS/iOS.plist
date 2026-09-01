@@ -2,10 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>ITSAppUsesNonExemptEncryption</key>
-	<false/>
 	<key>MusicHapticsSupported</key>
 	<true/>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_specs._tcp</string>
+	</array>
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
@@ -17,11 +19,5 @@
 			<string>$(PRODUCT_BUNDLE_IDENTIFIER).openAssistant</string>
 		</dict>
 	</array>
-	<key>NSBonjourServices</key>
-	<array>
-		<string>_specs._tcp</string>
-	</array>
-	<key>NSLocalNetworkUsageDescription</key>
-	<string>This permission is required to discover nearby UWB test devices</string>
 </dict>
 </plist>
