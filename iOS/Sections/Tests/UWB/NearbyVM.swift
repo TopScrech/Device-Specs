@@ -292,7 +292,6 @@ class NearbyVM: NSObject, NISessionDelegate {
             mpc?.failureHandler = mpcFailed
         }
         
-        mpc?.invalidate()
         mpc?.start()
     }
     

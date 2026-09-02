@@ -1,10 +1,10 @@
 import ScrechKit
 import CoreLocation
-import CoreMotion
+@preconcurrency import CoreMotion
 
 @Observable
 final class AltitudeVM: NSObject {
-    private var altimeter = CMAltimeter()
+    private nonisolated(unsafe) let altimeter = CMAltimeter()
     private var locationManager = CLLocationManager()
     private var isMonitoring = false
     
@@ -32,13 +32,23 @@ final class AltitudeVM: NSObject {
     }
     
     func fetchRelativeAltitude() {
-        if CMAltimeter.isRelativeAltitudeAvailable() {
-            altimeter.startRelativeAltitudeUpdates(to: .main) { [weak self] data, _ in
-                if let data {
-                    let relativeAlt = data.relativeAltitude.doubleValue
-                    
-                    self?.relativeAltitude = String(format: "%.2f m", relativeAlt)
-                }
+        startRelativeAltitudeUpdates()
+    }
+
+    private nonisolated func startRelativeAltitudeUpdates() {
+        guard CMAltimeter.isRelativeAltitudeAvailable() else {
+            return
+        }
+
+        altimeter.startRelativeAltitudeUpdates(to: .main) { [weak self] data, _ in
+            guard let data else {
+                return
+            }
+
+            let relativeAltitude = data.relativeAltitude.doubleValue
+
+            Task { @MainActor [weak self] in
+                self?.relativeAltitude = relativeAltitude.formatted(.number.precision(.fractionLength(2))) + " m"
             }
         }
     }
@@ -53,9 +63,7 @@ final class AltitudeVM: NSObject {
 extension AltitudeVM: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let latestLocation = locations.last {
-            Task { @MainActor [weak self] in
-                self?.absoluteAltitude = String(format: "%.2f m", latestLocation.altitude)
-            }
+            absoluteAltitude = latestLocation.altitude.formatted(.number.precision(.fractionLength(2))) + " m"
         }
     }
 }
