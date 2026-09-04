@@ -7,19 +7,7 @@ struct LocaleList: View {
         List {
             Section {
                 LabeledContent("System language", value: vm.language)
-                
-                HStack(alignment: .top) {
-                    Text("Preferred languages")
-                    
-                    Spacer()
-                    
-                    VStack {
-                        ForEach(vm.preferredLangs, id: \.self) {
-                            Text($0)
-                        }
-                    }
-                    .secondary()
-                }
+                PreferredLanguagesView(vm.preferredLangs)
             }
             
             Section {
@@ -37,19 +25,7 @@ struct LocaleList: View {
             
             Section {
                 LabeledContent("Numbering system", value: vm.numberingSystem)
-                                
-                HStack {
-                    Text("Available numbering systems")
-                    
-                    Spacer()
-                    
-                    VStack {
-                        ForEach(vm.availableNumberingSystems, id: \.self) {
-                            Text($0.debugDescription)
-                                .secondary()
-                        }
-                    }
-                }
+                AvailableNumberingSystemsView(vm.availableNumberingSystems)
                 
                 LabeledContent("Metric system", value: vm.metricSystem)
                 LabeledContent("Calendar", value: vm.calendar)
