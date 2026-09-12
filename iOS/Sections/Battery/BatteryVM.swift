@@ -1,6 +1,5 @@
 import SwiftUI
 import DeviceKit
-import Combine
 
 @Observable
 final class BatteryVM {
@@ -11,7 +10,7 @@ final class BatteryVM {
     private(set) var batteryLevelNumber: Int?
     private(set) var lowPowerMode = false
     
-    private var cancellables = Set<AnyCancellable>()
+    @ObservationIgnored private var batteryNotificationTasks: [Task<Void, Never>] = []
     
 #if os(watchOS)
     private var batteryTimer: Timer?
@@ -31,6 +30,8 @@ final class BatteryVM {
     // Disable battery monitoring
     @MainActor
     deinit {
+        batteryNotificationTasks.forEach { $0.cancel() }
+        
 #if os(watchOS)
         WKInterfaceDevice.current().isBatteryMonitoringEnabled = false
 #else
@@ -100,19 +101,18 @@ final class BatteryVM {
             }
         }
 #else
-        // Observe battery level changes
-        NotificationCenter.default.publisher(for: UIDevice.batteryLevelDidChangeNotification)
-            .sink { [weak self] _ in
-                self?.fetchBatteryInfo()
+        batteryNotificationTasks = [
+            Task { @MainActor [weak self] in
+                for await _ in NotificationCenter.default.notifications(named: UIDevice.batteryLevelDidChangeNotification) {
+                    self?.fetchBatteryInfo()
+                }
+            },
+            Task { @MainActor [weak self] in
+                for await _ in NotificationCenter.default.notifications(named: UIDevice.batteryStateDidChangeNotification) {
+                    self?.fetchBatteryInfo()
+                }
             }
-            .store(in: &cancellables)
-        
-        // Observe battery state changes
-        NotificationCenter.default.publisher(for: UIDevice.batteryStateDidChangeNotification)
-            .sink { [weak self] _ in
-                self?.fetchBatteryInfo()
-            }
-            .store(in: &cancellables)
+        ]
 #endif
     }
     

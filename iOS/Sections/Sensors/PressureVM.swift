@@ -7,7 +7,6 @@ final class PressureVM {
     private var isMonitoring = false
     
     private(set) var pressureKilo: String?
-    private(set) var pressureHecto = ""
     
     func onAppear() {
         guard !isMonitoring else {

@@ -1,5 +1,5 @@
 {
-  "originHash" : "14b371b60e62077d6b27d5408d16a274334cbee2b39e8d3cc14da55bad4a778f",
+  "originHash" : "bcb3c784e38e8dc3a03a3f1706f1c37296af514e73538ad6a3bd00b74c698761",
   "pins" : [
     {
       "identity" : "appearance",
@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TopScrech/Chit-Chat",
       "state" : {
-        "revision" : "3364222fe76b967e541c688101e93efbf7c989d8",
-        "version" : "1.0.3"
+        "revision" : "34b99365f5cc3b338f430089710caf7384860faf",
+        "version" : "1.0.5"
       }
     },
     {
@@ -47,24 +47,6 @@
       }
     },
     {
-      "identity" : "mailcover",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/TopScrech/MailCover",
-      "state" : {
-        "revision" : "2099926cf1b8cf8f6532640d144ba9a8bb1d9f20",
-        "version" : "1.1.1"
-      }
-    },
-    {
-      "identity" : "safaricover",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/TopScrech/SafariCover",
-      "state" : {
-        "revision" : "8cd5c6b2c94d87dc03c5e990df2279eadbe44b2d",
-        "version" : "1.3.1"
-      }
-    },
-    {
       "identity" : "screchcam",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TopScrech/ScrechCam",
@@ -78,8 +60,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
-        "revision" : "fa0df6751173daac9349e6f8c01bb8f9d01cb112",
-        "version" : "1.0.6"
+        "revision" : "40f089e897c48986d101a5630c1597241b40c6c5",
+        "version" : "1.0.9"
       }
     }
   ],

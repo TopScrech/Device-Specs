@@ -7,7 +7,7 @@ import FoundationModels
 @available(iOS 26, *)
 struct FoundationModelsSupport: View {
     private var isSupported: Bool {
-#if canImport(FoundationModels)
+#if canImport(FoundationModels) && !os(tvOS)
         SystemLanguageModel.default.isAvailable
 #else
         false

@@ -57,33 +57,49 @@ final class ActivityVM {
     private func updateActivity(_ activityData: CMMotionActivity?) {
         guard let activityData else { return }
         
-        Logger().info("Motion access granted")
-        
+        let updatedActivity: String
         switch true {
         case activityData.walking:
-            activity = "Walking"
+            updatedActivity = "Walking"
             
         case activityData.running:
-            activity = "Running"
+            updatedActivity = "Running"
             
         case activityData.automotive:
-            activity = "Automotive"
+            updatedActivity = "Automotive"
             
         case activityData.cycling:
-            activity = "Cycling"
+            updatedActivity = "Cycling"
             
         case activityData.stationary:
-            activity = "Stationary"
+            updatedActivity = "Stationary"
             
         default:
-            activity = "Unknown"
+            updatedActivity = "Unknown"
         }
         
+        let updatedConfidence: String
+        
         switch activityData.confidence {
-        case .low: confidence = "Low"
-        case .medium: confidence = "Medium"
-        case .high: confidence = "High"
-        @unknown default: confidence = "Unknown"
+        case .low:
+            updatedConfidence = "Low"
+            
+        case .medium:
+            updatedConfidence = "Medium"
+            
+        case .high:
+            updatedConfidence = "High"
+            
+        @unknown default:
+            updatedConfidence = "Unknown"
+        }
+        
+        if activity != updatedActivity {
+            activity = updatedActivity
+        }
+        
+        if confidence != updatedConfidence {
+            confidence = updatedConfidence
         }
     }
     

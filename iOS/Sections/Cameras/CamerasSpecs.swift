@@ -1,5 +1,4 @@
 import ScrechKit
-import DeviceKit
 
 struct CameraSpecs: View {
     @Environment(CameraVM.self) private var vm

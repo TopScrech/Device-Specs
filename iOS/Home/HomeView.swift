@@ -1,6 +1,5 @@
 import ScrechKit
 import AutoUpdate
-import OSLog
 
 struct HomeView: View {
     @Environment(NavState.self) private var nav
@@ -104,8 +103,10 @@ struct HomeView: View {
                 alertUpdate = true
             }
         }
-        .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
-            battery.fetchBatteryInfo()
+        .task {
+            for await _ in NotificationCenter.default.notifications(named: UIApplication.didBecomeActiveNotification) {
+                battery.fetchBatteryInfo()
+            }
         }
         .onChange(of: assistantRequest) { oldValue, newValue in
             guard newValue > oldValue else {
@@ -133,7 +134,7 @@ struct HomeView: View {
             
             if #available(iOS 26, *) {
                 ToolbarItem(placement: .topBarTrailing) {
-                    SFButton("apple.intelligence") {
+                    SFButton("siri") {
                         sheetChat = true
                     }
                     .symbolRenderingMode(.multicolor)

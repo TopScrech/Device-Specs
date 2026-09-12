@@ -4,11 +4,14 @@ import SwiftUI
 import FoundationModels
 #endif
 
-@available(iOS 26, *)
 struct FoundationModelsSupport: View {
     private var isSupported: Bool {
-#if canImport(FoundationModels)
-        SystemLanguageModel.default.isAvailable
+#if canImport(FoundationModels) && !os(watchOS)
+        if #available(anyAppleOS 26, *) {
+            SystemLanguageModel.default.isAvailable
+        } else {
+            false
+        }
 #else
         false
 #endif
@@ -16,7 +19,7 @@ struct FoundationModelsSupport: View {
     
     var body: some View {
         Label {
-            Text(isSupported ? "Your device supports Foundation Models" : "Your device does not support Foundation Models")
+            Text(isSupported ? "Foundation Models supported" : "Foundation Models supported")
         } icon: {
             Image(.foundationModels)
                 .resizable()

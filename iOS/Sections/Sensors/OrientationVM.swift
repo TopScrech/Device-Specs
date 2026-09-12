@@ -1,11 +1,10 @@
 import SwiftUI
 import CoreMotion
-import Combine
 
 @Observable
 final class OrientationVM {
     private var motionManager = CMMotionManager()
-    private var cancellables = Set<AnyCancellable>()
+    @ObservationIgnored private var orientationNotificationTask: Task<Void, Never>?
     private var isMonitoring = false
     
     // Rotation
@@ -59,11 +58,11 @@ final class OrientationVM {
         UIDevice.current.beginGeneratingDeviceOrientationNotifications()
         updateOrientation(UIDevice.current.orientation)
         
-        NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)
-            .sink { [weak self] _ in
+        orientationNotificationTask = Task { @MainActor [weak self] in
+            for await _ in NotificationCenter.default.notifications(named: UIDevice.orientationDidChangeNotification) {
                 self?.updateOrientation(UIDevice.current.orientation)
             }
-            .store(in: &cancellables)
+        }
     }
     
     private func updateOrientation(_ deviceOrientation: UIDeviceOrientation) {
@@ -93,6 +92,7 @@ final class OrientationVM {
     
     @MainActor
     deinit {
+        orientationNotificationTask?.cancel()
         motionManager.stopDeviceMotionUpdates()
         UIDevice.current.endGeneratingDeviceOrientationNotifications()
     }

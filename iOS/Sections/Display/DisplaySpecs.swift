@@ -39,9 +39,11 @@ struct DisplaySpecs: View {
             setDeviceBrightness(value)
         }
 #if !os(watchOS)
-        .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
-            withAnimation {
-                brightness = Double(Device.current.screenBrightness)
+        .task {
+            for await _ in NotificationCenter.default.notifications(named: UIApplication.didBecomeActiveNotification) {
+                withAnimation {
+                    brightness = Double(Device.current.screenBrightness)
+                }
             }
         }
 #endif

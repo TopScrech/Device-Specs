@@ -12,13 +12,9 @@ struct AppleIntelligenceSupport: View {
     private let isSupported = false
 #endif
     
-    private var icon: String {
-        isSupported ? "apple.intelligence" : "apple.intelligence.badge.xmark"
-    }
-    
     var body: some View {
         HStack(spacing: 25) {
-            Image(systemName: icon)
+            Image(systemName: "siri")
                 .foregroundStyle(.primary)
                 .symbolRenderingMode(.multicolor)
             

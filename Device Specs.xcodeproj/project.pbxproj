@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 100;
+	objectVersion = 110;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,6 @@
 		F31D320B2DDC8CDE00E7B121 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D320A2DDC8CDE00E7B121 /* ScrechKit */; };
 		F31D320D2DDC8CE400E7B121 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D320C2DDC8CE400E7B121 /* ScrechKit */; };
 		F31D320F2DDC8CEA00E7B121 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D320E2DDC8CEA00E7B121 /* ScrechKit */; };
-		F329E1842D37CA7D007BA9D1 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F329E1832D37CA7D007BA9D1 /* SafariCover */; };
-		F329E1862D37CB1E007BA9D1 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F329E1852D37CB1E007BA9D1 /* SafariCover */; };
-		F329E18A2D37CC60007BA9D1 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = F329E1892D37CC60007BA9D1 /* SafariCover */; };
 		F357214D2C98584100967ACA /* ScrechCam in Frameworks */ = {isa = PBXBuildFile; productRef = F357214C2C98584100967ACA /* ScrechCam */; };
 		F358F0232D2C185800BCC07B /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = F358F0222D2C185800BCC07B /* LaunchAtLogin */; };
 		F36F7FCD2CA0CFDF0007F120 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36F7FCC2CA0CFDF0007F120 /* Messages.framework */; };
@@ -25,9 +22,6 @@
 		F36FBCBE2C9449A300F5E174 /* watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F36FBCB12C9449A200F5E174 /* watchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F36FBCCE2C944B1700F5E174 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36FBCCD2C944B1700F5E174 /* DeviceKit */; };
 		F3C3BDDD2C92DAAA00BF91EE /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3C3BDDC2C92DAAA00BF91EE /* DeviceKit */; };
-		F3C68ACA2CAFCD3E0021B6F3 /* MailCover in Frameworks */ = {isa = PBXBuildFile; productRef = F3C68AC92CAFCD3E0021B6F3 /* MailCover */; };
-		F3C68AD22CAFCDD20021B6F3 /* MailCover in Frameworks */ = {isa = PBXBuildFile; productRef = F3C68AD12CAFCDD20021B6F3 /* MailCover */; };
-		F3C68AD42CAFCE750021B6F3 /* MailCover in Frameworks */ = {isa = PBXBuildFile; productRef = F3C68AD32CAFCE750021B6F3 /* MailCover */; };
 		F3E7EC992C67B9A8008CD17B /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E7EC982C67B9A8008CD17B /* DeviceKit */; };
 		F3F5AD622E880F05007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD612E880F05007AD97D /* Appearance */; };
 		F3F5AD642E885D96007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD632E885D96007AD97D /* Appearance */; };
@@ -133,6 +127,7 @@
 		F3C3BDBD2C92D87C00BF91EE /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E063EF2F467E79001B77CD /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		F3E7EC3A2C676A13008CD17B /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3ED2E0D30560A4700B6F884 /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
 		F3F85ECD2C94AF5A00AE0A1D /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F85F0E2C962C4600AE0A1D /* Device Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Specs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F85F342C96491700AE0A1D /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,6 +214,8 @@
 			membershipExceptions = (
 				Chat/ChatView.swift,
 				Chat/ChatVM.swift,
+				Chat/DeviceChatMessage.swift,
+				Chat/DeviceChatMessageRow.swift,
 				"Chat/Generable Models/BatteryInfo.swift",
 				"Chat/Generable Models/CameraInfo.swift",
 				"Chat/Generable Models/CPUInfo.swift",
@@ -227,7 +224,6 @@
 				"Chat/Generable Models/MemoryInfo.swift",
 				"Chat/Generable Models/StorageInfo.swift",
 				"Chat/Generable Models/SystemInfo.swift",
-				Chat/StreamResponse.swift,
 				Chat/Tools/GetBatteryInfo.swift,
 				Chat/Tools/GetCameraInfo.swift,
 				Chat/Tools/GetCPUInfo.swift,
@@ -354,9 +350,10 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				AppIcon.icon,
-				Assets.xcassets,
 				Chat/ChatView.swift,
 				Chat/ChatVM.swift,
+				Chat/DeviceChatMessage.swift,
+				Chat/DeviceChatMessageRow.swift,
 				"Chat/Generable Models/BatteryInfo.swift",
 				"Chat/Generable Models/CameraInfo.swift",
 				"Chat/Generable Models/CPUInfo.swift",
@@ -365,7 +362,6 @@
 				"Chat/Generable Models/MemoryInfo.swift",
 				"Chat/Generable Models/StorageInfo.swift",
 				"Chat/Generable Models/SystemInfo.swift",
-				Chat/StreamResponse.swift,
 				Chat/Tools/GetBatteryInfo.swift,
 				Chat/Tools/GetCameraInfo.swift,
 				Chat/Tools/GetCPUInfo.swift,
@@ -440,6 +436,8 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Assets.xcassets,
+				Chat/DeviceChatMessage.swift,
+				Chat/DeviceChatMessageRow.swift,
 				DeviceKit/batteryCapacity.swift,
 				DeviceKit/bluetoothVersion.swift,
 				"DeviceKit/Disabled/L1 Cache.swift",
@@ -456,7 +454,6 @@
 				DeviceKit/voltage.swift,
 				DeviceKit/waterResistanceDescription.swift,
 				DeviceKit/waterResistanceRating.swift,
-				"Foundation Models.xcassets",
 				Localizable.xcstrings,
 				"Sections/System/Time Zone/KnownTimeZones.swift",
 				Utils/ValueStore.swift,
@@ -469,6 +466,8 @@
 				AppIcon.icon,
 				Chat/ChatView.swift,
 				Chat/ChatVM.swift,
+				Chat/DeviceChatMessage.swift,
+				Chat/DeviceChatMessageRow.swift,
 				"Chat/Generable Models/BatteryInfo.swift",
 				"Chat/Generable Models/CameraInfo.swift",
 				"Chat/Generable Models/CPUInfo.swift",
@@ -477,7 +476,6 @@
 				"Chat/Generable Models/MemoryInfo.swift",
 				"Chat/Generable Models/StorageInfo.swift",
 				"Chat/Generable Models/SystemInfo.swift",
-				Chat/StreamResponse.swift,
 				Chat/Tools/GetBatteryInfo.swift,
 				Chat/Tools/GetCameraInfo.swift,
 				Chat/Tools/GetCPUInfo.swift,
@@ -577,9 +575,7 @@
 				F36F7FCD2CA0CFDF0007F120 /* Messages.framework in Frameworks */,
 				F31D320F2DDC8CEA00E7B121 /* ScrechKit in Frameworks */,
 				F3F5AD642E885D96007AD97D /* Appearance in Frameworks */,
-				F329E1862D37CB1E007BA9D1 /* SafariCover in Frameworks */,
 				F36F802B2CA0D5E90007F120 /* ScrechCam in Frameworks */,
-				F3C68AD42CAFCE750021B6F3 /* MailCover in Frameworks */,
 				F36F7FED2CA0D2400007F120 /* DeviceKit in Frameworks */,
 			);
 		};
@@ -595,10 +591,8 @@
 			files = (
 				F4A100022FE0000000000002 /* AutoUpdate in Frameworks */,
 				F4C200022F8A000000000001 /* ChitChat in Frameworks */,
-				F329E18A2D37CC60007BA9D1 /* SafariCover in Frameworks */,
 				F31D32092DDC8CDA00E7B121 /* ScrechKit in Frameworks */,
 				F3C3BDDD2C92DAAA00BF91EE /* DeviceKit in Frameworks */,
-				F3C68AD22CAFCDD20021B6F3 /* MailCover in Frameworks */,
 			);
 		};
 		F3E7EC372C676A13008CD17B /* Frameworks */ = {
@@ -610,8 +604,6 @@
 				F3F5AD622E880F05007AD97D /* Appearance in Frameworks */,
 				F3E7EC992C67B9A8008CD17B /* DeviceKit in Frameworks */,
 				F31D32052DDC8CCB00E7B121 /* ScrechKit in Frameworks */,
-				F329E1842D37CA7D007BA9D1 /* SafariCover in Frameworks */,
-				F3C68ACA2CAFCD3E0021B6F3 /* MailCover in Frameworks */,
 			);
 		};
 		F3F85ECA2C94AF5A00AE0A1D /* Frameworks */ = {
@@ -650,6 +642,7 @@
 			isa = PBXGroup;
 			children = (
 				F3AE99E22E2F890A00D70249 /* README.md */,
+				F3ED2E0D30560A4700B6F884 /* AGENTS.md */,
 				F383A0B82ECF2DF700350A0F /* iOS */,
 				F3839F8C2ECF2D9000350A0F /* visionOS */,
 				F3839FA92ECF2D9900350A0F /* watchOS */,
@@ -698,8 +691,6 @@
 			packageProductDependencies = (
 				F36F7FEC2CA0D2400007F120 /* DeviceKit */,
 				F36F802A2CA0D5E90007F120 /* ScrechCam */,
-				F3C68AD32CAFCE750021B6F3 /* MailCover */,
-				F329E1852D37CB1E007BA9D1 /* SafariCover */,
 				F31D320E2DDC8CEA00E7B121 /* ScrechKit */,
 				F3F5AD632E885D96007AD97D /* Appearance */,
 			);
@@ -750,8 +741,6 @@
 			packageProductDependencies = (
 				F3C3BDDC2C92DAAA00BF91EE /* DeviceKit */,
 				F4C200042F8A000000000001 /* ChitChat */,
-				F3C68AD12CAFCDD20021B6F3 /* MailCover */,
-				F329E1892D37CC60007BA9D1 /* SafariCover */,
 				F31D32082DDC8CDA00E7B121 /* ScrechKit */,
 				F4A100042FE0000000000004 /* AutoUpdate */,
 			);
@@ -784,8 +773,6 @@
 				F3E7EC982C67B9A8008CD17B /* DeviceKit */,
 				F4C200032F8A000000000001 /* ChitChat */,
 				F357214C2C98584100967ACA /* ScrechCam */,
-				F3C68AC92CAFCD3E0021B6F3 /* MailCover */,
-				F329E1832D37CA7D007BA9D1 /* SafariCover */,
 				F31D32042DDC8CCB00E7B121 /* ScrechKit */,
 				F3F5AD612E880F05007AD97D /* Appearance */,
 				F4A100032FE0000000000003 /* AutoUpdate */,
@@ -872,7 +859,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 2600;
+				LastUpgradeCheck = 2700;
 				TargetAttributes = {
 					F36F7FCA2CA0CFDF0007F120 = {
 						CreatedOnToolsVersion = 16.0;
@@ -921,13 +908,11 @@
 				F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */,
 				F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */,
 				F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */,
-				F3C68AC82CAFCD3E0021B6F3 /* XCRemoteSwiftPackageReference "MailCover" */,
 				F358F0212D2C185800BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
-				F329E1822D37CA7D007BA9D1 /* XCRemoteSwiftPackageReference "SafariCover" */,
 				F3F5AD602E880F05007AD97D /* XCRemoteSwiftPackageReference "Appearance" */,
 				F4A100052FE0000000000005 /* XCRemoteSwiftPackageReference "AutoUpdate" */,
 			);
-			preferredProjectObjectVersion = 100;
+			preferredProjectObjectVersion = 110;
 			productRefGroup = F3E7EC3B2C676A13008CD17B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1195,6 +1180,7 @@
 				INFOPLIST_FILE = "$(TARGET_NAME)/visionOS.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_CFBundleShortVersionString = "$(MARKETING_VERSION)";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1224,8 +1210,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/visionOS.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_CFBundleShortVersionString = "$(MARKETING_VERSION)";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1302,7 +1289,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 64.2.5;
+				MARKETING_VERSION = 64.2.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1365,7 +1352,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 64.2.5;
+				MARKETING_VERSION = 64.2.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "";
@@ -1392,9 +1379,11 @@
 				INFOPLIST_FILE = iOS/iOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_CFBundleShortVersionString = "$(MARKETING_VERSION)";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "This permission is required in order to test biometric authentication";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "This permission is required to discover nearby UWB test devices";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
@@ -1424,7 +1413,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				XROS_DEPLOYMENT_TARGET = 1.0;
+				XROS_DEPLOYMENT_TARGET = "$(RECOMMENDED_XROS_DEPLOYMENT_TARGET)";
 			};
 			name = Debug;
 		};
@@ -1443,11 +1432,13 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS/iOS.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Device Specs";
+				INFOPLIST_KEY_CFBundleDisplayName = "Debug Specs";
 				INFOPLIST_KEY_CFBundleShortVersionString = "$(MARKETING_VERSION)";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This permission is required in order to test camera functionality";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "This permission is required in order to test biometric authentication";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "This permission is required to discover nearby UWB test devices";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This permission is necessary to test GPS locating capabilities";
 				INFOPLIST_KEY_NSMotionUsageDescription = "This permission is necessary to test motion sensor capabilities";
 				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "This permission is required in order to test UWB capabilities";
@@ -1477,7 +1468,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				XROS_DEPLOYMENT_TARGET = 1.0;
+				XROS_DEPLOYMENT_TARGET = "$(RECOMMENDED_XROS_DEPLOYMENT_TARGET)";
 			};
 			name = Release;
 		};
@@ -1718,14 +1709,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F329E1822D37CA7D007BA9D1 /* XCRemoteSwiftPackageReference "SafariCover" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/TopScrech/SafariCover";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.0;
-			};
-		};
 		F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/ScrechCam";
@@ -1737,14 +1720,6 @@
 		F358F0212D2C185800BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/LaunchAtLogin";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-		F3C68AC82CAFCD3E0021B6F3 /* XCRemoteSwiftPackageReference "MailCover" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/TopScrech/MailCover";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
@@ -1823,21 +1798,6 @@
 			package = F3E7EC942C67B99E008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */;
 			productName = ScrechKit;
 		};
-		F329E1832D37CA7D007BA9D1 /* SafariCover */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F329E1822D37CA7D007BA9D1 /* XCRemoteSwiftPackageReference "SafariCover" */;
-			productName = SafariCover;
-		};
-		F329E1852D37CB1E007BA9D1 /* SafariCover */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F329E1822D37CA7D007BA9D1 /* XCRemoteSwiftPackageReference "SafariCover" */;
-			productName = SafariCover;
-		};
-		F329E1892D37CC60007BA9D1 /* SafariCover */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F329E1822D37CA7D007BA9D1 /* XCRemoteSwiftPackageReference "SafariCover" */;
-			productName = SafariCover;
-		};
 		F357214C2C98584100967ACA /* ScrechCam */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F357214B2C98584100967ACA /* XCRemoteSwiftPackageReference "ScrechCam" */;
@@ -1867,21 +1827,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
-		};
-		F3C68AC92CAFCD3E0021B6F3 /* MailCover */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F3C68AC82CAFCD3E0021B6F3 /* XCRemoteSwiftPackageReference "MailCover" */;
-			productName = MailCover;
-		};
-		F3C68AD12CAFCDD20021B6F3 /* MailCover */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F3C68AC82CAFCD3E0021B6F3 /* XCRemoteSwiftPackageReference "MailCover" */;
-			productName = MailCover;
-		};
-		F3C68AD32CAFCE750021B6F3 /* MailCover */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F3C68AC82CAFCD3E0021B6F3 /* XCRemoteSwiftPackageReference "MailCover" */;
-			productName = MailCover;
 		};
 		F3E7EC982C67B9A8008CD17B /* DeviceKit */ = {
 			isa = XCSwiftPackageProductDependency;

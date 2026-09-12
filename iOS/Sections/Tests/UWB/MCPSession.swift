@@ -18,6 +18,7 @@ class MPCSession: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
     private let mcBrowser: MCNearbyServiceBrowser
     private nonisolated let identityString: String
     private nonisolated let maxNumPeers: Int
+    private var isRunning = false
     
     init(service: String, identity: String, maxPeers: Int) {
         serviceString = service
@@ -41,11 +42,21 @@ class MPCSession: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
     
     // MARK: - `MPCSession` public methods
     func start() {
+        guard !isRunning else {
+            return
+        }
+
+        isRunning = true
         mcAdvertiser.startAdvertisingPeer()
         mcBrowser.startBrowsingForPeers()
     }
     
     func suspend() {
+        guard isRunning else {
+            return
+        }
+
+        isRunning = false
         mcAdvertiser.stopAdvertisingPeer()
         mcBrowser.stopBrowsingForPeers()
     }

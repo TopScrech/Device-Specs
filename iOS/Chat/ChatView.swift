@@ -4,23 +4,23 @@ import ChitChat
 @available(iOS 26, *)
 struct ChatView: View {
     @State private var vm = ChatVM()
-    
+
     @State private var alertTokenWindowUsage = false
     @FocusState private var focus
-    
+
     var body: some View {
         ScrollView {
             LazyVStack {
                 if vm.messages.isEmpty {
                     ContentUnavailableView(
                         "Ask about this device",
-                        systemImage: "apple.intelligence",
+                        systemImage: "siri",
                         description: Text("The assistant can answer follow-up questions and use the built-in device tools")
                     )
                     .symbolRenderingMode(.multicolor)
                 } else {
                     ForEach(vm.messages) {
-                        ChatMessageBubble($0)
+                        DeviceChatMessageRow(message: $0)
                     }
                 }
             }
@@ -34,10 +34,10 @@ struct ChatView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .ornamentDismissButton()
         .task {
-            vm.printContextSize()
+            await vm.printContextSize()
         }
         .alert("Token Window Usage", isPresented: $alertTokenWindowUsage) {
-            
+
         } message: {
             Text("This indicator shows the amount of used tokens")
         }
@@ -57,7 +57,7 @@ struct ChatView: View {
                     }
                 }
             }
-            
+
             ToolbarItem(placement: .topBarTrailing) {
                 NewChatButton(disabled: vm.isResponding || vm.messages.isEmpty, action: vm.startNewChat)
             }
