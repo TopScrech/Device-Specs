@@ -23,6 +23,7 @@
 		F36FBCCE2C944B1700F5E174 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F36FBCCD2C944B1700F5E174 /* DeviceKit */; };
 		F3C3BDDD2C92DAAA00BF91EE /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3C3BDDC2C92DAAA00BF91EE /* DeviceKit */; };
 		F3E7EC992C67B9A8008CD17B /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E7EC982C67B9A8008CD17B /* DeviceKit */; };
+		F3ED2E0F30560D2500B6F884 /* ChitChat in Frameworks */ = {isa = PBXBuildFile; productRef = F3ED2E0E30560D2500B6F884 /* ChitChat */; };
 		F3F5AD622E880F05007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD612E880F05007AD97D /* Appearance */; };
 		F3F5AD642E885D96007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD632E885D96007AD97D /* Appearance */; };
 		F3F5AD782E886162007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD772E886162007AD97D /* Appearance */; };
@@ -619,6 +620,7 @@
 				F31D320D2DDC8CE400E7B121 /* ScrechKit in Frameworks */,
 				F358F0232D2C185800BCC07B /* LaunchAtLogin in Frameworks */,
 				F3F5AD782E886162007AD97D /* Appearance in Frameworks */,
+				F3ED2E0F30560D2500B6F884 /* ChitChat in Frameworks */,
 				F3F85F292C962EC900AE0A1D /* DeviceKit in Frameworks */,
 			);
 		};
@@ -825,6 +827,7 @@
 				F358F0222D2C185800BCC07B /* LaunchAtLogin */,
 				F31D320C2DDC8CE400E7B121 /* ScrechKit */,
 				F3F5AD772E886162007AD97D /* Appearance */,
+				F3ED2E0E30560D2500B6F884 /* ChitChat */,
 			);
 			productName = macOS;
 			productReference = F3F85F0E2C962C4600AE0A1D /* Device Specs.app */;
@@ -1832,6 +1835,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F3E7EC972C67B9A8008CD17B /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
+		};
+		F3ED2E0E30560D2500B6F884 /* ChitChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4C200052F8A000000000001 /* XCRemoteSwiftPackageReference "Chit-Chat" */;
+			productName = ChitChat;
 		};
 		F3F5AD612E880F05007AD97D /* Appearance */ = {
 			isa = XCSwiftPackageProductDependency;
