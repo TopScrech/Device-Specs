@@ -717,7 +717,7 @@
         "SWIFT_VERSION": "6.0",
         "TARGETED_DEVICE_FAMILY": "7",
         "VALIDATE_PRODUCT[config=Release]": "YES",
-        "XROS_DEPLOYMENT_TARGET": "26.4",
+        "XROS_DEPLOYMENT_TARGET": "26.1",
       },
     }, {
       "name": "tvOS",
