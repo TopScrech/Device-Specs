@@ -27,14 +27,16 @@ final class PressureVM {
             return
         }
         
-        altimeter.startRelativeAltitudeUpdates(to: .main) { [weak self] data, error in
+        altimeter.startRelativeAltitudeUpdates(to: .main) { @Sendable [weak self] data, _ in
             guard let data else {
                 return
             }
             
             let pressureInKilopascals = data.pressure.doubleValue
             
-            self?.pressureKilo = String(format: "%.2f kPa", pressureInKilopascals)
+            Task { @MainActor [weak self] in
+                self?.pressureKilo = pressureInKilopascals.formatted(.number.precision(.fractionLength(2))) + " kPa"
+            }
         }
     }
 }
