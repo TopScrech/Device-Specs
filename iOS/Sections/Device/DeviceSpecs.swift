@@ -31,7 +31,7 @@ struct DeviceSpecs: View {
             VStack(alignment: .leading, spacing: 5) {
                 Text("Identifier for vendor")
                 
-                Text(vm.vendorId)
+                Text(vm.vendorID)
                     .secondary()
             }
             

@@ -7,9 +7,6 @@ import NearbyInteraction
 
 @Observable
 final class DeviceVM {
-    private let device = Device.current
-    
-    private(set) var architecture = ""
     private(set) var isForceTouchAvailable = ""
     
     static let isMagsafeSupported = Device.current.hasMagsafe
@@ -43,7 +40,7 @@ final class DeviceVM {
     
     static let isUWBAvailable = DeviceCapabilities.isUltraWidebandAvailable
     
-    var vendorId: String {
+    var vendorID: String {
 #if os(watchOS)
         WKInterfaceDevice.current().identifierForVendor?.uuidString ?? "-"
 #else

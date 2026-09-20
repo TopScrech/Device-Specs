@@ -3,8 +3,6 @@ import DeviceKit
 
 @Observable
 final class SystemVM {
-    private let device = Device.current
-    
     private(set) var systemUptime = "N/a"
     private(set) var systemActiveTime = "N/a"
     

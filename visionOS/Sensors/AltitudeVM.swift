@@ -5,7 +5,6 @@ import CoreLocation
 class AltitudeVM: NSObject {
     private var locationManager = CLLocationManager()
     
-    private(set) var relativeAltitude = "0.0 m"
     private(set) var absoluteAltitude = "0.0 m"
     
     override init() {

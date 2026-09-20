@@ -2,8 +2,6 @@ import SwiftUI
 import DeviceKit
 
 struct DisplaySpecs: View {
-    @Environment(DisplayVM.self) private var vm
-    
     @State private var brightness = 0.0
     
     init() {
