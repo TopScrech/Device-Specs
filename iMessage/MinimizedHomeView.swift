@@ -3,9 +3,6 @@ import ScrechKit
 struct MinimizedHomeView: View {
     @State private var nav = NavState()
     
-    @State private var system = SystemVM()
-    @State private var device = DeviceVM()
-    @State private var display = DisplayVM()
     @State private var cpu = ProcessorVM()
     @State private var ram = MemoryVM()
     @State private var battery = BatteryVM()

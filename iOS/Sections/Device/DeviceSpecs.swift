@@ -31,7 +31,7 @@ struct DeviceSpecs: View {
             VStack(alignment: .leading, spacing: 5) {
                 Text("Identifier for vendor")
                 
-                Text(vm.vendorId)
+                Text(vm.vendorID)
                     .secondary()
             }
             
@@ -41,7 +41,7 @@ struct DeviceSpecs: View {
             
             Section("Capabilities") {
                 LabeledContent("Bluetooth", value: DeviceVM.bluetoothVersion)
-#if !os(tvOS) && !os(watchOS)
+#if os(iOS) || os(visionOS)
                 AuthTest()
 #endif
                 
