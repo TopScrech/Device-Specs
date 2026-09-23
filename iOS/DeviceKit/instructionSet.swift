@@ -44,6 +44,7 @@ extension Device.CPU {
         case .a18Pro: "ARMv9.2-A" // https://phonedb.net/index.php?m=processor&id=991&c=apple_a18_pro_apl1v07_t8140__tahiti
         case .a19: "ARMv9.2-A"
         case .a19Pro: "ARMv9.2-A"
+        case .a20Pro: "ARMv9.4-A" // https://nanoreview.net/en/soc/apple-a20-pro
             
         case .m1: "ARMv8.4-A"
         case .m2: "ARMv8.6-A"

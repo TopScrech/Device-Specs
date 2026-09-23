@@ -39,7 +39,8 @@ extension Device {
                 .iPhone14, .iPhone14Plus, .iPhone14Pro, .iPhone14ProMax,
                 .iPhone15, .iPhone15Plus, .iPhone15Pro, .iPhone15ProMax,
                 .iPhone16, .iPhone16e, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax,
-                .iPhone17, .iPhoneAir, .iPhone17Pro, .iPhone17ProMax, .iPhone17e: "IP68 (IEC 60529)"
+                .iPhone17, .iPhoneAir, .iPhone17Pro, .iPhone17ProMax, .iPhone17e,
+                .iPhone18Pro, .iPhone18ProMax: "IP68 (IEC 60529)"
             
         case .iPad2,
                 .iPad3,
@@ -106,7 +107,7 @@ extension Device {
                 .appleWatchSeries10_42mm, .appleWatchSeries10_46mm,
                 .appleWatchSeries11_42mm, .appleWatchSeries11_46mm: "IP6X"
             
-        case .appleWatchUltra, .appleWatchUltra2,  .appleWatchUltra3: "IP6X, ISO 22810:2010, EN13319"
+        case .appleWatchUltra, .appleWatchUltra2, .appleWatchUltra3, .appleWatchUltra4: "IP6X, ISO 22810:2010, EN13319"
 #endif
         case .simulator: "N/a"
         case .unknown(let device): "Unknown (\(device))"

@@ -18,11 +18,11 @@ extension Device.CPU {
         case .a5X: "45 nm" // https://phonedb.net/index.php?m=processor&id=335&c=apple_a5x_apl5498_s5l8945x
         case .a6: "32 nm" // https://phonedb.net/index.php?m=processor&id=356&c=apple_a6_apl0598_s5l8950x__bali
         case .a6X: "32 nm" // https://phonedb.net/index.php?m=processor&id=366&c=apple_a6x_apl5598_s5l8955x__bali
-        
+            
             // https://phonedb.net/index.php?m=processor&id=433&c=apple_a7_apl5698_s5l8965x__alcatraz
             // https://phonedb.net/index.php?m=processor&id=423&c=apple_a7_apl0698_s5l8960x__alcatraz
         case .a7: "28 nm"
-        
+            
         case .a8: "20 nm" // https://phonedb.net/index.php?m=processor&id=531&c=apple_a8_apl1011_t7000__fiji
         case .a8X: "20 nm" // https://phonedb.net/index.php?m=processor&id=548&c=apple_a8x_apl1012_t7001__capri
         case .a9: "14/16 nm" // https://phonedb.net/index.php?m=processor&id=626&c=apple_a9_apl0898_s8000__maui
@@ -54,6 +54,8 @@ extension Device.CPU {
         case .a19: "3 nm (N3P)"
         case .a19Pro: "3 nm (N3P)"
             
+        case .a20Pro: "2 nm" // https://nanoreview.net/en/soc/apple-a20-pro
+            
         case .m1: "5 nm (N5)"
         case .m2: "5 nm (N5P)"
         case .m3: "3 nm (N3)"
@@ -75,10 +77,13 @@ extension Device.CPU {
         case .s7: "7 nm (N7P)" // https://phonedb.net/index.php?m=processor&id=900&c=apple_s7_apl1w86_t8301__turks
         case .s8: "7 nm (N7P)" // https://phonedb.net/index.php?m=processor&id=907&c=apple_s8_t8301
         case .s9: "5 nm (N5P)" // https://phonedb.net/index.php?m=processor&id=996&c=apple_s9_apl1w15_t8310
-        
+            
             // 4nm: https://phonedb.net/index.php?m=processor&id=997&c=apple_s10_apl1w15_t8310
             // 4nm N4: https://en.wikipedia.org/wiki/Apple_silicon#Apple_S3
         case .s10: "4 nm (N4)"
+            
+            // no source, Apple states "based on A20" (which is 2nm)
+        case .s11: "2 nm"
 #endif
         case .unknown: "Unknown"
         @unknown default: "-"

@@ -46,6 +46,7 @@ extension Device.CPU {
         case .a18Pro: "LPDDR5, LPDDR5X" // https://phonedb.net/index.php?m=processor&id=991&c=apple_a18_pro_apl1v07_t8140__tahiti
         case .a19: "LPDDR5X-8533" // https://notebookcheck.net/Apple-A19-Processor-Benchmarks-and-Specs.1127048.0.html
         case .a19Pro: "LPDDR5X-9600 (8533 in the iPad Air)" // https://notebookcheck.net/Apple-A19-Pro-Processor-Benchmarks-and-Specs.1126974.0.html
+        case .a20Pro: "LPDDR5X" // https://nanoreview.net/en/soc/apple-a20-pro
             
         case .m1: "LPDDR4X 2133 MHz (Pro, Max, Ultra - LPDDR4X (3200 MHz))"
         case .m2: "LPDDR5"

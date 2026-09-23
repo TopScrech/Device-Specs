@@ -46,6 +46,7 @@ extension Device.CPU {
             
         case .a19: "2.6 - 4.26 GHz" // https://notebookcheck.net/Apple-A19-Processor-Benchmarks-and-Specs.1127048.0.html
         case .a19Pro: "2.6 - 4.26 GHz" // https://notebookcheck.net/Apple-A19-Processor-Benchmarks-and-Specs.1127048.0.html
+        case .a20Pro: "2.64 - 4.93 GHz" // https://nanoreview.net/en/soc/apple-a20-pro
             
             // https://phonedb.net/index.php?m=processor&id=893&c=apple_m1_lite_apl1102_t8103__tonga
             // https://phonedb.net/index.php?m=processor&id=861&c=apple_m1_apl1102_t8103__tonga
