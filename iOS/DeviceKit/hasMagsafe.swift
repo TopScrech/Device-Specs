@@ -10,7 +10,7 @@ extension Device {
                 .iPhone15, .iPhone15Plus, .iPhone15Pro, .iPhone15ProMax,
                 .iPhone16, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax,
                 .iPhone17, .iPhoneAir, .iPhone17Pro, .iPhone17ProMax,
-                .iPhone17e:
+                .iPhone17e, .iPhone18Pro, .iPhone18ProMax:
             true
 #endif
         default:

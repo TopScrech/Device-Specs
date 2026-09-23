@@ -28,8 +28,9 @@ extension Device {
         case .iPhone15, .iPhone15Plus, .iPhone15Pro, .iPhone15ProMax: "September 22, 2023"
         case .iPhone16, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax: "September 20, 2024"
         case .iPhone17, .iPhoneAir, .iPhone17Pro, .iPhone17ProMax: "September 19, 2025"
-        case .iPhone16e: "28 February, 2026"
+        case .iPhone16e: "February 28, 2026"
         case .iPhone17e: "March 11, 2026"
+        case .iPhone18Pro, .iPhone18ProMax: "September 18, 2026"
             
         case .iPad2: "March 11, 2011"
         case .iPad3: "March 16, 2012"
@@ -86,6 +87,7 @@ extension Device {
         case .appleWatchUltra3,
                 .appleWatchSeries11_42mm, .appleWatchSeries11_46mm,
                 .appleWatchSE3_40mm, .appleWatchSE3_44mm: "September 9, 2024"
+        case .appleWatchUltra4, .appleWatchSeries12_42mm, .appleWatchSeries12_46mm: "September 18, 2026"
 #endif
         case .simulator: "N/a"
         case .unknown(let device): "Unknown device \(device.description)"
