@@ -24,10 +24,10 @@ extension Device.CPU {
         case .m2: "15.8 (Ultra - 31.6)"
         case .m3: "18 (Ultra - 36)"
         case .m4: "38"
-        case .m5: "Unknown, not far from M4's 38"
+        case .m5: "Unknown"
             
 #elseif os(watchOS)
-        case .s1, .s1P, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9, .s10: "Unknown"
+        case .s1, .s1P, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9, .s10, .s11: "Unknown"
 #endif
         case .unknown: "Unknown"
         @unknown default: "-"
@@ -48,6 +48,7 @@ extension Device.CPU {
             
         case .a19: "16" // https://lowendmac.com/2025/apple-a19-specs
         case .a19Pro: "16" // https://lowendmac.com/2025/apple-a19-pro-specs
+        case .a20Pro: "32" // Dual 16-core arch
             
         case .m1, .m2, .m3: "16 (Ultra - 32)"
         case .m4: "16"
@@ -55,7 +56,7 @@ extension Device.CPU {
             
 #elseif os(watchOS)
         case .s1, .s1P, .s2, .s3, .s4, .s5, .s6, .s7, .s8: "Unknown"
-        case .s9, .s10: "4"
+        case .s9, .s10, .s11: "4"
 #endif
         case .unknown: "Unknown"
         @unknown default: "-"
