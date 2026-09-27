@@ -86,12 +86,11 @@ extension Device {
             
         case .appleWatchSeries8_41mm, .appleWatchSeries8_45mm,
                 .appleWatchSE2_40mm, .appleWatchSE2_44mm,
-                .appleWatchUltra,
+                .appleWatchUltra, .appleWatchUltra2, .appleWatchUltra3, .appleWatchUltra4,
                 .appleWatchSeries9_41mm, .appleWatchSeries9_45mm,
-                .appleWatchUltra2,
                 .appleWatchSeries10_42mm, .appleWatchSeries10_46mm,
-                .appleWatchUltra3,
                 .appleWatchSeries11_42mm, .appleWatchSeries11_46mm,
+                .appleWatchSeries12_42mm, .appleWatchSeries12_46mm,
                 .appleWatchSE3_40mm, .appleWatchSE3_44mm: "5.3"
 #endif
         case .simulator: "Simulator"
