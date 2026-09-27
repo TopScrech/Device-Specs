@@ -64,6 +64,7 @@ extension Device.CPU {
         case .s8: "ARMv8.4-A (A32, A64)" // https://phonedb.net/index.php?m=processor&id=907&c=apple_s8_t8301
         case .s9: "ARMv8.6-A (A32, A64)" // https://phonedb.net/index.php?m=processor&id=996&c=apple_s9_apl1w15_t8310
         case .s10: "ARMv8.6-A (A32, A64)" // https://phonedb.net/index.php?m=processor&id=997&c=apple_s10_apl1w15_t8310
+        case .s11: "ARMv9.4-A" // Like A20 Pro ???
 #endif
         case .unknown: "Unknown"
         @unknown default: "-"

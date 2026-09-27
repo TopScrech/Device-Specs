@@ -1,6 +1,6 @@
 import SwiftUI
 
-let identifier: String = {
+fileprivate let identifier: String = {
     var systemInfo = utsname()
     uname(&systemInfo)
     
@@ -33,6 +33,8 @@ struct DeviceSpecs: View {
                 
                 Text(vm.vendorID)
                     .secondary()
+                    .minimumScaleFactor(0.8)
+                    .lineLimit(1)
             }
             
             Section {
