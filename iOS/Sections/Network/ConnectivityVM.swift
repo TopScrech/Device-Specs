@@ -5,9 +5,18 @@ import NetworkExtension
 @Observable
 final class ConnectivityVM {
     @ObservationIgnored private var networkMonitorTask: Task<Void, Never>?
+
+    private var liveType: String = ""
+    private var liveSsid: String? = nil
     
-    private(set) var type = ""
-    private(set) var ssid: String? = nil
+    var type: String {
+        ValueStore.debugValue(liveType, override: "Wi-Fi")
+    }
+
+    var ssid: String? {
+        ValueStore.debugValue(liveSsid, override: "Home Wi-Fi")
+    }
+
     private(set) var bssid: String? = nil
     private(set) var signalStrength: Double? // for Wi-Fi
     private(set) var isSecure: Bool?
@@ -38,7 +47,7 @@ final class ConnectivityVM {
     private func updateNetworkStatus(_ path: NWPath) async {
         await getWiFiInfo()
         
-        type = networkActiveInterfacesText(path)
+        liveType = networkActiveInterfacesText(path)
         pathStatus = networkStatusText(path.status)
         pathUnsatisfiedReason = path.status == .unsatisfied ? networkUnsatisfiedReasonText(path.unsatisfiedReason) : nil
         supportsIPv4 = path.supportsIPv4
@@ -60,7 +69,7 @@ final class ConnectivityVM {
             }
         }
         
-        self.ssid = network?.ssid
+        self.liveSsid = network?.ssid
         self.bssid = network?.bssid
         self.signalStrength = network?.signalStrength
         self.isSecure = network?.isSecure

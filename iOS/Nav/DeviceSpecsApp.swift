@@ -7,7 +7,7 @@ struct DeviceSpecsApp: App {
 #endif
     
     private var nav = NavState()
-    @StateObject private var store = ValueStore()
+    @StateObject private var store = ValueStore.shared
     
     init() {
 #if canImport(MetricKit) && !os(tvOS)

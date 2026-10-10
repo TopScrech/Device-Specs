@@ -12,6 +12,8 @@ struct DebugSettings: View {
             }
             
             Section {
+                Toggle(String("Debug mode"), isOn: $store.debugMode)
+
                 Toggle(String("Status bar"), isOn: $store.showStatusBar)
             }
         }

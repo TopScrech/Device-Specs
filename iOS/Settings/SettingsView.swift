@@ -37,7 +37,7 @@ struct SettingsView: View {
             NavigationLink {
                 DebugSettings()
             } label: {
-                Label(String("Debug settings"), systemImage: "hammer")
+                Label(String("Debug settings"), systemImage: "hammer.fill")
             }
         }
     }

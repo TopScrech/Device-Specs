@@ -1,29 +1,16 @@
 import SwiftUI
 
-fileprivate let identifier: String = {
-    var systemInfo = utsname()
-    uname(&systemInfo)
-    
-    let mirror = Mirror(reflecting: systemInfo.machine)
-    
-    let identifier = mirror.children.reduce("") { identifier, element in
-        guard let value = element.value as? Int8, value != 0 else {
-            return identifier
-        }
-        
-        return identifier + String(UnicodeScalar(UInt8(value)))
-    }
-    
-    return identifier
-}()
-
 struct DeviceSpecs: View {
+#if os(iOS)
+    @ObservedObject private var store = ValueStore.shared
+#endif
+
     @Environment(DeviceVM.self) private var vm
     
     var body: some View {
         List {
             LabeledContent("Device", value: DeviceVM.deviceIdentifier)
-            LabeledContent("Identifier", value: identifier)
+            LabeledContent("Identifier", value: DeviceVM.hardwareIdentifier)
             LabeledContent("Name", value: DeviceVM.deviceName)
             LabeledContent("Release date", value: DeviceVM.releaseDate)
             LabeledContent("Internal name", value: vm.internalName)
