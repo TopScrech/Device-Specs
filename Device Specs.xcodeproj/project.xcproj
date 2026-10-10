@@ -8,8 +8,10 @@
     "development": "en",
     "supported": [
       "Base",
+      "ar",
       "da",
       "de",
+      "es",
       "fr",
       "hi",
       "nl",
