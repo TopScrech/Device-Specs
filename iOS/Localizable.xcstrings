@@ -14,6 +14,18 @@
             "value" : "%1$@ %2$@"
           }
         },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -21,6 +33,54 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@ %2$@"
@@ -67,6 +127,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "संक्षेपाक्षर"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abbreviazione"
           }
         },
         "nl" : {
@@ -139,6 +205,12 @@
             "value" : "पूर्ण ऊंचाई"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Altitudine assoluta"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -207,6 +279,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "त्वरण"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accelerazione"
           }
         },
         "nl" : {
@@ -279,6 +357,12 @@
             "value" : "सुगम्यता"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accessibilità"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -347,6 +431,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सक्रिय समय"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo di attività"
           }
         },
         "nl" : {
@@ -419,6 +509,12 @@
             "value" : "गतिविधि"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attività"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -487,6 +583,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "वैकल्पिक उद्धरण सीमांकक प्रारंभ करता है"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delimitatore alternativo di apertura delle virgolette"
           }
         },
         "nl" : {
@@ -559,6 +661,12 @@
             "value" : "वैकल्पिक उद्धरण अंत सीमांकक"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delimitatore alternativo di chiusura delle virgolette"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -629,6 +737,12 @@
             "value" : "अल्टीमीटर"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Altimetro"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -697,6 +811,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "एपर्चर"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apertura"
           }
         },
         "nl" : {
@@ -796,6 +916,12 @@
             "value" : "वास्तुकला"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Architettura"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -864,6 +990,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "आर्ग्युमेंट्स"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argomenti"
           }
         },
         "nl" : {
@@ -938,6 +1070,12 @@
             "value" : "इस डिवाइस के बारे में पूछें"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiedi informazioni su questo dispositivo"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1006,6 +1144,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "आस्पेक्ट अनुपात"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rapporto d'aspetto"
           }
         },
         "nl" : {
@@ -1078,6 +1222,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सहायक"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assistente"
           }
         },
         "nl" : {
@@ -1161,6 +1311,12 @@
             "value" : "अपने आप जुड़ा"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connessione automatica"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1229,6 +1385,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "स्वत: अद्यतनीकरण वर्तमान"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni attuali con aggiornamento automatico"
           }
         },
         "nl" : {
@@ -1301,6 +1463,12 @@
             "value" : "महत्वपूर्ण उपयोग के लिए उपलब्ध है"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disponibile per utilizzi importanti"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1369,6 +1537,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अवसरवादी उपयोग के लिए उपलब्ध है"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disponibile per utilizzi non essenziali"
           }
         },
         "nl" : {
@@ -1441,6 +1615,12 @@
             "value" : "उपलब्ध नंबरिंग सिस्टम"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistemi di numerazione disponibili"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1509,6 +1689,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "पीछे"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indietro"
           }
         },
         "nl" : {
@@ -1581,6 +1767,12 @@
             "value" : "बैटरी"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batteria"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1649,6 +1841,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "बैटरी की जानकारी"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informazioni sulla batteria"
           }
         },
         "nl" : {
@@ -1721,6 +1919,12 @@
             "value" : "बैटरी स्तर"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livello della batteria"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1789,6 +1993,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "बैटरी स्थिति"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stato della batteria"
           }
         },
         "nl" : {
@@ -1861,6 +2071,12 @@
             "value" : "चेतावनी स्तर से नीचे"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sotto il livello di avviso"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1929,6 +2145,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "बॉयोमीट्रिक प्रमाणीकरण"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autenticazione biometrica"
           }
         },
         "nl" : {
@@ -2001,6 +2223,12 @@
             "value" : "काला"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nero"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2069,6 +2297,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "नीला"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blu"
           }
         },
         "nl" : {
@@ -2144,6 +2378,12 @@
             "value" : "बोल्ड"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grassetto"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2214,6 +2454,12 @@
             "value" : "मोटा पाठ्यांश"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Testo in grassetto"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2282,6 +2528,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "चमक"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luminosità"
           }
         },
         "nl" : {
@@ -2357,6 +2609,12 @@
             "value" : "निर्माण"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Build"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2425,6 +2683,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "बटन आकार"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forme pulsanti"
           }
         },
         "nl" : {
@@ -2497,6 +2761,12 @@
             "value" : "कैलेंडर"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calendario"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2565,6 +2835,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "कैमरा"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fotocamera"
           }
         },
         "nl" : {
@@ -2637,6 +2913,12 @@
             "value" : "रद्द करना"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annulla"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2705,6 +2987,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "क्षमताओं"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funzionalità"
           }
         },
         "nl" : {
@@ -2777,6 +3065,12 @@
             "value" : "क्षमता"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capacità"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2845,6 +3139,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सेल संशोधन"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revisione della cella"
           }
         },
         "nl" : {
@@ -2919,6 +3219,12 @@
             "value" : "भाषा बदलें"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambia lingua"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2987,6 +3293,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "चार्ज की जानकारी"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informazioni sulla carica"
           }
         },
         "nl" : {
@@ -3059,6 +3371,12 @@
             "value" : "चार्ज"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In carica"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3127,6 +3445,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "बंद अनुशीर्षक"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sottotitoli per non udenti"
           }
         },
         "nl" : {
@@ -3199,6 +3523,12 @@
             "value" : "मिलान"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ordinamento"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3269,6 +3599,12 @@
             "value" : "कोलेटर पहचानकर्ता"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Identificatore dell'ordinamento"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3337,6 +3673,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "रंग स्थान"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spazio colore"
           }
         },
         "nl" : {
@@ -3418,6 +3760,12 @@
             "value" : "स्थिति"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condizione"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3486,6 +3834,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "आत्मविश्वास"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Affidabilità"
           }
         },
         "nl" : {
@@ -3558,6 +3912,12 @@
             "value" : "युक्त क्षेत्र"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regione di appartenenza"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3626,6 +3986,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "महाद्वीप"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continente"
           }
         },
         "nl" : {
@@ -3698,6 +4064,12 @@
             "value" : "मुख्य"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Core"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3768,6 +4140,12 @@
             "value" : "कोर गिनती"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numero di core"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3833,6 +4211,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CPU"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "CPU"
@@ -3908,6 +4292,12 @@
             "value" : "सीपीयू लोड"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carico della CPU"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3976,6 +4366,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "एक संपूर्ण सिस्टम रिपोर्ट बनाएं"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea un resoconto completo del sistema"
           }
         },
         "nl" : {
@@ -4048,6 +4444,12 @@
             "value" : "गंभीर तापीय अवस्था"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stato termico critico"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4116,6 +4518,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "क्राउन ओरिएंटेशन"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orientamento della Digital Crown"
           }
         },
         "nl" : {
@@ -4188,6 +4596,12 @@
             "value" : "मुद्रा कोड"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codice valuta"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4256,6 +4670,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "मुद्रा चिन्ह"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simbolo della valuta"
           }
         },
         "nl" : {
@@ -4328,6 +4748,12 @@
             "value" : "वर्तमान प्रक्रिया"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Processo attuale"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4396,6 +4822,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "वर्तमान सत्र"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sessione attuale"
           }
         },
         "nl" : {
@@ -4468,6 +4900,12 @@
             "value" : "चक्र गणना"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numero di cicli"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4536,6 +4974,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "गहरे सिस्टम रंग"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colori di sistema più scuri"
           }
         },
         "nl" : {
@@ -4608,6 +5052,12 @@
             "value" : "दिन के समय को बचाना"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ora legale"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4676,6 +5126,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "दशमलव विभाजक"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Separatore decimale"
           }
         },
         "nl" : {
@@ -4748,6 +5204,12 @@
             "value" : "विवरण"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descrizione"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4816,6 +5278,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "गंतव्य आईपी पता"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indirizzo IP di destinazione"
           }
         },
         "nl" : {
@@ -4888,6 +5356,12 @@
             "value" : "उपकरण"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dispositivo"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4956,6 +5430,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "डिवाइस का नाम"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome del dispositivo"
           }
         },
         "nl" : {
@@ -5031,6 +5511,12 @@
             "value" : "नकार देना"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiudi"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5101,6 +5587,12 @@
             "value" : "प्रदर्शन"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schermo"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5143,10 +5635,70 @@
             "value" : "دعم DNS"
           }
         },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DNS-understøttelse"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DNS-Unterstützung"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Compatibilidad con DNS"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prise en charge du DNS"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DNS समर्थन"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supporto DNS"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DNS-ondersteuning"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поддержка DNS"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DNS desteği"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Підтримка DNS"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DNS 支持"
           }
         }
       }
@@ -5187,6 +5739,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "डॉक कनेक्टर"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connettore dock"
           }
         },
         "nl" : {
@@ -5262,6 +5820,12 @@
             "value" : "पर्यावरण चर"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Variabili d'ambiente"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5330,6 +5894,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "गलती"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Errore"
           }
         },
         "nl" : {
@@ -5405,6 +5975,12 @@
             "value" : "खुलासा"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esposizione"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5478,6 +6054,12 @@
             "value" : "प्रक्रिया यंत्र सामग्री संस्करण"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versione del firmware"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5546,6 +6128,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सप्ताह का पहला दिन"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Primo giorno della settimana"
           }
         },
         "nl" : {
@@ -5618,6 +6206,12 @@
             "value" : "टॉर्च"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Torcia"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5663,10 +6257,70 @@
             "value" : "يدعم Foundation Models"
           }
         },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foundation Models understøttes"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foundation Models wird unterstützt"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Compatible con Foundation Models"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foundation Models pris en charge"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foundation Models समर्थित है"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foundation Models supportato"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foundation Models wordt ondersteund"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foundation Models поддерживается"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foundation Models destekleniyor"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foundation Models підтримується"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支持 Foundation Models"
           }
         }
       }
@@ -5707,6 +6361,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "मुक्त"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Libero"
           }
         },
         "nl" : {
@@ -5779,6 +6439,12 @@
             "value" : "सामने"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anteriore"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5849,6 +6515,12 @@
             "value" : "पूर्ण सिस्टम रिपोर्ट"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resoconto completo del sistema"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5917,6 +6589,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "पूर्णतःउर्जित"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carica completa"
           }
         },
         "nl" : {
@@ -5994,6 +6672,12 @@
             "value" : "सेटिंग्स पर जाएं"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vai alle impostazioni"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6062,6 +6746,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "जीपीयू"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GPU"
           }
         },
         "nl" : {
@@ -6134,6 +6824,12 @@
             "value" : "जीपीयू परिवार"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Famiglie di GPU"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6202,6 +6898,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "स्केल"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scala di grigi"
           }
         },
         "nl" : {
@@ -6274,6 +6976,12 @@
             "value" : "हरा"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verde"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6342,6 +7050,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "समूह विभाजक"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Separatore delle migliaia"
           }
         },
         "nl" : {
@@ -6414,6 +7128,12 @@
             "value" : "निर्देशित पहुंच"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accesso guidato"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6482,6 +7202,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "हैप्टिक राय"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feedback aptico"
           }
         },
         "nl" : {
@@ -6554,6 +7280,12 @@
             "value" : "हैप्टिक राय"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feedback aptico"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6622,6 +7354,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "हार्डवेयर"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hardware"
           }
         },
         "nl" : {
@@ -6694,6 +7432,12 @@
             "value" : "हार्डवेयर जानकारी"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informazioni sull'hardware"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6762,6 +7506,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "हार्डवेयर अवलोकन"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Panoramica hardware"
           }
         },
         "nl" : {
@@ -6834,6 +7584,12 @@
             "value" : "हार्डवेयर संशोधन"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revisione hardware"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6902,6 +7658,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "बिल्कुल सही जा रहे"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Precisione della direzione"
           }
         },
         "nl" : {
@@ -6974,6 +7736,12 @@
             "value" : "स्वास्थ्य सूचना"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informazioni sullo stato della batteria"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7042,6 +7810,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "होस्ट का नाम"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome host"
           }
         },
         "nl" : {
@@ -7114,6 +7888,12 @@
             "value" : "हॉटस्पॉट हेल्पर"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assistente hotspot"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7182,6 +7962,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "घंटा चक्र"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Formato orario"
           }
         },
         "nl" : {
@@ -7254,6 +8040,12 @@
             "value" : "पहचानकर्ता"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Identificatore"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7324,6 +8116,12 @@
             "value" : "विक्रेता के लिए पहचानकर्ता"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Identificatore del fornitore"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7366,10 +8164,70 @@
             "value" : "لا يدعم Image Playground"
           }
         },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Playground understøttes ikke"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Playground wird nicht unterstützt"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "No compatible con Image Playground"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Playground non pris en charge"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Playground समर्थित नहीं है"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Playground non supportato"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Playground wordt niet ondersteund"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Playground не поддерживается"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Playground desteklenmiyor"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Playground не підтримується"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不支持 Image Playground"
           }
         }
       }
@@ -7384,10 +8242,70 @@
             "value" : "يدعم Image Playground"
           }
         },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Playground understøttes"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Playground wird unterstützt"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Compatible con Image Playground"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Playground pris en charge"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Playground समर्थित है"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Playground supportato"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Playground wordt ondersteund"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Playground поддерживается"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Playground destekleniyor"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Playground підтримується"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支持 Image Playground"
           }
         }
       }
@@ -7428,6 +8346,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अनुदेश सेट"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Set di istruzioni"
           }
         },
         "nl" : {
@@ -7500,6 +8424,12 @@
             "value" : "आंतरिक नाम"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome interno"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7570,6 +8500,12 @@
             "value" : "रंगों को उलटा करें"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inverti colori"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7612,10 +8548,70 @@
             "value" : "دعم IPv4"
           }
         },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IPv4-understøttelse"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IPv4-Unterstützung"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Compatibilidad con IPv4"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prise en charge d’IPv4"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IPv4 समर्थन"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supporto IPv4"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IPv4-ondersteuning"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поддержка IPv4"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IPv4 desteği"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Підтримка IPv4"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IPv4 支持"
           }
         }
       }
@@ -7630,10 +8626,70 @@
             "value" : "دعم IPv6"
           }
         },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IPv6-understøttelse"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IPv6-Unterstützung"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Compatibilidad con IPv6"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prise en charge d’IPv6"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IPv6 समर्थन"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supporto IPv6"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IPv6-ondersteuning"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поддержка IPv6"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IPv6 desteği"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Підтримка IPv6"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IPv6 支持"
           }
         }
       }
@@ -7685,6 +8741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "आईएसओ क्षेत्र"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regione ISO"
           }
         },
         "nl" : {
@@ -7759,6 +8821,12 @@
             "value" : "समस्या रिपोर्ट, फीचर अनुरोध और योगदान हमेशा स्वागत योग्य हैं!"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segnalazioni di problemi, richieste di funzionalità e contributi sono sempre benvenuti!"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7827,6 +8895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "तिरछा"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Corsivo"
           }
         },
         "nl" : {
@@ -7899,6 +8973,12 @@
             "value" : "अभी जुड़े हैं"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connessione appena effettuata"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7967,6 +9047,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ज्ञात समय क्षेत्र"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fusi orari conosciuti"
           }
         },
         "nl" : {
@@ -8039,6 +9125,12 @@
             "value" : "ज्ञात समय क्षेत्र"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fusi orari conosciuti"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8107,6 +9199,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अक्षांश"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Latitudine"
           }
         },
         "nl" : {
@@ -8179,6 +9277,12 @@
             "value" : "लेआउट दिशा"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Direzione del testo"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8221,10 +9325,70 @@
             "value" : "جودة الاتصال"
           }
         },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forbindelseskvalitet"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verbindungsqualität"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Calidad del enlace"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qualité de la connexion"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कनेक्शन की गुणवत्ता"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qualità del collegamento"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verbindingskwaliteit"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Качество соединения"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bağlantı kalitesi"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Якість з’єднання"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "连接质量"
           }
         }
       }
@@ -8265,6 +9429,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "लोकेल"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni locali"
           }
         },
         "nl" : {
@@ -8337,6 +9507,12 @@
             "value" : "जगह"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posizione"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8405,6 +9581,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "देशान्तर"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Longitudine"
           }
         },
         "nl" : {
@@ -8477,6 +9659,12 @@
             "value" : "लो बैटरी"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batteria scarica"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8519,10 +9707,70 @@
             "value" : "نمط البيانات المنخفضة"
           }
         },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lav datafunktion"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datensparmodus"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Modo de datos reducidos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode Faibles données"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कम डेटा मोड"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consumo limitato di dati"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Databesparingsmodus"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Экономия данных"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Düşük Veri Modu"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Режим економії даних"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "低数据模式"
           }
         }
       }
@@ -8563,6 +9811,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "कम पावर मोड"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Risparmio energetico"
           }
         },
         "nl" : {
@@ -8638,6 +9892,12 @@
             "value" : "चुंबकीय क्षेत्र"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Campo magnetico"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8706,6 +9966,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "चुंबकीय शीर्ष"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Direzione magnetica"
           }
         },
         "nl" : {
@@ -8780,6 +10046,12 @@
             "value" : "मैगसेफ"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MagSafe"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8848,6 +10120,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "उत्पादक"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Produttore"
           }
         },
         "nl" : {
@@ -8920,6 +10198,12 @@
             "value" : "अधिकतम"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Massimo"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8988,6 +10272,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अधिकतम भार"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carico massimo"
           }
         },
         "nl" : {
@@ -9060,6 +10350,12 @@
             "value" : "अधिकतम. घडी की गति"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frequenza di clock massima"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9130,6 +10426,12 @@
             "value" : "अधिकतम योग्यता"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capacità massima"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9198,6 +10500,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "याद"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memoria"
           }
         },
         "nl" : {
@@ -9273,6 +10581,12 @@
             "value" : "इस डिवाइस पर मेटल समर्थित नहीं है"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metal non è supportato su questo dispositivo"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9341,6 +10655,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "मीट्रिक प्रणाली"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema metrico"
           }
         },
         "nl" : {
@@ -9413,6 +10733,12 @@
             "value" : "सूक्ष्मवास्तुकला"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Microarchitettura"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9481,6 +10807,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "मॉडल सूचना"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informazioni sul modello"
           }
         },
         "nl" : {
@@ -9553,6 +10885,12 @@
             "value" : "मोनो ऑडियो"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Audio mono"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9621,6 +10959,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "मोशन कोप्रोसेसर"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coprocessore di movimento"
           }
         },
         "nl" : {
@@ -9693,6 +11037,12 @@
             "value" : "बहु कार्यण"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Multitasking"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9761,6 +11111,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "नाम"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome"
           }
         },
         "nl" : {
@@ -9833,6 +11189,12 @@
             "value" : "नेटवर्क"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rete"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9901,6 +11263,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "नेटवर्क इंटरफेस"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Interfaccia di rete"
           }
         },
         "nl" : {
@@ -9973,6 +11341,12 @@
             "value" : "नेटवर्क प्रकार"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipo di rete"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10007,79 +11381,6 @@
     },
     "Neural Engine" : {
       "shouldTranslate" : false
-    },
-    "New Chat" : {
-      "comment" : "A button that starts a new chat.",
-      "extractionState" : "stale",
-      "isCommentAutoGenerated" : true,
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "محادثة جديدة"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ny chat"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Neuer Chat"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nueva conversación"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nouvelle discussion"
-          }
-        },
-        "hi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "नई चैट"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nieuwe chat"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Новый чат"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Yeni sohbet"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Новий чат"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "新聊天"
-          }
-        }
-      }
     },
     "Next transition" : {
       "localizations" : {
@@ -10117,6 +11418,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अगला परिवर्तन"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prossimo cambio di orario"
           }
         },
         "nl" : {
@@ -10189,6 +11496,12 @@
             "value" : "नहीं"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10257,6 +11570,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सभी प्लेटफ़ॉर्म कुछ खास प्रकारों के जवाब में फीडबैक नहीं चलाएंगे"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alcune piattaforme non riproducono il feedback per determinati tipi"
           }
         },
         "nl" : {
@@ -10329,6 +11648,12 @@
             "value" : "क्रमांकन प्रणाली"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema di numerazione"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10397,6 +11722,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "चालू/बंद स्विच लेबल"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etichette interruttori I/O"
           }
         },
         "nl" : {
@@ -10469,6 +11800,12 @@
             "value" : "सभी विशिष्टताओं को देखने के लिए पूर्ण स्क्रीन में खोलें"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apri a tutto schermo per vedere tutte le specifiche"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10537,6 +11874,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "किसी अन्य UWB-सक्षम डिवाइस पर इस ऐप अनुभाग को खोलें"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apri questa sezione dell'app su un altro dispositivo compatibile con UWB"
           }
         },
         "nl" : {
@@ -10609,6 +11952,12 @@
             "value" : "ऑपरेटिंग सिस्टम"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema operativo"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10677,6 +12026,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अभिविन्यास"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orientamento"
           }
         },
         "nl" : {
@@ -10749,6 +12104,12 @@
             "value" : "पैक लॉट कोड"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codice lotto della batteria"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10817,6 +12178,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "पीसीबी लॉट कोड"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codice lotto della scheda PCB"
           }
         },
         "nl" : {
@@ -10889,6 +12256,12 @@
             "value" : "प्रदर्शन प्रोफ़ाइल"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profilo delle prestazioni"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10957,6 +12330,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "आवाज़ का उतार-चढ़ाव"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beccheggio"
           }
         },
         "nl" : {
@@ -11029,6 +12408,12 @@
             "value" : "पिक्सेल घनत्व"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Densità di pixel"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11097,6 +12482,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "पद"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posizione"
           }
         },
         "nl" : {
@@ -11172,6 +12563,12 @@
             "value" : "पसंदीदा भाषाएँ"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lingue preferite"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11240,6 +12637,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "क्रॉस फ़ेड ट्रांज़िशन को प्राथमिकता देता है"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preferisci transizioni con dissolvenza"
           }
         },
         "nl" : {
@@ -11312,6 +12715,12 @@
             "value" : "दबाव"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pressione"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11354,10 +12763,70 @@
             "value" : "يدعم Private Cloud Compute"
           }
         },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Private Cloud Compute understøttes"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Private Cloud Compute wird unterstützt"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Compatible con Private Cloud Compute"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Private Cloud Compute pris en charge"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Private Cloud Compute समर्थित है"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Private Cloud Compute supportato"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Private Cloud Compute wordt ondersteund"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Private Cloud Compute поддерживается"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Private Cloud Compute destekleniyor"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Private Cloud Compute підтримується"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支持 Private Cloud Compute"
           }
         }
       }
@@ -11398,6 +12867,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "प्रक्रिया पहचानकर्ता"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Identificatore del processo"
           }
         },
         "nl" : {
@@ -11470,6 +12945,12 @@
             "value" : "प्रक्रिया नाम"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome del processo"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11538,6 +13019,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "प्रोसेसर"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Processore"
           }
         },
         "nl" : {
@@ -11610,6 +13097,12 @@
             "value" : "निकटता सेंसर चालू हो गया"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sensore di prossimità attivato"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11678,6 +13171,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सार्वजनिक आईपी पता"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indirizzo IP pubblico"
           }
         },
         "nl" : {
@@ -11750,6 +13249,12 @@
             "value" : "कोटेशन प्रारंभ सीमांकक"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delimitatore di apertura delle virgolette"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11818,6 +13323,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "कोटेशन अंत सीमांकक"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delimitatore di chiusura delle virgolette"
           }
         },
         "nl" : {
@@ -11890,6 +13401,12 @@
             "value" : "टक्कर मारना"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RAM"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11958,6 +13475,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "रेटिंग"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Classificazione"
           }
         },
         "nl" : {
@@ -12030,6 +13553,12 @@
             "value" : "कच्चा एक्स"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "X grezzo"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12098,6 +13627,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "रॉ वाई"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Y grezzo"
           }
         },
         "nl" : {
@@ -12170,6 +13705,12 @@
             "value" : "कच्चा ज़ेड"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Z grezzo"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12238,6 +13779,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "किरण पर करीबी नजर रखना"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ray tracing"
           }
         },
         "nl" : {
@@ -12310,6 +13857,12 @@
             "value" : "लाल"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rosso"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12378,6 +13931,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "मोशन घटाएं"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riduci movimento"
           }
         },
         "nl" : {
@@ -12450,6 +14009,12 @@
             "value" : "पारदर्शिता कम करें"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riduci trasparenza"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12518,6 +14083,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ताज़ा दर"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frequenza di aggiornamento"
           }
         },
         "nl" : {
@@ -12590,6 +14161,12 @@
             "value" : "सापेक्ष ऊंचाई"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Altitudine relativa"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12658,6 +14235,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "रिलीज़ की तारीख"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data di uscita"
           }
         },
         "nl" : {
@@ -12730,6 +14313,12 @@
             "value" : "रोल"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rollio"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12798,6 +14387,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "रोटेशन"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rotazione"
           }
         },
         "nl" : {
@@ -12870,6 +14465,12 @@
             "value" : "गोल कोनें"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Angoli arrotondati"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12938,6 +14539,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "रूटर"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Router"
           }
         },
         "nl" : {
@@ -13010,6 +14617,12 @@
             "value" : "बचाना..."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva..."
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13078,6 +14691,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "स्क्रीन संकल्प"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Risoluzione dello schermo"
           }
         },
         "nl" : {
@@ -13150,6 +14769,12 @@
             "value" : "स्क्रीन का साईज़"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dimensioni dello schermo"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13217,6 +14842,12 @@
           }
         },
         "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SDRAM"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "SDRAM"
@@ -13292,6 +14923,12 @@
             "value" : "जीएमटी से सेकंड"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Secondi rispetto al GMT"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13360,6 +14997,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सुरक्षित नेटवर्क"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rete sicura"
           }
         },
         "nl" : {
@@ -13432,6 +15075,12 @@
             "value" : "सुरक्षा प्रकार"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipo di sicurezza"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13500,6 +15149,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सेंसर"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sensori"
           }
         },
         "nl" : {
@@ -13572,6 +15227,12 @@
             "value" : "क्रम संख्या"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numero di serie"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13640,6 +15301,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "गंभीर तापीय अवस्था"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stato termico grave"
           }
         },
         "nl" : {
@@ -13712,6 +15379,12 @@
             "value" : "iPhone प्रदर्शन गेमिंग के लिए प्रमाणित"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Certificato per il gaming ad alte prestazioni su iPhone"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13780,6 +15453,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सेटिंग्स"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni"
           }
         },
         "nl" : {
@@ -13852,6 +15531,12 @@
             "value" : "पूर्ववत करने के लिए हिलाएँ"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agita per annullare"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13920,6 +15605,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "बिना रंग के फर्क करना चाहिए"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Differenzia senza colore"
           }
         },
         "nl" : {
@@ -13992,6 +15683,12 @@
             "value" : "सिग्नल क्षमता"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Potenza del segnale"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14062,6 +15759,12 @@
             "value" : "स्क्रीन बोलो"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leggi schermo"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14130,6 +15833,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "चयन बोलें"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leggi selezione"
           }
         },
         "nl" : {
@@ -14205,6 +15914,12 @@
             "value" : "प्रभार का राज्य (%)"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stato di carica (%)"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14275,6 +15990,12 @@
             "value" : "स्थैतिक रंग"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colori statici"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14317,10 +16038,70 @@
             "value" : "الحالة"
           }
         },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Estado"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "État"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्थिति"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stato"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Статус"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durum"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Стан"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "状态"
           }
         }
       }
@@ -14361,6 +16142,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "भंडारण"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spazio di archiviazione"
           }
         },
         "nl" : {
@@ -14433,6 +16220,12 @@
             "value" : "स्ट्राइकथ्रू"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Barrato"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14501,6 +16294,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "उपखंड"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suddivisione"
           }
         },
         "nl" : {
@@ -14573,6 +16372,12 @@
             "value" : "सबनेट मास्क"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maschera di sottorete"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14641,6 +16446,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "उपक्षेत्र"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sottoregioni"
           }
         },
         "nl" : {
@@ -14713,6 +16524,12 @@
             "value" : "का समर्थन किया"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supportato"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14781,6 +16598,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "समर्थित जीपीयू परिवार"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Famiglie di GPU supportate"
           }
         },
         "nl" : {
@@ -14853,6 +16676,12 @@
             "value" : "कैमरा स्विच करें"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambia fotocamera"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14921,6 +16750,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "नियंत्रण स्विच करें"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controllo interruttori"
           }
         },
         "nl" : {
@@ -14993,6 +16828,12 @@
             "value" : "प्रणाली"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15061,6 +16902,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सिस्टम फ़ॉन्ट्स"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Font di sistema"
           }
         },
         "nl" : {
@@ -15133,6 +16980,12 @@
             "value" : "सिस्टम भाषा"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lingua del sistema"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15201,6 +17054,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सिस्टम रेटिंग"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Classificazione del sistema"
           }
         },
         "nl" : {
@@ -15273,6 +17132,12 @@
             "value" : "सिस्टम क्षेत्र"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regione del sistema"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15341,6 +17206,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "सिस्टम अपटाइम"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo di attività del sistema"
           }
         },
         "nl" : {
@@ -15413,6 +17284,12 @@
             "value" : "प्रौद्योगिकी नोड"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Processo produttivo"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15481,6 +17358,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "परीक्षण"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Test"
           }
         },
         "nl" : {
@@ -15555,6 +17438,12 @@
             "value" : "यह सहायक आगे के सवालों के जवाब दे सकता है और बिल्ट-इन डिवाइस टूल्स का उपयोग कर सकता है"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'assistente può rispondere a domande successive e usare gli strumenti integrati del dispositivo"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15625,6 +17514,12 @@
             "value" : "तापीय अवस्था"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stato termico"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15693,6 +17588,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "यह डिवाइस UWB-सक्षम नहीं है"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questo dispositivo non è compatibile con UWB"
           }
         },
         "nl" : {
@@ -15767,6 +17668,12 @@
             "value" : "यह सूचक उपयोग किए गए टोकन की मात्रा दिखाता है"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questo indicatore mostra il numero di token utilizzati"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15835,6 +17742,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "समय ऑफसेट"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Differenza oraria"
           }
         },
         "nl" : {
@@ -15907,6 +17820,12 @@
             "value" : "समय क्षेत्र"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fuso orario"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15975,6 +17894,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "समय क्षेत्र"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fuso orario"
           }
         },
         "nl" : {
@@ -16047,6 +17972,12 @@
             "value" : "समय क्षेत्र डेटा संस्करण"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versione dei dati dei fusi orari"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16117,6 +18048,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "टोकन विंडो उपयोग"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilizzo della finestra di token"
           }
         },
         "nl" : {
@@ -16192,6 +18129,12 @@
             "value" : "कुल"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Totale"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16262,6 +18205,12 @@
             "value" : "सच्चा शीर्षक"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Direzione rispetto al nord geografico"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16290,79 +18239,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "真实航向"
-          }
-        }
-      }
-    },
-    "Type here..." : {
-      "comment" : "A placeholder text for a chat prompt field.",
-      "extractionState" : "stale",
-      "isCommentAutoGenerated" : true,
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "اكتب هنا..."
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Skriv her..."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Geben Sie hier ein..."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Escribe aquí..."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tapez ici..."
-          }
-        },
-        "hi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "यहाँ टाइप करें..."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Typ hier..."
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Введите здесь..."
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Buraya yazın..."
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Введіть тут..."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在此输入..."
           }
         }
       }
@@ -16403,6 +18279,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अल्ट्रा वाइड बैंड"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Banda ultralarga"
           }
         },
         "nl" : {
@@ -16475,6 +18357,12 @@
             "value" : "रेखांकन"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sottolineato"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16545,6 +18433,12 @@
             "value" : "एकीकृत स्मृति"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memoria unificata"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16587,10 +18481,70 @@
             "value" : "سبب عدم توفر الاتصال"
           }
         },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Årsag til manglende forbindelse"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grund für die fehlende Verbindung"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Motivo de la falta de conexión"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Motif de l’absence de connexion"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कनेक्शन उपलब्ध न होने का कारण"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Motivo della mancata connessione"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reden voor ontbrekende verbinding"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Причина отсутствия соединения"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bağlantının sağlanamama nedeni"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Причина відсутності з’єднання"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法连接的原因"
           }
         }
       }
@@ -16631,6 +18585,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "असमर्थित"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non supportato"
           }
         },
         "nl" : {
@@ -16703,6 +18663,12 @@
             "value" : "प्रयोग"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilizzo"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16771,6 +18737,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "इस्तेमाल किया गया"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilizzato"
           }
         },
         "nl" : {
@@ -16843,6 +18815,12 @@
             "value" : "प्रकार"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Variante"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16913,6 +18891,12 @@
             "value" : "बहुत कम बैटरी"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batteria quasi esaurita"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16981,6 +18965,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "वीडियो ऑटोप्ले"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riproduzione automatica dei video"
           }
         },
         "nl" : {
@@ -17056,6 +19046,12 @@
             "value" : "वोल्टेज"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tensione"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17126,6 +19122,12 @@
             "value" : "आयतन"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volume"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17168,10 +19170,70 @@
             "value" : "بانتظار مسار الشبكة"
           }
         },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Venter på netværksforbindelse"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warten auf Netzwerkverbindung"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Esperando una ruta de red"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En attente d’une connexion réseau"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "नेटवर्क कनेक्शन की प्रतीक्षा में"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In attesa di un percorso di rete"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wachten op netwerkverbinding"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ожидание сетевого соединения"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ağ bağlantısı bekleniyor"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Очікування мережевого з’єднання"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在等待网络连接"
           }
         }
       }
@@ -17212,6 +19274,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "विशिष्ट देखें"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Specifiche dell'Apple Watch"
           }
         },
         "nl" : {
@@ -17284,6 +19352,12 @@
             "value" : "पानी का ताला"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blocco quando in acqua"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17352,6 +19426,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "पानी प्रतिरोध"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resistenza all'acqua"
           }
         },
         "nl" : {
@@ -17424,6 +19504,12 @@
             "value" : "सफ़ेद"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bianco"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17492,6 +19578,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "वायरलेस चार्जिंग"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ricarica wireless"
           }
         },
         "nl" : {
@@ -17564,6 +19656,12 @@
             "value" : "कलाई का स्थान"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posizione sul polso"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17632,6 +19730,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "एक्स अक्ष"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Asse X"
           }
         },
         "nl" : {
@@ -17704,6 +19808,12 @@
             "value" : "वाई अक्ष"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Asse Y"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17772,6 +19882,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "रास्ते से हटना"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Imbardata"
           }
         },
         "nl" : {
@@ -17844,6 +19960,12 @@
             "value" : "हाँ"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sì"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17912,6 +20034,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "आपका डिवाइस फ़ाउंडेशन मॉडल का समर्थन नहीं करता है"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tuo dispositivo non supporta Foundation Models"
           }
         },
         "nl" : {
@@ -17986,6 +20114,12 @@
             "value" : "आपका डिवाइस Image Playground का समर्थन नहीं करता है"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tuo dispositivo non supporta Image Playground"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18054,6 +20188,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "आपका डिवाइस फाउंडेशन मॉडल का समर्थन करता है"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tuo dispositivo supporta Foundation Models"
           }
         },
         "nl" : {
@@ -18128,6 +20268,12 @@
             "value" : "आपका डिवाइस Image Playground का समर्थन करता है"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tuo dispositivo supporta Image Playground"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18196,6 +20342,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Z अक्ष"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Asse Z"
           }
         },
         "nl" : {
