@@ -4,10 +4,23 @@ import DeviceKit
 @Observable
 final class BatteryVM {
     private let device = Device.current
+
+    private var liveBatteryState = ""
+    private var liveBatteryLevel: String = ""
+    private var liveBatteryLevelNumber: Int? = nil
     
-    private(set) var batteryLevel = ""
-    private(set) var batteryState = ""
-    private(set) var batteryLevelNumber: Int?
+    var batteryLevel: String {
+        ValueStore.debugValue(liveBatteryLevel, override: "100%")
+    }
+
+    var batteryState: String {
+        ValueStore.debugValue(liveBatteryState, override: "Charged")
+    }
+
+    var batteryLevelNumber: Int? {
+        ValueStore.debugValue(liveBatteryLevelNumber, override: 100)
+    }
+
     private(set) var lowPowerMode = false
     
     @ObservationIgnored private var batteryNotificationTasks: [Task<Void, Never>] = []
@@ -56,11 +69,8 @@ final class BatteryVM {
     }
     
     var icon: String {
-#if os(watchOS)
-        let battery = WKInterfaceDevice.current().batteryLevel * 100
-#else
-        let battery = UIDevice.current.batteryLevel * 100
-#endif
+        let battery = ValueStore.debugValue(liveBatteryLevelNumber ?? 0, override: 100)
+
         switch battery {
         case 0...24:
             return "battery.0percent"
@@ -125,25 +135,25 @@ final class BatteryVM {
         let device = UIDevice.current
 #endif
         withAnimation {
-            batteryLevelNumber = Int(device.batteryLevel * 100)
-            batteryLevel = device.batteryLevel.formatted(.percentRounded)
+            liveBatteryLevelNumber = Int(device.batteryLevel * 100)
+            liveBatteryLevel = device.batteryLevel.formatted(.percentRounded)
             lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled
             
             switch device.batteryState {
             case .unknown:
-                batteryState = "Unknown"
+                liveBatteryState = "Unknown"
                 
             case .unplugged:
-                batteryState = "Unplugged"
+                liveBatteryState = "Unplugged"
                 
             case .charging:
-                batteryState = "Charging"
+                liveBatteryState = "Charging"
                 
             case .full:
-                batteryState = "Full"
+                liveBatteryState = "Full"
                 
             default:
-                batteryState = "Unknown"
+                liveBatteryState = "Unknown"
             }
         }
     }

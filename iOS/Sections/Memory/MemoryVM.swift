@@ -6,17 +6,47 @@ import OSLog
 final class MemoryVM {
     private let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "DeviceSpecs", category: "MemoryVM")
     private let device = Device.current
+
+    private var liveTotalRAM = ""
+    private var liveUsedRAM = ""
+    private var liveFreeRAM = ""
+    private var liveTotalDisk = ""
+    private var liveUsedDisk = ""
+    private var liveFreeDisk = ""
+    private var liveFreeDiskForImportantUsage = ""
+    private var liveFreeDiskForOpportunisticUsage = ""
     
-    private(set) var totalRAM = ""
-    private(set) var usedRAM = ""
-    private(set) var freeRAM = ""
+    var totalRAM: String {
+        ValueStore.debugValue(liveTotalRAM, override: "12 GB")
+    }
+
+    var usedRAM: String {
+        ValueStore.debugValue(liveUsedRAM, override: "6 GB (50%)")
+    }
+
+    var freeRAM: String {
+        ValueStore.debugValue(liveFreeRAM, override: "6 GB (50%)")
+    }
     
-    private(set) var totalDisk = ""
-    private(set) var usedDisk = ""
-    private(set) var freeDisk = ""
+    var totalDisk: String {
+        ValueStore.debugValue(liveTotalDisk, override: "2 TB")
+    }
+
+    var usedDisk: String {
+        ValueStore.debugValue(liveUsedDisk, override: "1.5 TB (75%)")
+    }
+
+    var freeDisk: String {
+        ValueStore.debugValue(liveFreeDisk, override: "512 GB (25%)")
+    }
     
-    private(set) var freeDiskForImportantUsage = ""
-    private(set) var freeDiskForOpportunisticUsage = ""
+    var freeDiskForImportantUsage: String {
+        ValueStore.debugValue(liveFreeDiskForImportantUsage, override: "512 GB (25%)")
+    }
+
+    var freeDiskForOpportunisticUsage: String {
+        ValueStore.debugValue(liveFreeDiskForOpportunisticUsage, override: "512 GB (25%)")
+    }
     
     init() {
         getMemoryUsage()
@@ -61,10 +91,10 @@ final class MemoryVM {
         let usedMemory = (UInt64(stats.active_count) + UInt64(stats.wire_count)) * UInt64(pageSize)
         let freeMemory = totalMemory - usedMemory
         
-        totalRAM = formatBytes(totalMemory)
+        liveTotalRAM = formatBytes(totalMemory)
         
-        usedRAM = format(Int(totalMemory), Int(usedMemory))
-        freeRAM = format(Int(totalMemory), Int(freeMemory))
+        liveUsedRAM = format(Int(totalMemory), Int(usedMemory))
+        liveFreeRAM = format(Int(totalMemory), Int(freeMemory))
     }
     
     // Storage
@@ -92,8 +122,8 @@ final class MemoryVM {
                 let availableCapacityForOpportunisticUsage,
                 let availableCapacityForImportantUsage
             else {
-                freeDiskForOpportunisticUsage = "Unavailable"
-                freeDiskForImportantUsage = "Unavailable"
+                liveFreeDiskForOpportunisticUsage = "Unavailable"
+                liveFreeDiskForImportantUsage = "Unavailable"
                 
                 return
             }
@@ -102,17 +132,17 @@ final class MemoryVM {
                 let totalCapacity = values.volumeTotalCapacity,
                 let availableCapacity = values.volumeAvailableCapacity
             else {
-                freeDisk = "N/a"
-                usedDisk = "N/a"
-                totalDisk = "N/a"
+                liveFreeDisk = "N/a"
+                liveUsedDisk = "N/a"
+                liveTotalDisk = "N/a"
                 
                 return
             }
             
             guard totalCapacity > 0 else {
-                freeDisk = "N/a"
-                usedDisk = "N/a"
-                totalDisk = "N/a"
+                liveFreeDisk = "N/a"
+                liveUsedDisk = "N/a"
+                liveTotalDisk = "N/a"
                 
                 return
             }
@@ -121,25 +151,25 @@ final class MemoryVM {
             let clampedAvailableCapacity = max(0, min(availableCapacity, totalCapacity))
             let usedCapacity = max(0, totalCapacity - clampedAvailableCapacity)
             
-            freeDisk = format(totalCapacity, clampedAvailableCapacity)
+            liveFreeDisk = format(totalCapacity, clampedAvailableCapacity)
 #else
             let clampedAvailableCapacityForOpportunisticUsage = max(0, min(Int(availableCapacityForOpportunisticUsage), totalCapacity))
             let clampedAvailableCapacityForImportantUsage = max(0, min(Int(availableCapacityForImportantUsage), totalCapacity))
             
-            freeDiskForOpportunisticUsage = format(totalCapacity, clampedAvailableCapacityForOpportunisticUsage)
-            freeDiskForImportantUsage = format(totalCapacity, clampedAvailableCapacityForImportantUsage)
+            liveFreeDiskForOpportunisticUsage = format(totalCapacity, clampedAvailableCapacityForOpportunisticUsage)
+            liveFreeDiskForImportantUsage = format(totalCapacity, clampedAvailableCapacityForImportantUsage)
             
             let usedCapacity = max(0, totalCapacity - clampedAvailableCapacityForImportantUsage)
             
-            freeDisk = format(totalCapacity, clampedAvailableCapacityForImportantUsage)
+            liveFreeDisk = format(totalCapacity, clampedAvailableCapacityForImportantUsage)
 #endif
             
-            totalDisk = formatBytes(totalCapacity)
-            usedDisk = format(totalCapacity, usedCapacity)
+            liveTotalDisk = formatBytes(totalCapacity)
+            liveUsedDisk = format(totalCapacity, usedCapacity)
         } catch {
-            freeDisk = "Error"
-            totalDisk = "Error"
-            usedDisk = "Error"
+            liveFreeDisk = "Error"
+            liveTotalDisk = "Error"
+            liveUsedDisk = "Error"
             
             logger.error("Failed to read disk info: \(error)")
         }

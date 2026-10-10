@@ -47,7 +47,9 @@ final class DisplayVM {
     }
     
 #if !os(watchOS)
-    static var refreshRate = String(UIScreen.main.maximumFramesPerSecond)
+    static var refreshRate: String {
+        ValueStore.debugValue(String(UIScreen.main.maximumFramesPerSecond), override: "120")
+    }
 #endif
     
 #if os(iOS)

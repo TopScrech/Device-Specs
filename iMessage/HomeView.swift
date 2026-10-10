@@ -1,6 +1,10 @@
 import SwiftUI
 
 struct HomeView: View {
+#if os(iOS)
+    @ObservedObject private var store = ValueStore.shared
+#endif
+
     @Environment(NavState.self) private var nav
     @Environment(\.dismiss) private var dismiss
     

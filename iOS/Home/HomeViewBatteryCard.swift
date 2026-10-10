@@ -1,6 +1,10 @@
 import SwiftUI
 
 struct HomeViewBatteryCard: View {
+#if os(iOS)
+    @ObservedObject private var store = ValueStore.shared
+#endif
+
     @Environment(BatteryVM.self) private var battery
     
     private var level: Int? {

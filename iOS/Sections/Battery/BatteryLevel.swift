@@ -1,6 +1,10 @@
 import SwiftUI
 
 struct BatteryLevel: View {
+#if os(iOS)
+    @ObservedObject private var store = ValueStore.shared
+#endif
+
     @Environment(BatteryVM.self) private var vm
     
     var body: some View {

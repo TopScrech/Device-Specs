@@ -1,24 +1,11 @@
 import ScrechKit
 import AutoUpdate
 
-fileprivate let identifier: String = {
-    var systemInfo = utsname()
-    uname(&systemInfo)
-    
-    let mirror = Mirror(reflecting: systemInfo.machine)
-    
-    let identifier = mirror.children.reduce("") { identifier, element in
-        guard let value = element.value as? Int8, value != 0 else {
-            return identifier
-        }
-        
-        return identifier + String(UnicodeScalar(UInt8(value)))
-    }
-    
-    return identifier
-}()
-
 struct HomeView: View {
+#if os(iOS)
+    @ObservedObject private var store = ValueStore.shared
+#endif
+
     @Environment(NavState.self) private var nav
     
     let assistantRequest: Int
@@ -55,9 +42,11 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 12) {
-                AdView("FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: url)
+                if !store.debugMode {
+                    AdView("FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: url)
+                }
                 
-                HomeViewCard("Device", icon: "info.circle", value: DeviceVM.deviceIdentifier, detail: Text(identifier)) {
+                HomeViewCard("Device", icon: "info.circle", value: DeviceVM.deviceIdentifier, detail: Text(DeviceVM.hardwareIdentifier)) {
                     DeviceSpecs()
                         .environment(device)
                 }

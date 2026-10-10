@@ -1,6 +1,10 @@
 import ScrechKit
 
 struct MinimizedHomeView: View {
+#if os(iOS)
+    @ObservedObject private var store = ValueStore.shared
+#endif
+
     @State private var nav = NavState()
     
     @State private var cpu = ProcessorVM()

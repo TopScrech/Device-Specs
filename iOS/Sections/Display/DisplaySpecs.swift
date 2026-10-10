@@ -2,6 +2,10 @@ import SwiftUI
 import DeviceKit
 
 struct DisplaySpecs: View {
+#if os(iOS)
+    @ObservedObject private var store = ValueStore.shared
+#endif
+
     @State private var brightness = 0.0
     
     init() {

@@ -10,8 +10,31 @@ final class DeviceVM {
     private(set) var isForceTouchAvailable = ""
     
     static let isMagsafeSupported = Device.current.hasMagsafe
-    static let deviceName = Device.current.name ?? "-"
-    static let deviceIdentifier = Device.current.description
+    static var deviceName: String {
+        ValueStore.debugValue(Device.current.name ?? "-", override: "iPhone 18 Pro Max")
+    }
+
+    static var deviceIdentifier: String {
+        ValueStore.debugValue(Device.current.description, override: "iPhone 18 Pro Max")
+    }
+
+    static var hardwareIdentifier: String {
+        ValueStore.debugValue(liveHardwareIdentifier, override: "iPhone19,7")
+    }
+
+    private static let liveHardwareIdentifier: String = {
+        var systemInfo = utsname()
+        uname(&systemInfo)
+
+        return Mirror(reflecting: systemInfo.machine).children.reduce("") { identifier, element in
+            guard let value = element.value as? Int8, value != 0 else {
+                return identifier
+            }
+
+            return identifier + String(UnicodeScalar(UInt8(value)))
+        }
+    }()
+
     static let releaseDate = Device.current.releaseDate
     static let bluetoothVersion = Device.current.bluetoothVersion
     static let waterResistance = Device.current.waterResistance

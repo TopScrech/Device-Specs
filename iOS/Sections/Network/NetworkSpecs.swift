@@ -1,6 +1,10 @@
 import SwiftUI
 
 struct NetworkSpecs: View {
+#if os(iOS)
+    @ObservedObject private var store = ValueStore.shared
+#endif
+
     @State private var network = NetworkVM()
     @Environment(ConnectivityVM.self) private var connectivity
     
