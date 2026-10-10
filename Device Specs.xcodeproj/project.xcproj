@@ -160,8 +160,6 @@
             "Utils/ListLink.swift",
             "Utils/MetricKitManager.swift",
             "Utils/SpecsLink.swift",
-            "Warnings/WarningCard.swift",
-            "Warnings/WarningSection.swift",
           ],
         }, {
           "target": "visionOS",
@@ -314,7 +312,6 @@
             "Utils/ListLink.swift",
             "Utils/MetricKitManager.swift",
             "Utils/SpecsButton.swift",
-            "Warnings/WarningSection.swift",
             "iOS.plist",
           ],
         }, {
@@ -382,8 +379,6 @@
             "Sections/Tests/UWB/UWBTestView.swift",
             "Utils/ListLink.swift",
             "Utils/MetricKitManager.swift",
-            "Warnings/WarningCard.swift",
-            "Warnings/WarningSection.swift",
             "iOS.plist",
           ],
         },

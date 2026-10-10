@@ -55,9 +55,6 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 12) {
-                WarningSection()
-                    .environment(battery)
-                
                 AdView("FanControl", subtitle: "Keep Your Mac Cool and Quiet", url: url)
                 
                 HomeViewCard("Device", icon: "info.circle", value: DeviceVM.deviceIdentifier, detail: Text(identifier)) {
