@@ -10,16 +10,29 @@ final class DeviceVM {
     private(set) var isForceTouchAvailable = ""
     
     static let isMagsafeSupported = Device.current.hasMagsafe
+
+    private static var isDebugDevicePad: Bool {
+#if os(iOS)
+        Device.current.isPad
+#else
+        false
+#endif
+    }
+
+    private static var debugDeviceName: String {
+        isDebugDevicePad ? "iPad Pro 13-inch (M5)" : "iPhone 18 Pro Max"
+    }
+
     static var deviceName: String {
-        ValueStore.debugValue(Device.current.name ?? "-", override: "iPhone 18 Pro Max")
+        ValueStore.debugValue(Device.current.name ?? "-", override: debugDeviceName)
     }
 
     static var deviceIdentifier: String {
-        ValueStore.debugValue(Device.current.description, override: "iPhone 18 Pro Max")
+        ValueStore.debugValue(Device.current.description, override: debugDeviceName)
     }
 
     static var hardwareIdentifier: String {
-        ValueStore.debugValue(liveHardwareIdentifier, override: "iPhone19,7")
+        ValueStore.debugValue(liveHardwareIdentifier, override: isDebugDevicePad ? "iPad17,4" : "iPhone19,7")
     }
 
     private static let liveHardwareIdentifier: String = {
