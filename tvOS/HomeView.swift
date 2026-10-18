@@ -55,6 +55,9 @@ struct HomeView: View {
             .padding(.vertical, 30)
         }
         .navigationTitle("Device Specs")
+        .task {
+            memory.getDiskInfo()
+        }
     }
 }
 
