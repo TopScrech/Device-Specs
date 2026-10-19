@@ -46,7 +46,6 @@ final class DeviceVM {
         }
     }()
 
-    static let releaseDate = Device.current.releaseDate
 #if os(iOS)
     static let hasWirelessCharging = Device.current.supportsWirelessCharging
     static let supports5G = Device.current.has5gSupport
