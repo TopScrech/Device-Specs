@@ -1,6 +1,6 @@
 import SwiftUI
 
-#if canImport(FoundationModels)
+#if canImport(FoundationModels) && !os(watchOS)
 import FoundationModels
 #endif
 
