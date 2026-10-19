@@ -52,10 +52,6 @@ final class BatteryVM {
 #endif
     }
     
-    var capacity: String {
-        device.batteryCapacity
-    }
-    
     var voltage: String {
         device.voltage
     }

@@ -47,7 +47,6 @@ final class DeviceVM {
     }()
 
     static let releaseDate = Device.current.releaseDate
-    static let bluetoothVersion = Device.current.bluetoothVersion
     static let waterResistance = Device.current.waterResistance
     static let waterResistanceDescription = Device.current.waterResistanceDescription
 #if os(iOS)
