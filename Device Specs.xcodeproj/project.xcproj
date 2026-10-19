@@ -324,7 +324,6 @@
             "Chat/DeviceChatMessage.swift",
             "Chat/DeviceChatMessageRow.swift",
             "DeviceKit/releaseDate.swift",
-            "DeviceKit/voltage.swift",
             "Localizable.xcstrings",
             "Sections/System/Time Zone/KnownTimeZones.swift",
             "Utils/ValueStore.swift",

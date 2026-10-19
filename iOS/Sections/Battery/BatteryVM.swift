@@ -1,5 +1,5 @@
 import SwiftUI
-import DeviceKit
+import Device
 
 @Observable
 final class BatteryVM {
@@ -53,7 +53,7 @@ final class BatteryVM {
     }
     
     var voltage: String {
-        device.voltage
+        device.voltage ?? "Unknown"
     }
     
     var color: Color {
