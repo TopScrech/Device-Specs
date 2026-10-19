@@ -1,5 +1,5 @@
 {
-  "originHash" : "bcb3c784e38e8dc3a03a3f1706f1c37296af514e73538ad6a3bd00b74c698761",
+  "originHash" : "a0e24fc95e2e00a180a1b16f14b9ba3cce435e085708d69912c7f7a7c83b98c8",
   "pins" : [
     {
       "identity" : "appearance",
@@ -26,6 +26,15 @@
       "state" : {
         "revision" : "6a7185a7c8ea968da7008e36f19abf85393eacd0",
         "version" : "1.0.6"
+      }
+    },
+    {
+      "identity" : "device",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TopScrech/Device",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9fd0d184919f5e51af36a64a560a948616432d02"
       }
     },
     {

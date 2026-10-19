@@ -37,6 +37,12 @@
       },
     }, {
       "kind": "remote",
+      "repository": "https://github.com/TopScrech/Device",
+      "version": {
+        "branch": "main",
+      },
+    }, {
+      "kind": "remote",
       "repository": "https://github.com/devicekit/DeviceKit",
       "version": {
         "up-to-next-major-version": "5.0.0",
@@ -326,7 +332,6 @@
             "DeviceKit/Disabled/L3 Cache.swift",
             "DeviceKit/batteryCapacity.swift",
             "DeviceKit/bluetoothVersion.swift",
-            "DeviceKit/hasMagsafe.swift",
             "DeviceKit/instructionSet.swift",
             "DeviceKit/maxClockSpeed.swift",
             "DeviceKit/memoryType.swift",
@@ -542,6 +547,10 @@
           "product-name": "ChitChat",
           "build-phase": { "build-phase": "frameworks" },
         }, {
+          "package": "Device",
+          "product-name": "Device",
+          "build-phase": { "build-phase": "frameworks" },
+        }, {
           "package": "DeviceKit",
           "product-name": "DeviceKit",
           "build-phase": { "build-phase": "frameworks" },
@@ -624,6 +633,10 @@
       ],
       "package-product-members": [
         {
+          "package": "Device",
+          "product-name": "Device",
+          "build-phase": { "build-phase": "frameworks" },
+        }, {
           "package": "DeviceKit",
           "product-name": "DeviceKit",
           "build-phase": { "build-phase": "frameworks" },
@@ -695,6 +708,10 @@
           "product-name": "ChitChat",
           "build-phase": { "build-phase": "frameworks" },
         }, {
+          "package": "Device",
+          "product-name": "Device",
+          "build-phase": { "build-phase": "frameworks" },
+        }, {
           "package": "DeviceKit",
           "product-name": "DeviceKit",
           "build-phase": { "build-phase": "frameworks" },
@@ -750,6 +767,10 @@
       ],
       "package-product-members": [
         {
+          "package": "Device",
+          "product-name": "Device",
+          "build-phase": { "build-phase": "frameworks" },
+        }, {
           "package": "DeviceKit",
           "product-name": "DeviceKit",
           "build-phase": { "build-phase": "frameworks" },
@@ -811,6 +832,10 @@
           "product-name": "ChitChat",
           "build-phase": { "build-phase": "frameworks" },
         }, {
+          "package": "Device",
+          "product-name": "Device",
+          "build-phase": { "build-phase": "frameworks" },
+        }, {
           "package": "DeviceKit",
           "product-name": "DeviceKit",
           "build-phase": { "build-phase": "frameworks" },
@@ -869,6 +894,10 @@
         {
           "package": "Appearance",
           "product-name": "Appearance",
+          "build-phase": { "build-phase": "frameworks" },
+        }, {
+          "package": "Device",
+          "product-name": "Device",
           "build-phase": { "build-phase": "frameworks" },
         }, {
           "package": "DeviceKit",

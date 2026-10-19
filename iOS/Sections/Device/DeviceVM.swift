@@ -9,8 +9,6 @@ import NearbyInteraction
 final class DeviceVM {
     private(set) var isForceTouchAvailable = ""
     
-    static let isMagsafeSupported = Device.current.hasMagsafe
-
     private static var isDebugDevicePad: Bool {
 #if os(iOS)
         Device.current.isPad
