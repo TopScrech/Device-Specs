@@ -53,7 +53,6 @@ final class DeviceVM {
 #if os(iOS)
     static let hasWirelessCharging = Device.current.supportsWirelessCharging
     static let supports5G = Device.current.has5gSupport
-    static let dockConnector = Device.current.hasUSBCConnectivity ? "USB-C" : "Lightning"
     static let hasDynamicIsland = Device.current.hasDynamicIsland
 #endif
     
