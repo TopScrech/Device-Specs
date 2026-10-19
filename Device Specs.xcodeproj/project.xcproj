@@ -323,7 +323,6 @@
             "Assets.xcassets",
             "Chat/DeviceChatMessage.swift",
             "Chat/DeviceChatMessageRow.swift",
-            "DeviceKit/releaseDate.swift",
             "Localizable.xcstrings",
             "Sections/System/Time Zone/KnownTimeZones.swift",
             "Utils/ValueStore.swift",

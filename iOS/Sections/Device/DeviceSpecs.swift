@@ -12,6 +12,7 @@ struct DeviceSpecs: View {
             LabeledContent("Device", value: DeviceVM.deviceIdentifier)
             LabeledContent("Identifier", value: DeviceVM.hardwareIdentifier)
             LabeledContent("Name", value: DeviceVM.deviceName)
+            LabeledContent("Announcement date", value: DeviceVM.announcementDate)
             LabeledContent("Release date", value: DeviceVM.releaseDate)
             LabeledContent("Internal name", value: vm.internalName)
             
