@@ -1,5 +1,5 @@
 import ScrechKit
-import DeviceKit
+import Device
 import OSLog
 
 @Observable
@@ -65,7 +65,7 @@ final class MemoryVM {
     }
     
     var memoryType: String {
-        device.cpu.memoryType
+        device.cpu?.memoryType ?? "Unknown"
     }
     
     // Memory

@@ -1,5 +1,5 @@
 import Foundation
-import DeviceKit
+import Device
 
 @Observable
 final class ProcessorVM {
@@ -21,27 +21,27 @@ final class ProcessorVM {
     }
     
     static var neuralEngineTOPS: String {
-        ProcessorVM.cpu.tops ?? "-"
+        ProcessorVM.cpu?.neuralEngineTOPS ?? "-"
     }
     
     static var neuralEngineCores: String {
-        ProcessorVM.cpu.neuralEngineCores ?? "-"
+        ProcessorVM.cpu?.neuralEngineCores ?? "-"
     }
     
     static var cpuName: String {
-        ProcessorVM.cpu.description
+        ProcessorVM.cpu?.description ?? "Unknown"
     }
     
     static var techNode: String {
-        ProcessorVM.cpu.techNode
+        ProcessorVM.cpu?.techNode ?? "Unknown"
     }
     
     static var clockSpeed: String {
-        ProcessorVM.cpu.clockRate
+        ProcessorVM.cpu?.maxClockSpeed ?? "Unknown"
     }
     
     var instructionSet: String {
-        ProcessorVM.cpu.instructionSet
+        ProcessorVM.cpu?.instructionSet ?? "Unknown"
     }
     
     var cpuUsage: [Double] = []
