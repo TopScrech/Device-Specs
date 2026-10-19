@@ -1,12 +1,12 @@
 import SwiftUI
 
-#if canImport(FoundationModels)
+#if canImport(FoundationModels) && !os(tvOS) && !os(watchOS)
 import FoundationModels
 #endif
 
 struct PrivateCloudComputeSupport: View {
     private var isSupported: Bool {
-#if canImport(FoundationModels) && !os(tvOS)
+#if canImport(FoundationModels) && !os(tvOS) && !os(watchOS)
         if #available(anyAppleOS 27, *) {
             PrivateCloudComputeLanguageModel().isAvailable
         } else {
