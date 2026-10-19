@@ -47,8 +47,6 @@ final class DeviceVM {
     }()
 
     static let releaseDate = Device.current.releaseDate
-    static let waterResistance = Device.current.waterResistance
-    static let waterResistanceDescription = Device.current.waterResistanceDescription
 #if os(iOS)
     static let hasWirelessCharging = Device.current.supportsWirelessCharging
     static let supports5G = Device.current.has5gSupport

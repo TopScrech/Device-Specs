@@ -325,8 +325,6 @@
             "Chat/DeviceChatMessageRow.swift",
             "DeviceKit/releaseDate.swift",
             "DeviceKit/voltage.swift",
-            "DeviceKit/waterResistanceDescription.swift",
-            "DeviceKit/waterResistanceRating.swift",
             "Localizable.xcstrings",
             "Sections/System/Time Zone/KnownTimeZones.swift",
             "Utils/ValueStore.swift",
