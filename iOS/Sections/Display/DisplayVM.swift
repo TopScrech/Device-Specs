@@ -49,7 +49,7 @@ final class DisplayVM {
 
     static var aspectRatio: String {
         guard let ratio = Device.current.display?.resolution.aspectRatio else { return "Unknown" }
-        return "\(ratio.height) : \(ratio.width)"
+        return DisplayAspectRatioFormatter.format(width: ratio.width, height: ratio.height)
     }
 
     /// Live brightness is exposed by iOS only, never a fabricated value on other platforms
