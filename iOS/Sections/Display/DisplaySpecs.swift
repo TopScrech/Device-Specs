@@ -1,5 +1,4 @@
 import SwiftUI
-import DeviceKit
 
 struct DisplaySpecs: View {
 #if os(iOS)
@@ -9,7 +8,7 @@ struct DisplaySpecs: View {
     @State private var brightness = 0.0
     
     init() {
-        _brightness = State(initialValue: Double(Device.current.screenBrightness))
+        _brightness = State(initialValue: DisplayVM.brightness ?? 0)
     }
     
     var body: some View {
@@ -18,42 +17,40 @@ struct DisplaySpecs: View {
             LabeledContent("Screen size", value: DisplayVM.diagonalSize)
             LabeledContent("Aspect ratio", value: DisplayVM.aspectRatio)
             LabeledContent("Pixel density", value: DisplayVM.pixelDencity ?? "-")
+
+            ForEach(DisplayVM.displays.dropFirst(), id: \.role) {
+                AdditionalDisplayView(display: $0)
+            }
 #if !os(watchOS)
             LabeledContent("Refresh rate", value: DisplayVM.refreshRate)
 #endif
             
-#if os(iOS)
             LabeledContent("Rounded corners", value: DisplayVM.roundedCorners.yesOrNo())
-#endif
-            Section {
-                LabeledContent("Brightness", value: "\(Int(brightness))%")
-                
+
+            if DisplayVM.brightness != nil {
+                Section {
+                    LabeledContent("Brightness", value: "\(Int(brightness))%")
+
 #if !os(watchOS) && !EXTENSION
-                Slider(value: $brightness, in: 0...100, step: 5) {
-                    Text("Brightness")
-                }
+                    Slider(value: $brightness, in: 0...100, step: 5) {
+                        Text("Brightness")
+                    }
 #endif
+                }
             }
         }
         .navigationTitle("Display")
         .onChange(of: brightness) { _, newValue in
-            let value = CGFloat(newValue / 100)
-            setDeviceBrightness(value)
+            DisplayVM.setBrightness(newValue)
         }
 #if !os(watchOS)
         .task {
             for await _ in NotificationCenter.default.notifications(named: UIApplication.didBecomeActiveNotification) {
                 withAnimation {
-                    brightness = Double(Device.current.screenBrightness)
+                    brightness = DisplayVM.brightness ?? 0
                 }
             }
         }
-#endif
-    }
-    
-    private func setDeviceBrightness(_ level: CGFloat) {
-#if !os(watchOS)
-        UIScreen.main.brightness = level
 #endif
     }
 }

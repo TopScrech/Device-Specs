@@ -1,11 +1,11 @@
 import AVFoundation
-import DeviceKit
+import Device
 
 @Observable
 final class CameraVM {
     private(set) var cameras: [Camera] = []
     
-    static let hasLidar = Device.current.hasLidarSensor
+    static let hasLidar = Device.current.has(.lidar)
     let hasLidarText = hasLidar ? "LiDAR" : ""
     
     init() {

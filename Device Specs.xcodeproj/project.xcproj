@@ -43,12 +43,6 @@
       },
     }, {
       "kind": "remote",
-      "repository": "https://github.com/devicekit/DeviceKit",
-      "version": {
-        "up-to-next-major-version": "5.0.0",
-      },
-    }, {
-      "kind": "remote",
       "repository": "https://github.com/TopScrech/ScrechCam",
       "version": {
         "up-to-next-major-version": "1.0.0",
@@ -532,10 +526,6 @@
           "product-name": "Device",
           "build-phase": { "build-phase": "frameworks" },
         }, {
-          "package": "DeviceKit",
-          "product-name": "DeviceKit",
-          "build-phase": { "build-phase": "frameworks" },
-        }, {
           "package": "ScrechCam",
           "product-name": "ScrechCam",
           "build-phase": { "build-phase": "frameworks" },
@@ -618,10 +608,6 @@
           "product-name": "Device",
           "build-phase": { "build-phase": "frameworks" },
         }, {
-          "package": "DeviceKit",
-          "product-name": "DeviceKit",
-          "build-phase": { "build-phase": "frameworks" },
-        }, {
           "package": "ScrechKit",
           "product-name": "ScrechKit",
           "build-phase": { "build-phase": "frameworks" },
@@ -693,10 +679,6 @@
           "product-name": "Device",
           "build-phase": { "build-phase": "frameworks" },
         }, {
-          "package": "DeviceKit",
-          "product-name": "DeviceKit",
-          "build-phase": { "build-phase": "frameworks" },
-        }, {
           "package": "ScrechKit",
           "product-name": "ScrechKit",
           "build-phase": { "build-phase": "frameworks" },
@@ -750,10 +732,6 @@
         {
           "package": "Device",
           "product-name": "Device",
-          "build-phase": { "build-phase": "frameworks" },
-        }, {
-          "package": "DeviceKit",
-          "product-name": "DeviceKit",
           "build-phase": { "build-phase": "frameworks" },
         }, {
           "package": "ScrechKit",
@@ -817,10 +795,6 @@
           "product-name": "Device",
           "build-phase": { "build-phase": "frameworks" },
         }, {
-          "package": "DeviceKit",
-          "product-name": "DeviceKit",
-          "build-phase": { "build-phase": "frameworks" },
-        }, {
           "package": "LaunchAtLogin",
           "product-name": "LaunchAtLogin",
           "build-phase": { "build-phase": "frameworks" },
@@ -879,10 +853,6 @@
         }, {
           "package": "Device",
           "product-name": "Device",
-          "build-phase": { "build-phase": "frameworks" },
-        }, {
-          "package": "DeviceKit",
-          "product-name": "DeviceKit",
           "build-phase": { "build-phase": "frameworks" },
         }, {
           "package": "ScrechCam",
