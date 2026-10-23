@@ -1,5 +1,5 @@
 import ScrechKit
-import DeviceKit
+import Device
 
 #if canImport(NearbyInteraction)
 import NearbyInteraction
@@ -11,7 +11,7 @@ final class DeviceVM {
     
     private static var isDebugDevicePad: Bool {
 #if os(iOS)
-        Device.current.isPad
+        Device.current.identifier.hasPrefix("iPad")
 #else
         false
 #endif
@@ -22,34 +22,27 @@ final class DeviceVM {
     }
 
     static var deviceName: String {
-        ValueStore.debugValue(Device.current.name ?? "-", override: debugDeviceName)
+#if os(watchOS)
+        ValueStore.debugValue(WKInterfaceDevice.current().name, override: debugDeviceName)
+#else
+        ValueStore.debugValue(UIDevice.current.name, override: debugDeviceName)
+#endif
     }
 
     static var deviceIdentifier: String {
-        ValueStore.debugValue(Device.current.description, override: debugDeviceName)
+        ValueStore.debugValue(Device.current.name ?? liveHardwareIdentifier, override: debugDeviceName)
     }
 
     static var hardwareIdentifier: String {
         ValueStore.debugValue(liveHardwareIdentifier, override: isDebugDevicePad ? "iPad17,4" : "iPhone19,7")
     }
 
-    private static let liveHardwareIdentifier: String = {
-        var systemInfo = utsname()
-        uname(&systemInfo)
-
-        return Mirror(reflecting: systemInfo.machine).children.reduce("") { identifier, element in
-            guard let value = element.value as? Int8, value != 0 else {
-                return identifier
-            }
-
-            return identifier + String(UnicodeScalar(UInt8(value)))
-        }
-    }()
+    private static let liveHardwareIdentifier = Device.current.identifier
 
 #if os(iOS)
-    static let hasWirelessCharging = Device.current.supportsWirelessCharging
-    static let supports5G = Device.current.has5gSupport
-    static let hasDynamicIsland = Device.current.hasDynamicIsland
+    static let hasWirelessCharging = Device.current.has(.wirelessCharging)
+    static let supports5G = Device.current.has(.fiveG)
+    static let hasDynamicIsland = Device.current.has(.dynamicIsland)
 #endif
     
     var internalName: String {
