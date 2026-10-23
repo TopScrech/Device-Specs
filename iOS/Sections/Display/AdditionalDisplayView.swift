@@ -9,7 +9,10 @@ struct AdditionalDisplayView: View {
         Section("Outer display") {
             LabeledContent("Screen resolution", value: "\(display.resolution.width) x \(display.resolution.height)")
             LabeledContent("Screen size", value: DisplayVM.diagonalDescription(display))
-            LabeledContent("Aspect ratio", value: "\(display.resolution.aspectRatio.height) : \(display.resolution.aspectRatio.width)")
+            LabeledContent("Aspect ratio", value: DisplayAspectRatioFormatter.format(
+                width: display.resolution.aspectRatio.width,
+                height: display.resolution.aspectRatio.height
+            ))
             LabeledContent("Pixel density", value: "\(display.ppi) PPI")
         }
     }
