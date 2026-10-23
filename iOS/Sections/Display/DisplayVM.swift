@@ -27,13 +27,14 @@ final class DisplayVM {
 #if os(iOS) || os(tvOS)
         if let bounds = activeScreen?.nativeBounds {
             return "\(Int(bounds.width)) x \(Int(bounds.height))"
+        } else {
+            return "Unknown"
         }
 #elseif os(watchOS)
         let screen = WKInterfaceDevice.current()
         let bounds = screen.screenBounds
         return "\(Int(bounds.width * screen.screenScale)) x \(Int(bounds.height * screen.screenScale))"
 #endif
-        return "Unknown"
     }
 
     static var refreshRate: String {
