@@ -1,5 +1,5 @@
 {
-  "originHash" : "a0e24fc95e2e00a180a1b16f14b9ba3cce435e085708d69912c7f7a7c83b98c8",
+  "originHash" : "af3063aa01eb538ca323bde7328f008a201f5060922d2174bbd0297d85a5725a",
   "pins" : [
     {
       "identity" : "appearance",
@@ -34,16 +34,7 @@
       "location" : "https://github.com/TopScrech/Device",
       "state" : {
         "branch" : "main",
-        "revision" : "b69aa56cc2020d7164ac8e8ff9e9f6cf0509814c"
-      }
-    },
-    {
-      "identity" : "devicekit",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/devicekit/DeviceKit",
-      "state" : {
-        "revision" : "19528aa07e1426626ea9fb2c4a161edf43c4f9e8",
-        "version" : "5.9.0"
+        "revision" : "15407306ac401451426e7c2bc5548e1b7e407dcd"
       }
     },
     {

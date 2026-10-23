@@ -1,22 +1,14 @@
 import SwiftUI
-import DeviceKit
+import Device
 
 struct DisplaySpecs: View {
-    @State private var brightness = 0.0
-    
-    init() {
-        _brightness = State(initialValue: Double(Device.current.screenBrightness))
-    }
-    
     var body: some View {
         List {
-            if let ppi = Device.current.ppi?.description {
+            if let ppi = Device.current.display?.ppi.description {
                 LabeledContent("PPI", value: ppi)
             }
-            
-            Section {
-                LabeledContent("Brightness", value: "\(Int(brightness))%")
-            }
+
+            LabeledContent("Brightness", value: "Unavailable")
         }
         .navigationTitle("Display")
     }
