@@ -1,5 +1,4 @@
 import SwiftUI
-import DeviceKit
 
 @Observable
 final class SystemVM {
