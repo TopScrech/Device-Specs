@@ -13,10 +13,16 @@ struct DisplaySpecs: View {
     
     var body: some View {
         List {
-            LabeledContent("Screen resolution", value: DisplayVM.resolution)
-            LabeledContent("Screen size", value: DisplayVM.diagonalSize)
-            LabeledContent("Aspect ratio", value: DisplayVM.aspectRatio)
-            LabeledContent("Pixel density", value: DisplayVM.pixelDencity ?? "-")
+            Section {
+                LabeledContent("Screen resolution", value: DisplayVM.resolution)
+                LabeledContent("Screen size", value: DisplayVM.diagonalSize)
+                LabeledContent("Aspect ratio", value: DisplayVM.aspectRatio)
+                LabeledContent("Pixel density", value: DisplayVM.pixelDencity ?? "-")
+            } header: {
+                if DisplayVM.displays.count > 1 {
+                    Text("Inner display")
+                }
+            }
 
             ForEach(DisplayVM.displays.dropFirst(), id: \.role) {
                 AdditionalDisplayView(display: $0)
