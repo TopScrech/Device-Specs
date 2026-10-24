@@ -10,9 +10,6 @@ extension View {
             case .toDebugSettings:
                 DebugSettings()
 
-            case .toIPhones:
-                IPhoneListView()
-
             case .toSensors:
                 SensorsSpecs()
                 
