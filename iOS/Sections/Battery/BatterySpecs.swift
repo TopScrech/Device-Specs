@@ -11,6 +11,7 @@ struct BatterySpecs: View {
             LabeledContent("Low power mode", value: vm.lowPowerMode.yesOrNo())
             LabeledContent("Voltage", value: vm.voltage)
             LabeledContent("Capacity", value: vm.capacity)
+            LabeledContent("Energy", value: vm.energyCapacity)
         }
         .navigationTitle("Battery")
         .environment(vm)
