@@ -3,6 +3,18 @@ import Device
 
 @Observable
 final class DisplayVM {
+#if os(iOS)
+    @available(iOS 27.1, *)
+    static func hingeStatusDescription(_ status: DeviceHinge.Status) -> LocalizedStringKey {
+        switch status {
+        case .closed: "Closed"
+        case .partiallyOpen: "Partially open"
+        case .fullyOpen: "Fully open"
+        default: "Unknown"
+        }
+    }
+#endif
+
     static var displays: [DeviceDisplay] { Device.current.displays ?? [] }
 
     static var diagonalSize: String {
