@@ -34,9 +34,7 @@ struct SettingsView: View {
         }
         .navigationTitle("Settings")
         .toolbar {
-            NavigationLink {
-                DebugSettings()
-            } label: {
+            NavigationLink(value: NavDestinations.toDebugSettings) {
                 Label(String("Debug settings"), systemImage: "hammer.fill")
             }
         }
@@ -46,6 +44,7 @@ struct SettingsView: View {
 #Preview {
     NavigationStack {
         SettingsView()
+            .withNavDestinations()
     }
     .environmentObject(ValueStore())
     .darkSchemePreferred()
