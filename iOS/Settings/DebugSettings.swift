@@ -16,12 +16,19 @@ struct DebugSettings: View {
 
                 Toggle(String("Status bar"), isOn: $store.showStatusBar)
             }
+
+            Section {
+                NavigationLink(String("iPhones"), value: NavDestinations.toIPhones)
+            }
         }
         .navigationTitle(String("Debug settings"))
     }
 }
 
 #Preview {
-    DebugSettings()
-        .environmentObject(ValueStore())
+    NavigationStack {
+        DebugSettings()
+            .withNavDestinations()
+    }
+    .environmentObject(ValueStore())
 }

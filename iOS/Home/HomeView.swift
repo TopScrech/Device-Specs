@@ -7,6 +7,7 @@ struct HomeView: View {
 #endif
 
     @Environment(NavState.self) private var nav
+    @Environment(\.scenePhase) private var scenePhase
     
     let assistantRequest: Int
     
@@ -18,9 +19,9 @@ struct HomeView: View {
     @State private var memory = MemoryVM()
     @State private var connectivity = ConnectivityVM()
     @State private var camera = CameraVM()
+    @State private var thermalState = ThermalStateVM()
     
     @State private var sheetChat = false
-    @State private var showSettings = false
     @State private var alertUpdate = false
     @State private var updateChecker = AppStoreUpdateChecker(appID: 6624303981)
     
@@ -129,6 +130,14 @@ struct HomeView: View {
             memory.getDiskInfo()
         }
         .task {
+            await thermalState.monitor()
+        }
+        .onChange(of: scenePhase) {
+            if scenePhase == .active {
+                thermalState.refresh()
+            }
+        }
+        .task {
             if await updateChecker.checkForUpdates()?.updateAvailable == true {
                 alertUpdate = true
             }
@@ -149,9 +158,6 @@ struct HomeView: View {
                 sheetChat = true
             }
         }
-        .navigationDestination(isPresented: $showSettings) {
-            SettingsView()
-        }
         .sheet($sheetChat) {
             if #available(iOS 26, *) {
                 NavigationStack {
@@ -162,12 +168,25 @@ struct HomeView: View {
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 SFButton("gear") {
-                    showSettings = true
+                    nav.navigate(.toSettings)
                 }
                 .keyboardShortcut("s")
             }
             
             if #available(iOS 26, *) {
+                if let color = thermalState.warningColor {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button(thermalState.warningTitle, systemImage: "flame.fill") {
+                            
+                        }
+                        .labelStyle(.iconOnly)
+                        .tint(color.gradient)
+                        .accessibilityLabel(thermalState.warningTitle)
+                    }
+
+                    ToolbarSpacer(placement: .topBarTrailing)
+                }
+                
                 ToolbarItem(placement: .topBarTrailing) {
                     SFButton("siri") {
                         sheetChat = true

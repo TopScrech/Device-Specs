@@ -4,6 +4,15 @@ extension View {
     func withNavDestinations() -> some View {
         self.navigationDestination(for: NavDestinations.self) { destination in
             switch destination {
+            case .toSettings:
+                SettingsView()
+
+            case .toDebugSettings:
+                DebugSettings()
+
+            case .toIPhones:
+                IPhoneListView()
+
             case .toSensors:
                 SensorsSpecs()
                 

@@ -6,6 +6,9 @@ struct DeviceSpecs: View {
 #endif
 
     @Environment(DeviceVM.self) private var vm
+    @Environment(\.scenePhase) private var scenePhase
+
+    @State private var thermalState = ThermalStateVM()
     
     var body: some View {
         List {
@@ -26,7 +29,9 @@ struct DeviceSpecs: View {
             }
             
             Section {
-                LabeledContent("Thermal state", value: DeviceVM.thermalState)
+                LabeledContent("Thermal state") {
+                    Text(thermalState.title)
+                }
             }
             
             Section("Capabilities") {
@@ -63,6 +68,14 @@ struct DeviceSpecs: View {
         }
         .navigationTitle("Device")
         .scrollIndicators(.never)
+        .task {
+            await thermalState.monitor()
+        }
+        .onChange(of: scenePhase) {
+            if scenePhase == .active {
+                thermalState.refresh()
+            }
+        }
     }
 }
 
