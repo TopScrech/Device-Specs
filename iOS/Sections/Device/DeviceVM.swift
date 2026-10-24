@@ -61,6 +61,7 @@ final class DeviceVM {
 #endif
     
     static let isUWBAvailable = DeviceCapabilities.isUltraWidebandAvailable
+    static let uwbSupport = DeviceCapabilities.uwbSupport
     
     var vendorID: String {
 #if os(watchOS)

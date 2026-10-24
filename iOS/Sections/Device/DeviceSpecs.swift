@@ -48,7 +48,7 @@ struct DeviceSpecs: View {
                 LabeledContent("Dock connector", value: DeviceVM.dockConnector)
                 LabeledContent("Force Touch", value: vm.isForceTouchAvailable)
 #endif
-                LabeledContent("Ultra Wideband", value: DeviceVM.isUWBAvailable.yesOrNo())
+                LabeledContent("Ultra Wideband", value: DeviceVM.uwbSupport.title)
             }
             
             Section("Water resistance") {

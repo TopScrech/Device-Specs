@@ -4,10 +4,20 @@ import NearbyInteraction
 
 final class DeviceCapabilities {
     static var isUltraWidebandAvailable: Bool {
+        uwbSupport != .notSupported
+    }
+
+    static var uwbSupport: UWBSupport {
 #if canImport(NearbyInteraction)
-        NISession.deviceCapabilities.supportsPreciseDistanceMeasurement
+        let capabilities = NISession.deviceCapabilities
+
+        guard capabilities.supportsPreciseDistanceMeasurement else {
+            return .notSupported
+        }
+
+        return capabilities.supportsExtendedDistanceMeasurement ? .gen2 : .gen1
 #else
-        false
+        .notSupported
 #endif
     }
 }
