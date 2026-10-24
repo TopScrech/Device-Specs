@@ -127,6 +127,7 @@ enum IPhoneSpecs {
         case .usbC: "USB-C"
         case .lightning: "Lightning"
         case .thirtyPin: "30-pin"
+        case .none: "None"
         case .unknown: nil
         }
     }
