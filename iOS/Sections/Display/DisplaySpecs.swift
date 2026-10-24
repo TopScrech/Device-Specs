@@ -27,6 +27,11 @@ struct DisplaySpecs: View {
             ForEach(DisplayVM.displays.dropFirst(), id: \.role) {
                 AdditionalDisplayView(display: $0)
             }
+#if os(iOS)
+            if #available(iOS 27.1, *) {
+                HingeSpecsView()
+            }
+#endif
 #if !os(watchOS)
             LabeledContent("Refresh rate", value: DisplayVM.refreshRate)
 #endif
