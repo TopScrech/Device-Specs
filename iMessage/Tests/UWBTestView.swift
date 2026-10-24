@@ -12,6 +12,7 @@ struct UWBTestView: View {
             }
             
             Text(vm.distance)
+                .monospacedDigit()
                 .bold()
                 .title()
                 .animation(.easeIn, value: vm.distance)
