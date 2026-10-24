@@ -1,18 +1,18 @@
 import SwiftUI
-import Device
 
 struct IPhoneListView: View {
+    @State private var model = IPhoneListVM()
+
     var body: some View {
-        List {
-            ForEach(Device.iPhones, id: \.self) { phone in
-                Section(phone.name) {
-                    ForEach(IPhoneSpecs.rows(for: phone), id: \.title) {
-                        LabeledContent($0.title, value: $0.value)
-                    }
-                }
+        NavigationSplitView {
+            IPhoneSidebarView()
+        } detail: {
+            if let phone = model.selectedPhone {
+                IPhoneDetailView(phone: phone)
+            } else {
+                ContentUnavailableView(String("Select an iPhone"), systemImage: "iphone")
             }
         }
-        .navigationTitle(String("iPhones"))
-        .textSelection(.enabled)
+        .environment(model)
     }
 }

@@ -3,10 +3,23 @@ import Device
 
 enum IPhoneSpecs {
     static func rows(for phone: DeviceDefinition) -> [(title: String, value: String)] {
-        var rows: [(title: String, value: String)] = []
+        categorizedRows(for: phone).map { (title: $0.title, value: $0.value) }
+    }
+
+    static func sections(for phone: DeviceDefinition) -> [(section: IPhoneSpecSection, rows: [(title: String, value: String)])] {
+        let rows = categorizedRows(for: phone)
+        return IPhoneSpecSection.allCases.compactMap { section in
+            let matches = rows.filter { $0.section == section }.map { (title: $0.title, value: $0.value) }
+            return matches.isEmpty ? nil : (section: section, rows: matches)
+        }
+    }
+
+    private static func categorizedRows(for phone: DeviceDefinition) -> [(title: String, value: String, section: IPhoneSpecSection)] {
+        var rows: [(title: String, value: String, section: IPhoneSpecSection)] = []
+        var section = IPhoneSpecSection.device
 
         func add(_ title: String, _ value: String?) {
-            rows.append((title, value.flatMap { $0.isEmpty ? nil : $0 } ?? "-"))
+            rows.append((title, value.flatMap { $0.isEmpty ? nil : $0 } ?? "-", section))
         }
 
         add("Name", phone.name)
@@ -14,22 +27,26 @@ enum IPhoneSpecs {
         add("Model numbers", phone.modelNumbers.joined(separator: ", "))
         add("Announcement date", date(phone.announcementDate))
         add("Release date", date(phone.releaseDate))
+        section = .processor
         add("CPU", phone.cpu?.description)
         add("Technology node", phone.cpu?.techNode)
         add("Maximum clock speed", phone.cpu?.maxClockSpeed)
         add("Instruction set", phone.cpu?.instructionSet)
-        add("Memory type", phone.cpu?.memoryType)
         add("L1 instruction cache", phone.cpu?.l1InstructionCache)
         add("L1 data cache", phone.cpu?.l1DataCache)
         add("L2 cache", phone.cpu?.l2Cache)
         add("L3 cache", phone.cpu?.l3Cache)
         add("Neural Engine cores", phone.cpu?.neuralEngineCores)
         add("Neural Engine TOPS", phone.cpu?.neuralEngineTOPS)
+        section = .ram
+        add("Memory type", phone.cpu?.memoryType)
+
+        section = .device
         add("Bluetooth", phone.bluetoothVersion)
         add("Dock connector", connector(phone.dockConnector))
-        add("Voltage", phone.voltage)
         add("Water resistance", phone.waterResistance)
         add("Water resistance description", phone.waterResistanceDescription)
+        section = .network
         add("eSIM-only models", phone.eSIMOnlyModelNumbers.map {
             $0.isEmpty ? "None" : $0.sorted().joined(separator: ", ")
         })
@@ -46,6 +63,8 @@ enum IPhoneSpecs {
             })
         }
 
+        section = .battery
+        add("Voltage", phone.voltage)
         addBattery("Battery", phone.batteryCapacity)
         addBattery("eSIM-only battery", phone.eSIMOnlyBatteryCapacity)
 
@@ -57,6 +76,7 @@ enum IPhoneSpecs {
             }
         }
 
+        section = .display
         if let displays = phone.displays, !displays.isEmpty {
             for (index, display) in displays.enumerated() {
                 let title = "Display \(index + 1)"
@@ -76,6 +96,7 @@ enum IPhoneSpecs {
             add("Display estimated diagonal", nil)
         }
 
+        section = .device
         add("Capabilities", capabilities(phone.capabilities))
 
         if phone.capabilityOverrides.isEmpty {

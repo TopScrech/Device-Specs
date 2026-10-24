@@ -3,6 +3,8 @@ import SwiftUI
 struct DebugSettings: View {
     @EnvironmentObject private var store: ValueStore
     
+    @State private var showIPhones = false
+
     let versionAndBuild = "v\(Bundle.version ?? "-") (B\(Bundle.build ?? "-"))"
     
     var body: some View {
@@ -18,10 +20,15 @@ struct DebugSettings: View {
             }
 
             Section {
-                NavigationLink(String("iPhones"), value: NavDestinations.toIPhones)
+                Button(String("iPhones"), systemImage: "iphone") {
+                    showIPhones = true
+                }
             }
         }
         .navigationTitle(String("Debug settings"))
+        .fullScreenCover(isPresented: $showIPhones) {
+            IPhoneListView()
+        }
     }
 }
 
