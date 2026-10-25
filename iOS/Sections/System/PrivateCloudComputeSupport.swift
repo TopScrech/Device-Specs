@@ -18,12 +18,16 @@ struct PrivateCloudComputeSupport: View {
     }
     
     var body: some View {
-        Label {
-            Text(isSupported ? "Private Cloud Compute supported" : "Private Cloud Compute supported")
-        } icon: {
-            Image(systemName: isSupported ? "icloud" : "icloud.slash")
-                .foregroundStyle(.primary)
-                .symbolRenderingMode(.multicolor)
+        LabeledContent {
+            Text(isSupported ? "Supported" : "Unsupported")
+        } label: {
+            Label {
+                Text("Private Cloud Compute")
+            } icon: {
+                Image(systemName: isSupported ? "icloud" : "icloud.slash")
+                    .foregroundStyle(.primary)
+                    .symbolRenderingMode(.multicolor)
+            }
         }
         .padding(.vertical, 5)
         .opacity(isSupported ? 1 : 0.5)

@@ -18,12 +18,16 @@ struct FoundationModelsSupport: View {
     }
     
     var body: some View {
-        Label {
-            Text(isSupported ? "Foundation Models supported" : "Foundation Models supported")
-        } icon: {
-            Image(.foundationModels)
-                .resizable()
-                .frame(32)
+        LabeledContent {
+            Text(isSupported ? "Supported" : "Unsupported")
+        } label: {
+            Label {
+                Text("Foundation Models")
+            } icon: {
+                Image(.foundationModels)
+                    .resizable()
+                    .frame(32)
+            }
         }
         .padding(.vertical, 5)
         .opacity(isSupported ? 1 : 0.5)

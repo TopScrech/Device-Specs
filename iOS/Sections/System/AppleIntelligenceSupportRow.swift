@@ -4,12 +4,16 @@ struct AppleIntelligenceSupportRow: View {
     let isSupported: Bool
     
     var body: some View {
-        Label {
-            Text(isSupported ? "Image Playground supported" : "Image Playground not supported")
-        } icon: {
-            Image(systemName: "siri")
-                .foregroundStyle(.primary)
-                .symbolRenderingMode(.multicolor)
+        LabeledContent {
+            Text(isSupported ? "Supported" : "Unsupported")
+        } label: {
+            Label {
+                Text("Image Playground")
+            } icon: {
+                Image(systemName: "siri")
+                    .foregroundStyle(.primary)
+                    .symbolRenderingMode(.multicolor)
+            }
         }
         .padding(.vertical, 5)
     }
