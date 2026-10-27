@@ -29,15 +29,13 @@
       "version": {
         "up-to-next-major-version": "1.1.0",
       },
-    },
-    {
+    }, {
       "kind": "remote",
       "repository": "https://github.com/SimplyDanny/SwiftLintPlugins",
       "version": {
         "up-to-next-major-version": "0.65.1",
       },
-    },
-    {
+    }, {
       "kind": "remote",
       "repository": "https://github.com/TopScrech/Chit-Chat",
       "version": {
@@ -520,45 +518,44 @@
     {
       "name": "Package Update Tools",
       "id": "A7FC86D2188499C9B503405C",
-      "product": "id:87A3B414D8F3B27211349F8D",
+      "product": "Products/Package Update Tools.bundle",
       "product-type": "bundle",
       "dependencies": [
         { "kind": "package", "package": "swift-update", "product-name": "swift-update" },
       ],
-      "build-phases": [],
       "build-settings": {
-        "SDKROOT": "macosx",
-        "SUPPORTED_PLATFORMS": "macosx",
-        "MACOSX_DEPLOYMENT_TARGET": "13.0",
         "CODE_SIGNING_ALLOWED": "NO",
         "GENERATE_INFOPLIST_FILE": "YES",
+        "MACOSX_DEPLOYMENT_TARGET": "13.0",
         "PRODUCT_BUNDLE_IDENTIFIER": "dev.topscrech.PackageUpdateTools",
         "PRODUCT_NAME": "Package Update Tools",
+        "SDKROOT": "macosx",
         "SKIP_INSTALL": "YES",
+        "SUPPORTED_PLATFORMS": "macosx",
       },
-    },
-    {
+    }, {
       "name": "Check Package Updates",
       "id": "86D477CE3FC74C0B91228E57",
       "kind": "aggregate",
-      "dependencies": [ "Package Update Tools" ],
+      "dependencies": [
+        "Package Update Tools",
+      ],
       "build-phases": [
         {
           "kind": "script",
           "name": "Check Package Updates",
           "run-on-every-build": true,
           "shell": "/bin/sh",
-          "script": "\"$BUILT_PRODUCTS_DIR/swift-update\" --xcode --path \"$PROJECT_FILE_PATH\" || true"
-        }
+          "script": "\"$BUILT_PRODUCTS_DIR/swift-update\" --xcode --path \"$PROJECT_FILE_PATH\" || true",
+        },
       ],
       "build-settings": {
-        "SDKROOT": "macosx",
-        "SUPPORTED_PLATFORMS": "macosx",
         "ENABLE_USER_SCRIPT_SANDBOXING": "NO",
-        "SKIP_INSTALL": "YES"
-      }
-    },
-    {
+        "SDKROOT": "macosx",
+        "SKIP_INSTALL": "YES",
+        "SUPPORTED_PLATFORMS": "macosx",
+      },
+    }, {
       "name": "iOS",
       "id": "F3E7EC392C676A13008CD17B",
       "product": "Products/iOS.app",
@@ -1088,7 +1085,7 @@
     "GCC_WARN_UNUSED_FUNCTION": "YES",
     "GCC_WARN_UNUSED_VARIABLE": "YES",
     "LOCALIZATION_PREFERS_STRING_CATALOGS": "YES",
-    "MARKETING_VERSION": "64.5.2",
+    "MARKETING_VERSION": "64.5.3",
     "MTL_ENABLE_DEBUG_INFO[config=Debug]": "INCLUDE_SOURCE",
     "MTL_ENABLE_DEBUG_INFO[config=Release]": "NO",
     "MTL_FAST_MATH": "YES",
