@@ -25,6 +25,13 @@
   "packages": [
     {
       "kind": "remote",
+      "repository": "https://github.com/SimplyDanny/SwiftLintPlugins",
+      "version": {
+        "up-to-next-major-version": "0.65.1",
+      },
+    },
+    {
+      "kind": "remote",
       "repository": "https://github.com/TopScrech/Chit-Chat",
       "version": {
         "up-to-next-major-version": "1.0.0",
@@ -68,6 +75,7 @@
     },
   ],
   "files": [
+    { "path": ".swiftlint.yml" },
     { "path": "README.md" },
     { "path": "AGENTS.md" },
     {
@@ -507,6 +515,7 @@
       "product": "Products/iOS.app",
       "product-type": "application",
       "dependencies": [
+        { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
         "watchOS",
         "iMessage",
       ],
@@ -613,6 +622,9 @@
       "id": "F36FBCB02C9449A200F5E174",
       "product": "Products/watchOS.app",
       "product-type": "application",
+      "dependencies": [
+        { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
+      ],
       "build-phases": [
         "compile-sources",
         "frameworks",
@@ -676,6 +688,9 @@
       "id": "F3C3BDBC2C92D87C00BF91EE",
       "product": "Products/visionOS.app",
       "product-type": "application",
+      "dependencies": [
+        { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
+      ],
       "build-phases": [
         "compile-sources",
         "frameworks",
@@ -739,6 +754,9 @@
       "id": "F3F85ECC2C94AF5A00AE0A1D",
       "product": "Products/tvOS.app",
       "product-type": "application",
+      "dependencies": [
+        { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
+      ],
       "build-phases": [
         "compile-sources",
         "frameworks",
@@ -792,6 +810,9 @@
       "id": "F3F85F0D2C962C4600AE0A1D",
       "product": "Products/Device Specs.app",
       "product-type": "application",
+      "dependencies": [
+        { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
+      ],
       "build-phases": [
         "compile-sources",
         "frameworks",
@@ -861,6 +882,9 @@
       "id": "F36F7FCA2CA0CFDF0007F120",
       "product": "Products/iMessage.appex",
       "product-type": "app-extension.messages",
+      "dependencies": [
+        { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
+      ],
       "build-phases": [
         "compile-sources",
         "frameworks",
@@ -925,6 +949,7 @@
       "product-type": "bundle.unit-test",
       "test-host-target": "macOS",
       "dependencies": [
+        { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
         "macOS",
       ],
       "build-phases": [

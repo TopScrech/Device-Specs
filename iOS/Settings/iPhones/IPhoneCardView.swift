@@ -9,11 +9,11 @@ struct IPhoneCardView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(phone.name)
-                .font(.headline)
+                .headline()
 
             ForEach(model.visibleRows(for: phone), id: \.title) {
                 LabeledContent($0.title, value: $0.value)
-                    .font(.subheadline)
+                    .subheadline()
             }
         }
     }
