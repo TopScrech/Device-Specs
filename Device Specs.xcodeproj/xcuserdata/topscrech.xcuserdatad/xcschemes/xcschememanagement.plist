@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>Package Update Tools.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>iMessage.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>

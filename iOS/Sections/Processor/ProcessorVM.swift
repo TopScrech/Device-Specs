@@ -25,7 +25,7 @@ final class ProcessorVM {
     }
     
     static var neuralEngineCores: String {
-        ProcessorVM.cpu?.neuralEngineCores ?? "-"
+        Device.current.neuralEngineCores() ?? "-"
     }
     
     static var cpuName: String {
