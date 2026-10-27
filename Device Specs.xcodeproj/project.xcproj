@@ -510,11 +510,32 @@
   ],
   "targets": [
     {
+      "name": "Check Package Updates",
+      "id": "86D477CE3FC74C0B91228E57",
+      "kind": "aggregate",
+      "build-phases": [
+        {
+          "kind": "script",
+          "name": "Check Package Updates",
+          "run-on-every-build": true,
+          "shell": "/bin/sh",
+          "script": "/usr/bin/python3 \"$SRCROOT/Scripts/check-package-updates.py\""
+        }
+      ],
+      "build-settings": {
+        "SDKROOT": "macosx",
+        "SUPPORTED_PLATFORMS": "macosx",
+        "ENABLE_USER_SCRIPT_SANDBOXING": "NO",
+        "SKIP_INSTALL": "YES"
+      }
+    },
+    {
       "name": "iOS",
       "id": "F3E7EC392C676A13008CD17B",
       "product": "Products/iOS.app",
       "product-type": "application",
       "dependencies": [
+        "Check Package Updates",
         { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
         "watchOS",
         "iMessage",
@@ -623,6 +644,7 @@
       "product": "Products/watchOS.app",
       "product-type": "application",
       "dependencies": [
+        "Check Package Updates",
         { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
       ],
       "build-phases": [
@@ -689,6 +711,7 @@
       "product": "Products/visionOS.app",
       "product-type": "application",
       "dependencies": [
+        "Check Package Updates",
         { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
       ],
       "build-phases": [
@@ -755,6 +778,7 @@
       "product": "Products/tvOS.app",
       "product-type": "application",
       "dependencies": [
+        "Check Package Updates",
         { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
       ],
       "build-phases": [
@@ -811,6 +835,7 @@
       "product": "Products/Device Specs.app",
       "product-type": "application",
       "dependencies": [
+        "Check Package Updates",
         { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
       ],
       "build-phases": [
@@ -883,6 +908,7 @@
       "product": "Products/iMessage.appex",
       "product-type": "app-extension.messages",
       "dependencies": [
+        "Check Package Updates",
         { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
       ],
       "build-phases": [
@@ -949,6 +975,7 @@
       "product-type": "bundle.unit-test",
       "test-host-target": "macOS",
       "dependencies": [
+        "Check Package Updates",
         { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
         "macOS",
       ],
