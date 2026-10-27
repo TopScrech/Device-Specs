@@ -36,7 +36,7 @@ enum IPhoneSpecs {
         add("L1 data cache", phone.cpu?.l1DataCache)
         add("L2 cache", phone.cpu?.l2Cache)
         add("L3 cache", phone.cpu?.l3Cache)
-        add("Neural Engine cores", phone.cpu?.neuralEngineCores)
+        add("Neural Engine cores", phone.neuralEngineCores())
         add("Neural Engine TOPS", phone.cpu?.neuralEngineTOPS)
         section = .ram
         add("Memory type", phone.cpu?.memoryType)
@@ -83,7 +83,7 @@ enum IPhoneSpecs {
                 add("\(title) role", String(describing: display.role).capitalized)
                 add("\(title) diagonal", number(display.diagonal, unit: "in"))
                 add("\(title) resolution", "\(display.resolution.width) × \(display.resolution.height)")
-                add("\(title) aspect ratio", "\(display.resolution.aspectRatio.width):\(display.resolution.aspectRatio.height)")
+                add("\(title) aspect ratio", display.resolution.formattedAspectRatio)
                 add("\(title) pixel density", "\(display.ppi) PPI")
                 add("\(title) estimated diagonal", number(display.estimatedDiagonal, unit: "in"))
             }
