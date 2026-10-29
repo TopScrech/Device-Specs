@@ -1,9 +1,12 @@
 import ScrechKit
 import Network
+import Device
 import OSLog
 
 @Observable
 final class NetworkVM {
+    static let wifiVersion = Device.current.wifiVersion ?? "Unknown"
+
     private let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "DeviceSpecs", category: "NetworkVM")
     private(set) var publicIP = ""
     private(set) var networkInterface = ""
