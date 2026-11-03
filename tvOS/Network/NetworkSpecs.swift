@@ -6,6 +6,8 @@ struct NetworkSpecs: View {
     
     var body: some View {
         List {
+            LabeledContent("Wi-Fi version", value: NetworkVM.wifiVersion)
+
             LabeledContent("Public IP address", value: network.publicIP)
             LabeledContent("Network type", value: connectivity.type)
         }

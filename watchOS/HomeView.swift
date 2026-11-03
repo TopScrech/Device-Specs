@@ -20,12 +20,12 @@ struct HomeView: View {
                     .environment(system)
             }
             
-            SpecsLink("Display", icon: "iphone", spec: DisplayVM.diagonalSize) {
+            SpecsLink("Display", icon: "iphone", spec: DisplayVM.diagonalSize.replacing("≈", with: "")) {
                 DisplaySpecs()
                     .environment(display)
             }
             
-            SpecsLink("Processor", icon: "cpu", spec: processor.cpuNameAndTechnology) {
+            SpecsLink("Processor", icon: "cpu", spec: "\(ProcessorVM.cpuName) • \(ProcessorVM.techNode)") {
                 ProcessorSpecs()
                     .environment(processor)
             }
